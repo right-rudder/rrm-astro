@@ -1,0 +1,188 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  image?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const {
+  title,
+  description,
+  keywords,
+  image = "/blog-placeholder-1.jpg",
+} = Astro.props;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<!-- Site Created By:    
+       _____  _       _     _     _____           _     _           
+      |  __ \(_)     | |   | |   |  __ \         | |   | |          
+      | |__) |_  __ _| |__ | |_  | |__) |   _  __| | __| | ___ _ __ 
+      |  _  /| |/ _` | '_ \| __| |  _  / | | |/ _` |/ _` |/ _ \ '__|
+      | | \ \| | (_| | | | | |_  | | \ \ |_| | (_| | (_| |  __/ |   
+      |_|  \_\_|\__, |_| |_|\__| |_|  \_\__,_|\__,_|\__,_|\___|_|   
+      |  \/  |   __/ |  | |      | | (_)                            
+      | \  / | _|___/ __| | _____| |_ _ _ __   __ _                 
+      | |\/| |/ _` | '__| |/ / _ \ __| | '_ \ / _` |                
+      | |  | | (_| | |  |   <  __/ |_| | | | | (_| |                
+      |_|  |_|\__,_|_|  |_|\_\___|\__|_|_| |_|\__, |                
+                                               __/ |                
+                                              |___/                 
+
+    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
+
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/RRM-R-symbol-474.webp" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+<!-- UPDATE GTAG PLEASE -->
+<script type="text/partytown">
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-5JDGHQBQ");
+</script>
+<!-- Google tag (gtag.js) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-XGVTWZSEFH"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-XGVTWZSEFH");
+</script>
+
+<!-- NEED TO UPDATE SCHEMA -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "NextGen Flight Academy",
+    "description": "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+    "keywords": "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+    "image": "./next-gen-logo.png",
+    "logo": "./next-gen-logo.png",
+    "telephone": "951-590-3572",
+    "email": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6951 Flight Road Suite 106",
+      "addressLocality": "Riverside",
+      "addressRegion": "CA",
+      "addressCountry": "US",
+      "postalCode": "92504​"
+    },
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express, Discover, Checks",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.95089726807398,
+        "longitude": -117.44593563235975
+      },
+      "geoRadius": 9000
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "39"
+    },
+    "url": "https://flyhere.aero/",
+    "priceRange": "$",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.95089726807398,
+      "longitude": -117.44593563235975
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
+        "opens": "07:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "15:30"
+      }
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "serviceType": "Flight Instruction"
+      },
+      "priceCurrency": "USD",
+      "price": "Varies"
+    },
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "name": "IATA Code",
+        "value": "RAL"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "ICAO Code",
+        "value": "KRAL"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Airport Code",
+        "value": "RAL"
+      }
+    ],
+    "hasMap": "https://maps.app.goo.gl/8PRRgEk2GMmxv4bV9"
+  }
+</script>

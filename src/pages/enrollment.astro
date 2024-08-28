@@ -1,0 +1,424 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const headerData = {
+  headerH1: "Enrollment Form",
+  imagePath: "/src/assets/nextgen-flight-academy-discovery-flight.jpg",
+  imageAlt:
+    "nextgen-flight-academy-learn-to-fly-enroll-in-flight-lessons-in-riverside-and-redlands-ca",
+};
+
+const checkboxText =
+  "By providing my email and phone number, I agree to receive email and text messages from NextGen Flight Academy and understand I can opt-out anytime.";
+
+const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
+---
+
+<BaseLayout
+  siteTitle="Enrollment Form | NextGen Flight Academy"
+  siteDescription="NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively."
+  keywords="NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training"
+>
+  <Header data={headerData} />
+
+  <section class="py-24 px-5">
+    <div class="max-w-3xl mx-auto">
+      <h2
+        class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
+      >
+        Start the enrollment process at NextGen Flight Academy
+      </h2>
+      <h3 class="font-medium text-center mx-auto text-xl">
+        Fill out the form below and let's start flying! A NextGen team member
+        will get in touch with you and walk you through the next steps on
+        getting you in the air.
+      </h3>
+      <form
+        id="enrollment-form"
+        class="flex flex-col max-w-4xl mx-auto gap-12 my-5"
+      >
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="text"
+            name="first-name"
+            placeholder="Your first name"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Your last name"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+          <input
+            type="email"
+            name="confirm-email"
+            placeholder="Confirm email"
+            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your phone number"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+        </div>
+
+        <label class="mt-4" for="experience"
+          >How far along are you in pilot training?*</label
+        >
+        <input
+          id="experience"
+          name="experience"
+          type="text"
+          placeholder=""
+          class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+          required
+        />
+
+        <fieldset
+          class="flex flex-col justify-center items-center align-middle mt-4"
+        >
+          <legend class="mb-2 text-gray-800 text-center w-full">
+            Primary Training Program Interest?
+          </legend>
+
+          <div>
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="private-pilot"
+                name="interest"
+                value="private-pilot"
+                required
+              />
+              <label for="private-pilot">Private Pilot Certificate</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="instrument-rating"
+                name="interest"
+                value="instrument-rating"
+                required
+              />
+              <label for="instrument-rating">Instrument Rating</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="commercial-pilot"
+                name="interest"
+                value="commercial-pilot"
+                required
+              />
+              <label for="commercial-pilot">
+                Commercial Pilot Certificate
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="multiengine"
+                name="interest"
+                value="multiengine"
+                required
+              />
+              <label for="multiengine">Multi-Engine</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="cfi"
+                name="interest"
+                value="cfi"
+                required
+              />
+              <label for="cfi">Flight Instructor (CFI, CFII, MEI)</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="airline-transport"
+                name="interest"
+                value="airline-transport"
+                required
+              />
+              <label for="airline-transport">Airline Transport Pilot</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="high-performance"
+                name="interest"
+                value="high-performance"
+                required
+              />
+              <label for="high-performance">High Performance Endorsement</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="high-altitude"
+                name="interest"
+                value="high-altitude"
+                required
+              />
+              <label for="high-altitude">High Altitude Endorsement</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="complex"
+                name="interest"
+                value="complex"
+                required
+              />
+              <label for="complex">Complex Endorsement</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <label for="extra-information mt-4"
+          >Anything else you want us to know about?*</label
+        >
+        <textarea
+          required
+          id="extra-information"
+          name="extra-information"
+          placeholder=""
+          rows="5"
+          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500"
+        ></textarea>
+
+        <fieldset
+          class="flex flex-col justify-center items-center align-middle mt-4"
+        >
+          <legend class="mb-2 text-gray-800 text-center w-full">
+            Would you like schedule a visit to NextGen Flight Academy?
+          </legend>
+
+          <div>
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="yes-visit"
+                name="visit-nextgen"
+                value="yes-visit"
+                required
+              />
+              <label for="yes-visit">Yes</label>
+            </div>
+            <input
+              type="radio"
+              class="mx-2"
+              id="no-visit"
+              name="visit-nextgen"
+              value="no-visit"
+              required
+            />
+            <label for="no-visit">No</label>
+          </div>
+        </fieldset>
+
+        <div
+          id="location-container"
+          class="hidden flex-col justify-center items-center align-middle"
+        >
+          <label for="visit-location">Choose a location:</label>
+
+          <select
+            name="visit-location"
+            id="visit-location"
+            class="w-36 px-3 py-2 border border-gray-400 text-center"
+          >
+            <option value="riverside">Riverside</option>
+            <option value="redlands">Redlands</option>
+          </select>
+        </div>
+
+        <div class="flex gap-3 px-8">
+          <input
+            type="checkbox"
+            name="agree-data-collection"
+            id="agree-data-collection"
+          />
+
+          <label
+            for="agree-data-collection"
+            class="text-gray-500 text-sm lg:text-base mt-4"
+          >
+            {checkboxText}
+          </label>
+        </div>
+        <div class="flex justify-center">
+          <button
+            id="submit-button"
+            disabled
+            type="submit"
+            class="btn-primary bg-gray-400 mt-12 cursor-not-allowed hover:bg-gray-500"
+            >Submit</button
+          >
+        </div>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ ENROLLMENT_FORM_WEBHOOK_URL }}>
+  // Function to format date as YYYY-MM-DD
+  function formatDate(date) {
+    let day = date.getDate();
+    let month = date.getMonth() + 1; // Months are zero based
+    let year = date.getFullYear();
+
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  // Calculate the date four days from today
+  const today = new Date();
+  const fourDaysFromToday = new Date(today);
+  fourDaysFromToday.setDate(today.getDate() + 4);
+
+  // Set the min attribute
+  document
+    .getElementById("requested-date")
+    ?.setAttribute("min", formatDate(fourDaysFromToday));
+
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+  const yesVisit = document.getElementById("yes-visit");
+  const noVisit = document.getElementById("no-visit");
+
+  yesVisit.addEventListener("change", function () {
+    if (yesVisit.checked) {
+      document.getElementById("location-container").classList.remove("hidden");
+      document.getElementById("location-container").classList.add("flex");
+    } else {
+      document.getElementById("location-container").classList.add("hidden");
+    }
+  });
+
+  noVisit.addEventListener("change", function () {
+    if (noVisit.checked) {
+      document.getElementById("location-container").classList.add("hidden");
+    }
+  });
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-500",
+        "bg-primary"
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "btn-primary",
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-500"
+      );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const enrollmentForm = document.getElementById("enrollment-form");
+
+    // Check if the contactUs form element exists
+    if (enrollmentForm !== null) {
+      // Add submit event listener to the contactUs form
+      enrollmentForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(enrollmentForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          enrollmentForm.action = ENROLLMENT_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", enrollmentForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/enrollment-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Enrollment form element not found.");
+    }
+  });
+</script>
+
+<script src="../scripts/emailValidation.js"></script>

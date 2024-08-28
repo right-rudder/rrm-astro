@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import BaseLayout from "./BaseLayout.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<BaseLayout
+  siteTitle={title + " | NextGen Flight Academy"}
+  siteDescription={description}
+  keywords={description}
+>
+  <div class="h-20 lg:h-24 w-full bg-primary/70 brightness-75"></div>
+
+  <section class="flex justify-center items-start align-top pt-4 pb-20">
+    <article>
+      <div class="w-full aspect-square mb-12 lg:mb-0">
+        {
+          heroImage && (
+            <img
+              class="object-cover h-full w-full"
+              src={heroImage}
+              alt={title}
+            />
+          )
+        }
+      </div>
+      <div class="prose font-sans1 py-12 px-5">
+        <div class="title">
+          <div class="date">
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Last updated on <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+          <h1 class="text-5xl font-sans">{title}</h1>
+          <hr />
+        </div>
+        <slot />
+      </div>
+    </article>
+  </section>
+</BaseLayout>
