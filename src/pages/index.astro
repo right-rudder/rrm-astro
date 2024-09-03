@@ -2,6 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import homePage from "../data/homePage";
 import HeaderScreen from "../components/HeaderScreen.astro";
+import HeaderSplit from "../components/HeaderSplit.astro";
+import Partners from "../components/Partners.astro";
+import CaseStudies from "../components/CaseStudies.astro";
+import Testimonials from "../components/Testimonials.astro";
+import WhyUs from "../components/WhyUs.astro";
 
 const { data } = homePage;
 ---
@@ -12,5 +17,28 @@ const { data } = homePage;
   keywords={data.pageKeywords}
 >
   <!-- HEADER -->
-  <HeaderScreen content={data.header} />
+  <HeaderSplit content={data.header} />
+
+  <Partners
+    heading={data.memberOf.heading}
+    organizations={data.memberOf.organizations}
+  />
+
+  <CaseStudies
+    upperHeading={data.caseStudies.upperHeading}
+    heading={data.caseStudies.heading}
+    cases={data.caseStudies.cases}
+  />
+
+  <Testimonials
+    upperHeading={data.testimonials.upperHeading}
+    heading={data.testimonials.heading}
+    quotes={data.testimonials.quotes}
+  />
+
+  <WhyUs
+    upperHeading={data.whyUs.upperHeading}
+    heading={data.whyUs.heading}
+    description={data.whyUs.description}
+  />
 </BaseLayout>

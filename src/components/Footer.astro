@@ -23,7 +23,7 @@ import { Image } from "astro:assets";
 const { pathname } = Astro.url;
 ---
 
-<footer class="relative bg-gradient-to-br from-accent to-primary">
+<footer class="relative bg-gradient-to-b from-primary-400 to-primary-dark-800">
   <div
     class="px-4 pt-24 pb-16 lg:pb-2 md:pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
   >
@@ -38,7 +38,7 @@ const { pathname } = Astro.url;
           <Image
             src={logo}
             alt="NextGen Flight Academy Logo"
-            class="object-contain h-36 w-auto"
+            class="object-contain h-36 w-auto drop-shadow-lg"
           />
         </a>
         <div class="mt-4 lg:max-w-sm">

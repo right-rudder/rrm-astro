@@ -84,9 +84,9 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-primary-dark/80 backdrop-blur border-primary/80"
-            : "bg-gradient-to-b from-gray-900/30 to-transparent border-white/20"
-        } duration-700 border-b-2`}
+            ? "bg-primary-dark-600/80 backdrop-blur"
+            : "bg-primary-dark-600"
+        } duration-500`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
           <div
@@ -101,7 +101,7 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="NextGen Logo"
-                  className="z-10 object-contain lg:h-24 h-20 w-3/4 lg:w-auto"
+                  className="z-10 object-contain lg:h-20 h-20 w-3/4 lg:w-auto"
                 />
               </a>
               <div className="hidden lg:flex justify-center w-full">
@@ -127,7 +127,7 @@ const Navbar = ({ pathname }) => {
                       )}
                       {item.submenu && item.submenu.length > 0 && (
                         <ul
-                          className={`absolute z-10 top-12 p-1 bg-primary/95 shadow-md shadow-primary-dark whitespace-nowrap text-white -left-4 duration-300 ease-in ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
+                          className={`absolute z-10 top-12 p-1 bg-primary-600/95 whitespace-nowrap text-white -left-4 duration-300 ease-in ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
                         >
                           {item.submenu.map((subitem, subIndex) => (
                             <li

@@ -1,0 +1,18 @@
+---
+const { upperHeading, heading, description } = Astro.props;
+---
+
+<section
+  class="lg:m-6 py-16 md:py-20 bg-gradient-to-b from-primary-600 to-primary-dark-400 flex flex-col justify-center align-middle items-center"
+>
+  <h3 class="text-center font-medium text-2xl text-primary-200">
+    {upperHeading}
+  </h3>
+  <h4
+    class="text-center font-normal text-5xl text-primary-100"
+    set:html={heading}
+  />
+  <div class="mt-8 max-w-5xl text-center font-normal text-primary-300">
+    {description.map((desc) => <p class="mt-3">{desc}</p>)}
+  </div>
+</section>
