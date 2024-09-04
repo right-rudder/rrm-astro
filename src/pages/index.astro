@@ -7,6 +7,7 @@ import Partners from "../components/Partners.astro";
 import CaseStudies from "../components/CaseStudies.astro";
 import Testimonials from "../components/Testimonials.astro";
 import WhyUs from "../components/WhyUs.astro";
+import ServicesGrid from "../components/ServicesGrid.astro";
 
 const { data } = homePage;
 ---
@@ -40,5 +41,13 @@ const { data } = homePage;
     upperHeading={data.whyUs.upperHeading}
     heading={data.whyUs.heading}
     description={data.whyUs.description}
+    team={data.whyUs.team}
+    marketing={data.whyUs.marketingSystem}
+  />
+
+  <ServicesGrid
+    upperHeading={data.services.upperHeading}
+    heading={data.services.heading}
+    services={data.services.servs}
   />
 </BaseLayout>

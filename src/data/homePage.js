@@ -126,10 +126,75 @@ const homePage = {
 
     whyUs: {
       upperHeading: "Why Us",
-      heading: `RRM is your <strong class="text-white">Digital Marketing Agency</strong>`,
+      heading: `RRM is your <strong class="text-accent">Digital Marketing Agency</strong>`,
       description: [
         `Are you tired of other schools taking your students? Does your "marketing company" seem out of touch with the general aviation industry? Are you missing out on capturing the new crop of interested student pilots?`,
         `Right Rudder Marketing is the leader in helping ONLY flight schools leverage the internet and use well executed marketing strategies to take their business out of the clouds and into VFR.`,
+      ],
+      team: {
+        heading: "More a Family than a Team",
+        paragraph:
+          "Right Rudder Marketing is a pilot owned digital marketing agency focused on helping flight schools and aviation businesses accomplish their goals: Grow, scale, and make a significant impact to the pilot training industry. Flight schools that partner with Right Rudder Marketing become the #1 flight schools in their community and dominate the local area. There's no doubt about it. Right Rudder Marketing has the secret sauce.",
+        imagePath: "/src/assets/right-rudder-marketing-team.jpeg",
+        imageAlt: "Right Rudder Marketing team on the runway",
+      },
+      marketingSystem: {
+        heading: "Our Marketing System",
+        paragraph:
+          "Right Rudder Marketing has a proven system that has been tested and refined over the years. We have worked with flight schools of all sizes and have helped them grow their business and increase their revenue. Our system is designed to help flight schools get more students and increase their revenue.",
+        imagePath: "/src/assets/fsms.webp",
+        imageAlt: "Right Rudder Marketing system",
+        steps: [
+          {
+            title: "Attract",
+            icon: "M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z",
+            description:
+              "Get People Interested in Pilot Training to Visit Your Website and Look You Up Online",
+          },
+          {
+            title: "Impress",
+            icon: "M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59",
+            description:
+              "Guide Your Interested Website Visitors Into Booking a Discovery Flight at Your School",
+          },
+          {
+            title: "Convert",
+            icon: "M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5",
+            description:
+              "Keep Your CFIs' Schedules Busy, Hire More CFIs, and Grow Your Flight School!",
+          },
+        ],
+      },
+    },
+
+    services: {
+      upperHeading: "Services",
+      heading: `Our Digital Marketing <strong class="text-primary-dark-400">Expertise</strong>`,
+      servs: [
+        {
+          name: "Web Design & Development",
+          icon: "M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5",
+          description:
+            "We design and develop websites that are user-friendly, mobile responsive, and optimized for search engines.",
+        },
+        {
+          name: "Web Design & Development",
+          icon: "M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5",
+          description:
+            "We design and develop websites that are user-friendly, mobile responsive, and optimized for search engines.",
+        },
+        {
+          name: "Web Design & Development",
+          icon: "M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5",
+          description:
+            "We design and develop websites that are user-friendly, mobile responsive, and optimized for search engines.",
+        },
+        {
+          name: "Web Design & Development",
+          icon: "M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5",
+          description:
+            "We design and develop websites that are user-friendly, mobile responsive, and optimized for search engines.",
+        },
       ],
     },
   },
