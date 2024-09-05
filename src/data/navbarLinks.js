@@ -1,33 +1,12 @@
 export const navbarLinks = [
   {
-    name: "Services",
-    link: "/services",
-    submenu: [
-      {
-        name: "Web Design & Development",
-        link: "/services/web-design-development",
-      },
-      {
-        name: "Search Engine Optimization(SEO)",
-        link: "/services/seo",
-      },
-      {
-        name: "Pay Per Click(PPC)",
-        link: "/services/ppc",
-      },
-      {
-        name: "Customer Relationship Management(CRM)",
-        link: "/services/crm",
-      },
-      {
-        name: "Media Production",
-        link: "/services/media-production",
-      },
-    ],
+    name: "Case Studies",
+    link: "/case-studies",
+    submenu: [],
   },
   {
-    name: "Learn",
-    link: "/learn",
+    name: "Resources",
+    link: "/resources",
     submenu: [
       {
         name: "Our Blog",
@@ -95,7 +74,7 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "CONTACT US",
+    name: "Schedule a Call",
     link: "/contact",
     submenu: [],
   },

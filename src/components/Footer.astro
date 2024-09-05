@@ -23,7 +23,9 @@ import { Image } from "astro:assets";
 const { pathname } = Astro.url;
 ---
 
-<footer class="relative bg-gradient-to-b from-primary-400 to-primary-dark-800">
+<footer
+  class="relative bg-gradient-to-b from-primary-dark-500 to-primary-dark-800"
+>
   <div
     class="px-4 pt-24 pb-16 lg:pb-2 md:pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
   >
@@ -54,9 +56,7 @@ const { pathname } = Astro.url;
       </div>
       <div class="grid grid-cols-2 gap-9 lg:col-span-4 lg:grid-cols-4">
         <div>
-          <p class="font-bold tracking-wide text-primary-dark/90">
-            Quick Links
-          </p>
+          <p class="font-bold tracking-wide text-accent-200">Quick Links</p>
           <ul class="mt-2 space-y-2">
             <li>
               <a
@@ -96,7 +96,7 @@ const { pathname } = Astro.url;
           </ul>
         </div>
         <div class="text-right lg:text-left">
-          <p class="font-bold tracking-wide text-primary-dark/90">Services</p>
+          <p class="font-bold tracking-wide text-accent-200">Services</p>
           <ul class="mt-2 space-y-2">
             <li>
               <a
@@ -136,7 +136,7 @@ const { pathname } = Astro.url;
           </ul>
         </div>
         <div>
-          <p class="font-bold tracking-wide text-primary-dark/90">About</p>
+          <p class="font-bold tracking-wide text-accent-200">About</p>
           <ul class="mt-2 space-y-2">
             <li>
               <a
@@ -186,7 +186,7 @@ const { pathname } = Astro.url;
           {
             LOCATIONS.map((location, index) => (
               <div class="text-right lg:text-left bg-white/20 rounded p-3">
-                <p class="font-bold tracking-wide text-primary-dark/90">
+                <p class="font-bold tracking-wide text-accent-200">
                   {location.title}
                 </p>
                 <a

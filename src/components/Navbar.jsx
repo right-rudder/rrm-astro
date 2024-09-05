@@ -83,14 +83,12 @@ const Navbar = ({ pathname }) => {
     <nav className="w-full h-0 sticky inset-0 z-30 font-sans tracking-wider">
       <div
         className={`${
-          navBar || openMobile
-            ? "bg-primary-dark-600/80 backdrop-blur"
-            : "bg-primary-dark-600"
+          navBar || openMobile ? "bg-primary-dark-700/95" : "bg-transparent"
         } duration-500`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
           <div
-            className={`lg:h-24 relative flex h-20 items-center justify-between transition-all`}
+            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-28"} relative flex h-20 items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
@@ -101,7 +99,7 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="NextGen Logo"
-                  className="z-10 object-contain lg:h-20 h-20 w-3/4 lg:w-auto"
+                  className={`${navBar || openMobile ? "lg:h-20 lg:w-auto" : "lg:h-24 lg:w-full"}z-10 object-contain h-20 w-3/4 duration-500`}
                 />
               </a>
               <div className="hidden lg:flex justify-center w-full">
@@ -109,14 +107,14 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "decoration-transparent underline" : ""} font-sans1 relative group last:no-underline last:px-0`}
+                      className={`${isActive(item, pathname) ? "decoration-transparent underline font-bold" : ""} uppercase font-sans font-medium relative group last:no-underline last:px-0`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
                       {item.link ? (
                         <a
                           href={item.link}
-                          className="text-white font-normal text-xl duration-300 hover:underline decoration-accent decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-bl-lg group-last:rounded-tr-lg group-last:hover:bg-white group-last:hover:no-underline"
+                          className="text-white font-sans1 font-semibold text-lg duration-300 hover:underline decoration-accent decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-3 group-last:px-5 group-last:rounded-sm group-last:hover:bg-accent-100 group-last:hover:no-underline"
                         >
                           <span className="relative z-10">{item.name}</span>
                         </a>
@@ -263,7 +261,7 @@ const Navbar = ({ pathname }) => {
         </a>
 
         <div
-          className={`absolute w-full h-40 bg-accent/60 top-0 z-30 duration-500 ease-in-out  ${
+          className={`absolute w-full h-44 bg-primary-dark-400/60 top-0 z-30 duration-500 ease-in-out  ${
             openMobile
               ? "translate-x-0 delay-300 opacity-90"
               : "-translate-x-full opacity-0"
