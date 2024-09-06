@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import ppc from "../../data/ppc";
+import Header from "../../components/Header.astro";
+import Content from "../../components/Content.astro";
+
+const { data } = ppc;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <Content data={data.whatsPpc} />
+</BaseLayout>

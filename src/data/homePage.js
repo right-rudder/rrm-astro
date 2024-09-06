@@ -182,7 +182,7 @@ const homePage = {
 
     services: {
       upperHeading: "Services",
-      heading: `Our Digital Marketing <strong class="text-primary-dark-400">Expertise</strong>`,
+      heading: `Our Digital Marketing <strong class="text-accent-100">Expertise</strong>`,
       servs: [
         {
           name: "Web Design & Development",

@@ -13,8 +13,8 @@ if (!images[data.imagePath])
 ---
 
 <header
-  class="relative isolate pt-14 overflow-hidden h-[40vh] lg:h-screen-3/4 text-white flex
-    items-center justify-center align-middle"
+  class="relative isolate pt-6 overflow-hidden h-screen md:h-screen-3/4 text-white flex
+    items-center justify-center align-middle font-sans"
 >
   <Image
     src={images[data.imagePath]()}
@@ -23,22 +23,35 @@ if (!images[data.imagePath])
     quality={100}
   />
 
-  <div class="absolute inset-0 bg-black/40 -z-0"></div>
+  <div
+    class="absolute inset-0 bg-gradient-to-b from-primary-dark/40 to-primary-dark/50 -z-0"
+  >
+  </div>
   {
     (data.headerH1 || data.headerH2) && (
       <div class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center">
         {data.headerH1 && (
           <h1
-            class="text-5xl md:text-6xl lg:text-7xl xl:text-9xl px-4 lg:px-12 text-center font-medium tracking-normal text-gray-100"
+            class="text-4xl md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal text-gray-100"
             set:html={data.headerH1}
           />
         )}
-        {data.headerH1 && (
-          <h2
-            class="text-2xl lg:text-3xl p-3 lg:p-6 text-center tracking-wide font-sans2"
-            set:html={data.headerH2}
+        {data.paragraph && (
+          <p
+            class="text-xl mt-3 font-semibold tracking-wide text-center max-w-3xl"
+            set:html={data.paragraph}
           />
         )}
+        <div class="mt-6 flex flex-wrap justify-center align-middle items-center gap-6 z-10">
+          {data.buttons.map((btn) => (
+            <a
+              href={btn.link}
+              class={`${btn.primary ? "btn-primary" : "btn-white"} w-full md:w-auto`}
+            >
+              {btn.name}
+            </a>
+          ))}
+        </div>
       </div>
     )
   }

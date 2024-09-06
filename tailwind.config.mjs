@@ -59,13 +59,14 @@ export default {
         "screen-mobile": "92vh", //depends on menu height
       }),
       keyframes: {
-        "slow-zoom": {
-          "0%, 100%": { transform: "scale(1)" },
-          "50%": { transform: "scale(1.1)" },
+        zoom: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.2)" },
         },
       },
       animation: {
-        "slow-zoom": "slow-zoom 30s infinite",
+        "slow-zoom": "zoom 45s alternate infinite ease-in-out",
+        "mid-zoom": "zoom 18s alternate infinite ease-in-out",
       },
     },
   },
