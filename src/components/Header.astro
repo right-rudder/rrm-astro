@@ -42,16 +42,18 @@ if (!images[data.imagePath])
             set:html={data.paragraph}
           />
         )}
-        <div class="mt-6 flex flex-wrap justify-center align-middle items-center gap-6 z-10">
-          {data.buttons.map((btn) => (
-            <a
-              href={btn.link}
-              class={`${btn.primary ? "btn-primary" : "btn-white"} w-full md:w-auto`}
-            >
-              {btn.name}
-            </a>
-          ))}
-        </div>
+        {data.buttons && (
+          <div class="mt-6 flex flex-wrap justify-center align-middle items-center gap-6 z-10">
+            {data.buttons.map((btn) => (
+              <a
+                href={btn.link}
+                class={`${btn.primary ? "btn-primary" : "btn-white"} w-full md:w-auto`}
+              >
+                {btn.name}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     )
   }
