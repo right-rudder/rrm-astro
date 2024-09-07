@@ -22,8 +22,8 @@ export default {
         ],
       },
       colors: {
-        "primary-50": "#ebf1fa",
-        "primary-100": "#ccdbf2",
+        "primary-50": "#fbfcfe",
+        "primary-100": "#ebf1fa",
         "primary-200": "#ccdbf2",
         "primary-300": "#afc7e9",
         "primary-400": "#739cd9",

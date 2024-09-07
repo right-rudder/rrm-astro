@@ -98,8 +98,8 @@ const Navbar = ({ pathname }) => {
               >
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
-                  alt="NextGen Logo"
-                  className={`${navBar || openMobile ? "lg:h-20 lg:w-auto" : "lg:h-24 lg:w-full"}z-10 object-contain h-20 w-3/4 duration-500`}
+                  alt="Right Rudder Marketing Logo"
+                  className={`${navBar || openMobile ? "h-20 w-3/4 lg:w-auto" : "h-[5.5rem] w-5/6 lg:w-full"}z-10 object-contain duration-500`}
                 />
               </a>
               <div className="hidden lg:flex justify-center w-full">

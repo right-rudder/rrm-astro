@@ -75,6 +75,106 @@ const ppc = {
         ],
       },
     },
+
+    warningCTA: {
+      icon: "M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z",
+      heading: "Don't waste your money.",
+      description:
+        "Most PPC campaigns fail because flight school owners fail to understand how the Google Ads platform actually works to get leads.",
+      button: {
+        text: "Schedule a Call",
+        link: "/contact",
+        primary: true,
+      },
+    },
+
+    rightWay: {
+      imagePath: "/src/assets/andrew-ruiz--ajZ_Xzeqe4-unsplash.jpg",
+      imageAlt: "Right Rudder Marketing team on the runway",
+      upperHeading: "How to do it right",
+      heading: "What's the right way to go about running PPC Ads?",
+      paragraphs: [
+        "PPC ads are a great way to get in front of prospective students that are not in your immediate network. But it's important to understand how the Google Ads platform works to get leads.",
+        "By understanding how the Google Ads platform works, you can create ads that are relevant to the user that is searching for flight schools in your area. This will help you get more leads and more students.",
+        "Google wants to make sure that even paid listings are relevant to the user that is searching. So the quality of your ads and the page that people land on is all relevant to where you get placed in paid listings, along with the cost per click you're willing to spend. If a customer is searching for “how to become a pilot”, your ad isn't going to work well if it: ",
+      ],
+      list: {
+        items: [
+          {
+            icon: "m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+            title: "Not relevant Headline.",
+            description:
+              "Doesn't have a headline that matches the user search term (ie. flight school, pilot training, etc.). Headlines are the first thing a user sees and must grab their attention and curiosity.",
+          },
+          {
+            icon: "m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+            title: "Unappealing ad copy.",
+            description:
+              "Doesn't give the viewer an incentive to call now and check your flight school out. A great ad copy will give the viewer a reason to call now and check your flight school out. Either by offering an exiting experience thought flying.",
+          },
+          {
+            icon: "m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+            title: "Not relevant Unique Selling Proposition (USP).",
+            description:
+              "Doesn't give them a reason to choose your flight school over others. You need to have a unique selling proposition that makes your flight school stand out from the rest. This could be your location, your instructors, your aircraft, or your training program.",
+          },
+        ],
+      },
+      afterListParagraphs: [
+        "The same goes with the page that your customers go to when clicking your ad. It needs to be relevant. If a customer is searching for “how to become a pilot”, your ad isn't going to work well if the page they land on is your homepage. It needs to be a page that is relevant to the search term.",
+        "If this isn't done correctly you're back to square one. You're spending a lot of money paying more for ads than you need to pay and you're likely getting fewer calls than you should be. If the ad and landing page content doesn't answer the specific question or query they typed into Google's search bar, then you better believe it's unlikely they'll be reaching out to you.",
+        "So what's the right way to go about doing Google ads? It's to understand how the Google Ads platform works and how to create ads that are relevant to the user that is searching for flight schools in your area.",
+      ],
+      button: {
+        text: "Schedule a Call with the Experts",
+        link: "/contact",
+        primary: true,
+      },
+    },
+
+    features: {
+      upperHeading: "Our Process",
+      heading: "The Right Rudder Marketing Method",
+      description:
+        "Engineer multiple ad groups and campaigns and campaigns. Structure keywords, negative keywords, and locations properly to fit your ideal student pilot. Let's get your flight school more students! We create and manage pay-per-click advertising campaigns that drive traffic, leads, and sales to your business. Our PPC experts use their knowledge and experience to create a custom PPC strategy for your flight school.",
+      features: [
+        {
+          title: "Google Ad Account Audit",
+          description:
+            "We asses all services you provide and find a space where you can thrive online with proper keywords. We'll use the keywords that your potential clients use to help match you together.",
+        },
+        {
+          title: "Focused PPC Keyword Strategy",
+          description:
+            "We perform an in-depth competitive analysis to create a tailor-made and winning SEO strategy. Most competitors use automated tools and miss out on context. We understand the flight training market thoroughly and specialize in helping pilot training academies thrive.",
+        },
+        {
+          title: "Landing Page Creation",
+          description:
+            "We examine factors that Google considers when ranking your website. We take it a notch further by focusing on how Google ranks flight school websites to see areas we can improve.",
+        },
+        {
+          title: "Conversion & Tracking Setup",
+          description:
+            "We improve everything on the website that affects your rankings. Optimization ranges from meta descriptions, title tags, user experience optimization.",
+        },
+        {
+          title: "Launch The Ad Campaign",
+          description:
+            "We create content that provides value to the reader. It's easy to read, relevant, and no other website will have a website like yours.",
+        },
+        {
+          title: "Ad Campaign Optimization",
+          description:
+            " Link building helps you rank on search engines. It helps search engines categorize your website as relevant. We connect you to major sites to improve your rankings organically by creating content your flight school audience will like. ",
+        },
+      ],
+      button: {
+        text: "Schedule a Call with the Experts",
+        link: "/contact",
+        primary: true,
+      },
+    },
   },
 };
 export default ppc;

@@ -4,6 +4,9 @@ import HeaderScreen from "../../components/HeaderScreen.astro";
 import ppc from "../../data/ppc";
 import Header from "../../components/Header.astro";
 import Content from "../../components/Content.astro";
+import WarningCTA from "../../components/WarningCTA.astro";
+import Content2 from "../../components/Content2.astro";
+import Features from "../../components/Features.astro";
 
 const { data } = ppc;
 ---
@@ -17,4 +20,10 @@ const { data } = ppc;
   <Header data={data.header} />
 
   <Content data={data.whatsPpc} />
+
+  <WarningCTA data={data.warningCTA} />
+
+  <Content2 data={data.rightWay} />
+
+  <Features data={data.features} />
 </BaseLayout>
