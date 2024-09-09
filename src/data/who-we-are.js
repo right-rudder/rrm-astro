@@ -61,6 +61,118 @@ const whoWeAre = {
       ],
     },
 
+    ourValues: {
+      upperHeading: "Our Values",
+      heading: "We Believe in the Power of Aviation",
+      descriptions: [
+        `Just like the aviation expression <strong>"Airspeed is life. Altitude is insurance"</strong> our business model follows the same principles. For Right Rudder Marketing, <strong>S.P.E.E.D.</strong> is how we run our company.`,
+        `Flying <strong>H.I.G.H.</strong> is how we remain in business long term. We're committed to the aviation community and we are here to serve the flight training industry.`,
+      ],
+      quote: "Airspeed is life. Altitude is insurance.",
+      values2: [
+        {
+          title: "Strengthen",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Strengthen one another. Our actions speak louder than words. We treat our clients, our partners, our vendors, and our team with respect. We strengthen one another through our teamwork and collaboration.",
+        },
+        {
+          title: "Position",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Position our flight schools partners for positive growth. We prioritize our actions by their impactfulness.",
+        },
+        {
+          title: "Expect",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Expect nothing but the best from one another. We set clear expectations of our needs and our goals.",
+        },
+        {
+          title: "Exude",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Exude expertise. We continuously improve and are experts in our trade. We commit to consistent training in order for us to...",
+        },
+        {
+          title: "Deliver",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description: "Deliver world class results.",
+        },
+      ],
+      values1: [
+        {
+          title: "Help",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Help aviation businesses. The more aviation businesses we partner with to help grow and scale their businesses, Right Rudder Marketing in tandem also grows and scales and climbs in altitude and reach. Our clients are the utmost priority and we need to make sure that we...",
+        },
+        {
+          title: "Implement",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Implement the best systems and processes. We continually research new trends and changes in the marketplace. We innovate our systems and procedures to always give our customers the best results. Through our successes, we...",
+        },
+        {
+          title: "Give Back",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Give back to the aviation community. We always give more than what we receive in return to serve our customers, our customer's customers, and our partners. That way everyone in our immediate circles can...",
+        },
+        {
+          title: "Have Fun",
+          icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
+          description:
+            "Have fun. Aviation is an industry of love. People choose to become aviators due to their passions and love of flight. We always have fun doing what we do because we love what we do. We love seeing more people flying and achieving their goals.",
+        },
+      ],
+    },
+
+    ourClients: {
+      heading: "Our Clients Love Us",
+      description:
+        "Our clients are the best in the business. They are the top flight schools in the country and they trust us to help them grow and scale their businesses. We are proud to be a part of their success.",
+      clients: [
+        {
+          name: "NextGen Flight Academy",
+          imagePath: "/src/assets/NG Logo White Background 2.webp",
+          link: "https://flyhere.aero/",
+          invert: true,
+        },
+        {
+          name: "Summit Flight Academy",
+          imagePath: "/src/assets/SFA-logo.webp",
+          link: "https://www.summitflightacademy.com/",
+          invert: false,
+        },
+        {
+          name: "High Tide Aviation",
+          imagePath:
+            "/src/assets/high-tide-aviation-logo-gradation.CFCXi2nO.png",
+          link: "https://hightideaviation.com/",
+          invert: false,
+        },
+        {
+          name: "Sun City Aviation",
+          imagePath: "/src/assets/sun-city-white-text-logo.webp",
+          link: "https://suncityaviation.com/",
+          invert: false,
+        },
+        {
+          name: "Pitcairn Flight Academy",
+          imagePath: "/src/assets/pitcairn-logo-400-white.webp",
+          link: "https://pitcairnflightacademy.com/",
+          invert: false,
+        },
+        {
+          name: "Simplifly",
+          imagePath: "/src/assets/simplifly_2.webp",
+          link: "https://simpliflyco.com/",
+          invert: false,
+        },
+      ],
+    },
+
     teamGrid: {
       upperHeading: "Our Team",
       heading: "Expert Marketers & Web Developers",
@@ -194,15 +306,24 @@ const whoWeAre = {
       ],
     },
 
-    enrollCTA: {
-      heading: "Come Visit Us",
-      subheading:
-        "Book an intro flight over iconic Southern California sights and see if flight school is right for you",
-      linkText: "Fly with NextGen",
-      linkUrl: "/intro-flight",
-      imagePath:
-        "/src/assets/student-pilot-takes-piper-cherokee-out-from-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
-      imageAlt: "nextgen-flight-academy-staff-flying-over-riverside-ca",
+    flyWithUsCTA: {
+      imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+      imageAlt: "Right Rudder Marketing team on the runway",
+      headerH1: `<span class="text-primary">Fly with digital marketing</br> experts</span> that know the flight training industry.`,
+      paragraph:
+        "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
+      buttons: [
+        {
+          name: "Call Us",
+          link: "tel:1-314-804-1200",
+          primary: false,
+        },
+        {
+          name: "Book a Strategy Call",
+          link: "/contact",
+          primary: false,
+        },
+      ],
     },
   },
 };

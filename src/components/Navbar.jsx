@@ -88,7 +88,7 @@ const Navbar = ({ pathname }) => {
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
           <div
-            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-28"} relative flex h-20 items-center justify-between transition-all`}
+            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-28"} relative flex h-20 align-middle justify-between transition-all`}
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
@@ -102,7 +102,7 @@ const Navbar = ({ pathname }) => {
                   className={`${navBar || openMobile ? "h-20 w-3/4 lg:w-auto" : "h-[5.5rem] w-5/6 lg:w-full"}z-10 object-contain duration-500`}
                 />
               </a>
-              <div className="hidden lg:flex justify-center w-full">
+              <div className="hidden lg:flex justify-end w-full">
                 <ul className="flex justify-between align-middle w-9/12 items-center">
                   {navbarLinks.map((item, index) => (
                     <li

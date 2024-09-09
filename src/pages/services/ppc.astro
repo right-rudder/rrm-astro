@@ -7,6 +7,7 @@ import Content from "../../components/Content.astro";
 import WarningCTA from "../../components/WarningCTA.astro";
 import Content2 from "../../components/Content2.astro";
 import Features from "../../components/Features.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
 
 const { data } = ppc;
 ---
@@ -26,4 +27,6 @@ const { data } = ppc;
   <Content2 data={data.rightWay} />
 
   <Features data={data.features} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
 </BaseLayout>

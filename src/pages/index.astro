@@ -8,6 +8,7 @@ import CaseStudies from "../components/CaseStudies.astro";
 import Testimonials from "../components/Testimonials.astro";
 import WhyUs from "../components/WhyUs.astro";
 import ServicesGrid from "../components/ServicesGrid.astro";
+import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 
 const { data } = homePage;
 ---
@@ -50,4 +51,6 @@ const { data } = homePage;
     heading={data.services.heading}
     services={data.services.servs}
   />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
 </BaseLayout>

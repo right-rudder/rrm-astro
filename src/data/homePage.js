@@ -216,6 +216,26 @@ const homePage = {
         },
       ],
     },
+
+    flyWithUsCTA: {
+      imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+      imageAlt: "Right Rudder Marketing team on the runway",
+      headerH1: `<span class="text-primary">Fly with digital marketing</br> experts</span> that know the flight training industry.`,
+      paragraph:
+        "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
+      buttons: [
+        {
+          name: "Call Us",
+          link: "tel:1-314-804-1200",
+          primary: false,
+        },
+        {
+          name: "Book a Strategy Call",
+          link: "/contact",
+          primary: false,
+        },
+      ],
+    },
   },
 };
 export default homePage;

@@ -7,6 +7,10 @@
     @apply text-center uppercase font-semibold py-3 px-6 bg-primary w-fit text-white rounded-sm hover:bg-primary-dark-800 duration-300;
   }
 
+  .btn-accent {
+    @apply text-center uppercase font-semibold py-3 px-6 bg-accent w-fit text-primary-dark hover:text-white rounded-sm hover:bg-primary-dark-800 duration-300;
+  }
+
   .btn-primary-dark {
     @apply text-center uppercase font-medium py-3 px-6 bg-primary-dark w-fit text-white rounded-sm hover:bg-accent duration-300;
   }
