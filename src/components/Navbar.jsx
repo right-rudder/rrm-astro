@@ -11,7 +11,6 @@ import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
   PHONE_NUMBER,
-  TIKTOK_URL,
   EMAIL_ADDRESS,
   LINKEDIN_URL,
 } from "../consts.ts";
@@ -278,7 +277,7 @@ const Navbar = ({ pathname }) => {
               {item.link ? (
                 <a
                   href={item.link}
-                  className="font-light p-5 block text-white text-xl duration-300 border-accent whitespace-nowrap group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center group-last:mx-5"
+                  className="font-light p-5 block text-white text-xl duration-300 border-accent whitespace-nowrap group-last:bg-accent group-last:font-medium group-last:mt-12 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
@@ -286,7 +285,7 @@ const Navbar = ({ pathname }) => {
                 <div className="font-light relative p-5 w-full justify-center flex cursor-pointer text-white text-xl duration-300  border-accent whitespace-nowrap">
                   <p>{item.name}</p>
                   <div
-                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-accent/40 -rotate-90" : "bg-accent/20 rotate-90"} 
+                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary/30 -rotate-90" : "bg-primary/30 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward

@@ -8,6 +8,28 @@ import "@fontsource-variable/merriweather-sans";
 import Navbar from "../components/Navbar";
 import ChatWidget from "../components/ChatWidget.astro";
 import Banner from "../components/Banner.astro";
+import SimpleFooter from "../components/SimpleFooter.astro";
+import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
+
+const flyWithUsCTA = {
+  imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+  imageAlt: "Right Rudder Marketing team on the runway",
+  headerH1: `<span class="text-primary">Fly with digital marketing</br> experts</span> that know the flight training industry.`,
+  paragraph:
+    "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
+  buttons: [
+    {
+      name: "Call Us",
+      link: "tel:1-314-804-1200",
+      primary: false,
+    },
+    {
+      name: "Book a Strategy Call",
+      link: "/contact",
+      primary: false,
+    },
+  ],
+};
 
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
@@ -25,11 +47,11 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
   </head>
   <body class="font-sans bg-primary-100">
     <Banner class="z-40" />
-    <Navbar pathname={pathname} client:load />
     <main>
       <slot />
     </main>
-    <Footer />
+    <FlyWithUsCTA data={flyWithUsCTA} />
+    <SimpleFooter />
     <!-- <ChatWidget /> -->
   </body>
 </html>

@@ -1,0 +1,19 @@
+---
+import Header from "../../components/Header.astro";
+import FunnelLayout from "../../layouts/FunnelLayout.astro";
+import DownloadCTA from "../../components/DownloadCTA.astro";
+import sopTemplates from "../../data/sop-templates";
+
+const { data } = sopTemplates;
+---
+
+<FunnelLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <DownloadCTA data={data.downloadCTA} />
+</FunnelLayout>

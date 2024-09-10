@@ -29,12 +29,14 @@ export const LOCATIONS = [
 
 // CHANGE client business info
 export const PHONE_NUMBER = "1-314-804-1200";
-export const AIRPORT = "Riverside Municipal Airport";
-export const ADDRESS_LINE_1 = "6951 Flight Road, Suite 106";
-export const ADDRESS_LINE_2 = "Riverside, CA 92504";
-export const FACEBOOK_URL = "https://www.facebook.com/FlyNextGen/";
-export const INSTAGRAM_URL = " https://www.instagram.com/nextgenflightacademy/";
-export const LINKEDIN_URL =
-  "https://www.linkedin.com/company/nextgen-flight-academy";
-export const TIKTOK_URL = "";
-export const EMAIL_ADDRESS = "";
+
+export const ADDRESS_LINE_1 = "4411 Woodson Road Suite 101A";
+export const ADDRESS_LINE_2 = "St. Louis, MO 63134";
+export const FACEBOOK_URL = "https://www.facebook.com/rightruddermarketing";
+export const INSTAGRAM_URL = "https://www.instagram.com/rightruddermarketing/";
+export const LINKEDIN_URL = "http://linkedin.com/company/rightruddermarketing";
+export const TWITTER_URL = "https://twitter.com/rightruddermktg";
+export const YOUTUBE_URL = "https://www.youtube.com/@rightruddermarketing";
+export const WHATSAPP_URL = "https://wa.me/13143582100";
+export const GITHUB_URL = "https://github.com/right-rudder/";
+export const EMAIL_ADDRESS = "info@rightruddermarketing.com";

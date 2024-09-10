@@ -1,7 +1,11 @@
 export const mobileNavbarLinks = [
   {
+    name: "Case Studies",
+    link: "/case-studies",
+    submenu: [],
+  },
+  {
     name: "Services",
-    link: "/services",
     submenu: [
       {
         name: "Web Design & Development",
@@ -26,9 +30,12 @@ export const mobileNavbarLinks = [
     ],
   },
   {
-    name: "Learn",
-    link: "/learn",
+    name: "Resources",
     submenu: [
+      {
+        name: "Flight School Handbook",
+        link: "/resources/flight-school-handbook",
+      },
       {
         name: "Our Blog",
         link: "/blog",
@@ -39,34 +46,33 @@ export const mobileNavbarLinks = [
       },
       {
         name: "Marketing Checklist",
-        link: "/learn/marketing-checklist",
+        link: "/resources/marketing-checklist",
       },
       {
         name: "Flight School Tips",
-        link: "/learn/flight-school-tips",
+        link: "/resources/flight-school-tips",
       },
       {
         name: "Flight School Keywords",
-        link: "/learn/flight-school-keywords",
+        link: "/resources/flight-school-keywords",
       },
       {
         name: "SOP Templates",
-        link: "/learn/sop-templates",
+        link: "/resources/sop-templates",
       },
       {
         name: "Google Business Profile",
-        link: "/learn/gmb",
+        link: "/resources/gmb",
       },
       {
         name: "Check Online Presence",
-        link: "/learn/check-online-presence",
+        link: "/resources/check-online-presence",
       },
     ],
   },
 
   {
     name: "About",
-    link: "/about",
     submenu: [
       {
         name: "Who We Are",

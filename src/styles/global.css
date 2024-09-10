@@ -4,11 +4,11 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase font-semibold py-3 px-6 bg-primary w-fit text-white rounded-sm hover:bg-primary-dark-800 duration-300;
+    @apply text-center uppercase font-bold py-3 px-6 bg-primary w-fit text-white rounded-sm hover:bg-primary-dark-800 duration-300;
   }
 
   .btn-accent {
-    @apply text-center uppercase font-semibold py-3 px-6 bg-accent w-fit text-primary-dark hover:text-white rounded-sm hover:bg-primary-dark-800 duration-300;
+    @apply text-center uppercase font-bold py-3 px-6 bg-accent w-fit text-primary-dark hover:text-white rounded-sm hover:bg-primary-dark-800 duration-300;
   }
 
   .btn-primary-dark {

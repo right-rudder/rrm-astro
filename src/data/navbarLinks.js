@@ -9,8 +9,8 @@ export const navbarLinks = [
     link: "/resources",
     submenu: [
       {
-        name: "Our Blog",
-        link: "/blog",
+        name: "Flight School Handbook",
+        link: "/resources/flight-school-handbook",
       },
       {
         name: "Webinars",
@@ -18,27 +18,31 @@ export const navbarLinks = [
       },
       {
         name: "Marketing Checklist",
-        link: "/learn/marketing-checklist",
+        link: "/resources/marketing-checklist",
       },
       {
         name: "Flight School Tips",
-        link: "/learn/flight-school-tips",
+        link: "/resources/flight-school-tips",
       },
       {
         name: "Flight School Keywords",
-        link: "/learn/flight-school-keywords",
+        link: "/resources/flight-school-keywords",
       },
       {
         name: "SOP Templates",
-        link: "/learn/sop-templates",
+        link: "/resources/sop-templates",
       },
       {
         name: "Google Business Profile",
-        link: "/learn/gmb",
+        link: "/resources/gmb",
       },
       {
         name: "Check Online Presence",
-        link: "/learn/check-online-presence",
+        link: "/resources/check-online-presence",
+      },
+      {
+        name: "Our Blog",
+        link: "/blog",
       },
     ],
   },
