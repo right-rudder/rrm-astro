@@ -45,20 +45,23 @@ const ppc = {
           {
             icon: "M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z",
             title: "Stagnant or slow sales.",
-            description:
+            descriptions: [
               "You're not getting the leads you need to keep your flight school running.",
+            ],
           },
           {
             icon: "M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z",
             title: "PPC ads not converting.",
-            description:
+            descriptions: [
               "You are spending hundreds and thousands of dollars on Google Ads with little to no results.",
+            ],
           },
           {
             icon: "M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z",
             title: "Your marketing agency doesn't understand your business.",
-            description:
+            descriptions: [
               "You're tired of explaining how the flight training process and your pilot academy works to your marketing agency.",
+            ],
           },
         ],
       },
@@ -103,20 +106,23 @@ const ppc = {
           {
             icon: "m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
             title: "Not relevant Headline.",
-            description:
+            descriptions: [
               "Doesn't have a headline that matches the user search term (ie. flight school, pilot training, etc.). Headlines are the first thing a user sees and must grab their attention and curiosity.",
+            ],
           },
           {
             icon: "m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
             title: "Unappealing ad copy.",
-            description:
+            descriptions: [
               "Doesn't give the viewer an incentive to call now and check your flight school out. A great ad copy will give the viewer a reason to call now and check your flight school out. Either by offering an exiting experience thought flying.",
+            ],
           },
           {
             icon: "m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
             title: "Not relevant Unique Selling Proposition (USP).",
-            description:
+            descriptions: [
               "Doesn't give them a reason to choose your flight school over others. You need to have a unique selling proposition that makes your flight school stand out from the rest. This could be your location, your instructors, your aircraft, or your training program.",
+            ],
           },
         ],
       },

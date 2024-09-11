@@ -67,7 +67,7 @@ if (!images[data.imagePath])
       </div>
     </div>
     <div
-      class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+      class="-ml-12 -mt-12 p-12 lg:sticky lg:top-8 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
     >
       <Image
         src={images[data.imagePath]()}
@@ -84,7 +84,7 @@ if (!images[data.imagePath])
           <div>
             {
               data.paragraphs.map((paragraph) => (
-                <p class="mt-2">{paragraph}</p>
+                <p class="mt-2" set:html={paragraph} />
               ))
             }
           </div>
@@ -115,7 +115,9 @@ if (!images[data.imagePath])
                         <strong class="font-bold text-gray-900 tracking-tight uppercase">
                           {item.title}
                         </strong>{" "}
-                        {item.description}
+                        {item.descriptions.map((dec) => (
+                          <p class="mb-2" set:html={dec} />
+                        ))}
                       </span>
                     </li>
                   ))}

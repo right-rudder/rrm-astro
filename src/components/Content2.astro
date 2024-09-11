@@ -99,7 +99,9 @@ if (!images[data.imagePath])
                     <strong class="font-bold text-gray-900 tracking-tight uppercase">
                       {item.title}
                     </strong>{" "}
-                    {item.description}
+                    {item.descriptions.map((dec) => (
+                      <p class="mb-2" set:html={dec} />
+                    ))}
                   </span>
                 </li>
               ))}
