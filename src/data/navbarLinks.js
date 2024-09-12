@@ -6,7 +6,7 @@ export const navbarLinks = [
   },
   {
     name: "Resources",
-    link: "/blog",
+    link: "/notams",
     submenu: [
       /* {
         name: "Flight School Handbook",
@@ -42,7 +42,7 @@ export const navbarLinks = [
       }, */
       {
         name: "Our Blog",
-        link: "/blog",
+        link: "/notams",
       },
     ],
   },

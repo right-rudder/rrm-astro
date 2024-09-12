@@ -150,13 +150,20 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
-"choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md": {
-	id: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md";
-  slug: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot";
+		"notams": {
+"right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md": {
+	id: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md";
+  slug: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
+  collection: "notams";
+  data: any
+} & { render(): Render[".md"] };
+"why-you-should-ask-for-reviews-from-your-flight-students.md": {
+	id: "why-you-should-ask-for-reviews-from-your-flight-students.md";
+  slug: "why-you-should-ask-for-reviews-from-your-flight-students";
+  body: string;
+  collection: "notams";
+  data: any
 } & { render(): Render[".md"] };
 };
 "webinar": {
@@ -165,7 +172,7 @@ declare module 'astro:content' {
   slug: "example-webinar";
   body: string;
   collection: "webinar";
-  data: InferEntrySchema<"webinar">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -177,5 +184,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }

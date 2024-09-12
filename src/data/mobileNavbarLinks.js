@@ -42,7 +42,7 @@ export const mobileNavbarLinks = [
       },
       {
         name: "Our Blog",
-        link: "/blog",
+        link: "/notams",
       },
       {
         name: "Webinars",
