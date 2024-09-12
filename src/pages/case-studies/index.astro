@@ -1,0 +1,26 @@
+---
+import CaseStudies from "../../components/CaseStudies.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import caseStudies from "../../data/case-studies";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const { data } = caseStudies;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+
+  <CaseStudies
+    upperHeading={data.caseStudies.upperHeading}
+    heading={data.caseStudies.heading}
+    cases={data.caseStudies.cases}
+  />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

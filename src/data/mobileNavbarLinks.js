@@ -46,7 +46,7 @@ export const mobileNavbarLinks = [
       },
       {
         name: "Webinars",
-        link: "/webinars",
+        link: "/webinar",
       },
       {
         name: "Marketing Checklist",

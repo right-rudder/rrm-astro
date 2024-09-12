@@ -94,7 +94,7 @@ const homePage = {
             "They also understand aviation and pilots which is a huge help.",
           result:
             "They are now getting flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.",
-          link: "/case-studies/ideal-aviation",
+          link: "/case-studies/simplifly",
           metric1: {
             label: "Leads",
             value: "123%",
