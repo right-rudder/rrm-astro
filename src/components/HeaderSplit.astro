@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+const { content } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+);
+if (!images[content.imagePath]) {
+  throw new Error(
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+  );
+}
+---
+
+<header class="m-6 pt-24 bg-gray-50 flex flex-wrap min-h-[40vw]">
+  <div
+    class="w-full lg:w-1/2 flex flex-col justify-center items-start align-middle px-9 lg:pr-0 lg:pl-20"
+  >
+    <h2
+      class="text-lg lg:text-3xl font-bold tracking-tight uppercase text-accent"
+      set:html={content.headerH2}
+    />
+    <h1
+      class="text-4xl lg:text-7xl font-black tracking-wide text-primary"
+      set:html={content.headerH1}
+    />
+  </div>
+  <div
+    class="w-full mt-6 lg:mt-0 lg:w-1/2 flex justify-center items-center align-middle overflow-hidden"
+  >
+    <Image
+      src={images[content.imagePath]()}
+      alt={content.imageAlt}
+      loading={"eager"}
+      class="w-1/2"
+    />
+  </div>
+</header>

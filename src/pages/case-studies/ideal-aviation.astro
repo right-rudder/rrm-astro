@@ -1,0 +1,26 @@
+---
+import CaseStudies from "../../components/CaseStudies.astro";
+import ContentLong from "../../components/ContentLong.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import SingleTestimonial from "../../components/SingleTestimonial.astro";
+import idealAviation from "../../data/ideal-aviation";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const { data } = idealAviation;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+
+  <ContentLong data={data.caseLong} />
+
+  <SingleTestimonial data={data.testimonial} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

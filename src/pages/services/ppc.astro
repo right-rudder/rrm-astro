@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import ppc from "../../data/ppc";
+import Header from "../../components/Header.astro";
+import Content from "../../components/Content.astro";
+import WarningCTA from "../../components/WarningCTA.astro";
+import Content2 from "../../components/Content2.astro";
+import Features from "../../components/Features.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+
+const { data } = ppc;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <Content data={data.whatsPpc} />
+
+  <WarningCTA data={data.warningCTA} />
+
+  <Content2 data={data.rightWay} />
+
+  <Features data={data.features} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

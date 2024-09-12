@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+
+const homePage = {
+  pageTitle: "Page Not Found | NextGen Flight Academy",
+  pageDescription:
+    "The page you are looking for does not exist.  Please check the URL and try again.",
+  pageKeywords: "404, page not found, nextgen flight academy",
+  header: {
+    imagePath: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash(1).jpg",
+    imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
+    headerH1: `SORRY`,
+    paragraph: "Page Not Found",
+    buttons: [
+      {
+        name: "Home",
+        link: "/",
+        primary: false,
+      },
+    ],
+  },
+};
+---
+
+<BaseLayout
+  siteTitle={homePage.pageTitle}
+  siteDescription={homePage.pageDescription}
+  keywords={homePage.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={homePage.header} />
+</BaseLayout>
