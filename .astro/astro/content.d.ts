@@ -159,6 +159,15 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
+"webinar": {
+"example-webinar.md": {
+	id: "example-webinar.md";
+  slug: "example-webinar";
+  body: string;
+  collection: "webinar";
+  data: InferEntrySchema<"webinar">
+} & { render(): Render[".md"] };
+};
 
 	};
 
