@@ -21,11 +21,15 @@ export const mobileNavbarLinks = [
       },
       {
         name: "Customer Relationship Management(CRM)",
-        link: "/services/crm",
+        link: "https://flightschoolcrm.com/",
       },
-      {
+      /* {
         name: "Media Production",
         link: "/services/media-production",
+      }, */
+      {
+        name: "Complete Marketing Solution",
+        link: "/services/marketing-system",
       },
     ],
   },

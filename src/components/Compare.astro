@@ -1,0 +1,103 @@
+---
+const { data } = Astro.props;
+---
+
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div
+      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-3 divide-y-2 lg:divide-y-0"
+    >
+      <div class="col-span-1 md:col-span-2 lg:col-span-1">
+        <div class="lg:pr-4">
+          <div class="lg:max-w-lg">
+            <p class="text-base font-semibold leading-7 text-primary-700">
+              {data.upperHeading}
+            </p>
+            <h2
+              class="mt-0 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              set:html={data.heading}
+            />
+          </div>
+        </div>
+        <div class="mt-6">
+          {
+            data.descriptions.map((desc) => (
+              <p
+                class="mt-3 text-base leading-7 text-gray-600"
+                set:html={desc}
+              />
+            ))
+          }
+        </div>
+      </div>
+      <div class="col-span-1">
+        <h5 class="text-2xl font-semibold text-center uppercase text-red-500">
+          {data.others.title}
+        </h5>
+        <dl class="flex flex-col justify-between h-full text-base lg:gap-y-16">
+          {
+            data.others.items.map((value) => (
+              <div class="relative pl-9 mt-6">
+                <dt class="font-bold text-gray-900">
+                  <div class="absolute left-0 top-1 font-black -z-0 text-red-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d={value.icon}
+                      />
+                    </svg>
+                  </div>
+                  {value.title}
+                </dt>
+                <dd class=" leading-7">{value.description}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+      <div class="col-span-1">
+        <h5 class="text-2xl font-semibold text-center uppercase text-primary">
+          {data.rrm.title}
+        </h5>
+        <dl
+          class="flex flex-col justify-between h-full text-base text-gray-600 lg:gap-y-16"
+        >
+          {
+            data.rrm.items.map((value) => (
+              <div class="relative pl-9 mt-6">
+                <dt class="font-bold text-gray-900">
+                  <div class="absolute left-0 top-1 font-black text-5xl -z-0 text-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d={value.icon}
+                      />
+                    </svg>
+                  </div>
+                  {value.title}
+                </dt>
+                <dd class=" leading-7">{value.description}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>

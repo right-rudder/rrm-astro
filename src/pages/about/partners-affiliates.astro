@@ -1,0 +1,37 @@
+---
+import Affiliates from "../../components/Affiliates.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import Partners from "../../components/Partners.astro";
+import Sponsor from "../../components/Sponsor.astro";
+import partnersAffiliates from "../../data/partners-affiliates";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const { data } = partnersAffiliates;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+
+  <Sponsor
+    heading={data.sponsor.heading}
+    organizations={data.sponsor.organizations}
+  />
+
+  <Partners
+    heading={data.memberOf.heading}
+    organizations={data.memberOf.organizations}
+  />
+
+  <Affiliates
+    heading={data.affiliates.heading}
+    organizations={data.affiliates.organizations}
+  />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

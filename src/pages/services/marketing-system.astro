@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import marketingSystem from "../../data/marketing-system";
+import Compare from "../../components/Compare.astro";
+import Partners from "../../components/Partners.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import ContentSteps from "../../components/ContentSteps.astro";
+
+const { data } = marketingSystem;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <Compare data={data.compare} />
+
+  <Partners
+    heading={data.memberOf.heading}
+    organizations={data.memberOf.organizations}
+  />
+  <ContentSteps data={data.marketingSteps} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

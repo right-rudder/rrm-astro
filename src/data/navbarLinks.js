@@ -8,10 +8,10 @@ export const navbarLinks = [
     name: "Resources",
     link: "/resources",
     submenu: [
-      {
+      /* {
         name: "Flight School Handbook",
         link: "/resources/flight-school-handbook",
-      },
+      }, */
       {
         name: "Webinars",
         link: "/webinars",
@@ -20,10 +20,10 @@ export const navbarLinks = [
         name: "Marketing Checklist",
         link: "/resources/marketing-checklist",
       },
-      {
+      /* {
         name: "Flight School Tips",
         link: "/resources/flight-school-tips",
-      },
+      }, */
       {
         name: "Flight School Keywords",
         link: "/resources/flight-school-keywords",
@@ -36,10 +36,10 @@ export const navbarLinks = [
         name: "Google Business Profile",
         link: "/resources/gmb",
       },
-      {
+      /* {
         name: "Check Online Presence",
         link: "/resources/check-online-presence",
-      },
+      }, */
       {
         name: "Our Blog",
         link: "/blog",
@@ -67,14 +67,14 @@ export const navbarLinks = [
         name: "Partners & Affiliates",
         link: "/about/partners-affiliates",
       },
-      {
+      /* {
         name: "Investors",
         link: "/about/investors",
       },
       {
         name: "Careers",
         link: "/about/careers",
-      },
+      }, */
     ],
   },
   {

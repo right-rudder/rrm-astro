@@ -1,0 +1,26 @@
+---
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TestimonialsComponent from "../../components/Testimonials.astro";
+import testimonials from "../../data/testimonials";
+
+const { data } = testimonials;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+
+  <TestimonialsComponent
+    upperHeading={data.testimonials.upperHeading}
+    heading={data.testimonials.heading}
+    quotes={data.testimonials.quotes}
+  />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>
