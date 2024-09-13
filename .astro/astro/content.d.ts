@@ -156,63 +156,63 @@ declare module 'astro:content' {
   slug: "boost-your-seo-with-schema-what-it-is-and-how-to-use-it";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md": {
 	id: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md";
   slug: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md": {
 	id: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md";
   slug: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
 	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
   slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md": {
 	id: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md";
   slug: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md": {
 	id: "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md";
   slug: "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md": {
 	id: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md";
   slug: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md": {
 	id: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md";
   slug: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "why-you-should-ask-for-reviews-from-your-flight-students.md": {
 	id: "why-you-should-ask-for-reviews-from-your-flight-students.md";
   slug: "why-you-should-ask-for-reviews-from-your-flight-students";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
 "webinar": {
@@ -221,7 +221,7 @@ declare module 'astro:content' {
   slug: "example-webinar";
   body: string;
   collection: "webinar";
-  data: any
+  data: InferEntrySchema<"webinar">
 } & { render(): Render[".md"] };
 };
 
@@ -233,5 +233,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }

@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import BaseLayout from "./BaseLayout.astro";
+
+type Props = CollectionEntry<"webinar">["data"];
+
+const { title, author, description, pubDate, updatedDate, heroImage } =
+  Astro.props;
+---
+
+<BaseLayout
+  siteTitle={title + " | Right Rudder Marketing"}
+  siteDescription={description}
+  keywords={description}
+>
+  <div class="h-20 lg:h-28 w-full bg-primary/50 brightness-75"></div>
+
+  <section class="flex justify-center pt-4 pb-20">
+    <article class="mx-auto max-w-4xl">
+      <div class="mb-12 lg:mb-0">
+        {
+          heroImage && (
+            <img
+              class="object-contain h-full w-full"
+              src={heroImage}
+              alt={title}
+            />
+          )
+        }
+      </div>
+      <div class="mx-auto max-w-4xl bg-white prose font-sans py-12 px-5">
+        <div class="title">
+          <div class="date">
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Last updated on <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+          <h1 class="text-5xl m-0 font-sans">{title}</h1>
+          <p class="text-sm font-light">Writen by:</p>
+          <p class="-mt-5 text-base font-medium">{author}</p>
+          <hr />
+        </div>
+        <div class="flex justify-center">
+          <slot />
+        </div>
+      </div>
+    </article>
+  </section>
+</BaseLayout>
