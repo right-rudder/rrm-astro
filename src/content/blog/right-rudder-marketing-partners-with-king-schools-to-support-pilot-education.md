@@ -9,7 +9,7 @@ category: "Business"
 tags: ["Partners", "Announcements"]
 ---
 
-Right Rudder Marketing is proud to announce its new sponsorship with King Schools, a long-standing leader in aviation education. This partnership brings together two organizations dedicated to elevating the aviation industry, each with a unique role in supporting pilot education and training.
+Right Rudder Marketing is proud to announce its new sponsorship with [King Schools](https://kingschools.com/?srsltid=AfmBOoroHRDEDbIUoAFd4vxsQJC1YCg_n3M6j-xWGJeb3QYcpioqx4Xu), a long-standing leader in aviation education. This partnership brings together two organizations dedicated to elevating the aviation industry, each with a unique role in supporting pilot education and training.
 
 For over 50 years, King Schools has provided pilots with innovative, engaging, and comprehensive learning solutions. With a wide range of online courses, video-based knowledge programs, and software designed to make flight training accessible and enjoyable, King Schools continues to be a cornerstone of aviation education in the U.S.
 
@@ -29,4 +29,4 @@ This partnership marks an exciting chapter for Right Rudder Marketing. As we ent
 
 Right Rudder Marketing will play an active role in supporting King Schools' mission to improve flight training and pilot education, helping to make the aviation industry safer and more accessible for everyone.
 
-To learn more about how King Schools and Right Rudder Marketing are working together to enhance pilot education, visit our website or contact us directly.
+To learn more about how King Schools and Right Rudder Marketing are working together to enhance pilot education, visit our [website](https://rightruddermarketing.com/) or [contact us](https://rightruddermarketing.com/contact) directly.

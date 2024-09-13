@@ -29,8 +29,6 @@ Consistency is a huge ranking factor. A steady flow of recent reviews signals to
 
 Beyond the numbers, engagement matters. How actively does your flight school respond to reviews? Google rewards schools that demonstrate active engagement with their student community, turning reviews into a dialogue. Timely and meaningful responses become the wings that propel your school to greater heights in the digital realm. The more detailed and thoughtful the response, the higher your school will surge.
 
-Founder of RRM Tim Jedrek's review for a flight school he flew at
-
 ## Authenticity
 
 Trust is the currency of any relationship, in-person and digital. Google values authentic reviews from genuine students. Create an environment where authentic student experiences are encouraged and highlighted, establishing your flight school's authenticity. This authenticity becomes a powerful force in securing a higher ranking and building trust among potential student pilots.
@@ -43,6 +41,6 @@ Sentiments sway the Google algorithm. Positive sentiments contribute positively,
 
 In the dynamic landscape of digital visibility, understanding and optimizing these dimensions within Google Reviews become the secret ingredients for your flight school's ascent. Tailoring your review strategies to these dimensions doesn't just elevate your ranking; it transforms your school's digital presence, guiding it to new heights in the competitive skies of aviation education. So, gear up for the journey to the top—one review at a time.
 
-Unsure of how to handle this SEO process, or simply don't have the time to take this work into your own hands? Schedule a call with RRM today to outsource that to us.
+Unsure of how to handle this SEO process, or simply don't have the time to take this work into your own hands? [Schedule a call](https://rightruddermarketing.com/contact) with RRM today to outsource that to us.
 
-Or better yet, download our GMB Checklist to make sure you're filling all the criteria!
+Or better yet, download our [GMB Checklist](https://rightruddermarketing.com/resources/gmb) to make sure you're filling all the criteria!

@@ -42,7 +42,7 @@ export const navbarLinks = [
       }, */
       {
         name: "Our Blog",
-        link: "/notams",
+        link: "/blog",
       },
     ],
   },

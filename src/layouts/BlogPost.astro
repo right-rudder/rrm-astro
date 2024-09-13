@@ -3,10 +3,18 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 
-type Props = CollectionEntry<"notams">["data"];
+type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage, category } =
-  Astro.props;
+const {
+  title,
+  author,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  category,
+  tags,
+} = Astro.props;
 ---
 
 <BaseLayout
@@ -42,11 +50,51 @@ const { title, description, pubDate, updatedDate, heroImage, category } =
             }
           </div>
           <h1 class="text-5xl m-0 font-sans">{title}</h1>
-          <p
-            class="bg-primary-600 text-white inline-block px-3 py-1 rounded-md"
-          >
-            {category}
-          </p>
+          <p class="text-sm font-light">Writen by:</p>
+          <p class="-mt-5 text-base font-medium">{author}</p>
+          <div class="flex gap-2">
+            <span
+              class="bg-primary-600 text-white inline-block px-3 py-1 rounded-md"
+            >
+              {category}
+            </span>
+            {
+              tags.map((tag, index) => (
+                <>
+                  {tag === "Partners" && (
+                    <span class="bg-teal-600 text-white inline-block px-3 py-1 rounded-md">
+                      {tag}
+                    </span>
+                  )}
+                  {tag === "Announcements" && (
+                    <span class="bg-accent-700 text-white inline-block px-3 py-1 rounded-md">
+                      {tag}
+                    </span>
+                  )}
+                  {tag === "Google" && (
+                    <span class="bg-red-600 text-white inline-block px-3 py-1 rounded-md">
+                      {tag}
+                    </span>
+                  )}
+                  {tag === "SEO" && (
+                    <span class="bg-primary-dark-400 text-white inline-block px-3 py-1 rounded-md">
+                      {tag}
+                    </span>
+                  )}
+                  {tag === "Schema" && (
+                    <span class="bg-gray-500 text-white inline-block px-3 py-1 rounded-md">
+                      {tag}
+                    </span>
+                  )}
+                  {tag === "GMB" && (
+                    <span class="bg-rose-500 text-white inline-block px-3 py-1 rounded-md">
+                      {tag}
+                    </span>
+                  )}
+                </>
+              ))
+            }
+          </div>
           <hr />
         </div>
         <div class="flex justify-center">
