@@ -151,6 +151,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"5-tips-to-grow-your-flight-school.md": {
+	id: "5-tips-to-grow-your-flight-school.md";
+  slug: "5-tips-to-grow-your-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "boost-your-seo-with-schema-what-it-is-and-how-to-use-it.md": {
 	id: "boost-your-seo-with-schema-what-it-is-and-how-to-use-it.md";
   slug: "boost-your-seo-with-schema-what-it-is-and-how-to-use-it";
@@ -179,6 +186,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"how-planeenglish-helped-500k-pilots-improve-radio-communication.md": {
+	id: "how-planeenglish-helped-500k-pilots-improve-radio-communication.md";
+  slug: "how-planeenglish-helped-500k-pilots-improve-radio-communication";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md": {
 	id: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md";
   slug: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots";
@@ -203,6 +217,13 @@ declare module 'astro:content' {
 "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md": {
 	id: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md";
   slug: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar.md": {
+	id: "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar.md";
+  slug: "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
