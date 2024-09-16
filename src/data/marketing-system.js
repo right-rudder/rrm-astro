@@ -9,7 +9,7 @@ const marketingSystem = {
     header: {
       imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Our </br><span class="text-accent-100">Marketing System</span></br>for Flight Schools`,
+      headerH1: `Our </br><span class="text-accent-300">Marketing System</span></br>for Flight Schools`,
       paragraph: `Reach More Students, Book More Flights, and Train More Pilots. Our Complete Marketing Solution for Flight Schools includes a comprehensive marketing strategy, a custom website, search engine optimization, and more. We help flight schools attract new students and grow their business. Results Guaranteed.`,
       buttons: [
         {

@@ -11,7 +11,7 @@ const idealAviation = {
     header: {
       imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `<span class="text-accent-100">Simplifly</span></br>Case Study`,
+      headerH1: `<span class="text-accent-300">Simplifly</span></br>Case Study`,
       paragraph:
         "When Blake from SimpliFly gave Right Rudder Marketing a call, they were looking to update their website and get more leads coming into their school to increase their revenue. They had a WordPress website already built out, social media profiles, and a GMB listing, but they weren't seeing much progress in their online rankings.",
       buttons: [

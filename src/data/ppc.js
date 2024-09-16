@@ -11,7 +11,7 @@ const ppc = {
     header: {
       imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Running Effective </br><span class="text-accent-100">PPC ADS</span>`,
+      headerH1: `Running Effective </br><span class="text-accent-300">PPC ADS</span>`,
       paragraph:
         "How to use PPC ads to market your flight school. We create and manage pay-per-click advertising campaigns that drive traffic, leads, and sales to your business.",
       buttons: [

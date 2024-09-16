@@ -12,7 +12,7 @@ const homePage = {
       stars: true,
       imagePath: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash(1).jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Marketing for 7-8 Figure</br><span class="text-accent-100">Flight Schools</span>`,
+      headerH1: `Marketing for 7-8 Figure</br><span class="text-accent-300">Flight Schools</span>`,
       paragraph:
         " Right Rudder Marketing is the leader in helping ONLY flight schools leverage the internet and use well executed marketing strategies to take their business out of the clouds and into VFR.",
       buttons: [
@@ -182,7 +182,7 @@ const homePage = {
 
     services: {
       upperHeading: "Services",
-      heading: `Our Digital Marketing <strong class="text-accent-100">Expertise</strong>`,
+      heading: `Our Digital Marketing <strong class="text-primary-dark-600">Expertise</strong>`,
       servs: [
         {
           name: "Web Design & Development",
@@ -192,28 +192,28 @@ const homePage = {
             "We design and develop websites that are user-friendly, mobile responsive, and optimized for search engines.",
         },
         {
-          name: `SEO<p class="font-normal text-accent-300 text-sm">(Search Engine Optimization)</p>`,
+          name: `SEO<p class="font-normal text-accent-200 text-sm">(Search Engine Optimization)</p>`,
           link: "/services/seo",
           icon: "M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605",
           description:
             "We optimize your website to rank higher on search engines like Google, Bing, and Yahoo.",
         },
         {
-          name: `PPC<p class="font-normal text-accent-300 text-sm">(Pay Per Click)</p>`,
+          name: `PPC<p class="font-normal text-accent-200 text-sm">(Pay Per Click)</p>`,
           link: "/services/ppc",
           icon: "M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59",
           description:
             "We create and manage pay-per-click advertising campaigns to drive traffic to your website.",
         },
         {
-          name: `CRM<p class="font-normal text-accent-300 text-sm">(Customer Relationship Management)</p>`,
+          name: `CRM<p class="font-normal text-accent-200 text-sm">(Customer Relationship Management)</p>`,
           link: "https://flightschoolcrm.com/",
           icon: "M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z",
           description:
             "We help you manage your customer relationships and keep track of your leads.",
         },
         {
-          name: `Media Production<p class="font-normal text-accent-300 text-sm">(Photography & Videography)</p>`,
+          name: `Media Production<p class="font-normal text-accent-200 text-sm">(Photography & Videography)</p>`,
           link: "/services/media-production",
           icon: "m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z",
           description:

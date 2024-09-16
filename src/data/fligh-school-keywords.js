@@ -9,7 +9,7 @@ const flightSchoolKeywords = {
     header: {
       imagePath: "/src/assets/DSC00637.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `The Complete </br><span class="text-accent-100">Flight School SEO</span></br>Keywords Guide`,
+      headerH1: `The Complete </br><span class="text-accent-300">Flight School SEO</span></br>Keywords Guide`,
       paragraph:
         "This keyword guide will give you the most commonly searched keywords for flight schools and pilot training. Use the guide to formulate the appropriate keywords to focus on in your flight school's website and Google Business profile.",
       buttons: [

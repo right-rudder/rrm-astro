@@ -11,7 +11,7 @@ const seo = {
     header: {
       imagePath: "/src/assets/1981-digital-oMe_FjZnHGU-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `SEO for </br><span class="text-accent-100">Flight Schools</span>`,
+      headerH1: `SEO for </br><span class="text-accent-300">Flight Schools</span>`,
       paragraph:
         "Correctly programming and optimizing your website helps search engines understand your flight school business better and therefore ranks your website higher.",
       buttons: [

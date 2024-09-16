@@ -11,7 +11,7 @@ const testimonials = {
     header: {
       imagePath: "/src/assets/daniel-shapiro-LL1BGeyj1vs-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team member flying a plane",
-      headerH1: `Our Clients </br><span class="text-accent-100">Love Our Work</span>`,
+      headerH1: `Our Clients </br><span class="text-accent-300">Love Our Work</span>`,
       paragraph:
         "We are a team of pilots that know the flight training industry. We have helped many flight schools and aviation companies grow their business. See what our clients have to say about working with us.",
       buttons: [

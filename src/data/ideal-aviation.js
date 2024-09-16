@@ -11,7 +11,7 @@ const idealAviation = {
     header: {
       imagePath: "/src/assets/ideal-facility.webp",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `<span class="text-accent-100">Ideal Aviation</span></br>Case Study`,
+      headerH1: `<span class="text-accent-300">Ideal Aviation</span></br>Case Study`,
       paragraph:
         "When the team at Ideal Aviation reached out to Right Rudder Marketing, they wanted to updated their WordPress website because it was clunky and slow. They were paying other agencies and service providers thousands of dollars but not getting the results they wanted.",
       buttons: [
