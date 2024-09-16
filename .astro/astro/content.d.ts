@@ -156,133 +156,154 @@ declare module 'astro:content' {
   slug: "5-tips-to-grow-your-flight-school";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "backlinks-demystifying-seo-buzzwords.md": {
 	id: "backlinks-demystifying-seo-buzzwords.md";
   slug: "backlinks-demystifying-seo-buzzwords";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "boost-your-seo-with-schema-what-it-is-and-how-to-use-it.md": {
 	id: "boost-your-seo-with-schema-what-it-is-and-how-to-use-it.md";
   slug: "boost-your-seo-with-schema-what-it-is-and-how-to-use-it";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
+} & { render(): Render[".md"] };
+"breaking-down-an-instrument-panel.md": {
+	id: "breaking-down-an-instrument-panel.md";
+  slug: "breaking-down-an-instrument-panel";
+  body: string;
+  collection: "blog";
+  data: any
 } & { render(): Render[".md"] };
 "driving-conversions-ctas-and-form-submissions-for-flight-schools.md": {
 	id: "driving-conversions-ctas-and-form-submissions-for-flight-schools.md";
   slug: "driving-conversions-ctas-and-form-submissions-for-flight-schools";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md": {
 	id: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md";
   slug: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md": {
 	id: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md";
   slug: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md": {
 	id: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md";
   slug: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
 	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
   slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "how-planeenglish-helped-500k-pilots-improve-radio-communication.md": {
 	id: "how-planeenglish-helped-500k-pilots-improve-radio-communication.md";
   slug: "how-planeenglish-helped-500k-pilots-improve-radio-communication";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
+} & { render(): Render[".md"] };
+"how-to-advertise-your-flight-school-in-2024.md": {
+	id: "how-to-advertise-your-flight-school-in-2024.md";
+  slug: "how-to-advertise-your-flight-school-in-2024";
+  body: string;
+  collection: "blog";
+  data: any
 } & { render(): Render[".md"] };
 "how-to-enroll-more-student-pilots-at-my-flight-school.md": {
 	id: "how-to-enroll-more-student-pilots-at-my-flight-school.md";
   slug: "how-to-enroll-more-student-pilots-at-my-flight-school";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "mastering-heading-tags-for-on-page-seo.md": {
 	id: "mastering-heading-tags-for-on-page-seo.md";
   slug: "mastering-heading-tags-for-on-page-seo";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md": {
 	id: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md";
   slug: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md": {
 	id: "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md";
   slug: "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md": {
 	id: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md";
   slug: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "rrm-s-flight-school-website-template-10-essential-elements-every-flight-school-website-should-have.md": {
 	id: "rrm-s-flight-school-website-template-10-essential-elements-every-flight-school-website-should-have.md";
   slug: "rrm-s-flight-school-website-template-10-essential-elements-every-flight-school-website-should-have";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md": {
 	id: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md";
   slug: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar.md": {
 	id: "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar.md";
   slug: "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
+} & { render(): Render[".md"] };
+"the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page.md": {
+	id: "the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page.md";
+  slug: "the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page";
+  body: string;
+  collection: "blog";
+  data: any
 } & { render(): Render[".md"] };
 "using-aviation-marketing-to-bring-more-students-to-your-flight-school.md": {
 	id: "using-aviation-marketing-to-bring-more-students-to-your-flight-school.md";
   slug: "using-aviation-marketing-to-bring-more-students-to-your-flight-school";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "why-you-should-ask-for-reviews-from-your-flight-students.md": {
 	id: "why-you-should-ask-for-reviews-from-your-flight-students.md";
   slug: "why-you-should-ask-for-reviews-from-your-flight-students";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 };
 "webinar": {
@@ -291,7 +312,7 @@ declare module 'astro:content' {
   slug: "example-webinar";
   body: string;
   collection: "webinar";
-  data: InferEntrySchema<"webinar">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -303,5 +324,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
