@@ -15,6 +15,8 @@ const {
   category,
   tags,
 } = Astro.props;
+
+const randomColor = () => Math.floor(Math.random() * 16777215).toString(16);
 ---
 
 <BaseLayout
@@ -60,53 +62,11 @@ const {
             </span>
             {
               tags.map((tag, index) => (
-                <>
-                  {tag === "Partners" && (
-                    <span class="bg-teal-600 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "Announcements" && (
-                    <span class="bg-accent-700 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "Google" && (
-                    <span class="bg-red-600 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "SEO" && (
-                    <span class="bg-primary-dark-400 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "Schema" && (
-                    <span class="bg-gray-500 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "GMB" && (
-                    <span class="bg-rose-500 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "Aviation" && (
-                    <span class="bg-stone-500 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "Solutions" && (
-                    <span class="bg-indigo-500 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                  {tag === "Website" && (
-                    <span class="bg-emerald-500 text-white inline-block px-3 py-1 rounded-md">
-                      {tag}
-                    </span>
-                  )}
-                </>
+                <span
+                  class={`bg-teal-500 text-white inline-block px-3 py-1 rounded-md`}
+                >
+                  {tag}
+                </span>
               ))
             }
           </div>

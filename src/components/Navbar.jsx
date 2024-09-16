@@ -113,6 +113,7 @@ const Navbar = ({ pathname }) => {
                       {item.link ? (
                         <a
                           href={item.link}
+                          target={`${item.link.includes("http") ? "_blank" : "_self"}`}
                           className="text-white font-sans1 font-semibold text-lg duration-300 hover:underline decoration-accent decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-3 group-last:px-5 group-last:rounded-sm group-last:hover:bg-accent-100 group-last:hover:no-underline"
                         >
                           <span className="relative z-10">{item.name}</span>
@@ -134,7 +135,11 @@ const Navbar = ({ pathname }) => {
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >
                               {subitem.link ? (
-                                <a className="p-3 block" href={subitem.link}>
+                                <a
+                                  className="p-3 block"
+                                  href={subitem.link}
+                                  target={`${subitem.link.includes("http") ? "_blank" : "_self"}`}
+                                >
                                   {subitem.name}
                                 </a>
                               ) : (
@@ -156,6 +161,7 @@ const Navbar = ({ pathname }) => {
                                         >
                                           <a
                                             href={subsubitem.link}
+                                            target={`${subsubitem.link.includes("http") ? "_blank" : "_self"}`}
                                             className="block p-3"
                                           >
                                             {subsubitem.name}
@@ -277,6 +283,7 @@ const Navbar = ({ pathname }) => {
               {item.link ? (
                 <a
                   href={item.link}
+                  target={`${item.link.includes("http") ? "_blank" : "_self"}`}
                   className="font-light p-5 block text-white text-xl duration-300 border-accent whitespace-nowrap group-last:bg-accent group-last:font-medium group-last:mt-12 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:text-center group-last:mx-5"
                 >
                   {item.name}
@@ -305,7 +312,11 @@ const Navbar = ({ pathname }) => {
                       onClick={(event) => handleSubItemClick(event, subIndex)}
                     >
                       {subitem.link ? (
-                        <a className="p-5 block font-light" href={subitem.link}>
+                        <a
+                          className="p-5 block font-light"
+                          href={subitem.link}
+                          target={`${subitem.link.includes("http") ? "_blank" : "_self"}`}
+                        >
                           {subitem.name}
                         </a>
                       ) : (
@@ -330,6 +341,7 @@ const Navbar = ({ pathname }) => {
                             <li key={subsubIndex} className="relative">
                               <a
                                 href={subsubitem.link}
+                                target={`${subsubitem.link.includes("http") ? "_blank" : "_self"}`}
                                 className="block p-5 font-bold"
                               >
                                 {subsubitem.name}
