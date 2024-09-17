@@ -8,7 +8,7 @@ const sopTemplates = {
     header: {
       imagePath: "/src/assets/IMG_9616.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Start creating </br><span class="text-accent-100">your playbook</span></br> with SOPs`,
+      headerH1: `Start creating </br><span class="text-accent-300">your playbook</span></br> with SOPs`,
       paragraph: `Growing a flight school means creating systems and procedures for your team to follow. Creating SOPs to add to your "playbook" is the best way to properly delegate and lead your team. Download our free template to get started in your continuous improvement journey.`,
       buttons: [
         {

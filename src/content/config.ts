@@ -7,6 +7,8 @@ const blogCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     author: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()),
     readingTime: z.number(),
     // Transform string to Date object
     pubDate: z.coerce.date(),
@@ -30,4 +32,7 @@ const webinarCollection = defineCollection({
   }),
 });
 
-export const collections = { blog: blogCollection, webinar: webinarCollection };
+export const collections = {
+  blog: blogCollection,
+  webinar: webinarCollection,
+};

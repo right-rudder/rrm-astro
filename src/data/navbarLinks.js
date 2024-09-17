@@ -6,7 +6,7 @@ export const navbarLinks = [
   },
   {
     name: "Resources",
-    link: "/blog",
+    link: "/notams",
     submenu: [
       /* {
         name: "Flight School Handbook",

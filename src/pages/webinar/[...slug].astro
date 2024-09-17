@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import BlogPost from "../../layouts/BlogPost.astro";
+import WebinarPost from "../../layouts/WebinarPost.astro";
 
 export async function getStaticPaths() {
   const webinars = await getCollection("webinar");
@@ -9,14 +9,14 @@ export async function getStaticPaths() {
     props: webi,
   }));
 }
-type Props = CollectionEntry<"blog">;
+type Props = CollectionEntry<"webinar">;
 
 const webi = Astro.props;
 const { Content } = await webi.render();
 ---
 
-<BlogPost {...webi.data}>
+<WebinarPost {...webi.data}>
   <div class="prose w-full max-w-3x px-5">
     <Content />
   </div>
-</BlogPost>
+</WebinarPost>

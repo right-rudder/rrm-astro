@@ -8,7 +8,7 @@ const gmb = {
     header: {
       imagePath: "/src/assets/flying-over-st-simons-island-ga.jpeg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Perfect your </br><span class="text-accent-100">Google Business Profile</span>`,
+      headerH1: `Perfect your </br><span class="text-accent-300">Google Business Profile</span>`,
       paragraph: `This guide will help you discover gaps in your Google profile and highlight key areas to focus on for raising your business profile to the top of organic search rankings. `,
       buttons: [
         {

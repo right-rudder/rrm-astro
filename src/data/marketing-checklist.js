@@ -9,7 +9,7 @@ const marketingChecklist = {
     header: {
       imagePath: "/src/assets/DSC00637.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `The Ultimate </br><span class="text-accent-100">Flight School</span></br>Marketing Checklist`,
+      headerH1: `The Ultimate </br><span class="text-accent-300">Flight School</span></br>Marketing Checklist`,
       paragraph:
         "This checklist will help you identify what is missing from your current strategy and what you must focus on next to take your flight school to the next level.",
       buttons: [
