@@ -60,9 +60,10 @@ if (!images[data.imagePath])
           >
             {data.heading}
           </h1>
-          <p class="mt-6 text-xl leading-8 text-gray-700">
-            {data.description}
-          </p>
+          <p
+            class="mt-6 text-xl leading-8 text-gray-700"
+            set:html={data.description}
+          />
         </div>
       </div>
     </div>
@@ -129,7 +130,7 @@ if (!images[data.imagePath])
             data.afterListParagraphs && (
               <div class="mt-8">
                 {data.afterListParagraphs.map((paragraph) => (
-                  <p class="mt-2">{paragraph}</p>
+                  <p class="mt-2" set:html={paragraph} />
                 ))}
               </div>
             )
@@ -142,7 +143,7 @@ if (!images[data.imagePath])
                 </h2>
                 <div class="mt-6">
                   {data.finalSection.descriptions.map((desc) => (
-                    <p class="mt-2">{desc}</p>
+                    <p class="mt-2" set:html={desc} />
                   ))}
                 </div>
               </>

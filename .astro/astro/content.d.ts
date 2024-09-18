@@ -179,6 +179,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"celebrating-our-1-year-anniversary-with-pancakes.md": {
+	id: "celebrating-our-1-year-anniversary-with-pancakes.md";
+  slug: "celebrating-our-1-year-anniversary-with-pancakes";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "driving-conversions-ctas-and-form-submissions-for-flight-schools.md": {
 	id: "driving-conversions-ctas-and-form-submissions-for-flight-schools.md";
   slug: "driving-conversions-ctas-and-form-submissions-for-flight-schools";
@@ -224,6 +231,13 @@ declare module 'astro:content' {
 "how-to-advertise-your-flight-school-in-2024.md": {
 	id: "how-to-advertise-your-flight-school-in-2024.md";
   slug: "how-to-advertise-your-flight-school-in-2024";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"how-to-choose-a-flight-school-simplifly-s-guide.md": {
+	id: "how-to-choose-a-flight-school-simplifly-s-guide.md";
+  slug: "how-to-choose-a-flight-school-simplifly-s-guide";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
