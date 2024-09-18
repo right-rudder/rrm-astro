@@ -100,7 +100,7 @@ const posts = (await getCollection("blog")).sort(
               <img
                 src={post.data.heroImage}
                 alt={post.data.title}
-                class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 duration-200"
+                class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
               />
               <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-dark to-primary-dark/20 group-hover:bg-primary/60 duration-200" />
               <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />

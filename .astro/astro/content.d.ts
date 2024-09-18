@@ -151,6 +151,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"2023-simplifly-wrapped-a-year-in-review.md": {
+	id: "2023-simplifly-wrapped-a-year-in-review.md";
+  slug: "2023-simplifly-wrapped-a-year-in-review";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "5-tips-to-grow-your-flight-school.md": {
 	id: "5-tips-to-grow-your-flight-school.md";
   slug: "5-tips-to-grow-your-flight-school";
@@ -284,6 +291,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"pilot-training-over-the-years-and-ideal-aviation-s-contribution-to-its-histor.md": {
+	id: "pilot-training-over-the-years-and-ideal-aviation-s-contribution-to-its-histor.md";
+  slug: "pilot-training-over-the-years-and-ideal-aviation-s-contribution-to-its-histor";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md": {
 	id: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md";
   slug: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots";
@@ -336,6 +350,27 @@ declare module 'astro:content' {
 "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md": {
 	id: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md";
   slug: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"self-service-screening-takes-off-in-las-vegas.md": {
+	id: "self-service-screening-takes-off-in-las-vegas.md";
+  slug: "self-service-screening-takes-off-in-las-vegas";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"sky-express-expands-fleet-with-atr-72-600s-and-commits-to-emission-reduction.md": {
+	id: "sky-express-expands-fleet-with-atr-72-600s-and-commits-to-emission-reduction.md";
+  slug: "sky-express-expands-fleet-with-atr-72-600s-and-commits-to-emission-reduction";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"southwest-airlines-pilots-pay-increase.md": {
+	id: "southwest-airlines-pilots-pay-increase.md";
+  slug: "southwest-airlines-pilots-pay-increase";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
