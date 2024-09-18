@@ -98,11 +98,11 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="Right Rudder Marketing Logo"
-                  className={`${navBar || openMobile ? "h-20 w-3/4 lg:w-auto" : "h-[5.5rem] w-5/6 lg:w-full"}z-10 object-contain duration-500`}
+                  className={`${navBar || openMobile ? "h-20 w-3/4 lg:w-auto" : "h-[5.5rem] w-5/6 lg:w-full"}z-10 object-contain duration-500 py-2`}
                 />
               </a>
               <div className="hidden lg:flex justify-end w-full">
-                <ul className="flex justify-between align-middle w-9/12 items-center">
+                <ul className="flex justify-between align-middle w-11/12 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
