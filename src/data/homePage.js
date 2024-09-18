@@ -74,7 +74,7 @@ const homePage = {
           client: "Ideal",
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
-          quote: "Right Rudder Marketing has been a game changer for us.",
+          quote: "Right Rudder Marketing has been a game changer.",
           result:
             "Ideal Aviation now ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue.",
           link: "/case-studies/ideal-aviation",
@@ -92,7 +92,7 @@ const homePage = {
           imagePath: "/src/assets/simplifly-logo.webp",
           imageAlt: "Simplifly Flight School logo",
           quote:
-            "They also understand aviation and pilots which is a huge help.",
+            "They understand aviation and pilots <br> which is a huge help.",
           result:
             "They are now getting flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.",
           link: "/case-studies/simplifly",

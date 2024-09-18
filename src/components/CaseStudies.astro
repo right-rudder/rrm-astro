@@ -26,7 +26,7 @@ const { upperHeading, heading, cases } = Astro.props;
             />
           </div>
           <div class="bg-accent flex justify-center align-middle items-center px-6 text-center text-lg font-semibold italic leading-tight h-24">
-            <p class="">"{c.quote}"</p>
+            <p set:html={`"${c.quote}"`}></p>
           </div>
           <div class="pt-6 flex justify-center lg:gap-3 items-center align-middle bg-primary-dark-800">
             <div class="w-1/2 lg:w-1/3">
