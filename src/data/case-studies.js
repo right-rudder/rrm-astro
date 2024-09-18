@@ -39,7 +39,7 @@ const caseStudies = {
           quote: "Right Rudder Marketing has been a game changer for us.",
           result:
             "Ideal Aviation now ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue.",
-          link: "/case-studies/ideal-aviation",
+          link: "/our-flight-schools/ideal-aviation",
           metric1: {
             label: "Leads",
             value: "200%",
@@ -57,7 +57,7 @@ const caseStudies = {
             "They also understand aviation and pilots which is a huge help.",
           result:
             "They are now getting flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.",
-          link: "/case-studies/simplifly",
+          link: "/our-flight-schools/simplifly",
           metric1: {
             label: "Leads",
             value: "123%",

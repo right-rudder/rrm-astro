@@ -1,7 +1,7 @@
 export const mobileNavbarLinks = [
   {
-    name: "Case Studies",
-    link: "/case-studies",
+    name: "Our Flight Schools",
+    link: "/our-flight-schools",
     submenu: [],
   },
   {
