@@ -179,6 +179,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"built-by-pilots-for-pilots-rrm-airport-sync-partnership.md": {
+	id: "built-by-pilots-for-pilots-rrm-airport-sync-partnership.md";
+  slug: "built-by-pilots-for-pilots-rrm-airport-sync-partnership";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "celebrating-our-1-year-anniversary-with-pancakes.md": {
 	id: "celebrating-our-1-year-anniversary-with-pancakes.md";
   slug: "celebrating-our-1-year-anniversary-with-pancakes";
@@ -189,6 +196,13 @@ declare module 'astro:content' {
 "driving-conversions-ctas-and-form-submissions-for-flight-schools.md": {
 	id: "driving-conversions-ctas-and-form-submissions-for-flight-schools.md";
   slug: "driving-conversions-ctas-and-form-submissions-for-flight-schools";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md": {
+	id: "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md";
+  slug: "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -249,9 +263,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"how-to-make-your-flight-school-known.md": {
+	id: "how-to-make-your-flight-school-known.md";
+  slug: "how-to-make-your-flight-school-known";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "mastering-heading-tags-for-on-page-seo.md": {
 	id: "mastering-heading-tags-for-on-page-seo.md";
   slug: "mastering-heading-tags-for-on-page-seo";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"new-rules-of-marketing-in-2024-for-flight-schools.md": {
+	id: "new-rules-of-marketing-in-2024-for-flight-schools.md";
+  slug: "new-rules-of-marketing-in-2024-for-flight-schools";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -277,6 +305,27 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"right-rudder-marketing-sponsors-fsana-2024-trade-show-in-las-vegas.md": {
+	id: "right-rudder-marketing-sponsors-fsana-2024-trade-show-in-las-vegas.md";
+  slug: "right-rudder-marketing-sponsors-fsana-2024-trade-show-in-las-vegas";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-marketing-teams-up-with-planeenglish.md": {
+	id: "right-rudder-marketing-teams-up-with-planeenglish.md";
+  slug: "right-rudder-marketing-teams-up-with-planeenglish";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"rrm-announces-partnership-with-wingsleasing-to-continue-maximizing-flight-school-profits.md": {
+	id: "rrm-announces-partnership-with-wingsleasing-to-continue-maximizing-flight-school-profits.md";
+  slug: "rrm-announces-partnership-with-wingsleasing-to-continue-maximizing-flight-school-profits";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "rrm-s-flight-school-website-template-10-essential-elements-every-flight-school-website-should-have.md": {
 	id: "rrm-s-flight-school-website-template-10-essential-elements-every-flight-school-website-should-have.md";
   slug: "rrm-s-flight-school-website-template-10-essential-elements-every-flight-school-website-should-have";
@@ -298,9 +347,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"supporting-local-aviation-events-is-more-impactful-than-you-think.md": {
+	id: "supporting-local-aviation-events-is-more-impactful-than-you-think.md";
+  slug: "supporting-local-aviation-events-is-more-impactful-than-you-think";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page.md": {
 	id: "the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page.md";
   slug: "the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"the-written-exam-what-is-it-and-why-do-i-need-it.md": {
+	id: "the-written-exam-what-is-it-and-why-do-i-need-it.md";
+  slug: "the-written-exam-what-is-it-and-why-do-i-need-it";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
