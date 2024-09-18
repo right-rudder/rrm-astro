@@ -115,7 +115,7 @@ const homePage = {
         {
           quote:
             "The company I work for has been working with Right Rudder Marketing for a while now and I can tell you they have helped us a lot! Our website improved and we started getting more and more inquiries. If you have a flight school you definitely have to work with them!",
-          extract: "You definitely have to work with them!",
+          extract: "You definitely have to work with Right Rudder Marketing!",
           client: "Sun City Aviation Academy",
           author: "Maria C. and Chris F.",
         },
@@ -123,7 +123,7 @@ const homePage = {
         {
           quote:
             "We have been using Right Rudder for the past 6 months and could not be happier! They revamped our website to make it more user friendly, makes consistent updates, and are very responsive to our needs. We have seen a steady increase in web traffic as well as website driven phone calls since starting with Right Rudder. I can not say enough good things about them!",
-          extract: "I can not say enough good things about them!",
+          extract: "I can not say enough good things about Right Rudder Marketing!",
           client: "Ideal Aviation",
           author: "Kim N.",
         },
