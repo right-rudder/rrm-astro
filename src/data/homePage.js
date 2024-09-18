@@ -76,11 +76,11 @@ const homePage = {
           imageAlt: "Ideal Aviation logo",
           quote: "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
           result:
-            "Ideal Aviation now ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue.",
+            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and need to expand their fleet.",
           link: "/case-studies/ideal-aviation",
           metric1: {
-            label: "Leads",
-            value: "200%",
+            label: "Monthly Leads",
+            value: "100+",
           },
           metric2: {
             label: "Sales",
@@ -94,15 +94,15 @@ const homePage = {
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
           result:
-            "They are now getting flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.",
+            "SimpliFly gets flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.  They are seeing 10 times the amount of leads coming in since first working with us and managed to increase the average LTV (life time value) of each student customer by narrowing their focus to offer programs solely for career track pilots.",
           link: "/case-studies/simplifly",
           metric1: {
             label: "Leads",
-            value: "123%",
+            value: "10X",
           },
           metric2: {
-            label: "Sales",
-            value: "134%",
+            label: "Annual Revenue",
+            value: "$8M+",
           },
         },
       ],
