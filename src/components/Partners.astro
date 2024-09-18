@@ -9,7 +9,7 @@ const { heading, organizations } = Astro.props;
     {heading}
   </h3>
   <div
-    class="max-w-5xl mt-6 flex flex-wrap justify-center gap-8 items-center align-middle"
+    class="max-w-8xl mt-6 flex flex-wrap justify-center gap-8 items-center align-middle"
   >
     {
       organizations.map((org) => (
@@ -17,7 +17,7 @@ const { heading, organizations } = Astro.props;
           <ImageComp
             imagePath={org.imagePath}
             imageAlt={org.imageAlt}
-            styles="h-20 max-w-40 max-h-16 object-contain hover:scale-105 duration-300 ease-in-out"
+            styles="h-20 max-w-60 max-h-20 object-contain hover:scale-105 duration-300 ease-in-out"
           />
         </a>
       ))

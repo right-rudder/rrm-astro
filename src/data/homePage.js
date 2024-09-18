@@ -31,7 +31,7 @@ const homePage = {
     },
 
     memberOf: {
-      heading: "We Are Proud Members of:",
+      heading: "We Are Proud Members of",
       organizations: [
         {
           name: "FSANA",
