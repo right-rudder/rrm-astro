@@ -76,7 +76,7 @@ const homePage = {
           imageAlt: "Ideal Aviation logo",
           quote: "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
           result:
-            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and need to expand their fleet.",
+            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.",
           link: "/case-studies/ideal-aviation",
           metric1: {
             label: "Monthly Leads",
@@ -166,7 +166,7 @@ const homePage = {
               "Get People Interested in Pilot Training to Visit Your Website and Look You Up Online",
           },
           {
-            title: "Impress",
+            title: "Nurture",
             icon: "M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59",
             description:
               "Guide Your Interested Website Visitors Into Booking a Discovery Flight at Your School",
