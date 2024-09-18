@@ -18,12 +18,12 @@ const homePage = {
         "Grow your flight school, enroll more pilots, and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Our Marketing System",
+          link: "/services/marketing-system",
           primary: false,
         },
         {
-          name: "Schedule a Call",
+          name: "Free Marketing Analysis",
           link: "/contact",
           primary: false,
         },
