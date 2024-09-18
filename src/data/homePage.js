@@ -74,7 +74,7 @@ const homePage = {
           client: "Ideal",
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
-          quote: "Right Rudder Marketing has been a game changer.",
+          quote: "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
           result:
             "Ideal Aviation now ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue.",
           link: "/case-studies/ideal-aviation",
