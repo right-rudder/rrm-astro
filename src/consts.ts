@@ -22,7 +22,7 @@ export const LOCATIONS = [
     city: "St. Louis",
     state: "MO",
     zip: "63134",
-    gMaps: "https://maps.app.goo.gl/Ce95uuGW7nuxAhGD7",
+    gMaps: "https://maps.app.goo.gl/J44WMvQyNbkoQDBn6",
     phone: "1-314-804-1200",
   },
 ];
