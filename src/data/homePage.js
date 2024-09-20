@@ -1,11 +1,11 @@
 const homePage = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Get More Pilot Students | Right Rudder Marketing",
+    pageTitle: "Enroll More Student Pilots | Right Rudder Marketing",
     pageDescription:
-      "Right Rudder Marketing offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Right Rudder Marketing specializes in aviation marketing services, helping flight schools and aviation companies increase visibility and grow enrollment. We offer tailored digital marketing solutions, including SEO, web design, and lead generation to help you reach more aspiring pilots. With proven aviation marketing strategies, we can help your flight school stand out in the competitive market and boost student enrollment efficiently.",
     pageKeywords:
-      "Right Rudder Marketing, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Right Rudder Marketing, Aviation marketing, Flight school marketing, Aviation digital marketing, SEO for aviation, Digital marketing for flight schools, Aviation marketing agency, Lead generation for aviation companies, Increase flight school enrollment, Aviation advertising services, Content marketing for aviation businesses, Aviation marketing strategies, Aviation SEO services",
 
     //top header
     header: {
@@ -14,15 +14,15 @@ const homePage = {
       imageAlt: "Right Rudder Marketing team on the runway",
       headerH1: `Marketing for 7-8 Figure</br><span class="text-accent-300">Flight Schools</span>`,
       paragraph:
-        " Right Rudder Marketing is the leader in helping ONLY flight schools leverage the internet and use well executed marketing strategies to take their business out of the clouds and into VFR.",
+        "Grow your flight school, enroll more pilots, and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Our Marketing System",
+          link: "/services/marketing-system",
           primary: false,
         },
         {
-          name: "Schedule a Call",
+          name: "Free Marketing Analysis",
           link: "/contact",
           primary: false,
         },
@@ -30,7 +30,7 @@ const homePage = {
     },
 
     memberOf: {
-      heading: "We Are Proud Members of:",
+      heading: "We Are Proud Members of",
       organizations: [
         {
           name: "FSANA",
@@ -73,13 +73,14 @@ const homePage = {
           client: "Ideal",
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
-          quote: "Right Rudder Marketing has been a game changer for us.",
+          quote:
+            "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
           result:
-            "Ideal Aviation now ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue.",
+            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.",
           link: "/case-studies/ideal-aviation",
           metric1: {
-            label: "Leads",
-            value: "200%",
+            label: "Monthly Leads",
+            value: "100+",
           },
           metric2: {
             label: "Sales",
@@ -91,17 +92,17 @@ const homePage = {
           imagePath: "/src/assets/simplifly-logo.webp",
           imageAlt: "Simplifly Flight School logo",
           quote:
-            "They also understand aviation and pilots which is a huge help.",
+            "They understand aviation and pilots <br> which is a huge help.",
           result:
-            "They are now getting flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.",
+            "SimpliFly gets flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.  They are seeing 10 times the amount of leads coming in since first working with us and managed to increase the average LTV (life time value) of each student customer by narrowing their focus to offer programs solely for career track pilots.",
           link: "/case-studies/simplifly",
           metric1: {
-            label: "Leads",
-            value: "123%",
+            label: "Total Leads",
+            value: "10X",
           },
           metric2: {
-            label: "Sales",
-            value: "134%",
+            label: "ARR",
+            value: "$8M+",
           },
         },
       ],
@@ -114,7 +115,7 @@ const homePage = {
         {
           quote:
             "The company I work for has been working with Right Rudder Marketing for a while now and I can tell you they have helped us a lot! Our website improved and we started getting more and more inquiries. If you have a flight school you definitely have to work with them!",
-          extract: "You definitely have to work with them!",
+          extract: "You definitely have to work with Right Rudder Marketing!",
           client: "Sun City Aviation Academy",
           author: "Maria C. and Chris F.",
         },
@@ -122,7 +123,8 @@ const homePage = {
         {
           quote:
             "We have been using Right Rudder for the past 6 months and could not be happier! They revamped our website to make it more user friendly, makes consistent updates, and are very responsive to our needs. We have seen a steady increase in web traffic as well as website driven phone calls since starting with Right Rudder. I can not say enough good things about them!",
-          extract: "I can not say enough good things about them!",
+          extract:
+            "I can not say enough good things about Right Rudder Marketing!",
           client: "Ideal Aviation",
           author: "Kim N.",
         },
@@ -165,7 +167,7 @@ const homePage = {
               "Get People Interested in Pilot Training to Visit Your Website and Look You Up Online",
           },
           {
-            title: "Impress",
+            title: "Nurture",
             icon: "M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59",
             description:
               "Guide Your Interested Website Visitors Into Booking a Discovery Flight at Your School",
@@ -177,6 +179,11 @@ const homePage = {
               "Keep Your CFIs' Schedules Busy, Hire More CFIs, and Grow Your Flight School!",
           },
         ],
+      },
+      btn: {
+        header: "Learn More About Our...",
+        link: "/services/marketing-system",
+        text: "Flight School Marketing System",
       },
     },
 
