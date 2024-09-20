@@ -86,6 +86,10 @@ const posts = (await getCollection("blog")).sort(
         <p class="mt-2 text-lg leading-8 text-gray-600">
           The Right Rudder Marketing blog
         </p>
+        <p>
+          {posts.length} PIREPs. Since{" "}
+          <FormattedDate date={posts[posts.length - 1].data.pubDate} />
+        </p>
       </div>
       <div
         class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center"
@@ -96,7 +100,7 @@ const posts = (await getCollection("blog")).sort(
               <img
                 src={post.data.heroImage}
                 alt={post.data.title}
-                class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 duration-200"
+                class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
               />
               <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-dark to-primary-dark/20 group-hover:bg-primary/60 duration-200" />
               <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />

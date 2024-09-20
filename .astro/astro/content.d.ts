@@ -151,9 +151,37 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"2023-simplifly-wrapped-a-year-in-review.md": {
+	id: "2023-simplifly-wrapped-a-year-in-review.md";
+  slug: "2023-simplifly-wrapped-a-year-in-review";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"4-steps-to-enroll-more-student-pilots-at-your-flight-school.md": {
+	id: "4-steps-to-enroll-more-student-pilots-at-your-flight-school.md";
+  slug: "4-steps-to-enroll-more-student-pilots-at-your-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "5-tips-to-grow-your-flight-school.md": {
 	id: "5-tips-to-grow-your-flight-school.md";
   slug: "5-tips-to-grow-your-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"7-mistakes-to-avoid-in-flight-school-marketing.md": {
+	id: "7-mistakes-to-avoid-in-flight-school-marketing.md";
+  slug: "7-mistakes-to-avoid-in-flight-school-marketing";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"automatically-import-leads-from-your-website-to-your-crm-using-api.md": {
+	id: "automatically-import-leads-from-your-website-to-your-crm-using-api.md";
+  slug: "automatically-import-leads-from-your-website-to-your-crm-using-api";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -179,9 +207,79 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"built-by-pilots-for-pilots-rrm-airport-sync-partnership.md": {
+	id: "built-by-pilots-for-pilots-rrm-airport-sync-partnership.md";
+  slug: "built-by-pilots-for-pilots-rrm-airport-sync-partnership";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"celebrating-our-1-year-anniversary-with-pancakes.md": {
+	id: "celebrating-our-1-year-anniversary-with-pancakes.md";
+  slug: "celebrating-our-1-year-anniversary-with-pancakes";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"cnbc-says-there-s-a-pilot-shortage-is-that-true.md": {
+	id: "cnbc-says-there-s-a-pilot-shortage-is-that-true.md";
+  slug: "cnbc-says-there-s-a-pilot-shortage-is-that-true";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"copywriting-revisited.md": {
+	id: "copywriting-revisited.md";
+  slug: "copywriting-revisited";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"design-great-looking-checklists-forms-brochures-for-free.md": {
+	id: "design-great-looking-checklists-forms-brochures-for-free.md";
+  slug: "design-great-looking-checklists-forms-brochures-for-free";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "driving-conversions-ctas-and-form-submissions-for-flight-schools.md": {
 	id: "driving-conversions-ctas-and-form-submissions-for-flight-schools.md";
   slug: "driving-conversions-ctas-and-form-submissions-for-flight-schools";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"ezsims-is-a-rrm-partner.md": {
+	id: "ezsims-is-a-rrm-partner.md";
+  slug: "ezsims-is-a-rrm-partner";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"faa-administrator-removes-himself-from-senate-confirmation.md": {
+	id: "faa-administrator-removes-himself-from-senate-confirmation.md";
+  slug: "faa-administrator-removes-himself-from-senate-confirmation";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"faa-ga-and-commercial-division-head-kicked-off-nafi-summit-with-priorities.md": {
+	id: "faa-ga-and-commercial-division-head-kicked-off-nafi-summit-with-priorities.md";
+  slug: "faa-ga-and-commercial-division-head-kicked-off-nafi-summit-with-priorities";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md": {
+	id: "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md";
+  slug: "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"flight-schedule-pro-partners-with-right-rudder-marketing.md": {
+	id: "flight-schedule-pro-partners-with-right-rudder-marketing.md";
+  slug: "flight-schedule-pro-partners-with-right-rudder-marketing";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -214,6 +312,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics.md": {
+	id: "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics.md";
+  slug: "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "how-planeenglish-helped-500k-pilots-improve-radio-communication.md": {
 	id: "how-planeenglish-helped-500k-pilots-improve-radio-communication.md";
   slug: "how-planeenglish-helped-500k-pilots-improve-radio-communication";
@@ -228,9 +333,65 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"how-to-choose-a-flight-school-simplifly-s-guide.md": {
+	id: "how-to-choose-a-flight-school-simplifly-s-guide.md";
+  slug: "how-to-choose-a-flight-school-simplifly-s-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"how-to-create-sops-to-scale-your-flight-school.md": {
+	id: "how-to-create-sops-to-scale-your-flight-school.md";
+  slug: "how-to-create-sops-to-scale-your-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "how-to-enroll-more-student-pilots-at-my-flight-school.md": {
 	id: "how-to-enroll-more-student-pilots-at-my-flight-school.md";
   slug: "how-to-enroll-more-student-pilots-at-my-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"how-to-increase-student-retention-upcoming-webinar-december-7-2022.md": {
+	id: "how-to-increase-student-retention-upcoming-webinar-december-7-2022.md";
+  slug: "how-to-increase-student-retention-upcoming-webinar-december-7-2022";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"how-to-make-your-flight-school-known.md": {
+	id: "how-to-make-your-flight-school-known.md";
+  slug: "how-to-make-your-flight-school-known";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"how-to-write-better-copy-and-increase-student-enrollment.md": {
+	id: "how-to-write-better-copy-and-increase-student-enrollment.md";
+  slug: "how-to-write-better-copy-and-increase-student-enrollment";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"improving-your-cfi-skills.md": {
+	id: "improving-your-cfi-skills.md";
+  slug: "improving-your-cfi-skills";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"launch-of-streaming-service-aeroverse-to-bring-new-aviation-content-to-the-digital-sky.md": {
+	id: "launch-of-streaming-service-aeroverse-to-bring-new-aviation-content-to-the-digital-sky.md";
+  slug: "launch-of-streaming-service-aeroverse-to-bring-new-aviation-content-to-the-digital-sky";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"launch-of-the-right-rudder-marketing-website.md": {
+	id: "launch-of-the-right-rudder-marketing-website.md";
+  slug: "launch-of-the-right-rudder-marketing-website";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -242,9 +403,51 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"new-faa-rule-may-limit-dpes-to-their-home-fsdo.md": {
+	id: "new-faa-rule-may-limit-dpes-to-their-home-fsdo.md";
+  slug: "new-faa-rule-may-limit-dpes-to-their-home-fsdo";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"new-rules-of-marketing-in-2024-for-flight-schools.md": {
+	id: "new-rules-of-marketing-in-2024-for-flight-schools.md";
+  slug: "new-rules-of-marketing-in-2024-for-flight-schools";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"oceangate-submersible-implodes-killing-all-five-passengers-why-safety-is-important.md": {
+	id: "oceangate-submersible-implodes-killing-all-five-passengers-why-safety-is-important.md";
+  slug: "oceangate-submersible-implodes-killing-all-five-passengers-why-safety-is-important";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"pilot-training-over-the-years-and-ideal-aviation-s-contribution-to-its-histor.md": {
+	id: "pilot-training-over-the-years-and-ideal-aviation-s-contribution-to-its-histor.md";
+  slug: "pilot-training-over-the-years-and-ideal-aviation-s-contribution-to-its-histor";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-is-going-to-king-s-schools-edu-con-aviation-symposium.md": {
+	id: "right-rudder-is-going-to-king-s-schools-edu-con-aviation-symposium.md";
+  slug: "right-rudder-is-going-to-king-s-schools-edu-con-aviation-symposium";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md": {
 	id: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots.md";
   slug: "right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-marketing-are-partners-with-stratus-financial.md": {
+	id: "right-rudder-marketing-are-partners-with-stratus-financial.md";
+  slug: "right-rudder-marketing-are-partners-with-stratus-financial";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -256,9 +459,44 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md": {
+	id: "right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md";
+  slug: "right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-marketing-is-now-a-supporting-partner-for-fsana.md": {
+	id: "right-rudder-marketing-is-now-a-supporting-partner-for-fsana.md";
+  slug: "right-rudder-marketing-is-now-a-supporting-partner-for-fsana";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md": {
 	id: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education.md";
   slug: "right-rudder-marketing-partners-with-king-schools-to-support-pilot-education";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-marketing-sponsors-fsana-2024-trade-show-in-las-vegas.md": {
+	id: "right-rudder-marketing-sponsors-fsana-2024-trade-show-in-las-vegas.md";
+  slug: "right-rudder-marketing-sponsors-fsana-2024-trade-show-in-las-vegas";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-marketing-teams-up-with-planeenglish.md": {
+	id: "right-rudder-marketing-teams-up-with-planeenglish.md";
+  slug: "right-rudder-marketing-teams-up-with-planeenglish";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"rrm-announces-partnership-with-wingsleasing-to-continue-maximizing-flight-school-profits.md": {
+	id: "rrm-announces-partnership-with-wingsleasing-to-continue-maximizing-flight-school-profits.md";
+  slug: "rrm-announces-partnership-with-wingsleasing-to-continue-maximizing-flight-school-profits";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -277,9 +515,44 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"self-service-screening-takes-off-in-las-vegas.md": {
+	id: "self-service-screening-takes-off-in-las-vegas.md";
+  slug: "self-service-screening-takes-off-in-las-vegas";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"sky-express-expands-fleet-with-atr-72-600s-and-commits-to-emission-reduction.md": {
+	id: "sky-express-expands-fleet-with-atr-72-600s-and-commits-to-emission-reduction.md";
+  slug: "sky-express-expands-fleet-with-atr-72-600s-and-commits-to-emission-reduction";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"southwest-airlines-pilots-pay-increase.md": {
+	id: "southwest-airlines-pilots-pay-increase.md";
+  slug: "southwest-airlines-pilots-pay-increase";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar.md": {
 	id: "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar.md";
   slug: "sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"supporting-local-aviation-events-is-more-impactful-than-you-think.md": {
+	id: "supporting-local-aviation-events-is-more-impactful-than-you-think.md";
+  slug: "supporting-local-aviation-events-is-more-impactful-than-you-think";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"the-faa-reauthorization-bill-and-its-implications-for-pilot-training.md": {
+	id: "the-faa-reauthorization-bill-and-its-implications-for-pilot-training.md";
+  slug: "the-faa-reauthorization-bill-and-its-implications-for-pilot-training";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -291,6 +564,34 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"the-written-exam-what-is-it-and-why-do-i-need-it.md": {
+	id: "the-written-exam-what-is-it-and-why-do-i-need-it.md";
+  slug: "the-written-exam-what-is-it-and-why-do-i-need-it";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tim-jedrek-at-king-schools-talks-sales-and-marketing.md": {
+	id: "tim-jedrek-at-king-schools-talks-sales-and-marketing.md";
+  slug: "tim-jedrek-at-king-schools-talks-sales-and-marketing";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director.md": {
+	id: "tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director.md";
+  slug: "tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"ultimate-flying-school-online-marketing-cheat-sheet.md": {
+	id: "ultimate-flying-school-online-marketing-cheat-sheet.md";
+  slug: "ultimate-flying-school-online-marketing-cheat-sheet";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "using-aviation-marketing-to-bring-more-students-to-your-flight-school.md": {
 	id: "using-aviation-marketing-to-bring-more-students-to-your-flight-school.md";
   slug: "using-aviation-marketing-to-bring-more-students-to-your-flight-school";
@@ -298,9 +599,44 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"what-nasa-s-artemis-1-launch-means-for-flight-schools-and-aviation.md": {
+	id: "what-nasa-s-artemis-1-launch-means-for-flight-schools-and-aviation.md";
+  slug: "what-nasa-s-artemis-1-launch-means-for-flight-schools-and-aviation";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"what-s-an-alternate-airport.md": {
+	id: "what-s-an-alternate-airport.md";
+  slug: "what-s-an-alternate-airport";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"why-are-air-show-performer-announcements-made-in-december.md": {
+	id: "why-are-air-show-performer-announcements-made-in-december.md";
+  slug: "why-are-air-show-performer-announcements-made-in-december";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "why-you-should-ask-for-reviews-from-your-flight-students.md": {
 	id: "why-you-should-ask-for-reviews-from-your-flight-students.md";
   slug: "why-you-should-ask-for-reviews-from-your-flight-students";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"why-your-messaging-is-scaring-off-future-student-pilots.md": {
+	id: "why-your-messaging-is-scaring-off-future-student-pilots.md";
+  slug: "why-your-messaging-is-scaring-off-future-student-pilots";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"your-2024-digital-marketing-plan-for-flight-school-businesses.md": {
+	id: "your-2024-digital-marketing-plan-for-flight-school-businesses.md";
+  slug: "your-2024-digital-marketing-plan-for-flight-school-businesses";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
