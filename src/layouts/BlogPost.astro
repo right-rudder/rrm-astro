@@ -26,13 +26,13 @@ const randomColor = () => Math.floor(Math.random() * 16777215).toString(16);
 >
   <div class="h-20 lg:h-28 w-full bg-primary/50 brightness-75"></div>
 
-  <section class="flex justify-center pt-4 pb-20">
+  <section class="flex justify-center pt-6 pb-20">
     <article class="mx-auto max-w-4xl">
       <div class="mb-12 lg:mb-0">
         {
           heroImage && (
             <img
-              class="object-contain h-full w-full"
+              class="object-contain h-full w-full bg-white"
               src={heroImage}
               alt={title}
             />

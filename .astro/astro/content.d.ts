@@ -179,6 +179,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"automatically-import-leads-from-your-website-to-your-crm-using-api.md": {
+	id: "automatically-import-leads-from-your-website-to-your-crm-using-api.md";
+  slug: "automatically-import-leads-from-your-website-to-your-crm-using-api";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "backlinks-demystifying-seo-buzzwords.md": {
 	id: "backlinks-demystifying-seo-buzzwords.md";
   slug: "backlinks-demystifying-seo-buzzwords";
@@ -214,6 +221,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"cnbc-says-there-s-a-pilot-shortage-is-that-true.md": {
+	id: "cnbc-says-there-s-a-pilot-shortage-is-that-true.md";
+  slug: "cnbc-says-there-s-a-pilot-shortage-is-that-true";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "copywriting-revisited.md": {
 	id: "copywriting-revisited.md";
   slug: "copywriting-revisited";
@@ -221,9 +235,30 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"design-great-looking-checklists-forms-brochures-for-free.md": {
+	id: "design-great-looking-checklists-forms-brochures-for-free.md";
+  slug: "design-great-looking-checklists-forms-brochures-for-free";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "driving-conversions-ctas-and-form-submissions-for-flight-schools.md": {
 	id: "driving-conversions-ctas-and-form-submissions-for-flight-schools.md";
   slug: "driving-conversions-ctas-and-form-submissions-for-flight-schools";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"ezsims-is-a-rrm-partner.md": {
+	id: "ezsims-is-a-rrm-partner.md";
+  slug: "ezsims-is-a-rrm-partner";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"faa-administrator-removes-himself-from-senate-confirmation.md": {
+	id: "faa-administrator-removes-himself-from-senate-confirmation.md";
+  slug: "faa-administrator-removes-himself-from-senate-confirmation";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -305,9 +340,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"how-to-create-sops-to-scale-your-flight-school.md": {
+	id: "how-to-create-sops-to-scale-your-flight-school.md";
+  slug: "how-to-create-sops-to-scale-your-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "how-to-enroll-more-student-pilots-at-my-flight-school.md": {
 	id: "how-to-enroll-more-student-pilots-at-my-flight-school.md";
   slug: "how-to-enroll-more-student-pilots-at-my-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"how-to-increase-student-retention-upcoming-webinar-december-7-2022.md": {
+	id: "how-to-increase-student-retention-upcoming-webinar-december-7-2022.md";
+  slug: "how-to-increase-student-retention-upcoming-webinar-december-7-2022";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -319,9 +368,30 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"how-to-write-better-copy-and-increase-student-enrollment.md": {
+	id: "how-to-write-better-copy-and-increase-student-enrollment.md";
+  slug: "how-to-write-better-copy-and-increase-student-enrollment";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"improving-your-cfi-skills.md": {
+	id: "improving-your-cfi-skills.md";
+  slug: "improving-your-cfi-skills";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "launch-of-streaming-service-aeroverse-to-bring-new-aviation-content-to-the-digital-sky.md": {
 	id: "launch-of-streaming-service-aeroverse-to-bring-new-aviation-content-to-the-digital-sky.md";
   slug: "launch-of-streaming-service-aeroverse-to-bring-new-aviation-content-to-the-digital-sky";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"launch-of-the-right-rudder-marketing-website.md": {
+	id: "launch-of-the-right-rudder-marketing-website.md";
+  slug: "launch-of-the-right-rudder-marketing-website";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -375,9 +445,30 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"right-rudder-marketing-are-partners-with-stratus-financial.md": {
+	id: "right-rudder-marketing-are-partners-with-stratus-financial.md";
+  slug: "right-rudder-marketing-are-partners-with-stratus-financial";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md": {
 	id: "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md";
   slug: "right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md": {
+	id: "right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md";
+  slug: "right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"right-rudder-marketing-is-now-a-supporting-partner-for-fsana.md": {
+	id: "right-rudder-marketing-is-now-a-supporting-partner-for-fsana.md";
+  slug: "right-rudder-marketing-is-now-a-supporting-partner-for-fsana";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -487,9 +578,30 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director.md": {
+	id: "tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director.md";
+  slug: "tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"ultimate-flying-school-online-marketing-cheat-sheet.md": {
+	id: "ultimate-flying-school-online-marketing-cheat-sheet.md";
+  slug: "ultimate-flying-school-online-marketing-cheat-sheet";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "using-aviation-marketing-to-bring-more-students-to-your-flight-school.md": {
 	id: "using-aviation-marketing-to-bring-more-students-to-your-flight-school.md";
   slug: "using-aviation-marketing-to-bring-more-students-to-your-flight-school";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"what-nasa-s-artemis-1-launch-means-for-flight-schools-and-aviation.md": {
+	id: "what-nasa-s-artemis-1-launch-means-for-flight-schools-and-aviation.md";
+  slug: "what-nasa-s-artemis-1-launch-means-for-flight-schools-and-aviation";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
