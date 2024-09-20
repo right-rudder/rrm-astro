@@ -1,6 +1,6 @@
 export const navbarLinks = [
   {
-    name: "Our Flight Schools",
+    name: "Case Studies",
     link: "/case-studies",
     submenu: [],
   },
