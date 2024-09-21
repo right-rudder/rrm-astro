@@ -1,19 +1,19 @@
-const ppc = {
+const ppcGoogle = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Pay Per Click - Marketing | Right Rudder Marketing",
+    pageTitle: "Google Ads - Pay Per Click | Right Rudder Marketing",
     pageDescription:
-      "Right Rudder Marketing offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Learn how to use Google Ads to market your flight school. We create and manage pay-per-click advertising campaigns that drive traffic, leads, and sales to your business. Schedule a call now!",
     pageKeywords:
-      "Right Rudder Marketing, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Google Ads, Pay Per Click, PPC, Flight School Marketing, Flight School Advertising, Flight School Leads, Flight School Sales, Flight School PPC, Flight School Google Ads, Flight School Pay Per Click",
 
     //top header
     header: {
       imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Running Effective </br><span class="text-accent-300">PPC ADS</span>`,
+      headerH1: `Running Effective </br><span class="text-accent-300">Google Ads</span>`,
       paragraph:
-        "How to use PPC ads to market your flight school. We create and manage pay-per-click advertising campaigns that drive traffic, leads, and sales to your business.",
+        "How to use Google Ads to market your flight school. We create and manage pay-per-click advertising campaigns that drive traffic, leads, and sales to your business.",
       buttons: [
         {
           name: "Call Us",
@@ -22,7 +22,7 @@ const ppc = {
         },
         {
           name: "Schedule a Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],
@@ -83,10 +83,10 @@ const ppc = {
       icon: "M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z",
       heading: "Don't waste your money.",
       description:
-        "Most PPC campaigns fail because flight school owners fail to understand how the Google Ads platform actually works to get leads.",
+        "Most Google Ads campaigns fail because flight school owners fail to understand how the Google Ads platform actually works to get leads.",
       button: {
         text: "Schedule a Call",
-        link: "/contact",
+        link: "/schedule-call",
         primary: true,
       },
     },
@@ -95,9 +95,9 @@ const ppc = {
       imagePath: "/src/assets/andrew-ruiz--ajZ_Xzeqe4-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
       upperHeading: "How to do it right",
-      heading: "What's the right way to go about running PPC Ads?",
+      heading: "What's the right way to go about running Google Ads?",
       paragraphs: [
-        "PPC ads are a great way to get in front of prospective students that are not in your immediate network. But it's important to understand how the Google Ads platform works to get leads.",
+        "Google Ads are a great way to get in front of prospective students that are not in your immediate network. But it's important to understand how the Google Ads platform works to get leads.",
         "By understanding how the Google Ads platform works, you can create ads that are relevant to the user that is searching for flight schools in your area. This will help you get more leads and more students.",
         "Google wants to make sure that even paid listings are relevant to the user that is searching. So the quality of your ads and the page that people land on is all relevant to where you get placed in paid listings, along with the cost per click you're willing to spend. If a customer is searching for “how to become a pilot”, your ad isn't going to work well if it: ",
       ],
@@ -133,7 +133,7 @@ const ppc = {
       ],
       button: {
         text: "Schedule a Call with the Experts",
-        link: "/contact",
+        link: "/schedule-call",
         primary: true,
       },
     },
@@ -177,7 +177,7 @@ const ppc = {
       ],
       button: {
         text: "Schedule a Call with the Experts",
-        link: "/contact",
+        link: "/schedule-call",
         primary: true,
       },
     },
@@ -195,11 +195,11 @@ const ppc = {
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],
     },
   },
 };
-export default ppc;
+export default ppcGoogle;
