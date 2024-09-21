@@ -16,8 +16,12 @@ export const mobileNavbarLinks = [
         link: "/flight-school-seo",
       },
       {
-        name: "Pay Per Click(PPC)",
-        link: "/services/ppc",
+        name: "Google Ads",
+        link: "/how-to-enroll-more-students-with-google-ads-in-2024",
+      },
+      {
+        name: "Facebook Ads",
+        link: "/how-to-run-effective-facebook-ads-in-2024",
       },
       {
         name: "Customer Relationship Management(CRM)",
@@ -28,8 +32,8 @@ export const mobileNavbarLinks = [
         link: "/services/media-production",
       }, */
       {
-        name: "Complete Marketing Solution",
-        link: "/services/marketing-system",
+        name: "Complete Marketing System",
+        link: "/marketing-system",
       },
     ],
   },

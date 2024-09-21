@@ -98,7 +98,7 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="Right Rudder Marketing Logo"
-                  className={`${navBar || openMobile ? "h-20 w-3/4 lg:w-auto" : "h-[5.5rem] w-5/6 lg:w-full"}z-10 object-contain duration-500`}
+                  className={`${navBar || openMobile ? "h-20 lg:h-28 w-4/6 lg:w-full" : "h-20 lg:h-28 w-3/4 lg:w-full"}z-10 object-contain duration-500`}
                 />
               </a>
               <div className="hidden lg:flex justify-end w-full">
