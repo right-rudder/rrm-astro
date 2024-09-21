@@ -19,185 +19,26 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   >
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-wrap justify-center align-top items-start">
-        <form
-          id="contact-form"
-          class="flex flex-col rounded-b-xl max-w-2xl mx-auto gap-5 mt-8 lg:mt-12 p-4 lg:p-12 bg-white/30 w-full lg:w-1/2 shadow-xl h-full"
+        <iframe
+          src="https://msg.flightschoolcrm.com/widget/form/wspl4vZ3nE24pjcLrrcQ"
+          style="width:100%;height:100%;border:none;border-radius:3px"
+          id="inline-wspl4vZ3nE24pjcLrrcQ"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Contact Us Form"
+          data-height="549"
+          data-layout-iframe-id="inline-wspl4vZ3nE24pjcLrrcQ"
+          data-form-id="wspl4vZ3nE24pjcLrrcQ"
+          title="Contact Us Form"
         >
-          <h2 class="text-primary-dark text-5xl font-extrabold mx-auto w-fit">
-            Get in touch
-          </h2>
-          <div class="flex flex-col lg:flex-row gap-5">
-            <input
-              type="text"
-              name="first-name"
-              placeholder="Your first name"
-              class="form-input"
-              required
-            />
-            <input
-              type="text"
-              name="last-name"
-              placeholder="Your last name"
-              class="form-input"
-              required
-            />
-          </div>
-          <div class="flex flex-col lg:flex-row gap-5">
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Your email"
-              class="form-input"
-              required
-            />
-            <input
-              type="email"
-              name="confirm-email"
-              placeholder="Confirm email"
-              class="hidden form-input"
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Your phone number"
-              class="form-input"
-              required
-            />
-          </div>
-
-          <textarea
-            required
-            name="message"
-            placeholder="Your message"
-            class="form-textarea"></textarea>
-
-          <div class="flex gap-3">
-            <input
-              type="checkbox"
-              name="agree-data-collection"
-              id="agree-data-collection"
-              class="form-checkbox"
-            />
-
-            <label
-              for="agree-data-collection"
-              class="text-gray-800 text-sm lg:text-base"
-            >
-              {data.checkboxText}
-            </label>
-          </div>
-          <button
-            id="submit-button"
-            form="contact-form"
-            disabled
-            type="submit"
-            class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white"
-            >Send message</button
-          >
-        </form>
+        </iframe>
+        <script src="https://msg.flightschoolcrm.com/js/form_embed.js"></script>
       </div>
     </div>
   </section>
-
-  <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
-    const checkbox = document.getElementById("agree-data-collection");
-    const submitButton = document.getElementById("submit-button");
-    const yesVisit = document.getElementById("yes-visit");
-    const noVisit = document.getElementById("no-visit");
-
-    yesVisit.addEventListener("change", function () {
-      if (yesVisit.checked) {
-        document
-          .getElementById("location-container")
-          .classList.remove("hidden");
-        document.getElementById("location-container").classList.add("flex");
-      } else {
-        document.getElementById("location-container").classList.add("hidden");
-      }
-    });
-
-    noVisit.addEventListener("change", function () {
-      if (noVisit.checked) {
-        document.getElementById("location-container").classList.add("hidden");
-      }
-    });
-
-    checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        submitButton.disabled = false;
-        submitButton.classList.remove(
-          "cursor-not-allowed",
-          "bg-gray-400",
-          "hover:bg-gray-400"
-        );
-      } else {
-        submitButton.disabled = true;
-        submitButton.classList.add(
-          "cursor-not-allowed",
-          "bg-gray-400",
-          "hover:bg-gray-400"
-        );
-      }
-    });
-
-    // Wait for the DOM content to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get the contactUs form element
-      const contactForm = document.getElementById("contact-form");
-
-      // Check if the contactUs form element exists
-      if (contactForm !== null) {
-        // Add submit event listener to the contactUs form
-        contactForm.addEventListener("submit", function (event) {
-          // Prevent the default form submission
-          event.preventDefault();
-
-          // Serialize the form data
-          const formData = new FormData(contactForm);
-
-          // Check the value of the honeypot field
-          const confirmEmailValue = formData.get("confirm-email");
-          if (confirmEmailValue === "" || confirmEmailValue === null) {
-            // If the honeypot field is empty, it's a human
-            // Set the form action to the URL for processing the form and redirecting to thank you
-            contactForm.action = CONTACT_US_FORM_WEBHOOK_URL;
-          }
-
-          // Convert FormData to URLSearchParams
-          const urlSearchParams = new URLSearchParams();
-          for (const pair of formData.entries()) {
-            urlSearchParams.append(pair[0], pair[1]);
-          }
-
-          // Send an AJAX request to submit the form
-          const xhr = new XMLHttpRequest();
-          xhr.open("POST", contactForm.action);
-          xhr.setRequestHeader(
-            "Content-Type",
-            "application/x-www-form-urlencoded"
-          );
-          xhr.onload = function () {
-            // Check if the request was successful (status 200)
-            if (xhr.status === 200) {
-              // Redirect the user after a successful form submission
-              window.location.href = "/contact-confirmation";
-            } else {
-              // Handle errors if any
-              console.error("Form submission failed:", xhr.statusText);
-            }
-          };
-          xhr.onerror = function () {
-            // Handle network errors
-            console.error("Network error occurred while submitting the form.");
-          };
-          xhr.send(urlSearchParams);
-        });
-      } else {
-        console.error("Contact us form element not found.");
-      }
-    });
-  </script>
-
-  <script src="../scripts/emailValidation.js"></script>
 </BaseLayout>

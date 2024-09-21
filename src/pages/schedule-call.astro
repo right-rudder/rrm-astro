@@ -1,0 +1,29 @@
+---
+import Header from "../components/Header.astro";
+import FunnelLayout from "../layouts/FunnelLayout.astro";
+import DownloadCTA from "../components/DownloadCTA.astro";
+import gmb from "../data/gmb";
+
+const { data } = gmb;
+---
+
+<FunnelLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <div class="lg:w-1/2 flex flex-row justify-center lg:py-20 lg:px-10">
+    <div class="lg:w-4/5">
+      <iframe
+        src="https://msg.flightschoolcrm.com/widget/booking/UsFmB7RVJOH9u8PnqAoQ"
+        style="width: 100%;border:none;overflow: hidden;"
+        scrolling="no"
+        id="UsFmB7RVJOH9u8PnqAoQ_1708416759290"></iframe><br /><script
+        src="https://msg.flightschoolcrm.com/js/form_embed.js"
+        type="text/javascript"></script>
+    </div>
+  </div>
+</FunnelLayout>

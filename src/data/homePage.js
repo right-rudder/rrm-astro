@@ -108,6 +108,51 @@ const homePage = {
       ],
     },
 
+    ourClients: {
+      heading: "Our Clients Love Us",
+      description:
+        "Our clients are the best in the business. They are the top flight schools in the country and they trust us to help them grow and scale their businesses. We are proud to be a part of their success.",
+      clients: [
+        {
+          name: "NextGen Flight Academy",
+          imagePath: "/src/assets/NG Logo White Background 2.webp",
+          link: "https://flyhere.aero/",
+          invert: true,
+        },
+        {
+          name: "Summit Flight Academy",
+          imagePath: "/src/assets/SFA-logo.webp",
+          link: "https://www.summitflightacademy.com/",
+          invert: false,
+        },
+        {
+          name: "High Tide Aviation",
+          imagePath:
+            "/src/assets/high-tide-aviation-logo-gradation.CFCXi2nO.png",
+          link: "https://hightideaviation.com/",
+          invert: false,
+        },
+        {
+          name: "Sun City Aviation",
+          imagePath: "/src/assets/sun-city-white-text-logo.webp",
+          link: "https://suncityaviation.com/",
+          invert: false,
+        },
+        {
+          name: "Pitcairn Flight Academy",
+          imagePath: "/src/assets/pitcairn-logo-400-white.webp",
+          link: "https://pitcairnflightacademy.com/",
+          invert: false,
+        },
+        {
+          name: "Simplifly",
+          imagePath: "/src/assets/simplifly_2.webp",
+          link: "https://simpliflyco.com/",
+          invert: false,
+        },
+      ],
+    },
+
     testimonials: {
       upperHeading: "Testimonials",
       heading: `What Our <strong class="text-primary-800">Clients Are Saying</strong>`,
@@ -227,6 +272,12 @@ const homePage = {
             "We create high-quality photos and videos to showcase your flight school.",
         },
       ],
+    },
+
+    blogfeed: {
+      upperHeading: "Blog",
+      heading: "Right Rudder Marketing Blog",
+      description: "Latest News & Updates",
     },
 
     flyWithUsCTA: {

@@ -2,13 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import homePage from "../data/homePage";
 import HeaderScreen from "../components/HeaderScreen.astro";
-import HeaderSplit from "../components/HeaderSplit.astro";
 import Partners from "../components/Partners.astro";
 import CaseStudies from "../components/CaseStudies.astro";
 import Testimonials from "../components/Testimonials.astro";
 import WhyUs from "../components/WhyUs.astro";
 import ServicesGrid from "../components/ServicesGrid.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
+import OurClients from "../components/OurClients.astro";
+import BlogFeed from "../components/BlogFeed.astro";
 
 const { data } = homePage;
 ---
@@ -47,11 +48,15 @@ const { data } = homePage;
     button={data.whyUs.btn}
   />
 
+  <OurClients data={data.ourClients} />
+
   <ServicesGrid
     upperHeading={data.services.upperHeading}
     heading={data.services.heading}
     services={data.services.servs}
   />
+
+  <BlogFeed data={data.blogfeed} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
 </BaseLayout>

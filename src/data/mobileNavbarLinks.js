@@ -1,6 +1,6 @@
 export const mobileNavbarLinks = [
   {
-    name: "Our Flight Schools",
+    name: "Flight Schools",
     link: "/our-flight-schools",
     submenu: [],
   },
@@ -9,11 +9,11 @@ export const mobileNavbarLinks = [
     submenu: [
       {
         name: "Web Design & Development",
-        link: "/services/web-design-development",
+        link: "/flight-school-website-design",
       },
       {
         name: "Search Engine Optimization(SEO)",
-        link: "/services/seo",
+        link: "/flight-school-seo",
       },
       {
         name: "Pay Per Click(PPC)",
@@ -105,8 +105,8 @@ export const mobileNavbarLinks = [
     ],
   },
   {
-    name: "CONTACT US",
-    link: "/contact",
+    name: "Schedule a Call",
+    link: "/schedule-call",
     submenu: [],
   },
 ];

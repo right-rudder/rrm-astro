@@ -4,45 +4,43 @@ import ImageComp from "./ImageComp.astro";
 const { data } = Astro.props;
 ---
 
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl bg-white">
+<div class="w-full">
+  <div
+    class="relative isolate overflow-hidden bg-primary-dark px-6 py-24 text-center rounded-sm"
+  >
+    <h2
+      set:html={data.heading}
+      class="mx-auto max-w-2xl text-6xl font-bold capitalize tracking-tight text-accent"
+    />
+    <p
+      class="mx-auto mt-8 max-w-xl text-lg leading-8 text-gray-300"
+      set:html={data.description}
+    />
+    <div class="flex flex-wrap justify-center mt-12 gap-12">
+      {
+        data.clients.map((client) => (
+          <a
+            href={client.link}
+            target="_blank"
+            class="group flex justify-center align-middle"
+          >
+            <ImageComp
+              imagePath={client.imagePath}
+              imageAlt={client.name + " logo"}
+              styles={`${client.invert ? "invert" : ""}  min-w-12 md:max-h-16 max-w-52 md:max-w-44 w-full object-contain group-hover:scale-110 group-hover:brightness-110 duration-300 ease-in-out`}
+            />
+          </a>
+        ))
+      }
+    </div>
     <div
-      class="relative isolate overflow-hidden bg-primary-dark px-6 py-24 text-center rounded-sm"
+      class="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl"
+      aria-hidden="true"
     >
-      <h2
-        set:html={data.heading}
-        class="mx-auto max-w-2xl text-3xl font-bold capitalize tracking-tight text-accent sm:text-4xl"
-      />
-      <p
-        class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300"
-        set:html={data.description}
-      />
-      <div class="flex flex-wrap justify-center mt-12 gap-12">
-        {
-          data.clients.map((client) => (
-            <a
-              href={client.link}
-              target="_blank"
-              class="group flex justify-center align-middle"
-            >
-              <ImageComp
-                imagePath={client.imagePath}
-                imageAlt={client.name + " logo"}
-                styles={`${client.invert ? "invert" : ""}  min-w-12 md:max-h-16 max-w-52 md:max-w-44 w-full object-contain group-hover:scale-110 group-hover:brightness-110 duration-300 ease-in-out`}
-              />
-            </a>
-          ))
-        }
-      </div>
       <div
-        class="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl"
-        aria-hidden="true"
+        class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
       >
-        <div
-          class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
-          style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-        >
-        </div>
       </div>
     </div>
   </div>

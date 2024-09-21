@@ -1,6 +1,6 @@
 export const navbarLinks = [
   {
-    name: "Our Flight Schools",
+    name: "Flight Schools",
     link: "/our-flight-schools",
     submenu: [],
   },
@@ -67,19 +67,19 @@ export const navbarLinks = [
         name: "Partners & Affiliates",
         link: "/about/partners-affiliates",
       },
-      /* {
+      {
         name: "Investors",
         link: "/about/investors",
       },
       {
         name: "Careers",
         link: "/about/careers",
-      }, */
+      },
     ],
   },
   {
     name: "Schedule a Call",
-    link: "/contact",
+    link: "/schedule-call",
     submenu: [],
   },
 ];

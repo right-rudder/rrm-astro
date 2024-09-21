@@ -11,6 +11,8 @@ import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
   LINKEDIN_URL,
+  TWITTER_URL,
+  YOUTUBE_URL,
   SITE_DESCRIPTION,
   LOCATIONS,
 } from "../consts";
@@ -37,7 +39,7 @@ const { pathname } = Astro.url;
         >
           <Image
             src={logo}
-            alt="NextGen Flight Academy Logo"
+            alt="Right Rudder Marketing Logo"
             class="object-contain h-36 w-auto drop-shadow-lg"
           />
         </a>
@@ -45,11 +47,19 @@ const { pathname } = Astro.url;
           <p class="text-sm text-white text-justify">
             {SITE_DESCRIPTION}
           </p>
-          <a
-            href="/privacy-policy"
-            class="mt-3 transition-colors duration-300 text-sm text-white hover:text-accent-100"
-            >Privacy Policy
-          </a>
+          <div class="">
+            <a
+              href="/privacy-policy"
+              class="mt-3 mr-4 transition-colors duration-300 text-sm text-white hover:text-accent-100"
+              >Privacy Policy
+            </a>
+            <span class="text-accent-200"> &#x2022; </span>
+            <a
+              href="/terms-of-service"
+              class="mt-3 ml-4 transition-colors duration-300 text-sm text-white hover:text-accent-100"
+              >Terms of Service
+            </a>
+          </div>
         </div>
       </div>
       <div class="grid grid-cols-2 gap-9 lg:col-span-4 lg:grid-cols-4">
@@ -98,14 +108,14 @@ const { pathname } = Astro.url;
           <ul class="mt-2 space-y-2">
             <li>
               <a
-                href="/services/web-design-development"
+                href="/flight-school-website-design"
                 class="transition-colors duration-300 text-white hover:text-accent-100"
                 >Web Design
               </a>
             </li>
             <li>
               <a
-                href="/services/seo"
+                href="/flight-school-seo"
                 class="transition-colors duration-300 text-white hover:text-accent-100"
                 >SEO
               </a>
@@ -263,6 +273,48 @@ const { pathname } = Astro.url;
           <svg viewBox="0 0 24 24" fill="currentColor" class="h-8 lg:h-5">
             <path
               d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href={TWITTER_URL}
+          target="_blank"
+          name="Youtube"
+          class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
+        >
+          <svg
+            class="size-7 -m-1 p-0"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M10.053,7.988l5.631,8.024h-1.497L8.566,7.988H10.053z M21,6v12	c0,1.657-1.343,3-3,3H6c-1.657,0-3-1.343-3-3V6c0-1.657,1.343-3,3-3h12C19.657,3,21,4.343,21,6z M17.538,17l-4.186-5.99L16.774,7	h-1.311l-2.704,3.16L10.552,7H6.702l3.941,5.633L6.906,17h1.333l3.001-3.516L13.698,17H17.538z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href={YOUTUBE_URL}
+          target="_blank"
+          name="Youtube"
+          class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
+        >
+          <svg
+            class="size-7"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"
             ></path>
           </svg>
         </a>

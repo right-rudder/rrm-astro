@@ -260,7 +260,7 @@ const Navbar = ({ pathname }) => {
         >
           <img
             src="/RRM-ver-textWhite-trans-500.webp"
-            alt="NextGen Logo"
+            alt="Right Rudder Marketing Logo"
             className="z-10 object-contain h-20 w-auto drop-shadow-sm"
           />
         </a>
