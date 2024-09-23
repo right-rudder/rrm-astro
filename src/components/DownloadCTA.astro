@@ -1,6 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
+import DownloadChecklist from "./DownloadChecklist";
+import DownloadKeywords from "./DownloadKeywords";
+import DownloadTemplate from "./DownloadTemplate";
+import DownloadGmb from "./DownloadGMB";
 
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -13,6 +17,7 @@ if (!images[data.imagePath])
 ---
 
 <div
+  id="download-cta"
   class="relative isolate pb-12 overflow-hidden bg-white px-6 pt-24 sm:pt-32 lg:overflow-visible lg:px-0"
 >
   <div class="absolute inset-0 -z-10 overflow-hidden">
@@ -69,12 +74,28 @@ if (!images[data.imagePath])
             data.buttons && (
               <div class="mt-12 flex flex-wrap justify-start align-middle items-center gap-6 z-10">
                 {data.buttons.map((btn) => (
-                  <a
-                    href={btn.link}
-                    class={`${btn.primary ? "btn-primary" : "btn-accent"} w-full md:w-auto`}
-                  >
-                    {btn.name}
-                  </a>
+                  <div>
+                    {btn.modal && btn.name.includes("Checklist") && (
+                      <DownloadChecklist client:visible />
+                    )}
+                    {btn.modal && btn.name.includes("Guide") && (
+                      <DownloadKeywords client:visible />
+                    )}
+                    {btn.modal && btn.name.includes("Template") && (
+                      <DownloadTemplate client:visible />
+                    )}
+                    {btn.modal && btn.name.includes("GMB") && (
+                      <DownloadGmb client:visible />
+                    )}
+                    {!btn.modal && (
+                      <a
+                        href={btn.link}
+                        class={`${btn.primary ? "btn-primary" : "btn-accent"} w-full md:w-auto`}
+                      >
+                        {btn.name}
+                      </a>
+                    )}
+                  </div>
                 ))}
               </div>
             )
