@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import TeamGrid from "../../components/TeamGrid.astro";
+import whoWeAre from "../../data/who-we-are";
+import HeaderCollage from "../../components/HeaderCollage.astro";
+import Content3 from "../../components/Content3.astro";
+import OurValues from "../../components/OurValues.astro";
+import OurClients from "../../components/OurClients.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+
+const { data } = whoWeAre;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderCollage data={data.header} />
+
+  <Content3 data={data.ourMission} />
+
+  <OurValues data={data.ourValues} />
+
+  <OurClients data={data.ourClients} />
+
+  <TeamGrid data={data.teamGrid} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

@@ -1,6 +1,3 @@
-import { number } from "astro:schema";
-import SteppedStats from "../components/SteppedStats.astro";
-
 const investorsVars = {
   data: {
     //SEO Header Stuff

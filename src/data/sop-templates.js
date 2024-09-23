@@ -18,7 +18,7 @@ const sopTemplates = {
         },
         {
           name: "Download Template",
-          link: "/contact",
+          link: "#download-cta",
           primary: false,
         },
       ],
@@ -36,14 +36,33 @@ const sopTemplates = {
       imageAlt: "Right Rudder Marketing team on the runway",
       buttons: [
         {
+          modal: true,
           name: "Download Template",
-          link: "/contact",
-          primary: false,
         },
         {
           name: "How to Implement",
-          link: "/blog",
+          link: "/blog/how-to-create-sops-to-scale-your-flight-school/",
           primary: false,
+        },
+      ],
+    },
+
+    gmbCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "Google My Business CTA",
+      heading: `Perfect your Google Business Profile`,
+      description:
+        "Get your flight school on the map and in front of potential students with Google My Business optimization. Our guide will help you discover gaps in your Google profile and highlight key areas to focus on for raising your business profile to the top of organic search rankings.",
+      buttons: [
+        {
+          name: "Download Guide",
+          link: "/resources/gmb",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/resources/gmb",
+          accent: false,
         },
       ],
     },

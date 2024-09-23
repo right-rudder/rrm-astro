@@ -20,7 +20,7 @@ const marketingChecklist = {
         },
         {
           name: "Download Checklist",
-          link: "/contact",
+          link: "#download-cta",
           primary: false,
         },
       ],
@@ -39,9 +39,33 @@ const marketingChecklist = {
       imageAlt: "Right Rudder Marketing team on the runway",
       buttons: [
         {
+          modal: true,
           name: "Download Checklist",
-          link: "/contact",
+        },
+        {
+          name: "Our Marketing System",
+          link: "/marketing-system",
           primary: false,
+        },
+      ],
+    },
+
+    keywordsCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "The Complete Flight School SEO Keywords Guide",
+      heading: `The Complete Flight School SEO Keywords Guide`,
+      description:
+        "Download our keyword guide to get you the most commonly searched keywords for flight schools and pilot training. Use the guide to formulate the appropriate keywords to focus on in your flight school's website and Google Business profile.",
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/flight-school-keywords",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/resources/flight-school-keywords",
+          accent: false,
         },
       ],
     },

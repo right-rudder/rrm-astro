@@ -20,7 +20,7 @@ const flightSchoolKeywords = {
         },
         {
           name: "Download Guide",
-          link: "/contact",
+          link: "#download-cta",
           primary: false,
         },
       ],
@@ -38,9 +38,27 @@ const flightSchoolKeywords = {
       imageAlt: "Right Rudder Marketing team on the runway",
       buttons: [
         {
+          modal: true,
           name: "Download Guide",
-          link: "/contact",
-          primary: false,
+        },
+      ],
+    },
+
+    sopCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "Start creating your playbook with SOPs",
+      heading: `Start Creating your Playbook with SOPs`,
+      description: `Growing a flight school means creating systems and procedures for your team to follow. Creating SOPs to add to your "playbook" is the best way to properly delegate and lead your team. Download our free template to get started in your continuous improvement journey.`,
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/sop-templates",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/resources/sop-templates",
+          accent: false,
         },
       ],
     },

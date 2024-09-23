@@ -8,7 +8,7 @@
   }
 
   .btn-accent {
-    @apply text-center uppercase font-bold py-3 px-6 bg-accent w-fit text-primary-dark hover:text-white rounded-sm hover:bg-primary-dark-800 duration-300;
+    @apply text-center uppercase font-bold py-3 px-6 bg-accent w-fit text-primary-dark rounded-sm hover:bg-accent-300 duration-100;
   }
 
   .btn-primary-dark {

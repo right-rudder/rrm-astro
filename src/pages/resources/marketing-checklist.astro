@@ -3,6 +3,7 @@ import Header from "../../components/Header.astro";
 import FunnelLayout from "../../layouts/FunnelLayout.astro";
 import marketingChecklist from "../../data/marketing-checklist";
 import DownloadCTA from "../../components/DownloadCTA.astro";
+import GenericCTA from "../../components/GenericCTA.astro";
 
 const { data } = marketingChecklist;
 ---
@@ -16,4 +17,6 @@ const { data } = marketingChecklist;
   <Header data={data.header} />
 
   <DownloadCTA data={data.downloadCTA} />
+
+  <GenericCTA data={data.keywordsCTA} />
 </FunnelLayout>

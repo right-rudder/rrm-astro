@@ -18,7 +18,7 @@ const gmb = {
         },
         {
           name: "Download Guide",
-          link: "/contact",
+          link: "#download-cta",
           primary: false,
         },
       ],
@@ -37,14 +37,28 @@ const gmb = {
       imageAlt: "Right Rudder Marketing team on the runway",
       buttons: [
         {
-          name: "Download Guide",
-          link: "/contact",
-          primary: false,
+          modal: true,
+          name: "Download GMB",
+        },
+      ],
+    },
+
+    checklistCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "The Ultimate Flight School Marketing Checklist",
+      heading: `The Ultimate Flight School Marketing Checklist`,
+      description:
+        "This checklist will help you identify what is missing from your current strategy and what you must focus on next to take your flight school to the next level.",
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/marketing-checklist",
+          accent: true,
         },
         {
-          name: "How to Implement",
-          link: "/blog",
-          primary: false,
+          name: "Learn More",
+          link: "/resources/marketing-checklist",
+          accent: false,
         },
       ],
     },
