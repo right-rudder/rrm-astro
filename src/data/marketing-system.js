@@ -232,7 +232,7 @@ const marketingSystem = {
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],
