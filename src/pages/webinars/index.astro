@@ -5,13 +5,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
 
-const data = {
+const content = {
   header: {
     imagePath: "/src/assets/right-rudder-marketing-team.jpeg",
     imageAlt: "Right Rudder Marketing team on the runway",
-    headerH1: "Blog",
+    headerH1: "Webinars",
     paragraph:
-      "Explore the latest articles in the exciting world of business, aviation and marketing. Gain valuable insights and tips to make your fligh school soar!",
+      "Explore the latest happenings in the world of flight training at Right Rudder Marketing. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones.",
   },
 
   flyWithUsCTA: {
@@ -35,18 +35,18 @@ const data = {
   },
 };
 
-const posts = (await getCollection("blog")).sort(
+const posts = (await getCollection("webinars")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
 <BaseLayout
-  pageTitle="Blog | Right Rudder Marketing"
-  pageDescription="Explore the latest happenings in the world of flight training at Right Rudder Marketing. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
-  pageKeywords="blog, flight training, marketing, insights, tips, milestones, flight training industry, pilot training experience, flight school marketing, flight school success"
+  pageTitle="Webinars | Right Rudder Marketing"
+  pageDescription="xplore the latest happenings in the world of flight training at Right Rudder Marketing. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
+  pageKeywords="webinars, flight training, marketing, insights, tips, milestones, flight training industry, pilot training experience, flight school marketing, flight school success"
 >
   <!-- Header -->
-  <Header data={data.header} />
+  <Header data={content.header} />
 
   <section class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
     <div class="absolute inset-0 -z-10 overflow-hidden">
@@ -81,13 +81,15 @@ const posts = (await getCollection("blog")).sort(
     <div class="mx-auto px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Right Rudder Marketing PIREPs
+          Right Rudder Marketing Webinars
         </h2>
         <p class="mt-2 text-lg leading-8 text-gray-600">
-          The Right Rudder Marketing blog
+          Great lessons and insights from the Right Rudder Marketing team.
         </p>
         <p class="text-xs text-muted-400">
-          {posts.length}{posts.length > 1 ? " PIREPs" : " PIREP"}. Since{" "}
+          {posts.length}{posts.length > 1 ? " webinars" : " webinar"}. Since{
+            " "
+          }
           <FormattedDate date={posts[posts.length - 1].data.pubDate} />
         </p>
       </div>
@@ -95,11 +97,11 @@ const posts = (await getCollection("blog")).sort(
         class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center"
       >
         {
-          posts.map((post, index) => (
+          posts.map((webin, index) => (
             <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-48 lg:pt-80 hover:ring-1 hover:ring-accent duration-200">
               <img
-                src={post.data.heroImage}
-                alt={post.data.title}
+                src={webin.data.heroImage}
+                alt={webin.data.title}
                 class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
               />
               <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-dark to-primary-dark/20 group-hover:bg-primary/60 duration-200" />
@@ -107,7 +109,7 @@ const posts = (await getCollection("blog")).sort(
 
               <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-100">
                 <time datetime="2020-03-16" class="mr-8 text-accent-400">
-                  <FormattedDate date={post.data.pubDate} />
+                  <FormattedDate date={webin.data.pubDate} />
                 </time>
                 <div class="-ml-4 flex items-center gap-x-4">
                   <svg
@@ -117,14 +119,14 @@ const posts = (await getCollection("blog")).sort(
                     <circle cx="1" cy="1" r="1" />
                   </svg>
                   <div class="flex font-bold text-base text-accent-200">
-                    {post.data.author}
+                    {webin.data.author}
                   </div>
                 </div>
               </div>
               <h3 class="mt-3 text-lg font-black leading-6 text-primary-100">
-                <a href={`/blog/${post.slug}/`}>
+                <a href={`/webinars/${webin.slug}/`}>
                   <span class="absolute inset-0" />
-                  {post.data.title}
+                  {webin.data.title}
                 </a>
               </h3>
             </article>
@@ -135,5 +137,5 @@ const posts = (await getCollection("blog")).sort(
   </section>
 
   <!-- Fly with us CTA -->
-  <FlyWithUsCTA data={data.flyWithUsCTA} />
+  <FlyWithUsCTA data={content.flyWithUsCTA} />
 </BaseLayout>

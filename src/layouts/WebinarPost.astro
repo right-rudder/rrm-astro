@@ -3,10 +3,18 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 
-type Props = CollectionEntry<"webinar">["data"];
+type Props = CollectionEntry<"webinars">["data"];
 
-const { title, author, description, pubDate, updatedDate, heroImage } =
-  Astro.props;
+const {
+  title,
+  author,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  category,
+  tags,
+} = Astro.props;
 ---
 
 <BaseLayout
@@ -14,15 +22,15 @@ const { title, author, description, pubDate, updatedDate, heroImage } =
   siteDescription={description}
   keywords={description}
 >
-  <div class="h-20 lg:h-28 w-full bg-primary/50 brightness-75"></div>
+  <div class="h-20 lg:h-28 w-full bg-primary-dark-800/80"></div>
 
-  <section class="flex justify-center pt-4 pb-20">
+  <section class="flex justify-center pt-6 pb-20">
     <article class="mx-auto max-w-4xl">
       <div class="mb-12 lg:mb-0">
         {
           heroImage && (
             <img
-              class="object-contain h-full w-full"
+              class="object-contain h-full w-full bg-white"
               src={heroImage}
               alt={title}
             />
@@ -44,6 +52,22 @@ const { title, author, description, pubDate, updatedDate, heroImage } =
           <h1 class="text-5xl m-0 font-sans">{title}</h1>
           <p class="text-sm font-light">Writen by:</p>
           <p class="-mt-5 text-base font-medium">{author}</p>
+          <div class="flex gap-2">
+            <span
+              class="bg-primary-600 text-white inline-block px-3 py-1 rounded-md"
+            >
+              {category}
+            </span>
+            {
+              tags.map((tag, index) => (
+                <span
+                  class={`bg-teal-500 text-white inline-block px-3 py-1 rounded-md`}
+                >
+                  {tag}
+                </span>
+              ))
+            }
+          </div>
           <hr />
         </div>
         <div class="flex justify-center">
