@@ -1,7 +1,7 @@
 ---
 pubDate: "January 27, 2023"
 author: Tim Jedrek
-title: "RHow to Write Better Copy and Increase Student Enrollment"
+title: "How to Write Better Copy and Increase Student Enrollment"
 description: "Do you know what copywriting is?  Did you know having ineffective copy on your website and marketing materials repels potential customers?"
 heroImage: "/blog/COPYWRITING.webp"
 readingTime: 4
