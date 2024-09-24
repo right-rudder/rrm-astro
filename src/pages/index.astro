@@ -11,6 +11,7 @@ import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import OurClients from "../components/OurClients.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import GenericCTA from "../components/GenericCTA.astro";
+import ScreenCTA from "../components/ScreenCTA.astro";
 
 const { data } = homePage;
 ---
@@ -33,6 +34,8 @@ const { data } = homePage;
     heading={data.caseStudies.heading}
     cases={data.caseStudies.cases}
   />
+
+  <ScreenCTA data={data.bookCTA} />
 
   <Testimonials
     upperHeading={data.testimonials.upperHeading}

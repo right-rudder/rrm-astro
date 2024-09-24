@@ -184,6 +184,28 @@ const homePage = {
       ],
     },
 
+    bookCTA: {
+      imagePath: "/src/assets/book-tim.jpg",
+      imageAlt: "The Flight School Handbook of Marketing Knowledge",
+      imagePath2: "/src/assets/Tim-Book-1.png",
+      imageAlt2: "The Flight School Handbook of Marketing Knowledge",
+      headerH1: `The Flight School Handbook of Marketing Knowledge`,
+      paragraph:
+        "Right Rudder Marketing is proud to announce the release of Tim Jedrek’s first book, The Flight School Handbook of Marketing Knowledge. This book is designed to equip flight school owners with practical marketing strategies to increase enrollments, enhance online presence, and grow their businesses. ",
+      buttons: [
+        {
+          name: "Buy Now on Amazon",
+          link: "https://a.co/d/08aqmyv",
+          accent: true,
+        },
+        {
+          name: "Schedule a Call with Tim",
+          link: "/schedule-call",
+          accent: false,
+        },
+      ],
+    },
+
     whyUs: {
       upperHeading: "Why Us",
       heading: `RRM is your <strong class="text-accent">Digital Marketing Agency</strong>`,
