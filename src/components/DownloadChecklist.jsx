@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { MdAirplaneTicket } from "react-icons/md";
 import { BsSendCheck } from "react-icons/bs";
 
 const DownloadChecklist = () => {

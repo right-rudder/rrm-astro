@@ -3,15 +3,11 @@ import { mobileNavbarLinks } from "../data/mobileNavbarLinks.js";
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { Image } from "astro:assets";
-import rrmLogo from "../assets/RRM-hor-textWhite-bgTrans.png";
 
 import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
   PHONE_NUMBER,
-  EMAIL_ADDRESS,
   LINKEDIN_URL,
 } from "../consts.ts";
 

@@ -8,13 +8,9 @@ export const navbarLinks = [
     name: "Resources",
     link: "/blog",
     submenu: [
-      /* {
+      {
         name: "Flight School Handbook",
         link: "/resources/flight-school-handbook",
-      }, */
-      {
-        name: "Webinars",
-        link: "/webinar",
       },
       {
         name: "Marketing Checklist",
@@ -36,10 +32,10 @@ export const navbarLinks = [
         name: "Google Business Profile",
         link: "/resources/gmb",
       },
-      /* {
-        name: "Check Online Presence",
-        link: "/resources/check-online-presence",
-      }, */
+      {
+        name: "Webinars",
+        link: "/webinars",
+      },
       {
         name: "Our Blog",
         link: "/blog",

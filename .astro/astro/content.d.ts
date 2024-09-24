@@ -228,20 +228,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"copywriting-revisited.md": {
-	id: "copywriting-revisited.md";
-  slug: "copywriting-revisited";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"design-great-looking-checklists-forms-brochures-for-free.md": {
-	id: "design-great-looking-checklists-forms-brochures-for-free.md";
-  slug: "design-great-looking-checklists-forms-brochures-for-free";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "driving-conversions-ctas-and-form-submissions-for-flight-schools.md": {
 	id: "driving-conversions-ctas-and-form-submissions-for-flight-schools.md";
   slug: "driving-conversions-ctas-and-form-submissions-for-flight-schools";
@@ -284,13 +270,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md": {
-	id: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md";
-  slug: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md": {
 	id: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md";
   slug: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools";
@@ -298,30 +277,9 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md": {
-	id: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md";
-  slug: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
-	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
-  slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics.md": {
 	id: "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics.md";
   slug: "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"how-planeenglish-helped-500k-pilots-improve-radio-communication.md": {
-	id: "how-planeenglish-helped-500k-pilots-improve-radio-communication.md";
-  slug: "how-planeenglish-helped-500k-pilots-improve-radio-communication";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -347,30 +305,9 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"how-to-enroll-more-student-pilots-at-my-flight-school.md": {
-	id: "how-to-enroll-more-student-pilots-at-my-flight-school.md";
-  slug: "how-to-enroll-more-student-pilots-at-my-flight-school";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"how-to-increase-student-retention-upcoming-webinar-december-7-2022.md": {
-	id: "how-to-increase-student-retention-upcoming-webinar-december-7-2022.md";
-  slug: "how-to-increase-student-retention-upcoming-webinar-december-7-2022";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "how-to-make-your-flight-school-known.md": {
 	id: "how-to-make-your-flight-school-known.md";
   slug: "how-to-make-your-flight-school-known";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"how-to-write-better-copy-and-increase-student-enrollment.md": {
-	id: "how-to-write-better-copy-and-increase-student-enrollment.md";
-  slug: "how-to-write-better-copy-and-increase-student-enrollment";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -406,13 +343,6 @@ declare module 'astro:content' {
 "new-faa-rule-may-limit-dpes-to-their-home-fsdo.md": {
 	id: "new-faa-rule-may-limit-dpes-to-their-home-fsdo.md";
   slug: "new-faa-rule-may-limit-dpes-to-their-home-fsdo";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"new-rules-of-marketing-in-2024-for-flight-schools.md": {
-	id: "new-rules-of-marketing-in-2024-for-flight-schools.md";
-  slug: "new-rules-of-marketing-in-2024-for-flight-schools";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -508,13 +438,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md": {
-	id: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md";
-  slug: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "self-service-screening-takes-off-in-las-vegas.md": {
 	id: "self-service-screening-takes-off-in-las-vegas.md";
   slug: "self-service-screening-takes-off-in-las-vegas";
@@ -578,13 +501,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"tim-jedrek-at-king-schools-talks-sales-and-marketing.md": {
-	id: "tim-jedrek-at-king-schools-talks-sales-and-marketing.md";
-  slug: "tim-jedrek-at-king-schools-talks-sales-and-marketing";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director.md": {
 	id: "tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director.md";
   slug: "tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director";
@@ -641,21 +557,98 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+};
+"webinars": {
+"copywriting-revisited.md": {
+	id: "copywriting-revisited.md";
+  slug: "copywriting-revisited";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"design-great-looking-checklists-forms-brochures-for-free.md": {
+	id: "design-great-looking-checklists-forms-brochures-for-free.md";
+  slug: "design-great-looking-checklists-forms-brochures-for-free";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md": {
+	id: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md";
+  slug: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md": {
+	id: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md";
+  slug: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
+	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
+  slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"how-planeenglish-helped-500k-pilots-improve-radio-communication.md": {
+	id: "how-planeenglish-helped-500k-pilots-improve-radio-communication.md";
+  slug: "how-planeenglish-helped-500k-pilots-improve-radio-communication";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"how-to-enroll-more-student-pilots-at-my-flight-school.md": {
+	id: "how-to-enroll-more-student-pilots-at-my-flight-school.md";
+  slug: "how-to-enroll-more-student-pilots-at-my-flight-school";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"how-to-increase-student-retention-upcoming-webinar-december-7-2022.md": {
+	id: "how-to-increase-student-retention-upcoming-webinar-december-7-2022.md";
+  slug: "how-to-increase-student-retention-upcoming-webinar-december-7-2022";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"how-to-write-better-copy-and-increase-student-enrollment.md": {
+	id: "how-to-write-better-copy-and-increase-student-enrollment.md";
+  slug: "how-to-write-better-copy-and-increase-student-enrollment";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"new-rules-of-marketing-in-2024-for-flight-schools.md": {
+	id: "new-rules-of-marketing-in-2024-for-flight-schools.md";
+  slug: "new-rules-of-marketing-in-2024-for-flight-schools";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md": {
+	id: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money.md";
+  slug: "run-google-ads-the-right-way-to-enroll-more-students-and-ave-money";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
+"tim-jedrek-at-king-schools-talks-sales-and-marketing.md": {
+	id: "tim-jedrek-at-king-schools-talks-sales-and-marketing.md";
+  slug: "tim-jedrek-at-king-schools-talks-sales-and-marketing";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
 "your-2024-digital-marketing-plan-for-flight-school-businesses.md": {
 	id: "your-2024-digital-marketing-plan-for-flight-school-businesses.md";
   slug: "your-2024-digital-marketing-plan-for-flight-school-businesses";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-};
-"webinar": {
-"example-webinar.md": {
-	id: "example-webinar.md";
-  slug: "example-webinar";
-  body: string;
-  collection: "webinar";
-  data: InferEntrySchema<"webinar">
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
 } & { render(): Render[".md"] };
 };
 
