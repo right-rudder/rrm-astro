@@ -147,6 +147,12 @@ const partnersAffiliates = {
           imageAlt: "Flight Schools 4 Sale logo",
           link: "https://flightschools4sale.com/",
         },
+        {
+          name: "Four Forces",
+          imagePath: "/src/assets/FourForces-Logo.webp",
+          imageAlt: "Four Forces logo",
+          link: "https://flyfourforces.com/",
+        },
       ],
     },
 
