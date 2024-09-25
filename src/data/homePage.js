@@ -207,7 +207,7 @@ const homePage = {
         }, */
         {
           name: "Get Free Book",
-          link: "/flight-school-handbook",
+          link: "/resources/flight-school-handbook",
           accent: true,
         },
       ],
