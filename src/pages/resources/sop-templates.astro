@@ -3,7 +3,6 @@ import Header from "../../components/Header.astro";
 import FunnelLayout from "../../layouts/FunnelLayout.astro";
 import DownloadCTA from "../../components/DownloadCTA.astro";
 import sopTemplates from "../../data/sop-templates";
-import GenericCTA from "../../components/GenericCTA.astro";
 
 const { data } = sopTemplates;
 ---
@@ -12,11 +11,10 @@ const { data } = sopTemplates;
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
+  content={data.gmbCTA}
 >
   <!-- HEADER -->
   <Header data={data.header} />
 
   <DownloadCTA data={data.downloadCTA} />
-
-  <GenericCTA data={data.gmbCTA} />
 </FunnelLayout>

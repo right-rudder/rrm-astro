@@ -3,7 +3,6 @@ import Header from "../../components/Header.astro";
 import FunnelLayout from "../../layouts/FunnelLayout.astro";
 import DownloadCTA from "../../components/DownloadCTA.astro";
 import flightSchoolKeywords from "../../data/fligh-school-keywords";
-import GenericCTA from "../../components/GenericCTA.astro";
 
 const { data } = flightSchoolKeywords;
 ---
@@ -12,11 +11,10 @@ const { data } = flightSchoolKeywords;
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
+  content={data.sopCTA}
 >
   <!-- HEADER -->
   <Header data={data.header} />
 
   <DownloadCTA data={data.downloadCTA} />
-
-  <GenericCTA data={data.sopCTA} />
 </FunnelLayout>

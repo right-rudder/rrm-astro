@@ -5,6 +5,7 @@ import DownloadChecklist from "./DownloadChecklist";
 import DownloadKeywords from "./DownloadKeywords";
 import DownloadTemplate from "./DownloadTemplate";
 import DownloadGmb from "./DownloadGMB";
+import DownloadBook from "./DownloadBook";
 
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -86,6 +87,9 @@ if (!images[data.imagePath])
                     )}
                     {btn.modal && btn.name.includes("GMB") && (
                       <DownloadGmb client:visible />
+                    )}
+                    {btn.modal && btn.name.includes("Book") && (
+                      <DownloadBook client:visible />
                     )}
                     {!btn.modal && (
                       <a

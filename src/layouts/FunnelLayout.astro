@@ -10,6 +10,7 @@ import ChatWidget from "../components/ChatWidget.astro";
 import Banner from "../components/Banner.astro";
 import SimpleFooter from "../components/SimpleFooter.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
+import GenericCTA from "../components/GenericCTA.astro";
 
 const flyWithUsCTA = {
   imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
@@ -32,7 +33,7 @@ const flyWithUsCTA = {
 };
 
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, keywords } = Astro.props;
+const { siteTitle, siteDescription, keywords, content } = Astro.props;
 ---
 
 <!doctype html>
@@ -51,6 +52,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
       <slot />
     </main>
     <FlyWithUsCTA data={flyWithUsCTA} />
+    <GenericCTA data={content} />
     <SimpleFooter />
     <!-- <ChatWidget /> -->
   </body>
