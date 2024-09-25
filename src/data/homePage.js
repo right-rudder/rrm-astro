@@ -256,7 +256,7 @@ const homePage = {
       },
       btn: {
         header: "Learn More About Our...",
-        link: "/services/marketing-system",
+        link: "/marketing-system",
         text: "Flight School Marketing System",
       },
     },
