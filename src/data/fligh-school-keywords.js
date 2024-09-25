@@ -57,7 +57,7 @@ const flightSchoolKeywords = {
         },
         {
           name: "Learn More",
-          link: "/resources/sop-templates",
+          link: "/blog/how-to-create-sops-to-scale-your-flight-school/",
           accent: false,
         },
       ],

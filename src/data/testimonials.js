@@ -16,13 +16,13 @@ const testimonials = {
         "We are a team of pilots that know the flight training industry. We have helped many flight schools and aviation companies grow their business. See what our clients have to say about working with us.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
-          name: "Contact Us",
-          link: "/contact",
+          name: "Our Marketing System",
+          link: "/marketing-system",
           primary: false,
         },
       ],
@@ -90,8 +90,8 @@ const testimonials = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {

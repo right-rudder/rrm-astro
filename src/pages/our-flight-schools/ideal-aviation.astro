@@ -2,6 +2,7 @@
 import CaseStudies from "../../components/CaseStudies.astro";
 import ContentLong from "../../components/ContentLong.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import GenericCTA from "../../components/GenericCTA.astro";
 import HeaderScreen from "../../components/HeaderScreen.astro";
 import SingleTestimonial from "../../components/SingleTestimonial.astro";
 import idealAviation from "../../data/ideal-aviation";
@@ -19,6 +20,8 @@ const { data } = idealAviation;
   <HeaderScreen content={data.header} />
 
   <ContentLong data={data.caseLong} />
+
+  <GenericCTA data={data.sopCTA} />
 
   <SingleTestimonial data={data.testimonial} />
 

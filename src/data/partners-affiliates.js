@@ -16,13 +16,13 @@ const partnersAffiliates = {
         "We're active members in the aviation community. From flying at our local airports, to attending industry events, we're actively involved in the aviation community. We donate to and sponsor associations and groups that have a direct impact to the pilot training community. If your business, association, or group has interest in partnering with Us, please reach out and connect with a Right Rudder Marketing Team member.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
-          name: "Contact Us",
-          link: "/contact",
+          name: "Our Marketing System",
+          link: "/marketing-system",
           primary: false,
         },
       ],
@@ -73,6 +73,26 @@ const partnersAffiliates = {
           imagePath: "/src/assets/uschamber-logo.webp",
           imageAlt: "Us Chamber of Commerce logo",
           link: "https://www.uschamber.com/",
+        },
+      ],
+    },
+
+    keywordsCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "The Complete Flight School SEO Keywords Guide",
+      heading: `The Complete Flight School SEO Keywords Guide`,
+      description:
+        "Download our keyword guide to get you the most commonly searched keywords for flight schools and pilot training. Use the guide to formulate the appropriate keywords to focus on in your flight school's website and Google Business profile.",
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/flight-school-keywords",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/resources/flight-school-keywords",
+          accent: false,
         },
       ],
     },
@@ -164,8 +184,8 @@ const partnersAffiliates = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {

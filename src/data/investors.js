@@ -16,13 +16,13 @@ const investorsVars = {
         "Right Rudder Marketing is on track to become a multi-million dollar digital marketing agency. If you want to be a part of the action, contact us and let's start a conversation. We are a digital marketing agency that specializes in helping flight schools grow and scale their businesses.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
-          name: "Book a Strategy Call",
-          link: "/schedule-call",
+          name: "Our Marketing System",
+          link: "/marketing-system",
           primary: false,
         },
       ],
@@ -174,8 +174,8 @@ const investorsVars = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {

@@ -16,13 +16,13 @@ const idealAviation = {
         "When Blake from SimpliFly gave Right Rudder Marketing a call, they were looking to update their website and get more leads coming into their school to increase their revenue. They had a WordPress website already built out, social media profiles, and a GMB listing, but they weren't seeing much progress in their online rankings.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Checklist",
+          link: "/resources/marketing-checklist",
           primary: false,
         },
         {
-          name: "Schedule a Call",
-          link: "/contact",
+          name: "Our Marketing System",
+          link: "/marketing-system",
           primary: false,
         },
       ],
@@ -58,6 +58,26 @@ const idealAviation = {
       imageCaption: "Happy visitors at SimpliFly",
     },
 
+    checklistCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "The Ultimate Flight School Marketing Checklist",
+      heading: `The Ultimate Flight School Marketing Checklist`,
+      description:
+        "This checklist will help you identify what is missing from your current strategy and what you must focus on next to take your flight school to the next level.",
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/marketing-checklist#download-cta",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/resources/marketing-checklist",
+          accent: false,
+        },
+      ],
+    },
+
     testimonial: {
       imagePath: "/src/assets/blake-simplifly.webp",
       imageAlt: "Blake from SimpliFly",
@@ -76,8 +96,8 @@ const idealAviation = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {

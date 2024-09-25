@@ -16,8 +16,8 @@ const caseStudies = {
         "Marketing for flight schools is our specialty. We have a proven track record of getting flight schools more leads, more students, and more revenue. See how we've helped our clients take their business out of the clouds and into VFR.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Checklist",
+          link: "/resources/marketing-checklist",
           primary: false,
         },
         {
@@ -79,8 +79,8 @@ const caseStudies = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {

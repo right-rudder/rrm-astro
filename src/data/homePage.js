@@ -10,8 +10,8 @@ const homePage = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash(1).jpg",
-      imageAlt: "Right Rudder Marketing team on the runway",
+      imagePath: "/src/assets/flying-over-right-rudder-marketing.jpeg",
+      imageAlt: "fly over Right Rudder Marketing",
       headerH1: `Marketing for 7-8 Figure</br><span class="text-accent-300">Flight Schools</span>`,
       paragraph:
         "Grow your flight school, enroll more pilots, and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
@@ -344,8 +344,8 @@ const homePage = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {

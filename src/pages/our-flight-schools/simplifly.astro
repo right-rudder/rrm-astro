@@ -1,6 +1,7 @@
 ---
 import ContentLong from "../../components/ContentLong.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import GenericCTA from "../../components/GenericCTA.astro";
 import HeaderScreen from "../../components/HeaderScreen.astro";
 import SingleTestimonial from "../../components/SingleTestimonial.astro";
 import simplifly from "../../data/simplifly";
@@ -18,6 +19,8 @@ const { data } = simplifly;
   <HeaderScreen content={data.header} />
 
   <ContentLong data={data.caseLong} />
+
+  <GenericCTA data={data.checklistCTA} />
 
   <SingleTestimonial data={data.testimonial} />
 

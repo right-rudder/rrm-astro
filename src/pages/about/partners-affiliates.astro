@@ -1,6 +1,7 @@
 ---
 import Affiliates from "../../components/Affiliates.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import GenericCTA from "../../components/GenericCTA.astro";
 import HeaderScreen from "../../components/HeaderScreen.astro";
 import Partners from "../../components/Partners.astro";
 import Sponsor from "../../components/Sponsor.astro";
@@ -27,6 +28,8 @@ const { data } = partnersAffiliates;
     heading={data.memberOf.heading}
     organizations={data.memberOf.organizations}
   />
+
+  <GenericCTA data={data.keywordsCTA} />
 
   <Affiliates
     heading={data.affiliates.heading}
