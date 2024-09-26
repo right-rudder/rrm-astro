@@ -558,6 +558,36 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
+"podcasts": {
+"arming-independent-cfis-and-specialty-flight-schools-to-thrive-with-orka.md": {
+	id: "arming-independent-cfis-and-specialty-flight-schools-to-thrive-with-orka.md";
+  slug: "arming-independent-cfis-and-specialty-flight-schools-to-thrive-with-orka";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
+"embracing-uncertainty-with-sam-goodwin-lessons-from-an-extraordinary-journey.md": {
+	id: "embracing-uncertainty-with-sam-goodwin-lessons-from-an-extraordinary-journey.md";
+  slug: "embracing-uncertainty-with-sam-goodwin-lessons-from-an-extraordinary-journey";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
+"how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
+	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
+  slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
+"how-planeenglish-helped-500k-pilots-improve-radio-communication.md": {
+	id: "how-planeenglish-helped-500k-pilots-improve-radio-communication.md";
+  slug: "how-planeenglish-helped-500k-pilots-improve-radio-communication";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
+};
 "webinars": {
 "copywriting-revisited.md": {
 	id: "copywriting-revisited.md";
@@ -583,20 +613,6 @@ declare module 'astro:content' {
 "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md": {
 	id: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization.md";
   slug: "how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization";
-  body: string;
-  collection: "webinars";
-  data: InferEntrySchema<"webinars">
-} & { render(): Render[".md"] };
-"how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
-	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
-  slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
-  body: string;
-  collection: "webinars";
-  data: InferEntrySchema<"webinars">
-} & { render(): Render[".md"] };
-"how-planeenglish-helped-500k-pilots-improve-radio-communication.md": {
-	id: "how-planeenglish-helped-500k-pilots-improve-radio-communication.md";
-  slug: "how-planeenglish-helped-500k-pilots-improve-radio-communication";
   body: string;
   collection: "webinars";
   data: InferEntrySchema<"webinars">
