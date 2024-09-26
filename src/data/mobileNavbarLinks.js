@@ -1,8 +1,16 @@
 export const mobileNavbarLinks = [
   {
     name: "Flight Schools",
-    link: "/our-flight-schools",
-    submenu: [],
+    submenu: [
+      {
+        name: "10X more leads: SimpliFly",
+        link: "/our-flight-schools/simplifly",
+      },
+      {
+        name: "Rank 1st on Google: Ideal",
+        link: "/our-flight-schools/ideal-aviation",
+      },
+    ],
   },
   {
     name: "Services",
@@ -16,12 +24,16 @@ export const mobileNavbarLinks = [
         link: "/flight-school-seo",
       },
       {
-        name: "Google Ads",
+        name: "Google Ads (PPC)",
         link: "/how-to-enroll-more-students-with-google-ads-in-2024",
       },
       {
-        name: "Facebook Ads",
+        name: "Facebook Ads (PPC)",
         link: "/how-to-run-effective-facebook-ads-in-2024",
+      },
+      {
+        name: "Google My Business",
+        link: "/how-to-optimize-google-my-business-2024",
       },
       {
         name: "Customer Relationship Management(CRM)",
@@ -45,20 +57,12 @@ export const mobileNavbarLinks = [
         link: "/resources/flight-school-handbook",
       },
       {
-        name: "Our Blog",
-        link: "/blog",
-      },
-      {
-        name: "Webinars",
-        link: "/webinars",
-      },
-      {
         name: "Marketing Checklist",
         link: "/resources/marketing-checklist",
       },
       {
         name: "Flight School Tips",
-        link: "/resources/flight-school-tips",
+        link: "/blog/5-tips-to-grow-your-flight-school/",
       },
       {
         name: "Flight School Keywords",
@@ -76,6 +80,18 @@ export const mobileNavbarLinks = [
         name: "Check Online Presence",
         link: "/resources/check-online-presence",
       },
+      {
+        name: "Webinars",
+        link: "/webinars",
+      },
+      {
+        name: "Podcasts",
+        link: "/podcasts",
+      },
+      {
+        name: "Our Blog",
+        link: "/blog",
+      },
     ],
   },
 
@@ -86,10 +102,10 @@ export const mobileNavbarLinks = [
         name: "Who We Are",
         link: "/about/who-we-are",
       },
-      {
+      /* {
         name: "Why Choose Us",
         link: "/about/why-choose-us",
-      },
+      }, */
       {
         name: "Testimonials",
         link: "/about/testimonials",

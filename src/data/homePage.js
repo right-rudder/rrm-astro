@@ -1,20 +1,20 @@
 const homePage = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Enroll More Student Pilots | Right Rudder Marketing",
+    pageTitle: "Grow and Scale your Aviation Business | Right Rudder Marketing",
     pageDescription:
-      "Right Rudder Marketing specializes in aviation marketing services, helping flight schools and aviation companies increase visibility and grow enrollment. We offer tailored digital marketing solutions, including SEO, web design, and lead generation to help you reach more aspiring pilots. With proven aviation marketing strategies, we can help your flight school stand out in the competitive market and boost student enrollment efficiently.",
+      "Grow and scale your aviation business. Right Rudder Marketing specializes in aviation marketing services, helping flight schools and aviation companies increase visibility and grow enrollment. We offer tailored digital marketing solutions, including SEO, web design, and lead generation to help you reach more aspiring pilots. With proven aviation marketing strategies, we can help your flight school stand out in the competitive market and boost student enrollment efficiently.",
     pageKeywords:
-      "Right Rudder Marketing, Aviation marketing, Flight school marketing, Aviation digital marketing, SEO for aviation, Digital marketing for flight schools, Aviation marketing agency, Lead generation for aviation companies, Increase flight school enrollment, Aviation advertising services, Content marketing for aviation businesses, Aviation marketing strategies, Aviation SEO services",
+      "grow flight school, scale flight school, grow and scale flight school, aviation business, aviation training,Right Rudder Marketing, Aviation marketing, Flight school marketing, Aviation digital marketing, SEO for aviation, Digital marketing for flight schools, Aviation marketing agency, Lead generation for aviation companies, Increase flight school enrollment, Aviation advertising services, Content marketing for aviation businesses, Aviation marketing strategies, Aviation SEO services",
 
     //top header
     header: {
       stars: true,
       imagePath: "/src/assets/flying-over-right-rudder-marketing.jpeg",
       imageAlt: "fly over Right Rudder Marketing",
-      headerH1: `Marketing for 7-8 Figure</br><span class="text-accent-300">Flight Schools</span>`,
+      headerH1: `Grow and Scale</br><span class="text-accent-300">Your Aviation Business</span>`,
       paragraph:
-        "Grow your flight school, enroll more pilots, and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
+        "Enroll more pilots at your flight school and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
       buttons: [
         {
           name: "Our Marketing System",

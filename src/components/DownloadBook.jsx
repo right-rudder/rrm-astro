@@ -59,7 +59,7 @@ const DownloadBook = () => {
           document.body.style.overflow = "hidden";
         }}
       >
-        Get You Free Book Now
+        Get Your Free Book Now
       </button>
 
       {showModal && (
@@ -68,7 +68,7 @@ const DownloadBook = () => {
             {!formSubmitted && (
               <>
                 <h2 className="text-4xl text-gray-900 text-center font-bold mb-1">
-                  Get Our Flight School Handbook
+                  Get Your Flight School Handbook
                 </h2>
                 <p className="mb-4 text-center text-gray-600">
                   Fill out the form below to get your free book.

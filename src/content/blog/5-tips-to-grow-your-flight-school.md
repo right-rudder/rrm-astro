@@ -5,6 +5,7 @@ title: "5 tips to grow your flight school"
 description: "Below are 5 tips to grow your flight school.  If you want a marketing team to partner with you to implement these strategies and grow your school."
 heroImage: "/blog/tips-grow-flight-school.webp"
 readingTime: 4
+keywords: "grow flight school, grow business, flight school tips, flight school marketing, flight school business, flight school business strategies"
 category: "Marketing"
 tags: ["Tips"]
 ---

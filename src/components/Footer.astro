@@ -24,7 +24,7 @@ const { pathname } = Astro.url;
 ---
 
 <footer
-  class="relative bg-gradient-to-b from-primary-dark-700 to-primary-dark-800"
+  class="relative bg-gradient-to-b from-primary-dark-700 font-sans to-primary-dark-800"
 >
   <div
     class="px-4 pt-24 pb-16 lg:pb-2 md:pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
@@ -104,6 +104,13 @@ const { pathname } = Astro.url;
                 href="https://flightschoolcrm.com/"
                 class="transition-colors duration-300 text-white hover:text-accent-100"
                 >CRM
+              </a>
+            </li>
+            <li>
+              <a
+                href="/how-to-optimize-google-my-business-2024"
+                class="transition-colors duration-300 text-white hover:text-accent-100"
+                >GMB Profile
               </a>
             </li>
             <!-- <li>
@@ -256,6 +263,8 @@ const { pathname } = Astro.url;
         <a
           href={LINKEDIN_URL}
           target="_blank"
+          name="LinkedIn"
+          title="LinkedIn"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg viewBox="0 0 16 16" fill="currentColor" class="h-8 lg:h-5">
@@ -267,6 +276,8 @@ const { pathname } = Astro.url;
         <a
           href={INSTAGRAM_URL}
           target="_blank"
+          name="Instagram"
+          title="Instagram"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg viewBox="0 0 30 30" fill="currentColor" class="h-10 lg:h-6">
@@ -279,6 +290,8 @@ const { pathname } = Astro.url;
         <a
           href={FACEBOOK_URL}
           target="_blank"
+          name="Facebook"
+          title="Facebook"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" class="h-8 lg:h-5">
@@ -290,7 +303,8 @@ const { pathname } = Astro.url;
         <a
           href={TWITTER_URL}
           target="_blank"
-          name="Youtube"
+          name="X"
+          title="X"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg
@@ -312,6 +326,7 @@ const { pathname } = Astro.url;
           href={YOUTUBE_URL}
           target="_blank"
           name="Youtube"
+          title="Youtube"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg

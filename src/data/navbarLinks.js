@@ -2,7 +2,16 @@ export const navbarLinks = [
   {
     name: "Flight Schools",
     link: "/our-flight-schools",
-    submenu: [],
+    submenu: [
+      {
+        name: "10X more leads: SimpliFly",
+        link: "/our-flight-schools/simplifly",
+      },
+      {
+        name: "Rank 1st on Google: Ideal",
+        link: "/our-flight-schools/ideal-aviation",
+      },
+    ],
   },
   {
     name: "Resources",
@@ -16,10 +25,10 @@ export const navbarLinks = [
         name: "Marketing Checklist",
         link: "/resources/marketing-checklist",
       },
-      /* {
+      {
         name: "Flight School Tips",
-        link: "/resources/flight-school-tips",
-      }, */
+        link: "/blog/5-tips-to-grow-your-flight-school/",
+      },
       {
         name: "Flight School Keywords",
         link: "/resources/flight-school-keywords",
@@ -37,6 +46,10 @@ export const navbarLinks = [
         link: "/webinars",
       },
       {
+        name: "Podcasts",
+        link: "/podcasts",
+      },
+      {
         name: "Our Blog",
         link: "/blog",
       },
@@ -51,10 +64,10 @@ export const navbarLinks = [
         name: "Who We Are",
         link: "/about/who-we-are",
       },
-      {
+      /* {
         name: "Why Choose Us",
         link: "/about/why-choose-us",
-      },
+      }, */
       {
         name: "Testimonials",
         link: "/about/testimonials",

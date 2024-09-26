@@ -28,7 +28,7 @@
   }
 
   .tooltip {
-  @apply invisible opacity-0 absolute p-4 rounded-sm shadow-md shadow-slate-800/50 bg-gray-50 text-center text-gray-800 mt-5;
+  @apply invisible opacity-0 absolute rounded-sm shadow-md shadow-slate-800/50 bg-gray-50 text-center text-gray-800;
   }
 
   .has-tooltip:hover .tooltip {

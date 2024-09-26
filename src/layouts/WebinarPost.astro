@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
+import { KEYWORDS } from "../consts";
 
 type Props = CollectionEntry<"webinars">["data"];
 
@@ -14,13 +15,14 @@ const {
   heroImage,
   category,
   tags,
+  keywords,
 } = Astro.props;
 ---
 
 <BaseLayout
-  siteTitle={title + " | Right Rudder Marketing"}
-  siteDescription={description}
-  keywords={description}
+  siteTitle={title + " | Webinars | Right Rudder Marketing"}
+  siteDescription={description + " Right Rudder Marketing Blog."}
+  keywords={category + ", " + tags.join(", ") + keywords ? keywords : KEYWORDS}
 >
   <div class="h-20 lg:h-28 w-full bg-primary-dark-800/80"></div>
 

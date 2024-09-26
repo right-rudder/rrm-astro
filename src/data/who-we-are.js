@@ -47,7 +47,7 @@ const whoWeAre = {
       ],
       facts: [
         {
-          title: "123 %",
+          title: "10K Leads",
           description: "Lorem ipsum dolor sit amet",
         },
         {
@@ -55,7 +55,7 @@ const whoWeAre = {
           description: "Lorem ipsum dolor sit amet",
         },
         {
-          title: "675",
+          title: "$10k",
           description: "Lorem ipsum dolor sit amet",
         },
       ],
