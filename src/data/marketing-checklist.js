@@ -14,8 +14,8 @@ const marketingChecklist = {
         "This checklist will help you identify what is missing from your current strategy and what you must focus on next to take your flight school to the next level.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Schedule a Call",
+          link: "/schedule-call",
           primary: false,
         },
         {

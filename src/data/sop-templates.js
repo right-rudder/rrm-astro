@@ -12,8 +12,8 @@ const sopTemplates = {
       paragraph: `Growing a flight school means creating systems and procedures for your team to follow. Creating SOPs to add to your "playbook" is the best way to properly delegate and lead your team. Download our free template to get started in your continuous improvement journey.`,
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Schedule a Call",
+          link: "/schedule-call",
           primary: false,
         },
         {

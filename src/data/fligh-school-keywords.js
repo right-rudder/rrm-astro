@@ -14,8 +14,8 @@ const flightSchoolKeywords = {
         "This keyword guide will give you the most commonly searched keywords for flight schools and pilot training. Use the guide to formulate the appropriate keywords to focus on in your flight school's website and Google Business profile.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Schedule a Call",
+          link: "/schedule-call",
           primary: false,
         },
         {

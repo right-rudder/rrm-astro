@@ -174,7 +174,7 @@ const whoWeAre = {
     },
 
     teamGrid: {
-      upperHeading: "Our Team",
+      upperHeading: "Our Leadership Team",
       heading: "Expert Marketers & Web Developers",
       description:
         "Right Rudder Marketing is a pilot owned digital marketing agency focused on helping flight schools and aviation businesses accomplish their goals: Grow, scale, and make a significant impact to the pilot training industry. Flight schools that partner with Right Rudder Marketing become the #1 flight schools in their community and dominate the local area. There's no doubt about it. Right Rudder Marketing has the secret sauce.",
@@ -258,7 +258,7 @@ const whoWeAre = {
           imagePath: "/src/assets/diego-yon.webp",
           imageAlt:
             "Portrait of Diego Yon, Web Developer at Right Rudder Marketing",
-          rank: "Web Developer",
+          rank: "Technical Lead",
           social: [
             {
               platform: "linkedin",
@@ -279,7 +279,7 @@ const whoWeAre = {
           imagePath: "/src/assets/raul-right-rudder.webp",
           imageAlt:
             "Portrait of Raul Ospina, Web Developer at Right Rudder Marketing",
-          rank: "Web Developer",
+          rank: "Marketing Lead",
           social: [
             {
               platform: "instagram",
