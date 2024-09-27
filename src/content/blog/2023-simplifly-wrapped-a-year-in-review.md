@@ -1,19 +1,19 @@
 ---
 pubDate: "January 15, 2024"
 author: Charles Ferguson
-title: "2023 Simplifly Wrapped: A Year in Review"
-description: "2023 was a big year for Simplifly Flight School. From our operations out of Falcon Field Airport (KFFZ) in Mesa, Arizona, we experienced what can only be described as a record year. New students started their flight journeys."
+title: "2023 SimpliFly Wrapped: A Year in Review"
+description: "2023 was a big year for SimpliFly Flight School. From our operations out of Falcon Field Airport (KFFZ) in Mesa, Arizona, we experienced what can only be described as a record year. New students started their flight journeys."
 heroImage: "/blog/simplifly-blog-pilot-silhoutte.webp"
 readingTime: 4
 category: "Flight School Articles"
 tags: ["Balance", "2023"]
 ---
 
-2023 was a big year for Simplifly Flight School. From our operations out of **Falcon Field Airport (KFFZ)** in Mesa, Arizona, we experienced what can only be described as a record year. New students started their flight journeys. We logged countless hours in the air. We even expanded our fleet. So, before we roll into 2024, let’s take a look back at some of our best moments from 2023:
+2023 was a big year for SimpliFly Flight School. From our operations out of **Falcon Field Airport (KFFZ)** in Mesa, Arizona, we experienced what can only be described as a record year. New students started their flight journeys. We logged countless hours in the air. We even expanded our fleet. So, before we roll into 2024, let’s take a look back at some of our best moments from 2023:
 
 ## 8,007 Total Flight Hours Logged
 
-Our expert team of CFIs logged countless hours this year. As we grew, so did our time in the air. This is not only a testament to the durability of our fleet, but also the commitment our CFIs have to meeting the needs of each student at Simplifly Flight School.
+Our expert team of CFIs logged countless hours this year. As we grew, so did our time in the air. This is not only a testament to the durability of our fleet, but also the commitment our CFIs have to meeting the needs of each student at SimpliFly Flight School.
 
 ![Student and CFI logging their flight hours over the Phoenix Valley](/blog/IMG_4713.webp)
 _Putting in the time - One of our students logging flight hours over the Phoenix Valley_
@@ -22,7 +22,7 @@ _Putting in the time - One of our students logging flight hours over the Phoenix
 
 ## 87 Checkrides Passed
 
-A leading indicator of success at Simplifly Flight School is [our checkride pass rate](https://simpliflyco.com/why-simplifly). We historically boast a 93% pass rate on our checkrides and attribute this to the guidance we provide our students in the form of instruction, study material, and additional resources necessary for their success.
+A leading indicator of success at SimpliFly Flight School is [our checkride pass rate](https://simpliflyco.com/why-simplifly). We historically boast a 93% pass rate on our checkrides and attribute this to the guidance we provide our students in the form of instruction, study material, and additional resources necessary for their success.
 
 ![Instrument panel of an aircraft flying over the mountains of Arizona](/blog/IMG_0735.webp)
 _Hard to beat the views from the Arizona skies_

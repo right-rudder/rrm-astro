@@ -4,12 +4,16 @@ export const navbarLinks = [
     link: "/our-flight-schools",
     submenu: [
       {
-        name: "10X more leads: SimpliFly",
+        name: "SimpliFly",
         link: "/our-flight-schools/simplifly",
       },
       {
-        name: "Rank 1st on Google: Ideal",
+        name: "Ideal Aviation",
         link: "/our-flight-schools/ideal-aviation",
+      },
+      {
+        name: "Pitcairn Flight Academy",
+        link: "/our-flight-schools/pitcairn",
       },
     ],
   },

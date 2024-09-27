@@ -88,9 +88,9 @@ const homePage = {
           },
         },
         {
-          client: "Simplifly",
+          client: "SimpliFly",
           imagePath: "/src/assets/simplifly-logo.webp",
-          imageAlt: "Simplifly Flight School logo",
+          imageAlt: "SimpliFly Flight School logo",
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
           result:
@@ -145,7 +145,7 @@ const homePage = {
           invert: false,
         },
         {
-          name: "Simplifly",
+          name: "SimpliFly",
           imagePath: "/src/assets/simplifly_2.webp",
           link: "https://simpliflyco.com/",
           invert: false,

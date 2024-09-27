@@ -165,7 +165,7 @@ const whoWeAre = {
           invert: false,
         },
         {
-          name: "Simplifly",
+          name: "SimpliFly",
           imagePath: "/src/assets/simplifly_2.webp",
           link: "https://simpliflyco.com/",
           invert: false,

@@ -51,14 +51,31 @@ const caseStudies = {
           },
         },
         {
-          client: "Simplifly",
+          client: "SimpliFly",
           imagePath: "/src/assets/simplifly-logo.webp",
-          imageAlt: "Simplifly Flight School logo",
+          imageAlt: "SimpliFly Flight School logo",
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
           result:
             "SimpliFly gets flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.  They are seeing 10 times the amount of leads coming in since first working with us and managed to increase the average LTV (life time value) of each student customer by narrowing their focus to offer programs solely for career track pilots.",
           link: "/our-flight-schools/simplifly",
+          metric1: {
+            label: "Total Leads",
+            value: "10X",
+          },
+          metric2: {
+            label: "ARR",
+            value: "$8M+",
+          },
+        },
+        {
+          client: "Pitcairn",
+          imagePath: "/src/assets/pitcairn-logo-250-vertical-white.webp",
+          imageAlt: "Pitcairn Flight Academy logo",
+          quote: "We are so happy with them.",
+          result:
+            "Pitcairn Flight Academy is now ranking on the first page of Google Search and Google Maps. They have seen a 150% increase in leads and a 200% increase in sales. They are now expanding their fleet and have a waiting list of upcoming student pilots.",
+          link: "/our-flight-schools/pitcairn",
           metric1: {
             label: "Total Leads",
             value: "10X",

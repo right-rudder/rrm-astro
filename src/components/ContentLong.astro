@@ -67,5 +67,14 @@ if (!images[data.imagePath])
         ))
       }
     </div>
+    {
+      data.finalParagraphs && (
+        <div class="mt-8 pt-4 max-w-2xl border-t-2 border-primary-500">
+          {data.finalParagraphs.map((para) => (
+            <p class="mb-3 text-xl leading-8" set:html={para} />
+          ))}
+        </div>
+      )
+    }
   </div>
 </div>

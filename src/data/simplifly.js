@@ -1,7 +1,7 @@
 const idealAviation = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Simplifly - Case Study | Right Rudder Marketing",
+    pageTitle: "SimpliFly - Case Study | Right Rudder Marketing",
     pageDescription:
       "When Blake from SimpliFly gave Right Rudder Marketing a call, they were looking to update their website and get more leads coming into their school to increase their revenue. They had a WordPress website already built out, social media profiles, and a GMB listing, but they weren't seeing much progress in their online rankings. With multiple flight schools at their airport competing for prospective students' attention, Blake knew he needed to do something about his digital marketing.",
     pageKeywords:
@@ -11,7 +11,7 @@ const idealAviation = {
     header: {
       imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `<span class="text-accent-300">Simplifly</span></br>Case Study`,
+      headerH1: `<span class="text-accent-300">SimpliFly</span></br>Case Study`,
       paragraph:
         "When Blake from SimpliFly gave Right Rudder Marketing a call, they were looking to update their website and get more leads coming into their school to increase their revenue. They had a WordPress website already built out, social media profiles, and a GMB listing, but they weren't seeing much progress in their online rankings.",
       buttons: [
@@ -84,7 +84,7 @@ const idealAviation = {
       quote:
         "Right rudder marketing has been a huge help and blessing in our business. They made an amazing website for us. They also understand aviation and pilots which is a huge help. If you own a flight school then you definitely need to use Right Rudder Marketing.",
       name: "Blake",
-      client: "Simplifly",
+      client: "SimpliFly",
       rank: "Owner",
     },
 
