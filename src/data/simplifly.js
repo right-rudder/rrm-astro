@@ -1,7 +1,7 @@
 const idealAviation = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Simplifly - Case Study | Right Rudder Marketing",
+    pageTitle: "SimpliFly - Case Study | Right Rudder Marketing",
     pageDescription:
       "When Blake from SimpliFly gave Right Rudder Marketing a call, they were looking to update their website and get more leads coming into their school to increase their revenue. They had a WordPress website already built out, social media profiles, and a GMB listing, but they weren't seeing much progress in their online rankings. With multiple flight schools at their airport competing for prospective students' attention, Blake knew he needed to do something about his digital marketing.",
     pageKeywords:
@@ -11,18 +11,18 @@ const idealAviation = {
     header: {
       imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `<span class="text-accent-300">Simplifly</span></br>Case Study`,
+      headerH1: `<span class="text-accent-300">SimpliFly</span></br>Case Study`,
       paragraph:
         "When Blake from SimpliFly gave Right Rudder Marketing a call, they were looking to update their website and get more leads coming into their school to increase their revenue. They had a WordPress website already built out, social media profiles, and a GMB listing, but they weren't seeing much progress in their online rankings.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Checklist",
+          link: "/resources/marketing-checklist",
           primary: false,
         },
         {
-          name: "Schedule a Call",
-          link: "/contact",
+          name: "Our Marketing System",
+          link: "/marketing-system",
           primary: false,
         },
       ],
@@ -58,13 +58,33 @@ const idealAviation = {
       imageCaption: "Happy visitors at SimpliFly",
     },
 
+    checklistCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "The Ultimate Flight School Marketing Checklist",
+      heading: `The Ultimate Flight School Marketing Checklist`,
+      description:
+        "This checklist will help you identify what is missing from your current strategy and what you must focus on next to take your flight school to the next level.",
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/marketing-checklist#download-cta",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/resources/marketing-checklist",
+          accent: false,
+        },
+      ],
+    },
+
     testimonial: {
       imagePath: "/src/assets/blake-simplifly.webp",
       imageAlt: "Blake from SimpliFly",
       quote:
         "Right rudder marketing has been a huge help and blessing in our business. They made an amazing website for us. They also understand aviation and pilots which is a huge help. If you own a flight school then you definitely need to use Right Rudder Marketing.",
       name: "Blake",
-      client: "Simplifly",
+      client: "SimpliFly",
       rank: "Owner",
     },
 
@@ -76,13 +96,13 @@ const idealAviation = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],

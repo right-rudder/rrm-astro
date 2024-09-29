@@ -16,13 +16,13 @@ const idealAviation = {
         "When the team at Ideal Aviation reached out to Right Rudder Marketing, they wanted to updated their WordPress website because it was clunky and slow. They were paying other agencies and service providers thousands of dollars but not getting the results they wanted.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
-          name: "Schedule a Call",
-          link: "/contact",
+          name: "Our Marketing System",
+          link: "/marketing-system",
           primary: false,
         },
       ],
@@ -30,7 +30,7 @@ const idealAviation = {
 
     //Case Study
     caseLong: {
-      upperheading: "Case Study",
+      upperHeading: "Case Study",
       heading: "Marketing and Website Design for Ideal Aviation",
       descriptions: [
         "Introducing Ideal Aviation. A flight school that relied on word of mouth and needed to take it to the next level.",
@@ -58,6 +58,25 @@ const idealAviation = {
       imageCaption: "Ideal Aviation Facility",
     },
 
+    sopCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "Start creating your playbook with SOPs",
+      heading: `Start Creating your Playbook with SOPs`,
+      description: `Growing a flight school means creating systems and procedures for your team to follow. Creating SOPs to add to your "playbook" is the best way to properly delegate and lead your team. Download our free template to get started in your continuous improvement journey.`,
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/sop-templates",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/blog/how-to-create-sops-to-scale-your-flight-school/",
+          accent: false,
+        },
+      ],
+    },
+
     testimonial: {
       imagePath: "/src/assets/kim-ideal-aviation.webp",
       imageAlt: "Kim from Ideal Aviation",
@@ -76,13 +95,13 @@ const idealAviation = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],

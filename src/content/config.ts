@@ -9,6 +9,7 @@ const blogCollection = defineCollection({
     author: z.string(),
     category: z.string(),
     tags: z.array(z.string()),
+    keywords: z.string().optional(),
     readingTime: z.number(),
     // Transform string to Date object
     pubDate: z.coerce.date(),
@@ -24,6 +25,27 @@ const webinarCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     author: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    keywords: z.string().optional(),
+    readingTime: z.number(),
+    // Transform string to Date object
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: z.string().optional(),
+  }),
+});
+
+const podcastCollection = defineCollection({
+  type: "content",
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    author: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    keywords: z.string().optional(),
     readingTime: z.number(),
     // Transform string to Date object
     pubDate: z.coerce.date(),
@@ -34,5 +56,6 @@ const webinarCollection = defineCollection({
 
 export const collections = {
   blog: blogCollection,
-  webinar: webinarCollection,
+  webinars: webinarCollection,
+  podcasts: podcastCollection,
 };

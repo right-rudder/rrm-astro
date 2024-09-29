@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import investorsVars from "../../data/investors";
+import Partners from "../../components/Partners.astro";
+import OurClients from "../../components/OurClients.astro";
+import SteppedStats from "../../components/SteppedStats.astro";
+
+const { data } = investorsVars;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <Partners
+    heading={data.memberOf.heading}
+    organizations={data.memberOf.organizations}
+  />
+  <SteppedStats data={data.steppedStats} />
+
+  <OurClients data={data.ourClients} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

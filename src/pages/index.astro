@@ -10,6 +10,8 @@ import ServicesGrid from "../components/ServicesGrid.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import OurClients from "../components/OurClients.astro";
 import BlogFeed from "../components/BlogFeed.astro";
+import GenericCTA from "../components/GenericCTA.astro";
+import ScreenCTA from "../components/ScreenCTA.astro";
 
 const { data } = homePage;
 ---
@@ -33,6 +35,8 @@ const { data } = homePage;
     cases={data.caseStudies.cases}
   />
 
+  <ScreenCTA data={data.bookCTA} />
+
   <Testimonials
     upperHeading={data.testimonials.upperHeading}
     heading={data.testimonials.heading}
@@ -55,6 +59,8 @@ const { data } = homePage;
     heading={data.services.heading}
     services={data.services.servs}
   />
+
+  <GenericCTA data={data.gmbCTA} />
 
   <BlogFeed data={data.blogfeed} />
 

@@ -93,7 +93,7 @@ const webDesign = {
         "Let us help you build a website that converts visitors to leads. We've helped flight schools across the country increase their leads and grow their business.",
       button: {
         text: "Schedule a Call",
-        link: "/contact",
+        link: "/schedule-call",
         primary: true,
       },
     },
@@ -156,7 +156,7 @@ const webDesign = {
       ],
       button: {
         text: "Schedule a Call with the Experts",
-        link: "/contact",
+        link: "/schedule-call",
         primary: true,
       },
     },
@@ -175,7 +175,7 @@ const webDesign = {
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],

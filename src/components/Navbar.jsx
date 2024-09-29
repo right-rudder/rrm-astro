@@ -3,15 +3,11 @@ import { mobileNavbarLinks } from "../data/mobileNavbarLinks.js";
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { Image } from "astro:assets";
-import rrmLogo from "../assets/RRM-hor-textWhite-bgTrans.png";
 
 import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
   PHONE_NUMBER,
-  EMAIL_ADDRESS,
   LINKEDIN_URL,
 } from "../consts.ts";
 
@@ -79,7 +75,7 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky inset-0 z-30 font-sans tracking-wider">
+    <nav className="w-full h-0 sticky inset-0 z-20 font-sans1 tracking-wider">
       <div
         className={`${
           navBar || openMobile ? "bg-primary-dark-950/95" : "bg-transparent"
@@ -98,7 +94,7 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="Right Rudder Marketing Logo"
-                  className={`${navBar || openMobile ? "h-20 w-3/4 lg:w-auto" : "h-[5.5rem] w-5/6 lg:w-full"}z-10 object-contain duration-500`}
+                  className={`${navBar || openMobile ? "h-20 lg:h-28 w-4/6 lg:w-full" : "h-20 lg:h-28 w-3/4 lg:w-full"}z-10 object-contain duration-500`}
                 />
               </a>
               <div className="hidden lg:flex justify-end w-full">
@@ -106,7 +102,7 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "decoration-transparent underline font-bold" : ""} uppercase font-sans font-medium relative group last:no-underline last:px-0`}
+                      className={`${isActive(item, pathname) ? "decoration-transparent underline font-bold" : ""} uppercase font-medium relative group last:no-underline last:px-0`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
@@ -114,7 +110,7 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="text-white font-sans font-semibold text-lg duration-300 hover:underline decoration-accent decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-3 group-last:px-5 group-last:rounded-sm group-last:hover:bg-accent-100 group-last:hover:no-underline"
+                          className="text-white font-semibold text-lg duration-300 hover:underline decoration-accent decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-3 group-last:px-5 group-last:rounded-sm group-last:hover:bg-accent-100 group-last:hover:no-underline"
                         >
                           <span className="relative z-10">{item.name}</span>
                         </a>

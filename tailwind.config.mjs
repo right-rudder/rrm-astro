@@ -75,6 +75,14 @@ export default {
         "dark-blue": "#09212b",
         "medium-blue": "#2cc0ff",
       },
+      minHeight: {
+        "screen-1/2": "50vh",
+        "screen-2/3": "66vh",
+        "screen-1/3": "calc(100vh / 3)",
+        "screen-3/4": "75vh",
+        "screen-4/5": "80vh",
+        "screen-5/6": "83vh",
+      },
       height: (theme) => ({
         "screen-1/2": "50vh",
         "screen-2/3": "66vh",

@@ -1,7 +1,7 @@
 const terms = {
   data: {
     heading: `Terms of Service of<br /> Right Rudder Marketing`,
-    subheading: `Last updated: 2021-05-10`,
+    subheading: `Last updated: 09-24-2024`,
     content: [
       {
         heading: "Terms",

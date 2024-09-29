@@ -1,29 +1,29 @@
 const homePage = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Enroll More Student Pilots | Right Rudder Marketing",
+    pageTitle: "Grow and Scale your Aviation Business | Right Rudder Marketing",
     pageDescription:
-      "Right Rudder Marketing specializes in aviation marketing services, helping flight schools and aviation companies increase visibility and grow enrollment. We offer tailored digital marketing solutions, including SEO, web design, and lead generation to help you reach more aspiring pilots. With proven aviation marketing strategies, we can help your flight school stand out in the competitive market and boost student enrollment efficiently.",
+      "Grow and scale your aviation business. Right Rudder Marketing specializes in aviation marketing services, helping flight schools and aviation companies increase visibility and grow enrollment. We offer tailored digital marketing solutions, including SEO, web design, and lead generation to help you reach more aspiring pilots. With proven aviation marketing strategies, we can help your flight school stand out in the competitive market and boost student enrollment efficiently.",
     pageKeywords:
-      "Right Rudder Marketing, Aviation marketing, Flight school marketing, Aviation digital marketing, SEO for aviation, Digital marketing for flight schools, Aviation marketing agency, Lead generation for aviation companies, Increase flight school enrollment, Aviation advertising services, Content marketing for aviation businesses, Aviation marketing strategies, Aviation SEO services",
+      "grow flight school, scale flight school, grow and scale flight school, aviation business, aviation training,Right Rudder Marketing, Aviation marketing, Flight school marketing, Aviation digital marketing, SEO for aviation, Digital marketing for flight schools, Aviation marketing agency, Lead generation for aviation companies, Increase flight school enrollment, Aviation advertising services, Content marketing for aviation businesses, Aviation marketing strategies, Aviation SEO services",
 
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash(1).jpg",
-      imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Marketing for 7-8 Figure</br><span class="text-accent-300">Flight Schools</span>`,
+      imagePath: "/src/assets/flying-over-right-rudder-marketing.jpeg",
+      imageAlt: "fly over Right Rudder Marketing",
+      headerH1: `Grow and Scale</br><span class="text-accent-300">Your Aviation Business</span>`,
       paragraph:
-        "Grow your flight school, enroll more pilots, and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
+        "Enroll more pilots at your flight school and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
       buttons: [
         {
           name: "Our Marketing System",
-          link: "/services/marketing-system",
+          link: "/marketing-system",
           primary: false,
         },
         {
           name: "Free Marketing Analysis",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],
@@ -88,9 +88,9 @@ const homePage = {
           },
         },
         {
-          client: "Simplifly",
+          client: "SimpliFly",
           imagePath: "/src/assets/simplifly-logo.webp",
-          imageAlt: "Simplifly Flight School logo",
+          imageAlt: "SimpliFly Flight School logo",
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
           result:
@@ -145,7 +145,7 @@ const homePage = {
           invert: false,
         },
         {
-          name: "Simplifly",
+          name: "SimpliFly",
           imagePath: "/src/assets/simplifly_2.webp",
           link: "https://simpliflyco.com/",
           invert: false,
@@ -180,6 +180,35 @@ const homePage = {
           extract: "We are so happy with them",
           client: "Pitcairn Flight Academy",
           author: "Marisa D.",
+        },
+      ],
+    },
+
+    bookCTA: {
+      imagePath: "/src/assets/book-tim.jpg",
+      imageAlt: "The Flight School Handbook of Marketing Knowledge",
+      imagePath2: "/src/assets/Tim-Book-1.png",
+      imageAlt2: "The Flight School Handbook of Marketing Knowledge",
+      headerH1: `The Only Book You'll Ever Need for Learning How to Market Your Flight School Online`,
+      paragraphs: [
+        "If your flight school isn’t getting the calls and leads you need from your website and marketing efforts, then this book is a must read.  The <strong>Flight School Handbook of Marketing Knowledge</strong> is the ultimate guide written for flight school business owners that are looking to double, triple, even 10X their sales in the coming year.",
+        "This book is written based on battle tested strategies and the real results of Right Rudder Marketing and flight schools all across the United States.  Discover how to implement the <strong>Flight School Marketing System</strong> in your business.",
+      ],
+      amazon: {
+        imageAmazon:
+          "/src/assets/03_available_at_amazon_logo_stacked_RGB_SQUID._TTW_.png",
+        imageAltAmazon: "Amazon logo",
+      },
+      buttons: [
+        /*         {
+          name: "Buy Now on Amazon",
+          link: "https://a.co/d/08aqmyv",
+          accent: true,
+        }, */
+        {
+          name: "Get Free Book",
+          link: "/resources/flight-school-handbook",
+          accent: true,
         },
       ],
     },
@@ -227,7 +256,7 @@ const homePage = {
       },
       btn: {
         header: "Learn More About Our...",
-        link: "/services/marketing-system",
+        link: "/marketing-system",
         text: "Flight School Marketing System",
       },
     },
@@ -238,24 +267,17 @@ const homePage = {
       servs: [
         {
           name: "Web Design & Development",
-          link: "/services/web-design",
+          link: "/flight-school-website-design",
           icon: "M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5",
           description:
             "We design and develop websites that are user-friendly, mobile responsive, and optimized for search engines.",
         },
         {
           name: `SEO<p class="font-normal text-accent-200 text-sm">(Search Engine Optimization)</p>`,
-          link: "/services/seo",
+          link: "/flight-school-seo",
           icon: "M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605",
           description:
             "We optimize your website to rank higher on search engines like Google, Bing, and Yahoo.",
-        },
-        {
-          name: `PPC<p class="font-normal text-accent-200 text-sm">(Pay Per Click)</p>`,
-          link: "/services/ppc",
-          icon: "M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59",
-          description:
-            "We create and manage pay-per-click advertising campaigns to drive traffic to your website.",
         },
         {
           name: `CRM<p class="font-normal text-accent-200 text-sm">(Customer Relationship Management)</p>`,
@@ -265,11 +287,45 @@ const homePage = {
             "We help you manage your customer relationships and keep track of your leads.",
         },
         {
+          name: `Google Ads<p class="font-normal text-accent-200 text-sm">(Pay Per Click)</p>`,
+          link: "/how-to-enroll-more-students-with-google-ads-in-2024",
+          icon: "M 15.003906 3 C 8.3749062 3 3 8.373 3 15 C 3 21.627 8.3749062 27 15.003906 27 C 25.013906 27 27.269078 17.707 26.330078 13 L 25 13 L 22.732422 13 L 15 13 L 15 17 L 22.738281 17 C 21.848702 20.448251 18.725955 23 15 23 C 10.582 23 7 19.418 7 15 C 7 10.582 10.582 7 15 7 C 17.009 7 18.839141 7.74575 20.244141 8.96875 L 23.085938 6.1289062 C 20.951937 4.1849063 18.116906 3 15.003906 3 z",
+          description:
+            "We create and manage Google Ads campaigns to help you reach more potential students.",
+        },
+        {
+          name: `Facebook Ads<p class="font-normal text-accent-200 text-sm">(Pay Per Click)</p>`,
+          link: "/how-to-run-effective-facebook-ads-in-2024",
+          icon: "M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z",
+          description:
+            "Boosting post and creating ads on Facebook to reach more potential students.",
+        },
+        /* {
           name: `Media Production<p class="font-normal text-accent-200 text-sm">(Photography & Videography)</p>`,
           link: "/services/media-production",
           icon: "m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z",
           description:
             "We create high-quality photos and videos to showcase your flight school.",
+        }, */
+      ],
+    },
+
+    gmbCTA: {
+      imagePath: "/src/assets/Screenshot 2024-09-24 at 15.45.15.png",
+      imageAlt: "Google My Business CTA",
+      heading: `Perfect your Google Business Profile`,
+      description:
+        "Get your flight school on the map and in front of potential students with Google My Business optimization. Our guide will help you discover gaps in your Google profile and highlight key areas to focus on for raising your business profile to the top of organic search rankings.",
+      buttons: [
+        {
+          name: "Download Guide",
+          link: "/resources/gmb",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/resources/gmb",
+          accent: false,
         },
       ],
     },
@@ -288,13 +344,13 @@ const homePage = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],

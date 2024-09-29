@@ -1,0 +1,29 @@
+---
+import CaseStudies from "../../components/CaseStudies.astro";
+import ContentLong from "../../components/ContentLong.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import GenericCTA from "../../components/GenericCTA.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import SingleTestimonial from "../../components/SingleTestimonial.astro";
+import pitcairnFlight from "../../data/pitcairn";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const { data } = pitcairnFlight;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+
+  <ContentLong data={data.caseLong} />
+
+  <GenericCTA data={data.sopCTA} />
+
+  <SingleTestimonial data={data.testimonial} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>

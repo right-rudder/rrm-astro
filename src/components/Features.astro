@@ -3,7 +3,7 @@ const { data } = Astro.props;
 ---
 
 <section
-  class="bg-gradient-to-br from-primary to-primary-700 m-3 md:m-6 py-24 sm:py-32"
+  class="bg-gradient-to-br from-primary-800 to-primary-dark-800 m-3 md:m-6 py-24 sm:py-32"
 >
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="lg:mx-0 text-center md:text-left">
@@ -25,14 +25,14 @@ const { data } = Astro.props;
         >
           {
             data.features.map((feature, index) => (
-              <div class="group flex flex-col bg-primary-dark-400/60 p-6 md:p-8 ring-primary-200/20 rounded-md ring-2 hover:shadow-md hover:ring-primary-200/60 hover:bg-primary-dark-400/90 duration-100 ease-in">
-                <dt class="text-xl font-semibold leading-7 text-accent">
-                  <div class="mb-4 mx-auto md:mx-0 flex h-12 w-12 items-center font-bold text-3xl justify-center rounded-lg text-accent-200 bg-primary-dark-500 group-hover:bg-primary-600 duration-100 delay-75">
+              <div class="group flex flex-col bg-primary-600/60 p-6 md:p-8 ring-primary-200/20 rounded-md ring-2 hover:shadow-md hover:ring-primary-200/60 hover:bg-primary-dark-800/60 duration-100 ease-in">
+                <dt class="text-xl font-semibold leading-7 text-accent-500">
+                  <div class="mb-4 mx-auto md:mx-0 flex h-12 w-12 items-center font-bold text-3xl justify-center rounded-lg text-accent-500 bg-primary-dark-700 group-hover:bg-primary-700 duration-100 delay-75">
                     {index + 1}
                   </div>
                   {feature.title}
                 </dt>
-                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-primary-100">
+                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-white">
                   <p class="flex-auto">{feature.description}</p>
                 </dd>
               </div>

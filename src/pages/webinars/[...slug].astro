@@ -3,20 +3,20 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import WebinarPost from "../../layouts/WebinarPost.astro";
 
 export async function getStaticPaths() {
-  const webinars = await getCollection("webinar");
+  const webinars = await getCollection("webinars");
   return webinars.map((webi) => ({
     params: { slug: webi.slug },
     props: webi,
   }));
 }
-type Props = CollectionEntry<"webinar">;
+type Props = CollectionEntry<"webinars">;
 
 const webi = Astro.props;
 const { Content } = await webi.render();
 ---
 
 <WebinarPost {...webi.data}>
-  <div class="prose w-full max-w-3x px-5">
+  <div class="prose w-full max-w-4xl px-5">
     <Content />
   </div>
 </WebinarPost>

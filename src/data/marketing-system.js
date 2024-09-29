@@ -13,13 +13,13 @@ const marketingSystem = {
       paragraph: `Reach More Students, Book More Flights, and Train More Pilots. Our Complete Marketing Solution for Flight Schools includes a comprehensive marketing strategy, a custom website, search engine optimization, and more. We help flight schools attract new students and grow their business. Results Guaranteed.`,
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Download Our Free Checklist",
+          link: "/resources/marketing-checklist",
           primary: false,
         },
         {
           name: "Schedule a Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],
@@ -177,7 +177,7 @@ const marketingSystem = {
           ],
           button: {
             name: "Schedule a Consultation",
-            link: "/contact",
+            link: "/schedule-call",
           },
         },
         {
@@ -211,8 +211,8 @@ const marketingSystem = {
             "We're here to help you book more discovery flights, be more profitable, and keep your CFIs happy with consistent work.",
           ],
           button: {
-            name: "Book a Session",
-            link: "/contact",
+            name: "Get Our Free Book",
+            link: "/resources/flight-school-handbook",
           },
         },
       ],
@@ -232,7 +232,7 @@ const marketingSystem = {
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],

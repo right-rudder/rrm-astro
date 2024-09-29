@@ -95,7 +95,7 @@ const seo = {
         "Let the experts handle the organic positioning of your business. Let us make your flight school website the top in search rankings.",
       button: {
         text: "Schedule a Call",
-        link: "/contact",
+        link: "/schedule-call",
         primary: true,
       },
     },
@@ -158,7 +158,7 @@ const seo = {
       ],
       button: {
         text: "Schedule a Call with the Experts",
-        link: "/contact",
+        link: "/schedule-call",
         primary: true,
       },
     },
@@ -177,7 +177,7 @@ const seo = {
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],

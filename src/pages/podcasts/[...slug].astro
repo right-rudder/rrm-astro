@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import PodcastPost from "../../layouts/PodcastPost.astro";
+
+export async function getStaticPaths() {
+  const pods = await getCollection("podcasts");
+  return pods.map((pod) => ({
+    params: { slug: pod.slug },
+    props: pod,
+  }));
+}
+type Props = CollectionEntry<"podcasts">;
+
+const pod = Astro.props;
+const { Content } = await pod.render();
+---
+
+<PodcastPost {...pod.data}>
+  <div class="prose w-full max-w-4xl px-5">
+    <Content />
+  </div>
+</PodcastPost>

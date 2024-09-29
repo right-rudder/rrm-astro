@@ -13,7 +13,7 @@ if (!images[data.imagePath])
 ---
 
 <header
-  class="relative isolate overflow-hidden h-screen md:h-screen-4/5 text-white flex items-center justify-center"
+  class="relative isolate overflow-hidden min-h-screen md:min-h-screen-5/6 text-white flex items-center justify-center"
 >
   <Image
     src={images[data.imagePath]()}
@@ -23,21 +23,21 @@ if (!images[data.imagePath])
   />
 
   <div
-    class="absolute inset-0 bg-gradient-to-b from-primary-dark/40 to-primary-dark/50 -z-0"
+    class="absolute inset-0 bg-gradient-to-b from-primary-dark-950/50 to-primary-dark-950/60 -z-0"
   >
   </div>
   {
     (data.headerH1 || data.headerH2) && (
-      <div class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-20 justify-center">
+      <div class="text-muted-100 text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-16 justify-center">
         {data.headerH1 && (
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal text-gray-100"
+            class="text-4xl md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal"
             set:html={data.headerH1}
           />
         )}
         {data.paragraph && (
           <p
-            class="text-xl mt-3 font-semibold tracking-wide text-center max-w-3xl"
+            class="text-xl mt-3 font-semibold text-muted-200 tracking-wide text-center max-w-3xl"
             set:html={data.paragraph}
           />
         )}

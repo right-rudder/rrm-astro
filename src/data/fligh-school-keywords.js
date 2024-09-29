@@ -14,13 +14,13 @@ const flightSchoolKeywords = {
         "This keyword guide will give you the most commonly searched keywords for flight schools and pilot training. Use the guide to formulate the appropriate keywords to focus on in your flight school's website and Google Business profile.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Schedule a Call",
+          link: "/schedule-call",
           primary: false,
         },
         {
           name: "Download Guide",
-          link: "/contact",
+          link: "#download-cta",
           primary: false,
         },
       ],
@@ -38,9 +38,27 @@ const flightSchoolKeywords = {
       imageAlt: "Right Rudder Marketing team on the runway",
       buttons: [
         {
+          modal: true,
           name: "Download Guide",
-          link: "/contact",
-          primary: false,
+        },
+      ],
+    },
+
+    sopCTA: {
+      imagePath: "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+      imageAlt: "Start creating your playbook with SOPs",
+      heading: `Start Creating your Playbook with SOPs`,
+      description: `Growing a flight school means creating systems and procedures for your team to follow. Creating SOPs to add to your "playbook" is the best way to properly delegate and lead your team. Download our free template to get started in your continuous improvement journey.`,
+      buttons: [
+        {
+          name: "Download Now",
+          link: "/resources/sop-templates",
+          accent: true,
+        },
+        {
+          name: "Learn More",
+          link: "/blog/how-to-create-sops-to-scale-your-flight-school/",
+          accent: false,
         },
       ],
     },

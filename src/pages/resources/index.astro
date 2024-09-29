@@ -1,0 +1,155 @@
+---
+import Header from "../../components/Header.astro";
+import FunnelLayout from "../../layouts/FunnelLayout.astro";
+import DownloadCTA from "../../components/DownloadCTA.astro";
+import GenericCTA from "../../components/GenericCTA.astro";
+import flightSchoolHandbook from "../../data/flight-school-handbook";
+import CaseStudies from "../../components/CaseStudies.astro";
+import ImageComp from "../../components/ImageComp.astro";
+import DownloadBook from "../../components/DownloadBook";
+
+const { data } = flightSchoolHandbook;
+---
+
+<FunnelLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+  content={data.checklistCTA}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <DownloadCTA data={data.downloadCTA} />
+
+  <section
+    id="meet-tim"
+    class="relative isolate overflow-hidden -z-10 bg-primary-50 border-y-2 mb-0 border-primary-900 px-6 pt-24 lg:overflow-hidden lg:px-0"
+  >
+    <div class="mx-auto max-w-6xl lg:pr-4">
+      <div class="my-9 text-center">
+        <p class="text-base font-semibold leading-7 text-primary-700">
+          {data.meetTim.upperHeading}
+        </p>
+        <h1 class="mt-0 text-5xl font-extrabold tracking-tight text-gray-900">
+          {data.meetTim.heading}
+        </h1>
+      </div>
+    </div>
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <svg
+        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+            width="200"
+            height="200"
+            x="50%"
+            y="-1"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+          </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+          <path
+            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+            stroke-width="0"></path>
+        </svg>
+        <rect
+          width="100%"
+          height="100%"
+          stroke-width="0"
+          fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+      </svg>
+    </div>
+    <div class="mt-12 flex flex-wrap justify-center">
+      <div class="w-full lg:w-1/2">
+        <h3 class="text-4xl font-bold border-b-4 border-primary-500">
+          {data.meetTim.descHeading}
+        </h3>
+        {
+          data.meetTim.descriptions.map((desc) => (
+            <p
+              class="mt-5 text-xl font-light leading-8 text-gray-700"
+              set:html={desc}
+            />
+          ))
+        }
+      </div>
+      <div class="w-full lg:w-2/5 z-10 lg:h-full items-end">
+        <ImageComp
+          imagePath={data.meetTim.imagePath}
+          imageAlt={data.meetTim.imageAlt}
+          styles="object-contain z-10 object-bottom w-full h-full drop-shadow-sm hover:scale-105 duration-500 ease-out"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="book-content"
+    class="bg-gradient-to-br z-0 from-primary-800 to-primary-dark-950 py-20"
+  >
+    <div class="mx-auto max-w-6xl lg:pr-4">
+      <div class="my-9 text-center">
+        <p class="text-base font-semibold leading-7 text-primary-300">
+          {data.bookContent.upperHeading}
+        </p>
+        <h1 class="mt-0 text-6xl font-bold tracking-tight text-accent-300">
+          {data.bookContent.heading}
+        </h1>
+      </div>
+    </div>
+    <div>
+      {
+        data.bookContent.list && (
+          <div class="mt-12">
+            <ul
+              role="list"
+              class="mt-4 mx-auto space-y-8 text-gray-100 max-w-6xl"
+            >
+              {data.bookContent.list.map((item) => (
+                <li class="flex gap-x-3">
+                  <svg
+                    class="mt-1 size-10 flex-none text-accent-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d={item.icon}
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="leading-snug text-lg text-muted-200">
+                    <strong class="font-bold text-primary-dark-200 tracking-tight uppercase">
+                      {item.title}
+                    </strong>{" "}
+                    {item.descriptions.map((dec) => (
+                      <p class="mb-2" set:html={dec} />
+                    ))}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+      <div class="mx-auto mt-12 flex justify-center">
+        <DownloadBook client:visible />
+      </div>
+    </div>
+  </section>
+
+  <CaseStudies
+    upperHeading={data.caseStudies.upperHeading}
+    heading={data.caseStudies.heading}
+    cases={data.caseStudies.cases}
+  />
+</FunnelLayout>

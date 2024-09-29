@@ -16,8 +16,8 @@ const caseStudies = {
         "Marketing for flight schools is our specialty. We have a proven track record of getting flight schools more leads, more students, and more revenue. See how we've helped our clients take their business out of the clouds and into VFR.",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Checklist",
+          link: "/resources/marketing-checklist",
           primary: false,
         },
         {
@@ -51,14 +51,31 @@ const caseStudies = {
           },
         },
         {
-          client: "Simplifly",
+          client: "SimpliFly",
           imagePath: "/src/assets/simplifly-logo.webp",
-          imageAlt: "Simplifly Flight School logo",
+          imageAlt: "SimpliFly Flight School logo",
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
           result:
             "SimpliFly gets flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.  They are seeing 10 times the amount of leads coming in since first working with us and managed to increase the average LTV (life time value) of each student customer by narrowing their focus to offer programs solely for career track pilots.",
           link: "/our-flight-schools/simplifly",
+          metric1: {
+            label: "Total Leads",
+            value: "10X",
+          },
+          metric2: {
+            label: "ARR",
+            value: "$8M+",
+          },
+        },
+        {
+          client: "Pitcairn",
+          imagePath: "/src/assets/pitcairn-logo-250-vertical-white.webp",
+          imageAlt: "Pitcairn Flight Academy logo",
+          quote: "We are so happy with them.",
+          result:
+            "Pitcairn Flight Academy is now ranking on the first page of Google Search and Google Maps. They have seen a 150% increase in leads and a 200% increase in sales. They are now expanding their fleet and have a waiting list of upcoming student pilots.",
+          link: "/our-flight-schools/pitcairn",
           metric1: {
             label: "Total Leads",
             value: "10X",
@@ -79,13 +96,13 @@ const caseStudies = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {
           name: "Book a Strategy Call",
-          link: "/contact",
+          link: "/schedule-call",
           primary: false,
         },
       ],
