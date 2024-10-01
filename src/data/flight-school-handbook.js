@@ -1,3 +1,5 @@
+import testimonials from "./testimonials";
+
 const flightSchoolHandbook = {
   data: {
     pageTitle:
@@ -22,6 +24,35 @@ const flightSchoolHandbook = {
           name: "Get Your Free Book Now",
           link: "#download-cta",
           primary: false,
+        },
+      ],
+    },
+
+    testimonials: {
+      upperHeading: "Reviews on Amazon",
+      heading: `What Readers Are Saying About The Book`,
+      quotes: [
+        {
+          extract:
+            "Everything You Need to Crush Flight School Marketing",
+          quote: "This book provided everything I needed to get started taking my flight school to the next level. I highly recommend it for anyone seasoned or just starting out. Easy to read book with tactical tips I was able to implement from day one.",
+          //client: "Sun City Aviation Academy",
+          author: "Laura",
+        },
+
+        {
+          extract:
+            "Great resource for flight school owners to become expert marketers",
+          quote: "This book impressed me in the ease at which the marketing process can be systemized into a few key steps. In this industry, we care much more about training pilots than running a business much of the time. That doesn't mean we should be afraid of enrolling more students. I'd highly recommend to anyone looking to start or grow a flight school.",
+          //client: "Sun City Aviation Academy",
+          author: "Gerald",
+        },
+        {
+          extract:
+            "A Must-Have for Flight Schools.",
+          quote: "The book covers a wide range of marketing topics, from social media strategies to SEO optimization. Jedrek's insights are practical and easy to apply, even for those with limited marketing experience. The real-world examples and case studies offer valuable lessons learned from successful flight schools.  If you're looking to boost enrollment, increase brand awareness, and improve your flight school's overall marketing efforts, this book is a must-read.",
+          //client: "Sun City Aviation Academy",
+          author: "Raminka",
         },
       ],
     },
@@ -136,7 +167,8 @@ const flightSchoolHandbook = {
       imagePath: "/src/assets/RRM-book-cover5x8.png",
       imageAlt:
         "Front cover of the flight school handbook of marketing knowledge by Tim Jedrek",
-      buttons: [
+        youtubeUrl: "https://www.youtube.com/embed/C_dKx11xjvM?autoplay=1&mute=1",
+        buttons: [
         {
           modal: true,
           name: "Get Your Free Book Now",

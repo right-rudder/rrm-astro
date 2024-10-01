@@ -1,12 +1,13 @@
 ---
 import Header from "../../components/Header.astro";
 import FunnelLayout from "../../layouts/FunnelLayout.astro";
-import DownloadCTA from "../../components/DownloadCTA.astro";
+import DownloadCTAVideo from "../../components/DownloadCTAVideo.astro";
 import GenericCTA from "../../components/GenericCTA.astro";
 import flightSchoolHandbook from "../../data/flight-school-handbook";
 import CaseStudies from "../../components/CaseStudies.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import DownloadBook from "../../components/DownloadBook";
+import Testimonials from "../../components/Testimonials.astro";
 
 const { data } = flightSchoolHandbook;
 ---
@@ -20,7 +21,13 @@ const { data } = flightSchoolHandbook;
   <!-- HEADER -->
   <Header data={data.header} />
 
-  <DownloadCTA data={data.downloadCTA} />
+  <DownloadCTAVideo data={data.downloadCTA} />
+
+  <Testimonials
+    upperHeading={data.testimonials.upperHeading}
+    heading={data.testimonials.heading}
+    quotes={data.testimonials.quotes}
+  />
 
   <section
     id="meet-tim"
