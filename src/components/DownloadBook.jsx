@@ -168,9 +168,57 @@ const DownloadBook = () => {
                         name="address-line2"
                         autoComplete="address-line2"
                         className="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-primary-600/50 focus:ring focus:ring-primary-600/50 focus:border-primary-600/50"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        htmlFor="city"
+                        className="block mb-0 font-semibold"
+                      >
+                        City
+                      </label>
+                      <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        autoComplete="city"
+                        className="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-primary-600/50 focus:ring focus:ring-primary-600/50 focus:border-primary-600/50"
                         required
                       />
                     </div>
+                    <div className="mb-4">
+                      <label
+                        htmlFor="state"
+                        className="block mb-0 font-semibold"
+                      >
+                        State
+                      </label>
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        autoComplete="state"
+                        className="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-primary-600/50 focus:ring focus:ring-primary-600/50 focus:border-primary-600/50"
+                        required
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        htmlFor="zip-code"
+                        className="block mb-0 font-semibold"
+                      >
+                        Zip Code
+                      </label>
+                      <input
+                        type="text"
+                        id="zip-code"
+                        name="zip-code"
+                        autoComplete="zip-code"
+                        className="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-primary-600/50 focus:ring focus:ring-primary-600/50 focus:border-primary-600/50"
+                        required
+                      />
+                    </div>
+                    
 
                     <p className="hidden">
                       <label>

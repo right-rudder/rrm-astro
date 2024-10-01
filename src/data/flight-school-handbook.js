@@ -12,7 +12,7 @@ const flightSchoolHandbook = {
       imagePath: "/src/assets/book-tim.jpg",
       imageAlt:
         "Image collage of the cover of the Flight School Handbook of Marketing Knowledge",
-      headerH1: `Free Book</br><span class="text-accent-300">Flight School Handbook<br> of Marketing Knowledge</span>`,
+      headerH1: `<span class="text-accent-300">Flight School Handbook<br> of Marketing Knowledge</span>`,
       paragraph: `If your flight school isn’t getting the calls and leads you need from your website and marketing efforts, then this book is a must read.  The <strong>Flight School Handbook of Marketing Knowledge</strong> is the ultimate guide written for flight school business owners that are looking to double, triple, even 10X their sales in the coming year.`,
       buttons: [
         {
@@ -156,7 +156,7 @@ const flightSchoolHandbook = {
     },
 
     downloadCTA: {
-      upperHeading: "Our Free Book",
+      upperHeading: "We'll cover the shipping",
       heading:
         "The Only Book You'll Ever Need for Learning How to Market Your Flight School Online.",
       descriptions: [
