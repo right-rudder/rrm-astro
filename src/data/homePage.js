@@ -11,7 +11,8 @@ const homePage = {
     header: {
       stars: true,
       imagePath: "/src/assets/flying-over-right-rudder-marketing.jpeg",
-      imageAlt: "fly over Right Rudder Marketing",
+      imageAlt:
+        "fly over Right Rudder Marketing - Digital Marketing Agency for Flight Schools",
       headerH1: `Grow and Scale</br><span class="text-accent-300">Your Aviation Business</span>`,
       paragraph:
         "Enroll more pilots at your flight school and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
@@ -74,8 +75,7 @@ const homePage = {
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
           youtubeId: "SD8TsqJSX00",
-          quote:
-            "I think the growth speaks for itself",
+          quote: "I think the growth speaks for itself",
           result:
             "Blue Skies Above is a flight school in Lanett, AL just a few miles away from Auburn, AL.  Over the past year, they have seen their flight school explode in growth.  They expanded their fleet and bought a like-new Cessna 172 to handle the TAA and commercial load and they are on their way to acquiring another plane to add to their fleet just to keep up with the demand.",
           link: "/our-flight-schools/blue-skies-above",
@@ -319,6 +319,13 @@ const homePage = {
           name: `Facebook Ads<p class="font-normal text-accent-200 text-sm">(Pay Per Click)</p>`,
           link: "/how-to-run-effective-facebook-ads-in-2024",
           icon: "M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z",
+          description:
+            "Boosting post and creating ads on Facebook to reach more potential students.",
+        },
+        {
+          name: `GMB Profile<p class="font-normal text-accent-200 text-sm">(Google My Business)</p>`,
+          link: "/how-to-optimize-google-my-business-2024",
+          icon: "M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z",
           description:
             "Boosting post and creating ads on Facebook to reach more potential students.",
         },

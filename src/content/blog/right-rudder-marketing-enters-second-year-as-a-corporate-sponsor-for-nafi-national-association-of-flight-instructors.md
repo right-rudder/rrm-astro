@@ -3,7 +3,7 @@ pubDate: "September 12, 2024"
 author: Charles Ferguson
 title: "Right Rudder Marketing Enters Second Year as a Corporate Sponsor for NAFI (National Association of Flight Instructors)"
 description: "Right Rudder Marketing is pleased to announce our continued corporate sponsorship of the National Association of Flight Instructors (NAFI) for the second consecutive year. NAFI, an organization dedicated to enhancing the professional standing of flight instructors across the U.S. aviation industry, has been an integral part of promoting high standards in flight instruction since 1967."
-heroImage: "/blog/RRM + NAFI Partnership.jpg"
+heroImage: "/blog/RRM + NAFI Partnership.webp"
 readingTime: 4
 category: "Business"
 tags: ["Partners", "Announcements"]

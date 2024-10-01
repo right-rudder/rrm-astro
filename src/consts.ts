@@ -13,7 +13,7 @@ export const SITE_DESCRIPTION =
 export const KEYWORDS =
   "Right Rudder Marketing, flight school marketing, flight school SEO, flight school PPC, flight school social media marketing, flight school digital marketing, flight school advertising, flight school website design";
 
-export const IMAGE = "/RRM-ver-textBlack-trans-500.webp";
+export const IMAGE = "/OG_Image-Comp.webp";
 
 export const LOCATIONS = [
   {

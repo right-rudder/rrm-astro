@@ -1,8 +1,8 @@
 ---
 import "../styles/global.css";
-import FacebookPixel from "./FacebookPixel.astro"
-import Schema from "./Schema.astro"
-import GoogleAnalytics from "./GoogleAnalytics.astro"
+import FacebookPixel from "./FacebookPixel.astro";
+import Schema from "./Schema.astro";
+import GoogleAnalytics from "./GoogleAnalytics.astro";
 
 interface Props {
   title: string;
@@ -17,7 +17,7 @@ const {
   title,
   description,
   keywords,
-  image = "/blog-placeholder-1.jpg",
+  image = "/RRM-Symbol-roundedSq.png",
 } = Astro.props;
 ---
 
@@ -70,9 +70,9 @@ const {
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <!-- UPDATE GTAG PLEASE -->
-<GoogleAnalytics/>
+<GoogleAnalytics />
 
 <!-- NEED TO UPDATE SCHEMA -->
-<Schema/>
+<Schema />
 
-<FacebookPixel/>
+<FacebookPixel />

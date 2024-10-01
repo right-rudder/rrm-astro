@@ -3,7 +3,7 @@ pubDate: "Sep 12, 2024"
 author: Charles Ferguson
 title: "Right Rudder Marketing Partners with King Schools to Support Pilot Education"
 description: "Right Rudder Marketing is proud to announce its new sponsorship with King Schools, a long-standing leader in aviation education. This partnership brings together two organizations dedicated to elevating the aviation industry, each with a unique role in supporting pilot education and training."
-heroImage: "/blog/RRM + King Schools Partnership.jpg"
+heroImage: "/blog/RRM + King Schools Partnership.webp"
 readingTime: 4
 category: "Business"
 tags: ["Partners", "Announcements"]
