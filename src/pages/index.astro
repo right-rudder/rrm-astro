@@ -12,6 +12,7 @@ import OurClients from "../components/OurClients.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import GenericCTA from "../components/GenericCTA.astro";
 import ScreenCTA from "../components/ScreenCTA.astro";
+import IntroVideo from "../components/IntroVideo.astro"
 
 const { data } = homePage;
 ---
@@ -23,6 +24,8 @@ const { data } = homePage;
 >
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
+
+  <IntroVideo />
 
   <Partners
     heading={data.memberOf.heading}
