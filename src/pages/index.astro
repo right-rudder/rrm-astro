@@ -3,15 +3,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import homePage from "../data/homePage";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import Partners from "../components/Partners.astro";
-import CaseStudies from "../components/CaseStudies.astro";
+import CaseStudiesVideo from "../components/CaseStudiesVideo.astro";
 import Testimonials from "../components/Testimonials.astro";
 import WhyUs from "../components/WhyUs.astro";
 import ServicesGrid from "../components/ServicesGrid.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
-import OurClients from "../components/OurClients.astro";
+import OurClientsMarquee from "../components/OurClientsMarquee.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import GenericCTA from "../components/GenericCTA.astro";
 import ScreenCTA from "../components/ScreenCTA.astro";
+import IntroVideo from "../components/IntroVideo.astro"
 
 const { data } = homePage;
 ---
@@ -24,15 +25,19 @@ const { data } = homePage;
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
 
-  <Partners
-    heading={data.memberOf.heading}
-    organizations={data.memberOf.organizations}
-  />
+  <IntroVideo />
 
-  <CaseStudies
+  <OurClientsMarquee data={data.ourClients} />
+
+  <CaseStudiesVideo
     upperHeading={data.caseStudies.upperHeading}
     heading={data.caseStudies.heading}
     cases={data.caseStudies.cases}
+  />
+
+  <Partners
+    heading={data.memberOf.heading}
+    organizations={data.memberOf.organizations}
   />
 
   <ScreenCTA data={data.bookCTA} />
@@ -51,8 +56,6 @@ const { data } = homePage;
     marketing={data.whyUs.marketingSystem}
     button={data.whyUs.btn}
   />
-
-  <OurClients data={data.ourClients} />
 
   <ServicesGrid
     upperHeading={data.services.upperHeading}

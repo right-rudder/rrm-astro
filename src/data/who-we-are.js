@@ -43,21 +43,22 @@ const whoWeAre = {
         "Our mission is to impact the aviation training industry and bring more people into aviation. Right Rudder Marketing aims to lower the cost of participating in aviation by increasing the supply of pilots which provides increased demand for aviation companies to operate at economies of scale.",
       paragraphs: [
         "Our mission is to facilitate the progress of our society into a new age where all humans are given the opportunities to be equipped with aviation skills to travel faster and farther in the skies.",
-        "Our mission is to help 100 flight schools double their student body and dominate their service area by 2025.",
+        "Our mission is to help 100 flight schools double their student body and dominate their service area by 2026.",
       ],
       facts: [
         {
-          title: "10K Leads",
-          description: "Lorem ipsum dolor sit amet",
+          title: "$10,000,000+",
+          description: "Over $10M worth of revenue generated for our flight schools",
         },
         {
-          title: "345",
-          description: "Lorem ipsum dolor sit amet",
+          title: "10K+ Leads",
+          description: "More than 10,000 interested prospective student pilots found over the course of a year through the combined efforts of the Flight School Marketing System",
         },
         {
-          title: "$10k",
-          description: "Lorem ipsum dolor sit amet",
+          title: "1000+",
+          description: "With an average conversion rate of over 7%, we've added thousands of students to our flight schools' funnels with Google Ads and PPC campaigns",
         },
+        
       ],
     },
 

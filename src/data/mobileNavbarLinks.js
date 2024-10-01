@@ -80,10 +80,10 @@ export const mobileNavbarLinks = [
         name: "Google Business Profile",
         link: "/resources/gmb",
       },
-      {
-        name: "Check Online Presence",
-        link: "/resources/check-online-presence",
-      },
+      // {
+      //   name: "Check Online Presence",
+      //   link: "/resources/check-online-presence",
+      // },
       {
         name: "Webinars",
         link: "/webinars",

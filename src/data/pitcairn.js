@@ -60,7 +60,7 @@ const pitcairnFlight = {
       imagePath: "/src/assets/david-pitcairn-tonie-tim.jpg",
       imageAlt:
         "David from Pitcairn Flight Academy with Tonie and Tim from Right Rudder Marketing",
-      imageCaption: "Ideal Aviation Facility",
+      imageCaption: "David from Pitcairn Flight Academy with Tonie and Tim from Right Rudder Marketing",
     },
 
     sopCTA: {
