@@ -41,16 +41,16 @@ const investorsVars = {
           "We are proud to say that we have a 100% client satisfaction rate. Our clients love us and we love them.",
       },
       stat2: {
-        number: "$250k",
+        number: "$1,000,000",
         title: "Annual Revenue",
         description:
-          "We are on track to become a multi-million dollar digital marketing agency. Our annual revenue is currently at a quarter of a million dollars.",
+          "We are on track to become a multi-million dollar digital marketing agency in the next few years. Our annual revenue is currently approaching one million dollars.",
       },
       stat3: {
-        number: "40%",
+        number: "30%",
         title: "Profit Margin",
         description:
-          "We are a highly efficient company with a 40% profit margin. We are lean, mean, and ready to grow.",
+          "We are a highly efficient company with a 30% profit margin. We are lean, mean, and ready to grow.",
       },
     },
 

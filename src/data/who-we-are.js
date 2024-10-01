@@ -48,15 +48,15 @@ const whoWeAre = {
       facts: [
         {
           title: "10K Leads",
-          description: "Lorem ipsum dolor sit amet",
+          description: "More than 10,000 interested prospective student pilots found over the course of a year through the combined efforts of the Flight School Marketing System",
         },
         {
-          title: "345",
-          description: "Lorem ipsum dolor sit amet",
+          title: "1000+",
+          description: "With an average conversion rate of over 7%, we've added thousands of students to our flight schools' funnels with Google Ads and PPC campaigns",
         },
         {
-          title: "$10k",
-          description: "Lorem ipsum dolor sit amet",
+          title: "$10,000,000",
+          description: "Over $10M worth of revenue generated for our flight schools",
         },
       ],
     },
