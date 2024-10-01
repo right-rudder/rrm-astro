@@ -8,6 +8,7 @@ import Content3 from "../../components/Content3.astro";
 import OurValues from "../../components/OurValues.astro";
 import OurClients from "../../components/OurClients.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import OurClientsMarquee from "../../components/OurClientsMarquee.astro";
 
 const { data } = whoWeAre;
 ---
@@ -24,7 +25,7 @@ const { data } = whoWeAre;
 
   <OurValues data={data.ourValues} />
 
-  <OurClients data={data.ourClients} />
+  <OurClientsMarquee data={data.ourClients} />
 
   <TeamGrid data={data.teamGrid} />
 

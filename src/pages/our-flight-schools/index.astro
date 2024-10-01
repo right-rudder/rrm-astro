@@ -1,5 +1,5 @@
 ---
-import CaseStudies from "../../components/CaseStudies.astro";
+import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
 import HeaderScreen from "../../components/HeaderScreen.astro";
 import caseStudies from "../../data/case-studies";
@@ -16,7 +16,7 @@ const { data } = caseStudies;
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
 
-  <CaseStudies
+  <CaseStudiesVideo
     upperHeading={data.caseStudies.upperHeading}
     heading={data.caseStudies.heading}
     cases={data.caseStudies.cases}

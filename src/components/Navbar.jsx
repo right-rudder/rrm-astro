@@ -94,6 +94,9 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="Right Rudder Marketing Logo"
+                  aria-label="Right Rudder Marketing Logo"
+                  title="Right Rudder Marketing"
+                  loading="lazy"
                   className={`${navBar || openMobile ? "h-20 lg:h-28 w-4/6 lg:w-full" : "h-20 lg:h-28 w-3/4 lg:w-full"}z-10 object-contain duration-500`}
                 />
               </a>
@@ -257,6 +260,8 @@ const Navbar = ({ pathname }) => {
           <img
             src="/RRM-ver-textWhite-trans-500.webp"
             alt="Right Rudder Marketing Logo"
+            aria-label="Right Rudder Marketing Logo"
+            loading="lazy"
             className="z-10 object-contain h-20 w-auto drop-shadow-sm"
           />
         </a>

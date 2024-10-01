@@ -30,7 +30,7 @@ if (!images[data.amazon.imageAmazon]) {
   <Image
     src={images[data.imagePath]()}
     alt={data.imageAlt}
-    loading={"eager"}
+    loading={"lazy"}
     class="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
   />
   <div
@@ -70,12 +70,12 @@ if (!images[data.amazon.imageAmazon]) {
         {
           data.amazon && (
             <a href={data.amazon.url} target="_blank">
-            <Image
-              src={images[data.amazon.imageAmazon]()}
-              alt={data.amazon.imageAltAmazon}
-              loading={"eager"}
-              class="w-36 brightness-0 ml-6 drop-shadow-sm hover:scale-105 duration-500 ease-out"
-            />
+              <Image
+                src={images[data.amazon.imageAmazon]()}
+                alt={data.amazon.imageAltAmazon}
+                loading={"lazy"}
+                class="w-36 brightness-0 ml-6 drop-shadow-sm hover:scale-105 duration-500 ease-out"
+              />
             </a>
           )
         }
@@ -85,7 +85,7 @@ if (!images[data.amazon.imageAmazon]) {
       <Image
         src={images[data.imagePath2]()}
         alt={data.imageAlt2}
-        loading={"eager"}
+        loading={"lazy"}
         class="object-contain z-10 object-bottom w-5/6 h-full drop-shadow-lg hover:scale-105 duration-500 ease-out"
       />
     </div>

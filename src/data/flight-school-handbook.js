@@ -33,9 +33,9 @@ const flightSchoolHandbook = {
       heading: `What Readers Are Saying About The Book`,
       quotes: [
         {
-          extract:
-            "Everything You Need to Crush Flight School Marketing",
-          quote: "This book provided everything I needed to get started taking my flight school to the next level. I highly recommend it for anyone seasoned or just starting out. Easy to read book with tactical tips I was able to implement from day one.",
+          extract: "Everything You Need to Crush Flight School Marketing",
+          quote:
+            "This book provided everything I needed to get started taking my flight school to the next level. I highly recommend it for anyone seasoned or just starting out. Easy to read book with tactical tips I was able to implement from day one.",
           //client: "Sun City Aviation Academy",
           author: "Laura",
         },
@@ -43,14 +43,15 @@ const flightSchoolHandbook = {
         {
           extract:
             "Great resource for flight school owners to become expert marketers",
-          quote: "This book impressed me in the ease at which the marketing process can be systemized into a few key steps. In this industry, we care much more about training pilots than running a business much of the time. That doesn't mean we should be afraid of enrolling more students. I'd highly recommend to anyone looking to start or grow a flight school.",
+          quote:
+            "This book impressed me in the ease at which the marketing process can be systemized into a few key steps. In this industry, we care much more about training pilots than running a business much of the time. That doesn't mean we should be afraid of enrolling more students. I'd highly recommend to anyone looking to start or grow a flight school.",
           //client: "Sun City Aviation Academy",
           author: "Gerald",
         },
         {
-          extract:
-            "A Must-Have for Flight Schools.",
-          quote: "The book covers a wide range of marketing topics, from social media strategies to SEO optimization. Jedrek's insights are practical and easy to apply, even for those with limited marketing experience. The real-world examples and case studies offer valuable lessons learned from successful flight schools.  If you're looking to boost enrollment, increase brand awareness, and improve your flight school's overall marketing efforts, this book is a must-read.",
+          extract: "A Must-Have for Flight Schools.",
+          quote:
+            "The book covers a wide range of marketing topics, from social media strategies to SEO optimization. Jedrek's insights are practical and easy to apply, even for those with limited marketing experience. The real-world examples and case studies offer valuable lessons learned from successful flight schools.  If you're looking to boost enrollment, increase brand awareness, and improve your flight school's overall marketing efforts, this book is a must-read.",
           //client: "Sun City Aviation Academy",
           author: "Raminka",
         },
@@ -167,8 +168,8 @@ const flightSchoolHandbook = {
       imagePath: "/src/assets/RRM-book-cover5x8.png",
       imageAlt:
         "Front cover of the flight school handbook of marketing knowledge by Tim Jedrek",
-        youtubeUrl: "https://www.youtube.com/embed/C_dKx11xjvM?autoplay=1&mute=1",
-        buttons: [
+      youtubeUrl: "https://www.youtube.com/embed/C_dKx11xjvM?autoplay=1&mute=1",
+      buttons: [
         {
           modal: true,
           name: "Get Your Free Book Now",
@@ -179,7 +180,7 @@ const flightSchoolHandbook = {
     meetTim: {
       upperHeading: "Meet the Author",
       heading: "Behind The Book",
-      imagePath: "/src/assets/Tim-Book-1.png",
+      imagePath: "/src/assets/tim-jedrek-book.webp",
       imageAlt:
         "Tim Jedrek, author of the Flight School Handbook of Marketing Knowledge",
       descHeading: "Tim Jedrek",
@@ -192,30 +193,31 @@ const flightSchoolHandbook = {
 
     caseStudies: {
       upperHeading: "Case Studies",
-      heading: `Our Clients <strong class="text-white">Get Results</strong>`,
+      heading: `Our Flight Schools <strong class="text-white">Get Results</strong>`,
       cases: [
         {
-          client: "Ideal",
+          client: "Blue Skies Above",
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
-          quote:
-            "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
+          youtubeId: "SD8TsqJSX00",
+          quote: "I think the growth speaks for itself",
           result:
-            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.",
-          link: "/our-flight-schools/ideal-aviation",
+            "Blue Skies Above is a flight school in Lanett, AL just a few miles away from Auburn, AL.  Over the past year, they have seen their flight school explode in growth.  They expanded their fleet and bought a like-new Cessna 172 to handle the TAA and commercial load and they are on their way to acquiring another plane to add to their fleet just to keep up with the demand.",
+          link: "/our-flight-schools/blue-skies-above",
           metric1: {
-            label: "Monthly Leads",
-            value: "100+",
+            label: "Growth under a year",
+            value: "2X",
           },
           metric2: {
-            label: "Sales",
-            value: "150%",
+            label: "Students on waitlist",
+            value: "10+",
           },
         },
         {
           client: "SimpliFly",
           imagePath: "/src/assets/simplifly-logo.webp",
           imageAlt: "SimpliFly Flight School logo",
+          youtubeId: "qzT8Q49ExUw",
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
           result:
@@ -228,6 +230,25 @@ const flightSchoolHandbook = {
           metric2: {
             label: "ARR",
             value: "$8M+",
+          },
+        },
+        {
+          client: "Ideal",
+          imagePath: "/src/assets/ideal-logo.webp",
+          imageAlt: "Ideal Aviation logo",
+          youtubeId: "c1Pe9XJdsbo",
+          quote:
+            "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
+          result:
+            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.",
+          link: "/our-flight-schools/ideal-aviation",
+          metric1: {
+            label: "Monthly Leads",
+            value: "100+",
+          },
+          metric2: {
+            label: "Sales",
+            value: "150%",
           },
         },
       ],

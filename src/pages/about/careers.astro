@@ -3,10 +3,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
 import Partners from "../../components/Partners.astro";
-import OurClients from "../../components/OurClients.astro";
-import SteppedStats from "../../components/SteppedStats.astro";
 import careersVars from "../../data/careers";
 import StackedList from "../../components/StackedList.astro";
+import OurClientsMarquee from "../../components/OurClientsMarquee.astro";
 
 const { data } = careersVars;
 ---
@@ -26,7 +25,7 @@ const { data } = careersVars;
 
   <StackedList data={data.careers} />
 
-  <OurClients data={data.ourClients} />
+  <OurClientsMarquee data={data.ourClients} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
 </BaseLayout>
