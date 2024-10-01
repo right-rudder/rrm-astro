@@ -21,7 +21,7 @@ const MarqueeComponent = () => {
                       <img
                           src={logo.url}
                           alt={`${logo.name} logo`}
-                          className={`min-w-16 md:max-h-16 max-w-36 md:max-w-52 w-full object-contain duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-110 ${
+                          className={`min-w-12 md:max-h-16 max-w-24 md:max-w-52 w-full object-contain duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-110 ${
                               logo.invert ? 'invert' : ''
                           }`}
                           style={{ margin: '0 20px' }}
