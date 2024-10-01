@@ -69,12 +69,14 @@ if (!images[data.amazon.imageAmazon]) {
         }
         {
           data.amazon && (
+            <a href={data.amazon.url} target="_blank">
             <Image
               src={images[data.amazon.imageAmazon]()}
               alt={data.amazon.imageAltAmazon}
               loading={"eager"}
-              class="w-36 brightness-0 ml-6 drop-shadow-sm"
+              class="w-36 brightness-0 ml-6 drop-shadow-sm hover:scale-105 duration-500 ease-out"
             />
+            </a>
           )
         }
       </div>
@@ -84,7 +86,7 @@ if (!images[data.amazon.imageAmazon]) {
         src={images[data.imagePath2]()}
         alt={data.imageAlt2}
         loading={"eager"}
-        class="object-contain z-10 object-bottom w-full h-full drop-shadow-sm hover:scale-105 duration-500 ease-out"
+        class="object-contain z-10 object-bottom w-5/6 h-full drop-shadow-lg hover:scale-105 duration-500 ease-out"
       />
     </div>
   </div>

@@ -208,7 +208,7 @@ const homePage = {
     bookCTA: {
       imagePath: "/src/assets/book-tim.jpg",
       imageAlt: "The Flight School Handbook of Marketing Knowledge",
-      imagePath2: "/src/assets/Tim-Book-1.png",
+      imagePath2: "/src/assets/tim-jedrek-book.webp",
       imageAlt2: "The Flight School Handbook of Marketing Knowledge",
       headerH1: `The Only Book You'll Ever Need for Learning How to Market Your Flight School Online`,
       paragraphs: [
@@ -219,6 +219,7 @@ const homePage = {
         imageAmazon:
           "/src/assets/03_available_at_amazon_logo_stacked_RGB_SQUID._TTW_.png",
         imageAltAmazon: "Amazon logo",
+        url: "https://a.co/d/a2fH0RD",
       },
       buttons: [
         /*         {
