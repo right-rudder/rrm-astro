@@ -4,7 +4,7 @@ export const SITE_TITLE =
 
 // CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
-  "Right Rudder Marketing offers digital marketing services for flight schools. We specialize in website design, SEO, PPC, social media marketing, and content creation for flight schools.";
+  "Right Rudder Marketing offers digital marketing services for flight schools. We specialize in website design, SEO, PPC, social media marketing, and content creation for flight schools.  We're on a mission to partner with 100 flight schools and double, triple, or even 10X their student body and enrollments.";
 
 //SEO tip -> keyword + city 1
 //Should have between 5-10 different localities to mix and match keywords

@@ -43,7 +43,7 @@ const whoWeAre = {
         "Our mission is to impact the aviation training industry and bring more people into aviation. Right Rudder Marketing aims to lower the cost of participating in aviation by increasing the supply of pilots which provides increased demand for aviation companies to operate at economies of scale.",
       paragraphs: [
         "Our mission is to facilitate the progress of our society into a new age where all humans are given the opportunities to be equipped with aviation skills to travel faster and farther in the skies.",
-        "Our mission is to help 100 flight schools double their student body and dominate their service area by 2025.",
+        "Our mission is to help 100 flight schools double their student body and dominate their service area by 2026.",
       ],
       facts: [
         {
