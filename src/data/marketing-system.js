@@ -184,7 +184,7 @@ const marketingSystem = {
           imagePath: "/src/assets/truman-talbot-xnAsqJnO-GY-unsplash.jpg",
           imageAlt: "Flight School Marketing System",
           invert: true,
-          title: "Impress",
+          title: "Nurture",
           subtitle:
             "Guide Your Interested Website Visitors Into Booking a Discovery Flight at Your School",
           paragraphs: [
@@ -195,7 +195,7 @@ const marketingSystem = {
           ],
           button: {
             name: "Book a Call",
-            link: "/contact",
+            link: "/schedule-call",
           },
         },
         {
@@ -209,10 +209,11 @@ const marketingSystem = {
             "Most marketing agencies don't understand the pilot training industry. They put a generic template up for your website and hope for the best. We are a team of marketing specialists and web developers that understand the flight training industry first hand.",
             "Right Rudder Marketing is a full service pilot owned digital marketing agency. Our Flight School Marketing Plan includes all of the essential services needed by flight schools in one afforable package - including website design, SEO, and online advertising.",
             "We're here to help you book more discovery flights, be more profitable, and keep your CFIs happy with consistent work.",
+            "Feeling lost and don't know where to start?  Download the Flight School Marketing checklist.",
           ],
           button: {
-            name: "Get Our Free Book",
-            link: "/resources/flight-school-handbook",
+            name: "Get The FSMS Checklist",
+            link: "/resources/marketing-checklist",
           },
         },
       ],
