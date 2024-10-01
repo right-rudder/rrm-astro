@@ -9,8 +9,8 @@ const idealAviation = {
 
     // Top header
     header: {
-      imagePath: "/src/assets/ideal-facility.webp",
-      imageAlt: "Right Rudder Marketing team on the runway",
+      imagePath: "/src/assets/blue-skies-above-checkride-pass.webp",
+      imageAlt: "Blue Skies Above student pilot passing a checkride",
       headerH1: `<span class="text-accent-300">Blue Skies Above</span></br>Case Study`,
       paragraph:
         "Blue Skies Above, located in Lanett, AL, just a hop skip and away from Auburn, AL, partnered with Right Rudder Marketing to grow their flight school. Within a year, they saw 2X growth and now have over 10 students on their waitlist.",
@@ -51,9 +51,9 @@ const idealAviation = {
           "With more leads coming in, we helped streamline operations by implementing a CRM system with features like automated text responses to capture leads from missed calls.",
         ],
       },
-      imagePath: "/src/assets/ideal-facility.webp",
-      imageAlt: "Blue Skies Above expanding fleet",
-      imageCaption: "Blue Skies Above adds a new Cessna 172 to their fleet",
+      imagePath: "/src/assets/matthew-blue-skies-above-with-tim-jedrek.webp",
+      imageAlt: "Blue Skies Above owner, Matthew, with Tim from Right Rudder Marketing",
+      imageCaption: "Blue Skies Above owner, Matthew, with Tim from Right Rudder Marketing",
     },
 
     sopCTA: {
@@ -76,10 +76,10 @@ const idealAviation = {
     },
 
     testimonial: {
-      imagePath: "/src/assets/kim-ideal-aviation.webp",
+      imagePath: "/src/assets/matthew-blue-skies-above.webp",
       imageAlt: "Matthew from Blue Skies Above",
       quote:
-        "Partnering with Right Rudder Marketing was the best decision for my flight school. We've doubled in size, expanded our fleet, and now have students on a waitlist. Their aviation-focused marketing strategies really made a difference.",
+        "I was scrounging for students and now I have a waitlist 10, 11 long.  We're now talking about adding another plane to our fleet.  I think the growth speaks for itself.",
       name: "Matthew",
       client: "Blue Skies Above",
       rank: "Owner",
