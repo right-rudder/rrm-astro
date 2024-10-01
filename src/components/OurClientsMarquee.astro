@@ -16,7 +16,7 @@ const { data } = Astro.props;
       class="mx-auto my-8 max-w-xl text-lg leading-8 text-gray-300"
       set:html={data.description}
     />
-    <OurClientsLogos client:only="”react”" />
+    <OurClientsLogos client:only />
     <div
       class="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl"
       aria-hidden="true"

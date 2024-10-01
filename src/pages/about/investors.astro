@@ -4,8 +4,8 @@ import Header from "../../components/Header.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
 import investorsVars from "../../data/investors";
 import Partners from "../../components/Partners.astro";
-import OurClients from "../../components/OurClients.astro";
 import SteppedStats from "../../components/SteppedStats.astro";
+import OurClientsMarquee from "../../components/OurClientsMarquee.astro";
 
 const { data } = investorsVars;
 ---
@@ -24,7 +24,7 @@ const { data } = investorsVars;
   />
   <SteppedStats data={data.steppedStats} />
 
-  <OurClients data={data.ourClients} />
+  <OurClientsMarquee data={data.ourClients} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
 </BaseLayout>
