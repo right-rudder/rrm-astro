@@ -27,15 +27,17 @@ const { data } = homePage;
 
   <IntroVideo />
 
-  <Partners
-    heading={data.memberOf.heading}
-    organizations={data.memberOf.organizations}
-  />
+  <OurClients data={data.ourClients} />
 
   <CaseStudies
     upperHeading={data.caseStudies.upperHeading}
     heading={data.caseStudies.heading}
     cases={data.caseStudies.cases}
+  />
+
+  <Partners
+    heading={data.memberOf.heading}
+    organizations={data.memberOf.organizations}
   />
 
   <ScreenCTA data={data.bookCTA} />
@@ -54,8 +56,6 @@ const { data } = homePage;
     marketing={data.whyUs.marketingSystem}
     button={data.whyUs.btn}
   />
-
-  <OurClients data={data.ourClients} />
 
   <ServicesGrid
     upperHeading={data.services.upperHeading}
