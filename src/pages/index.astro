@@ -8,7 +8,7 @@ import Testimonials from "../components/Testimonials.astro";
 import WhyUs from "../components/WhyUs.astro";
 import ServicesGrid from "../components/ServicesGrid.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
-import OurClients from "../components/OurClients.astro";
+import OurClientsMarquee from "../components/OurClientsMarquee.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import GenericCTA from "../components/GenericCTA.astro";
 import ScreenCTA from "../components/ScreenCTA.astro";
@@ -27,7 +27,7 @@ const { data } = homePage;
 
   <IntroVideo />
 
-  <OurClients data={data.ourClients} />
+  <OurClientsMarquee data={data.ourClients} />
 
   <CaseStudiesVideo
     upperHeading={data.caseStudies.upperHeading}
