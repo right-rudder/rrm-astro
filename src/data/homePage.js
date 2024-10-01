@@ -227,7 +227,7 @@ const homePage = {
           accent: true,
         }, */
         {
-          name: "Get Free Book",
+          name: "Instant Access",
           link: "/resources/flight-school-handbook",
           accent: true,
         },
