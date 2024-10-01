@@ -94,7 +94,6 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="Right Rudder Marketing Logo"
-                  aspectRatio="16/9"
                   aria-label="Right Rudder Marketing Logo"
                   title="Right Rudder Marketing"
                   loading="lazy"
@@ -261,7 +260,6 @@ const Navbar = ({ pathname }) => {
           <img
             src="/RRM-ver-textWhite-trans-500.webp"
             alt="Right Rudder Marketing Logo"
-            aspectRatio="1/1"
             aria-label="Right Rudder Marketing Logo"
             loading="lazy"
             className="z-10 object-contain h-20 w-auto drop-shadow-sm"

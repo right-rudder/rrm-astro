@@ -6,7 +6,7 @@ import DownloadKeywords from "./DownloadKeywords";
 import DownloadTemplate from "./DownloadTemplate";
 import DownloadGmb from "./DownloadGMB";
 import DownloadBook from "./DownloadBook";
-import { YouTube } from 'astro-embed';
+import { YouTube } from "astro-embed";
 
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -111,22 +111,22 @@ if (!images[data.imagePath])
     <div
       class="-mt-12 pt-12 lg:col-start-2 lg:row-span-2 row-start-1 lg:row-start-1 lg:overflow-hidden"
     >
-    
       <!-- <div style={{ position: 'relative', paddingBottom: '177.78%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
           <YouTube id={data.youtubeUrl} />
         </div>
       </div> -->
 
-      <div class="w-full">
-        <iframe 
-          class="w-full h-full  aspect-[9/16] lg:w-3/5 lg:h-3/5" 
-          src={data.youtubeUrl} 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
+      <div class="w-full h-full">
+        <iframe
+          class="w-full h-full aspect-[9/16] lg:w-4/5 lg:h-full rounded-lg"
+          src={data.youtubeUrl}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
         </iframe>
       </div>
     </div>
