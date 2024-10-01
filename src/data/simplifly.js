@@ -39,7 +39,7 @@ const idealAviation = {
       content1: {
         title: "The Problem",
         paragraphs: [
-          "With multiple flight schools at their airport competing for prospective students attention, Blake knew he needed to do something about his digital marketing. They were ranking way below the first page of search and on the Google Map listings they were #14, well below the view so potential customers had difficulty even knowing they existed.",
+          "With multiple flight schools at their airport competing for prospective students' attention, Blake knew he needed to do something about his digital marketing. They were ranking way below the first page of search and on the Google Map listings they were #14, well below the view so potential customers had difficulty even knowing they existed.",
           "SimpliFly was using a local agency that wasn't specialized for flight schools and aviation businesses. There was a lot of friction in communication as the SimpliFly team had to describe the pilot training process and how aviation works.",
           "They spent a lot of time going back and forth with their previous agency to get things sounding right because the previous agency didn't understand pilots.",
           "Blake from SimpliFly was looking for a team that understood the flight training industry and could help them reach their goals.",
@@ -51,6 +51,7 @@ const idealAviation = {
           "The first thing we did was research the local area and their competition. With so many flight schools in their area, we had to understand what keywords were being searched for and then come up with a strategy to really accelerate their growth.",
           "We created an awesome website for them which really highlighted their main program: accelerated pilot training. We used target keywords in their website and GMB profile to really take things up a notch and we've seen great results.",
           "We also helped them with their social media profiles and created a strategy to get more reviews on Google. We also helped them with their Google My Business listing and got them to the top of the map pack.",
+          "Additionally, SimpliFly refined their target audience to only enroll career-track pilots. By restricting admissions to students aiming for professional piloting careers, they increased the Lifetime Value (LTV) of each student. This strategic shift drove their revenue to an estimated $8 million, significantly boosting their profitability while focusing on high-value, dedicated students."
         ],
       },
       imagePath: "/src/assets/happy-visitors-at-simplifly.webp",
