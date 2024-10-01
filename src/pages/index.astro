@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import homePage from "../data/homePage";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import Partners from "../components/Partners.astro";
-import CaseStudies from "../components/CaseStudies.astro";
+import CaseStudiesVideo from "../components/CaseStudiesVideo.astro";
 import Testimonials from "../components/Testimonials.astro";
 import WhyUs from "../components/WhyUs.astro";
 import ServicesGrid from "../components/ServicesGrid.astro";
@@ -29,7 +29,7 @@ const { data } = homePage;
 
   <OurClients data={data.ourClients} />
 
-  <CaseStudies
+  <CaseStudiesVideo
     upperHeading={data.caseStudies.upperHeading}
     heading={data.caseStudies.heading}
     cases={data.caseStudies.cases}
