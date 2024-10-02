@@ -141,6 +141,22 @@ const DownloadBook = () => {
                     </div>
                     <div className="mb-4">
                       <label
+                        htmlFor="business-name"
+                        className="block mb-0 font-semibold"
+                      >
+                        Business Name
+                      </label>
+                      <input
+                        type="business-name"
+                        id="business-name"
+                        name="business-name"
+                        autoComplete="organization"
+                        className="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-primary-600/50 focus:ring focus:ring-primary-600/50 focus:border-primary-600/50"
+                        required
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
                         htmlFor="address-line1"
                         className="block mb-0 font-semibold"
                       >
@@ -218,7 +234,6 @@ const DownloadBook = () => {
                         required
                       />
                     </div>
-                    
 
                     <p className="hidden">
                       <label>

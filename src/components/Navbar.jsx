@@ -94,6 +94,9 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
                   alt="Right Rudder Marketing Logo"
+                  aria-label="Right Rudder Marketing Logo"
+                  title="Right Rudder Marketing"
+                  loading="lazy"
                   className={`${navBar || openMobile ? "h-20 lg:h-28 w-4/6 lg:w-full" : "h-20 lg:h-28 w-3/4 lg:w-full"}z-10 object-contain duration-500`}
                 />
               </a>
@@ -192,7 +195,7 @@ const Navbar = ({ pathname }) => {
                   className={`${openMobile ? "hidden" : "block"} h-6 w-6`}
                   fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth="1.5"
+                  strokeWidth="2.0"
                   stroke="currentColor"
                   aria-hidden="true"
                   id="x-icon"
@@ -208,7 +211,7 @@ const Navbar = ({ pathname }) => {
                   className={`${openMobile ? "block" : "hidden"} h-6 w-6`}
                   fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth="1.5"
+                  strokeWidth="2.0"
                   stroke="currentColor"
                   aria-hidden="true"
                   id="hamburger-icon"
@@ -233,7 +236,7 @@ const Navbar = ({ pathname }) => {
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
-            className={`text-white h-6 w-6 cursor-pointer z-50`}
+            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 cursor-pointer z-50 text-primary-dark-50 duration-300`}
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="2.5"
@@ -257,12 +260,14 @@ const Navbar = ({ pathname }) => {
           <img
             src="/RRM-ver-textWhite-trans-500.webp"
             alt="Right Rudder Marketing Logo"
-            className="z-10 object-contain h-20 w-auto drop-shadow-sm"
+            aria-label="Right Rudder Marketing Logo"
+            loading="lazy"
+            className="z-10 object-contain h-24 w-auto drop-shadow-sm"
           />
         </a>
 
         <div
-          className={`absolute w-full h-44 bg-primary-dark-400/60 top-0 z-30 duration-500 ease-in-out  ${
+          className={`absolute w-full h-48 bg-primary-dark-950/90 top-0 z-30 duration-500 ease-in-out  ${
             openMobile
               ? "translate-x-0 delay-300 opacity-90"
               : "-translate-x-full opacity-0"
@@ -304,7 +309,7 @@ const Navbar = ({ pathname }) => {
                   {item.submenu.map((subitem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="relative border-b border-accent/20 w-full"
+                      className="relative border-b border-primary-dark-100/20 w-full"
                       onClick={(event) => handleSubItemClick(event, subIndex)}
                     >
                       {subitem.link ? (

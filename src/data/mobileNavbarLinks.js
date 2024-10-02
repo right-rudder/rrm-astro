@@ -36,7 +36,7 @@ export const mobileNavbarLinks = [
         link: "/how-to-run-effective-facebook-ads-in-2024",
       },
       {
-        name: "Google My Business",
+        name: "Google My Business Optimization",
         link: "/how-to-optimize-google-my-business-2024",
       },
       {
@@ -80,10 +80,6 @@ export const mobileNavbarLinks = [
         name: "Google Business Profile",
         link: "/resources/gmb",
       },
-      // {
-      //   name: "Check Online Presence",
-      //   link: "/resources/check-online-presence",
-      // },
       {
         name: "Webinars",
         link: "/webinars",

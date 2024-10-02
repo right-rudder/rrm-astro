@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import BlogPostCard from "./BlogPostCard.astro";
 import FormattedDate from "./FormattedDate.astro";
 
 const posts = (await getCollection("blog"))
@@ -10,7 +9,8 @@ const posts = (await getCollection("blog"))
 const { data } = Astro.props;
 ---
 
-<div
+<section
+  id="blogfeed"
   class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
 >
   <div class="mx-auto max-w-6xl lg:pr-4">
@@ -18,11 +18,11 @@ const { data } = Astro.props;
       <p class="text-base text-center font-semibold leading-7 text-primary-700">
         {data.upperHeading}
       </p>
-      <h1
+      <h2
         class="mt-0 text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
         {data.heading}
-      </h1>
+      </h2>
       <p class="mt-1 text-center text-xl leading-8 text-gray-700">
         {data.description}
       </p>
@@ -66,6 +66,8 @@ const { data } = Astro.props;
           <img
             src={post.data.heroImage}
             alt={post.data.title}
+            loading="lazy"
+            aspect-ratio="1/1"
             class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
           />
           <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-dark to-primary-dark/20 group-hover:bg-primary/60 duration-200" />
@@ -97,4 +99,4 @@ const { data } = Astro.props;
       ))
     }
   </div>
-</div>
+</section>

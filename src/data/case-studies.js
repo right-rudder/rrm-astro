@@ -30,30 +30,31 @@ const caseStudies = {
 
     caseStudies: {
       upperHeading: "Case Studies",
-      heading: `Our Clients <strong class="text-white">Get Results</strong>`,
+      heading: `Our Flight Schools <strong class="text-white">Get Results</strong>`,
       cases: [
         {
-          client: "Ideal",
+          client: "Blue Skies Above",
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
-          quote:
-            "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
+          youtubeId: "SD8TsqJSX00",
+          quote: "I think the growth speaks for itself",
           result:
-            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.",
-          link: "/our-flight-schools/ideal-aviation",
+            "Blue Skies Above is a flight school in Lanett, AL just a few miles away from Auburn, AL.  Over the past year, they have seen their flight school explode in growth.  They expanded their fleet and bought a like-new Cessna 172 to handle the TAA and commercial load and they are on their way to acquiring another plane to add to their fleet just to keep up with the demand.",
+          link: "/our-flight-schools/blue-skies-above",
           metric1: {
-            label: "Monthly Leads",
-            value: "100+",
+            label: "Growth under a year",
+            value: "2X",
           },
           metric2: {
-            label: "Sales",
-            value: "150%",
+            label: "Students on waitlist",
+            value: "10+",
           },
         },
         {
           client: "SimpliFly",
           imagePath: "/src/assets/simplifly-logo.webp",
           imageAlt: "SimpliFly Flight School logo",
+          youtubeId: "qzT8Q49ExUw",
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
           result:
@@ -69,20 +70,22 @@ const caseStudies = {
           },
         },
         {
-          client: "Pitcairn",
-          imagePath: "/src/assets/pitcairn-logo-250-vertical-white.webp",
-          imageAlt: "Pitcairn Flight Academy logo",
-          quote: "We are so happy with them.",
+          client: "Ideal",
+          imagePath: "/src/assets/ideal-logo.webp",
+          imageAlt: "Ideal Aviation logo",
+          youtubeId: "c1Pe9XJdsbo",
+          quote:
+            "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
           result:
-            "Pitcairn Flight Academy is now ranking on the first page of Google Search and Google Maps. They have seen a 150% increase in leads and a 200% increase in sales. They are now expanding their fleet and have a waiting list of upcoming student pilots.",
-          link: "/our-flight-schools/pitcairn",
+            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.",
+          link: "/our-flight-schools/ideal-aviation",
           metric1: {
-            label: "Total Leads",
-            value: "10X",
+            label: "Monthly Leads",
+            value: "100+",
           },
           metric2: {
-            label: "ARR",
-            value: "$8M+",
+            label: "Sales",
+            value: "150%",
           },
         },
       ],

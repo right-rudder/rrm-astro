@@ -4,10 +4,10 @@ import FunnelLayout from "../../layouts/FunnelLayout.astro";
 import DownloadCTAVideo from "../../components/DownloadCTAVideo.astro";
 import GenericCTA from "../../components/GenericCTA.astro";
 import flightSchoolHandbook from "../../data/flight-school-handbook";
-import CaseStudies from "../../components/CaseStudies.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import DownloadBook from "../../components/DownloadBook";
 import Testimonials from "../../components/Testimonials.astro";
+import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro";
 
 const { data } = flightSchoolHandbook;
 ---
@@ -154,7 +154,7 @@ const { data } = flightSchoolHandbook;
     </div>
   </section>
 
-  <CaseStudies
+  <CaseStudiesVideo
     upperHeading={data.caseStudies.upperHeading}
     heading={data.caseStudies.heading}
     cases={data.caseStudies.cases}
