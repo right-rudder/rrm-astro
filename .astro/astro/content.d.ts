@@ -652,6 +652,13 @@ declare module 'astro:content' {
   collection: "webinars";
   data: InferEntrySchema<"webinars">
 } & { render(): Render[".md"] };
+"test-webinar.md": {
+	id: "test-webinar.md";
+  slug: "test-webinar";
+  body: string;
+  collection: "webinars";
+  data: InferEntrySchema<"webinars">
+} & { render(): Render[".md"] };
 "tim-jedrek-at-king-schools-talks-sales-and-marketing.md": {
 	id: "tim-jedrek-at-king-schools-talks-sales-and-marketing.md";
   slug: "tim-jedrek-at-king-schools-talks-sales-and-marketing";
