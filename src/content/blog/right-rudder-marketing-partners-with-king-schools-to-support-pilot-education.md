@@ -1,32 +1,35 @@
 ---
 pubDate: "Sep 12, 2024"
 author: Charles Ferguson
-title: "Right Rudder Marketing Partners with King Schools to Support Pilot Education"
-description: "Right Rudder Marketing is proud to announce its new sponsorship with King Schools, a long-standing leader in aviation education. This partnership brings together two organizations dedicated to elevating the aviation industry, each with a unique role in supporting pilot education and training."
+title: "Right Rudder Marketing Sponsors King Schools' Envision Flight at Sea EDUCON 2024"
+description: "Right Rudder Marketing is excited to sponsor and exhibit at King Schools' Envision Flight at Sea EDUCON, an innovative aviation education trade show held aboard a cruise ship in 2024. This partnership showcases our commitment to supporting flight schools with advanced marketing strategies."
 heroImage: "/blog/RRM + King Schools Partnership.webp"
 readingTime: 4
 category: "Business"
 tags: ["Partners", "Announcements"]
 ---
 
-Right Rudder Marketing is excited to announce its new sponsorship with **[King Schools](https://kingschools.com/?srsltid=AfmBOoroHRDEDbIUoAFd4vxsQJC1YCg_n3M6j-xWGJeb3QYcpioqx4Xu)**, a long-standing leader in aviation education. This partnership brings together two organizations dedicated to elevating the aviation industry, each with a unique role in supporting pilot education and training.
+Right Rudder Marketing is proud to announce its sponsorship and participation as an exhibitor at **[King Schools’ Envision Flight at Sea EDUCON 2024](https://www.eventbrite.com/e/envision-flight-at-sea-2024-tickets-713862601257)**, an **aviation education conference** held aboard a cruise ship. This unique aviation trade show blends educational seminars with the luxury of a sea voyage, providing an interesting opportunity for flight schools, instructors, and aviation enthusiasts to learn and network in an immersive environment.
 
-For over 50 years, King Schools has provided pilots with innovative, engaging, and learning solutions. With a wide range of online courses, video-based knowledge programs, and software designed to make flight training accessible and enjoyable, King Schools continues to be a cornerstone of aviation education in the U.S.
+For over 50 years, King Schools has been a cornerstone in aviation education, offering engaging and comprehensive learning solutions to pilots at every stage of their careers, from Private Pilot License (PPL) to advanced certifications. Now, through the **Envision Flight at Sea 2024** event, they are creating an extraordinary setting where aviation professionals can engage in high-quality educational sessions while enjoying the relaxing ambiance of a cruise.
 
-### Supporting Pilots from Start to Finish
+### Supporting Aviation Education at Sea
 
-As a sponsor, Right Rudder Marketing will work closely with King Schools to promote their mission of making learning to fly “Smart, Safe & Fun.” King Schools offers a range of products that cater to both new and experienced pilots, including resources for Private Pilot License (PPL), Instrument Rating (IR), and advanced certifications.
+As an official **sponsor** and **exhibitor**, Right Rudder Marketing will be there ready to help flight schools improve their marketing efforts. Make sure to stop by our table to see how flight schools can use proven digital marketing strategies to attract more student pilots and maximize their online presence.  Events like the **Envision Flight at Sea aviation trade show** really speak to our [core values](https://rightruddermarketing.com/about/who-we-are) as it is one of the ways that Right Rudder Marketing can **give back** to the aviation community.
 
-The success of King Schools is reflected in their remarkable track record: nearly half of all U.S. pilots have trained using their materials, and 99.8% of their students pass their FAA exams. With decades of experience, King Schools continues to develop new content and resources, providing future pilots with the tools they need to succeed in their aviation careers.
+During this aviation conference at sea, attendees will participate in a range of educational seminars designed to make learning to fly "Smart, Safe & Fun," and Right Rudder Marketing will be on hand to help flight schools explore effective ways to market their training programs. This event is going to be a fun event for pilots, flight school owners, and aviation business owners who are eager to expand their knowledge in a unique, maritime setting.
 
-### Why This Partnership Matters
+### Why This Trade Show and Conference Matters
 
-The collaboration between Right Rudder Marketing and King Schools is built on a shared vision of supporting aviation education at every level. Right Rudder Marketing, as a marketing agency dedicated to the aviation sector, recognizes the significant role that quality flight training plays in shaping the industry’s future. By partnering with King Schools, we are supporting the next generation of pilots and helping to provide them with top-tier educational resources.
+The **Envision Flight at Sea EDUCON 2024** will be a networking and trade show experience for aviation professionals, flight schools, and pilot training organizations. By sponsoring this event, Right Rudder Marketing continues to support the aviation community, helping flight schools grow by improving their digital presence and reaching a wider audience.
+
+This cruise-based aviation conference allows attendees to discuss and gain insight on pilot training techniques, connect with industry leaders, and updates in the aviation industry. It’s a unique blend of education, networking, and leisure in one event. Right Rudder Marketing’s sponsorship aligns perfectly with our mission to support flight schools in enhancing their digital marketing efforts.
 
 ### Looking Ahead to 2025
 
-This partnership marks an exciting chapter for Right Rudder Marketing. As we enter into this sponsorship, we look forward to promoting King Schools’ products, sharing their resources with the broader aviation community, and collaborating on events and initiatives that bring added value to flight schools, instructors, and students.
+Right Rudder Marketing is committed to building long lasting relationships within the aviation industry. We're excited to attend and sponsor the **King Schools Envision Flight at Sea EDU-CON** trade show and aviation conference. As we move forward, we are eager to continue providing flight schools with the tools they need to thrive in a competitive market.
 
-Right Rudder Marketing will play an active role in supporting King Schools’ mission to improve flight training and pilot education, helping to make the aviation industry safer and more accessible for everyone.
+To learn more about how Right Rudder Marketing and King Schools are working together to support aviation education through events like the **Envision Flight at Sea EDUCON**, visit our [website](https://rightruddermarketing.com) or [contact us directly](https://rightruddermarketing.com/contact).
 
-To learn more about how King Schools and Right Rudder Marketing are working together to enhance pilot education, visit our [website](https://www.right-rudder-marketing.com) or [contact us directly](https://www.right-rudder-marketing.com/contact).
+![King Schools Envision Flight EDU-CON at Sea information poster](/blog/king-school-edu-con-envision-flight-at-sea-2024.png)
+*King Schools Envision Flight EDU-CON at Sea information poster*
