@@ -89,7 +89,7 @@ const Navbar = ({ pathname }) => {
             <div className="flex w-full items-center justify-between">
               <a
                 href="/"
-                className="relative hover:brightness-110 duration-200 ease-in-out w-1/4 lg:w-2/6"
+                className="relative hover:brightness-110 duration-200 ease-in-out w-4/6 md:w-1/3 lg:w-2/6"
               >
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
