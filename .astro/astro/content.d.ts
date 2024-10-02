@@ -573,6 +573,13 @@ declare module 'astro:content' {
   collection: "podcasts";
   data: InferEntrySchema<"podcasts">
 } & { render(): Render[".md"] };
+"flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md": {
+	id: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md";
+  slug: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
 "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
 	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
   slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
@@ -599,13 +606,6 @@ declare module 'astro:content' {
 "design-great-looking-checklists-forms-brochures-for-free.md": {
 	id: "design-great-looking-checklists-forms-brochures-for-free.md";
   slug: "design-great-looking-checklists-forms-brochures-for-free";
-  body: string;
-  collection: "webinars";
-  data: InferEntrySchema<"webinars">
-} & { render(): Render[".md"] };
-"flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md": {
-	id: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md";
-  slug: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing";
   body: string;
   collection: "webinars";
   data: InferEntrySchema<"webinars">
