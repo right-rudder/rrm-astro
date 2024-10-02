@@ -1,21 +1,21 @@
 export const mobileNavbarLinks = [
-  {
-    name: "Flight Schools",
-    submenu: [
-      {
-        name: "SimpliFly",
-        link: "/our-flight-schools/simplifly",
-      },
-      {
-        name: "Ideal Aviation",
-        link: "/our-flight-schools/ideal-aviation",
-      },
-      {
-        name: "Pitcairn Flight Academy",
-        link: "/our-flight-schools/pitcairn",
-      },
-    ],
-  },
+  // {
+  //   name: "Flight Schools",
+  //   submenu: [
+  //     {
+  //       name: "SimpliFly",
+  //       link: "/our-flight-schools/simplifly",
+  //     },
+  //     {
+  //       name: "Ideal Aviation",
+  //       link: "/our-flight-schools/ideal-aviation",
+  //     },
+  //     {
+  //       name: "Pitcairn Flight Academy",
+  //       link: "/our-flight-schools/pitcairn",
+  //     },
+  //   ],
+  // },
   {
     name: "Services",
     submenu: [

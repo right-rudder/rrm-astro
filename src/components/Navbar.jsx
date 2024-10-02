@@ -98,7 +98,7 @@ const Navbar = ({ pathname }) => {
                 />
               </a>
               <div className="hidden lg:flex justify-end w-full">
-                <ul className="flex justify-between align-middle w-9/12 items-center">
+                <ul className="flex justify-between align-middle w-7/12 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
@@ -299,7 +299,7 @@ const Navbar = ({ pathname }) => {
               )}
               {item.submenu && item.submenu.length > 0 && (
                 <ul
-                  className={`z-10 mx-auto bg-primary/50 whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[28rem]" : "max-h-0"}`}
+                  className={`z-10 mx-auto bg-primary/50 whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-fit" : "max-h-0"}`}
                 >
                   {item.submenu.map((subitem, subIndex) => (
                     <li
@@ -331,7 +331,7 @@ const Navbar = ({ pathname }) => {
 
                       {subitem.subsubmenu && subitem.subsubmenu.length > 0 && (
                         <ul
-                          className={`z-20 ml-8 bg-primary whitespace-nowrap left-full duration-500 overflow-hidden ${subHoveredIndex === subIndex ? "max-h-32" : "max-h-0"}`}
+                          className={`z-20 ml-8 bg-primary whitespace-nowrap left-full duration-500 overflow-hidden ${subHoveredIndex === subIndex ? "max-h-fit" : "max-h-0"}`}
                         >
                           {subitem.subsubmenu.map((subsubitem, subsubIndex) => (
                             <li key={subsubIndex} className="relative">
