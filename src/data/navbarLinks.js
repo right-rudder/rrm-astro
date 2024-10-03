@@ -1,22 +1,22 @@
 export const navbarLinks = [
-  // {
-  //   name: "Flight Schools",
-  //   link: "/our-flight-schools",
-  //   submenu: [
-  //     {
-  //       name: "SimpliFly",
-  //       link: "/our-flight-schools/simplifly",
-  //     },
-  //     {
-  //       name: "Ideal Aviation",
-  //       link: "/our-flight-schools/ideal-aviation",
-  //     },
-  //     {
-  //       name: "Pitcairn Flight Academy",
-  //       link: "/our-flight-schools/pitcairn",
-  //     },
-  //   ],
-  // },
+  /* {
+    name: "Flight Schools",
+    link: "/our-flight-schools",
+    submenu: [
+      {
+        name: "SimpliFly",
+        link: "/our-flight-schools/simplifly",
+      },
+      {
+        name: "Ideal Aviation",
+        link: "/our-flight-schools/ideal-aviation",
+      },
+      {
+        name: "Pitcairn Flight Academy",
+        link: "/our-flight-schools/pitcairn",
+      },
+    ],
+  },
   {
     name: "Services",
     submenu: [
@@ -44,16 +44,16 @@ export const navbarLinks = [
         name: "Customer Relationship Management(CRM)",
         link: "https://flightschoolcrm.com/",
       },
-      /* {
+      {
         name: "Media Production",
         link: "/services/media-production",
-      }, */
+      },
       {
         name: "Complete Marketing System",
         link: "/marketing-system",
       },
     ],
-  },
+  }, */
   {
     name: "Resources",
     link: "/blog",
@@ -105,10 +105,6 @@ export const navbarLinks = [
         name: "Who We Are",
         link: "/about/who-we-are",
       },
-      /* {
-        name: "Why Choose Us",
-        link: "/about/why-choose-us",
-      }, */
       {
         name: "Testimonials",
         link: "/about/testimonials",

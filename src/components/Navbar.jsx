@@ -101,7 +101,7 @@ const Navbar = ({ pathname }) => {
                 />
               </a>
               <div className="hidden lg:flex justify-end w-full">
-                <ul className="flex justify-between align-middle w-5/6 items-center">
+                <ul className="flex justify-evenly align-middle w-4/6 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
@@ -230,7 +230,7 @@ const Navbar = ({ pathname }) => {
 
       <div
         className={`${
-          openMobile ? "max-h-screen" : "max-h-0 delay-150"
+          openMobile ? "max-h-screen" : "max-h-0"
         } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary to-primary-dark z-20 top-0`}
         id="mobile-menu"
       >
@@ -269,7 +269,7 @@ const Navbar = ({ pathname }) => {
         <div
           className={`absolute w-full h-48 bg-primary-dark-950/90 top-0 z-20 duration-500 ease-in-out  ${
             openMobile
-              ? "translate-x-0 delay-300 opacity-90"
+              ? "translate-x-0 opacity-90"
               : "-translate-x-full opacity-0"
           }`}
         ></div>
