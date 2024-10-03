@@ -165,6 +165,7 @@ const marketingSystem = {
         {
           imagePath: "/src/assets/WhatsApp Image 2024-05-15 at 15.44.40.jpeg",
           imageAlt: "Flight School Marketing System",
+          imageCover: true,
           title: "Attract",
           subtitle:
             "Get People Interested in Pilot Training to Visit Your Website and Look You Up Online",
@@ -183,6 +184,7 @@ const marketingSystem = {
         {
           imagePath: "/src/assets/truman-talbot-xnAsqJnO-GY-unsplash.jpg",
           imageAlt: "Flight School Marketing System",
+          imageCover: true,
           invert: true,
           title: "Nurture",
           subtitle:
@@ -227,8 +229,8 @@ const marketingSystem = {
         "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
       buttons: [
         {
-          name: "Call Us",
-          link: "tel:1-314-804-1200",
+          name: "Get Our Free Book",
+          link: "/resources/flight-school-handbook",
           primary: false,
         },
         {

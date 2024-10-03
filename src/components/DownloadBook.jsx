@@ -147,7 +147,7 @@ const DownloadBook = () => {
                         Business Name
                       </label>
                       <input
-                        type="business-name"
+                        type="text"
                         id="business-name"
                         name="business-name"
                         autoComplete="organization"
