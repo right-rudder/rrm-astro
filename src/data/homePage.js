@@ -364,6 +364,10 @@ const homePage = {
       heading: "Right Rudder Marketing Blog",
       description: "Latest News & Updates",
     },
+    blogfeedtop: {
+      heading: "Most Popular Blog Articles",
+      description: "Top articles that people keep coming back to",
+    },
 
     flyWithUsCTA: {
       imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
