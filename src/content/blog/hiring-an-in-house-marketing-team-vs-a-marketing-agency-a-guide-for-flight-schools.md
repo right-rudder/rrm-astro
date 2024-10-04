@@ -1,7 +1,7 @@
 ---
 pubDate: "June 18, 2024"
 author: Charles Ferguson
-title: "Hiring an In-House Marketing Team vs. a Marketing Agency: A Guide for Flight Schools"
+title: "Hiring an In-House Marketing Team vs. a Marketing Agency"
 description: "Flight schools often face the dilemma of hiring an in-house marketing team versus partnering with a specialized marketing agency. This guide compares the two options to help you make the best decision for your business."
 heroImage: "/blog/in-house-marketing-vs-agency-youtube-thumbnail.jpg"
 readingTime: 4
