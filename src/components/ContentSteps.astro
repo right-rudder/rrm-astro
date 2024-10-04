@@ -90,7 +90,7 @@ const { data } = Astro.props;
               <ImageComp
                 imagePath={step.imagePath}
                 imageAlt={step.imageAlt}
-                styles="object-cover w-full h-full rounded-lg"
+                styles={`${step.imageCover ? "object-cover" : "object-contain"} w-full h-full rounded-lg`}
               />
             </div>
             <div />

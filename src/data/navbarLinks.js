@@ -1,5 +1,5 @@
 export const navbarLinks = [
-  {
+  /* {
     name: "Flight Schools",
     link: "/our-flight-schools",
     submenu: [
@@ -17,6 +17,43 @@ export const navbarLinks = [
       },
     ],
   },
+  {
+    name: "Services",
+    submenu: [
+      {
+        name: "Web Design & Development",
+        link: "/flight-school-website-design",
+      },
+      {
+        name: "Search Engine Optimization(SEO)",
+        link: "/flight-school-seo",
+      },
+      {
+        name: "Google Ads (PPC)",
+        link: "/how-to-enroll-more-students-with-google-ads-in-2024",
+      },
+      {
+        name: "Facebook Ads (PPC)",
+        link: "/how-to-run-effective-facebook-ads-in-2024",
+      },
+      {
+        name: "Google My Business Optimization",
+        link: "/how-to-optimize-google-my-business-2024",
+      },
+      {
+        name: "Customer Relationship Management(CRM)",
+        link: "https://flightschoolcrm.com/",
+      },
+      {
+        name: "Media Production",
+        link: "/services/media-production",
+      },
+      {
+        name: "Complete Marketing System",
+        link: "/marketing-system",
+      },
+    ],
+  }, */
   {
     name: "Resources",
     link: "/blog",
@@ -68,10 +105,6 @@ export const navbarLinks = [
         name: "Who We Are",
         link: "/about/who-we-are",
       },
-      /* {
-        name: "Why Choose Us",
-        link: "/about/why-choose-us",
-      }, */
       {
         name: "Testimonials",
         link: "/about/testimonials",

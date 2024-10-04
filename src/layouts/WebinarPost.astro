@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 import { KEYWORDS } from "../consts";
+import WebinarForm from "../components/WebinarForm";
 
 type Props = CollectionEntry<"webinars">["data"];
 
@@ -75,6 +76,14 @@ const {
         <div class="flex justify-center">
           <slot />
         </div>
+        {
+          pubDate.valueOf() > new Date().valueOf() && (
+            <div class="my-8 text-center">
+              <hr />
+              <WebinarForm client:visible />
+            </div>
+          )
+        }
       </div>
     </article>
   </section>

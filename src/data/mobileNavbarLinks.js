@@ -1,5 +1,5 @@
 export const mobileNavbarLinks = [
-  {
+  /* {
     name: "Flight Schools",
     submenu: [
       {
@@ -43,56 +43,51 @@ export const mobileNavbarLinks = [
         name: "Customer Relationship Management(CRM)",
         link: "https://flightschoolcrm.com/",
       },
-      /* {
+      {
         name: "Media Production",
         link: "/services/media-production",
-      }, */
+      },
       {
         name: "Complete Marketing System",
         link: "/marketing-system",
       },
     ],
+  }, */
+  {
+    name: "Flight School Handbook",
+    link: "/resources/flight-school-handbook",
   },
   {
-    name: "Resources",
-    submenu: [
-      {
-        name: "Flight School Handbook",
-        link: "/resources/flight-school-handbook",
-      },
-      {
-        name: "Marketing Checklist",
-        link: "/resources/marketing-checklist",
-      },
-      {
-        name: "Flight School Tips",
-        link: "/blog/5-tips-to-grow-your-flight-school/",
-      },
-      {
-        name: "Flight School Keywords",
-        link: "/resources/flight-school-keywords",
-      },
-      {
-        name: "SOP Templates",
-        link: "/resources/sop-templates",
-      },
-      {
-        name: "Google Business Profile",
-        link: "/resources/gmb",
-      },
-      {
-        name: "Webinars",
-        link: "/webinars",
-      },
-      {
-        name: "Podcasts",
-        link: "/podcasts",
-      },
-      {
-        name: "Our Blog",
-        link: "/blog",
-      },
-    ],
+    name: "Marketing Checklist",
+    link: "/resources/marketing-checklist",
+  },
+  {
+    name: "Flight School Tips",
+    link: "/blog/5-tips-to-grow-your-flight-school/",
+  },
+  {
+    name: "Flight School Keywords",
+    link: "/resources/flight-school-keywords",
+  },
+  {
+    name: "SOP Templates",
+    link: "/resources/sop-templates",
+  },
+  {
+    name: "Google Business Profile",
+    link: "/resources/gmb",
+  },
+  {
+    name: "Webinars",
+    link: "/webinars",
+  },
+  {
+    name: "Podcasts",
+    link: "/podcasts",
+  },
+  {
+    name: "Our Blog",
+    link: "/blog",
   },
 
   {
@@ -102,10 +97,6 @@ export const mobileNavbarLinks = [
         name: "Who We Are",
         link: "/about/who-we-are",
       },
-      /* {
-        name: "Why Choose Us",
-        link: "/about/why-choose-us",
-      }, */
       {
         name: "Testimonials",
         link: "/about/testimonials",

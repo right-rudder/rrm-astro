@@ -1,7 +1,8 @@
 ---
 import ImageComp from "./ImageComp.astro";
 
-const { upperHeading, heading, description, team, marketing, button } = Astro.props;
+const { upperHeading, heading, description, team, marketing, button } =
+  Astro.props;
 ---
 
 <section
@@ -73,14 +74,11 @@ const { upperHeading, heading, description, team, marketing, button } = Astro.pr
       }
     </div>
     <div class="flex flex-col items-center pt-20">
-      <div class="font-bold text-4xl text-accent-400 pb-5">
+      <h4 class="font-semibold text-2xl text-primary-200 px-6">
         {button.header}
-      </div>
-      <a
-        href={button.link}
-        class="btn-accent w-full md:w-auto"
-        >
-          {button.text}
+      </h4>
+      <a href={button.link} class="btn-accent mt-2">
+        {button.text}
       </a>
     </div>
   </div>

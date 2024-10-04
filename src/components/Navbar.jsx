@@ -89,7 +89,7 @@ const Navbar = ({ pathname }) => {
             <div className="flex w-full items-center justify-between">
               <a
                 href="/"
-                className="relative hover:brightness-110 duration-200 ease-in-out"
+                className="relative hover:brightness-110 duration-200 ease-in-out w-4/6 md:w-1/3 lg:w-2/6"
               >
                 <img
                   src="/RRM-hor-textWhite-bgTrans-150.webp"
@@ -97,11 +97,11 @@ const Navbar = ({ pathname }) => {
                   aria-label="Right Rudder Marketing Logo"
                   title="Right Rudder Marketing"
                   loading="lazy"
-                  className={`${navBar || openMobile ? "h-20 lg:h-28 w-4/6 lg:w-full" : "h-20 lg:h-28 w-3/4 lg:w-full"}z-10 object-contain duration-500`}
+                  className={`${navBar || openMobile ? "h-20 lg:h-24 w-3/4" : "h-20 lg:h-28 w-full"} object-contain duration-500`}
                 />
               </a>
               <div className="hidden lg:flex justify-end w-full">
-                <ul className="flex justify-between align-middle w-9/12 items-center">
+                <ul className="flex justify-evenly align-middle w-4/6 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
@@ -115,7 +115,7 @@ const Navbar = ({ pathname }) => {
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
                           className="text-white font-semibold text-lg duration-300 hover:underline decoration-accent decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-3 group-last:px-5 group-last:rounded-sm group-last:hover:bg-accent-100 group-last:hover:no-underline"
                         >
-                          <span className="relative z-10">{item.name}</span>
+                          <span className="relative">{item.name}</span>
                         </a>
                       ) : (
                         <span className="font-normal cursor-default text-white text-lg duration-300 hover:underline decoration-accent decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap">
@@ -124,7 +124,7 @@ const Navbar = ({ pathname }) => {
                       )}
                       {item.submenu && item.submenu.length > 0 && (
                         <ul
-                          className={`absolute z-10 top-12 p-1 bg-primary-600/95 whitespace-nowrap text-primary-dark-50 -left-4 duration-300 ease-in ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
+                          className={`absolute top-12 p-1 bg-primary-600/95 whitespace-nowrap text-primary-dark-50 -left-4 duration-300 ease-in ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
                         >
                           {item.submenu.map((subitem, subIndex) => (
                             <li
@@ -230,13 +230,13 @@ const Navbar = ({ pathname }) => {
 
       <div
         className={`${
-          openMobile ? "max-h-screen" : "max-h-0 delay-150"
-        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary to-primary-dark z-50 top-0`}
+          openMobile ? "max-h-screen" : "max-h-0"
+        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary to-primary-dark z-20 top-0`}
         id="mobile-menu"
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
-            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 cursor-pointer z-50 text-primary-dark-50 duration-300`}
+            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 cursor-pointer z-30 text-primary-dark-50 duration-300`}
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="2.5"
@@ -255,21 +255,21 @@ const Navbar = ({ pathname }) => {
 
         <a
           href="/"
-          className="z-40 relative flex justify-center items-center align-middle"
+          className="z-30 relative flex justify-center items-center align-middle"
         >
           <img
             src="/RRM-ver-textWhite-trans-500.webp"
             alt="Right Rudder Marketing Logo"
             aria-label="Right Rudder Marketing Logo"
             loading="lazy"
-            className="z-10 object-contain h-24 w-auto drop-shadow-sm"
+            className="object-contain h-24 w-auto drop-shadow-sm"
           />
         </a>
 
         <div
-          className={`absolute w-full h-48 bg-primary-dark-950/90 top-0 z-30 duration-500 ease-in-out  ${
+          className={`absolute w-full h-48 bg-primary-dark-950/90 top-0 z-20 duration-500 ease-in-out  ${
             openMobile
-              ? "translate-x-0 delay-300 opacity-90"
+              ? "translate-x-0 opacity-90"
               : "-translate-x-full opacity-0"
           }`}
         ></div>
@@ -304,7 +304,7 @@ const Navbar = ({ pathname }) => {
               )}
               {item.submenu && item.submenu.length > 0 && (
                 <ul
-                  className={`z-10 mx-auto bg-primary/50 whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[36rem]" : "max-h-0"}`}
+                  className={`mx-auto bg-primary/50 whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[50rem]" : "max-h-0"}`}
                 >
                   {item.submenu.map((subitem, subIndex) => (
                     <li
@@ -336,7 +336,7 @@ const Navbar = ({ pathname }) => {
 
                       {subitem.subsubmenu && subitem.subsubmenu.length > 0 && (
                         <ul
-                          className={`z-20 ml-8 bg-primary whitespace-nowrap left-full duration-500 overflow-hidden ${subHoveredIndex === subIndex ? "max-h-32" : "max-h-0"}`}
+                          className={`ml-8 bg-primary whitespace-nowrap left-full duration-500 overflow-hidden ${subHoveredIndex === subIndex ? "max-h-fit" : "max-h-0"}`}
                         >
                           {subitem.subsubmenu.map((subsubitem, subsubIndex) => (
                             <li key={subsubIndex} className="relative">
