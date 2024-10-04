@@ -365,8 +365,8 @@ const homePage = {
       description: "Latest News & Updates",
     },
     blogfeedtop: {
-      heading: "Most Popular Blog Articles",
-      description: "Top articles that people keep coming back to",
+      heading: "Popular Blog Articles",
+      description: "Top aviation marketing content that people keep coming back to",
     },
 
     flyWithUsCTA: {
