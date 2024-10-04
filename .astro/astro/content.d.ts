@@ -270,13 +270,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: any
 } & { render(): Render[".md"] };
-"hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md": {
-	id: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.md";
+"hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.mdx": {
+	id: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools.mdx";
   slug: "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools";
   body: string;
   collection: "blog";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics.md": {
 	id: "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics.md";
   slug: "how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics";
