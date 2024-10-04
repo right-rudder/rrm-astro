@@ -360,7 +360,7 @@ const homePage = {
     },
 
     blogfeed: {
-      upperHeading: "Blog",
+      upperHeading: "PIREPs",
       heading: "Right Rudder Marketing Blog",
       description: "Latest news, updates, and content",
     },
