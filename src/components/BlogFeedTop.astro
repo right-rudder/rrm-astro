@@ -2,9 +2,17 @@
 import { getCollection } from "astro:content";
 import FormattedDate from "./FormattedDate.astro";
 
+// Manually specify the slugs or unique identifiers for the desired posts
+const specificPostSlugs = [
+  "5-tips-to-grow-your-flight-school",
+  "4-steps-to-enroll-more-student-pilots-at-your-flight-school",
+  "hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools",
+];
+
 const posts = (await getCollection("blog"))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3);
+  .filter(post => specificPostSlugs.includes(post.slug)) // Filter by the specific slugs
+  .sort((a, b) => specificPostSlugs.indexOf(a.slug) - specificPostSlugs.indexOf(b.slug)); // Sort according to your specified order
+
 
 const { data } = Astro.props;
 ---
