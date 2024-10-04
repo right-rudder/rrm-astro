@@ -1,8 +1,10 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
+import BlogFeedRandom from "../components/BlogFeedRandom.astro";
 import BaseLayout from "./BaseLayout.astro";
 import { KEYWORDS } from "../consts";
+
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -78,4 +80,6 @@ const {
       </div>
     </article>
   </section>
+
+  <BlogFeedRandom />
 </BaseLayout>
