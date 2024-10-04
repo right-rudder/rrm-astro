@@ -362,7 +362,11 @@ const homePage = {
     blogfeed: {
       upperHeading: "Blog",
       heading: "Right Rudder Marketing Blog",
-      description: "Latest News & Updates",
+      description: "Latest news, updates, and content",
+    },
+    blogfeedtop: {
+      heading: "Popular Blog Articles",
+      description: "Top aviation marketing content that people keep coming back to",
     },
 
     flyWithUsCTA: {

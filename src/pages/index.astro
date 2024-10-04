@@ -10,6 +10,7 @@ import ServicesGrid from "../components/ServicesGrid.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import OurClientsMarquee from "../components/OurClientsMarquee.astro";
 import BlogFeed from "../components/BlogFeed.astro";
+import BlogFeedTop from "../components/BlogFeedTop.astro";
 import GenericCTA from "../components/GenericCTA.astro";
 import ScreenCTA from "../components/ScreenCTA.astro";
 import IntroVideo from "../components/IntroVideo.astro";
@@ -66,6 +67,7 @@ const { data } = homePage;
   <GenericCTA data={data.gmbCTA} />
 
   <BlogFeed data={data.blogfeed} />
+  <BlogFeedTop data={data.blogfeedtop} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
 </BaseLayout>
