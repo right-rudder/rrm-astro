@@ -69,10 +69,10 @@ const WebinarForm = () => {
             {!formSubmitted && (
               <>
                 <h2 className="text-4xl text-gray-900 text-center font-bold mb-1">
-                  Register To Our Next Webinar
+                Sign Up Here
                 </h2>
                 <p className="mb-4 text-center text-gray-600">
-                  Fill out the form below to assist to our webinar.
+                Fill out the form below get details sent to your directly for our next event.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="">

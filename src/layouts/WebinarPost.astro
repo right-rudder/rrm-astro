@@ -4,6 +4,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 import { KEYWORDS } from "../consts";
 import WebinarForm from "../components/WebinarForm";
+import WebinarFormInline from "../components/WebinarFormInline";
 
 type Props = CollectionEntry<"webinars">["data"];
 
@@ -28,12 +29,24 @@ const {
   <div class="h-20 lg:h-28 w-full bg-primary-dark-800/80"></div>
 
   <section class="flex justify-center pt-6 pb-20">
+
+    
     <article class="mx-auto max-w-4xl">
+
+      {
+        pubDate.valueOf() > new Date().valueOf() && (
+          <div class="my-8 text-center grid place-items-center">
+            <WebinarFormInline client:visible />
+          </div>
+        )
+      }
+
+
       <div class="mb-12 lg:mb-0">
         {
           heroImage && (
             <img
-              class="object-contain h-full w-full bg-white"
+              class="object-contain h-full w-full max-w-full bg-white"
               src={heroImage}
               alt={title}
             />
@@ -71,6 +84,10 @@ const {
               ))
             }
           </div>
+
+      
+
+
           <hr />
         </div>
         <div class="flex justify-center">
