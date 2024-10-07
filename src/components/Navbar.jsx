@@ -96,7 +96,7 @@ const Navbar = ({ pathname }) => {
                   alt="Right Rudder Marketing Logo"
                   aria-label="Right Rudder Marketing Logo"
                   title="Right Rudder Marketing"
-                  loading="lazy"
+                  loading="eager"
                   className={`${navBar || openMobile ? "h-20 lg:h-24 w-3/4" : "h-20 lg:h-28 w-full"} object-contain duration-500`}
                 />
               </a>
