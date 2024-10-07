@@ -29,7 +29,7 @@ Your website is the foundation of your online presence, and it's essential to ha
 
 Search engine optimization (SEO) is the practice of optimizing your website and content to rank higher in search engine results pages (SERPs). Here are some tips for improving your flight school's SEO:
 
-- Use targeted keywords in your website copy and blog posts.(See [RRM Flight School Keyword](https://rightruddermarketing.com/http:/learn/flight-school-keywords)).
+- Use targeted keywords in your website copy and blog posts.(See [RRM Flight School Keyword Guide](https://rightruddermarketing.com/resources/flight-school-keywords)).
 - Optimize your website's meta tags, including title tags, meta descriptions, and header tags.
 - Build backlinks from reputable websites.
 - Publish high-quality content that provides value to your target audience.
