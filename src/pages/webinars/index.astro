@@ -44,45 +44,15 @@ const posts = (await getCollection("webinars")).sort(
 
 <BaseLayout
   pageTitle="Webinars | Right Rudder Marketing"
-  pageDescription="xplore the latest happenings in the world of flight training at Right Rudder Marketing. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
+  pageDescription="Explore the latest happenings in the world of flight training at Right Rudder Marketing. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
   pageKeywords="webinars, flight training, marketing, insights, tips, milestones, flight training industry, pilot training experience, flight school marketing, flight school success"
 >
   <!-- Header -->
   <Header data={content.header} />
 
-  <section class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-      <svg
-        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern
-            id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-            width="200"
-            height="200"
-            x="50%"
-            y="-1"
-            patternUnits="userSpaceOnUse"
-          >
-            <path d="M100 200V.5M.5 .5H200" fill="none"></path>
-          </pattern>
-        </defs>
-        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-          <path
-            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-            stroke-width="0"></path>
-        </svg>
-        <rect
-          width="100%"
-          height="100%"
-          stroke-width="0"
-          fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
-      </svg>
-    </div>
-
+  <section class="relative overflow-hidden bg-white py-24 sm:py-32">
     <div class="mx-auto px-6 pt-10 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
+      <div class="mx-auto w-full max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Right Rudder Marketing Past Webinars
         </h2>
@@ -95,17 +65,17 @@ const posts = (await getCollection("webinars")).sort(
           }
           <FormattedDate date={posts[posts.length - 1].data.pubDate} />
         </p>
+        {
+          posts[0].data.pubDate.valueOf() > new Date().valueOf() && (
+            <div class="my-8 text-center">
+              <p class="text-2xl mb-2 font-bold text-primary-dark-900">
+                Dont miss our next webinar!
+              </p>
+              <WebinarForm client:visible />
+            </div>
+          )
+        }
       </div>
-      {
-        posts[0].data.pubDate.valueOf() > new Date().valueOf() && (
-          <div class="mt-8 text-center">
-            <p class="text-2xl mb-2 font-bold text-primary-dark-900">
-              Dont miss our next webinar!
-            </p>
-            <WebinarForm client:visible />
-          </div>
-        )
-      }
       <div
         class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center"
       >

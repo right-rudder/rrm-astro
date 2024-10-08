@@ -65,16 +65,17 @@ const WebinarForm = () => {
 
       {showModal && (
         <div className="fixed inset-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center z-40">
-          <div className="bg-white px-12 pb-9 pt-0 max-w-md lg:max-h-[77vh] overflow-auto text-black relative rounded-md z-50">
+          <div className="bg-white w-full max-w-md px-12 py-12 overflow-hidden lg:max-h-screen text-black relative rounded-md z-50">
             {!formSubmitted && (
               <>
                 <h2 className="text-4xl text-gray-900 text-center font-bold mb-1">
-                Sign Up Here
+                  Sign Up Here
                 </h2>
                 <p className="mb-4 text-center text-gray-600">
-                Fill out the form below get details sent to your directly for our next event.
+                  Fill out the form below get details sent to your directly for
+                  our next event.
                 </p>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="overflow-auto w-full">
                   <div className="">
                     <div className="mb-4">
                       <label
@@ -186,7 +187,7 @@ const WebinarForm = () => {
             )}
 
             <button
-              className="bg-primary-600 p-1 rounded-full absolute top-2 right-2"
+              className="bg-primary-600 p-1 rounded-full absolute top-4 right-2"
               onClick={() => {
                 toggleModal();
                 document.body.style.overflow = "auto";

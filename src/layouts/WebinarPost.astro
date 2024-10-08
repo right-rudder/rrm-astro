@@ -28,11 +28,8 @@ const {
 >
   <div class="h-20 lg:h-28 w-full bg-primary-dark-800/80"></div>
 
-  <section class="flex justify-center pt-6 pb-20">
-
-    
-    <article class="mx-auto max-w-4xl">
-
+  <section class="relative overflow-hidden py-24 sm:py-32">
+    <article class="mx-auto w-full max-w-4xl">
       {
         pubDate.valueOf() > new Date().valueOf() && (
           <div class="my-8 text-center grid place-items-center">
@@ -40,7 +37,6 @@ const {
           </div>
         )
       }
-
 
       <div class="mb-12 lg:mb-0">
         {
@@ -53,7 +49,7 @@ const {
           )
         }
       </div>
-      <div class="mx-auto max-w-4xl bg-white prose font-sans py-12 px-5">
+      <div class="mx-auto w-full max-w-4xl bg-white prose font-sans py-12 px-5">
         <div class="title">
           <div class="date">
             <FormattedDate date={pubDate} />
@@ -85,23 +81,20 @@ const {
             }
           </div>
 
-      
-
-
           <hr />
         </div>
         <div class="flex justify-center">
           <slot />
         </div>
-        {
-          pubDate.valueOf() > new Date().valueOf() && (
-            <div class="my-8 text-center">
-              <hr />
-              <WebinarForm client:visible />
-            </div>
-          )
-        }
       </div>
+      {
+        pubDate.valueOf() > new Date().valueOf() && (
+          <div class="my-8 px-3 lg:px-0 text-center w-full">
+            <hr />
+            <WebinarForm client:visible />
+          </div>
+        )
+      }
     </article>
   </section>
 </BaseLayout>
