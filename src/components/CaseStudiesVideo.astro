@@ -1,6 +1,6 @@
 ---
 import ImageComp from "./ImageComp.astro";
-import { YouTube } from 'astro-embed';
+import { YouTube } from "astro-embed";
 
 const { upperHeading, heading, cases } = Astro.props;
 ---
@@ -15,10 +15,12 @@ const { upperHeading, heading, cases } = Astro.props;
     class="text-center font-normal text-5xl text-primary-100"
     set:html={heading}
   />
-  <div class="mt-14 px-5 flex flex-wrap lg:flex-nowrap justify-center gap-4 lg:gap-6 w-full">
+  <div
+    class="mt-14 px-2 lg:px-6 flex flex-wrap lg:flex-nowrap justify-center gap-4 md:gap-1 lg:gap-6 w-full"
+  >
     {
       cases.map((c) => (
-        <div class="bg-primary-dark-800 mx-3 lg:mx-0 w-full md:w-2/5 lg:w-1/3 lg:mt-3 rounded-xl overflow-hidden">
+        <div class="bg-primary-dark-800 lg:mx-0 w-full md:w-[46%] lg:w-1/3 lg:mt-3 rounded-xl overflow-hidden">
           <div class="aspect-video w-full bg-gradient-to-b from-gray-100 to-gray-300">
             {/* <ImageComp
               imagePath={c.imagePath}
