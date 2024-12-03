@@ -124,7 +124,7 @@ const Navbar = ({ pathname }) => {
                       )}
                       {item.submenu && item.submenu.length > 0 && (
                         <ul
-                          className={`absolute top-12 p-1 bg-primary-600/95 whitespace-nowrap text-primary-dark-50 -left-4 duration-300 ease-in ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
+                          className={`absolute top-12 border-b-8 font-normal border-primary-900 bg-primary-600/95 whitespace-nowrap text-primary-dark-50 -left-4 duration-200 ease-in ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
                         >
                           {item.submenu.map((subitem, subIndex) => (
                             <li

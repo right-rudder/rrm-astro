@@ -30,7 +30,7 @@ const seo = {
 
     //main content
     whatsSeo: {
-      imagePath: "/src/assets/taylor-van-riper-yQorCngxzwI-unsplash.jpg",
+      imagePath: "/src/assets/Right-Rudder-Marketing-SEO.png",
       imageAlt: "Sky with clouds",
       upperHeading: "What is SEO?",
       heading: "Search Engine Optimization for Flight Schools",
