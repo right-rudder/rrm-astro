@@ -215,23 +215,35 @@ const whoWeAre = {
           ],
         },
         {
-          name: "Tonie Santos",
-          imagePath: "/src/assets/tonie_profile.webp",
+          name: "Sebastian Bruno",
+          imagePath: "/src/assets/profile-image-placeholder.jpg",
           imageAlt:
-            "Portrait of Tonie Santos, Director of Operations at Right Rudder Marketing",
-          rank: "Director of Operations",
+            "Portrait of Sebastian Bruno, Key Account Manager at Right Rudder Marketing",
+          rank: "Key Account Manager",
           social: [
             {
               platform: "facebook",
-              url: "https://www.facebook.com/tonie.santos.87",
+              url: "https://www.facebook.com/Tim.is.amazing/",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/rightruddermarketing/",
             },
             {
               platform: "linkedin",
-              url: "https://www.linkedin.com/in/tonie-santos-23014a1b//",
+              url: "https://www.linkedin.com/in/timjedrek/",
             },
             {
               platform: "twitter",
-              url: "https://twitter.com/tonie_santos",
+              url: "https://twitter.com/rightruddermktg",
+            },
+            {
+              platform: "github",
+              url: "https://github.com/timjedrek",
+            },
+            {
+              platform: "website",
+              url: "https://timjedrek.com/",
             },
           ],
         },
@@ -303,6 +315,27 @@ const whoWeAre = {
             {
               platform: "website",
               url: "https://lucas-awesome-work.netlify.app/",
+            },
+          ],
+        },
+        {
+          name: "Tonie Santos",
+          imagePath: "/src/assets/tonie_profile.webp",
+          imageAlt:
+            "Portrait of Tonie Santos, Technical Consultant at Right Rudder Marketing",
+          rank: "Technical Consultant",
+          social: [
+            {
+              platform: "facebook",
+              url: "https://www.facebook.com/tonie.santos.87",
+            },
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/tonie-santos-23014a1b//",
+            },
+            {
+              platform: "twitter",
+              url: "https://twitter.com/tonie_santos",
             },
           ],
         },
