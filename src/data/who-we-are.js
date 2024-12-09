@@ -220,32 +220,7 @@ const whoWeAre = {
           imageAlt:
             "Portrait of Sebastian Bruno, Key Account Manager at Right Rudder Marketing",
           rank: "Key Account Manager",
-          social: [
-            {
-              platform: "facebook",
-              url: "https://www.facebook.com/Tim.is.amazing/",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/rightruddermarketing/",
-            },
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/timjedrek/",
-            },
-            {
-              platform: "twitter",
-              url: "https://twitter.com/rightruddermktg",
-            },
-            {
-              platform: "github",
-              url: "https://github.com/timjedrek",
-            },
-            {
-              platform: "website",
-              url: "https://timjedrek.com/",
-            },
-          ],
+          social: [],
         },
         {
           name: "Diego Yon",
