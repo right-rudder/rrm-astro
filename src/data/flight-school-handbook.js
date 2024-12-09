@@ -6,7 +6,7 @@ const flightSchoolHandbook = {
       "Flight School Handbook of Marketing Knowledge | Right Rudder Marketing",
     pageDescription: `The Only Book You'll Ever Need for Learning How to Market Your Flight School Online. If your flight school isn’t getting the calls and leads you need from your website and marketing efforts, then this book is a must read.  The Flight School Handbook of Marketing Knowledge is the ultimate guide written for flight school business owners that are looking to double, triple, even 10X their sales in the coming year. This book is written based on battle tested strategies and the real results of Right Rudder Marketing and flight schools all across the United States.  Discover how to implement the Flight School Marketing System in your business.`,
     pageKeywords:
-      "Flight School Handbook of Marketing Knowledge, flight school marketing, flight school book, flight school seo, flicht school ppc, flight school social media, flight school website design, flight school marketing system",
+      "Flight School Handbook of Marketing Knowledge, flight school marketing, flight school book, flight school seo, flight school ppc, flight school social media, flight school website design, flight school marketing system",
 
     header: {
       imagePath: "/src/assets/book-tim.jpg",
