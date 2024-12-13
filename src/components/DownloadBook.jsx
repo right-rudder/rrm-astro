@@ -38,6 +38,7 @@ const DownloadBook = () => {
         if (response.ok) {
           setFormSubmitted(true);
           document.body.style.overflow = "auto";
+          window.location.href = "/book-confirmation";
         } else {
           console.error("Form submission failed:", response.statusText);
         }

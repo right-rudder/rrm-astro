@@ -38,6 +38,7 @@ const DownloadChecklist = () => {
         if (response.ok) {
           setFormSubmitted(true);
           document.body.style.overflow = "auto";
+          window.location.href = "/checklist-confirmation";
         } else {
           console.error("Form submission failed:", response.statusText);
         }

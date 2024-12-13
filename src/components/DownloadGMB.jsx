@@ -38,6 +38,7 @@ const DownloadGmb = () => {
         if (response.ok) {
           setFormSubmitted(true);
           document.body.style.overflow = "auto";
+          window.location.href = "/gmb-confirmation";
         } else {
           console.error("Form submission failed:", response.statusText);
         }

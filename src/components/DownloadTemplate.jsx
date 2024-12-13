@@ -38,6 +38,7 @@ const DownloadTemplate = () => {
         if (response.ok) {
           setFormSubmitted(true);
           document.body.style.overflow = "auto";
+          window.location.href = "/sop-template-confirmation";
         } else {
           console.error("Form submission failed:", response.statusText);
         }
