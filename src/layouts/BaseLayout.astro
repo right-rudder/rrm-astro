@@ -10,7 +10,7 @@ import ChatWidget from "../components/ChatWidget.astro";
 import Banner from "../components/Banner.astro";
 
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, keywords } = Astro.props;
+const { siteTitle, siteDescription, keywords, ogImage } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,7 +20,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
       title={siteTitle || SITE_TITLE}
       description={siteDescription || SITE_DESCRIPTION}
       keywords={keywords || KEYWORDS}
-      image={IMAGE}
+      image={ogImage || IMAGE}
     />
   </head>
   <body class="font-sans bg-primary-dark-100">
