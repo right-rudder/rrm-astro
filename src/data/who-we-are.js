@@ -215,19 +215,32 @@ const whoWeAre = {
           ],
         },
         {
-          name: "Sebastian Bruno",
-          imagePath: "/src/assets/profile-image-placeholder.jpg",
+          name: "Tonie Santos",
+          imagePath: "/src/assets/tonie_profile.webp",
           imageAlt:
-            "Portrait of Sebastian Bruno, Key Account Manager at Right Rudder Marketing",
-          rank: "Key Account Manager",
-          social: [],
+            "Portrait of Tonie Santos, Technical Consultant at Right Rudder Marketing",
+          rank: "Technical Consultant",
+          social: [
+            {
+              platform: "facebook",
+              url: "https://www.facebook.com/tonie.santos.87",
+            },
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/tonie-santos-23014a1b//",
+            },
+            {
+              platform: "twitter",
+              url: "https://twitter.com/tonie_santos",
+            },
+          ],
         },
         {
           name: "Diego Yon",
           imagePath: "/src/assets/diego-yon.webp",
           imageAlt:
             "Portrait of Diego Yon, Web Developer at Right Rudder Marketing",
-          rank: "Technical Lead",
+          rank: "Senior Web Developer",
           social: [
             {
               platform: "linkedin",
@@ -248,7 +261,7 @@ const whoWeAre = {
           imagePath: "/src/assets/raminka-flying.png",
           imageAlt:
             "Portrait of Raul Ospina, Marketing Lead at Right Rudder Marketing",
-          rank: "Marketing Lead",
+          rank: "Creative Marketing Manager",
           social: [
             {
               platform: "instagram",
@@ -294,23 +307,15 @@ const whoWeAre = {
           ],
         },
         {
-          name: "Tonie Santos",
-          imagePath: "/src/assets/tonie_profile.webp",
+          name: "Sebastian Bruno",
+          imagePath: "/src/assets/RRM-team-SebasBruno.jpg",
           imageAlt:
-            "Portrait of Tonie Santos, Technical Consultant at Right Rudder Marketing",
-          rank: "Technical Consultant",
+            "Portrait of Sebastian Bruno, Key Account Manager at Right Rudder Marketing",
+          rank: "Key Account Manager",
           social: [
             {
-              platform: "facebook",
-              url: "https://www.facebook.com/tonie.santos.87",
-            },
-            {
               platform: "linkedin",
-              url: "https://www.linkedin.com/in/tonie-santos-23014a1b//",
-            },
-            {
-              platform: "twitter",
-              url: "https://twitter.com/tonie_santos",
+              url: "https://www.linkedin.com/in/sebastian-bruno-8335a81a5/",
             },
           ],
         },
