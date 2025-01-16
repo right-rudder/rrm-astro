@@ -601,6 +601,13 @@ declare module 'astro:content' {
   collection: "podcasts";
   data: any
 } & { render(): Render[".md"] };
+"maximizing-flight-school-profits-with-ari-prevalla.md": {
+	id: "maximizing-flight-school-profits-with-ari-prevalla.md";
+  slug: "maximizing-flight-school-profits-with-ari-prevalla";
+  body: string;
+  collection: "podcasts";
+  data: any
+} & { render(): Render[".md"] };
 };
 "webinars": {
 "copywriting-revisited.md": {
