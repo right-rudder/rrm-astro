@@ -601,6 +601,13 @@ declare module 'astro:content' {
   collection: "podcasts";
   data: any
 } & { render(): Render[".md"] };
+"integrating-purdue-global-degree-program-into-your-flight-school.md": {
+	id: "integrating-purdue-global-degree-program-into-your-flight-school.md";
+  slug: "integrating-purdue-global-degree-program-into-your-flight-school";
+  body: string;
+  collection: "podcasts";
+  data: any
+} & { render(): Render[".md"] };
 "mastering-flight-training-carl-valeri-on-mentorship-learning-and-success.md": {
 	id: "mastering-flight-training-carl-valeri-on-mentorship-learning-and-success.md";
   slug: "mastering-flight-training-carl-valeri-on-mentorship-learning-and-success";

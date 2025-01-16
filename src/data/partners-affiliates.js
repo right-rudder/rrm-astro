@@ -191,6 +191,12 @@ const partnersAffiliates = {
           imageAlt: "Aviatize logo",
           link: "https://www.aviatize.com",
         },
+        {
+          name: "Purdue Global",
+          imagePath: "/src/assets/purdue-global-logo.jpg",
+          imageAlt: "Purdue Global logo",
+          link: "https://www.purdueglobal.edu/degree-programs/aviation/",
+        },
       ],
     },
 
