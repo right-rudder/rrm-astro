@@ -190,7 +190,7 @@ const whoWeAre = {
           social: [
             {
               platform: "facebook",
-              url: "https://www.facebook.com/Tim.is.amazing/",
+              url: "https://www.facebook.com/flightschoolmarketing",
             },
             {
               platform: "instagram",
