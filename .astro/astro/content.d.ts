@@ -608,6 +608,13 @@ declare module 'astro:content' {
   collection: "podcasts";
   data: any
 } & { render(): Render[".md"] };
+"streamlining-flight-school-management-with-tom-verbruggen-from-aviatize.md": {
+	id: "streamlining-flight-school-management-with-tom-verbruggen-from-aviatize.md";
+  slug: "streamlining-flight-school-management-with-tom-verbruggen-from-aviatize";
+  body: string;
+  collection: "podcasts";
+  data: any
+} & { render(): Render[".md"] };
 "transforming-flight-school-operations-with-brett-hart-from-four-forces.md": {
 	id: "transforming-flight-school-operations-with-brett-hart-from-four-forces.md";
   slug: "transforming-flight-school-operations-with-brett-hart-from-four-forces";

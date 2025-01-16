@@ -1,5 +1,5 @@
 ---
-pubDate: "October 3, 2025"
+pubDate: "October 3, 2024"
 author: Raul Ospina
 title: "Transforming Flight School Operations with Brett Hart from Four Forces"
 description: "In this episode, Tim Jedrek talks with Brett Hart, co-founder and CEO of Four Forces, about improving flight school operations through innovative software, reducing costs, and enhancing student and staff experiences."
