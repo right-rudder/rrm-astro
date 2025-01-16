@@ -666,6 +666,13 @@ declare module 'astro:content' {
   collection: "webinars";
   data: any
 } & { render(): Render[".md"] };
+"how-to-do-marketing-for-flight-schools-in-2025.md": {
+	id: "how-to-do-marketing-for-flight-schools-in-2025.md";
+  slug: "how-to-do-marketing-for-flight-schools-in-2025";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
 "how-to-enroll-more-student-pilots-at-my-flight-school.md": {
 	id: "how-to-enroll-more-student-pilots-at-my-flight-school.md";
   slug: "how-to-enroll-more-student-pilots-at-my-flight-school";
