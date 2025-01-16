@@ -5,8 +5,8 @@ title: "How Milivate Helps Flight Schools Elevate Their Workforce With Military 
 description: "Join us for our next webinar where Tim Jedrek of Right Rudder Marketing interviews Andrew and Justin, founders of Milivate, an organization dedicated to connecting businesses with highly skilled transitioning service members."
 heroImage: "/blog/Milivate Webinar.webp"
 readingTime: 4
-category: "Business"
-tags: ["Partners", "Announcements"]
+category: "Aviation Business"
+tags: ["Partners", "Announcements", "Workforce Development", "Military Talent", "SkillBridge Program", "Flight School Growth"]
 ---
 
 ### How Milivate Helps Flight Schools Elevate Their Workforce with Military Talent

@@ -5,8 +5,8 @@ title: "Flight Training Secrets - Industry Insights with Robert Meder, NAFI's Ch
 description: "Don't miss out! Join us for an exclusive episode of the 'Clear Prop!' RRM webinar/podcast series, where Tim Jedrek sits down with aviation expert Bob Meder, Chairman Emeritus of NAFI - one of the core team members responsible for NAFI's success and reach."
 heroImage: "/blog/March 2024 Clear Prop Webinar.webp"
 readingTime: 4
-category: "Marketing"
-tags: ["Website"]
+category: "Flight Training"
+tags: ["Partners", "Safety Culture", "Aviation Education", "Professional Development"]
 ---
 
 ### Flight Training Secrets: Industry Insights with Robert Meder and Tim Jedrek

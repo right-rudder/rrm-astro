@@ -1,6 +1,22 @@
+---
+pubDate: "September 4, 2024"
+author: Tim Jedrek
+title: "Mastering Flight Training - Carl Valeri on Mentorship, Learning, and Success"
+description: "In this episode, Right Rudder Marketing’s Tim Jedrek sits down with Carl Valeri, host of the Aviation Careers Podcast and airline captain, to discuss Carl’s incredible journey in aviation, the importance of lifelong learning, and how pilots can accelerate their careers through deliberate practice."
+heroImage: "/blog/Carl-Valeri-podcast.png"
+readingTime: 4
+category: "Flight Training"
+tags: ["Mentorship", "Career Coaching", "Aviation Careers", "Pilot Development"]
+---
+
 ### Carl Valeri's Journey in Aviation: The Benefits of Continuous Learning and Practice for Pilots
 
 In this episode, Right Rudder Marketing’s Tim Jedrek sits down with Carl Valeri, host of the Aviation Careers Podcast and airline captain, to discuss Carl’s incredible journey in aviation, the importance of lifelong learning, and how pilots can accelerate their careers through deliberate practice.
+
+## Youtube Replay
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/bR-o4vGBklU?si=608SniJQe2q_HDxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 #### Key Highlights from the Episode
 

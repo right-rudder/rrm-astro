@@ -5,8 +5,8 @@ title: "Arming Independent CFIs and Specialty Flight Schools to Thrive with ORKA
 description: "In this episode of the Right Rudder Marketing podcast, Tim Jedrek hosts Adriana Barragan, co-founder and CEO of ORKA, for an in-depth conversation on how independent CFIs (Certified Flight Instructors) and specialty flight schools can thrive using the ORKA platform."
 heroImage: "/podcasts/orka-rrm-podcast.webp"
 readingTime: 4
-category: "Aviation"
-tags: ["Inspiration", "Announcements"]
+category: "Aviation Business"
+tags: ["Pilot Tools", "CFI Resources", "Aviation Technology", "Specialty Training"]
 ---
 
 In this episode of the Right Rudder Marketing podcast, **Tim Jedrek** hosts **Adriana Barragan**, co-founder and CEO of **ORKA**, for an in-depth conversation on how independent CFIs (Certified Flight Instructors) and specialty flight schools can thrive using the ORKA platform. ORKA is an all-in-one solution that helps instructors and small flight schools manage essential business tasks like scheduling, payments, marketing, and course creation through a streamlined learning management system (LMS).

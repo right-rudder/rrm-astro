@@ -5,8 +5,8 @@ title: "How PlaneEnglish Helped 500K+ Pilots Improve Radio Communication"
 description: "ARSim by PlaneEnglish is a self-study radio communications training software and built-in curriculum used by institutions of all sizes, to enhance students' proficiency in aviation radio communication while reducing training costs and time."
 heroImage: "/blog/PlaneEnglish Webinar.webp"
 readingTime: 4
-category: "Aviation"
-tags: ["Partners", "Announcements"]
+category: "Flight Training"
+tags: ["Partners", "Radio Communication", "Pilot Tools"]
 ---
 
 # How PlaneEnglish Helped 500K+ Pilots Improve Radio Communication
