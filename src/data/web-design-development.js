@@ -31,7 +31,7 @@ const webDesign = {
 
     //main content
     builtToConvert: {
-      imagePath: "/src/assets/taylor-van-riper-yQorCngxzwI-unsplash.jpg",
+      imagePath: "/src/assets/Right-Rudder-Marketing-web-design.png",
       imageAlt: "Sky with clouds",
       heading: "Your website is a sales tool. Are you using it correctly?",
       upperHeading: "Websites Built to Convert",

@@ -3,9 +3,9 @@ const partnersAffiliates = {
     //SEO Header Stuff
     pageTitle: "Partners & Affiliates | Right Rudder Marketing",
     pageDescription:
-      "Right Rudder Marketing offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Right Rudder Marketing is proud to sponsor and partner with organizations that have a direct impact on the pilot training community. If your business, association, or group has interest in partnering with us, please reach out and connect with a Right Rudder Marketing Team member.",
     pageKeywords:
-      "Right Rudder Marketing, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "partners, affiliates, sponsor, sponsorships, aviation community, aviation associations, aviation groups, pilot training community, flight schools, pilot training, aviation industry, flight training industry, aviation marketing, flight school marketing, digital marketing, flight training marketing, aviation marketing agency, flight school marketing agency, digital marketing agency, flight training marketing agency, aviation marketing experts, flight school marketing experts, digital marketing experts, flight training marketing experts",
 
     //top header
     header: {

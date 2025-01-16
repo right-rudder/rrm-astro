@@ -3,9 +3,9 @@ const whoWeAre = {
     //SEO Header Stuff
     pageTitle: "Who We Are | Right Rudder Marketing",
     pageDescription:
-      "Discover Right Rudder Marketing at Riverside Municipal Airport and Learn to Fly at Redlands Municipal Airport, where aspiring pilots receive top-quality flight training. We offer flexible and career track training programs from Private Pilot to ATP with a 95% checkride pass rate. Join us to achieve your aviation goals with our experienced instructors and FAA-approved Gleim syllabus.",
+      "Right Rudder Marketing is a pilot-owned digital marketing agency focused on helping flight schools and aviation businesses accomplish their goals: Grow, scale, and make a significant impact to the pilot training industry. We want to help 100 flight schools double their student body and dominate their service area by 2026.",
     pageKeywords:
-      "Right Rudder Marketing, Learn to Fly, flight training, Riverside Municipal Airport, Redlands Municipal Airport, Private Pilot, ATP, CFI, CFII, MEI, FAA-approved Gleim syllabus, 95% checkride pass rate, aviation training, pilot programs, Southern California flight school, flexible flight training, plane rentals, demo flights, aviation education, career track pilot training",
+      "flight school marketing, aviation marketing, pilot marketing, flight school advertising, aviation advertising, pilot advertising, flight school growth, aviation growth, get more pilot students, get more aviation students, flight school leads, aviation leads, pilot leads, flight school marketing agency, aviation marketing agency, pilot marketing agency, flight school advertising agency, aviation advertising agency, pilot advertising agency, flight school growth agency, aviation growth agency, get more pilot students agency, get more aviation students agency, flight school leads agency, aviation leads agency, pilot leads agency, flight school marketing company, aviation marketing company, pilot marketing company, flight school advertising company, aviation advertising company, pilot advertising company, flight school growth company, aviation growth company, get more pilot students company, get more aviation students company, flight school leads company, aviation leads company, pilot leads company, enroll more students, double your flight school, double your aviation business, flight school marketing experts, aviation marketing experts, pilot marketing experts, flight school advertising experts, aviation advertising experts, pilot advertising experts, flight school growth experts, aviation growth experts, get more pilot students experts, get more aviation students experts, flight school leads experts, aviation leads experts, pilot leads experts",
 
     //top header
     header: {
@@ -48,17 +48,19 @@ const whoWeAre = {
       facts: [
         {
           title: "$10,000,000+",
-          description: "Over $10M worth of revenue generated for our flight schools",
+          description:
+            "Over $10M worth of revenue generated for our flight schools",
         },
         {
           title: "10K+ Leads",
-          description: "More than 10,000 interested prospective student pilots found over the course of a year through the combined efforts of the Flight School Marketing System",
+          description:
+            "More than 10,000 interested prospective student pilots found over the course of a year through the combined efforts of the Flight School Marketing System",
         },
         {
           title: "1000+",
-          description: "With an average conversion rate of over 7%, we've added thousands of students to our flight schools' funnels with Google Ads and PPC campaigns",
+          description:
+            "With an average conversion rate of over 7%, we've added thousands of students to our flight schools' funnels with Google Ads and PPC campaigns",
         },
-        
       ],
     },
 
@@ -188,7 +190,7 @@ const whoWeAre = {
           social: [
             {
               platform: "facebook",
-              url: "https://www.facebook.com/Tim.is.amazing/",
+              url: "https://www.facebook.com/flightschoolmarketing",
             },
             {
               platform: "instagram",
@@ -216,8 +218,8 @@ const whoWeAre = {
           name: "Tonie Santos",
           imagePath: "/src/assets/tonie_profile.webp",
           imageAlt:
-            "Portrait of Tonie Santos, Director of Operations at Right Rudder Marketing",
-          rank: "Director of Operations",
+            "Portrait of Tonie Santos, Technical Consultant at Right Rudder Marketing",
+          rank: "Technical Consultant",
           social: [
             {
               platform: "facebook",
@@ -234,32 +236,11 @@ const whoWeAre = {
           ],
         },
         {
-          name: "Charles Ferguson",
-          imagePath: "/src/assets/charles-ferguson.webp",
-          imageAlt:
-            "Portrait of Charles Ferguson, Key Account Manager at Right Rudder Marketing",
-          rank: "Key Account Manager",
-          social: [
-            {
-              platform: "instagram",
-              url: "https://instagram.com/chaz.ferg",
-            },
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/chaz-ferguson/",
-            },
-            {
-              platform: "website",
-              url: "https://chaz-ferg.com/",
-            },
-          ],
-        },
-        {
           name: "Diego Yon",
           imagePath: "/src/assets/diego-yon.webp",
           imageAlt:
             "Portrait of Diego Yon, Web Developer at Right Rudder Marketing",
-          rank: "Technical Lead",
+          rank: "Senior Web Developer",
           social: [
             {
               platform: "linkedin",
@@ -277,10 +258,10 @@ const whoWeAre = {
         },
         {
           name: "Raul Ospina",
-          imagePath: "/src/assets/raul-right-rudder.webp",
+          imagePath: "/src/assets/raminka-flying.png",
           imageAlt:
-            "Portrait of Raul Ospina, Web Developer at Right Rudder Marketing",
-          rank: "Marketing Lead",
+            "Portrait of Raul Ospina, Marketing Lead at Right Rudder Marketing",
+          rank: "Creative Marketing Manager",
           social: [
             {
               platform: "instagram",
@@ -301,6 +282,40 @@ const whoWeAre = {
             {
               platform: "website",
               url: "https://raminka13.github.io/littlelink/",
+            },
+          ],
+        },
+        {
+          name: "Lucas Rodrigues",
+          imagePath: "/src/assets/profile-picture-lucas.jpg",
+          imageAlt:
+            "Portrait of Lucas Rodrigues, Web Developer at Right Rudder Marketing",
+          rank: "Web Developer",
+          social: [
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/lucascostarodrigues/",
+            },
+            {
+              platform: "github",
+              url: "https://github.com/lucas-crodrigues",
+            },
+            {
+              platform: "website",
+              url: "https://lucas-awesome-work.netlify.app/",
+            },
+          ],
+        },
+        {
+          name: "Sebastian Bruno",
+          imagePath: "/src/assets/RRM-team-SebasBruno.jpg",
+          imageAlt:
+            "Portrait of Sebastian Bruno, Key Account Manager at Right Rudder Marketing",
+          rank: "Key Account Manager",
+          social: [
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/sebastian-bruno-8335a81a5/",
             },
           ],
         },

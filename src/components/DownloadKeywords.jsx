@@ -38,6 +38,7 @@ const DownloadKeywords = () => {
         if (response.ok) {
           setFormSubmitted(true);
           document.body.style.overflow = "auto";
+          window.location.href = "/keywords-confirmation";
         } else {
           console.error("Form submission failed:", response.statusText);
         }

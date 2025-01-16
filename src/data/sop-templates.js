@@ -3,7 +3,7 @@ const sopTemplates = {
     pageTitle: "Flight School SOP Template | Right Rudder Marketing",
     pageDescription: `Growing a flight school means creating systems and procedures for your team to follow. Creating SOPs to add to your "playbook" is the best way to properly delegate and lead your team. Download our free template to get started in your continuous improvement journey.`,
     pageKeywords:
-      "flight school marketing checklist, flight school marketing, flight school marketing strategy, flight school marketing plan, flight school marketing ideas, flight school marketing tips, flight school marketing checklist guide, flight school marketing checklist download, flight school marketing checklist pdf, flight school marketing checklist free, flight school marketing checklist template, flight school marketing checklist 2024",
+      "flight school sop template, flight school standard operating procedures, flight school sop, flight school standard operating procedures template, flight school sop template free, flight school sop template download, flight school sop template pdf",
 
     header: {
       imagePath: "/src/assets/IMG_9616.jpg",

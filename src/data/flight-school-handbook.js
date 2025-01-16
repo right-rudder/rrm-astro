@@ -6,7 +6,7 @@ const flightSchoolHandbook = {
       "Flight School Handbook of Marketing Knowledge | Right Rudder Marketing",
     pageDescription: `The Only Book You'll Ever Need for Learning How to Market Your Flight School Online. If your flight school isn’t getting the calls and leads you need from your website and marketing efforts, then this book is a must read.  The Flight School Handbook of Marketing Knowledge is the ultimate guide written for flight school business owners that are looking to double, triple, even 10X their sales in the coming year. This book is written based on battle tested strategies and the real results of Right Rudder Marketing and flight schools all across the United States.  Discover how to implement the Flight School Marketing System in your business.`,
     pageKeywords:
-      "Flight School Handbook of Marketing Knowledge, flight school marketing, flight school book, flight school seo, flicht school ppc, flight school social media, flight school website design, flight school marketing system",
+      "Flight School Handbook of Marketing Knowledge, flight school marketing, flight school book, flight school seo, flight school ppc, flight school social media, flight school website design, flight school marketing system",
 
     header: {
       imagePath: "/src/assets/book-tim.jpg",
@@ -80,7 +80,7 @@ const flightSchoolHandbook = {
           icon: "M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z",
           title: "Google Search",
           descriptions: [
-            "Position your website on Google, Yahoo and Bing to capture the attention of 80% (or more) of consumers searching for plumbing or HVAC related services! (Just this little “tweak” in where your website appears in the major search engines will spike the number of calls you get off the charts!)",
+            "Position your website on Google, Yahoo and Bing to capture the attention of 80% (or more) of consumers searching for flight training related services! (Just this little “tweak” in where your website appears in the major search engines will spike the number of calls you get off the charts!)",
           ],
         },
         {
@@ -187,7 +187,7 @@ const flightSchoolHandbook = {
       descriptions: [
         `I'm on a mission to find <strong class="font-semibold">100 flight schools</strong> in the world to partner with and double their student body. Everyday, I work with the team at <strong class="font-semibold">Right Rudder Marketing</strong> to implement and execute the latest technical strategies and tactics to move flight school businesses up higher on Google search. Our collective goal is to get those flight schools known to their prospective students.`,
         `It is truly awe inspiring to see our flight schools transform their operations into <strong class="font-semibold">large scalable businesses</strong>. I love being a part of that because I know that by growing our flight schools' businesses, it <strong class="font-semibold">drives more people into aviation</strong> and brings more pilots into the industry. And that's what really matters. Having a lasting impact on our students and the <strong class="font-semibold">future pilots of the world</strong>.`,
-        `What really mattered was not just the website. But instead how the website fit into a marketing plan as a whole. In an effort to grow my clients' businesses, I dived head first into marketing and sales. I attended conferences, read books, took courses to further my skills, and found mentors and coaches to guide me on the path of success. Having mentors and coaches to teach me the secrets of business was the 100LL fuel that I needed to grow my business to where it is today.  That being said, that is one of the reasons I wrote this book.  I hope that the Flight School Handbook of Marketing Knowledge can be your guide and serve as your coach and mentor to help you grow you flight school and aviation business as well.`,
+        `What really mattered was not just the website. But instead how the website fit into a <strong class="font-semibold">marketing plan as a whole</strong>. In an effort to grow my clients' businesses, I dived head first into marketing and sales. I attended conferences, read books, took courses to further my skills, and found mentors and coaches to guide me on the path of success. Having mentors and coaches to <strong class="font-semibold">teach me the secrets of business</strong> was the 100LL fuel that I needed to grow my business to where it is today.  That being said, that is one of the reasons I wrote this book.  I hope that the <strong class="font-semibold">Flight School Handbook of Marketing Knowledge</strong> can be your guide and serve as your coach and mentor to help you grow you flight school and aviation business as well.`,
       ],
     },
 

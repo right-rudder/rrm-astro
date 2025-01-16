@@ -74,13 +74,13 @@ const { data } = flightSchoolHandbook;
     </div>
     <div class="mt-12 flex flex-wrap justify-center">
       <div class="w-full lg:w-1/2">
-        <h3 class="text-4xl font-bold border-b-4 border-primary-500">
+        <h3 class="text-5xl font-bold border-b-4 border-primary-500">
           {data.meetTim.descHeading}
         </h3>
         {
           data.meetTim.descriptions.map((desc) => (
             <p
-              class="mt-5 text-xl font-light leading-8 text-gray-700"
+              class="mt-6 pr-2 text-xl font-light leading-7 text-gray-700"
               set:html={desc}
             />
           ))
@@ -119,7 +119,7 @@ const { data } = flightSchoolHandbook;
               class="mt-4 mx-auto space-y-8 text-gray-100 max-w-6xl"
             >
               {data.bookContent.list.map((item) => (
-                <li class="flex gap-x-3">
+                <li class="flex gap-x-3 pl-3 pr-6 lg:p-0 text-justify lg:text-left">
                   <svg
                     class="mt-1 size-10 flex-none text-accent-300"
                     viewBox="0 0 24 24"
@@ -135,11 +135,11 @@ const { data } = flightSchoolHandbook;
                     />
                   </svg>
                   <span class="leading-snug text-lg text-muted-200">
-                    <strong class="font-bold text-primary-dark-200 tracking-tight uppercase">
+                    <strong class="font-bold text-xl text-primary-dark-100 tracking-tight uppercase">
                       {item.title}
                     </strong>{" "}
                     {item.descriptions.map((dec) => (
-                      <p class="mb-2" set:html={dec} />
+                      <p class="mb-2 text-lg" set:html={dec} />
                     ))}
                   </span>
                 </li>
