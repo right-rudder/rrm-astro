@@ -573,6 +573,13 @@ declare module 'astro:content' {
   collection: "podcasts";
   data: any
 } & { render(): Render[".md"] };
+"empowering-aviation-education-with-rod-machado.md": {
+	id: "empowering-aviation-education-with-rod-machado.md";
+  slug: "empowering-aviation-education-with-rod-machado";
+  body: string;
+  collection: "podcasts";
+  data: any
+} & { render(): Render[".md"] };
 "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md": {
 	id: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md";
   slug: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing";
