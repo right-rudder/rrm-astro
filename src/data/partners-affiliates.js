@@ -173,6 +173,12 @@ const partnersAffiliates = {
           imageAlt: "Four Forces logo",
           link: "https://flyfourforces.com/",
         },
+        {
+          name: "Aviatize",
+          imagePath: "/src/assets/aviatize-logo.webp",
+          imageAlt: "Aviatize logo",
+          link: "https://www.aviatize.com",
+        },
       ],
     },
 
