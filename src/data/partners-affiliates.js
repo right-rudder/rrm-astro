@@ -44,6 +44,18 @@ const partnersAffiliates = {
           imageAlt: "NAFI logo",
           link: "https://www.nafinet.org/sponsors",
         },
+        {
+          name: "King Schools",
+          imagePath: "/src/assets/King_Schools.png",
+          imageAlt: "King Schools",
+          link: "https://kingschools.com",
+        },
+        {
+          name: "AeroSummit",
+          imagePath: "/src/assets/Aero-Summit-Logo.webp",
+          imageAlt: "AeroSummit",
+          link: "https://stratusaerosummit.com",
+        },
       ],
     },
 
