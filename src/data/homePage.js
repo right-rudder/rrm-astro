@@ -130,9 +130,9 @@ const homePage = {
     },
 
     ourClients: {
-      heading: "Our Clients Love Us",
+      heading: "Training More Pilots Everyday",
       description:
-        "And you're going to love us too.  Our flight schools are the best in the business. They are the top flight schools in the country and they trust us to help them grow and scale their businesses. We are proud to be a part of their success.",
+        "Our flight schools are the best in the business. They are the top flight schools in the country and they trust us to help them grow and scale their businesses. We are proud to be a part of their success.",
       clients: [
         {
           name: "NextGen Flight Academy",
