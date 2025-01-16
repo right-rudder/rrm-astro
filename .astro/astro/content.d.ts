@@ -608,6 +608,13 @@ declare module 'astro:content' {
   collection: "podcasts";
   data: any
 } & { render(): Render[".md"] };
+"transforming-flight-school-operations-with-brett-hart-from-four-forces.md": {
+	id: "transforming-flight-school-operations-with-brett-hart-from-four-forces.md";
+  slug: "transforming-flight-school-operations-with-brett-hart-from-four-forces";
+  body: string;
+  collection: "podcasts";
+  data: any
+} & { render(): Render[".md"] };
 };
 "webinars": {
 "copywriting-revisited.md": {
