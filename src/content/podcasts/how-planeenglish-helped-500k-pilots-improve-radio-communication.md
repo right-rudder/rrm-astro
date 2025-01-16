@@ -14,6 +14,11 @@ tags: ["Partners", "Announcements"]
 
 In this episode of the **Right Rudder Marketing Podcast**, we sit down with the team from **PlaneEnglish** to discuss their innovative **Aviation Radio Simulator (AR Sim)** and how it has transformed the way pilots practice **radio communication**. We dive deep into the challenges pilots face during training and how **AR Sim** provides a solution that’s both efficient and effective.
 
+## Youtube Replay below
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/k_R9kKMJpnY?si=Y2k93N7att8oGnE6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## What is PlaneEnglish?
 
 Founded in 2018, [**PlaneEnglish**](http://planeenglishsim.com/) developed **AR Sim**, a unique **aviation radio simulator** that helps pilots of all experience levels improve their **radio communication skills**. Through realistic **ATC radio simulation**, AR Sim mimics real-world scenarios, giving users immediate feedback on their communication performance. From learning the phonetic alphabet to mastering complex exchanges with air traffic control (ATC), AR Sim covers all aspects of radio communication, making it an essential tool for pilot training.
@@ -65,6 +70,3 @@ For a deeper dive into how **PlaneEnglish** is revolutionizing **pilot communica
 
 **Date:** May 16, 2024 2PM Central / 3PM Eastern
 
-## Youtube Replay below
-
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/k_R9kKMJpnY?si=Y2k93N7att8oGnE6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
