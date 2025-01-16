@@ -44,6 +44,18 @@ const partnersAffiliates = {
           imageAlt: "NAFI logo",
           link: "https://www.nafinet.org/sponsors",
         },
+        {
+          name: "King Schools",
+          imagePath: "/src/assets/King_Schools.png",
+          imageAlt: "King Schools",
+          link: "https://kingschools.com",
+        },
+        {
+          name: "AeroSummit",
+          imagePath: "/src/assets/Aero-Summit-Logo.webp",
+          imageAlt: "AeroSummit",
+          link: "https://stratusaerosummit.com",
+        },
       ],
     },
 
@@ -172,6 +184,18 @@ const partnersAffiliates = {
           imagePath: "/src/assets/FourForces-Logo.webp",
           imageAlt: "Four Forces logo",
           link: "https://flyfourforces.com/",
+        },
+        {
+          name: "Aviatize",
+          imagePath: "/src/assets/aviatize-logo.webp",
+          imageAlt: "Aviatize logo",
+          link: "https://www.aviatize.com",
+        },
+        {
+          name: "Purdue Global",
+          imagePath: "/src/assets/purdue-global-logo.jpg",
+          imageAlt: "Purdue Global logo",
+          link: "https://www.purdueglobal.edu/degree-programs/aviation/",
         },
       ],
     },

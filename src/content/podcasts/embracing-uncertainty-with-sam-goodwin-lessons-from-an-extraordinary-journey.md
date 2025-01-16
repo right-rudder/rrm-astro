@@ -1,12 +1,12 @@
 ---
-pubDate: "August 22, 2024"
+pubDate: "August 13, 2024"
 author: Charles Ferguson
 title: "Embracing Uncertainty with Sam Goodwin: Lessons from an Extraordinary Journey"
 description: "At Right Rudder Marketing (RRM), we recently had the opportunity to feature Sam Goodwin on our podcast. Sam is a world traveler, speaker, and pilot-in-training, and his story provides key insights into handling uncertainty, something many flight school owners and business leaders can relate to."
 heroImage: "/podcasts/sam-goodwin-rrm-podcast.webp"
 readingTime: 4
-category: "Aviation"
-tags: ["Inspiration", "Announcements"]
+category: "Flight Training"
+tags: ["Student Pilots", "Flight Training", "Aviation Journey", "Pilot Stories", "Flight School Experience"]
 ---
 
 At [Right Rudder Marketing (RRM)](https://rightruddermarketing.com/schedule-call), we recently had the opportunity to feature Sam Goodwin on our podcast. Sam is a world traveler, speaker, and pilot-in-training, and his story provides key insights into handling uncertainty, something many flight school owners and business leaders can relate to.
