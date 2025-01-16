@@ -1,5 +1,5 @@
 ---
-pubDate: "September 11, 2024"
+pubDate: "August 22, 2024"
 author: Charles Ferguson
 title: "Arming Independent CFIs and Specialty Flight Schools to Thrive with ORKA"
 description: "In this episode of the Right Rudder Marketing podcast, Tim Jedrek hosts Adriana Barragan, co-founder and CEO of ORKA, for an in-depth conversation on how independent CFIs (Certified Flight Instructors) and specialty flight schools can thrive using the ORKA platform."
