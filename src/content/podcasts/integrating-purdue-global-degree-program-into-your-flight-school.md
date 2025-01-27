@@ -7,6 +7,7 @@ heroImage: "/blog/Purdue-Global-podcast.png"
 readingTime: 7
 category: "Flight Training"
 tags: ["Flight Schools", "Aviation Degree Programs", "Accelerated Pilot Training", "Pilot Career Development", "Flight Training Partnerships", "Professional Pilot Pathway"]
+status: "draft"
 ---
 
 ### Integrating Purdue Global’s Degree Program into Your Flight School
