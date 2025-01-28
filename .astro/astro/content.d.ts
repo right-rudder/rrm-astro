@@ -4,6 +4,7 @@ declare module 'astro:content' {
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
 			remarkPluginFrontmatter: Record<string, any>;
+			components: import('astro').MDXInstance<{}>['components'];
 		}>;
 	}
 }
@@ -638,6 +639,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "webinars": {
+"breaking-down-profit-first-principles-and-pay-yourself-first.md": {
+	id: "breaking-down-profit-first-principles-and-pay-yourself-first.md";
+  slug: "breaking-down-profit-first-principles-and-pay-yourself-first";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
 "copywriting-revisited.md": {
 	id: "copywriting-revisited.md";
   slug: "copywriting-revisited";
@@ -680,6 +688,13 @@ declare module 'astro:content' {
   collection: "webinars";
   data: any
 } & { render(): Render[".md"] };
+"how-to-implement-marketing-automation-to-super-charge-your-lead-conversion.md": {
+	id: "how-to-implement-marketing-automation-to-super-charge-your-lead-conversion.md";
+  slug: "how-to-implement-marketing-automation-to-super-charge-your-lead-conversion";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
 "how-to-increase-student-retention-upcoming-webinar-december-7-2022.md": {
 	id: "how-to-increase-student-retention-upcoming-webinar-december-7-2022.md";
   slug: "how-to-increase-student-retention-upcoming-webinar-december-7-2022";
@@ -687,9 +702,37 @@ declare module 'astro:content' {
   collection: "webinars";
   data: any
 } & { render(): Render[".md"] };
+"how-to-leverage-video-and-multi-media-for-flight-school-businesses.md": {
+	id: "how-to-leverage-video-and-multi-media-for-flight-school-businesses.md";
+  slug: "how-to-leverage-video-and-multi-media-for-flight-school-businesses";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
+"how-to-maximize-your-student-enrollment-with-paid-search-and-google-ads.md": {
+	id: "how-to-maximize-your-student-enrollment-with-paid-search-and-google-ads.md";
+  slug: "how-to-maximize-your-student-enrollment-with-paid-search-and-google-ads";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
+"how-to-optimize-your-flight-school-website-for-maximum-conversion.md": {
+	id: "how-to-optimize-your-flight-school-website-for-maximum-conversion.md";
+  slug: "how-to-optimize-your-flight-school-website-for-maximum-conversion";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
 "how-to-write-better-copy-and-increase-student-enrollment.md": {
 	id: "how-to-write-better-copy-and-increase-student-enrollment.md";
   slug: "how-to-write-better-copy-and-increase-student-enrollment";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
+"implementing-a-continuous-improvement-fly-program-at-your-flight-school.md": {
+	id: "implementing-a-continuous-improvement-fly-program-at-your-flight-school.md";
+  slug: "implementing-a-continuous-improvement-fly-program-at-your-flight-school";
   body: string;
   collection: "webinars";
   data: any
@@ -708,6 +751,34 @@ declare module 'astro:content' {
   collection: "webinars";
   data: any
 } & { render(): Render[".md"] };
+"the-2025-guide-to-google-maps-how-to-get-your-flight-school-ranked-on-the-map.md": {
+	id: "the-2025-guide-to-google-maps-how-to-get-your-flight-school-ranked-on-the-map.md";
+  slug: "the-2025-guide-to-google-maps-how-to-get-your-flight-school-ranked-on-the-map";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
+"the-2025-social-media-playbook.md": {
+	id: "the-2025-social-media-playbook.md";
+  slug: "the-2025-social-media-playbook";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
+"the-new-2025-seo-formula-for-flight-schools.md": {
+	id: "the-new-2025-seo-formula-for-flight-schools.md";
+  slug: "the-new-2025-seo-formula-for-flight-schools";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
+"the-power-of-retargeting-for-flight-schools.md": {
+	id: "the-power-of-retargeting-for-flight-schools.md";
+  slug: "the-power-of-retargeting-for-flight-schools";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
 "tim-jedrek-at-king-schools-talks-sales-and-marketing.md": {
 	id: "tim-jedrek-at-king-schools-talks-sales-and-marketing.md";
   slug: "tim-jedrek-at-king-schools-talks-sales-and-marketing";
@@ -718,6 +789,13 @@ declare module 'astro:content' {
 "your-2024-digital-marketing-plan-for-flight-school-businesses.md": {
 	id: "your-2024-digital-marketing-plan-for-flight-school-businesses.md";
   slug: "your-2024-digital-marketing-plan-for-flight-school-businesses";
+  body: string;
+  collection: "webinars";
+  data: any
+} & { render(): Render[".md"] };
+"your-2025-digital-marketing-plan-for-flight-school-businesses.md": {
+	id: "your-2025-digital-marketing-plan-for-flight-school-businesses.md";
+  slug: "your-2025-digital-marketing-plan-for-flight-school-businesses";
   body: string;
   collection: "webinars";
   data: any
