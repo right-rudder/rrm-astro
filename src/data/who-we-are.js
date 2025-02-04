@@ -240,7 +240,7 @@ const whoWeAre = {
           imagePath: "/src/assets/diego-yon.webp",
           imageAlt:
             "Portrait of Diego Yon, Web Developer at Right Rudder Marketing",
-          rank: "Senior Web Developer",
+          rank: "R/D Lead",
           social: [
             {
               platform: "linkedin",
@@ -261,7 +261,7 @@ const whoWeAre = {
           imagePath: "/src/assets/raminka-flying.png",
           imageAlt:
             "Portrait of Raul Ospina, Marketing Lead at Right Rudder Marketing",
-          rank: "Creative Marketing Manager",
+          rank: "Operations Manager",
           social: [
             {
               platform: "instagram",
@@ -318,6 +318,14 @@ const whoWeAre = {
               url: "https://www.linkedin.com/in/sebastian-bruno-8335a81a5/",
             },
           ],
+        },
+        {
+          name: "Shaun Stakem",
+          imagePath: "/src/assets/Shaun-Stakem-RRM-Headshot.jpeg",
+          imageAlt:
+            "Portrait of Shaun Stakem, Operational Excellence Manager at Right Rudder Marketing",
+          rank: "Operational Excellence Manager",
+          social: [],
         },
       ],
     },
