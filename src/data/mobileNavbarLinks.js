@@ -78,6 +78,10 @@ export const mobileNavbarLinks = [
     link: "/resources/gmb",
   },
   {
+    name: "Video Production",
+    link: "/resources/video-production",
+  },
+  {
     name: "Webinars",
     link: "/webinars",
   },
