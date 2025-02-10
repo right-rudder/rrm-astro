@@ -83,6 +83,10 @@ export const navbarLinks = [
         link: "/resources/gmb",
       },
       {
+        name: "Video Production",
+        link: "/resources/video-production",
+      },
+      {
         name: "Webinars",
         link: "/webinars",
       },
