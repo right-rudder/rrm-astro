@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import homePage from "../../data/homePage";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import BlogFeed from "../../components/BlogFeed.astro";
+import BlogFeedTop from "../../components/BlogFeedTop.astro";
+import GenericCTA from "../../components/GenericCTA.astro";
+import { YouTube } from "astro-embed";
+
+
+const { data } = homePage;
+const layout = {
+  pageTitle: "Video Production and Editing | Right Rudder Marketing",
+  pageDescription:
+    "Capture the essence of your flight school or aviation business with high-quality video content. Our expert team specializes in producing engaging visuals that showcase your training programs, aircraft, and unique offerings. Whether you need compelling social media clips or in-depth promotional videos, we create content that drives engagement and boosts conversions.",
+  pageKeywords:  
+    "aviation video production, flight school video marketing, aviation content creation, professional aviation videography, flight school promotional videos, social media videos for flight schools, website videos for aviation businesses, short-form aviation content, long-form aviation videos, aerial video production, drone videography for aviation, marketing videos for flight schools, aviation branding videos, high-quality aviation footage, flight training video production, engaging aviation content, pilot training promotional videos, aircraft showcase videos, digital marketing for flight schools, increase flight school visibility, aviation business growth through video, YouTube videos for flight schools, Instagram Reels for aviation, TikTok aviation videos, video storytelling for aviation, flight school marketing strategies, effective aviation advertising, SEO-friendly video content, professional aviation content marketing"
+}
+const header =  {
+      stars: false,
+      imagePath: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.webp",
+      imageAlt:
+        "fly over Right Rudder Marketing - Digital Marketing Agency for Flight Schools",
+      headerH1: `High-Quality</br><span class="text-accent-300">Aviation Video Production</span>`,
+      paragraph:
+        "Capture the essence of your flight school or aviation business with high-quality video content. Our expert team specializes in producing engaging visuals that showcase your training programs, aircraft, and unique offerings. Whether you need compelling social media clips or in-depth promotional videos, we create content that drives engagement and boosts conversions.",
+      buttons: [
+      ],
+    };
+
+---
+
+<BaseLayout
+  siteTitle={layout.pageTitle}
+  siteDescription={layout.pageDescription}
+  keywords={layout.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={header} />
+    <section class="py-20">
+      <div class="flex flex-col items-center w-full text-center">
+        <h3 class="text-3xl lg:text-5xl font-bold text-primary-dark-900 px-5">Take a look at some of our work: </h3>
+        <div class="pt-10 px-5">
+          <h4 class="my-3 lg:my-6 text-xl lg:text-3xl font-light">Short Form Content for Social Media</h4>
+          <p class="lg:text-base italic pb-10 max-w-4xl">
+            Grab attention fast with dynamic, high-impact videos designed for platforms like 
+            Instagram, TikTok, and YouTube Shorts. These quick clips highlight key moments, spark 
+            interest, and increase engagement—perfect for showcasing student experiences, aircraft 
+            tours, and day-to-day flight operations.
+          </p>
+        </div>
+        <!--Videos-->
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-10">
+          <div class="lg:w-1/2">
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/cCYPVjoWXGI?si=o5QyPx10sHvys9aL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="lg:w-1/2">
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/u0munm2PtUY?si=RcG9i4OAdnYVp2sM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="pt-10 px-5">
+          <h4 class="my-3 lg:my-6 text-xl lg:text-3xl font-light">Long Form Content for Websites</h4>
+          <p class="text-base italic pb-10 max-w-4xl">Tell your story with in-depth, professionally crafted videos designed for your website and YouTube. From instructor interviews to training overviews, these videos provide valuable insights that help potential students connect with your brand and make informed decisions.</p>
+        </div>
+        <!--Videos-->
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-10 w-full">
+          <div class="lg:w-1/2 w-full flex justify-center">
+            <YouTube id="mAOuSIRejAY" class="w-full h-auto" />
+          </div>
+          <div class="lg:w-1/2 w-full flex justify-center">
+            <YouTube id="BNpWgJMFfhU" class="w-full h-auto" />
+          </div>
+        </div>        
+      </div>
+    </section>
+
+  <GenericCTA data={data.gmbCTA} />
+
+  <BlogFeed data={data.blogfeed} />
+  <BlogFeedTop data={data.blogfeedtop} />
+
+  <FlyWithUsCTA data={data.flyWithUsCTA} />
+</BaseLayout>
