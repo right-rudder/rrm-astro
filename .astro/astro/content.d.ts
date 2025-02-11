@@ -257,6 +257,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"february-2025-update-google-is-removing-your-reviews.md": {
+	id: "february-2025-update-google-is-removing-your-reviews.md";
+  slug: "february-2025-update-google-is-removing-your-reviews";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md": {
 	id: "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md";
   slug: "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape";
@@ -608,6 +615,13 @@ declare module 'astro:content' {
   body: string;
   collection: "podcasts";
   data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
+"learn-how-to-provide-financing-to-your-student-pilots-with-stratus-financial.md": {
+	id: "learn-how-to-provide-financing-to-your-student-pilots-with-stratus-financial.md";
+  slug: "learn-how-to-provide-financing-to-your-student-pilots-with-stratus-financial";
+  body: string;
+  collection: "podcasts";
+  data: any
 } & { render(): Render[".md"] };
 "mastering-flight-training-carl-valeri-on-mentorship-learning-and-success.md": {
 	id: "mastering-flight-training-carl-valeri-on-mentorship-learning-and-success.md";

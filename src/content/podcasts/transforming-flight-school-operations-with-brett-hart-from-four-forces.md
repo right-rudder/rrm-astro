@@ -13,7 +13,8 @@ tags: ["Flight School Software", "Aviation Technology", "Operations Efficiency",
 
 In this episode of the Right Rudder Marketing Podcast, Tim Jedrek interviews Brett Hart, co-founder and CEO of Four Forces. Brett shares how his platform is revolutionizing flight school operations with innovative software designed to streamline maintenance, scheduling, and payment processing while enhancing student and staff experiences.
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/D6pXqCcvu6U?si=7T9dRTorhLZN0iQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/D6pXqCcvu6U?si=aJa2f-PdzLDg7DNe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 #### Key Takeaways from the Episode
 
