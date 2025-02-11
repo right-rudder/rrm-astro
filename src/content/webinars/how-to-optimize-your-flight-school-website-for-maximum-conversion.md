@@ -1,5 +1,5 @@
 ---
-pubDate: "February 20, 2025"
+pubDate: "February 27, 2025"
 author: Tim Jedrek
 title: "How to Optimize Your Flight School Website for MAXIMUM conversion"
 description: "A strong online presence is crucial for the success of any flight school. Your website is often the first point of contact for potential students, making it a vital tool for attracting leads and driving enrollments. This webinar will outline key strategies to optimize your flight school website for maximum conversions, turning casual browsers into enthusiastic students."
