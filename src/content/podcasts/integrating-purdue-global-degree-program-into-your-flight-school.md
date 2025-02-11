@@ -13,6 +13,8 @@ tags: ["Flight Schools", "Aviation Education", "Pilot Degrees", "Flight Training
 
 Right Rudder Marketing is excited to announce an upcoming podcast episode featuring Andrew Rachmell from Purdue Global. In this special episode, we’ll explore how flight schools can partner with Purdue Global to offer a comprehensive aviation education experience, enabling students to earn a degree while completing flight training.
 
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/qxHscMKJAno?si=FyrbiTW05yjxwMWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 #### Why Flight Schools Should Tune In
 
 - **Expand Your Offerings**: Learn how partnering with Purdue Global can help your flight school provide students with access to an aviation degree program.
