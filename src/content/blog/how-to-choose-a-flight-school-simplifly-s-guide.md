@@ -3,7 +3,7 @@ pubDate: "February 7, 2024"
 author: Charles Ferguson
 title: "How to Choose a Flight School: SimpliFly's Guide"
 description: "Choosing a flight school can be a daunting task, especially for those just breaching into the wide world of aviation. With a wealth of schools to choose from and even more ways to customize your certification path, it’s no wonder the prospect of choosing once (and choosing correctly) is intimidating."
-heroImage: "/blog/How to Choose a Flight School SimpliFly's Guide.webp"
+heroImage: "/blog/how to-choose-a-flight-school-simpliflys-guide.webp"
 readingTime: 4
 category: "Flight School Articles"
 tags: ["Aviation"]
