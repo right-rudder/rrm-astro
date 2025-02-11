@@ -1,17 +1,17 @@
 ---
-pubDate: "February 11"
+pubDate: "February 11, 2025"
 author: Shaun Patrick
-title: "Google"
+title: "Google is Removing Your Reviews! What to do about it."
 description: "On February 11 2025, Google is experiencing outages and issues which are removing reviews from Google profiles. Online visibility and trust building through Google Local Reviews play a major role in attracting new students. "
-heroImage: "/blog/enroll-more-student-pilots.webp"
+heroImage: "/blog/google-reviews-disappearing-from-flight-school-GMB-GBP-accounts.webp"
 readingTime: 4
 category: "Marketing"
 tags: ["SEO", "Reputation Management"]
 ---
 
-## Why Google Local Reviews Matter for Flight Schools and How to Handle Review Drops
+## Quick Summary
 
-In today’s highly competitive aviation training market, flight school owners need more than just a great flight program to grow their school and enroll more pilots. Online visibility and trust-building through Google Local Reviews play a major role in attracting new students. But what happens when your hard-earned reviews suddenly disappear or the count shows incorrect numbers? Let’s explore this growing concern and discuss actionable steps for flight school owners.
+Online visibility and trust building through Google Local Reviews play a major role in attracting new students. But what happens when your hard earned reviews suddenly disappear or the count shows incorrect numbers? This crazy phenomenon is happening right to flight schools all over the country including a handful of Right Rudder Marketing partner flight schools.  Let’s explore this growing concern and discuss actionable steps for flight school owners.
 
 ---
 
@@ -64,6 +64,6 @@ If you notice an unusual drop in review counts, report the issue directly to Goo
 
 ## Final Thoughts
 
-Reviews are not just another vanity metric—they can influence your bottom line. Maintaining a steady stream of positive reviews can improve your search visibility and help your school consistently attract new students. By staying proactive and diversifying your online presence, you’ll remain resilient to any review-related challenges.
+Maintaining a steady stream of positive reviews can improve your search visibility and help your school consistently attract new students. By staying proactive and diversifying your online presence, you’ll remain resilient to any review-related challenges.
 
-Right Rudder Marketing can help your flight school create an optimized digital strategy that drives enrollment through local SEO, personalized CTAs, and lead magnets designed to convert web visitors into students. Ready to grow your flight school and fill those seats in your aircraft? Let’s take off together.
+Right Rudder Marketing can help your flight school create an optimized digital strategy that drives enrollment through local SEO, personalized CTAs, and lead magnets designed to convert web visitors into students. Ready to grow your flight school and fill those seats in your aircraft? Let’s take off together.  Give us a call today at **314-804-1200** or reach out to info@rightruddermarketing.com
