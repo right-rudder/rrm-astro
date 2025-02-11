@@ -15,6 +15,7 @@ const blogCollection = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
+    type: z.enum(["blog"]).default("blog").optional(),
     status: z.enum(["draft", "published"]).default("published").optional(),
   }),
 });
@@ -34,6 +35,7 @@ const webinarCollection = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
+    type: z.enum(["webinar"]).default("webinar").optional(),
     status: z.enum(["draft", "published"]).default("published").optional(),
   }),
 });
@@ -53,6 +55,7 @@ const podcastCollection = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
+    type: z.enum(["podcast"]).default("podcast").optional(),
     status: z.enum(["draft", "published"]).default("published").optional(),
   }),
 });

@@ -269,7 +269,7 @@ declare module 'astro:content' {
   slug: "february-2025-update-google-is-removing-your-reviews";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md": {
 	id: "federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape.md";
@@ -628,7 +628,7 @@ declare module 'astro:content' {
   slug: "learn-how-to-provide-financing-to-your-student-pilots-with-stratus-financial";
   body: string;
   collection: "podcasts";
-  data: any
+  data: InferEntrySchema<"podcasts">
 } & { render(): Render[".md"] };
 "mastering-flight-training-carl-valeri-on-mentorship-learning-and-success.md": {
 	id: "mastering-flight-training-carl-valeri-on-mentorship-learning-and-success.md";
@@ -831,5 +831,4 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
-}
+	export type ContentConfig = typeof import("../../src/content/config.js");
