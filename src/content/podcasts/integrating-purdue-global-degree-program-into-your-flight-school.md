@@ -2,14 +2,15 @@
 pubDate: "January 21, 2025"
 author: Tim Jedrek
 title: "Integrating Purdue Global’s Degree Program into Your Flight School"
-description: "Discover how flight schools can partner with Purdue Global to offer students an aviation degree while completing flight training, opening new opportunities for growth and student success."
+description: "Learn how flight schools can partner with Purdue Global to provide students with an aviation degree alongside flight training, creating pathways to accelerated professional pilot careers."
 heroImage: "/blog/Purdue-Global-podcast.png"
-readingTime: 5
+readingTime: 7
 category: "Flight Training"
-tags: ["Flight Schools", "Aviation Education", "Pilot Degrees", "Flight Training Partnerships"]
+tags: ["Flight Schools", "Aviation Degree Programs", "Accelerated Pilot Training", "Pilot Career Development", "Flight Training Partnerships", "Professional Pilot Pathway"]
 ---
 
 ### Integrating Purdue Global’s Degree Program into Your Flight School
+
 
 In this episode of the Right Rudder Marketing Podcast, Tim Jedrek sits down with Andrew Rachmell from Purdue Global to discuss how flight schools can partner with Purdue Global to offer students a comprehensive aviation education experience. Through this partnership, students can earn a degree while completing flight training, preparing them for career success in the aviation industry.
 
@@ -38,11 +39,13 @@ In this episode of the Right Rudder Marketing Podcast, Tim Jedrek sits down with
 - The program is designed to be flexible, allowing students to live at home, train locally, and complete coursework online.  
 - Purdue Global carefully vets flight school partners, ensuring they meet standards for safety, availability of aircraft, and training above minimum requirements.
 
+
 ---
 
 ### Why Accelerated Training Matters
 - Students can fly three to five times a week, enabling them to complete their training efficiently and cost-effectively.  
 - Flight schools in regions with favorable weather, like Florida or Texas, can help students achieve private, instrument, commercial, and CFI certifications in 12-18 months.
+
 
 ---
 
@@ -51,17 +54,22 @@ In this episode of the Right Rudder Marketing Podcast, Tim Jedrek sits down with
 2. **Complete the Application Process:** Fill out a short questionnaire about your flight school, including fleet size, training approach, and certifications.  
 3. **Review and Onboarding:** Purdue Global will review the application, visit your facility, and ensure a smooth onboarding process.  
 
+
 ---
 
-### Additional Resources for Pilots and Flight Schools
+### Additional Resources for Flight Schools and Pilots
+
 
 - [How to Create SOPs to Scale Your Flight School](https://rightruddermarketing.com/blog/how-to-create-sops-to-scale-your-flight-school/): Learn how to streamline operations.  
 - [The Role of SEO in Aviation Marketing](https://rightruddermarketing.com/blog/the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page/): Tips to improve online visibility.  
 - [Right Rudder Marketing Podcast Episodes](https://rightruddermarketing.com/podcasts/): Explore more expert insights.  
 - [Purdue Global Website](https://www.purdueglobal.edu/degree-programs/aviation/): Explore more aviation degree programs.
 
+
 ---
 
 ### Contact Us
 
+
 Ready to grow your flight school? [Schedule a call](https://rightruddermarketing.com/schedule-call/) with Right Rudder Marketing to learn how we can help with SEO, PPC, and other digital marketing strategies for aviation businesses.
+

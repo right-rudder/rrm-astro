@@ -37,9 +37,9 @@ const content = {
   },
 };
 
-const posts = (await getCollection("webinars")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection("webinars"))
+  .filter((webinar) => webinar.data.status !== "draft") //  filter drafts out
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BaseLayout

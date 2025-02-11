@@ -35,9 +35,9 @@ const data = {
   },
 };
 
-const pods = (await getCollection("podcasts")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const pods = (await getCollection("podcasts"))
+  .filter((pod) => pod.data.status !== "draft") // 👈 Draft filter
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BaseLayout

@@ -15,6 +15,7 @@ In this episode of the Right Rudder Marketing Podcast, Tim Jedrek interviews Bre
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/D6pXqCcvu6U?si=aJa2f-PdzLDg7DNe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
 #### Key Takeaways from the Episode
 
 - **Challenges in Flight School Operations**:
