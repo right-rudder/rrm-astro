@@ -35,5 +35,7 @@ We enjoyed having the opportunity to connect with flight schools from around the
 
 To learn more about how Right Rudder Marketing and King Schools are working together to support aviation education through events like the **Envision Flight at Sea EDUCON**, visit our [website](https://rightruddermarketing.com) or [contact us directly](https://rightruddermarketing.com/contact).
 
+Check out our [instagram video](https://www.instagram.com/p/DCSfeFWuKGm/).
+
 ![King Schools Envision Flight EDU-CON at Sea information poster](/blog/king-school-edu-con-envision-flight-at-sea-2024.png)
 *King Schools Envision Flight EDU-CON at Sea information poster*
