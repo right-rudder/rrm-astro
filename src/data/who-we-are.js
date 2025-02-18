@@ -320,12 +320,17 @@ const whoWeAre = {
           ],
         },
         {
-          name: "Shaun Stakem",
+          name: "Shaun Patrick",
           imagePath: "/src/assets/Shaun-Stakem-RRM-Headshot.jpeg",
           imageAlt:
-            "Portrait of Shaun Stakem, Operational Excellence Manager at Right Rudder Marketing",
+            "Portrait of Shaun Patrick, Operational Excellence Manager at Right Rudder Marketing",
           rank: "Operational Excellence Manager",
-          social: [],
+          social: [
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/shaunpstakem/",
+            },
+          ],
         },
       ],
     },
