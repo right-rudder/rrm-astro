@@ -404,6 +404,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: any
 } & { render(): Render[".md"] };
+"right-rudder-marketing-featured-on-stratus-financial-services-podcast.md": {
+	id: "right-rudder-marketing-featured-on-stratus-financial-services-podcast.md";
+  slug: "right-rudder-marketing-featured-on-stratus-financial-services-podcast";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md": {
 	id: "right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors.md";
   slug: "right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors";
