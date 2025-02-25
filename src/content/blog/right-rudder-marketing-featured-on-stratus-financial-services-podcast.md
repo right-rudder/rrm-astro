@@ -5,6 +5,7 @@ title: "Right Rudder Marketing featured on Stratus Financial Services Podcast"
 description: "Tim discussed the challenges flight schools face and explained how targeted, data driven campaigns have boosted enrollments and enhanced online presence. He emphasized the importance of a focused approach in the evolving world of aviation marketing—a strategy that has become a hallmark of Right Rudder Marketing."
 heroImage: "/blog/stratus-aviation-careers-podcast-banner-crop.png"
 readingTime: 4
+status: "draft"
 category: "News"
 tags:
   [
