@@ -193,9 +193,15 @@ const partnersAffiliates = {
         },
         {
           name: "Purdue Global",
-          imagePath: "/src/assets/purdue-global-logo.jpg",
+          imagePath: "/src/assets/purdue-global-logo.png",
           imageAlt: "Purdue Global logo",
           link: "https://www.purdueglobal.edu/degree-programs/aviation/",
+        },
+        {
+          name: "CrossCheck - Tammy Barlette",
+          imagePath: "/src/assets/crosscheck-logo-1.png",
+          imageAlt: "CrossCheck logo",
+          link: "https://tammybarlette.com/",
         },
       ],
     },

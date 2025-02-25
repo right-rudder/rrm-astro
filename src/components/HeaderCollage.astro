@@ -51,12 +51,12 @@ const { data } = Astro.props;
       >
         <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
           <h1
-            class="text-4xl font-bold tracking-tight text-primary-dark sm:text-6xl"
+            class="text-4xl font-bold tracking-tight text-primary-dark sm:text-6xl animate-fade-from-top"
           >
             {data.headerH1}
           </h1>
           <p
-            class="relative mt-6 text-lg leading-8 text-primary-dark-900 sm:max-w-md lg:max-w-none"
+            class="relative mt-6 text-lg leading-8 text-primary-dark-900 sm:max-w-md lg:max-w-none animate-fade-from-bottom"
           >
             {data.paragraph}
           </p>
@@ -65,7 +65,7 @@ const { data } = Astro.props;
           class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
         >
           <div
-            class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
+            class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 animate-fade-from-left"
           >
             <div class="relative">
               <ImageComp
@@ -81,13 +81,13 @@ const { data } = Astro.props;
             </div>
           </div>
           <div
-            class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
+            class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36 animate-fade-in"
           >
             <div class="relative">
               <ImageComp
                 imagePath={data.images[1].imagePath}
                 imageAlt={data.images[1].imageAlt}
-                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg animate-fade-from-top"
                 quality={80}
               />
               <div
@@ -95,11 +95,11 @@ const { data } = Astro.props;
               >
               </div>
             </div>
-            <div class="relative">
+            <div class="relative animate-fade-in">
               <ImageComp
                 imagePath={data.images[2].imagePath}
                 imageAlt={data.images[2].imageAlt}
-                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg animate-fade-from-bottom"
                 quality={80}
               />
               <div
@@ -108,12 +108,12 @@ const { data } = Astro.props;
               </div>
             </div>
           </div>
-          <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+          <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0 animate-fade-in">
             <div class="relative">
               <ImageComp
                 imagePath={data.images[3].imagePath}
                 imageAlt={data.images[3].imageAlt}
-                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg animate-fade-from-right"
                 quality={80}
               />
               <div
@@ -125,7 +125,7 @@ const { data } = Astro.props;
               <ImageComp
                 imagePath={data.images[4].imagePath}
                 imageAlt={data.images[4].imageAlt}
-                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                styles="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg animate-fade-from-right"
                 quality={80}
               />
               <div

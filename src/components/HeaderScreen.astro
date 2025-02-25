@@ -33,7 +33,7 @@ if (!images[content.imagePath]) {
   >
     {
       content.stars && (
-        <div class="flex opacity-95">
+        <div class="flex opacity-95 animate-fade-from-top">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -108,11 +108,11 @@ if (!images[content.imagePath]) {
       )
     }
     <h1
-      class="text-4xl md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal text-gray-100"
+      class="text-4xl md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal text-gray-100 animate-fade-from-top"
       set:html={content.headerH1}
     />
     <h2
-      class="text-xl mt-3 font-semibold tracking-wide text-center max-w-4xl"
+      class="text-xl mt-3 font-semibold tracking-wide text-center max-w-4xl animate-fade-from-bottom"
       set:html={content.paragraph}
     />
     <div
@@ -122,7 +122,7 @@ if (!images[content.imagePath]) {
         content.buttons.map((btn) => (
           <a
             href={btn.link}
-            class={`${btn.primary ? "btn-primary" : "btn-white"} w-full md:w-auto`}
+            class={`${btn.primary ? "btn-primary" : "btn-white"} w-full md:w-auto animate-fade-from-bottom`}
           >
             {btn.name}
           </a>
