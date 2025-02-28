@@ -25,8 +25,7 @@ ROTC, which was her path, offering a more traditional college experience
 Officer Training School (OTS) for those who already have a degree
 Guard/Reserve, a lesser-known route that involves networking with squadrons for sponsorship
 
-## HowMental Performance Training for Pilots
-
+## How Mental Performance Training for Pilots
 Tammy’s training is all about helping pilots perform at their best under pressure. A few key takeaways:
 Use “What now?” to stay focused instead of dwelling on past mistakes or worrying about the future.
 Expect setbacks, but don’t let them define you. Learn from them and move forward.
