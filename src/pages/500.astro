@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+
+const homePage = {
+  pageTitle: "Page Not Found | Right Rudder Marketing",
+  pageDescription:
+    "The page you are looking for is not found.  Please return to the home page. We are sorry for the inconvenience. Thank you for visiting Right Rudder Marketing.",
+  pageKeywords:
+    "Page Not Found, 404, Right Rudder Marketing, Flight School Marketing, Aviation Marketing, Flight School Advertising, Aviation Advertising, Flight School SEO, Aviation SEO",
+  header: {
+    imagePath: "/src/assets/david-kovalenko-G85VuTpw6jg-unsplash.jpg",
+    imageAlt: "Lost plane in the middle of the woods",
+    headerH1: `Check Your Instruments`,
+    paragraph: "Page Not Found</br>Please Return to the Home Page",
+    buttons: [
+      {
+        name: "Home",
+        link: "/",
+        primary: false,
+      },
+    ],
+  },
+};
+---
+
+<BaseLayout
+  siteTitle={homePage.pageTitle}
+  siteDescription={homePage.pageDescription}
+  keywords={homePage.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={homePage.header} />
+</BaseLayout>

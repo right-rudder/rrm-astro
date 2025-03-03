@@ -9,9 +9,9 @@ category: "Flight Training"
 tags: ["Student Loans", "Aviation Training", "Flight Schools"]
 ---
 
-### Provide Financing to Student Pilots with Stratus Financial
-
 Right Rudder Marketing is thrilled to bring you an exciting podcast episode featuring Brandon Martini from Stratus Financial. In this episode, we’ll dive into how flight schools can offer flexible financing options, making flight training more accessible to students and driving enrollment growth.
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/9sQaXnrSIO8?si=YKYhHKyqQmPV_Kc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Why Financing Matters for Flight Schools
 
