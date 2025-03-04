@@ -30,5 +30,7 @@ export default defineConfig({
     "/investors": "/about/investors",
     "/careers": "/about/careers",
     "/contact-us": "/contact",
+    "/keywords": "/resources/flight-school-keywords",
+    "search-engine-optimization": "/flight-school-seo",
   },
 });
