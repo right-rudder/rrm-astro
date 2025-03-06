@@ -306,6 +306,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"how-to-build-your-flight-schools-reputation-the-power-of-google-reviews.md": {
+	id: "how-to-build-your-flight-schools-reputation-the-power-of-google-reviews.md";
+  slug: "how-to-build-your-flight-schools-reputation-the-power-of-google-reviews";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "how-to-choose-a-flight-school-simplifly-s-guide.md": {
 	id: "how-to-choose-a-flight-school-simplifly-s-guide.md";
   slug: "how-to-choose-a-flight-school-simplifly-s-guide";
