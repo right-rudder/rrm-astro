@@ -64,8 +64,8 @@ const DownloadBook = () => {
       </button>
 
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-20">
-          <div className="bg-white p-12 max-w-md m-4 text-black relative rounded-md">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+          <div className="bg-white p-12 max-w-md m-4 max-h-[80vh] text-black relative rounded-md overflow-y-auto">
             {!formSubmitted && (
               <>
                 <h2 className="text-4xl text-gray-900 text-center font-bold mb-1">
@@ -75,7 +75,7 @@ const DownloadBook = () => {
                   Fill out the form below to get your free book.
                 </p>
                 <form onSubmit={handleSubmit}>
-                  <div className="max-h-96 overflow-y-auto">
+                  <div className="">
                     <div className="mb-4">
                       <label
                         htmlFor="first-name"
