@@ -9,25 +9,54 @@ category: "Flight Training"
 tags: ["Student Loans", "Aviation Training", "Flight Schools"]
 ---
 
-Right Rudder Marketing is thrilled to bring you an exciting podcast episode featuring Brandon Martini from Stratus Financial. In this episode, we’ll dive into how flight schools can offer flexible financing options, making flight training more accessible to students and driving enrollment growth.
+In this episode, Tim Jedrek from **Right Rudder Marketing** sits down with **Brandon Martini**, **co-founder and COO of Stratus Financial**, the largest student loan lender for pilots. They discuss Brandon’s journey from flight school owner to aviation finance leader, as well as insights on scaling a flight school, student financing, and the future of aviation training.
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/9sQaXnrSIO8?si=YKYhHKyqQmPV_Kc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### Why Financing Matters for Flight Schools
+## Brandon’s Background & Flight School Journey
 
-- **Attract More Students**: By providing financing solutions, your school can appeal to a wider pool of aspiring pilots who may otherwise struggle to afford training.
-- **Boost Student Retention**: With reliable loan programs, students are more likely to complete their training without financial disruptions.
-- **Partner with Industry Experts**: Learn how partnering with Stratus Financial can streamline loan approvals and ensure students have the resources they need to succeed.
-- **Differentiate Your Flight School**: Offering financial options can set your school apart from competitors, increasing your value proposition.
+- Started flying in 2013 while working as an insurance adjuster.
+- Bought a Cessna 172 and turned it into a rental, which led to starting a flight school.
+- Grew the school from one aircraft to 14, expanding to two locations and Part 141 certification.
+- Sold his flight school in 2023 to focus on Stratus Financial and Aviation Mentors Podcast.
 
----
+## Key Lessons in Scaling a Flight School
 
-### Event Details
+- Marketing Matters: Using Google Ads and data-driven marketing helped fill the school with students.
+- Know Your Numbers: Many flight schools struggle financially because they don’t track cost per flight hour, maintenance reserves, or instructor utilization.
+- Pricing Strategy: When demand exceeds supply, raise rates instead of overextending with more aircraft.
+- Operational Efficiency: Implement set training schedules instead of letting students pick their own times.
 
-- **Date**: February 13, 2025
-- **Time**: 11 AM Central
+## The Importance of Student Financing
 
-Don’t miss this opportunity to learn how your flight school can offer financial assistance to students and boost your overall growth.
+- Stratus Financial helps students afford commercial pilot training by offering loans for full career programs (not just private pilot training).
+- $86,000 is the average cost for a student to go from zero to CFI.
+- 81% of fully funded students complete training, compared to an 85% dropout rate for those without financing.
+- High Earning Potential: Airline pilots can out-earn doctors by 20-25% over their careers, with top captains making $1 million per year.
+
+## Flight School Growth & Financial Planning
+
+- Reserve Funds Are Key: Some flight schools operate one accident away from bankruptcy because they lack a financial buffer.
+- Alternative Growth Strategies: Instead of buying more aircraft, schools can raise rates, optimize scheduling, and improve efficiency.
+- Using Data to Scale: Successful flight schools track KPIs (Key Performance Indicators) like flight hours per aircraft, student attrition rates, and lead conversion metrics.
+
+## Aero Summit & Future of Aviation Education
+
+- Stratus Financial is launching Aero Summit (May 21-23, 2025, Las Vegas), a networking event for flight schools, CFIs, and students.
+- The event will feature industry panels, aircraft demo days, and key speakers.
+- More resources for students: Stratus offers free ground school access, personalized check-in emails, and birthday/achievement cards for borrowers.
+
+## Final Takeaways
+
+- **For Students:** If flying is your dream, don’t give up. Seek financing, choose the right flight school, and surround yourself with supportive mentors.
+- **For Flight School Owners:** Run your school like a business—track finances, invest in marketing, and consider data-driven decision-making to scale sustainably.
+
+### For more info, visit:
+
+- Stratus Financial: [stratus.finance](https://stratus.finance/)
+- Aero Summit: [stratusaerosummit.com](https://stratusaerosummit.com/)
+- Aviation Mentors Podcast: [aviationmentors.com](https://aviationmentors.com/)
+- Right Rudder Marketing: [rightruddermarketing.com](https://rightruddermarketing.com/)
 
 ---
 
