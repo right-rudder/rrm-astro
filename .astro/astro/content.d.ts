@@ -4,7 +4,6 @@ declare module 'astro:content' {
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
 			remarkPluginFrontmatter: Record<string, any>;
-			components: import('astro').MDXInstance<{}>['components'];
 		}>;
 	}
 }
@@ -526,6 +525,13 @@ declare module 'astro:content' {
 "the-written-exam-what-is-it-and-why-do-i-need-it.md": {
 	id: "the-written-exam-what-is-it-and-why-do-i-need-it.md";
   slug: "the-written-exam-what-is-it-and-why-do-i-need-it";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tim-jedrek-gives-talk-at-redbird-migration-2025.md": {
+	id: "tim-jedrek-gives-talk-at-redbird-migration-2025.md";
+  slug: "tim-jedrek-gives-talk-at-redbird-migration-2025";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
