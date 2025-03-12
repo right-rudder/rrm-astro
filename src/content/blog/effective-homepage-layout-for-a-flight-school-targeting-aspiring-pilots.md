@@ -107,13 +107,17 @@ Ensure your homepage displays and functions well on phones and tablets – navig
 
 ## Examples of Successful Flight School Websites with Strong Lead Generation
 
-### Blue Skies Above
+### [Blue Skies Above](https://flytheblueskies.com/)
 
 This Alabama flight school revamped its website with [Right Rudder Marketing's expertise](https://rightruddermarketing.com/marketing-system), focusing on strong CTAs and authority indicators. After implementing their new homepage strategy, they saw explosive growth, even needing to expand their fleet to meet demand. They feature a prominent "Book a Discovery Flight" CTA and emphasize fleet upgrades and student successes, which helped double their student enrollment in under a year.
 
-### SimpliFly
+### [SimpliFly](https://simpliflyco.com/)
 
 This U.S. flight training company partnered with [Right Rudder Marketing](https://rightruddermarketing.com) to redesign its site with targeted messaging for career-oriented students and multiple conversion points, resulting in 10× more leads than before. Their homepage focuses on guiding visitors to request information about professional pilot programs and highlights outcomes (like graduates flying for airlines) to appeal to serious prospects.
+
+### [Sun City Aviation Academy](https://suncityaviation.com/)
+
+This South Florida flight school worked with [Right Rudder Marketing](https://rightruddermarketing.com) to create a visually engaging site that showcases their modern fleet and experienced instructors. By adding a "Download Our Free Pilot Training Guide" CTA and a "Schedule a Discovery Flight" button, they saw a 30% increase in discovery flight bookings and a 20% rise in course enrollments. Their homepage now effectively captures leads and guides visitors to take action.
 
 ## Recommended Homepage Structure for Optimal User Flow
 
