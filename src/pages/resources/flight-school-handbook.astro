@@ -18,6 +18,46 @@ const { data } = flightSchoolHandbook;
   keywords={data.pageKeywords}
   content={data.checklistCTA}
 >
+ <!-- Schema.org JSON-LD structured data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Flight School Handbook of Marketing Knowledge",
+    "author": {
+      "@type": "Organization",
+      "name": "Right Rudder Marketing"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Right Rudder Marketing",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rightruddermarketing.com/RRM-hor-textBlack-bgTrans-524.webp"
+      }
+    },
+    "description": "A comprehensive guide for flight school owners on marketing, business growth, and operational excellence in the aviation training industry.",
+    "inLanguage": "en-US",
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Flight School Marketing"
+      },
+      {
+        "@type": "Thing",
+        "name": "Aviation Business Growth"
+      },
+      {
+        "@type": "Thing",
+        "name": "Flight Training Operations"
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  })}></script>
   <!-- HEADER -->
   <Header data={data.header} />
 
