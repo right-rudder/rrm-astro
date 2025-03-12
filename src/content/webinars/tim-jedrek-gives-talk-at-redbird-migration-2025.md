@@ -19,7 +19,7 @@ If you couldn’t attend Redbird Migration, you can watch my full presentation h
 
 At Redbird Migration 2025, Tim had the opportunity to speak with flight school owners, CFIs, and aviation educators about the biggest challenges in marketing their training programs. The aviation industry is changing, and schools that rely on outdated strategies risk falling behind.  
 
-During my session, Tim shared how digital marketing, when done right, can make all the difference in filling student slots, reducing attrition, and improving overall business performance.  
+During his session, Tim shared how digital marketing, when done right, can make all the difference in filling student slots, reducing attrition, and improving overall business performance.  
 
 ## Key Takeaways from Tim's Talk  
 
