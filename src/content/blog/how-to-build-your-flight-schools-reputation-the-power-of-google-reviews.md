@@ -5,7 +5,6 @@ title: "How to Build Your Flight School’s Reputation: The Power of Google Revi
 description: "Boost your flight school’s reputation with Google Reviews! Learn how to increase credibility, improve local SEO, and attract more students with expert tips from Right Rudder Marketing."
 heroImage: "/blog/Right-Rudder-Marketing-Reviews-power.webp"
 readingTime: 4
-status: "draft"
 category: "Marketing"
 tags:
   [
