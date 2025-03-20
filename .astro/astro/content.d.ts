@@ -530,6 +530,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"the-sales-process-for-flight-schools-maximizing-lead-conversion-and-student-retention.md": {
+	id: "the-sales-process-for-flight-schools-maximizing-lead-conversion-and-student-retention.md";
+  slug: "the-sales-process-for-flight-schools-maximizing-lead-conversion-and-student-retention";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "the-written-exam-what-is-it-and-why-do-i-need-it.md": {
 	id: "the-written-exam-what-is-it-and-why-do-i-need-it.md";
   slug: "the-written-exam-what-is-it-and-why-do-i-need-it";
