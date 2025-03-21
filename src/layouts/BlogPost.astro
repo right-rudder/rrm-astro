@@ -56,7 +56,7 @@ const {
           <h1 class="text-4xl md:text-5xl m-0 font-sans">{title}</h1>
           <p class="text-sm font-light">Written by:</p>
           <p class="-mt-5 text-base font-medium">{author}</p>
-          <div class="flex gap-2">
+          <div class="md:flex hidden gap-2">
             <span
               class="bg-primary-600 text-white text-xs md:text-sm inline-flex items-center px-3 py-1 rounded-md"
             >
@@ -67,7 +67,7 @@ const {
                 .slice(0, 3)
                 .map((tag, index) => (
                   <span
-                    class={`bg-teal-500 text-white text-xs leading-3 md:leading-4 md:text-sm inline-flex items-center px-3 capitalize py-1 rounded-md`}
+                    class={`bg-teal-500 text-white text-center text-xs leading-3 md:leading-4 md:text-sm inline-flex items-center px-3 capitalize py-1 rounded-md`}
                   >
                     {tag}
                   </span>
@@ -76,7 +76,9 @@ const {
           </div>
           <hr />
         </div>
-        <div class="flex justify-center">
+        <div
+          class="flex justify-center prose-img:aspect-square lg:prose-img:aspect-auto prose-img:w-full"
+        >
           <slot />
         </div>
       </div>
