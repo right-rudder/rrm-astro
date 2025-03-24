@@ -7,19 +7,19 @@ heroImage: "/blog/chris-leipelt-ZM5fUADizfY-unsplash.jpg"
 category: "Marketing"
 tags:
   [
-    aviation CRM,
-    pilot training leads,
-    flight school marketing,
-    lead generation for flight schools,
-    student retention,
-    aviation training sales,
-    flight school enrollment,
-    discovery flights,
-    SEO for flight schools,
-    social media marketing aviation,
-    digital marketing for flight schools,
-    email marketing aviation,
-    flight instructor sales strategies,
+    "aviation CRM",
+    "pilot training leads",
+    "flight school marketing",
+    "lead generation for flight schools",
+    "student retention",
+    "aviation training sales",
+    "flight school enrollment",
+    "discovery flights",
+    "SEO for flight schools",
+    "social media marketing aviation",
+    "digital marketing for flight schools",
+    "email marketing aviation",
+    "flight instructor sales strategies",
   ]
 ---
 
