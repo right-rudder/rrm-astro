@@ -203,6 +203,18 @@ const partnersAffiliates = {
           imageAlt: "CrossCheck logo",
           link: "https://tammybarlette.com/",
         },
+        {
+          name: "Rainier Flight Service",
+          imagePath: "/src/assets/rfs-logo.png",
+          imageAlt: "Rainier Flight Service logo",
+          link: "https://www.rainierflightservice.com/",
+        },
+        {
+          name: "NeedleNine",
+          imagePath: "/src/assets/NeedleNine Logo.png",
+          imageAlt: "NeedleNine logo",
+          link: "https://needlenine.com/",
+        },
       ],
     },
 
