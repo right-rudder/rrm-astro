@@ -615,6 +615,20 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "crew": {
+"carol-cali.md": {
+	id: "carol-cali.md";
+  slug: "carol-cali";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"charles-ferguson.md": {
+	id: "charles-ferguson.md";
+  slug: "charles-ferguson";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
 "diego-yon.md": {
 	id: "diego-yon.md";
   slug: "diego-yon";
@@ -625,6 +639,13 @@ declare module 'astro:content' {
 "lucas-rodrigues.md": {
 	id: "lucas-rodrigues.md";
   slug: "lucas-rodrigues";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"melvin-yabo.md": {
+	id: "melvin-yabo.md";
+  slug: "melvin-yabo";
   body: string;
   collection: "crew";
   data: any
