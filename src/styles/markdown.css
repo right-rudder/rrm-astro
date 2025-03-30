@@ -1,0 +1,3 @@
+.prose a {
+  @apply no-underline hover:underline text-primary-600
+}

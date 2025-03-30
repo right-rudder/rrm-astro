@@ -4,7 +4,6 @@ declare module 'astro:content' {
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
 			remarkPluginFrontmatter: Record<string, any>;
-			components: import('astro').MDXInstance<{}>['components'];
 		}>;
 	}
 }
@@ -176,6 +175,13 @@ declare module 'astro:content' {
 "7-mistakes-to-avoid-in-flight-school-marketing.md": {
 	id: "7-mistakes-to-avoid-in-flight-school-marketing.md";
   slug: "7-mistakes-to-avoid-in-flight-school-marketing";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"9-ways-to-market-your-flight-school-in-2025.md": {
+	id: "9-ways-to-market-your-flight-school-in-2025.md";
+  slug: "9-ways-to-market-your-flight-school-in-2025";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
