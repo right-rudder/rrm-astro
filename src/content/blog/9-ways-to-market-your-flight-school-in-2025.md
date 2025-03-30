@@ -26,7 +26,11 @@ tags: ["Tips", "Flight Schools", "Aviation Businesses"]
 
 ## 1. Build a Strong Website That Converts Visitors
 
-A high performing website is the foundation of your flight school’s marketing strategy. Prospective students visit your website to learn about training programs, fleet details, and pricing. Without a clear and engaging website, potential leads may leave and explore competing schools. A well-optimized homepage should include concise, action-oriented content that highlights your school’s strengths, such as fleet upgrades, successful graduates, and flexible scheduling options. A professional design with intuitive navigation ensures that visitors can quickly find what they need, whether it’s details about discovery flights, financing options, or enrollment steps.
+A high performing website is the foundation of your flight school’s marketing strategy. Prospective students visit your aviation business website to learn about training programs, fleet details, and pricing. Without a clear and engaging website, potential leads may leave and explore competing schools. A well-optimized homepage should include concise, action-oriented content that highlights your school’s strengths, such as fleet upgrades, successful graduates, and flexible scheduling options. A professional design with intuitive navigation ensures that visitors can quickly find what they need, whether it’s details about discovery flights, financing options, or enrollment steps.
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/hhbYmI8tPh0?si=W2zss4wud0UKtr5u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Previously live [RRM webinar](https://rightruddermarketing.com/webinars/how-to-optimize-your-flight-school-website-for-maximum-conversion/) on website design and optimization featuring our account manager, Sebastian Bruno , and web developer, Raul Ospina with guest appearances by Hal Harris from Alto Flight Academy, and Anthony Nercessian from LA Flight Academy*
 
 In addition to visual appeal, your website should guide visitors toward taking action. Make sure your **call-to-action (CTA)** buttons are clear and lead to high-priority pages like program details, scheduling discovery flights, or submitting contact forms. CTAs should be strategically placed throughout the homepage and program pages to encourage conversions. Using prominent CTAs such as “Schedule a Discovery Flight” or “Learn About Financing Options” can help visitors take the next step. To maximize lead conversion, flight school websites should follow a layout that addresses common questions and highlights testimonials from satisfied students. [Check out this guide](https://rightruddermarketing.com/blog/effective-homepage-layout-for-a-flight-school-targeting-aspiring-pilots/) to create a homepage that converts.
 
@@ -66,6 +70,10 @@ Remarketing ads are another essential part of a successful ad strategy. These ad
 
 ## 4. Automate Email Follow-Ups to Nurture Leads
 Not every prospective student enrolls immediately after making an inquiry. Many leads explore multiple training options before making a decision. This is where **email marketing automation** becomes invaluable. By setting up a nurture sequence, you can keep your flight school at the forefront of a prospect’s mind while providing helpful information that moves them closer to enrolling. Automated emails deliver relevant content at the right time, maintaining engagement without requiring manual effort.
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/QjbrtBnLvlk?si=UeYikMjt5pxExpVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Video from early 2024 explaining how marketing automation work and how to apply automations at your flight school*
 
 A successful nurture campaign starts with a welcome email that introduces your school’s training programs and unique advantages. Follow-up emails should provide answers to common questions, highlight the success stories of graduates, and showcase the benefits of your training programs. Including personalized offers, such as a discount on a discovery flight or a free ground school session, can increase the likelihood of conversion. Consistency in communication helps build trust and keeps your school at the top of a prospective student’s mind.
 
@@ -108,6 +116,10 @@ Managing and responding to reviews is equally important. Acknowledging positive 
 
 ## 8. Produce High-Quality Video Content to Establish Authority
 As more flight schools turn to AI-generated articles to boost their SEO, [**video content**](https://rightruddermarketing.com/resources/video-production/) provides a unique opportunity to differentiate your school and create a more human experience for prospective students. Videos allow you to showcase your facilities, introduce your instructors, and highlight student success stories in a way that builds trust and authenticity. A well-structured video should follow a proven framework: hook, value offer, authority, and CTA. This keeps viewers engaged while guiding them toward the next step in the enrollment process.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rVbNTxcTwf4?si=Nz50l80nxcVbXuhJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Example of Right Rudder Marketing Produced Video Content for Summit Flight Academy*
 
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/fUu8kFy5jgE?si=xiFzawr8yhYWEmUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
