@@ -60,6 +60,25 @@ const podcastCollection = defineCollection({
   }),
 });
 
+const crew = defineCollection({
+  schema: z.object({
+    name: z.string(),
+    slug: z.string(),
+    title: z.string(),
+    social: z.object({
+      facebook: z.string().optional(),
+      instagram: z.string().optional(),
+      linkedin: z.string().optional(),
+      twitter: z.string().optional(),
+      github: z.string().optional(),
+      website: z.string().optional(),
+      youtube: z.string().optional(),
+    }).optional(),
+    image: z.string(),
+    status: z.enum(['active', 'former', 'external']).default('active'),
+  }),
+});
+
 export const collections = {
   blog: blogCollection,
   webinars: webinarCollection,
