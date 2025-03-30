@@ -615,9 +615,23 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "crew": {
+"diego-yon.md": {
+	id: "diego-yon.md";
+  slug: "diego-yon";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
 "tim-jedrek.md": {
 	id: "tim-jedrek.md";
   slug: "tim-jedrek";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"tonie-santos.md": {
+	id: "tonie-santos.md";
+  slug: "tonie-santos";
   body: string;
   collection: "crew";
   data: any
