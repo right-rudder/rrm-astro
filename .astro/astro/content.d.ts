@@ -622,6 +622,34 @@ declare module 'astro:content' {
   collection: "crew";
   data: any
 } & { render(): Render[".md"] };
+"lucas-rodrigues.md": {
+	id: "lucas-rodrigues.md";
+  slug: "lucas-rodrigues";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"raul-ospina.md": {
+	id: "raul-ospina.md";
+  slug: "raul-ospina";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"sebastian-bruno.md": {
+	id: "sebastian-bruno.md";
+  slug: "sebastian-bruno";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"shaun-patrick.md": {
+	id: "shaun-patrick.md";
+  slug: "shaun-patrick";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
 "tim-jedrek.md": {
 	id: "tim-jedrek.md";
   slug: "tim-jedrek";
