@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+
+
+const { slug } = Astro.params;
+const crewData = await getCollection('crew');
+const member = crewData.find((m) => m.data.slug === slug);
+
+// Handle 404 if no match
+if (!member) {
+  throw new Error(`Profile for ${slug} not found`);
+}
+
+// Get all blog posts by this author
+const allPosts = await getCollection('blog');
+const authorPosts = allPosts.filter((post) => post.data.author === member.data.name);
+---
+<h1>{member.data.name}</h1>
+<img src={member.data.image} alt={member.data.name} />
+<p>{member.data.bio}</p>
+
+{member.data.status === 'former' && <p><strong>Former Team Member</strong></p>}
+{member.data.status === 'external' && <p><strong>Guest Contributor</strong></p>}
+
+<h2>Published Articles</h2>
+{authorPosts.length > 0 ? (
+  <ul>
+    {authorPosts.map((post) => (
+      <li><a href={`/blog/${post.slug}`}>{post.data.title}</a></li>
+    ))}
+  </ul>
+) : (
+  <p>No published articles yet.</p>
+)}
+
+<h3>Connect with {member.data.name}</h3>
+<p>
+  {member.data.social.facebook && (
+    <a href={member.data.social.facebook} target="_blank">Facebook</a>
+  )}
+  {member.data.social.instagram && (
+    <a href={member.data.social.instagram} target="_blank">Instagram</a>
+  )}
+  {member.data.social.linkedin && (
+    <a href={member.data.social.linkedin} target="_blank">LinkedIn</a>
+  )}
+  {member.data.social.twitter && (
+    <a href={member.data.social.twitter} target="_blank">Twitter</a>
+  )}
+  {member.data.social.github && (
+    <a href={member.data.social.github} target="_blank">GitHub</a>
+  )}
+  {member.data.social.website && (
+    <a href={member.data.social.website} target="_blank">Website</a>
+  )}
+  {member.data.social.youtube && (
+    <a href={member.data.social.youtube} target="_blank">YouTube</a>
+  )}
+  {member.data.social && Object.keys(member.data.social).length === 0 && (
+    <p>{member.data.name} did not provide any links or social media profiles</p>
+  )}
+</p>
+
