@@ -18,7 +18,7 @@ if (!member) {
   throw new Error(`Author data for ${author} not found.`);
 }
 
-// Truncate bio to 100 characters by removing any markdown or HTML
+// Truncate bio to 200 characters and remove any markdown or HTML
 const truncateBio = (bio) => {
   const plainText = bio
     .replace(/\n/g, " ")                   // Replace newlines with space
@@ -27,7 +27,7 @@ const truncateBio = (bio) => {
     .replace(/<[^>]+>/g, "")               // Strip any HTML tags
     .trim();                               // Trim spaces
 
-  return plainText.length > 100 ? `${plainText.substring(0, 100)}...` : plainText;
+  return plainText.length > 200 ? `${plainText.substring(0, 200)}...` : plainText;
 };
 ---
 
@@ -36,7 +36,7 @@ const truncateBio = (bio) => {
   <img
     src={member.data.image || "/authors/placeholder.webp"}
     alt={`Portrait of ${member.data.name}`}
-    class="w-32 h-32 rounded-full object-cover"
+    class="w-36 h-36 rounded-full object-cover"
   />
 
   <div class="pl-5">
