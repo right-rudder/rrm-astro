@@ -46,7 +46,7 @@ const truncateBio = (bio) => {
 
     <!-- Truncated Bio from member.body -->
     <p class="text-sm text-gray-600">
-      {truncateBio(member.body || "No bio available.")} 
+      {truncateBio(member.body || `${member.data.name} has not yet added their bio yet.  Update coming soon.`)} 
     </p>
     <a href={`/flight-crew/${member.data.slug}`} class="text-primary-600 hover:underline">View Profile</a>
 
