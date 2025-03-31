@@ -8,7 +8,7 @@ social:
   twitter: "https://twitter.com/raminka13"
   github: "https://github.com/raminka13"
   website: "https://raminka13.github.io/littlelink/"
-image: /authors/raminka-flying.png
+image: /authors/raminka-flying.webp
 status: active
 seniority: 4
 ---
