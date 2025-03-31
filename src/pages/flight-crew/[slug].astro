@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
   const crewData = await getCollection('crew');   // Get all entries from the 'crew' collection 
@@ -27,13 +28,21 @@ const authorPosts = allPosts
   });
 ---
 
-<h1>{member.data.name}</h1>
+<BaseLayout
+  siteTitle=`${member.data.name} | Right Rudder Marketing Flight Crew`
+  siteDescription=`This is a profile page for ${member.data.name}.  Right Rudder Marketing is a growing company that relies on the contributions of friends, family, partners, and an awesome hard working crew.  We are all passionate about the flight training business and our aim is to affect the aviation industry by training more safe and proficient pilots.`
+  keywords="team member, crew, CRM, crew resource management, teamwork, teamwork makes the dream work, all stars, developers, marketers, designers, copywriters, video-editors, full stack engineers, pilots, aviation consultant, aviation specialist, training, CFI, instructor"
+>
+
+
 <img src={member.data.image} alt={member.data.name} />
-<p>{member.data.bio}</p>
+<h1>{member.data.name}</h1>
+<h2>{member.data.title}</h2>
+Status: {member.data.status === 'active' && <strong>Active RRM Crew Member</strong>}
+{member.data.status === 'former' && <strong>Former RRM Crew Member</strong>}
+{member.data.status === 'external' && <strong>Guest Contributor</strong>}
 
-{member.data.status === 'former' && <p><strong>Former Team Member</strong></p>}
-{member.data.status === 'external' && <p><strong>Guest Contributor</strong></p>}
-
+<p>{member.body}</p>
 <h2>Published Articles</h2>
 {authorPosts.length > 0 ? (
   <ul>
@@ -73,3 +82,4 @@ const authorPosts = allPosts
   )}
 </p>
 
+</BaseLayout>
