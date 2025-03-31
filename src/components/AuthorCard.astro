@@ -1,0 +1,117 @@
+---
+import { getCollection } from 'astro:content';
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
+
+const { author } = Astro.props;
+
+// Fetch crew data and match with author name
+const crewData = await getCollection('crew');
+const member = crewData.find((m) => m.data.name === author);
+
+// Handle missing author
+if (!member) {
+  throw new Error(`Author data for ${author} not found.`);
+}
+
+// Truncate bio to 100 characters by removing any markdown or HTML
+const truncateBio = (bio) => {
+  const plainText = bio
+    .replace(/\n/g, " ")                   // Replace newlines with space
+    .replace(/!\[.*?\]\(.*?\)/g, "")       // Remove images: ![alt](url)
+    .replace(/\[([^\]]+)\]\((.*?)\)/g, "$1") // Remove links but keep text
+    .replace(/<[^>]+>/g, "")               // Strip any HTML tags
+    .trim();                               // Trim spaces
+
+  return plainText.length > 100 ? `${plainText.substring(0, 100)}...` : plainText;
+};
+---
+
+<div class="mx-auto mt-20 bg-white p-6  flex items-center">
+  <!-- Author Image -->
+  <img
+    src={member.data.image || "/authors/placeholder.webp"}
+    alt={`Portrait of ${member.data.name}`}
+    class="w-32 h-32 rounded-full object-cover"
+  />
+
+  <div class="pl-5">
+    <p>Content contributed by:</p>
+    <!-- Author Name -->
+    <h2 class="text-lg font-bold text-gray-900">{member.data.name}</h2>
+
+    <!-- Truncated Bio from member.body -->
+    <p class="text-sm text-gray-600">
+      {truncateBio(member.body || "No bio available.")} 
+    </p>
+    <a href={`/flight-crew/${member.data.slug}`} class="text-primary-600 hover:underline">View Profile</a>
+
+    <!-- Social Media Links -->
+    <div class="mt-3 flex space-x-3">
+      {member.data.social?.facebook && (
+        <a
+          href={member.data.social.facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >
+          <FaFacebookSquare size="20" />
+        </a>
+      )}
+      {member.data.social?.instagram && (
+        <a
+          href={member.data.social.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >
+          <FaInstagramSquare size="20" />
+        </a>
+      )}
+      {member.data.social?.linkedin && (
+        <a
+          href={member.data.social.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >
+          <FaLinkedin size="20" />
+        </a>
+      )}
+      {member.data.social?.twitter && (
+        <a
+          href={member.data.social.twitter}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >
+          <FaSquareXTwitter size="20" />
+        </a>
+      )}
+      {member.data.social?.github && (
+        <a
+          href={member.data.social.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >
+          <FaSquareGithub size="20" />
+        </a>
+      )}
+      {member.data.social?.website && (
+        <a
+          href={member.data.social.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >
+          <FaExternalLinkSquareAlt size="20" />
+        </a>
+      )}
+    </div>
+  </div>
+</div>

@@ -6,6 +6,9 @@ import BaseLayout from "./BaseLayout.astro";
 import { KEYWORDS } from "../consts";
 import { slugify } from "../utils/slugify.js";
 
+import AuthorCard from "../components/AuthorCard.astro";
+
+
 type Props = CollectionEntry<"blog">["data"];
 
 const {
@@ -29,7 +32,7 @@ const {
 >
   <div class="h-20 lg:h-28 w-full bg-primary/50 brightness-75"></div>
 
-  <section class="flex justify-center pt-6 pb-20 overflow-hidden">
+  <section class="flex flex-col justify-center pt-6 pb-20 overflow-hidden">
     <article class="mx-auto max-w-4xl">
       <div class="mb-12 lg:mb-0">
         {
@@ -85,8 +88,10 @@ const {
           <slot />
         </div>
       </div>
-    </article>
+      <AuthorCard author={author} />
+    </article>   
   </section>
+  
 
   <BlogFeedRandom />
 </BaseLayout>
