@@ -8,6 +8,6 @@ social:
   twitter: "https://twitter.com/raminka13"
   github: "https://github.com/raminka13"
   website: "https://raminka13.github.io/littlelink/"
-image: /src/assets/raminka-flying.png
+image: /authors/raminka-flying.png
 status: active
 ---

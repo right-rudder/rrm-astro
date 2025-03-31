@@ -6,6 +6,6 @@ social:
   instagram: "https://instagram.com/chaz.ferg"
   linkedin: "https://www.linkedin.com/in/chaz-ferguson/"
   website: "https://chaz-ferg.com/"
-image: /src/assets/charles-ferguson.webp
+image: /authors/charles-ferguson.webp
 status: former
 ---

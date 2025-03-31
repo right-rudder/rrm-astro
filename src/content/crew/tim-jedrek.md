@@ -10,7 +10,7 @@ social:
   github: "https://github.com/timjedrek"
   website: "https://timjedrek.com/"
   youtube: "https://www.youtube.com/@rightruddermarketing"
-image: /src/assets/tim-jedrek.jpg
+image: /authors/tim-jedrek-swiss-alps.webp
 status: active
 ---
 

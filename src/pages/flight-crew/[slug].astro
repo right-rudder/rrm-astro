@@ -18,7 +18,13 @@ if (!member) {
 }                                                 // Handle 404 if no match
 
 const allPosts = await getCollection('blog');     // Get all blog posts by this author
-const authorPosts = allPosts.filter((post) => post.data.author === member.data.name);
+const authorPosts = allPosts
+  .filter((post) => post.data.author === member.data.name)
+  .sort((a, b) => {
+    const dateA = new Date(a.data.pubDate).getTime();
+    const dateB = new Date(b.data.pubDate).getTime();
+    return dateB - dateA;
+  });
 ---
 
 <h1>{member.data.name}</h1>

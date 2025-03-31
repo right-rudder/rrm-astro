@@ -4,6 +4,6 @@ slug: shaun-patrick
 title: Operational Excellence Manager
 social:
   linkedin: "https://www.linkedin.com/in/shaunpstakem/"
-image: /src/assets/Shaun-Stakem-RRM-Headshot.jpeg
+image: /authors/Shaun-Stakem-RRM-Headshot.jpeg
 status: active
 ---
