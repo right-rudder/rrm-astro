@@ -65,17 +65,20 @@ const crew = defineCollection({
     name: z.string(),
     slug: z.string(),
     title: z.string(),
-    social: z.object({
-      facebook: z.string().optional(),
-      instagram: z.string().optional(),
-      linkedin: z.string().optional(),
-      twitter: z.string().optional(),
-      github: z.string().optional(),
-      website: z.string().optional(),
-      youtube: z.string().optional(),
-    }).optional(),
+    social: z
+      .object({
+        facebook: z.string().optional(),
+        instagram: z.string().optional(),
+        linkedin: z.string().optional(),
+        twitter: z.string().optional(),
+        github: z.string().optional(),
+        website: z.string().optional(),
+        youtube: z.string().optional(),
+      })
+      .optional(),
     image: z.string(),
-    status: z.enum(['active', 'former', 'external']).default('active'),
+    bio: z.string().optional(),
+    status: z.enum(["active", "former", "external"]).default("active"),
   }),
 });
 
