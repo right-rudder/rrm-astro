@@ -6,4 +6,5 @@ social:
   linkedin: "https://www.linkedin.com/in/sebastian-bruno-8335a81a5/"
 image: /authors/RRM-team-SebasBruno.jpg
 status: active
+seniority: 6
 ---

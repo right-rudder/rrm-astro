@@ -12,6 +12,7 @@ social:
   youtube: "https://www.youtube.com/@rightruddermarketing"
 image: /authors/tim-jedrek-swiss-alps.webp
 status: active
+seniority: 1
 ---
 
 Tim Jedrek is a passionate aviator, author, entrepreneur, and digital marketing expert dedicated to helping flight schools soar to new heights. As the founder of Right Rudder Marketing, Tim combines his love for aviation with years of experience in business strategy and software development to empower flight training businesses across the U.S. From his early days in corporate food manufacturing with Fortune 500 companies to becoming a pilot and marketing innovator, Tim brings a unique blend of insider knowledge and technical expertise to the aviation industry. His mission? To partner with 100 flight schools worldwide and double their student enrollments through cutting edge marketing solutions.

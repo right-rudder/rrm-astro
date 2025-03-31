@@ -8,4 +8,5 @@ social:
   website: "https://lucas-awesome-work.netlify.app/"
 image: /authors/profile-picture-lucas.jpg
 status: active
+seniority: 5
 ---

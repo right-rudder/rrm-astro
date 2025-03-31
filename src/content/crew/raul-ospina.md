@@ -10,4 +10,5 @@ social:
   website: "https://raminka13.github.io/littlelink/"
 image: /authors/raminka-flying.png
 status: active
+seniority: 4
 ---

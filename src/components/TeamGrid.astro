@@ -23,7 +23,9 @@ const activeCrew = crewData
     rank: member.data.title,
     social: member.data.social,
     slug: member.data.slug,
-  }));
+    seniority: member.data.seniority || 999, // Default to 999 if missing
+  }))
+  .sort((a, b) => a.seniority - b.seniority);
 
 // Get page-level props passed from who-we-are.astro
 const { data } = Astro.props;

@@ -1,13 +1,14 @@
 ---
 name: Diego Yon
 slug: diego-yon
-title: R/D Lead
+title: Senior Web Developer
 social:
   linkedin: "https://www.linkedin.com/in/diego-yon/"
   github: "https://github.com/diegoyon"
   website: "https://diego-yon.netlify.app/"
 image: /authors/diego-yon.webp
 status: active
+seniority: 3
 ---
 Diego is a skilled full-stack software developer specializing in Ruby on Rails, React, and Astro. With a Bachelor’s degree in Mechatronics Engineering, he developed a strong passion for software development. Before transitioning into software development, Diego owned and operated a business for eight years, gaining valuable experience in entrepreneurship and digital strategy. This background gives him a deep understanding of how strategic digital solutions drive business growth.
 
