@@ -7,7 +7,9 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
+import { FaYoutubeSquare } from "react-icons/fa";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
+
 
 
 // Fetch and filter crew dynamically
@@ -111,6 +113,7 @@ const { data } = Astro.props;
                   {platform === "linkedin" && <FaLinkedin size="20" />}
                   {platform === "twitter" && <FaSquareXTwitter size="20" />}
                   {platform === "github" && <FaSquareGithub size="20" />}
+                  {platform === "youtube" && <FaYoutubeSquare size="20" />}
                   {platform === "website" && <FaExternalLinkSquareAlt size="20" />}
                 </a>
               ))}

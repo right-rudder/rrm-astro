@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
+import { FaYoutubeSquare } from "react-icons/fa";
 
 const { author } = Astro.props;
 
@@ -100,6 +101,16 @@ const truncateBio = (bio) => {
           class="text-primary-600 hover:text-primary-700"
         >
           <FaSquareGithub size="20" />
+        </a>
+      )}
+      {member.data.social?.youtube && (
+        <a
+          href={member.data.social.youtube}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >
+          <FaYoutubeSquare size="20" />
         </a>
       )}
       {member.data.social?.website && (
