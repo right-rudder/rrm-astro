@@ -34,10 +34,9 @@ Gordon Alvord took Rainier Flight Service from a single leased aircraft to a mul
 
 Beyond growth, Gordon developed an in-house software tool to streamline flight school operations—one he’s now making available to others. We’ll discuss the problems this tool solves and how technology can help flight schools improve efficiency and profitability. If you're looking to scale your flight school the right way, don’t miss this conversation.
 
-We'll be streaming this on our Youtube channel, LinkedIn, and Twitter as well as Tim Jedrek's Facebook. You can also participate and join the live audience on Riverside.
+We'll be streaming this on our YouTube channel, LinkedIn, and Twitter as well as Tim Jedrek's Facebook. You can also participate and join the live audience on Riverside.
 
-**RRM Youtube:** https://www.youtube.com/@rightruddermarketing/
-
+**RRM YouTube:** https://www.youtube.com/@rightruddermarketing/
 **RRM LinkedIn:** https://www.linkedin.com/company/rightruddermarketing
 
 **RRM Twitter:** https://x.com/rightruddermktg
