@@ -76,7 +76,7 @@ const { data } = Astro.props;
   <div class="mt-12 flex justify-center align-middle">
     <ul class="flex flex-wrap justify-center md:gap-x-12 gap-y-16 max-w-6xl">
       {activeCrew.map((member) => (
-        <li class="group" key={member.slug}>
+        <li class="group mx-2">
           <div
             class="mx-auto rounded-lg overflow-hidden h-56 w-56 ring-gray-200 group-hover:rounded-xl group-hover:ring-1 group-hover:shadow-lg duration-200 ease-in-out"
           >
@@ -100,17 +100,17 @@ const { data } = Astro.props;
             {member.social &&
             Object.entries(member.social).map(([platform, url]) => (
               <a
-                href={url}
+                href={String(url)}
                 class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
                 aria-label={platform}
                 target="_blank"
               >
-                {platform === "facebook" && <FaFacebookSquare class="size-5" />}
-                {platform === "instagram" && <FaInstagramSquare class="size-5" />}
-                {platform === "linkedin" && <FaLinkedin class="size-5" />}
-                {platform === "twitter" && <FaSquareXTwitter class="size-5" />}
-                {platform === "github" && <FaSquareGithub class="size-5" />}
-                {platform === "website" && <FaExternalLinkSquareAlt class="size-5" />}
+                {platform === "facebook" && <FaFacebookSquare size="20" />}
+                {platform === "instagram" && <FaInstagramSquare size="20" />}
+                {platform === "linkedin" && <FaLinkedin size="20" />}
+                {platform === "twitter" && <FaSquareXTwitter size="20" />}
+                {platform === "github" && <FaSquareGithub size="20" />}
+                {platform === "website" && <FaExternalLinkSquareAlt size="20" />}
               </a>
             ))}
           </div>
