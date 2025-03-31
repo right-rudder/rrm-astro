@@ -77,43 +77,45 @@ const { data } = Astro.props;
     <ul class="flex flex-wrap justify-center md:gap-x-12 gap-y-16 max-w-6xl">
       {activeCrew.map((member) => (
         <li class="group mx-2">
-          <div
-            class="mx-auto rounded-lg overflow-hidden h-56 w-56 ring-gray-200 group-hover:rounded-xl group-hover:ring-1 group-hover:shadow-lg duration-200 ease-in-out"
-          >
-            <img
-              src={member.imagePath || "/authors/placeholder.webp"}
-              alt={member.imageAlt || `Portrait of ${member.name}`}
-              class="w-full h-full object-cover object-top group-hover:scale-105 group-hover:brightness-105 duration-300 ease-in-out"
-            />
-          </div>
-          <h3
-            class="mt-6 mb-0 text-center text-3xl group-hover:text-primary-dark group-hover:scale-105 font-bold tracking-tight text-gray-900 duration-200 ease-in-out"
-          >
-            {member.name}
-          </h3>
-          <p
-            class="text-lg mt-0 text-center leading-6 font-sans text-primary-600 group-hover:text-accent-700 duration-200 delay-100 ease-in-out"
-          >
-            {member.rank}
-          </p>
-          <div class="mt-2 flex justify-center align-middle gap-1">
-            {member.social &&
-            Object.entries(member.social).map(([platform, url]) => (
-              <a
-                href={String(url)}
-                class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
-                aria-label={platform}
-                target="_blank"
-              >
-                {platform === "facebook" && <FaFacebookSquare size="20" />}
-                {platform === "instagram" && <FaInstagramSquare size="20" />}
-                {platform === "linkedin" && <FaLinkedin size="20" />}
-                {platform === "twitter" && <FaSquareXTwitter size="20" />}
-                {platform === "github" && <FaSquareGithub size="20" />}
-                {platform === "website" && <FaExternalLinkSquareAlt size="20" />}
-              </a>
-            ))}
-          </div>
+          <a href={`../flight-crew/${member.slug}`}>
+            <div
+              class="mx-auto rounded-lg overflow-hidden h-56 w-56 ring-gray-200 group-hover:rounded-xl group-hover:ring-1 group-hover:shadow-lg duration-200 ease-in-out"
+            >
+              <img
+                src={member.imagePath || "/authors/placeholder.webp"}
+                alt={member.imageAlt || `Portrait of ${member.name}`}
+                class="w-full h-full object-cover object-top group-hover:scale-105 group-hover:brightness-105 duration-300 ease-in-out"
+              />
+            </div>
+            <h3
+              class="mt-6 mb-0 text-center text-3xl group-hover:text-primary-dark group-hover:scale-105 font-bold tracking-tight text-gray-900 duration-200 ease-in-out"
+            >
+              {member.name}
+            </h3>
+            <p
+              class="text-lg mt-0 text-center leading-6 font-sans text-primary-600 group-hover:text-accent-700 duration-200 delay-100 ease-in-out"
+            >
+              {member.rank}
+            </p>
+            <div class="mt-2 flex justify-center align-middle gap-1">
+              {member.social &&
+              Object.entries(member.social).map(([platform, url]) => (
+                <a
+                  href={String(url)}
+                  class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                  aria-label={platform}
+                  target="_blank"
+                >
+                  {platform === "facebook" && <FaFacebookSquare size="20" />}
+                  {platform === "instagram" && <FaInstagramSquare size="20" />}
+                  {platform === "linkedin" && <FaLinkedin size="20" />}
+                  {platform === "twitter" && <FaSquareXTwitter size="20" />}
+                  {platform === "github" && <FaSquareGithub size="20" />}
+                  {platform === "website" && <FaExternalLinkSquareAlt size="20" />}
+                </a>
+              ))}
+            </div>
+          </a>
         </li>
       ))}
     </ul>    
