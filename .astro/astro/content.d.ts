@@ -4,6 +4,7 @@ declare module 'astro:content' {
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
 			remarkPluginFrontmatter: Record<string, any>;
+			components: import('astro').MDXInstance<{}>['components'];
 		}>;
 	}
 }
@@ -653,6 +654,13 @@ declare module 'astro:content' {
 "raul-ospina.md": {
 	id: "raul-ospina.md";
   slug: "raul-ospina";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"rodrigo-j-r-nunes.md": {
+	id: "rodrigo-j-r-nunes.md";
+  slug: "rodrigo-nunes";
   body: string;
   collection: "crew";
   data: any
