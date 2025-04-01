@@ -1,6 +1,6 @@
 ---
 pubDate: "Nov 15, 2024"
-author: Charles Ferguson
+author: Tim Jedrek
 title: "Right Rudder Marketing Sponsors King Schools' Envision Flight at Sea EDUCON 2024"
 description: "Right Rudder Marketing is excited to sponsor and exhibit at King Schools' Envision Flight at Sea EDUCON, an innovative aviation education trade show held aboard a cruise ship in 2024. This partnership showcases our commitment to supporting flight schools with advanced marketing strategies. We enjoyed networking with flight schools professionals at sea."
 heroImage: "/blog/RRM + King Schools Partnership.webp"
