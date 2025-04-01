@@ -85,45 +85,9 @@ const authorPosts = allPosts
               }
             </div>
           </div>
-          <div class="mt-10 py-10 border-t border-gray-200 text-center">
-            <div class="flex flex-wrap justify-center">
-              <div class="w-full lg:w-9/12 px-4">
-                <p class="mb-4 text-lg leading-relaxed text-gray-700">
-                  {member.body}
-                </p>
-              </div>
-            </div>
+          <div class="text-center">
             <div
-              class="mt-8 py-10 flex flex-wrap justify-center border-t border-gray-200"
-            >
-              <div class="w-full lg:w-9/12 px-4">
-                <h2 class="font-bold text-2xl capitalize">
-                  Published Articles
-                </h2>
-                <p class="mb-4 text-lg leading-relaxed text-gray-700">
-                  {
-                    authorPosts.length > 0 ? (
-                      <ul class="list-disc list-inside">
-                        {authorPosts.map((post) => (
-                          <li>
-                            <a
-                              class="hover:underline"
-                              href={`/blog/${post.slug}`}
-                            >
-                              {post.data.title}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p>No published articles yet.</p>
-                    )
-                  }
-                </p>
-              </div>
-            </div>
-            <div
-              class="mt-8 flex flex-wrap justify-center py-10 border-t border-gray-200"
+              class="mt-4 flex flex-wrap justify-center py-10 border-b border-gray-200"
             >
               <div class="w-full lg:w-9/12 px-4">
                 <h3 class="font-bold text-2xl capitalize">
@@ -217,6 +181,46 @@ const authorPosts = allPosts
                       )
                   }
                 </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-center pt-10">
+              <div class="w-full lg:w-9/12 px-4">
+                <p class="mb-4 text-lg leading-relaxed text-gray-700">
+                  {
+                    member.body ||
+                      member.data.name +
+                        " has not yet added their bio. Update coming soon."
+                  }
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-8 py-10 flex flex-wrap justify-center border-t border-gray-200"
+            >
+              <div class="w-full lg:w-9/12 px-4">
+                <h2 class="font-bold text-2xl capitalize">
+                  Published Articles
+                </h2>
+                <p class="mb-4 text-lg leading-relaxed text-gray-700">
+                  {
+                    authorPosts.length > 0 ? (
+                      <ul class="list-disc list-inside">
+                        {authorPosts.map((post) => (
+                          <li>
+                            <a
+                              class="hover:underline"
+                              href={`/blog/${post.slug}`}
+                            >
+                              {post.data.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>No published articles yet.</p>
+                    )
+                  }
+                </p>
               </div>
             </div>
           </div>
