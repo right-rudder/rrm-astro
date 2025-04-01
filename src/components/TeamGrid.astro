@@ -78,7 +78,7 @@ const { data } = Astro.props;
   <div class="mt-12 flex justify-center align-middle">
     <ul class="flex flex-wrap justify-center md:gap-x-12 gap-y-16 max-w-6xl">
       {activeCrew.map((member) => (
-        <li class="group mx-2">
+        <li class="group mx-auto">
           <a href={`../flight-crew/${member.slug}`}>
             <div
               class="mx-auto rounded-lg overflow-hidden h-56 w-56 ring-gray-200 group-hover:rounded-xl group-hover:ring-1 group-hover:shadow-lg duration-200 ease-in-out"
