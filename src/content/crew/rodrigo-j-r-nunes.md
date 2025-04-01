@@ -1,5 +1,5 @@
 ---
-name: Rodrigo Johann Reckziegel Nunes
+name: Rodrigo Nunes
 slug: rodrigo-nunes
 title: Web Developer
 social:
