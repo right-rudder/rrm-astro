@@ -206,7 +206,13 @@ const authorPosts = allPosts
                     <div class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center">
                       {
                         authorPosts.map((post, index) => (
-                          <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/3 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-40 lg:pt-44 hover:ring-1 hover:ring-accent duration-200">
+                          <article
+                            class={`relative group w-full lg:m-0 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-40 lg:pt-44 hover:ring-1 hover:ring-accent duration-200 ${
+                              authorPosts.length === 1
+                                ? "md:w-4/5 lg:w-3/5 mx-auto"
+                                : "md:w-2/5 lg:w-1/3"
+                            }`}
+                          >
                             <img
                               src={post.data.heroImage}
                               alt={post.data.title}
