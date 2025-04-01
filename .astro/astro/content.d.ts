@@ -4,6 +4,7 @@ declare module 'astro:content' {
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
 			remarkPluginFrontmatter: Record<string, any>;
+			components: import('astro').MDXInstance<{}>['components'];
 		}>;
 	}
 }
@@ -639,6 +640,13 @@ declare module 'astro:content' {
 "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md": {
 	id: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing.md";
   slug: "flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
+"how-gordon-scaled-his-flight-school-from-one-leased-plane-to-70-aircraft-and-four-locations.md": {
+	id: "how-gordon-scaled-his-flight-school-from-one-leased-plane-to-70-aircraft-and-four-locations.md";
+  slug: "how-gordon-scaled-his-flight-school-from-one-leased-plane-to-70-aircraft-and-four-locations";
   body: string;
   collection: "podcasts";
   data: InferEntrySchema<"podcasts">
