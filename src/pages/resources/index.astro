@@ -1,155 +1,136 @@
 ---
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
-import FunnelLayout from "../../layouts/FunnelLayout.astro";
-import DownloadCTA from "../../components/DownloadCTA.astro";
-import GenericCTA from "../../components/GenericCTA.astro";
-import flightSchoolHandbook from "../../data/flight-school-handbook";
 import ImageComp from "../../components/ImageComp.astro";
-import DownloadBook from "../../components/DownloadBook";
-import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro";
 
-const { data } = flightSchoolHandbook;
+const headerData = {
+  imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+  imageAlt:
+    "Right Rudder Marketing - Pilot student and instructor in a flight school aircraft",
+  headerH1: `<span class="text-accent-300">Flight School<br>Resources</span>`,
+  paragraph: `
+    Explore our collection of resources designed to help flight schools enhance their marketing strategies and operational efficiency.
+  `,
+};
+
+const resources = [
+  {
+    title: "Flight School Handbook",
+    description:
+      "A comprehensive guide with marketing strategies specifically tailored for flight schools.",
+    url: "/resources/flight-school-handbook",
+    imageUrl: "/src/assets/book-tim.jpg",
+  },
+  {
+    title: "Aviation Keywords Guide",
+    description:
+      "Essential keywords to optimize your flight school's online presence and improve search engine rankings.",
+    url: "/resources/flight-school-keywords",
+    imageUrl: "/src/assets/DSC00637.jpg",
+  },
+  {
+    title: "Marketing Checklist",
+    description:
+      "A step-by-step marketing checklist to ensure your flight school's marketing strategy is comprehensive and effective.",
+    url: "/resources/marketing-checklist",
+    imageUrl: "/src/assets/hans-peter-gauster-3y1zF4hIPCg-unsplash.jpg",
+  },
+  {
+    title: "SOP Templates",
+    description:
+      "Standard Operating Procedure templates designed specifically for flight schools to streamline operations.",
+    url: "/resources/sop-templates",
+    imageUrl: "/src/assets/IMG_9616.jpg",
+  },
+  {
+    title: "Google My Business Optimization",
+    description:
+      "Learn how to properly optimize your Google My Business listing to attract more potential students.",
+    url: "/resources/gmb",
+    imageUrl: "/src/assets/chuttersnap-M2-_GRvWWg0-unsplash.jpg",
+  },
+  {
+    title: "Video Production",
+    description:
+      "Professional video production services tailored for flight schools to showcase your facilities and aircraft.",
+    url: "/resources/video-production",
+    imageUrl: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.webp",
+  },
+];
+
+const pageMetadata = {
+  pageTitle: "Right Rudder Marketing | Flight School Resources",
+  pageDescription:
+    "Access our comprehensive collection of aviation marketing resources for flight schools including guides, templates, checklists and more.",
+  pageKeywords:
+    "flight school resources, aviation marketing, flight school handbook, aviation keywords, marketing checklist, SOP templates, Google My Business optimization",
+};
 ---
 
-<FunnelLayout
-  siteTitle={data.pageTitle}
-  siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
-  content={data.checklistCTA}
+<BaseLayout
+  siteTitle={pageMetadata.pageTitle}
+  siteDescription={pageMetadata.pageDescription}
+  keywords={pageMetadata.pageKeywords}
 >
   <!-- HEADER -->
-  <Header data={data.header} />
+  <Header data={headerData} />
 
-  <DownloadCTA data={data.downloadCTA} />
-
-  <section
-    id="meet-tim"
-    class="relative isolate overflow-hidden -z-10 bg-primary-50 border-y-2 mb-0 border-primary-900 px-6 pt-24 lg:overflow-hidden lg:px-0"
-  >
-    <div class="mx-auto max-w-6xl lg:pr-4">
-      <div class="my-9 text-center">
-        <p class="text-base font-semibold leading-7 text-primary-700">
-          {data.meetTim.upperHeading}
-        </p>
-        <h1 class="mt-0 text-5xl font-extrabold tracking-tight text-gray-900">
-          {data.meetTim.heading}
-        </h1>
-      </div>
-    </div>
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-      <svg
-        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern
-            id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-            width="200"
-            height="200"
-            x="50%"
-            y="-1"
-            patternUnits="userSpaceOnUse"
-          >
-            <path d="M100 200V.5M.5 .5H200" fill="none"></path>
-          </pattern>
-        </defs>
-        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-          <path
-            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-            stroke-width="0"></path>
-        </svg>
-        <rect
-          width="100%"
-          height="100%"
-          stroke-width="0"
-          fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
-      </svg>
-    </div>
-    <div class="mt-12 flex flex-wrap justify-center">
-      <div class="w-full lg:w-1/2">
-        <h3 class="text-4xl font-bold border-b-4 border-primary-500">
-          {data.meetTim.descHeading}
-        </h3>
+  <div class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Main content section -->
+      <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {
-          data.meetTim.descriptions.map((desc) => (
-            <p
-              class="mt-5 text-xl font-light leading-8 text-gray-700"
-              set:html={desc}
-            />
+          resources.map((resource) => (
+            <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition-all hover:shadow-xl">
+              <div class="flex-shrink-0">
+                <ImageComp
+                  imagePath={resource.imageUrl}
+                  imageAlt={resource.title}
+                  styles="h-48 w-full object-cover"
+                />
+              </div>
+              <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                <div class="flex-1">
+                  <a href={resource.url} class="block">
+                    <h3 class="text-xl font-semibold text-gray-900">
+                      {resource.title}
+                    </h3>
+                    <p class="mt-3 text-base text-gray-500">
+                      {resource.description}
+                    </p>
+                  </a>
+                </div>
+                <div class="mt-6">
+                  <a
+                    href={resource.url}
+                    class="text-base font-semibold text-primary-600 hover:text-primary-700"
+                  >
+                    Access Resource <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           ))
         }
       </div>
-      <div class="w-full lg:w-2/5 z-10 lg:h-full items-end">
-        <ImageComp
-          imagePath={data.meetTim.imagePath}
-          imageAlt={data.meetTim.imageAlt}
-          styles="object-contain z-10 object-bottom w-full h-full drop-shadow-sm hover:scale-105 duration-500 ease-out"
-        />
-      </div>
-    </div>
-  </section>
-
-  <section
-    id="book-content"
-    class="bg-gradient-to-br z-0 from-primary-800 to-primary-dark-950 py-20"
-  >
-    <div class="mx-auto max-w-6xl lg:pr-4">
-      <div class="my-9 text-center">
-        <p class="text-base font-semibold leading-7 text-primary-300">
-          {data.bookContent.upperHeading}
+      <!-- CTA section -->
+      <div class="mt-16 text-center">
+        <h2 class="text-3xl font-bold text-gray-900">
+          Need Personalized Marketing Help?
+        </h2>
+        <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
+          Our team specializes in helping flight schools attract more students
+          through strategic marketing.
         </p>
-        <h1 class="mt-0 text-6xl font-bold tracking-tight text-accent-300">
-          {data.bookContent.heading}
-        </h1>
+        <div class="mt-8">
+          <a
+            href="/schedule-call"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700"
+          >
+            Schedule a Free Consultation
+          </a>
+        </div>
       </div>
     </div>
-    <div>
-      {
-        data.bookContent.list && (
-          <div class="mt-12">
-            <ul
-              role="list"
-              class="mt-4 mx-auto space-y-8 text-gray-100 max-w-6xl"
-            >
-              {data.bookContent.list.map((item) => (
-                <li class="flex gap-x-3">
-                  <svg
-                    class="mt-1 size-10 flex-none text-accent-300"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d={item.icon}
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span class="leading-snug text-lg text-muted-200">
-                    <strong class="font-bold text-primary-dark-200 tracking-tight uppercase">
-                      {item.title}
-                    </strong>{" "}
-                    {item.descriptions.map((dec) => (
-                      <p class="mb-2" set:html={dec} />
-                    ))}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )
-      }
-      <div class="mx-auto mt-12 flex justify-center">
-        <DownloadBook client:visible />
-      </div>
-    </div>
-  </section>
-
-  <CaseStudiesVideo
-    upperHeading={data.caseStudies.upperHeading}
-    heading={data.caseStudies.heading}
-    cases={data.caseStudies.cases}
-  />
-</FunnelLayout>
+  </div>
+</BaseLayout>
