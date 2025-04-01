@@ -686,6 +686,13 @@ declare module 'astro:content' {
   collection: "crew";
   data: any
 } & { render(): Render[".md"] };
+"zach-hagely.md": {
+	id: "zach-hagely.md";
+  slug: "zach-hagely";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
 };
 "podcasts": {
 "arming-independent-cfis-and-specialty-flight-schools-to-thrive-with-orka.md": {
