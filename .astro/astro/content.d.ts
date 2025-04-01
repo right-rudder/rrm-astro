@@ -723,6 +723,13 @@ declare module 'astro:content' {
   collection: "podcasts";
   data: InferEntrySchema<"podcasts">
 } & { render(): Render[".md"] };
+"how-gordon-scaled-his-flight-school-from-one-leased-plane-to-70-aircraft-and-four-locations.md": {
+	id: "how-gordon-scaled-his-flight-school-from-one-leased-plane-to-70-aircraft-and-four-locations.md";
+  slug: "how-gordon-scaled-his-flight-school-from-one-leased-plane-to-70-aircraft-and-four-locations";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
 "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md": {
 	id: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent.md";
   slug: "how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent";
