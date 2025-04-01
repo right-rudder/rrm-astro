@@ -32,5 +32,6 @@ export default defineConfig({
     "/contact-us": "/contact",
     "/keywords": "/resources/flight-school-keywords",
     "search-engine-optimization": "/flight-school-seo",
+    "/flight-crew": "/about/who-we-are",
   },
 });

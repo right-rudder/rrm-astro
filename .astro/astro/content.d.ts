@@ -615,6 +615,85 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
+"crew": {
+"carol-cali.md": {
+	id: "carol-cali.md";
+  slug: "carol-cali";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"charles-ferguson.md": {
+	id: "charles-ferguson.md";
+  slug: "charles-ferguson";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"diego-yon.md": {
+	id: "diego-yon.md";
+  slug: "diego-yon";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"lucas-rodrigues.md": {
+	id: "lucas-rodrigues.md";
+  slug: "lucas-rodrigues";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"melvin-yabo.md": {
+	id: "melvin-yabo.md";
+  slug: "melvin-yabo";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"raul-ospina.md": {
+	id: "raul-ospina.md";
+  slug: "raul-ospina";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"sebastian-bruno.md": {
+	id: "sebastian-bruno.md";
+  slug: "sebastian-bruno";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"shaun-patrick.md": {
+	id: "shaun-patrick.md";
+  slug: "shaun-patrick";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"tim-jedrek.md": {
+	id: "tim-jedrek.md";
+  slug: "tim-jedrek";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"tonie-santos.md": {
+	id: "tonie-santos.md";
+  slug: "tonie-santos";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+"zach-hagely.md": {
+	id: "zach-hagely.md";
+  slug: "zach-hagely";
+  body: string;
+  collection: "crew";
+  data: any
+} & { render(): Render[".md"] };
+};
 "podcasts": {
 "arming-independent-cfis-and-specialty-flight-schools-to-thrive-with-orka.md": {
 	id: "arming-independent-cfis-and-specialty-flight-schools-to-thrive-with-orka.md";

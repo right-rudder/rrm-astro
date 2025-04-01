@@ -1,0 +1,231 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  FaExternalLinkSquareAlt,
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaYoutubeSquare,
+} from "react-icons/fa";
+import { FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6";
+
+export async function getStaticPaths() {
+  const crewData = await getCollection("crew"); // Get all entries from the 'crew' collection
+  return crewData.map((member) => ({
+    params: { slug: member.data.slug },
+  })); // Generate paths for each member using their slug
+}
+
+const { slug } = Astro.params; // Get the slug from the URL
+const crewData = await getCollection("crew"); // Fetch the corresponding crew member data
+const member = crewData.find((m) => m.data.slug === slug);
+
+if (!member) {
+  throw new Error(`Profile for ${slug} not found`);
+} // Handle 404 if no match
+
+const allPosts = await getCollection("blog"); // Get all blog posts by this author
+const authorPosts = allPosts
+  .filter((post) => post.data.author === member.data.name)
+  .sort((a, b) => {
+    const dateA = new Date(a.data.pubDate).getTime();
+    const dateB = new Date(b.data.pubDate).getTime();
+    return dateB - dateA;
+  });
+---
+
+<BaseLayout
+  siteTitle=`${member.data.name} | Right Rudder Marketing Flight Crew`
+  siteDescription=`This is a profile page for ${member.data.name}.  Right Rudder Marketing is a growing company that relies on the contributions of friends, family, partners, and an awesome hard working crew.  We are all passionate about the flight training business and our aim is to affect the aviation industry by training more safe and proficient pilots.`
+  keywords="team member, crew, CRM, crew resource management, teamwork, teamwork makes the dream work, all stars, developers, marketers, designers, copywriters, video-editors, full stack engineers, pilots, aviation consultant, aviation specialist, training, CFI, instructor"
+>
+  <div class="bg-primary-800 h-28 w-full"></div>
+  <section class="relative py-16">
+    <div class="container mx-auto px-4">
+      <div
+        class="relative flex flex-col min-w-0 max-w-4xl mx-auto break-words bg-white w-full mb-6 shadow-xl rounded-lg"
+      >
+        <div class="px-6">
+          <div class="mt-12 flex flex-wrap justify-center">
+            <div class="w-full lg:w-1/2 px-4 lg:order-2 flex justify-center">
+              <div class="relative rounded-xl overflow-hidden">
+                <img
+                  src={member.data.image}
+                  alt={member.data.name}
+                  class="object-cover bg-black"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-6">
+            <h1 class="text-5xl font-semibold leading-normal text-gray-700">
+              {member.data.name}
+            </h1>
+            <div
+              class="text-sm leading-normal mt-0 mb-2 text-gray-400 font-bold uppercase"
+            >
+              {member.data.title}
+            </div>
+            <div class="mb-2 text-gray-600 mt-10">
+              Status: <br />{
+                member.data.status === "active" && (
+                  <strong>Active RRM Crew Member</strong>
+                )
+              }
+              {
+                member.data.status === "former" && (
+                  <strong>Former RRM Crew Member</strong>
+                )
+              }
+              {
+                member.data.status === "external" && (
+                  <strong>Guest Contributor</strong>
+                )
+              }
+            </div>
+          </div>
+          <div class="text-center">
+            <div
+              class="mt-4 flex flex-wrap justify-center py-10 border-b border-gray-200"
+            >
+              <div class="w-full lg:w-9/12 px-4">
+                <h3 class="font-bold text-2xl capitalize">
+                  Connect with {member.data.name}
+                </h3>
+                <div class="mt-2 flex justify-center align-middle gap-1">
+                  {
+                    member.data.social.facebook && (
+                      <a
+                        href={member.data.social.facebook}
+                        class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                        target="_blank"
+                      >
+                        <FaFacebookSquare size="40" />
+                      </a>
+                    )
+                  }
+                  {
+                    member.data.social.instagram && (
+                      <a
+                        href={member.data.social.instagram}
+                        class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                        target="_blank"
+                      >
+                        <FaInstagramSquare size="40" />
+                      </a>
+                    )
+                  }
+                  {
+                    member.data.social.linkedin && (
+                      <a
+                        href={member.data.social.linkedin}
+                        class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                        target="_blank"
+                      >
+                        <FaLinkedin size="40" />
+                      </a>
+                    )
+                  }
+                  {
+                    member.data.social.twitter && (
+                      <a
+                        href={member.data.social.twitter}
+                        class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                        target="_blank"
+                      >
+                        <FaSquareXTwitter size="40" />
+                      </a>
+                    )
+                  }
+                  {
+                    member.data.social.github && (
+                      <a
+                        href={member.data.social.github}
+                        class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                        target="_blank"
+                      >
+                        <FaSquareGithub size="40" />
+                      </a>
+                    )
+                  }
+                  {
+                    member.data.social.website && (
+                      <a
+                        href={member.data.social.website}
+                        class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                        target="_blank"
+                      >
+                        <FaExternalLinkSquareAlt size="40" />
+                      </a>
+                    )
+                  }
+                  {
+                    member.data.social.youtube && (
+                      <a
+                        href={member.data.social.youtube}
+                        class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
+                        target="_blank"
+                      >
+                        <FaYoutubeSquare size="40" />
+                      </a>
+                    )
+                  }
+                  {
+                    member.data.social &&
+                      Object.keys(member.data.social).length === 0 && (
+                        <p>
+                          {member.data.name} did not provide any links or social
+                          media profiles
+                        </p>
+                      )
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-center pt-10">
+              <div class="w-full lg:w-9/12 px-4">
+                <p class="mb-4 text-lg leading-relaxed text-gray-700">
+                  {
+                    member.body ||
+                      member.data.name +
+                        " has not yet added their bio. Update coming soon."
+                  }
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-8 py-10 flex flex-wrap justify-center border-t border-gray-200"
+            >
+              <div class="w-full lg:w-9/12 px-4">
+                <h2 class="font-bold text-2xl capitalize">
+                  Published Articles
+                </h2>
+                <p class="mb-4 text-lg leading-relaxed text-gray-700">
+                  {
+                    authorPosts.length > 0 ? (
+                      <ul class="list-disc list-inside">
+                        {authorPosts.map((post) => (
+                          <li>
+                            <a
+                              class="hover:underline"
+                              href={`/blog/${post.slug}`}
+                            >
+                              {post.data.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>No published articles yet.</p>
+                    )
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
