@@ -1,6 +1,6 @@
 ---
 pubDate: "May 14, 2023"
-author: Tim Jedrek
+author: Tonie Santos
 title: "Automatically Import Leads From Your Website to Your CRM Using API"
 description: "As a flight school, your website is your primary means of communication with prospective student pilots. It's important to provide a smooth and streamlined experience for visitors, so they can easily find the information they need and take the next steps toward becoming a student pilot."
 heroImage: "/blog/screen-shot-discovery-flight-form.webp"
