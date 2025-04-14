@@ -187,6 +187,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"adapting-to-rising-training-costs-and-economic-challenges-in-2025.md": {
+	id: "adapting-to-rising-training-costs-and-economic-challenges-in-2025.md";
+  slug: "adapting-to-rising-training-costs-and-economic-challenges-in-2025";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "automatically-import-leads-from-your-website-to-your-crm-using-api.md": {
 	id: "automatically-import-leads-from-your-website-to-your-crm-using-api.md";
   slug: "automatically-import-leads-from-your-website-to-your-crm-using-api";
