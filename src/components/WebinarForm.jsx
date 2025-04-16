@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { FaBook } from "react-icons/fa";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+import {
+  formatPhoneNumber,
+  validatePhoneNumber,
+} from "../utils/phoneValidation";
 
 const WebinarForm = () => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
+  const [phoneValue, setPhoneValue] = useState("");
+  const [phoneError, setPhoneError] = useState("");
 
   const GHL_WEBINAR_FORM_WEBHOOK_URL =
     "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/e51e207e-85ac-4cd3-9db0-126855135855";
@@ -49,6 +55,21 @@ const WebinarForm = () => {
           error
         );
       });
+  };
+
+  // Handle phone input change
+  const handlePhoneChange = (e) => {
+    const input = e.target.value;
+
+    // Format the phone number
+    const formatted = formatPhoneNumber(input);
+
+    // Update the input with formatted value
+    setPhoneValue(formatted);
+
+    // Validate and set error if needed
+    const validation = validatePhoneNumber(formatted);
+    setPhoneError(validation.isValid ? "" : validation.errorMessage);
   };
 
   return (
@@ -123,7 +144,14 @@ const WebinarForm = () => {
                         autoComplete="tel"
                         className="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-primary-600/50 focus:ring focus:ring-primary-600/50 focus:border-primary-600/50"
                         required
+                        value={phoneValue}
+                        onChange={handlePhoneChange}
                       />
+                      {phoneError && (
+                        <p className="text-red-500 text-sm mt-1">
+                          {phoneError}
+                        </p>
+                      )}
                     </div>
                     <div className="mb-4">
                       <label
