@@ -14,8 +14,8 @@ const WebinarForm = () => {
   const [phoneValue, setPhoneValue] = useState("");
   const [phoneError, setPhoneError] = useState("");
 
-  const GHL_WEBINAR_FORM_WEBHOOK_URL =
-    "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/e51e207e-85ac-4cd3-9db0-126855135855";
+  const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env
+    .GHL_WEBINAR_FORM_WEBHOOK_URL;
 
   const toggleModal = () => {
     setShowModal(!showModal);
