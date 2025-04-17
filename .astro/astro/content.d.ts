@@ -208,6 +208,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"boost-student-engagement-and-safety-with-the-faa-wings-pilot-proficiency-program.md": {
+	id: "boost-student-engagement-and-safety-with-the-faa-wings-pilot-proficiency-program.md";
+  slug: "boost-student-engagement-and-safety-with-the-faa-wings-pilot-proficiency-program";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "boost-your-seo-with-schema-what-it-is-and-how-to-use-it.md": {
 	id: "boost-your-seo-with-schema-what-it-is-and-how-to-use-it.md";
   slug: "boost-your-seo-with-schema-what-it-is-and-how-to-use-it";
@@ -789,6 +796,13 @@ declare module 'astro:content' {
 "maximizing-flight-school-profits-with-ari-prevalla.md": {
 	id: "maximizing-flight-school-profits-with-ari-prevalla.md";
   slug: "maximizing-flight-school-profits-with-ari-prevalla";
+  body: string;
+  collection: "podcasts";
+  data: InferEntrySchema<"podcasts">
+} & { render(): Render[".md"] };
+"pilot-career-outlook-2025-preparing-your-students-for-the-aviation-job-boom.md": {
+	id: "pilot-career-outlook-2025-preparing-your-students-for-the-aviation-job-boom.md";
+  slug: "pilot-career-outlook-2025-preparing-your-students-for-the-aviation-job-boom";
   body: string;
   collection: "podcasts";
   data: InferEntrySchema<"podcasts">
