@@ -7,8 +7,8 @@ const DownloadKeywords = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
 
-  const GHL_KEYWORDS_FORM_WEBHOOK_URL =
-    "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/zwnSsEOCHmpChy19wNsv";
+  const GHL_KEYWORDS_FORM_WEBHOOK_URL = import.meta.env
+    .GHL_KEYWORDS_FORM_WEBHOOK_URL;
 
   const toggleModal = () => {
     setShowModal(!showModal);

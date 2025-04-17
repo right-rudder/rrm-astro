@@ -7,8 +7,7 @@ const DownloadBook = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
 
-  const GHL_BOOK_FORM_WEBHOOK_URL =
-    "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/W9bJqcUvnoqDjAgIRVii";
+  const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
 
   const toggleModal = () => {
     setShowModal(!showModal);

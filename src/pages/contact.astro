@@ -15,8 +15,8 @@ import {
   LOCATIONS,
 } from "../consts";
 
-const GHL_CONTACT_FORM_WEBHOOK_URL =
-  "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/b1071ba8-b834-4c1d-a84d-cc280f819c15";
+const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_CONTACT_FORM_WEBHOOK_URL;
 
 const { data } = contact;
 ---
@@ -332,4 +332,5 @@ const { data } = contact;
   </script>
 
   <script src="../scripts/emailValidation.js"></script>
+  <script src="../scripts/phoneValidation.js"></script>
 </BaseLayout>

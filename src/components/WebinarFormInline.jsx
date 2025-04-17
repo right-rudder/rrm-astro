@@ -1,11 +1,17 @@
 import { useState } from "react";
+import {
+  formatPhoneNumber,
+  validatePhoneNumber,
+} from "../utils/phoneValidation";
 
 const WebinarFormInline = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
+  const [phoneValue, setPhoneValue] = useState("");
+  const [phoneError, setPhoneError] = useState("");
 
-  const GHL_WEBINAR_FORM_WEBHOOK_URL =
-    "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/e51e207e-85ac-4cd3-9db0-126855135855";
+  const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env
+    .GHL_WEBINAR_FORM_WEBHOOK_URL;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,8 +41,26 @@ const WebinarFormInline = () => {
         }
       })
       .catch((error) => {
-        console.error("Network error occurred while submitting the form:", error);
+        console.error(
+          "Network error occurred while submitting the form:",
+          error
+        );
       });
+  };
+
+  // Handle phone input change
+  const handlePhoneChange = (e) => {
+    const input = e.target.value;
+
+    // Format the phone number
+    const formatted = formatPhoneNumber(input);
+
+    // Update the input with formatted value
+    setPhoneValue(formatted);
+
+    // Validate and set error if needed
+    const validation = validatePhoneNumber(formatted);
+    setPhoneError(validation.isValid ? "" : validation.errorMessage);
   };
 
   return (
@@ -44,12 +68,17 @@ const WebinarFormInline = () => {
       {!formSubmitted ? (
         <>
           <h2 className="text-4xl font-bold mb-4">Sign Up Here</h2>
-          <p className="mb-6">Fill out the form below get details sent to your directly for our next event.</p>
+          <p className="mb-6">
+            Fill out the form below get details sent to your directly for our
+            next event.
+          </p>
           <form onSubmit={handleSubmit} className="flex flex-col items-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
-            
               <div className="mb-4">
-                <label htmlFor="first-name" className="block mb-1 font-semibold">
+                <label
+                  htmlFor="first-name"
+                  className="block mb-1 font-semibold"
+                >
                   First Name
                 </label>
                 <input
@@ -84,7 +113,12 @@ const WebinarFormInline = () => {
                   name="phone"
                   className="w-full p-2 border border-gray-400 rounded-sm"
                   required
+                  value={phoneValue}
+                  onChange={handlePhoneChange}
                 />
+                {phoneError && (
+                  <p className="text-red-500 text-sm">{phoneError}</p>
+                )}
               </div>
               <div className="mb-4">
                 <label htmlFor="email" className="block mb-1 font-semibold">
@@ -100,9 +134,11 @@ const WebinarFormInline = () => {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row items-center lg:gap-10">
-            
               <div className="mb-4">
-                <label htmlFor="business-name" className="block mb-1 font-semibold">
+                <label
+                  htmlFor="business-name"
+                  className="block mb-1 font-semibold"
+                >
                   Business Name
                 </label>
                 <input
@@ -122,17 +158,20 @@ const WebinarFormInline = () => {
                 </label>
               </p>
               <div className="mb-4">
-                <label htmlFor="business-name" className="block mb-1 font-semibold opacity-0 lg:opacity-100">
+                <label
+                  htmlFor="business-name"
+                  className="block mb-1 font-semibold opacity-0 lg:opacity-100"
+                >
                   Click Button to Send
                 </label>
-                <button type="submit" className="w-56 p-2 border border-gray-400 rounded-sm btn-primary">
+                <button
+                  type="submit"
+                  className="w-56 p-2 border border-gray-400 rounded-sm btn-primary"
+                >
                   Register
                 </button>
               </div>
-
             </div>
-
-            
           </form>
         </>
       ) : (
@@ -141,7 +180,8 @@ const WebinarFormInline = () => {
             Thank you, {userName}, for registering!
           </h2>
           <p className="mb-4">
-            You will receive a confirmation email shortly. Please check your spam or junk folder if you do not see it.
+            You will receive a confirmation email shortly. Please check your
+            spam or junk folder if you do not see it.
           </p>
         </div>
       )}

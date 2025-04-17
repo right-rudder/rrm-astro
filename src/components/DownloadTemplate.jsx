@@ -7,8 +7,8 @@ const DownloadTemplate = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
 
-  const GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL =
-    "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/7aHRh9Ps86hhjOUwNIwU";
+  const GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL = import.meta.env
+    .GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL;
 
   const toggleModal = () => {
     setShowModal(!showModal);
