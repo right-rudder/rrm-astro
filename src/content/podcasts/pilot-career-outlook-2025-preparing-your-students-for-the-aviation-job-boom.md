@@ -31,8 +31,6 @@ tags:
   ]
 ---
 
-# Pilot Career Outlook 2025: Preparing Your Students for the Aviation Job Boom
-
 ## Industry Expert Kit Darby to Share Critical Insights on Right Rudder Podcast
 
 The aviation industry is on the cusp of a significant hiring surge, with projections indicating over 5,000 new pilot positions opening in 2025 alone. To help flight schools prepare their students for this opportunity, aviation career expert Captain Kit Darby will be sharing his insights on the upcoming Right Rudder Marketing Podcast.
@@ -71,7 +69,7 @@ This information will allow flight training operations to:
 
 **Live Broadcast:**
 
-- **Date:** Thursday, April 24th, 2025
+- **Date:** Thursday, April 17th, 2025
 - **Time:** 2:00 PM Central Daylight Time
 - **Platform:** Riverside Studio
 
