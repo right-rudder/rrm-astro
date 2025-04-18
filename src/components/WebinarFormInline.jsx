@@ -10,8 +10,9 @@ const WebinarFormInline = () => {
   const [phoneValue, setPhoneValue] = useState("");
   const [phoneError, setPhoneError] = useState("");
 
-  const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env
-    .GHL_WEBINAR_FORM_WEBHOOK_URL;
+  // Fix: Access environment variable properly
+  const GHL_WEBINAR_FORM_WEBHOOK_URL =
+    "https://services.leadconnectorhq.com/hooks/Tg7heLI3UCqo8uRITWhZ/webhook-trigger/e51e207e-85ac-4cd3-9db0-126855135855";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,6 +27,14 @@ const WebinarFormInline = () => {
     setUserName(name);
 
     const url = GHL_WEBINAR_FORM_WEBHOOK_URL;
+    console.log("Submitting form to URL:", url); // Add logging to debug
+
+    // Only proceed if URL is defined
+    if (!url) {
+      console.error("Webhook URL is undefined. Check environment variables.");
+      return;
+    }
+
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
