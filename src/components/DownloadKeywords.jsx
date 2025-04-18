@@ -2,13 +2,10 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { VscSymbolKeyword } from "react-icons/vsc";
 
-const DownloadKeywords = () => {
+const DownloadKeywords = ({ webhook }) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
-
-  const GHL_KEYWORDS_FORM_WEBHOOK_URL = import.meta.env
-    .GHL_KEYWORDS_FORM_WEBHOOK_URL;
 
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -26,7 +23,7 @@ const DownloadKeywords = () => {
     const name = formData.get("first-name");
     setUserName(name);
 
-    const url = GHL_KEYWORDS_FORM_WEBHOOK_URL;
+    const url = webhook;
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),

@@ -6,6 +6,11 @@ import DownloadKeywords from "./DownloadKeywords";
 import DownloadTemplate from "./DownloadTemplate";
 import DownloadGmb from "./DownloadGMB";
 import DownloadBook from "./DownloadBook";
+const GHL_GMB_FORM_WEBHOOK_URL = import.meta.env.GHL_GMB_FORM_WEBHOOK_URL;
+const GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL = import.meta.env.GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL;
+const GHL_CHECKLIST_FORM_WEBHOOK_URL = import.meta.env.GHL_CHECKLIST_FORM_WEBHOOK_URL;
+const GHL_KEYWORDS_FORM_WEBHOOK_URL = import.meta.env.GHL_KEYWORDS_FORM_WEBHOOK_URL;
+const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
 
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -77,19 +82,19 @@ if (!images[data.imagePath])
                 {data.buttons.map((btn) => (
                   <div>
                     {btn.modal && btn.name.includes("Checklist") && (
-                      <DownloadChecklist client:visible />
+                      <DownloadChecklist client:visible webhook={GHL_CHECKLIST_FORM_WEBHOOK_URL} />
                     )}
                     {btn.modal && btn.name.includes("Guide") && (
-                      <DownloadKeywords client:visible />
+                      <DownloadKeywords client:visible webhook={GHL_KEYWORDS_FORM_WEBHOOK_URL } />
                     )}
                     {btn.modal && btn.name.includes("Template") && (
-                      <DownloadTemplate client:visible />
+                      <DownloadTemplate client:visible webhook={GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL} />
                     )}
                     {btn.modal && btn.name.includes("GMB") && (
-                      <DownloadGmb client:visible />
+                      <DownloadGmb client:visible webhook={GHL_GMB_FORM_WEBHOOK_URL} />
                     )}
                     {btn.modal && btn.name.includes("Book") && (
-                      <DownloadBook client:visible />
+                      <DownloadBook client:visible webhook={GHL_BOOK_FORM_WEBHOOK_URL} />
                     )}
                     {!btn.modal && (
                       <a

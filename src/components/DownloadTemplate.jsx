@@ -2,13 +2,10 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { CgTemplate } from "react-icons/cg";
 
-const DownloadTemplate = () => {
+const DownloadTemplate = ({ webhook }) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
-
-  const GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL = import.meta.env
-    .GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL;
 
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -26,7 +23,7 @@ const DownloadTemplate = () => {
     const name = formData.get("first-name");
     setUserName(name);
 
-    const url = GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL;
+    const url = webhook;
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
