@@ -4,14 +4,11 @@ import {
   validatePhoneNumber,
 } from "../utils/phoneValidation";
 
-const WebinarFormInline = () => {
+const WebinarFormInline = ({ webhook }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
   const [phoneError, setPhoneError] = useState("");
-
-  const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env
-    .GHL_WEBINAR_FORM_WEBHOOK_URL;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +22,7 @@ const WebinarFormInline = () => {
     const name = formData.get("first-name");
     setUserName(name);
 
-    const url = GHL_WEBINAR_FORM_WEBHOOK_URL;
+    const url = webhook;
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
