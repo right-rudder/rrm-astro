@@ -2,12 +2,10 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { RiProfileLine } from "react-icons/ri";
 
-const DownloadGmb = () => {
+const DownloadGmb = ({ webhook }) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
-
-  const GHL_GMB_FORM_WEBHOOK_URL = import.meta.env.GHL_GMB_FORM_WEBHOOK_URL;
 
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -25,7 +23,7 @@ const DownloadGmb = () => {
     const name = formData.get("first-name");
     setUserName(name);
 
-    const url = GHL_GMB_FORM_WEBHOOK_URL;
+    const url = webhook;
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),

@@ -8,6 +8,7 @@ import ImageComp from "../../components/ImageComp.astro";
 import DownloadBook from "../../components/DownloadBook";
 import Testimonials from "../../components/Testimonials.astro";
 import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro";
+const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
 
 const { data } = flightSchoolHandbook;
 ---
@@ -189,7 +190,7 @@ const { data } = flightSchoolHandbook;
         )
       }
       <div class="mx-auto mt-12 flex justify-center">
-        <DownloadBook client:visible />
+        <DownloadBook client:visible webhook={GHL_BOOK_FORM_WEBHOOK_URL} />
       </div>
     </div>
   </section>
