@@ -24,7 +24,7 @@ tags:
 # The NEW 2025 SEO / GEO (Generative AI) Formula for Flight Schools  
 ### How to Get Your Flight School Aviation Business on the Top of Google Search and in AI (ChatGPT, etc.) Responses
 
-> **Live Webinar – Thursday, May 2 at 2 PM Central**  
+> **Live Webinar – Thursday, April 24 at 2 PM Central**  
 > Hosted by Tim Jedrek | Right Rudder Marketing
 
 ## Why This Webinar Matters
