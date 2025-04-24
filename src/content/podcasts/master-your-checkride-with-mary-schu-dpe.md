@@ -22,34 +22,43 @@ tags:
   ]
 ---
 
-## Master Your Checkride: LIVE Q&A with Mary Schu, FAA DPE & National Flight Instructor of the Year
+## A 50-Year Lens on Flight Training
 
-Join us Thursday, March 20 at 3 PM Central for an exclusive live podcast featuring Mary Schu. As an FAA Designated Pilot Examiner (DPE) and the 2015 National Flight Instructor of the Year, Mary will share:
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/JrmVQ6DKloQ?si=p7aDJ5buv78ISdpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-- Practical tips for excelling on your FAA checkride
-- Common mistakes students and CFIs make (and how to avoid them)
-- Secrets to becoming an exceptional flight instructor
+### What Flight Schools Can Learn from DPE Mary Shu’s Journey
 
-Bring your questions and tune in live!
+“I was told I was too old and too short. Years later, they came calling.”  
+These words from Designated Pilot Examiner Mary Shu land like a crosswind on final—sudden, sharp, and unforgettable. With five decades of aviation experience, Shu offers a rare, hard-earned perspective on how far aviation has come—and where flight schools may be veering off course.
 
-👉 [Join the Live Audience](https://riverside.fm/studio/podcast-40nqk)
+### From Underdog to Aviation Icon
 
-### Event Details
+Mary Shu's path into aviation was anything but traditional. Initially aspiring to become a Formula 1 driver, she shifted her sights skyward when she realized that opportunity was closed to women in her era. Her background in special education became a surprising asset, giving her the tools to connect with students and become a standout flight instructor. Her journey is proof that powerful educators often come from unexpected places.
 
-- **Date:** Thursday, March 20, 2025
-- **Time:** 3:00 PM Central Time
-- **Platform:** Riverside.fm
-- **Live Audience Link:** [Join Live on Riverside](https://riverside.fm/studio/podcast-40nqk)
+### Old-School Flight Training vs. the Modern Fast Track
 
-### What You'll Learn:
+Back in the 1970s, pilots-in-training earned their wings through hands-on experience and real-life problem-solving. Shu herself completed a 40-hour solo cross-country journey—an adventure that built confidence and shaped her into a skilled decision-maker.
 
-Mary Schu brings decades of aviation experience and expertise to this live discussion. She'll share:
+Today, many instructors see the role as a brief layover on the way to the airlines. Flight schools are embracing accelerated programs that prioritize speed and budget over depth and skill. Shu points out that under current systems, some students may qualify for commercial certification with fewer than five hours of solo cross-country time. That’s more than a red flag—it’s a distress call.
 
-- Essential qualities and practices for becoming an exceptional flight instructor.
-- Insider insights into the FAA practical test (checkride) process.
-- Common pitfalls student pilots and CFIs encounter—and how to overcome them.
+### The High Cost of Cutting Corners
 
-This episode provides a rare chance to gain valuable advice directly from a highly respected aviation professional.
+Reducing solo flight time and omitting tasks like self-serve fueling or navigating unfamiliar airports can save time, but it comes at a steep cost. Shu warns that students are missing opportunities to build the independence and confidence essential for airline careers. Real growth comes from navigating challenges—not just logging hours.
+
+### Four Strategies for Stronger Pilots
+
+Flight school owners have the power to reverse this trend. Here’s how:
+
+- **Reinvest in Solo Flight**: Go beyond the FAA minimums. Encourage students to venture out, challenge themselves, and gain true PIC experience.
+- **Foster Long-Term Instructors**: Develop a culture that values career CFIs. Offer pathways for growth, mentorship roles, and incentives to build a stable team.
+- **Teach Practical Skills**: Make real-world tasks like flight planning, fueling, and FBO navigation part of your training. These details matter.
+- **Adapt to the Individual**: One-size-fits-all timelines don’t work for everyone. Tailored training leads to stronger, more competent pilots.
+
+### The Final Approach
+
+Mary Shu’s legacy isn’t just about perseverance; it’s a blueprint for the future of flight training. As the aviation industry evolves, so must our standards. Let’s stop focusing on producing pilots faster and cheaper. Instead, let’s focus on producing pilots who are prepared, adaptable, and exceptional.
+
+Let’s raise the standard. Let’s honor Mary’s journey—not by speeding through the process, but by making every hour count.
 
 ### Watch the LIVE Stream:
 
@@ -57,5 +66,3 @@ This episode provides a rare chance to gain valuable advice directly from a high
 - [Right Rudder Marketing LinkedIn](https://www.linkedin.com/company/rightruddermarketing)
 - [Right Rudder Marketing Twitter](https://x.com/rightruddermktg)
 - [Tim Jedrek's Facebook](https://www.facebook.com/flightschoolmarketing)
-
-Don’t miss this engaging and informative session. Come prepared with your questions and join the conversation live!
