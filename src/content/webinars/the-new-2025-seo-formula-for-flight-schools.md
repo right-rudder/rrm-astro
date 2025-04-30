@@ -17,47 +17,102 @@ tags:
     "Claude",
     "Grok",
     "Gemini",
-    "ChatGPT"
+    "ChatGPT",
   ]
 ---
 
-# The NEW 2025 SEO / GEO (Generative AI) Formula for Flight Schools  
-### How to Get Your Flight School Aviation Business on the Top of Google Search and in AI (ChatGPT, etc.) Responses
+## How to Be Found in the Age of AI
 
-> **Live Webinar – Thursday, April 24 at 2 PM Central**  
-> Hosted by Tim Jedrek | Right Rudder Marketing
+**The rules of digital visibility have changed—and your flight school must evolve or risk getting left behind.**
 
-## Why This Webinar Matters
+If you're still relying solely on traditional SEO to attract student pilots, you're missing a rapidly growing opportunity. AI platforms like ChatGPT, Google Gemini, and Meta AI are now go-to tools for students researching flight training options.
 
-Search is changing. Your flight school can no longer rely on just showing up in Google search results. In 2025, prospective students are also using ChatGPT, Claude, Grok, and Gemini to get answers and recommendations — and flight schools that don’t optimize for this *new wave of AI results* are falling behind.
-
-That’s where **GEO** — Generative Engine Optimization — comes in.
-
-This free webinar will break down our proven SEO + GEO formula for 2025, used by some of the fastest-growing flight schools in the country. Whether you're running a Part 61 or 141 program, you'll walk away with real strategies to boost online visibility and student inquiries.
-
-## What You'll Learn
-
-- **How AI changes the SEO game** – Why Google isn’t the only platform that matters anymore
-- **What is GEO and why it’s the next big thing** – How to rank in ChatGPT, Claude, Grok, Gemini, and other AI tools
-- **Live SEO teardown** – We'll review a few flight school websites and show what’s working (and what’s not)
-- **2025 local SEO tactics** – Make sure you're found in “flight school near me” searches in your area
-- **Content strategies that actually convert** – Blog posts, YouTube, and landing pages built for both search and AI
-
-## Who Should Attend
-
-- Flight school owners and managers
-- Marketing teams in aviation training
-- CFIs looking to help their schools grow
-- Anyone who handles a school’s website, SEO, or lead generation
-
-## Reserve Your Spot
-
-**The webinar is free, but spots are limited.**  
-👉 [Click here to register](https://rightruddermarketing.com/webinars/the-new-2025-seo-formula-for-flight-schools/)
-
-Let’s help your flight school rise to the top — both in search and AI.
+Welcome to **GEO: Generative Engine Optimization**—the next frontier in online visibility.
 
 ---
 
-Want to learn more about how we help aviation schools grow?  
-Visit [Right Rudder Marketing](https://rightruddermarketing.com) or call **314-804-1200**.
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/Hk07uFiXTsw?si=zHD7ZIfeve8etMka" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+## What Is GEO and Why It Matters for Your School
+
+While SEO helps your school rank in Google search results, **GEO ensures your school gets recommended by AI-powered tools** when prospective students ask questions like, "What's the best flight school near me?"
+
+These AI engines pull from the **same core data signals** that fuel traditional SEO—including website structure, relevance, reviews, and authority.
+
+If you're already doing strong SEO, you're halfway there. But thriving in 2025 demands a system that supports both SEO and GEO success.
+
+---
+
+## The Flight School Marketing System (Built for GEO)
+
+Right Rudder Marketing's proven framework can help your school become the obvious choice in both search engines and generative platforms.
+
+### 1. Build a Conversion-Focused Website
+
+- Turn visitors into leads with clear CTAs, clickable phone numbers, and lead forms
+- Ensure your site is fast, mobile-friendly, and easy to navigate
+- Highlight training programs, tuition info, testimonials, and contact details
+
+### 2. Optimize Every Page for On-Page SEO
+
+- Use relevant keywords like "accelerated flight training in [City]"
+- Optimize images with descriptive alt text
+- Add schema markup for location, services, reviews, and FAQs
+
+### 3. Dominate Local Search and Maps
+
+- Optimize your Google Business Profile weekly
+- Add services, updates, and student success stories
+- Request reviews after key training milestones like solo flights and checkrides
+
+### 4. Create Content That AI Will Recommend
+
+- Answer popular student questions through detailed blog posts
+- Use structured headers, bullet points, and clear explanations
+- Include location-based keywords and internal links to boost relevance
+
+### 5. Build Off-Page Authority
+
+- Get listed in trusted directories like AOPA, Bing, Yelp, and Apple Maps
+- Publish press releases and collaborate with local aviation organizations
+- Earn backlinks from aviation websites, forums, and media outlets
+
+### 6. Run High-Performance Ad Campaigns
+
+- Launch targeted ads on Google, Facebook, Instagram, and YouTube
+- Direct paid traffic to high-converting landing pages
+- Use retargeting ads to stay top-of-mind with recent visitors
+
+---
+
+## How AI Bots Choose Flight Schools to Recommend
+
+In the 2025 SEO + GEO Webinar, Tim Dreick demonstrated that **AI-generated recommendations closely match Google’s organic rankings**.
+
+That means the effort you put into SEO not only improves your Google visibility—it increases the chances of your school being mentioned by tools like ChatGPT, Gemini, and Grok.
+
+---
+
+## Your 2025 Action Plan
+
+✅ **Audit your current SEO and GEO readiness**  
+✅ **Fix your weakest link first** (website speed, low reviews, outdated content)  
+✅ **Automate follow-up with a CRM system** to reduce lead drop-off  
+✅ **Publish fresh content monthly** to maintain visibility and relevance  
+✅ **Consider a specialized partner** who understands the aviation industry and digital marketing
+
+---
+
+## Want to Be the #1 Recommended School in Your Market?
+
+Right Rudder Marketing offers a free flight school marketing handbook and consultation to help you get ahead in 2025.
+
+Whether you’re launching a new program or scaling a busy flight academy, now is the time to build your presence in both search engines and generative platforms.
+
+**Stay found. Stay booked. Stay flying.**
+
+👉 Visit [rightruddermarketing.com](https://rightruddermarketing.com/) to claim your free resources and start building your GEO advantage today.
+
+---
