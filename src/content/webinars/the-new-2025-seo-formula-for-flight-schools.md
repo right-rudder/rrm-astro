@@ -29,9 +29,14 @@ If you're still relying solely on traditional SEO to attract student pilots, you
 
 Welcome to **GEO: Generative Engine Optimization**—the next frontier in online visibility.
 
+GEO is the process of optimizing your flight school’s online presence to ensure it gets recommended by AI engines. This includes everything from Google Search to AI chatbots and generative platforms. GEO stands for **Generative Engine Optimization** and is the new frontier in digital marketing.
+In our recent webinar, Tim Jedrek, Right Rudder Marketing's Director of SEO, shared the latest strategies to ensure your flight school is found in both traditional search engines and AI-powered platforms.
+
 ---
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/Hk07uFiXTsw?si=zHD7ZIfeve8etMka" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/Hk07uFiXTsw?si=zHD7ZIfeve8etMka" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>  
+    Your browser does not support iframes. You can watch the video directly on <a href="https://www.youtube.com/watch?v=Hk07uFiXTsw" target="_blank" rel="noopener noreferrer">YouTube</a>.  
+</iframe>
 
 ---
 
@@ -89,7 +94,7 @@ Right Rudder Marketing's proven framework can help your school become the obviou
 
 ## How AI Bots Choose Flight Schools to Recommend
 
-In the 2025 SEO + GEO Webinar, Tim Dreick demonstrated that **AI-generated recommendations closely match Google’s organic rankings**.
+In the 2025 SEO + GEO Webinar, Tim Jedrek demonstrated that **AI-generated recommendations closely match Google’s organic rankings**.
 
 That means the effort you put into SEO not only improves your Google visibility—it increases the chances of your school being mentioned by tools like ChatGPT, Gemini, and Grok.
 
