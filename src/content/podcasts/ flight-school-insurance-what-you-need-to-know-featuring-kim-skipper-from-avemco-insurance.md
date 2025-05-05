@@ -1,5 +1,5 @@
 ---
-pubDate: "May 5, 2025"
+pubDate: "May 8, 2025"
 author: Tim Jedrek
 title: "Flight School Insurance: What You Need to Know Featuring Kim Skipper from Avemco Insurance"
 description: "Discover expert insurance tips for flight schools from Kim Skipper of Avemco. Learn how to manage risk, reduce premiums, and avoid costly policy mistakes with insights from the Aviation Business Podcast."
@@ -28,7 +28,7 @@ tags:
 
 Flight schools face unique challenges when it comes to managing risk—and the right insurance policy can make all the difference. In this episode of the Aviation Business Podcast, Kim Skipper from Avemco Insurance shares expert insights on avoiding costly mistakes, managing premiums, and keeping both students and assets protected.
 
-[**Attend Live - May 5 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
+[**Attend Live - May 8 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
 
 ### Common Risks for Flight Schools
 
@@ -42,7 +42,7 @@ Many schools mistakenly believe a basic policy is enough. Kim explains how insur
 
 When a student damages an aircraft, liability depends on the school’s structure. Kim emphasizes the importance of requiring non-owned aircraft coverage from students and renters. To avoid confusion, schools should outline coverage expectations clearly—via orientations, rental agreements, and formal policies.
 
-[**Attend Live - May 5 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
+[**Attend Live - May 8 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
 
 ### How to Lower Your Premiums
 
@@ -59,7 +59,7 @@ Avemco rewards schools with strong safety programs, including participation in t
 
 With pilot training demand on the rise, claims are increasing. Kim highlights new risks like underprepared students, accelerated timelines, and heavy wear on training fleets. She urges schools to maintain aircraft proactively and manage instructor workloads to prevent fatigue-related incidents.
 
-[**Attend Live - May 5 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
+[**Attend Live - May 8 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
 
 ### What Sets Avemco Apart
 
@@ -76,7 +76,7 @@ To request a quote or speak with an underwriter, visit [https://avemco.com](http
 - **Event**: Aviation Business Podcast
 - **Host**: Tim Jedrek
 - **Guest**: Kim Skipper, Avemco Insurance
-- **Date**: May 5, 2025
+- **Date**: May 8, 2025
 - **Time**: 2:00 PM - 3:00 PM (CDT)
 - **Duration**: 1 hour
 - **Platform**: Riverside Studio
