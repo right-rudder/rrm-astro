@@ -5,6 +5,6 @@ title: Operational Excellence Manager
 social:
   linkedin: "https://www.linkedin.com/in/shaunpstakem/"
 image: /authors/Shaun-Stakem-RRM-Headshot.webp
-status: active
+status: former
 seniority: 7
 ---
