@@ -215,6 +215,12 @@ const partnersAffiliates = {
           imageAlt: "NeedleNine logo",
           link: "https://needlenine.com/",
         },
+        {
+          name: "Avemco Insurance",
+          imagePath: "/src/assets/Avemcologo.png",
+          imageAlt: "Avemco Insurance logo",
+          link: "https://www.avemco.com/",
+        },
       ],
     },
 
