@@ -33,5 +33,7 @@ export default defineConfig({
     "/keywords": "/resources/flight-school-keywords",
     "search-engine-optimization": "/flight-school-seo",
     "/flight-crew": "/about/who-we-are",
+    "/webinars/your-2025-digital-marketing-plan-for-flight-school-businesses":
+      "/webinars/your-2026-digital-marketing-plan-for-flight-school-businesses/",
   },
 });

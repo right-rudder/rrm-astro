@@ -28,7 +28,7 @@ tags:
 
 Flight schools face unique challenges when it comes to managing risk—and the right insurance policy can make all the difference. In this episode of the Aviation Business Podcast, Kim Skipper from Avemco Insurance shares expert insights on avoiding costly mistakes, managing premiums, and keeping both students and assets protected.
 
-[**Attend Live - May 8 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/lelvKTCLbt0?si=lN9S8gZaFQmHiNBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Common Risks for Flight Schools
 
@@ -41,8 +41,6 @@ Many schools mistakenly believe a basic policy is enough. Kim explains how insur
 ### Coverage for Students and Renters
 
 When a student damages an aircraft, liability depends on the school’s structure. Kim emphasizes the importance of requiring non-owned aircraft coverage from students and renters. To avoid confusion, schools should outline coverage expectations clearly—via orientations, rental agreements, and formal policies.
-
-[**Attend Live - May 8 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
 
 ### How to Lower Your Premiums
 
@@ -59,8 +57,6 @@ Avemco rewards schools with strong safety programs, including participation in t
 
 With pilot training demand on the rise, claims are increasing. Kim highlights new risks like underprepared students, accelerated timelines, and heavy wear on training fleets. She urges schools to maintain aircraft proactively and manage instructor workloads to prevent fatigue-related incidents.
 
-[**Attend Live - May 8 - 2 PM CDT**](https://riverside.fm/studio/podcast-40nqk)
-
 ### What Sets Avemco Apart
 
 Avemco underwrites its own policies and focuses exclusively on general aviation. There’s no need for a broker—flight school owners can speak directly with underwriters to customize their coverage. Avemco also supports schools with safety programs, risk management resources, and policy flexibility.
@@ -68,19 +64,6 @@ Avemco underwrites its own policies and focuses exclusively on general aviation.
 ### How to Get a Quote or Talk to Avemco
 
 To request a quote or speak with an underwriter, visit [https://avemco.com](https://avemco.com) or call 800-638-8440. Kim encourages schools to be proactive—don’t wait until after an incident to uncover coverage gaps.
-
----
-
-### Event Details
-
-- **Event**: Aviation Business Podcast
-- **Host**: Tim Jedrek
-- **Guest**: Kim Skipper, Avemco Insurance
-- **Date**: May 8, 2025
-- **Time**: 2:00 PM - 3:00 PM (CDT)
-- **Duration**: 1 hour
-- **Platform**: Riverside Studio
-- **Attend Live**: [Riverside](https://riverside.fm/studio/podcast-40nqk)
 
 ---
 

@@ -76,8 +76,7 @@ const homePage = {
           imageAlt: "Ideal Aviation logo",
           youtubeId: "SD8TsqJSX00",
           quote: "I think the growth speaks for itself",
-          result:
-            "Blue Skies Above is a flight school in Lanett, AL just a few miles away from Auburn, AL.  Over the past year, they have seen their flight school explode in growth.  They expanded their fleet and bought a like-new Cessna 172 to handle the TAA and commercial load and they are on their way to acquiring another plane to add to their fleet just to keep up with the demand.",
+          result: `<strong class="font-black">Blue Skies Above</strong> is a flight school in Lanett, AL just a few miles away from Auburn, AL.  Over the past year, they have seen their flight school explode in growth.  They expanded their fleet and bought a like-new Cessna 172 to handle the TAA and commercial load and they are on their way to acquiring another plane to add to their fleet just to keep up with the demand.`,
           link: "/our-flight-schools/blue-skies-above",
           metric1: {
             label: "Growth under a year",
@@ -95,8 +94,7 @@ const homePage = {
           youtubeId: "qzT8Q49ExUw",
           quote:
             "They understand aviation and pilots <br> which is a huge help.",
-          result:
-            "SimpliFly gets flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.  They are seeing 10 times the amount of leads coming in since first working with us and managed to increase the average LTV (life time value) of each student customer by narrowing their focus to offer programs solely for career track pilots.",
+          result: `<strong class="font-black">SimpliFly</strong> gets flooded with inquiries and phone calls asking about their flight school. They're ranking on the first page of Google Search and Google Maps.  They are seeing 10 times the amount of leads coming in since first working with us and managed to increase the average LTV (life time value) of each student customer by narrowing their focus to offer programs solely for career track pilots.`,
           link: "/our-flight-schools/simplifly",
           metric1: {
             label: "Total Leads",
@@ -114,8 +112,7 @@ const homePage = {
           youtubeId: "c1Pe9XJdsbo",
           quote:
             "Right Rudder Marketing <br class='lg:hidden'> has been a game changer.",
-          result:
-            "Ideal Aviation ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.",
+          result: `<strong class="font-black">Ideal Aviation</strong> ranks number one on the first page of Google Search and Google Maps. With their partnership at a local college, they welcomed 9 new students in the Fall 2023 semester to their fixed wing pilot training program generating more than an estimated $90,000 in future revenue for just getting their private done.  They now have a waiting list of upcoming student pilots and are always expanding their fleet.`,
           link: "/our-flight-schools/ideal-aviation",
           metric1: {
             label: "Monthly Leads",
@@ -366,7 +363,8 @@ const homePage = {
     },
     blogfeedtop: {
       heading: "Popular Blog Articles",
-      description: "Top aviation marketing content that people keep coming back to",
+      description:
+        "Top aviation marketing content that people keep coming back to",
     },
 
     flyWithUsCTA: {
