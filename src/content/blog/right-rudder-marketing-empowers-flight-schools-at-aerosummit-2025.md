@@ -36,7 +36,7 @@ Founder Tim Jedrek didn’t mince words: the aviation industry is evolving, and 
 
 ---
 
-![Right Rudder Marketing at AeroSummit 2025](/blog/Right-Rudder-Marketing-at-Aerosummit-2025-1.webp)
+![Tim Jedrek presenting Right Rudder Marketing's digital strategies at AeroSummit 2025, with a backdrop showcasing aviation-themed visuals.](/blog/Right-Rudder-Marketing-at-Aerosummit-2025-1.webp)
 _Right Rudder Marketing at AeroSummit 2025_
 
 ---
