@@ -3,9 +3,8 @@ pubDate: "June 26, 2025"
 author: Tim Jedrek
 title: "Implementing a Continuous Improvement FLY Program at Your Flight School"
 description: "Ready to elevate your flight school’s operations and leadership? Join us for an engaging webinar, 'Implementing a Continuous Improvement FLY Program at Your Flight School,' where we introduce the FLY framework—Future Planning, Leadership Development, and Why. Based on the proven EOS (Entrepreneurial Operating System) framework, this program is designed to help flight school owners and managers streamline operations, develop strong leaders, and drive long-term growth."
-heroImage: "/blog/woman-and-flight-instructor.webp"
+heroImage: "/webinars/Right-Rudder-Marketing-June-webinar.webp"
 readingTime: 5
-status: "draft"
 category: "Business"
 tags:
   [
@@ -15,17 +14,18 @@ tags:
     "Entrepreneurship",
     "Marketing",
     "AI in Marketing",
-    "Digital Marketing"
+    "Digital Marketing",
   ]
 ---
-Continuous improvement is essential to growing your aviation business. At Right Rudder Marketing, we employ what we call a FLY program.  A well-designed FLY Program (Future Planning, Leadership Development, and Why) can help your flight school elevate performance, improve student outcomes, and stay ahead of the competition. Here's how to build one from the ground up. We base these principles on the EOS (Entrepreneur Operating System) framework.
+
+Continuous improvement is essential to growing your aviation business. At Right Rudder Marketing, we employ what we call a FLY program. A well-designed FLY Program (Future Planning, Leadership Development, and Why) can help your flight school elevate performance, improve student outcomes, and stay ahead of the competition. Here's how to build one from the ground up. We base these principles on the EOS (Entrepreneur Operating System) framework.
 
 Tune in on June 26 to learn how to implement continuous improvement at your flight school.
 
 ## Event Details
-Date: June 26
-Time: 2 PM Central / 3 PM Eastern
 
+- **Date:** June 26
+- **Time:** 2 PM Central / 3 PM Eastern
 
 ## 1. Future Planning: Aligning Vision and Strategy
 
@@ -53,6 +53,6 @@ Time: 2 PM Central / 3 PM Eastern
 
 ## Conclusion
 
-The FLY Program is a mindset for the organization that needs to be maintained in your company culture.  It is not a one time thing that gets left behind after the first meeting.  When implemented intentionally, it can transform your flight school into a purpose-driven, high-performance organization. Start small, stay consistent, and watch your school soar.
+The FLY Program is a mindset for the organization that needs to be maintained in your company culture. It is not a one time thing that gets left behind after the first meeting. When implemented intentionally, it can transform your flight school into a purpose-driven, high-performance organization. Start small, stay consistent, and watch your school soar.
 
 Want to see the FLY Program in action? Join our upcoming webinar for real-world examples and expert insights you can apply immediately.
