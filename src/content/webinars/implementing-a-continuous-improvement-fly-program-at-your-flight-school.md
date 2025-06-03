@@ -53,6 +53,6 @@ Tune in on June 26 to learn how to implement continuous improvement at your flig
 
 ## Conclusion
 
-The FLY Program is a mindset for the organization that needs to be maintained in your company culture. It is not a one time thing that gets left behind after the first meeting. When implemented intentionally, it can transform your flight school into a purpose-driven, high-performance organization. Start small, stay consistent, and watch your school soar.
+The FLY Program is a mindset for the organization that needs to be maintained in your company culture. It is not a one-time thing that gets left behind after the first meeting. When implemented intentionally, it can transform your flight school into a purpose-driven, high-performance organization. Start small, stay consistent, and watch your school soar.
 
 Want to see the FLY Program in action? Join our upcoming webinar for real-world examples and expert insights you can apply immediately.
