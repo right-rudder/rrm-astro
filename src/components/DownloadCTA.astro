@@ -7,18 +7,21 @@ import DownloadTemplate from "./DownloadTemplate";
 import DownloadGmb from "./DownloadGMB";
 import DownloadBook from "./DownloadBook";
 const GHL_GMB_FORM_WEBHOOK_URL = import.meta.env.GHL_GMB_FORM_WEBHOOK_URL;
-const GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL = import.meta.env.GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL;
-const GHL_CHECKLIST_FORM_WEBHOOK_URL = import.meta.env.GHL_CHECKLIST_FORM_WEBHOOK_URL;
-const GHL_KEYWORDS_FORM_WEBHOOK_URL = import.meta.env.GHL_KEYWORDS_FORM_WEBHOOK_URL;
+const GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL;
+const GHL_CHECKLIST_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_CHECKLIST_FORM_WEBHOOK_URL;
+const GHL_KEYWORDS_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_KEYWORDS_FORM_WEBHOOK_URL;
 const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
-
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
 if (!images[data.imagePath])
   throw new Error(
-    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
   );
 ---
 
@@ -82,19 +85,39 @@ if (!images[data.imagePath])
                 {data.buttons.map((btn) => (
                   <div>
                     {btn.modal && btn.name.includes("Checklist") && (
-                      <DownloadChecklist client:visible webhook={GHL_CHECKLIST_FORM_WEBHOOK_URL} />
+                      <DownloadChecklist
+                        client:visible
+                        webhook={GHL_CHECKLIST_FORM_WEBHOOK_URL}
+                        apiKey={PORTAL_API_KEY}
+                      />
                     )}
                     {btn.modal && btn.name.includes("Guide") && (
-                      <DownloadKeywords client:visible webhook={GHL_KEYWORDS_FORM_WEBHOOK_URL } />
+                      <DownloadKeywords
+                        client:visible
+                        webhook={GHL_KEYWORDS_FORM_WEBHOOK_URL}
+                        apiKey={PORTAL_API_KEY}
+                      />
                     )}
                     {btn.modal && btn.name.includes("Template") && (
-                      <DownloadTemplate client:visible webhook={GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL} />
+                      <DownloadTemplate
+                        client:visible
+                        webhook={GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL}
+                        apiKey={PORTAL_API_KEY}
+                      />
                     )}
                     {btn.modal && btn.name.includes("GMB") && (
-                      <DownloadGmb client:visible webhook={GHL_GMB_FORM_WEBHOOK_URL} />
+                      <DownloadGmb
+                        client:visible
+                        webhook={GHL_GMB_FORM_WEBHOOK_URL}
+                        apiKey={PORTAL_API_KEY}
+                      />
                     )}
                     {btn.modal && btn.name.includes("Book") && (
-                      <DownloadBook client:visible webhook={GHL_BOOK_FORM_WEBHOOK_URL} />
+                      <DownloadBook
+                        client:visible
+                        webhook={GHL_BOOK_FORM_WEBHOOK_URL}
+                        apiKey={PORTAL_API_KEY}
+                      />
                     )}
                     {!btn.modal && (
                       <a

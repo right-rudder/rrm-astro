@@ -6,8 +6,9 @@ import { KEYWORDS } from "../consts";
 import WebinarForm from "../components/WebinarForm";
 import WebinarFormInline from "../components/WebinarFormInline";
 import { slugify } from "../utils/slugify.js";
-const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env.GHL_WEBINAR_FORM_WEBHOOK_URL;
-
+const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_WEBINAR_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 type Props = CollectionEntry<"webinars">["data"];
 
 const {
@@ -36,7 +37,11 @@ const {
       {
         pubDate.valueOf() > new Date().valueOf() && (
           <div class="my-8 text-center grid place-items-center">
-            <WebinarFormInline client:visible webhook={GHL_WEBINAR_FORM_WEBHOOK_URL} />
+            <WebinarFormInline
+              client:visible
+              webhook={GHL_WEBINAR_FORM_WEBHOOK_URL}
+              apiKey={PORTAL_API_KEY}
+            />
           </div>
         )
       }
@@ -98,7 +103,11 @@ const {
         pubDate.valueOf() > new Date().valueOf() && (
           <div class="my-8 px-3 lg:px-0 text-center w-full">
             <hr />
-            <WebinarForm client:visible webhook={GHL_WEBINAR_FORM_WEBHOOK_URL} />
+            <WebinarForm
+              client:visible
+              webhook={GHL_WEBINAR_FORM_WEBHOOK_URL}
+              apiKey={PORTAL_API_KEY}
+            />
           </div>
         )
       }
