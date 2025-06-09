@@ -1,11 +1,10 @@
 ---
-pubDate: "April 16, 2025"
+pubDate: "May 20, 2025"
 author: Tim Jedrek
 title: "How to maximize your student enrollment with Paid Search & Google Ads"
 description: "In the competitive landscape of flight training, attracting new students is crucial for the success of your flight school. While organic SEO plays a vital role, paid search advertising, specifically through Google Ads, can be a powerful tool to drive immediate results and boost enrollment. This guide will explore effective strategies to maximize your student enrollment using paid search and Google Ads."
-heroImage: "/blog/woman and flight instructor.webp"
+heroImage: "/webinars/Right-Rudder-Marketing-May-2025-Webinar.webp"
 readingTime: 5
-status: "draft"
 category: "Marketing"
 tags:
   [
@@ -21,6 +20,19 @@ tags:
 ---
 
 In the competitive landscape of flight training, attracting new students is crucial for the success of your flight school. While organic SEO plays a vital role, paid search advertising, specifically through Google Ads, can be a powerful tool to drive immediate results and boost enrollment. This guide will explore effective strategies to maximize your student enrollment using paid search and Google Ads.
+
+---
+
+### Event Details
+
+- **Date:** May 20, 2025
+- **Time:** 10:00 AM - 11:00 AM CDT
+- **Location:** Online Webinar Registration
+- **Host:** Right Rudder Marketing
+- **Speaker:** Tim Jedrek, Founder of Right Rudder Marketing
+- **Duration:** 1 hour
+
+---
 
 ## 1. Define Clear Objectives & Target Audience
 

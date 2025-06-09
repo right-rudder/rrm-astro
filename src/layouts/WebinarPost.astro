@@ -32,7 +32,7 @@ const {
 >
   <div class="h-20 lg:h-28 w-full bg-primary-dark-800/80"></div>
 
-  <section class="relative overflow-hidden py-24 sm:py-32">
+  <section class="relative overflow-hidden lg:py-8">
     <article class="mx-auto w-full max-w-4xl">
       {
         pubDate.valueOf() > new Date().valueOf() && (
@@ -46,7 +46,7 @@ const {
         )
       }
 
-      <div class="mb-12 lg:mb-0">
+      <div class="mb-0">
         {
           heroImage && (
             <img
@@ -69,7 +69,7 @@ const {
               )
             }
           </div>
-          <h1 class="text-4xl md:text-5xl m-0 font-sans">{title}</h1>
+          <h1 class="text-3xl md:text-5xl m-0 font-sans">{title}</h1>
           <p class="text-sm font-light">Written by:</p>
           <a href={`/flight-crew/${slugify(author)}`}>
             <p class="-mt-5 text-base font-medium">{author}</p>
