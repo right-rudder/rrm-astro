@@ -9,7 +9,7 @@ import DownloadBook from "../../components/DownloadBook";
 import Testimonials from "../../components/Testimonials.astro";
 import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro";
 const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
-
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { data } = flightSchoolHandbook;
 ---
 
@@ -19,46 +19,50 @@ const { data } = flightSchoolHandbook;
   keywords={data.pageKeywords}
   content={data.checklistCTA}
 >
- <!-- Schema.org JSON-LD structured data -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Book",
-    "name": "Flight School Handbook of Marketing Knowledge",
-    "author": {
-      "@type": "Organization",
-      "name": "Right Rudder Marketing"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Right Rudder Marketing",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://rightruddermarketing.com/RRM-hor-textBlack-bgTrans-524.webp"
-      }
-    },
-    "description": "A comprehensive guide for flight school owners on marketing, business growth, and operational excellence in the aviation training industry.",
-    "inLanguage": "en-US",
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "Flight School Marketing"
+  <!-- Schema.org JSON-LD structured data -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Book",
+      name: "Flight School Handbook of Marketing Knowledge",
+      author: {
+        "@type": "Organization",
+        name: "Right Rudder Marketing",
       },
-      {
-        "@type": "Thing",
-        "name": "Aviation Business Growth"
+      publisher: {
+        "@type": "Organization",
+        name: "Right Rudder Marketing",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://rightruddermarketing.com/RRM-hor-textBlack-bgTrans-524.webp",
+        },
       },
-      {
-        "@type": "Thing",
-        "name": "Flight Training Operations"
-      }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "availability": "https://schema.org/InStock",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  })}></script>
+      description:
+        "A comprehensive guide for flight school owners on marketing, business growth, and operational excellence in the aviation training industry.",
+      inLanguage: "en-US",
+      about: [
+        {
+          "@type": "Thing",
+          name: "Flight School Marketing",
+        },
+        {
+          "@type": "Thing",
+          name: "Aviation Business Growth",
+        },
+        {
+          "@type": "Thing",
+          name: "Flight Training Operations",
+        },
+      ],
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+        price: "0",
+        priceCurrency: "USD",
+      },
+    })}
+  />
   <!-- HEADER -->
   <Header data={data.header} />
 
@@ -190,7 +194,11 @@ const { data } = flightSchoolHandbook;
         )
       }
       <div class="mx-auto mt-12 flex justify-center">
-        <DownloadBook client:visible webhook={GHL_BOOK_FORM_WEBHOOK_URL} />
+        <DownloadBook
+          client:visible
+          webhook={GHL_BOOK_FORM_WEBHOOK_URL}
+          apiKey={PORTAL_API_KEY}
+        />
       </div>
     </div>
   </section>

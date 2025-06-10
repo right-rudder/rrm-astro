@@ -3,14 +3,14 @@ import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import DownloadBook from "./DownloadBook";
 const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
-
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
 if (!images[data.imagePath])
   throw new Error(
-    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
   );
 ---
 
@@ -45,7 +45,11 @@ if (!images[data.imagePath])
         )}
         {data.modal && (
           <div class="mx-auto mt-12 flex justify-center">
-            <DownloadBook client:visible webhook={GHL_BOOK_FORM_WEBHOOK_URL} />
+            <DownloadBook
+              client:visible
+              webhook={GHL_BOOK_FORM_WEBHOOK_URL}
+              apiKey={PORTAL_API_KEY}
+            />
           </div>
         )}
         {data.buttons && (

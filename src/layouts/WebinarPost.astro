@@ -8,7 +8,7 @@ import WebinarFormInline from "../components/WebinarFormInline";
 import { slugify } from "../utils/slugify.js";
 const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env
   .GHL_WEBINAR_FORM_WEBHOOK_URL;
-
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 type Props = CollectionEntry<"webinars">["data"];
 
 const {
@@ -40,6 +40,7 @@ const {
             <WebinarFormInline
               client:visible
               webhook={GHL_WEBINAR_FORM_WEBHOOK_URL}
+              apiKey={PORTAL_API_KEY}
             />
           </div>
         )
@@ -105,6 +106,7 @@ const {
             <WebinarForm
               client:visible
               webhook={GHL_WEBINAR_FORM_WEBHOOK_URL}
+              apiKey={PORTAL_API_KEY}
             />
           </div>
         )
