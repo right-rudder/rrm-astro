@@ -19,10 +19,6 @@ const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
   .GHL_CONTACT_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
-if (!PORTAL_API_KEY) {
-  console.error("Error: PORTAL_API_KEY is not defined in the environment variables.");
-  throw new Error("Missing required environment variable: PORTAL_API_KEY");
-}
 const { data } = contact;
 ---
 
@@ -266,14 +262,14 @@ const { data } = contact;
         submitButton.classList.remove(
           "cursor-not-allowed",
           "bg-gray-400",
-          "hover:bg-gray-400",
+          "hover:bg-gray-400"
         );
       } else {
         submitButton.disabled = true;
         submitButton.classList.add(
           "cursor-not-allowed",
           "bg-gray-400",
-          "hover:bg-gray-400",
+          "hover:bg-gray-400"
         );
       }
     });
