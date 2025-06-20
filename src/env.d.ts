@@ -10,6 +10,7 @@ interface ImportMetaEnv {
   readonly GHL_KEYWORDS_FORM_WEBHOOK_URL: string;
   readonly GHL_BOOK_FORM_WEBHOOK_URL: string;
   readonly ENROLLMENT_FORM_WEBHOOK_URL: string;
+  readonly PORTAL_API_KEY: string;
 }
 
 interface ImportMeta {
