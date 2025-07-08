@@ -1,0 +1,112 @@
+---
+import { LOCATIONS, PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
+
+interface Props {
+  pageName?: string;
+  serviceOffered?: string[];
+  reviews?: {
+    rating: number;
+    reviewCount: number;
+    reviews?: Array<{
+      author: string;
+      rating: number;
+      text: string;
+      date: string;
+    }>;
+  };
+}
+
+const {
+  pageName = "Right Rudder Marketing",
+  serviceOffered = [],
+  reviews,
+} = Astro.props;
+
+const location = LOCATIONS[0]; // Main office location
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness", "DigitalMarketingAgency"],
+  name: pageName,
+  description:
+    "Leading digital marketing agency specializing in flight school marketing and aviation business growth. We help flight schools increase student enrollment through proven SEO, PPC, and digital marketing strategies.",
+  url: "https://rightruddermarketing.com/",
+  telephone: PHONE_NUMBER,
+  email: EMAIL_ADDRESS,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: location.address,
+    addressLocality: location.city,
+    addressRegion: location.state,
+    postalCode: location.zip,
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: location.coordinates?.lat || "38.7223",
+    longitude: location.coordinates?.lng || "-90.3915",
+  },
+  areaServed: [
+    {
+      "@type": "Country",
+      name: "United States",
+    },
+    {
+      "@type": "State",
+      name: "Missouri",
+    },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Flight School Marketing Services",
+    itemListElement: serviceOffered.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service,
+      },
+    })),
+  },
+  openingHours: ["Mo-Fr 09:00-17:00"],
+  paymentAccepted: "Cash, Credit Card, Check, Bank Transfer",
+  priceRange: "$$",
+  ...(reviews && {
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: reviews.rating,
+      bestRating: "5",
+      worstRating: "1",
+      reviewCount: reviews.reviewCount,
+    },
+  }),
+  ...(reviews?.reviews && {
+    review: reviews.reviews.map((review) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: review.author,
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: review.rating,
+        bestRating: "5",
+        worstRating: "1",
+      },
+      reviewBody: review.text,
+      datePublished: review.date,
+    })),
+  }),
+  sameAs: [
+    "https://www.facebook.com/rightruddermarketing",
+    "https://www.instagram.com/rightruddermarketing/",
+    "http://linkedin.com/company/rightruddermarketing",
+    "https://twitter.com/rightruddermktg",
+    "https://www.youtube.com/@rightruddermarketing",
+  ],
+};
+---
+
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(localBusinessSchema)}
+/>

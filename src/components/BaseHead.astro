@@ -9,6 +9,12 @@ interface Props {
   description: string;
   keywords: string;
   image?: string;
+  author?: string;
+  articleSchema?: boolean;
+  pubDate?: Date;
+  updatedDate?: Date;
+  category?: string;
+  tags?: string[];
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -18,7 +24,28 @@ const {
   description,
   keywords,
   image = "/OG_Image-Comp.webp",
+  author,
+  articleSchema = false,
+  pubDate,
+  updatedDate,
+  category,
+  tags,
 } = Astro.props;
+
+// Enhanced title with proper length and brand consistency
+const optimizedTitle =
+  title.length > 60 ? title.substring(0, 57) + "..." : title;
+
+// Enhanced description with proper length
+const optimizedDescription =
+  description.length > 160
+    ? description.substring(0, 157) + "..."
+    : description;
+
+// Add location-based keywords if not present
+const enhancedKeywords = keywords.includes("flight school")
+  ? `${keywords}, flight training, pilot training, aviation education, professional pilot, instrument rating, commercial pilot license, private pilot license, CFI training, aviation school`
+  : keywords;
 ---
 
 <!-- Global Metadata -->
@@ -38,7 +65,7 @@ const {
                                                __/ |                
                                               |___/                 
 
-    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
+    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact -->
 
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/RRM-R-symbol-474.webp" />
@@ -47,32 +74,151 @@ const {
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
+<!-- Preconnect to external domains for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+
 <!-- Primary Meta Tags -->
-<title>{title}</title>
-<meta name="title" content={title} />
-<meta name="description" content={description} />
-<meta name="keywords" content={keywords} />
+<title>{optimizedTitle}</title>
+<meta name="title" content={optimizedTitle} />
+<meta name="description" content={optimizedDescription} />
+<meta name="keywords" content={enhancedKeywords} />
+<meta
+  name="robots"
+  content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+/>
+<meta name="language" content="en-US" />
+{author && <meta name="author" content={author} />}
+
+<!-- Geographic targeting -->
+<meta name="geo.region" content="US-MO" />
+<meta name="geo.placename" content="St. Louis" />
+<meta name="geo.position" content="38.7223;-90.3915" />
+<meta name="ICBM" content="38.7223, -90.3915" />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content={articleSchema ? "article" : "website"} />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
+<meta property="og:title" content={optimizedTitle} />
+<meta property="og:description" content={optimizedDescription} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Right Rudder Marketing" />
+<meta property="og:locale" content="en_US" />
+{articleSchema && author && <meta property="article:author" content={author} />}
+{
+  articleSchema && pubDate && (
+    <meta property="article:published_time" content={pubDate.toISOString()} />
+  )
+}
+{
+  articleSchema && updatedDate && (
+    <meta
+      property="article:modified_time"
+      content={updatedDate.toISOString()}
+    />
+  )
+}
+{
+  articleSchema && category && (
+    <meta property="article:section" content={category} />
+  )
+}
+{
+  articleSchema &&
+    tags &&
+    tags.map((tag) => <meta property="article:tag" content={tag} />)
+}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
+<meta property="twitter:title" content={optimizedTitle} />
+<meta property="twitter:description" content={optimizedDescription} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:site" content="@rightruddermktg" />
+<meta property="twitter:creator" content="@rightruddermktg" />
 
+<!-- Additional SEO Meta Tags -->
+<meta name="theme-color" content="#1a365d" />
+<meta name="msapplication-TileColor" content="#1a365d" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+<!-- Links -->
 <link rel="sitemap" href="/sitemap-index.xml" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Right Rudder Marketing Blog"
+  href="/rss.xml"
+/>
 
-<!-- UPDATE GTAG PLEASE -->
-<GoogleAnalytics />
-
-<!-- NEED TO UPDATE SCHEMA -->
+<!-- Structured Data -->
 <Schema />
 
+<!-- Blog Article Schema -->
+{
+  articleSchema && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        description: description,
+        image: {
+          "@type": "ImageObject",
+          url: new URL(image, Astro.site).href,
+          width: 1200,
+          height: 630,
+        },
+        author: {
+          "@type": "Person",
+          name: author,
+          url: `https://rightruddermarketing.com/flight-crew/${author?.toLowerCase().replace(/\s+/g, "-")}`,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Right Rudder Marketing",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://rightruddermarketing.com/RRM-hor-textBlack-bgTrans-524.webp",
+            width: 524,
+            height: 150,
+          },
+        },
+        url: canonicalURL.href,
+        datePublished: pubDate?.toISOString(),
+        dateModified: updatedDate?.toISOString() || pubDate?.toISOString(),
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": canonicalURL.href,
+        },
+        articleSection: category,
+        keywords: tags?.join(", "),
+        about: [
+          {
+            "@type": "Thing",
+            name: "Flight School Marketing",
+          },
+          {
+            "@type": "Thing",
+            name: "Aviation Marketing",
+          },
+        ],
+        isPartOf: {
+          "@type": "Blog",
+          name: "Right Rudder Marketing Blog",
+          "@id": "https://rightruddermarketing.com/blog",
+        },
+      })}
+    />
+  )
+}
+
+<!-- Analytics and Tracking -->
+<GoogleAnalytics />
 <FacebookPixel />

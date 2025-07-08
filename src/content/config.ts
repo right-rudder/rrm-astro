@@ -17,6 +17,25 @@ const blogCollection = defineCollection({
     heroImage: z.string().optional(),
     type: z.enum(["blog"]).default("blog").optional(),
     status: z.enum(["draft", "published"]).default("published").optional(),
+    // Enhanced SEO fields
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    canonicalUrl: z.string().optional(),
+    noindex: z.boolean().default(false),
+    ogImage: z.string().optional(),
+    twitterCard: z
+      .enum(["summary", "summary_large_image", "app", "player"])
+      .default("summary_large_image")
+      .optional(),
+    relatedPosts: z.array(z.string()).optional(),
+    faq: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        }),
+      )
+      .optional(),
   }),
 });
 
@@ -37,6 +56,17 @@ const webinarCollection = defineCollection({
     heroImage: z.string().optional(),
     type: z.enum(["webinar"]).default("webinar").optional(),
     status: z.enum(["draft", "published"]).default("published").optional(),
+    // Enhanced SEO fields
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    canonicalUrl: z.string().optional(),
+    noindex: z.boolean().default(false),
+    ogImage: z.string().optional(),
+    // Webinar specific fields
+    webinarDate: z.coerce.date().optional(),
+    duration: z.string().optional(),
+    speakers: z.array(z.string()).optional(),
+    registrationUrl: z.string().optional(),
   }),
 });
 
@@ -57,13 +87,35 @@ const podcastCollection = defineCollection({
     heroImage: z.string().optional(),
     type: z.enum(["podcast"]).default("podcast").optional(),
     status: z.enum(["draft", "published"]).default("published").optional(),
+    // Enhanced SEO fields
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    canonicalUrl: z.string().optional(),
+    noindex: z.boolean().default(false),
+    ogImage: z.string().optional(),
+    // Podcast specific fields
+    episodeNumber: z.number().optional(),
+    season: z.number().optional(),
+    duration: z.string().optional(),
+    audioUrl: z.string().optional(),
+    transcript: z.string().optional(),
+    guests: z
+      .array(
+        z.object({
+          name: z.string(),
+          title: z.string().optional(),
+          company: z.string().optional(),
+          bio: z.string().optional(),
+        }),
+      )
+      .optional(),
   }),
 });
 
 const crew = defineCollection({
   schema: z.object({
     name: z.string(),
-    slug: z.string(),
+    slug: z.string().optional(),
     title: z.string(),
     social: z
       .object({
@@ -79,6 +131,12 @@ const crew = defineCollection({
     image: z.string(),
     bio: z.string().optional(),
     status: z.enum(["active", "former", "external"]).default("active"),
+    // Enhanced SEO fields for team members
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    expertise: z.array(z.string()).optional(),
+    certifications: z.array(z.string()).optional(),
+    yearsExperience: z.number().optional(),
   }),
 });
 
@@ -86,4 +144,5 @@ export const collections = {
   blog: blogCollection,
   webinars: webinarCollection,
   podcasts: podcastCollection,
+  crew: crew,
 };

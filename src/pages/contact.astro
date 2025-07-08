@@ -14,19 +14,116 @@ import {
   SITE_DESCRIPTION,
   LOCATIONS,
 } from "../consts";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  generateFlightSchoolSchema,
+} from "../utils/seo";
 
 const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
   .GHL_CONTACT_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 const { data } = contact;
+
+// Enhanced SEO keyword generation for contact page
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 4),
+    "flight school contact",
+    "aviation marketing contact",
+    "pilot training consultation",
+    "flight school marketing consultation",
+  ],
+  TARGET_LOCATIONS.slice(0, 8),
+  [
+    "flight school marketing agency",
+    "aviation marketing experts",
+    "pilot school marketing services",
+    "flight training marketing consultation",
+    "aviation business marketing",
+  ]
+);
+
+// Local business schema for contact page
+const businessData = {
+  name: "Right Rudder Marketing",
+  description:
+    "Flight school marketing agency specializing in pilot student recruitment, SEO, Google Ads, and website design for aviation businesses.",
+  address: {
+    street: ADDRESS_LINE_1,
+    city: "St. Louis",
+    state: "Missouri",
+    zip: "63141",
+    country: "United States",
+  },
+  phone: PHONE_NUMBER,
+  email: EMAIL_ADDRESS,
+  website: "https://rightruddermarketing.com",
+  socialMedia: {
+    facebook: FACEBOOK_URL,
+    instagram: INSTAGRAM_URL,
+    linkedin: LINKEDIN_URL,
+    twitter: TWITTER_URL,
+    youtube: YOUTUBE_URL,
+  },
+};
+
+// FAQ schema for contact page
+const faqData = [
+  {
+    question: "How can I schedule a consultation with Right Rudder Marketing?",
+    answer:
+      "You can schedule a free consultation by calling us at (314) 804-1200, filling out our contact form, or using our online scheduling system. We offer both phone and video consultations.",
+  },
+  {
+    question:
+      "What services does Right Rudder Marketing provide for flight schools?",
+    answer:
+      "We provide comprehensive marketing services including website design, SEO, Google Ads management, social media marketing, email campaigns, and complete marketing system implementation for flight schools and aviation businesses.",
+  },
+  {
+    question: "Do you work with flight schools nationwide?",
+    answer:
+      "Yes, we work with flight schools, aviation academies, and pilot training organizations across the United States, providing both local and national marketing strategies.",
+  },
+  {
+    question:
+      "How long does it take to see results from your marketing services?",
+    answer:
+      "Most clients see initial improvements in website traffic within 30 days, with significant lead generation improvements within 60-90 days. Full marketing system optimization typically takes 3-6 months.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Contact", url: "/contact" },
+];
+
+const localBusinessSchema = generateFlightSchoolSchema(businessData);
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={enhancedKeywords}
 >
+  <!-- Schema markup for enhanced SEO -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(localBusinessSchema)}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
   <div class="h-20 lg:h-28 w-full bg-primary-900 brightness-75"></div>
 
   <section class="relative isolate bg-white">

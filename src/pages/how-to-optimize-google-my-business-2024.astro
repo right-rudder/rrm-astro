@@ -8,15 +8,81 @@ import Content2 from "../components/Content2.astro";
 import Features from "../components/Features.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import googleMyBusiness from "../data/google-my-business";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "../utils/seo";
 
 const { data } = googleMyBusiness;
+
+// Enhanced SEO keyword generation for GMB optimization
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 5),
+    ...AVIATION_KEYWORDS.local.slice(0, 4),
+    "Google My Business optimization",
+    "flight school GMB",
+    "aviation local SEO",
+  ],
+  TARGET_LOCATIONS.slice(0, 20), // Use more locations for local SEO
+  [
+    "flight school local marketing",
+    "aviation Google Business",
+    "pilot training local search",
+    "flight school visibility",
+    "aviation business listings",
+  ]
+);
+
+// FAQ schema for GMB optimization
+const faqData = [
+  {
+    question: "Why is Google My Business important for flight schools?",
+    answer:
+      "Google My Business is crucial for flight schools because it helps you appear in local search results when potential students search for 'flight school near me' or 'pilot training near me', significantly increasing your visibility.",
+  },
+  {
+    question:
+      "How often should flight schools update their Google My Business listing?",
+    answer:
+      "Flight schools should update their GMB listing at least weekly with new photos, posts about achievements, weather updates, and upcoming events to maintain high engagement and search visibility.",
+  },
+  {
+    question:
+      "What should flight schools include in their Google My Business posts?",
+    answer:
+      "Flight schools should post about student achievements, new aircraft, weather conditions, special offers, discovery flights, instructor spotlights, and aviation news to keep their listing active and engaging.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Services", url: "/services" },
+  {
+    name: "Google My Business",
+    url: "/how-to-optimize-google-my-business-2024",
+  },
+];
+
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={enhancedKeywords}
 >
+  <!-- Schema markup for enhanced SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
   <!-- HEADER -->
   <Header data={data.header} />
 

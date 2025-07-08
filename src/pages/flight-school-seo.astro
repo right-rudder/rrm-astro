@@ -8,15 +8,76 @@ import Content2 from "../components/Content2.astro";
 import Features from "../components/Features.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import seo from "../data/seo";
+import {
+  generateKeywords,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+} from "../utils/seo";
 
 const { data } = seo;
+
+// Generate enhanced keywords for SEO page
+const seoKeywords = generateKeywords(
+  [
+    "flight school SEO",
+    "aviation SEO",
+    "pilot training SEO",
+    "flight school search engine optimization",
+  ],
+  TARGET_LOCATIONS.slice(0, 10),
+  [
+    "SEO services",
+    "search engine optimization",
+    "aviation marketing",
+    "digital marketing",
+  ]
+);
+
+// Breadcrumb schema
+const breadcrumbs = generateBreadcrumbSchema([
+  { name: "Home", url: "https://rightruddermarketing.com/" },
+  { name: "Services", url: "https://rightruddermarketing.com/services" },
+  {
+    name: "Flight School SEO",
+    url: "https://rightruddermarketing.com/flight-school-seo",
+  },
+]);
+
+// FAQ schema for SEO page
+const seoFAQs = [
+  {
+    question: "What is flight school SEO?",
+    answer:
+      "Flight school SEO is the process of optimizing your aviation academy's website to rank higher in search engines like Google for keywords related to pilot training, flight lessons, and aviation education, helping you attract more prospective student pilots.",
+  },
+  {
+    question: "How long does it take to see SEO results for a flight school?",
+    answer:
+      "Flight school SEO typically shows initial results within 3-6 months, with significant improvements in rankings and organic traffic occurring within 6-12 months. The timeline depends on competition, current website status, and the comprehensiveness of the SEO strategy.",
+  },
+  {
+    question: "Why do flight schools need specialized SEO services?",
+    answer:
+      "Flight schools need specialized SEO because aviation marketing requires understanding of industry-specific keywords, regulations, and target audience behavior. Generic SEO agencies lack the aviation expertise needed to effectively compete in the pilot training market.",
+  },
+];
+
+const faqSchema = generateFAQSchema(seoFAQs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={seoKeywords}
 >
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
   <!-- HEADER -->
   <Header data={data.header} />
 

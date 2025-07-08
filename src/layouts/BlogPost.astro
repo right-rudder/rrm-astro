@@ -8,7 +8,10 @@ import { slugify } from "../utils/slugify.js";
 
 import AuthorCard from "../components/AuthorCard.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"blog">["data"] & {
+  enhancedKeywords?: string;
+  breadcrumbSchema?: any;
+};
 
 const {
   title,
@@ -20,15 +23,38 @@ const {
   category,
   tags,
   keywords,
+  enhancedKeywords,
+  breadcrumbSchema,
 } = Astro.props;
+
+// Use enhanced keywords if provided, otherwise fallback to original logic
+const finalKeywords =
+  enhancedKeywords ||
+  `${category}, ${tags.join(", ")}, flight school marketing, aviation marketing, pilot training marketing${keywords ? ", " + keywords : ""}`;
 ---
 
 <BaseLayout
-  siteTitle={title + " | Blog | Right Rudder Marketing"}
-  siteDescription={description + " Right Rudder Marketing Blog."}
-  keywords={category + ", " + tags.join(", ") + keywords ? keywords : KEYWORDS}
+  siteTitle={title + " | Right Rudder Marketing Blog"}
+  siteDescription={description +
+    " Read more aviation marketing insights and flight school growth strategies on the Right Rudder Marketing blog."}
+  keywords={finalKeywords}
   ogImage={heroImage}
+  author={author}
+  articleSchema={true}
+  pubDate={pubDate}
+  updatedDate={updatedDate}
+  category={category}
+  tags={tags}
 >
+  <!-- Enhanced SEO schema if provided -->
+  {
+    breadcrumbSchema && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(breadcrumbSchema)}
+      />
+    )
+  }
   <div class="h-20 lg:h-28 w-full bg-primary/50 brightness-75"></div>
 
   <section class="flex flex-col justify-center pt-6 pb-20 overflow-hidden">

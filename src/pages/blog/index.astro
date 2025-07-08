@@ -4,6 +4,12 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateBreadcrumbSchema,
+} from "../../utils/seo";
 
 const data = {
   header: {
@@ -38,13 +44,46 @@ const data = {
 const posts = (await getCollection("blog"))
   .filter((post) => post.data.status !== "draft") // 👈 draft filter
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Enhanced SEO keyword generation for blog index
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 5),
+    ...AVIATION_KEYWORDS.secondary.slice(0, 3),
+    "flight training blog",
+    "aviation marketing blog",
+    "pilot training articles",
+  ],
+  TARGET_LOCATIONS.slice(0, 6),
+  [
+    "flight school marketing tips",
+    "aviation industry insights",
+    "pilot recruitment strategies",
+    "flight training business advice",
+    "aviation marketing articles",
+  ]
+);
+
+// Breadcrumb navigation for blog index
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
 <BaseLayout
-  pageTitle="Blog | Right Rudder Marketing"
-  pageDescription="Explore the latest happenings in the world of flight training at Right Rudder Marketing. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
-  pageKeywords="blog, flight training, marketing, insights, tips, milestones, flight training industry, pilot training experience, flight school marketing, flight school success"
+  siteTitle="Blog | Right Rudder Marketing"
+  siteDescription="Explore the latest happenings in the world of flight training at Right Rudder Marketing. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
+  keywords={enhancedKeywords}
 >
+  <!-- Schema markup for enhanced SEO -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+
   <!-- Header -->
   <Header data={data.header} />
 

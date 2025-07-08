@@ -1,0 +1,93 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  author: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  heroImage?: string;
+  category: string;
+  tags: string[];
+  url: string;
+}
+
+const {
+  title,
+  description,
+  author,
+  pubDate,
+  updatedDate,
+  heroImage,
+  category,
+  tags,
+  url,
+} = Astro.props;
+
+// Format dates for schema
+const publishedDate = pubDate.toISOString();
+const modifiedDate = updatedDate ? updatedDate.toISOString() : publishedDate;
+
+// Create image object if heroImage exists
+const imageObject = heroImage
+  ? {
+      "@type": "ImageObject",
+      url: new URL(heroImage, Astro.site).href,
+      width: 1200,
+      height: 630,
+    }
+  : null;
+---
+
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: description,
+    image: imageObject,
+    author: {
+      "@type": "Person",
+      name: author,
+      url: `https://rightruddermarketing.com/flight-crew/${author.toLowerCase().replace(/\s+/g, "-")}`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Right Rudder Marketing",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://rightruddermarketing.com/RRM-hor-textBlack-bgTrans-524.webp",
+        width: 524,
+        height: 150,
+      },
+    },
+    url: url,
+    datePublished: publishedDate,
+    dateModified: modifiedDate,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    articleSection: category,
+    keywords: tags.join(", "),
+    about: [
+      {
+        "@type": "Thing",
+        name: "Flight School Marketing",
+      },
+      {
+        "@type": "Thing",
+        name: "Aviation Marketing",
+      },
+      {
+        "@type": "Thing",
+        name: "Pilot Training",
+      },
+    ],
+    isPartOf: {
+      "@type": "Blog",
+      name: "Right Rudder Marketing Blog",
+      "@id": "https://rightruddermarketing.com/blog",
+    },
+  })}
+/>
