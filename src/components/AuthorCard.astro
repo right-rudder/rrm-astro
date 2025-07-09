@@ -7,6 +7,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
+import { slugify } from "../utils/slugify";
 
 const { author } = Astro.props;
 
@@ -56,7 +57,7 @@ const truncateBio = (bio) => {
           }
         </p>
         <a
-          href={`/flight-crew/${member.data.slug}`}
+          href={`/flight-crew/${slugify(author)}`}
           class="text-primary-600 hover:underline">View Profile</a
         >
 

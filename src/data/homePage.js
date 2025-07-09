@@ -1,11 +1,12 @@
 const homePage = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Grow and Scale your Aviation Business | Right Rudder Marketing",
+    pageTitle:
+      "Flight School Marketing Agency | Grow Student Enrollment 3X-10X | Right Rudder Marketing",
     pageDescription:
-      "Grow and scale your aviation business. Right Rudder Marketing specializes in aviation marketing services, helping flight schools and aviation companies increase visibility and grow enrollment. We offer tailored digital marketing solutions, including SEO, web design, and lead generation to help you reach more aspiring pilots. With proven aviation marketing strategies, we can help your flight school stand out in the competitive market and boost student enrollment efficiently.",
+      "Leading flight school marketing agency helping aviation businesses scale student enrollment 3X-10X. Specializing in flight school SEO, PPC, website design & lead generation. Trusted by 20+ flight schools nationwide. Get more discovery flights, increase pilot training enrollment, and grow your aviation business with proven digital marketing strategies designed specifically for flight training academies.",
     pageKeywords:
-      "grow flight school, scale flight school, grow and scale flight school, aviation business, aviation training,Right Rudder Marketing, Aviation marketing, Flight school marketing, Aviation digital marketing, SEO for aviation, Digital marketing for flight schools, Aviation marketing agency, Lead generation for aviation companies, Increase flight school enrollment, Aviation advertising services, Content marketing for aviation businesses, Aviation marketing strategies, Aviation SEO services",
+      "flight school marketing, aviation marketing agency, flight school SEO, pilot training marketing, flight school website design, aviation digital marketing, flight school PPC, student pilot enrollment, discovery flight marketing, aviation lead generation, flight training academy marketing, pilot school advertising, aviation business growth, flight instructor marketing, commercial pilot training marketing, private pilot lessons marketing, instrument rating marketing, CFI training marketing, flight school branding, aviation content marketing, pilot recruitment strategies, flight school social media marketing, aviation SEO services, flight training enrollment, pilot education marketing, aviation academy marketing, St. Louis flight school marketing, Missouri aviation marketing, flight school lead generation, aviation business consulting, pilot training enrollment strategies",
 
     //top header
     header: {

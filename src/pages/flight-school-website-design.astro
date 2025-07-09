@@ -1,22 +1,97 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeaderScreen from "../components/HeaderScreen.astro";
 import Header from "../components/Header.astro";
 import Content from "../components/Content.astro";
 import WarningCTA from "../components/WarningCTA.astro";
-import Content2 from "../components/Content2.astro";
-import Features from "../components/Features.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import webDesign from "../data/web-design-development";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "../utils/seo";
 
 const { data } = webDesign;
+
+// Enhanced SEO keyword generation
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 5),
+    "flight school web design",
+    "aviation website design",
+    "pilot school website",
+    "flight training website",
+    "aviation academy web design",
+    "flight school website development",
+    "pilot training website design",
+    "aviation academy website",
+    "flight school marketing website",
+    "flight schedule pro",
+    "flight circle",
+    "aviatiaze",
+    "four forces",
+  ],
+  TARGET_LOCATIONS.slice(0, 10), // Use top 10 target locations
+  [
+    "flight school website development",
+    "aviation web design services",
+    "flight school marketing website",
+    "pilot training website design",
+    "aviation academy website",
+  ]
+);
+
+// FAQ schema for web design services
+const faqData = [
+  {
+    question:
+      "What makes a flight school website different from other websites?",
+    answer:
+      "Flight school websites need specialized features like aircraft fleet showcases, instructor profiles, course catalogs, online scheduling, and aviation-specific SEO optimization to attract pilot students.",
+  },
+  {
+    question: "How long does it take to build a flight school website?",
+    answer:
+      "A professional flight school website typically takes 3-4 weeks to design and develop, depending on the complexity of features like online booking systems and custom integrations.",
+  },
+  {
+    question: "Do you provide SEO services for flight school websites?",
+    answer:
+      "Yes, we specialize in aviation SEO to help flight schools rank higher in search results for keywords like 'flight training near me' and 'pilot school' in their local area.",
+  },
+  {
+    question:
+      "Can you integrate online scheduling into our flight school website?",
+    answer:
+      "Absolutely! We can integrate flight scheduling systems, aircraft booking, and instructor calendar management directly into your website for a seamless student experience.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Services", url: "/services" },
+  { name: "Website Design", url: "/flight-school-website-design" },
+];
+
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={enhancedKeywords}
 >
+  <!-- Schema markup for enhanced SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+
   <!-- HEADER -->
   <Header data={data.header} />
 

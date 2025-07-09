@@ -6,15 +6,83 @@ import Compare from "../components/Compare.astro";
 import Partners from "../components/Partners.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import ContentSteps from "../components/ContentSteps.astro";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "../utils/seo";
 
 const { data } = marketingSystem;
+
+// Enhanced SEO keyword generation for marketing system
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 5),
+    ...AVIATION_KEYWORDS.secondary.slice(0, 5),
+    "flight school marketing system",
+    "aviation marketing automation",
+    "pilot student recruitment",
+  ],
+  TARGET_LOCATIONS.slice(0, 12), // Use top 12 target locations
+  [
+    "flight school CRM",
+    "aviation lead generation",
+    "pilot training marketing",
+    "flight school enrollment system",
+    "aviation business marketing",
+  ]
+);
+
+// FAQ schema for marketing system
+const faqData = [
+  {
+    question:
+      "What is included in Right Rudder Marketing's flight school marketing system?",
+    answer:
+      "Our comprehensive marketing system includes website design, SEO optimization, Google Ads management, social media marketing, email campaigns, lead tracking, and conversion optimization specifically designed for flight schools.",
+  },
+  {
+    question: "How does the marketing system help enroll more students?",
+    answer:
+      "Our system creates multiple touchpoints to attract potential pilots, nurtures leads through automated email sequences, and uses proven conversion tactics to turn website visitors into enrolled students.",
+  },
+  {
+    question: "Do you provide marketing analytics and reporting?",
+    answer:
+      "Yes, we provide detailed monthly reports showing website traffic, lead generation, conversion rates, and ROI so you can see exactly how your marketing investment is performing.",
+  },
+  {
+    question: "How long before we see results from the marketing system?",
+    answer:
+      "Most flight schools start seeing increased website traffic within 30 days and new student inquiries within 60-90 days, with continued improvement over 6-12 months as the system optimizes.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Services", url: "/services" },
+  { name: "Marketing System", url: "/marketing-system" },
+];
+
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={enhancedKeywords}
 >
+  <!-- Schema markup for enhanced SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+
   <!-- HEADER -->
   <Header data={data.header} />
 

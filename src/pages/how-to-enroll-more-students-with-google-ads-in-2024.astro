@@ -7,15 +7,91 @@ import Content2 from "../components/Content2.astro";
 import Features from "../components/Features.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import ppcGoogle from "../data/ppcGoogle";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "../utils/seo";
 
 const { data } = ppcGoogle;
+
+// Enhanced SEO keyword generation for Google Ads
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 6),
+    "Google Ads for flight schools",
+    "aviation PPC advertising",
+    "pilot training ads",
+    "flight school Google marketing",
+  ],
+  TARGET_LOCATIONS.slice(0, 15), // Use top 15 target locations for broader reach
+  [
+    "flight school lead generation",
+    "aviation pay per click",
+    "pilot student recruitment ads",
+    "flight training Google campaigns",
+    "aviation advertising agency",
+  ]
+);
+
+// FAQ schema for Google Ads services
+const faqData = [
+  {
+    question: "How much do Google Ads cost for flight schools?",
+    answer:
+      "Google Ads for flight schools typically cost $7-20 per click depending on location and keywords. We optimize campaigns to maximize your return on investment and reduce cost per student acquisition.",
+  },
+  {
+    question: "How many students can we expect from Google Ads?",
+    answer:
+      "Results vary by location and budget, but most flight schools see 5-15 qualified leads per month from a well-managed Google Ads campaign, with 20-30% converting to enrolled students.",
+  },
+  {
+    question: "Do you manage Google Ads campaigns for flight schools?",
+    answer:
+      "Yes, we specialize in creating and managing Google Ads campaigns specifically for flight schools, including keyword research, ad copywriting, landing page optimization, and ongoing campaign management.",
+  },
+  {
+    question:
+      "What makes flight school Google Ads different from other industries?",
+    answer:
+      "Flight school ads require specialized knowledge of aviation terminology, seasonal enrollment patterns, pilot licensing requirements, and location-based targeting to effectively reach potential students.",
+  },
+  {
+    question: "How do you track the success of Google Ads campaigns?",
+    answer:
+      "We track leads, phone calls, form submissions, discovery flight bookings, and actual student enrollments to provide complete ROI analysis and campaign optimization insights.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Services", url: "/services" },
+  {
+    name: "Google Ads",
+    url: "/how-to-enroll-more-students-with-google-ads-in-2024",
+  },
+];
+
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={enhancedKeywords}
 >
+  <!-- Schema markup for enhanced SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+
   <!-- HEADER -->
   <Header data={data.header} />
 

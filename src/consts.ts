@@ -4,17 +4,18 @@ export const SITE_TITLE =
 
 // CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
-  "Right Rudder Marketing offers digital marketing services for flight schools. We specialize in website design, SEO, PPC, social media marketing, and content creation for flight schools.  We're on a mission to partner with 100 flight schools and double, triple, or even 10X their student body and enrollments.";
+  "Right Rudder Marketing is the leading digital marketing agency specializing in flight school growth. We help aviation businesses scale with proven SEO, PPC, website design, and lead generation strategies. Partner with us to double, triple, or 10X your student enrollment. Trusted by 20+ flight schools across America.";
 
-//SEO tip -> keyword + city 1
-//Should have between 5-10 different localities to mix and match keywords
-//typical keywords = how to become a pilot, flight school near, private pilot, discovery flight, introductory flight, instrument rating, commercial certificate, certified flight instructor, airline programs, how to become an airline pilot
-// CHANGE default keywords -> should only be used in homepage technically, but is there for a fallback in case a page is missed
+//SEO tip -> keyword + city combinations for local SEO
+//Geographic keyword variations for major aviation markets
+//Core aviation keywords: flight training, pilot school, aviation academy, flight lessons, instrument training, commercial pilot, private pilot, CFI training, discovery flights
+// CHANGE default keywords -> comprehensive aviation marketing keyword strategy
 export const KEYWORDS =
-  "Right Rudder Marketing, flight school marketing, flight school SEO, flight school PPC, flight school social media marketing, flight school digital marketing, flight school advertising, flight school website design";
+  "flight school marketing, aviation marketing agency, flight school SEO, pilot training marketing, aviation digital marketing, flight school website design, flight school PPC, aviation advertising, flight school lead generation, student pilot enrollment, flight training marketing, aviation business growth, flight school social media, pilot school marketing, aviation SEO services, flight instructor marketing, discovery flight marketing, commercial pilot training, private pilot lessons, instrument rating training, CFI training programs, aviation academy marketing, flight school branding, pilot recruitment, aviation content marketing, flight school automation, student retention strategies, aviation industry marketing, flight training enrollment, pilot education marketing, St. Louis flight school marketing, Missouri aviation marketing";
 
 export const IMAGE = "/OG_Image-Comp.webp";
 
+// Enhanced location data with SEO benefits
 export const LOCATIONS = [
   {
     title: "Main Office",
@@ -24,6 +25,10 @@ export const LOCATIONS = [
     zip: "63134",
     gMaps: "https://maps.app.goo.gl/J44WMvQyNbkoQDBn6",
     phone: "1-314-804-1200",
+    coordinates: {
+      lat: "38.7223",
+      lng: "-90.3915",
+    },
   },
 ];
 
@@ -40,3 +45,19 @@ export const YOUTUBE_URL = "https://www.youtube.com/@rightruddermarketing";
 export const WHATSAPP_URL = "https://wa.me/13143582100";
 export const GITHUB_URL = "https://github.com/right-rudder/";
 export const EMAIL_ADDRESS = "info@rightruddermarketing.com";
+
+// Enhanced SEO data for better search performance
+export const BUSINESS_INFO = {
+  legalName: "Right Rudder Marketing LLC",
+  foundingYear: 2019,
+  industry: "Digital Marketing Agency",
+  specialization: "Aviation & Flight School Marketing",
+  serviceArea: "United States",
+  primaryMarkets: [
+    "Flight Schools",
+    "Aviation Businesses",
+    "Pilot Training Centers",
+  ],
+  certifications: ["Google Ads Certified", "Google Analytics Certified"],
+  memberships: ["FSANA", "NBAA", "AMA", "NAFI"],
+};

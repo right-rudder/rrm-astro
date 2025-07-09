@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, IMAGE } from "../consts";
+import { optimizeTitle, optimizeDescription } from "../utils/seo";
 import "@fontsource-variable/noto-sans-lao";
 import "@fontsource/merriweather";
 import "@fontsource-variable/merriweather-sans";
@@ -9,18 +10,54 @@ import Navbar from "../components/Navbar";
 import ChatWidget from "../components/ChatWidget.astro";
 import Banner from "../components/Banner.astro";
 
+interface Props {
+  siteTitle: string;
+  siteDescription: string;
+  keywords: string;
+  ogImage?: string;
+  author?: string;
+  articleSchema?: boolean;
+  pubDate?: Date;
+  updatedDate?: Date;
+  category?: string;
+  tags?: string[];
+}
+
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, keywords, ogImage } = Astro.props;
+const {
+  siteTitle,
+  siteDescription,
+  keywords,
+  ogImage,
+  author,
+  articleSchema,
+  pubDate,
+  updatedDate,
+  category,
+  tags,
+} = Astro.props;
+
+// Optimize SEO data using utilities
+const optimizedTitle = optimizeTitle(siteTitle || SITE_TITLE);
+const optimizedDescription = optimizeDescription(
+  siteDescription || SITE_DESCRIPTION
+);
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <BaseHead
-      title={siteTitle || SITE_TITLE}
-      description={siteDescription || SITE_DESCRIPTION}
+      title={optimizedTitle}
+      description={optimizedDescription}
       keywords={keywords || KEYWORDS}
       image={ogImage || IMAGE}
+      author={author}
+      articleSchema={articleSchema}
+      pubDate={pubDate}
+      updatedDate={updatedDate}
+      category={category}
+      tags={tags}
     />
   </head>
   <body class="font-sans bg-primary-dark-100">

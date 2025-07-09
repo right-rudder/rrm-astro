@@ -2,6 +2,11 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import BlogPost from "../../layouts/BlogPost.astro";
 import "../../styles/markdown.css";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  generateBreadcrumbSchema,
+} from "../../utils/seo";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -14,9 +19,39 @@ type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
 const { Content } = await post.render();
+
+// Enhanced SEO keyword generation for individual blog posts
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 3),
+    ...(post.data.category ? [post.data.category] : []),
+    "flight training blog",
+    "aviation marketing insights",
+  ],
+  [], // No location targeting for blog posts
+  [
+    ...(post.data.tags || []),
+    "flight school marketing",
+    "pilot training tips",
+    "aviation business advice",
+  ]
+);
+
+// Breadcrumb navigation for blog posts
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: post.data.title, url: `/blog/${post.slug}` },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
-<BlogPost {...post.data}>
+<BlogPost
+  {...post.data}
+  enhancedKeywords={enhancedKeywords}
+  breadcrumbSchema={breadcrumbSchema}
+>
   <div class="prose w-full max-w-4xl px-5">
     <Content />
   </div>

@@ -2,6 +2,11 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import WebinarPost from "../../layouts/WebinarPost.astro";
 import "../../styles/markdown.css";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  generateBreadcrumbSchema,
+} from "../../utils/seo";
 
 export async function getStaticPaths() {
   const webinars = await getCollection("webinars");
@@ -14,9 +19,38 @@ type Props = CollectionEntry<"webinars">;
 
 const webi = Astro.props;
 const { Content } = await webi.render();
+
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 3),
+    ...(webi.data.category ? [webi.data.category] : []),
+    "flight training webinar",
+    "aviation marketing insights",
+  ],
+  [], // No location targeting for webinar posts
+  [
+    ...(webi.data.tags || []),
+    "flight school marketing",
+    "pilot training tips",
+    "aviation business advice",
+  ]
+);
+
+// Breadcrumb navigation for webinar posts
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Webinars", url: "/webinars" },
+  { name: webi.data.title, url: `/webinars/${webi.slug}` },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
-<WebinarPost {...webi.data}>
+<WebinarPost
+  {...webi.data}
+  enhancedKeywords={enhancedKeywords}
+  breadcrumbSchema={breadcrumbSchema}
+>
   <div class="prose w-full max-w-4xl px-5">
     <Content />
   </div>

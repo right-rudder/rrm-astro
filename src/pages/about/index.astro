@@ -9,15 +9,83 @@ import OurValues from "../../components/OurValues.astro";
 import OurClients from "../../components/OurClients.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
 import OurClientsMarquee from "../../components/OurClientsMarquee.astro";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "../../utils/seo";
 
 const { data } = whoWeAre;
+
+// Enhanced SEO keyword generation for about page
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.secondary.slice(0, 5),
+    "flight school marketing agency",
+    "aviation marketing experts",
+    "pilot training marketing team",
+    "flight school marketing specialists",
+  ],
+  TARGET_LOCATIONS.slice(0, 8),
+  [
+    "Right Rudder Marketing team",
+    "aviation marketing consultants",
+    "flight school marketing professionals",
+    "pilot recruitment specialists",
+    "aviation business marketing experts",
+  ]
+);
+
+// FAQ schema for about page
+const faqData = [
+  {
+    question: "Who is Right Rudder Marketing?",
+    answer:
+      "Right Rudder Marketing is a specialized marketing agency founded by pilots for the aviation industry. We focus exclusively on flight schools, aviation academies, and pilot training organizations.",
+  },
+  {
+    question:
+      "What makes Right Rudder Marketing different from other marketing agencies?",
+    answer:
+      "Unlike general marketing agencies, our team consists of actual pilots who understand the flight training industry. This insider knowledge allows us to create more effective marketing strategies that resonate with potential students.",
+  },
+  {
+    question: "How many flight schools does Right Rudder Marketing work with?",
+    answer:
+      "We work with over 100 flight schools and aviation training organizations across the United States, helping them grow their student enrollment and build stronger brands.",
+  },
+  {
+    question:
+      "What is Right Rudder Marketing's approach to flight school marketing?",
+    answer:
+      "Our approach combines aviation industry expertise with proven digital marketing strategies, focusing on student recruitment, retention, and building long-term sustainable growth for flight training businesses.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
+];
+
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={enhancedKeywords}
 >
+  <!-- Schema markup for enhanced SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+
   <!-- HEADER -->
   <HeaderCollage data={data.header} />
 

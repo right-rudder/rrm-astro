@@ -14,15 +14,57 @@ import BlogFeedTop from "../components/BlogFeedTop.astro";
 import GenericCTA from "../components/GenericCTA.astro";
 import ScreenCTA from "../components/ScreenCTA.astro";
 import IntroVideo from "../components/IntroVideo.astro";
+import {
+  generateKeywords,
+  generateFAQSchema,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+} from "../utils/seo";
 
 const { data } = homePage;
+
+// Generate comprehensive keywords for homepage
+const enhancedKeywords = generateKeywords(
+  AVIATION_KEYWORDS.primary.slice(0, 5), // Top 5 primary keywords
+  TARGET_LOCATIONS.slice(0, 8), // Top 8 target locations
+  [
+    ...AVIATION_KEYWORDS.secondary.slice(0, 5),
+    "digital marketing agency",
+    "aviation business growth",
+  ]
+);
+
+// Generate FAQ schema for homepage
+const homepageFAQs = [
+  {
+    question: "What is flight school marketing?",
+    answer:
+      "Flight school marketing involves specialized digital marketing strategies designed to help aviation academies and pilot training schools attract more student pilots, increase enrollment, and grow their business through SEO, PPC, social media, and targeted advertising.",
+  },
+  {
+    question: "How can Right Rudder Marketing help my flight school?",
+    answer:
+      "Right Rudder Marketing specializes in aviation marketing with proven strategies that help flight schools double, triple, or even 10X their student enrollment through custom websites, SEO optimization, Google Ads management, and comprehensive digital marketing campaigns.",
+  },
+  {
+    question:
+      "What makes Right Rudder Marketing different from other marketing agencies?",
+    answer:
+      "We exclusively focus on aviation businesses and flight schools, giving us deep industry expertise. We're members of FSANA, NBAA, and NAFI, and have helped over 100 flight schools grow their student enrollment with aviation-specific marketing strategies.",
+  },
+];
+
+const faqSchema = generateFAQSchema(homepageFAQs);
 ---
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  keywords={enhancedKeywords}
 >
+  <!-- FAQ Schema for featured snippets -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
 
