@@ -10,8 +10,32 @@ import Navbar from "../components/Navbar";
 import ChatWidget from "../components/ChatWidget.astro";
 import Banner from "../components/Banner.astro";
 
+interface Props {
+  siteTitle: string;
+  siteDescription: string;
+  keywords: string;
+  ogImage?: string;
+  author?: string;
+  articleSchema?: boolean;
+  pubDate?: Date;
+  updatedDate?: Date;
+  category?: string;
+  tags?: string[];
+}
+
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, keywords, ogImage } = Astro.props;
+const {
+  siteTitle,
+  siteDescription,
+  keywords,
+  ogImage,
+  author,
+  articleSchema,
+  pubDate,
+  updatedDate,
+  category,
+  tags,
+} = Astro.props;
 
 // Optimize SEO data using utilities
 const optimizedTitle = optimizeTitle(siteTitle || SITE_TITLE);
@@ -28,6 +52,12 @@ const optimizedDescription = optimizeDescription(
       description={optimizedDescription}
       keywords={keywords || KEYWORDS}
       image={ogImage || IMAGE}
+      author={author}
+      articleSchema={articleSchema}
+      pubDate={pubDate}
+      updatedDate={updatedDate}
+      category={category}
+      tags={tags}
     />
   </head>
   <body class="font-sans bg-primary-dark-100">
