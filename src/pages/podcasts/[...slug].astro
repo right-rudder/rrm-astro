@@ -2,6 +2,11 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import PodcastPost from "../../layouts/PodcastPost.astro";
 import "../../styles/markdown.css";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  generateBreadcrumbSchema,
+} from "../../utils/seo";
 
 export async function getStaticPaths() {
   const pods = await getCollection("podcasts");
@@ -14,9 +19,38 @@ type Props = CollectionEntry<"podcasts">;
 
 const pod = Astro.props;
 const { Content } = await pod.render();
+
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 3),
+    ...(pod.data.category ? [pod.data.category] : []),
+    "flight training podcast",
+    "aviation marketing insights",
+  ],
+  [], // No location targeting for podcast posts
+  [
+    ...(pod.data.tags || []),
+    "flight school marketing",
+    "pilot training tips",
+    "aviation business advice",
+  ]
+);
+
+// Breadcrumb navigation for blog pods
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Podcasts", url: "/podcasts" },
+  { name: pod.data.title, url: `/podcasts/${pod.slug}` },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 ---
 
-<PodcastPost {...pod.data}>
+<PodcastPost
+  {...pod.data}
+  enhancedKeywords={enhancedKeywords}
+  breadcrumbSchema={breadcrumbSchema}
+>
   <div class="prose w-full max-w-4xl px-5">
     <Content />
   </div>
