@@ -20,6 +20,7 @@ Allow: /resources/
 Allow: /our-flight-schools/
 Allow: /about/
 Allow: /contact
+Allow: /contact/
 
 # Crawl delay to be respectful
 Crawl-delay: 1
