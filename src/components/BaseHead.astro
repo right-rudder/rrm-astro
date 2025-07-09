@@ -99,7 +99,7 @@ const enhancedKeywords = keywords.includes("flight school")
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={articleSchema ? "article" : "website"} />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={Astro.url.href} />
 <meta property="og:title" content={optimizedTitle} />
 <meta property="og:description" content={optimizedDescription} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
