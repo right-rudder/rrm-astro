@@ -136,7 +136,7 @@ const crew = defineCollection({
     metaDescription: z.string().optional(),
     expertise: z.array(z.string()).optional(),
     certifications: z.array(z.string()).optional(),
-    yearsExperience: z.number().optional(),
+    seniority: z.number().optional(),
   }),
 });
 
