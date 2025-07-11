@@ -66,20 +66,25 @@ const authorPosts = allPosts
             >
               {member.data.title}
             </div>
+            <div class="hidden" aria-hidden="true">
+              Seniority: {member.data.seniority}
+            </div>
             <div class="mb-2 text-gray-600 mt-10">
               Status: <br />{
                 member.data.status === "active" && (
-                  <strong>Active RRM Crew Member</strong>
+                  <strong class="text-primary-600">
+                    Active RRM Crew Member
+                  </strong>
                 )
               }
               {
                 member.data.status === "former" && (
-                  <strong>Former RRM Crew Member</strong>
+                  <strong class="text-gray-400">Former RRM Crew Member</strong>
                 )
               }
               {
                 member.data.status === "external" && (
-                  <strong>Guest Contributor</strong>
+                  <strong class="text-gray-800">Guest Contributor</strong>
                 )
               }
             </div>
@@ -94,7 +99,7 @@ const authorPosts = allPosts
                 </h3>
                 <div class="mt-2 flex justify-center align-middle gap-1">
                   {
-                    member.data.social.facebook && (
+                    member.data.social?.facebook && (
                       <a
                         href={member.data.social.facebook}
                         class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
@@ -105,7 +110,7 @@ const authorPosts = allPosts
                     )
                   }
                   {
-                    member.data.social.instagram && (
+                    member.data.social?.instagram && (
                       <a
                         href={member.data.social.instagram}
                         class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
@@ -116,7 +121,7 @@ const authorPosts = allPosts
                     )
                   }
                   {
-                    member.data.social.linkedin && (
+                    member.data.social?.linkedin && (
                       <a
                         href={member.data.social.linkedin}
                         class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
@@ -127,7 +132,7 @@ const authorPosts = allPosts
                     )
                   }
                   {
-                    member.data.social.twitter && (
+                    member.data.social?.twitter && (
                       <a
                         href={member.data.social.twitter}
                         class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
@@ -138,7 +143,7 @@ const authorPosts = allPosts
                     )
                   }
                   {
-                    member.data.social.github && (
+                    member.data.social?.github && (
                       <a
                         href={member.data.social.github}
                         class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
@@ -149,7 +154,7 @@ const authorPosts = allPosts
                     )
                   }
                   {
-                    member.data.social.website && (
+                    member.data.social?.website && (
                       <a
                         href={member.data.social.website}
                         class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
@@ -160,7 +165,7 @@ const authorPosts = allPosts
                     )
                   }
                   {
-                    member.data.social.youtube && (
+                    member.data.social?.youtube && (
                       <a
                         href={member.data.social.youtube}
                         class="text-primary-dark hover:scale-125 hover:text-primary-700 duration-75"
@@ -204,37 +209,36 @@ const authorPosts = allPosts
                       Published Articles
                     </h2>
                     <div class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center">
-                      {
-                        authorPosts.map((post, index) => (
-                          <article
-                            class={`
+                      {authorPosts.map((post, index) => (
+                        <article
+                          class={`
                             relative group h-32 lg:m-0 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-40 lg:pt-44 
-                              ${ authorPosts.length === 1
-                                ? "md:w-4/5 lg:w-3/5"
-                                : "md:w-2/5 lg:w-1/3"
+                              ${
+                                authorPosts.length === 1
+                                  ? "md:w-4/5 lg:w-3/5"
+                                  : "md:w-2/5 lg:w-1/3"
                               }
                             `}
-                          >
-                            <img
-                              src={post.data.heroImage}
-                              alt={post.data.title}
-                              class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
-                            />
-                            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-dark to-primary-dark/20 group-hover:bg-primary/60 duration-200" />
-                            <h3 class="text-base text-left font-black leading-6 text-primary-100">
-                              <a href={`/blog/${post.slug}/`}>
-                                <span class="absolute inset-0" />
-                                {post.data.title}
-                              </a>
-                            </h3>
-                            <div class="flex flex-wrap items-center text-sm leading-6 text-gray-100">
-                              <time class="mr-8 text-accent-400">
-                                <FormattedDate date={post.data.pubDate} />
-                              </time>
-                            </div>
-                          </article>
-                        ))
-                      }
+                        >
+                          <img
+                            src={post.data.heroImage}
+                            alt={post.data.title}
+                            class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
+                          />
+                          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-dark to-primary-dark/20 group-hover:bg-primary/60 duration-200" />
+                          <h3 class="text-base text-left font-black leading-6 text-primary-100">
+                            <a href={`/blog/${post.slug}/`}>
+                              <span class="absolute inset-0" />
+                              {post.data.title}
+                            </a>
+                          </h3>
+                          <div class="flex flex-wrap items-center text-sm leading-6 text-gray-100">
+                            <time class="mr-8 text-accent-400">
+                              <FormattedDate date={post.data.pubDate} />
+                            </time>
+                          </div>
+                        </article>
+                      ))}
                     </div>
                   </div>
                 </div>
