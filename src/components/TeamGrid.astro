@@ -19,7 +19,7 @@ const activeCrew = crewData
   .filter((member) => member.data.status === "active")
   .sort((a, b) => {
     // Sort by seniority (if defined) or by name
-    return (a.data.seniority ?? 0) - (b.data.seniority ?? 0);
+    return (a.data.seniority ?? 999) - (b.data.seniority ?? 999);
   })
   .map((member) => ({
     name: member.data.name,
