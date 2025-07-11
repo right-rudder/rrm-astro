@@ -1,7 +1,7 @@
 ---
 name: Sam Settle
 slug: sam-settle
-title: Sales Representative
+title: Marketing Assistant
 social:
   linkedin: "https://www.linkedin.com/in/samsettletx/"
   instagram: "https://www.instagram.com/ssizzle/?hl=en"
