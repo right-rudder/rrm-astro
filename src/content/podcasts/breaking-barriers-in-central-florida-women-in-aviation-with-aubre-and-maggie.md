@@ -107,5 +107,3 @@ We’re always looking for great aviation stories and guests. Reach out to us at
 _This article is based on a conversation with Aubre Radigan and Maggie Broman, leaders of the Central Florida Chapter of Women in Aviation International, hosted by Tim Jedrek of Right Rudder Marketing._
 
 ---
-
-Would you like me to generate social media captions or a shorter version for newsletters?
