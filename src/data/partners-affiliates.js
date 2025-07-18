@@ -221,6 +221,19 @@ const partnersAffiliates = {
           imageAlt: "Avemco Insurance logo",
           link: "https://www.avemco.com/",
         },
+        {
+          name: "Women in Aviation International",
+          imagePath: "/src/assets/wai-full-color-logo.png",
+          imageAlt: "Women in Aviation International logo",
+          link: "https://www.wai.org/",
+        },
+        {
+          name: "Women in Aviation International - Central Florida Chapter",
+          imagePath: "/src/assets/wai-cfl-logo.png",
+          imageAlt:
+            "Women in Aviation International - Central Florida Chapter logo",
+          link: "https://www.wai-cfl.org/",
+        },
       ],
     },
 
