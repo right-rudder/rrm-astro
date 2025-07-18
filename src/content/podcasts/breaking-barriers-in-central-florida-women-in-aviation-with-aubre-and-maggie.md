@@ -1,7 +1,7 @@
 ---
 pubDate: "July 17, 2025"
 author: Raul Ospina
-title: "Breaking Barriers in Central Florida: Women in Aviation with Aubrey & Maggie"
+title: "Breaking Barriers in Central Florida: Women in Aviation with Aubreyy & Maggie"
 description: "Discover how Women in Aviation International’s Central Florida chapter empowers women in aerospace through mentorship, outreach, and community events like Girls in Aviation Day. Learn how flight schools can partner and support diversity in aviation careers."
 heroImage: "/podcasts/THE Aviation Business Podcast-WIA.png"
 readingTime: 4
@@ -31,7 +31,7 @@ tags:
   ]
 ---
 
-**Women in Aviation International (WAI)** is making waves in Central Florida, and on this episode of the Aviation Business Podcast, we had the privilege to speak with two passionate leaders from the local chapter—**Aubre Radigan** and **Maggie Broman**. They shared inspiring stories of how their group is opening doors, building community, and creating opportunities for women and allies across the aviation industry.
+**Women in Aviation International (WAI)** is making waves in Central Florida, and on this episode of the Aviation Business Podcast, we had the privilege to speak with two passionate leaders from the local chapter—**Aubrey Radigan** and **Maggie Broman**. They shared inspiring stories of how their group is opening doors, building community, and creating opportunities for women and allies across the aviation industry.
 
 <iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/aaRxhEG4yYo?si=-1UMPUgcGuI8dk3h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -41,13 +41,13 @@ tags:
 
 WAI is an international organization dedicated to increasing the number of women working in all areas of aerospace and aviation—not just pilots, but engineers, mechanics, designers, and more. Since 1994, the organization has grown to over 150 chapters worldwide, including the vibrant Central Florida chapter.
 
-Aubre and Maggie explained how WAI provides scholarships, networking, mentorship, and community support to help women and girls get started and thrive in aviation careers. Their local chapter has expanded rapidly from just a handful of members to over 50 active participants.
+Aubrey and Maggie explained how WAI provides scholarships, networking, mentorship, and community support to help women and girls get started and thrive in aviation careers. Their local chapter has expanded rapidly from just a handful of members to over 50 active participants.
 
 ---
 
 ### How Did They Get Started?
 
-Aubre’s aviation journey began with a discovery flight, which instantly lit a fire in her soul. Despite starting as a teacher pursuing a master’s degree, she found aviation was where she truly belonged. The welcoming and supportive atmosphere of WAI helped her overcome the intimidating feeling of entering an “untouchable” industry and find her place.
+Aubrey’s aviation journey began with a discovery flight, which instantly lit a fire in her soul. Despite starting as a teacher pursuing a master’s degree, she found aviation was where she truly belonged. The welcoming and supportive atmosphere of WAI helped her overcome the intimidating feeling of entering an “untouchable” industry and find her place.
 
 Maggie’s path was similar. With no family background in aviation, she took a chance on a discovery flight in high school and never looked back. After earning her aviation degree and ratings, she found a home in WAI’s Central Florida chapter, becoming a leader and mentor.
 
@@ -57,7 +57,7 @@ Maggie’s path was similar. With no family background in aviation, she took a c
 
 One of the most powerful takeaways from the conversation was the diversity of opportunities in aviation. From rocket design and interior aircraft design to aircraft detailing, air traffic control, and even NASA seamstresses, aviation offers a role for nearly every passion.
 
-Aubre and Maggie emphasized that aviation should be accessible to everyone, no matter their background or skills. The group regularly hosts guest speakers from across the spectrum, exposing members and newcomers to a wide variety of careers beyond piloting.
+Aubrey and Maggie emphasized that aviation should be accessible to everyone, no matter their background or skills. The group regularly hosts guest speakers from across the spectrum, exposing members and newcomers to a wide variety of careers beyond piloting.
 
 ---
 
@@ -88,7 +88,7 @@ Opportunities include guest speaking, internship shadowing, sponsorship of event
 
 ### Why This Matters
 
-Aubre shared a powerful mentorship story that defines WAI’s spirit: as you climb the aviation ladder, you always reach back and pull others up with you. That culture of support and encouragement is what’s helping women not only enter aviation but thrive and lead.
+Aubrey shared a powerful mentorship story that defines WAI’s spirit: as you climb the aviation ladder, you always reach back and pull others up with you. That culture of support and encouragement is what’s helping women not only enter aviation but thrive and lead.
 
 ---
 
@@ -104,6 +104,6 @@ We’re always looking for great aviation stories and guests. Reach out to us at
 
 ---
 
-_This article is based on a conversation with Aubre Radigan and Maggie Broman, leaders of the Central Florida Chapter of Women in Aviation International, hosted by Tim Jedrek of Right Rudder Marketing._
+_This article is based on a conversation with Aubrey Radigan and Maggie Broman, leaders of the Central Florida Chapter of Women in Aviation International, hosted by Tim Jedrek of Right Rudder Marketing._
 
 ---
