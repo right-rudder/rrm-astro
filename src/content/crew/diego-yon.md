@@ -1,7 +1,7 @@
 ---
 name: Diego Yon
 slug: diego-yon
-title: Senior Web Developer
+title: Ops Manager
 social:
   linkedin: "https://www.linkedin.com/in/diego-yon/"
   github: "https://github.com/diegoyon"
