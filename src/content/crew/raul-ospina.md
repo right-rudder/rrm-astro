@@ -1,7 +1,7 @@
 ---
 name: Raul Ospina
 slug: raul-ospina
-title: Ops & Marketing Manager
+title: Marketing Manager
 social:
   instagram: "https://www.instagram.com/raminka/"
   linkedin: "https://www.linkedin.com/in/raul-ospina/"
