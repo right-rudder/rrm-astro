@@ -14,7 +14,7 @@ if (!images[content.imagePath]) {
 ---
 
 <header
-  class="relative lg:mt-0 min-h-[90vh] bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
+  class="relative lg:mt-0 lg:min-h-[90vh] bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
 >
   <Image
     src={images[content.imagePath]()}
@@ -29,7 +29,7 @@ if (!images[content.imagePath]) {
   </div>
   <!-- Text -->
   <div
-    class="text-white mt-20 lg:mt-0 text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    class="text-white mt-24 lg:mt-0 text-center pb-12 lg:pb-0 lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
   >
     {
       content.stars && (
@@ -112,7 +112,7 @@ if (!images[content.imagePath]) {
       set:html={content.headerH1}
     />
     <h2
-      class="text-xl mt-3 font-semibold tracking-wide text-center max-w-4xl animate-fade-from-bottom"
+      class="text-lg/6 mt-3 font-semibold tracking-wide text-center max-w-4xl animate-fade-from-bottom"
       set:html={content.paragraph}
     />
     <div

@@ -12,7 +12,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind(), react(), partytown()],
   redirects: {
     // View previous sitemap and Google Search Console and place redirects from old routes to new routes here
-    "/notams": "/blog",
+    /*     "/notams": "/blog",
     "/notams/new-rules-of-marketing-in-2024-for-flight-schools":
       "/webinars/new-rules-of-marketing-in-2024-for-flight-schools",
     "/notams/how-flight-schedule-pro-helps-grow-flight-schools-in-america":
@@ -34,6 +34,6 @@ export default defineConfig({
     "search-engine-optimization": "/flight-school-seo",
     "/flight-crew": "/about/who-we-are",
     "/webinars/your-2025-digital-marketing-plan-for-flight-school-businesses":
-      "/webinars/your-2026-digital-marketing-plan-for-flight-school-businesses/",
+      "/webinars/your-2026-digital-marketing-plan-for-flight-school-businesses/", */
   },
 });

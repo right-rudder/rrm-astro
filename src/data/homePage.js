@@ -76,7 +76,8 @@ const homePage = {
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
           youtubeId: "SD8TsqJSX00",
-          quote: "I think the growth speaks for itself",
+          quote:
+            "Right Rudder Marketing has helped us grow exponentially. I think the growth speaks for itself",
           result: `<strong class="font-black">Blue Skies Above</strong> is a flight school in Lanett, AL just a few miles away from Auburn, AL.  Over the past year, they have seen their flight school explode in growth.  They expanded their fleet and bought a like-new Cessna 172 to handle the TAA and commercial load and they are on their way to acquiring another plane to add to their fleet just to keep up with the demand.`,
           link: "/our-flight-schools/blue-skies-above",
           metric1: {
@@ -86,6 +87,24 @@ const homePage = {
           metric2: {
             label: "Students on waitlist",
             value: "10+",
+          },
+        },
+        {
+          client: "Sun City Aviation Academy",
+          imagePath: "/src/assets/sun-city-white-text-logo.webp",
+          imageAlt: "Sun City Aviation Academy logo",
+          youtubeId: "VUeDTE-Mzuw",
+          quote:
+            "Right Rudder Marketing has been a game-changer for our business",
+          result: `<strong class="font-black">Sun City Aviation Academy</strong> has seen remarkable transformation over their 2-year partnership with Right Rudder Marketing. After meeting Tim Jedrek at FSANA, they've tripled their monthly leads and established themselves as the premier flight school in the greater Phoenix area. Their strategic focus on professional pilot development has significantly increased student lifetime value.`,
+          link: "/our-flight-schools/sun-city",
+          metric1: {
+            label: "Monthly Leads",
+            value: "3X",
+          },
+          metric2: {
+            label: "Partnership",
+            value: "2+ Years",
           },
         },
         {

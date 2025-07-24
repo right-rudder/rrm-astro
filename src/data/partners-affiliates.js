@@ -234,6 +234,12 @@ const partnersAffiliates = {
             "Women in Aviation International - Central Florida Chapter logo",
           link: "https://www.wai-cfl.org/",
         },
+        {
+          name: "Take Flight Interactive",
+          imagePath: "/src/assets/TakeFlight-interactive-logo.png",
+          imageAlt: "Take Flight Interactive logo",
+          link: "https://www.takeflightinteractive.com/",
+        },
       ],
     },
 
