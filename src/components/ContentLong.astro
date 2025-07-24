@@ -12,12 +12,14 @@ if (!images[data.imagePath])
   );
 ---
 
-<div class="bg-white px-6 py-32 lg:px-8">
+<div class="bg-white px-6 py-12 lg:py-32 lg:px-8">
   <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
     <p class="text-base font-semibold leading-7 text-indigo-600">
       {data.upperHeading}
     </p>
-    <h2 class="mt-2 mb-6 text-5xl font-bold tracking-tight text-gray-900">
+    <h2
+      class="mt-2 mb-6 text-3xl lg:text-5xl font-bold tracking-tight text-gray-900"
+    >
       {data.heading}
     </h2>
     {
@@ -26,7 +28,9 @@ if (!images[data.imagePath])
       ))
     }
     <div class="mt-10 max-w-2xl">
-      <h3 class="mt-16 mb-6 text-4xl font-bold tracking-tight text-gray-900">
+      <h3
+        class="mt-16 mb-6 text-3xl lg:text-4xl font-bold tracking-tight text-gray-900"
+      >
         {data.content1.title}
       </h3>
       {
@@ -39,7 +43,7 @@ if (!images[data.imagePath])
       <Image
         src={images[data.imagePath]()}
         alt={data.imageAlt}
-        class="aspect-square rounded-xl bg-gray-50 object-cover"
+        class="aspect-square lg:aspect-auto rounded-xl bg-gray-50 object-cover"
         quality={80}
       />
       <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
@@ -58,7 +62,9 @@ if (!images[data.imagePath])
       </figcaption>
     </figure>
     <div class="mt-16 max-w-2xl">
-      <h2 class="text-4xl mb-6 font-bold tracking-tight text-gray-900">
+      <h2
+        class="text-3xl lg:text-4xl mb-6 font-bold tracking-tight text-gray-900"
+      >
         {data.content2.title}
       </h2>
       {
