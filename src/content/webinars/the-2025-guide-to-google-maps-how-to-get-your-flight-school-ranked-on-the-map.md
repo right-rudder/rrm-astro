@@ -1,5 +1,5 @@
 ---
-pubDate: "July 22, 2025"
+pubDate: "July 31, 2025"
 author: Tim Jedrek
 title: "The 2025 Guide to Google Maps - how to get your flight school ranked on the map"
 description: "In today's digital age, Google Maps has become the go-to resource for millions of people seeking local businesses. For flight schools, a strong Google Maps presence is crucial for attracting new students and increasing visibility. This guide will outline key strategies to optimize your Google Maps listing and improve your local search rankings."
