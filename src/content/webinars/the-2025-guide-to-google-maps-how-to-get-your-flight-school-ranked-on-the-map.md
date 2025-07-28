@@ -28,7 +28,7 @@ In today's digital age, Google Maps has become the go-to resource for millions o
 ### Live Webinar Details:
 
 - **Date:** Thursday, July 31st
-- **Time:** 3:00-4:00 PM CDT
+- **Time:** 2:00 PM CDT
 - **Location:** Register to receive the link
 - **Hosted by:** Right Rudder Marketing
 
