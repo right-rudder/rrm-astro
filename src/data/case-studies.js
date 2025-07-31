@@ -33,6 +33,25 @@ const caseStudies = {
       heading: `Our Flight Schools <strong class="text-white">Get Results</strong>`,
       cases: [
         {
+          client: "Summit Flight Academy",
+          imagePath: "/src/assets/SFA-logo.webp",
+          imageAlt: "Summit Flight Academy logo",
+          youtubeId: "qWRb84en0vs",
+          quote:
+            "They understand aviation, they execute fast, and most importantly—they deliver.",
+          result:
+            "Summit Flight Academy is a leading flight school based in Lee's Summit, Missouri. Within three months of partnering with Right Rudder Marketing, they doubled their website traffic and more than doubled their leads. They now appear on the first page of Google for critical flight training keywords and have streamlined lead handling systems.",
+          link: "/our-flight-schools/summit-flight-academy",
+          metric1: {
+            label: "Website Traffic",
+            value: "2X",
+          },
+          metric2: {
+            label: "Monthly Leads",
+            value: "141%",
+          },
+        },
+        {
           client: "Blue Skies Above",
           imagePath: "/src/assets/ideal-logo.webp",
           imageAlt: "Ideal Aviation logo",
