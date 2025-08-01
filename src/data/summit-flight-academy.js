@@ -112,7 +112,7 @@ const summitFlightAcademy = {
       buttons: [
         {
           name: "Schedule a Call",
-          link: "https://rightruddermarketing.com/schedule-call",
+          link: "/schedule-call",
           primary: true,
         },
         {
