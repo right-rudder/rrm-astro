@@ -6,7 +6,7 @@ social:
   facebook: "https://www.facebook.com/flightschoolmarketing"
   instagram: "https://www.instagram.com/rightruddermarketing/"
   linkedin: "https://www.linkedin.com/in/timjedrek/"
-  twitter: "https://twitter.com/rightruddermktg"
+  twitter: "https://x.com/timjedrek"
   github: "https://github.com/timjedrek"
   website: "https://timjedrek.com/"
   youtube: "https://www.youtube.com/@rightruddermarketing"
