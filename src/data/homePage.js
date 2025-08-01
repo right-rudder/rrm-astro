@@ -72,24 +72,6 @@ const homePage = {
       heading: `Our Flight Schools <strong class="text-white">Get Results</strong>`,
       cases: [
         {
-          client: "Summit Flight Academy",
-          imagePath: "/src/assets/SFA-logo.webp",
-          imageAlt: "Summit Flight Academy logo",
-          youtubeId: "qWRb84en0vs",
-          quote:
-            "They understand aviation, they execute fast, and most importantly—they deliver.",
-          result: `<strong class="font-black">Summit Flight Academy</strong> is a leading flight school in Lee's Summit, Missouri, specializing in professional pilot training and accelerated programs. Within three months of partnering with Right Rudder Marketing, they saw dramatic improvements including doubled website traffic and more than doubled leads. They now appear on the first page of Google for critical flight training keywords in Missouri and surrounding states.`,
-          link: "/our-flight-schools/summit-flight-academy",
-          metric1: {
-            label: "Website Traffic",
-            value: "2X",
-          },
-          metric2: {
-            label: "Monthly Leads",
-            value: "2.4X",
-          },
-        },
-        {
           client: "Sun City Aviation Academy",
           imagePath: "/src/assets/sun-city-white-text-logo.webp",
           imageAlt: "Sun City Aviation Academy logo",
@@ -105,6 +87,24 @@ const homePage = {
           metric2: {
             label: "Partnership",
             value: "2+ Years",
+          },
+        },
+        {
+          client: "Summit Flight Academy",
+          imagePath: "/src/assets/SFA-logo.webp",
+          imageAlt: "Summit Flight Academy logo",
+          youtubeId: "qWRb84en0vs",
+          quote:
+            "They understand aviation, they execute fast, and most importantly—they deliver.",
+          result: `<strong class="font-black">Summit Flight Academy</strong> is a leading flight school in Lee's Summit, Missouri, specializing in professional pilot training and accelerated programs. Within three months of partnering with Right Rudder Marketing, they saw dramatic improvements including doubled website traffic and more than doubled leads. They now appear on the first page of Google for critical flight training keywords in Missouri and surrounding states.`,
+          link: "/our-flight-schools/summit-flight-academy",
+          metric1: {
+            label: "Website Traffic",
+            value: "2X",
+          },
+          metric2: {
+            label: "Monthly Leads",
+            value: "2.4X",
           },
         },
         {
