@@ -28,7 +28,6 @@ tags:
     increasing flight school enrollment,
     flight school branding,
     aviation SEO expert,
-    Off the Ground Marketing comparison,
     aviation marketing expert,
     flight school CRM,
     Google Ads for flight schools,
