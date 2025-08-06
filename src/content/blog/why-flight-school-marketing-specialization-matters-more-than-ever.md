@@ -115,7 +115,7 @@ The timing for effective flight school marketing couldn't be better. Current ind
 
 **Massive Pilot Shortage**: Airlines need to hire **123,000 new pilots in North America alone by 2032**, making career prospects for new pilots stronger than ever.
 
-**Rising Pilot Salaries**: Major airlines are offering **first-year salaries exceeding $90,000** with signing bonuses up to **$150,000**, making pilot careers more financially attractive.
+**Rising Pilot Salaries**: Major airlines are offering **first-year salaries exceeding $90,000** with signing bonuses up to **$150,000**, making pilot careers more financially attractive. _(Figures may vary significantly by airline, region, and market conditions.)_
 
 **Accelerated Career Progression**: The pilot shortage enables faster upgrades and quicker transitions to major carriers.
 
