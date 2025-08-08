@@ -13,7 +13,7 @@ export const SITE_DESCRIPTION =
 export const KEYWORDS =
   "flight school marketing, aviation marketing agency, flight school SEO, pilot training marketing, aviation digital marketing, flight school website design, flight school PPC, aviation advertising, flight school lead generation, student pilot enrollment, flight training marketing, aviation business growth, flight school social media, pilot school marketing, aviation SEO services, flight instructor marketing, discovery flight marketing, commercial pilot training, private pilot lessons, instrument rating training, CFI training programs, aviation academy marketing, flight school branding, pilot recruitment, aviation content marketing, flight school automation, student retention strategies, aviation industry marketing, flight training enrollment, pilot education marketing, St. Louis flight school marketing, Missouri aviation marketing";
 
-export const IMAGE = "/OG_Image-Comp.webp";
+export const IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
 
 // Enhanced location data with SEO benefits
 export const LOCATIONS = [
