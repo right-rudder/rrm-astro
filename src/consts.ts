@@ -37,7 +37,7 @@ export const PHONE_NUMBER = "1-314-804-1200";
 
 export const ADDRESS_LINE_1 = "4411 Woodson Road Suite 101A";
 export const ADDRESS_LINE_2 = "St. Louis, MO 63134";
-export const FACEBOOK_URL = "https://www.facebook.com/rightruddermarketing";
+export const FACEBOOK_URL = "https://www.facebook.com/rightruddermktg";
 export const INSTAGRAM_URL = "https://www.instagram.com/rightruddermarketing/";
 export const LINKEDIN_URL = "http://linkedin.com/company/rightruddermarketing";
 export const TWITTER_URL = "https://twitter.com/rightruddermktg";
