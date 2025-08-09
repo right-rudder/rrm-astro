@@ -5,10 +5,12 @@ import { Image } from "astro:assets";
 const {
   imagePath,
   imageAlt,
-  quality = 60,
+  quality = 75, // Increased from 60 for better quality
   styles = "",
   loading = "lazy",
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+  priority = false, // Add priority loading for critical images
+  format = "webp", // Default to WebP for better compression
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -16,17 +18,30 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 );
 if (!images[imagePath])
   throw new Error(
-    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
   );
+
+// Get the image metadata
+const imageModule = await images[imagePath]();
+const imageData = imageModule.default;
 ---
 
 <Image
-  src={images[imagePath]()}
+  src={imageData}
   alt={imageAlt}
   class={`w-full h-auto ${styles}`}
   quality={quality}
-  loading={loading}
+  loading={priority ? "eager" : loading}
   sizes={sizes}
   widths={[320, 640, 768, 1024, 1280, 1920]}
-  format="webp"
+  format={format}
+  decoding={priority ? "sync" : "async"}
+  fetchpriority={priority ? "high" : "auto"}
 />
+
+<!-- Preload critical images -->
+{
+  priority && (
+    <link rel="preload" as="image" href={imageData.src} imagesizes={sizes} />
+  )
+}

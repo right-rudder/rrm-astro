@@ -8,6 +8,7 @@ import Content3 from "../../components/Content3.astro";
 import OurValues from "../../components/OurValues.astro";
 import FlyWithUsCTA from "../../components/FlyWithUsCTA.astro";
 import OurClientsMarquee from "../../components/OurClientsMarquee.astro";
+import RelatedContent from "../../components/RelatedContent.astro";
 
 const { data } = whoWeAre;
 ---
@@ -29,4 +30,15 @@ const { data } = whoWeAre;
   <TeamGrid data={data.teamGrid} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage="/about/who-we-are"
+    category="about"
+    keywords={[
+      "flight school marketing team",
+      "aviation experts",
+      "marketing specialists",
+    ]}
+  />
 </BaseLayout>
