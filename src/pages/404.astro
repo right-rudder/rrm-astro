@@ -1,22 +1,41 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
+import { generateKeywords, AVIATION_KEYWORDS } from "../utils/seo";
+
+// Enhanced 404 page with better SEO and UX
+const enhancedKeywords = generateKeywords([
+  ...AVIATION_KEYWORDS.primary.slice(0, 3),
+  "404 error",
+  "page not found",
+  "flight school resources",
+  "aviation marketing help",
+]);
 
 const homePage = {
-  pageTitle: "Page Not Found | Right Rudder Marketing",
+  pageTitle: "Page Not Found - Right Rudder Marketing",
   pageDescription:
-    "The page you are looking for is not found.  Please return to the home page. We are sorry for the inconvenience. Thank you for visiting Right Rudder Marketing.",
-  pageKeywords:
-    "Page Not Found, 404, Right Rudder Marketing, Flight School Marketing, Aviation Marketing, Flight School Advertising, Aviation Advertising, Flight School SEO, Aviation SEO",
+    "The page you're looking for doesn't exist. Explore our flight school marketing resources, services, and get back on course with Right Rudder Marketing. Find what you need to grow your aviation business.",
+  pageKeywords: enhancedKeywords,
   header: {
     imagePath: "/src/assets/david-kovalenko-G85VuTpw6jg-unsplash.jpg",
     imageAlt: "Lost plane in the middle of the woods",
     headerH1: `Check Your Instruments`,
-    paragraph: "Page Not Found</br>Please Return to the Home Page",
+    paragraph: "Page Not Found</br>Let's Get You Back on Course",
     buttons: [
       {
-        name: "Home",
+        name: "Return Home",
         link: "/",
+        primary: true,
+      },
+      {
+        name: "Our Marketing Services",
+        link: "/flight-school-seo",
+        primary: false,
+      },
+      {
+        name: "Contact Us",
+        link: "/contact",
         primary: false,
       },
     ],
@@ -31,4 +50,131 @@ const homePage = {
 >
   <!-- HEADER -->
   <HeaderScreen content={homePage.header} />
+
+  <!-- Enhanced 404 content with helpful navigation -->
+  <section class="bg-white py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2
+          class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6"
+        >
+          Popular Resources
+        </h2>
+        <p class="text-lg leading-8 text-gray-600 mb-12">
+          While you're here, check out these popular pages that might help you
+          find what you're looking for:
+        </p>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left"
+        >
+          <a
+            href="/flight-school-seo"
+            class="block p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">
+              SEO Services
+            </h3>
+            <p class="text-gray-600">
+              Comprehensive flight school marketing solutions
+            </p>
+          </a>
+
+          <a
+            href="/blog"
+            class="block p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Blog</h3>
+            <p class="text-gray-600">
+              Latest insights and tips for flight school marketing
+            </p>
+          </a>
+
+          <a
+            href="/resources"
+            class="block p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">
+              Free Resources
+            </h3>
+            <p class="text-gray-600">
+              Download our marketing guides and checklists
+            </p>
+          </a>
+
+          <a
+            href="/about"
+            class="block p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">About Us</h3>
+            <p class="text-gray-600">
+              Learn about our flight school marketing expertise
+            </p>
+          </a>
+
+          <a
+            href="/webinars"
+            class="block p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Webinars</h3>
+            <p class="text-gray-600">
+              Free educational webinars for flight schools
+            </p>
+          </a>
+
+          <a
+            href="/contact"
+            class="block p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Get Help</h3>
+            <p class="text-gray-600">
+              Contact our team for personalized assistance
+            </p>
+          </a>
+        </div>
+
+        <div class="mt-12 p-6 bg-blue-50 rounded-lg">
+          <h3 class="font-semibold text-lg text-blue-900 mb-2">
+            Still Can't Find What You Need?
+          </h3>
+          <p class="text-blue-700 mb-4">
+            Our team is here to help you navigate to the right resources for
+            your flight school.
+          </p>
+          <a
+            href="/contact"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+          >
+            Contact Our Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search functionality placeholder for future enhancement -->
+  <script is:inline>
+    // Track 404 errors for analytics
+    if (typeof gtag !== "undefined") {
+      gtag("event", "page_not_found", {
+        event_category: "404",
+        event_label: window.location.pathname,
+        value: 1,
+      });
+    }
+
+    // Auto-redirect common misspellings or old URLs
+    const redirects = {
+      "/contact-us": "/contact",
+      "/our-team": "/about/who-we-are",
+      "/flight-crew": "/about/who-we-are",
+      "/notams": "/blog",
+    };
+
+    const currentPath = window.location.pathname.toLowerCase();
+    if (redirects[currentPath]) {
+      console.log(`Redirecting ${currentPath} to ${redirects[currentPath]}`);
+      window.location.href = redirects[currentPath];
+    }
+  </script>
 </BaseLayout>

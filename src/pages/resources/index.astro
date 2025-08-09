@@ -2,6 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
 import ImageComp from "../../components/ImageComp.astro";
+import RelatedContent from "../../components/RelatedContent.astro";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+} from "../../utils/seo";
 
 const headerData = {
   imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
@@ -133,4 +139,16 @@ const pageMetadata = {
       </div>
     </div>
   </div>
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage="/resources"
+    category="resources"
+    keywords={[
+      "flight school resources",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>

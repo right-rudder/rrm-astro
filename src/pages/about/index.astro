@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
 import TeamGrid from "../../components/TeamGrid.astro";
+import RelatedContent from "../../components/RelatedContent.astro";
 import whoWeAre from "../../data/who-we-are";
 import HeaderCollage from "../../components/HeaderCollage.astro";
 import Content3 from "../../components/Content3.astro";
@@ -98,4 +99,15 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
   <TeamGrid data={data.teamGrid} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage="/about"
+    category="about"
+    keywords={[
+      "flight school marketing team",
+      "aviation experts",
+      "marketing specialists",
+    ]}
+  />
 </BaseLayout>

@@ -6,8 +6,15 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:preview": "astro build --drafts",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "seo:audit": "node ./scripts/seo-audit.js",
+    "seo:links": "node ./src/utils/linkChecker.js",
+    "seo:optimize": "npm run seo:audit && npm run build",
+    "check:links": "npm run seo:links",
+    "check:performance": "npm run build && npm run preview &",
+    "test:seo": "npm run seo:audit"
   },
   "dependencies": {
     "@alpinejs/intersect": "^3.14.6",
