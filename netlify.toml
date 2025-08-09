@@ -7,11 +7,6 @@
 [build.processing.html]
   pretty_urls = false
 
-# Environment variables for better builds
-[build.environment]
-  NODE_VERSION = "18"
-  NPM_FLAGS = "--no-optional"
-
 # Security and performance headers
 [[headers]]
   for = "/*"
