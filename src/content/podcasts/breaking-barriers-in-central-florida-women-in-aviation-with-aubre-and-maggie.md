@@ -1,7 +1,7 @@
 ---
 pubDate: "July 17, 2025"
 author: Raul Ospina
-title: "Breaking Barriers in Central Florida: Women in Aviation with Aubreyy & Maggie"
+title: "Breaking Barriers in Central Florida: Women in Aviation with Aubrey & Maggie"
 description: "Discover how Women in Aviation International’s Central Florida chapter empowers women in aerospace through mentorship, outreach, and community events like Girls in Aviation Day. Learn how flight schools can partner and support diversity in aviation careers."
 heroImage: "/podcasts/THE Aviation Business Podcast-WIA.png"
 readingTime: 4
