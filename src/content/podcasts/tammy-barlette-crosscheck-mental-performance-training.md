@@ -11,7 +11,7 @@ tags: ["Mental Performance", "Aviation Training", "Flight Schools"]
 
 In this episode, Tim Jedrek from Right Rudder Marketing sits down with Tammy Barlette, a retired Air Force pilot and founder of Crosscheck, a mental performance training company for pilots.
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/caUT7Ja3C5I?si=nfQ41mHxTLB0Jxi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/8ae_MUfDFZI?si=WxSN9Ic3TJJiyoNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Tammy’s Story
 
@@ -26,6 +26,7 @@ Officer Training School (OTS) for those who already have a degree
 Guard/Reserve, a lesser-known route that involves networking with squadrons for sponsorship
 
 ## How Mental Performance Training for Pilots
+
 Tammy’s training is all about helping pilots perform at their best under pressure. A few key takeaways:
 Use “What now?” to stay focused instead of dwelling on past mistakes or worrying about the future.
 Expect setbacks, but don’t let them define you. Learn from them and move forward.
