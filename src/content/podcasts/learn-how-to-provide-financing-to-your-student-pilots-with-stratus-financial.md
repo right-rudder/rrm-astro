@@ -11,7 +11,7 @@ tags: ["Student Loans", "Aviation Training", "Flight Schools"]
 
 In this episode, Tim Jedrek from **Right Rudder Marketing** sits down with **Brandon Martini**, **co-founder and COO of Stratus Financial**, the largest student loan lender for pilots. They discuss Brandon’s journey from flight school owner to aviation finance leader, as well as insights on scaling a flight school, student financing, and the future of aviation training.
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/9sQaXnrSIO8?si=YKYhHKyqQmPV_Kc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/zW2eRbo6eEY?si=-Sv2A8ncyL55rUZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Brandon’s Background & Flight School Journey
 
