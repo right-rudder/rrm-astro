@@ -37,7 +37,7 @@ It's about 529 college savings plans and how recent legislative efforts are work
 
 Let's start with the basics. A 529 plan is operated by a state or educational institution, with tax advantages and potentially other incentives to make it easier to save for college and other post-secondary training. Think of it as a special savings account where families can put money aside for education expenses without paying taxes on the growth.
 
-Here's what makes them powerful: earnings are not subject to federal tax and generally not subject to state tax when used for the qualified education expenses of the designated beneficiary, such as tuition, fees, books, as well as room.
+Here's what makes them powerful: earnings are not subject to federal tax and generally not subject to state tax when used for the qualified education expenses of the designated beneficiary, such as tuition, fees, books, as well as room and board.
 
 The catch? Until recently, these plans were mostly limited to traditional colleges and universities.
 
