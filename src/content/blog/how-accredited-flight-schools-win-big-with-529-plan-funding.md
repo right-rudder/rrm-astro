@@ -193,7 +193,7 @@ Want help developing a comprehensive 529 strategy for your flight school? Our te
 
 We can help you with:
 
-- [Strategic marketing System](/marketing-system/) that positions you as a 529 expert
+- [Strategic marketing system](/marketing-system/) that positions you as a 529 expert
 - [SEO optimization](/flight-school-seo/) to capture families searching for 529-eligible training
 - [Professional website design](/flight-school-website-design/) that reflects your educational institution status
 
