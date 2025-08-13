@@ -101,7 +101,7 @@ People are already searching for information about using 529 money for flight tr
 
 Position yourself as the expert resource on 529 plans and aviation training. Create guides, videos, and resources that help families understand their options. This builds trust and keeps you top-of-mind.
 
-At [Right Rudder Marketing](/), our [marketing system](/marketing-system/) help flight schools create exactly this type of educational content that attracts and converts prospects.
+At [Right Rudder Marketing](/), our [marketing system](/marketing-system/) helps flight schools create exactly this type of educational content that attracts and converts prospects.
 
 ## New Audiences You Should Be Targeting
 
