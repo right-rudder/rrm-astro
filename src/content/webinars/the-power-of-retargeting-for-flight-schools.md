@@ -1,5 +1,5 @@
 ---
-pubDate: "August 22, 2025"
+pubDate: "August 28, 2025"
 author: Tim Jedrek
 title: "The POWER of Retargeting for Flight Schools"
 description: "Don’t let potential students slip away! Join us for The POWER of Retargeting for Flight Schools, where we’ll dive into the strategies top-performing schools use to bring back interested prospects and convert them into enrolled students. Learn how to leverage retargeting across Google, Facebook, and Instagram to stay top-of-mind, nurture leads, and fill your classrooms faster."
