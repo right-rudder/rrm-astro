@@ -54,6 +54,8 @@ For many, simulation becomes an end in itself. The hobby offers tremendous satis
 
 Brandon believes these enthusiasts are much closer to becoming pilots than they realize. With targeted industry outreach, scholarships, mentorship programs, and discovery flights, many could be encouraged to make the leap from virtual to actual cockpits.
 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/722hBTEnC8jhAkcxleTdX8/video?utm_source=generator" width="100%" height="480" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 ## The Counterintuitive Truth About Real vs. Virtual Flying
 
 Perhaps the most surprising insight from the podcast was Brandon's assertion that flying a real airplane can actually be easier than flying a simulator. This counterintuitive observation stems from the rich sensory feedback available in actual aircraft.
