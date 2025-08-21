@@ -18,17 +18,17 @@ const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[data.imagePath])
   throw new Error(
-    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
   );
 ---
 
 <div
   id="download-cta"
-  class="relative isolate pb-5 z-10 overflow-hidden bg-white px-6 pt-24 sm:pt-32 lg:overflow-visible lg:px-0"
+  class="relative py-12 isolate z-10 overflow-hidden bg-white lg:overflow-visible lg:px-0"
 >
   <div class="absolute inset-0 -z-10 overflow-hidden">
     <svg
@@ -113,13 +113,13 @@ if (!images[data.imagePath])
                         apiKey={PORTAL_API_KEY}
                       />
                     )}
-                    {btn.modal && btn.name.includes("Book") && (
+                    {/* {btn.modal && btn.name.includes("Book") && (
                       <DownloadBook
                         client:visible
                         webhook={GHL_BOOK_FORM_WEBHOOK_URL}
                         apiKey={PORTAL_API_KEY}
                       />
-                    )}
+                    )} */}
                     {!btn.modal && (
                       <a
                         href={btn.link}

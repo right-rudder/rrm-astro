@@ -71,7 +71,7 @@ const DownloadBook = ({ webhook, apiKey }) => {
   return (
     <>
       <button
-        className="btn-primary w-full md:w-auto"
+        className="btn-primary w-full lg:w-auto"
         onClick={() => {
           toggleModal();
           document.body.style.overflow = "hidden";
