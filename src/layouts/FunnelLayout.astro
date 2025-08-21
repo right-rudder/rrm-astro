@@ -33,7 +33,13 @@ const flyWithUsCTA = {
 };
 
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, keywords, content } = Astro.props;
+const {
+  siteTitle,
+  siteDescription,
+  keywords,
+  content,
+  bookButton = false,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -48,6 +54,15 @@ const { siteTitle, siteDescription, keywords, content } = Astro.props;
   </head>
   <body class="font-sans bg-primary-100">
     <Banner class="z-40" />
+    {
+      bookButton && (
+        <div class="fixed bottom-0 right-0 z-50 p-4">
+          <a href="#download-cta" class="btn-primary animate-fade-in">
+            Get Your Free Book Now
+          </a>
+        </div>
+      )
+    }
     <main>
       <slot />
     </main>
