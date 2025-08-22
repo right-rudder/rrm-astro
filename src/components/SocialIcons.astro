@@ -1,0 +1,94 @@
+---
+import { FaMedium, FaSpotify } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import {
+  IoLogoYoutube,
+  IoLogoInstagram,
+  IoLogoFacebook,
+  IoLogoLinkedin,
+} from "react-icons/io";
+import {
+  YOUTUBE_URL,
+  INSTAGRAM_URL,
+  FACEBOOK_URL,
+  TWITTER_URL,
+  LINKEDIN_URL,
+  MEDIUM_URL,
+  SPOTIFY_URL,
+} from "../consts";
+---
+
+<a
+  href={YOUTUBE_URL}
+  target="_blank"
+  name="Youtube"
+  aria-label="Youtube"
+  title="Youtube"
+  class="transition-colors duration-300 text-white hover:text-accent hover:scale-110"
+>
+  <IoLogoYoutube className="h-5 w-5" />
+</a>
+
+<a
+  href={INSTAGRAM_URL}
+  target="_blank"
+  name="Instagram"
+  aria-label="Instagram"
+  title="Instagram"
+  class="transition-colors duration-300 text-white hover:text-accent hover:scale-110"
+>
+  <IoLogoInstagram className="h-5 w-5" />
+</a>
+
+<a
+  href={FACEBOOK_URL}
+  target="_blank"
+  name="Facebook"
+  aria-label="Facebook"
+  title="Facebook"
+  class="transition-colors duration-300 text-white hover:text-accent hover:scale-110"
+>
+  <IoLogoFacebook className="h-5 w-5" />
+</a>
+
+<a
+  href={TWITTER_URL}
+  target="_blank"
+  name="X"
+  aria-label="Twitter"
+  title="X"
+  class="transition-colors duration-300 text-white hover:text-accent hover:scale-110"
+>
+  <FaXTwitter className="h-4 w-4" />
+</a>
+
+<a
+  href={LINKEDIN_URL}
+  target="_blank"
+  name="LinkedIn"
+  aria-label="LinkedIn"
+  title="LinkedIn"
+  class="transition-colors duration-300 text-white hover:text-accent hover:scale-110"
+>
+  <IoLogoLinkedin className="h-5 w-5" />
+</a>
+<a
+  href={MEDIUM_URL}
+  target="_blank"
+  name="Medium"
+  aria-label="Medium"
+  title="Medium"
+  class="hidden md:block transition-colors duration-300 text-white hover:text-accent hover:scale-110"
+>
+  <FaMedium className="h-5 w-5" />
+</a>
+<a
+  href={SPOTIFY_URL}
+  target="_blank"
+  name="Spotify"
+  aria-label="Spotify"
+  title="Spotify"
+  class="transition-colors duration-300 text-white hover:text-accent hover:scale-110"
+>
+  <FaSpotify className="h-5 w-5" />
+</a>
