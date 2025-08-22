@@ -3,7 +3,7 @@ pubDate: "May 8, 2025"
 author: Tim Jedrek
 title: "Flight School Insurance: What You Need to Know Featuring Kim Skipper from Avemco Insurance"
 description: "Discover expert insurance tips for flight schools from Kim Skipper of Avemco. Learn how to manage risk, reduce premiums, and avoid costly policy mistakes with insights from the Aviation Business Podcast."
-heroImage: "/podcasts/The Aviation Business Podcast - AVEMCO.webp"
+heroImage: "/podcasts/The-Aviation-Business-Podcast-S1E17.png"
 readingTime: 4
 category: "Aviation Business"
 tags:
@@ -37,6 +37,12 @@ One of the biggest risks flight schools face is aircraft damage, especially duri
 ### Avoiding Policy Pitfalls as You Grow
 
 Many schools mistakenly believe a basic policy is enough. Kim explains how insurance needs evolve as a school expands its fleet, adds instructors, or opens new locations. Annual policy reviews and partnering with aviation-specific providers like Avemco can help avoid both underinsurance and unnecessary expenses.
+
+---
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5GdbMNtRPks7L0XrxBE2mk/video?utm_source=generator" width="100%" height="480" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+---
 
 ### Coverage for Students and Renters
 

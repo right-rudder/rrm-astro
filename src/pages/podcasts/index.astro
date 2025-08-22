@@ -133,11 +133,11 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
         </p>
       </div>
       <div
-        class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center"
+        class="w-full flex flex-wrap gap-4 lg:gap-3 mt-16 mx-auto justify-center"
       >
         {
           pods.map((pod, index) => (
-            <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-48 lg:pt-80 hover:ring-1 hover:ring-accent duration-200">
+            <article class="relative group w-full lg:w-[45%] lg:m-0 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-72 lg:pt-68 hover:ring-1 hover:ring-accent duration-200">
               <img
                 src={pod.data.heroImage}
                 alt={pod.data.title}

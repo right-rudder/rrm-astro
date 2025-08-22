@@ -3,7 +3,7 @@ pubDate: "July 25, 2025"
 author: Tim Jedrek
 title: "How Take Flight Interactive Is Revolutionizing Flight Training with AI"
 description: "Discover how Take Flight Interactive is transforming flight training with AI-driven simulators. Learn how this tech empowers flight schools, engages students, and bridges the gap from sim to sky."
-heroImage: "/podcasts/THE Aviation Business Podcast-TakeFlight.png"
+heroImage: "/podcasts/The-Aviation-Business-Podcast-S1E19.png"
 readingTime: 7
 category: "Flight Training"
 tags:

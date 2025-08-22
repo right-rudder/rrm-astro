@@ -3,7 +3,7 @@ pubDate: "July 17, 2025"
 author: Raul Ospina
 title: "Breaking Barriers in Central Florida: Women in Aviation with Aubrey & Maggie"
 description: "Discover how Women in Aviation International’s Central Florida chapter empowers women in aerospace through mentorship, outreach, and community events like Girls in Aviation Day. Learn how flight schools can partner and support diversity in aviation careers."
-heroImage: "/podcasts/THE Aviation Business Podcast-WIA.png"
+heroImage: "/podcasts/The-Aviation-Business-Podcast-S1E18.png"
 readingTime: 4
 category: "Aviation Organizations"
 tags:
@@ -50,6 +50,10 @@ Aubrey and Maggie explained how WAI provides scholarships, networking, mentorshi
 Aubrey’s aviation journey began with a discovery flight, which instantly lit a fire in her soul. Despite starting as a teacher pursuing a master’s degree, she found aviation was where she truly belonged. The welcoming and supportive atmosphere of WAI helped her overcome the intimidating feeling of entering an “untouchable” industry and find her place.
 
 Maggie’s path was similar. With no family background in aviation, she took a chance on a discovery flight in high school and never looked back. After earning her aviation degree and ratings, she found a home in WAI’s Central Florida chapter, becoming a leader and mentor.
+
+---
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7rtPvXQz4kRKu5DTX5ZalE/video?utm_source=generator" width="100%" height="480" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ---
 
