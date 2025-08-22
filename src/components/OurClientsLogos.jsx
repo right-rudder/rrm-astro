@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import clientLogos from "../data/clientLogos.js";
+import clientLogos from "../data/clientLogos";
 
 const MarqueeComponent = () => {
   return (
@@ -24,7 +24,7 @@ const MarqueeComponent = () => {
               className={`min-w-12 md:max-h-16 max-w-24 md:max-w-52 w-full object-contain duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-110 ${
                 logo.invert ? "invert" : ""
               }`}
-              style={{ margin: "0 20px" }}
+              style={{ margin: "0 36px" }}
               width={200}
               height={100}
               loading="lazy"

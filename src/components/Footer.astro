@@ -1,23 +1,9 @@
 ---
 import { FaPhoneSquareAlt } from "react-icons/fa";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
-import {
-  FACEBOOK_URL,
-  INSTAGRAM_URL,
-  LINKEDIN_URL,
-  TWITTER_URL,
-  YOUTUBE_URL,
-  SITE_DESCRIPTION,
-  LOCATIONS,
-} from "../consts";
+import { SITE_DESCRIPTION, LOCATIONS } from "../consts";
 import logo from "../assets/RRM-hor-textWhite-bgTrans.png";
 import { Image } from "astro:assets";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import SocialIcons from "./SocialIcons.astro";
 
 const actualYear = new Date().getFullYear();
 
@@ -276,62 +262,14 @@ const { pathname } = Astro.url;
     <div
       class="mx-auto flex flex-col gap-2 lg:flex-row justify-between items-center align-middle max-w-7xl"
     >
-      <p class="text-sm text-gray-100 text-center">
-        © Copyright {actualYear} Right Rudder Marketing LLC. All rights reserved.
+      <p class="text-sm text-gray-100 text-center mx-5 lg:mx-0">
+        © Copyright <strong>{actualYear}</strong> Right Rudder Marketing LLC. All
+        rights reserved.
       </p>
       <div
-        class="flex items-center justify-center align-middle mt-4 space-x-4 sm:mt-0"
+        class="flex items-center justify-center align-middle mt-4 space-x-4 sm:mt-0 lg:mr-6"
       >
-        <a
-          href={LINKEDIN_URL}
-          target="_blank"
-          name="LinkedIn"
-          aria-label="LinkedIn"
-          title="LinkedIn"
-          class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
-        >
-          <AiFillLinkedin className="size-8" />
-        </a>
-        <a
-          href={INSTAGRAM_URL}
-          target="_blank"
-          name="Instagram"
-          aria-label="Instagram"
-          title="Instagram"
-          class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
-        >
-          <AiFillInstagram className="size-8" />
-        </a>
-        <a
-          href={FACEBOOK_URL}
-          target="_blank"
-          name="Facebook"
-          aria-label="Facebook"
-          title="Facebook"
-          class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
-        >
-          <AiFillFacebook className="size-8" />
-        </a>
-        <a
-          href={TWITTER_URL}
-          target="_blank"
-          name="X"
-          aria-label="X"
-          title="X"
-          class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
-        >
-          <FaSquareXTwitter className="size-8" />
-        </a>
-        <a
-          href={YOUTUBE_URL}
-          target="_blank"
-          name="Youtube"
-          aria-label="Youtube"
-          title="Youtube"
-          class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
-        >
-          <AiFillYoutube className="size-8" />
-        </a>
+        <SocialIcons />
       </div>
     </div>
   </div>

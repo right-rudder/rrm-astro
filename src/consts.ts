@@ -44,6 +44,8 @@ export const TWITTER_URL = "https://twitter.com/rightruddermktg";
 export const YOUTUBE_URL = "https://www.youtube.com/@rightruddermarketing";
 export const MEDIUM_URL = "https://medium.com/@rightruddermarketing";
 export const WHATSAPP_URL = "https://wa.me/13143582100";
+export const SPOTIFY_URL =
+  "https://open.spotify.com/show/6HqS2ljQR33xof9Xnel9Aw?si=hLNuiWmsSQqKyWrV0Iyj6g";
 export const GITHUB_URL = "https://github.com/right-rudder/";
 export const EMAIL_ADDRESS = "info@rightruddermarketing.com";
 
