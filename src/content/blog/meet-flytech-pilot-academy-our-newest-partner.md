@@ -1,7 +1,7 @@
 ---
 pubDate: "August 26, 2025"
 author: Raul Ospina
-title: "Meet FlyTech Pilot Academy Our Newest Partner"
+title: "Meet FlyTech Pilot Academy: Our Newest Partner"
 description: "Discover why FlyTech Pilot Academy in St. Joseph, Missouri became Right Rudder Marketing's newest partner. Learn how their glass cockpit Sling NGT aircraft, 8-month graduate success, and modern training approach is revolutionizing flight education in the Midwest."
 heroImage: "/blog/Welcome-Fly-Tech-Pilot-Academy-Right-Rudder-Marketing.webp"
 readingTime: 4
