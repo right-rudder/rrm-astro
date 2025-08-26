@@ -41,7 +41,7 @@ We're absolutely thrilled to welcome [**FlyTech Pilot Academy**](https://flystj.
 
 ## Why FlyTech Caught Our Attention
 
-You know that feeling when you meet someone who just "gets it"? That's exactly what happened when we first connected with FlyTech. Here's a flight school that launched in 2023 and has already graduated their first student in just 8-9 months. That's not luck—that's smart planning and execution.
+You know that feeling when you meet someone who just "gets it"? That's exactly what happened when we first connected with FlyTech. Here's a flight school that launched in 2023 and has already graduated their first student in just 8-9 months. That's not luck that's smart planning and execution.
 
 What really impressed us? They've logged over 500 flight hours in their first nine months of operation. For a brand-new school, those numbers tell a story of students who are actually flying, not just sitting in ground school forever.
 
@@ -64,7 +64,7 @@ Think about what that means:
 - More flying hours for the same budget
 - Faster student progression
 
-FlyTech passes those savings along with competitive wet rental rates of $185/hour and simulator time at just $50/hour—significantly below what most schools charge.
+FlyTech passes those savings along with competitive wet rental rates of $185/hour and simulator time at just $50/hour significantly below what most schools charge.
 
 ## Smart Location, Smarter Strategy
 
@@ -81,11 +81,11 @@ FlyTech didn't just buy an airplane and call it a day. They've built a comprehen
 - Training programs from Sport Pilot all the way through Commercial
 - Modern digital tools and ForeFlight integration
 
-Their simulator deserves special mention—at $50/hour, it's a game-changer for instrument training without the pressure of actual weather or aircraft availability.
+Their simulator deserves special mention at $50/hour, it's a game-changer for instrument training without the pressure of actual weather or aircraft availability.
 
 ## Why This Partnership Excites Us
 
-At Right Rudder Marketing, we've seen a lot of flight schools. What sets FlyTech apart isn't just their modern approach—it's their understanding that the aviation industry needs to evolve.
+At Right Rudder Marketing, we've seen a lot of flight schools. What sets FlyTech apart isn't just their modern approach it's their understanding that the aviation industry needs to evolve.
 
 Too many flight schools are stuck in 1985, using the same training methods, same aircraft, same everything. FlyTech looked at the industry and asked, "What if we did this better?" Then they actually did it.
 
@@ -121,7 +121,7 @@ The answer is simple: **we're pilots too**.
 
 We understand the difference between Part 61 and Part 141 training. We know why glass cockpit experience matters. We can explain the benefits of TAA aircraft without needing a ground lesson first. That industry knowledge translates directly into marketing that actually works.
 
-Our [Flight School Marketing System](/marketing-system) has helped flight schools across the country double, triple, and in some cases 10X their student enrollments. We're not just creating pretty websites—we're building systems that generate qualified leads and convert them into enrolled students.
+Our [Flight School Marketing System](/marketing-system) has helped flight schools across the country double, triple, and in some cases 10X their student enrollments. We're not just creating pretty websites we're building systems that generate qualified leads and convert them into enrolled students.
 
 ## Looking Ahead
 
@@ -133,7 +133,7 @@ As they continue to grow and establish themselves as the leading flight training
 
 If you're curious about FlyTech's approach or considering flight training in the Missouri area, check out their website at [flystj.com](https://flystj.com). Their story is just beginning, and we're excited to be part of it.
 
-For flight schools looking to achieve similar growth and success, our [Flight School Marketing System](/marketing-system) might be exactly what you need. Because when flight schools succeed, more pilots get trained—and that benefits everyone in aviation.
+For flight schools looking to achieve similar growth and success, our [Flight School Marketing System](/marketing-system) might be exactly what you need. Because when flight schools succeed, more pilots get trained and that benefits everyone in aviation.
 
 Welcome to the Right Rudder Marketing family, FlyTech Pilot Academy! Let's train more pilots and show the industry what's possible when innovation meets smart marketing.
 
