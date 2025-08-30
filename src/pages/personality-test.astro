@@ -1761,10 +1761,48 @@ const contactQuestions = [
         };
       }
 
-      // Generate result URL (simplified)
+      // Encoding utility functions
+      const CHARACTER_SETS = [
+        ['a', 'b', 'c', 'd'],      // Set 1
+        ['1', '2', '3', '4'],      // Set 2  
+        ['e', 'f', 'g', 'h'],      // Set 3
+        ['5', '6', '7', '8'],      // Set 4
+        ['i', 'j', 'k', 'l'],      // Set 5
+        ['9', '0', 'q', 'w'],      // Set 6
+        ['m', 'n', 'o', 'p'],      // Set 7
+        ['r', 's', 't', 'u'],      // Set 8
+        ['v', 'x', 'y', 'z']       // Set 9
+      ];
+
+      function answerToIndex(answer) {
+        const mapping = { 'A': 0, 'B': 1, 'C': 2, 'D': 3 };
+        return mapping[answer] ?? 0;
+      }
+
+      function encodeAnswers(answers) {
+        if (!answers || answers.length !== 30) {
+          throw new Error('Expected exactly 30 answers');
+        }
+        
+        let encoded = '';
+        
+        for (let i = 0; i < 30; i++) {
+          const answer = answers[i];
+          const answerIndex = answerToIndex(answer);
+          const setIndex = i % 9; // Cycle through 9 character sets
+          const characterSet = CHARACTER_SETS[setIndex];
+          
+          encoded += characterSet[answerIndex];
+        }
+        
+        return encoded;
+      }
+
+      // Generate result URL with properly encoded answers
       function generateResultUrl(answers) {
-        const randomId = Math.random().toString(36).substring(2, 32);
-        return `${window.location.origin}/personality-test-confirmation?r=mm83k${randomId}`;
+        const encoded = encodeAnswers(answers);
+        const resultId = `mm83k${encoded}`;
+        return `${window.location.origin}/personality-test-confirmation?r=${resultId}`;
       }
 
       // Submit contact info to first webhook (lead capture)
