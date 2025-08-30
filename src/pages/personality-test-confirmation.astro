@@ -1248,19 +1248,10 @@
             return;
           }
 
-          // Try to get results from session storage first (for performance)
-          const storedResults = sessionStorage.getItem(`results_${resultId}`);
-          
-          let results;
-          if (storedResults) {
-            // Use cached results if available
-            results = JSON.parse(storedResults);
-          } else {
-            // Calculate results from the encoded URL
-            const encoded = resultId.substring(5); // Remove 'mm83k' prefix
-            const answers = decodeAnswers(encoded);
-            results = calculateResultsFromAnswers(answers);
-          }
+          // Calculate results from the encoded URL
+          const encoded = resultId.substring(5); // Remove 'mm83k' prefix
+          const answers = decodeAnswers(encoded);
+          const results = calculateResultsFromAnswers(answers);
 
           displayResults(results);
           

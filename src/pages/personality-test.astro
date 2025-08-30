@@ -2426,9 +2426,6 @@ const contactQuestions = [
           // Generate result URL
           const resultUrl = generateResultUrl(answers);
           
-          // Store results in session storage
-          const resultId = resultUrl.split('r=')[1];
-          sessionStorage.setItem(`results_${resultId}`, JSON.stringify(results));
 
           // Submit to webhook
           const webhookResponse = await submitQuizResults(formData, results, resultUrl);
