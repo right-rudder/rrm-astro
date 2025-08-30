@@ -8,10 +8,10 @@
  * @returns {Promise<Object>} - Response from webhook
  */
 export async function submitToWebhook(submissionData) {
-  const webhookUrl = import.meta.env.GHL_WEBHOOK_URL || process.env.GHL_WEBHOOK_URL;
+  const webhookUrl = import.meta.env.GHL_PERSONALITY_QUIZ_WEBHOOK_URL || process.env.GHL_PERSONALITY_QUIZ_WEBHOOK_URL;
   
   if (!webhookUrl) {
-    throw new Error('GHL_WEBHOOK_URL environment variable is not configured');
+    throw new Error('GHL_PERSONALITY_QUIZ_WEBHOOK_URL environment variable is not configured');
   }
   
   try {
