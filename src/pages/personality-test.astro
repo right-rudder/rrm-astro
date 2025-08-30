@@ -1,0 +1,2495 @@
+---
+const GHL_PERSONALITY_QUIZ_CONTACT_WEBHOOK_URL = import.meta.env.GHL_PERSONALITY_QUIZ_CONTACT_WEBHOOK_URL;
+const GHL_PERSONALITY_QUIZ_RESULTS_WEBHOOK_URL = import.meta.env.GHL_PERSONALITY_QUIZ_RESULTS_WEBHOOK_URL;
+
+// Quiz questions with scoring data
+const questions = [
+  {
+    id: 1,
+    text: "When starting a new task, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Research every detail to ensure I understand it fully",
+        scores: { kolbe: { FF: 4, FT: 2 }, mbti: { S: 3, J: 3 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Create a general plan and adjust as I go",
+        scores: { kolbe: { FT: 3, FF: 2 }, mbti: { J: 3, S: 2 }, disc: { S: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "Brainstorm creative ideas and dive in",
+        scores: { kolbe: { QS: 4, FF: 1 }, mbti: { N: 3, P: 3 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "D",
+        text: "Jump in with a hands-on approach",
+        scores: { kolbe: { IM: 4, QS: 3 }, mbti: { P: 3, S: 2 }, disc: { D: 3 } }
+      }
+    ]
+  },
+  {
+    id: 2,
+    text: "In a collaborative team setting, I tend to…",
+    options: [
+      { 
+        letter: "A",
+        text: "Take the lead and drive the group forward",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 3, T: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Connect with others and inspire teamwork",
+        scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Support the team and keep things consistent",
+        scores: { kolbe: { FT: 3 }, mbti: { I: 2, F: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Focus on details and ensure quality",
+        scores: { kolbe: { FF: 3 }, mbti: { I: 3, T: 3 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 3,
+    text: "When solving a complex problem, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Gather all relevant information first",
+        scores: { kolbe: { FF: 4 }, mbti: { S: 3, T: 3 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Look for innovative, out-of-the-box solutions",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 4, T: 2 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "Consider how it impacts the team or stakeholders",
+        scores: { kolbe: { FT: 2 }, mbti: { F: 4, N: 2 }, disc: { S: 3 } }
+      },
+      { 
+        letter: "D",
+        text: "Test a practical, hands-on solution",
+        scores: { kolbe: { IM: 4 }, mbti: { S: 2, P: 3 }, disc: { D: 2 } }
+      }
+    ]
+  },
+  {
+    id: 4,
+    text: "I feel most comfortable when…",
+    options: [
+      { 
+        letter: "A",
+        text: "Following a structured process to complete tasks",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Adapting to new ideas and challenges",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 3 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "Working independently on detailed tasks",
+        scores: { kolbe: { FF: 3 }, mbti: { I: 4, T: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Leading others toward a shared goal",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 4, T: 3 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 5,
+    text: "When interacting with a stakeholder (e.g., teammate, client, or manager), I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Build rapport and ensure they feel heard",
+        scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Stick to a planned approach for the discussion",
+        scores: { kolbe: { FT: 3 }, mbti: { J: 3, S: 2 }, disc: { S: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "Analyze their needs with a logical approach",
+        scores: { kolbe: { FF: 3 }, mbti: { T: 4, I: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Set clear expectations and take the lead",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 3, T: 3 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 6,
+    text: "When facing a tight deadline on a project, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Create a detailed schedule to meet it",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Thrive under pressure and improvise",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 2 }, disc: { D: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "Stay calm and maintain a steady pace",
+        scores: { kolbe: { FT: 3 }, mbti: { F: 2, S: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Rally others to collaborate and meet the goal",
+        scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      }
+    ]
+  },
+  {
+    id: 7,
+    text: "I prefer to learn new skills by…",
+    options: [
+      { 
+        letter: "A",
+        text: "Exploring big-picture concepts and possibilities",
+        scores: { kolbe: { QS: 3 }, mbti: { N: 4, T: 2 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "B",
+        text: "Applying them in a hands-on, practical way",
+        scores: { kolbe: { IM: 4 }, mbti: { S: 4, P: 2 }, disc: { D: 2 } }
+      },
+      { 
+        letter: "C",
+        text: "Following a structured, step-by-step process",
+        scores: { kolbe: { FT: 3 }, mbti: { S: 3, J: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Researching thoroughly before trying",
+        scores: { kolbe: { FF: 4 }, mbti: { I: 2, T: 3 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 8,
+    text: "When giving feedback to a teammate, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Focus on logical areas for improvement",
+        scores: { kolbe: { FF: 3 }, mbti: { T: 4, J: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Encourage them while considering their feelings",
+        scores: { kolbe: { QS: 2 }, mbti: { F: 4, E: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Keep it supportive and consistent",
+        scores: { kolbe: { FT: 3 }, mbti: { F: 3, S: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Be direct and focus on outcomes",
+        scores: { kolbe: { QS: 3 }, mbti: { T: 3, E: 2 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 9,
+    text: "My approach to taking risks on a new idea is…",
+    options: [
+      { 
+        letter: "A",
+        text: "I jump in and take chances",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 2 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "I calculate risks but act quickly",
+        scores: { kolbe: { QS: 3 }, mbti: { N: 3, T: 2 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "I prefer stability and avoid risks",
+        scores: { kolbe: { FT: 3 }, mbti: { S: 3, J: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "I analyze risks thoroughly before deciding",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 10,
+    text: "When working on a creative task (e.g., designing, coding, or strategizing), I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Build something tangible from scratch",
+        scores: { kolbe: { IM: 4 }, mbti: { S: 3, P: 2 }, disc: { D: 3 } }
+      },
+      { 
+        letter: "B",
+        text: "Plan every step to ensure consistency",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Focus on innovative, big-picture ideas",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Research best practices to ensure quality",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 11,
+    text: "I feel most productive when…",
+    options: [
+      { 
+        letter: "A",
+        text: "Leading a team toward a shared objective",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 4, T: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Collaborating and building connections",
+        scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Working independently on focused tasks",
+        scores: { kolbe: { FF: 3 }, mbti: { I: 4, T: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Maintaining a steady, supportive pace",
+        scores: { kolbe: { FT: 3 }, mbti: { I: 2, F: 3 }, disc: { S: 4 } }
+      }
+    ]
+  },
+  {
+    id: 12,
+    text: "When making decisions on a project, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Rely on logical analysis and data",
+        scores: { kolbe: { FF: 3 }, mbti: { T: 4, S: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Consider the team's values and emotions",
+        scores: { kolbe: { QS: 2 }, mbti: { F: 4, N: 2 }, disc: { S: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "Look for creative, future-focused solutions",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 2 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "D",
+        text: "Act quickly to achieve results",
+        scores: { kolbe: { QS: 3 }, mbti: { P: 3, T: 2 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 13,
+    text: "I handle conflict within a team by…",
+    options: [
+      { 
+        letter: "A",
+        text: "Addressing it directly and decisively",
+        scores: { kolbe: { QS: 3 }, mbti: { T: 4, E: 2 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Mediating to find harmony",
+        scores: { kolbe: { FT: 3 }, mbti: { F: 4, E: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Analyzing the root cause logically",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Lightening the mood with new ideas",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 3, P: 3 }, disc: { I: 4 } }
+      }
+    ]
+  },
+  {
+    id: 14,
+    text: "My ideal work environment is…",
+    options: [
+      { 
+        letter: "A",
+        text: "Structured and predictable",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Dynamic and full of new ideas",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Quiet and focused on details",
+        scores: { kolbe: { FF: 3 }, mbti: { I: 4, T: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Competitive and goal-driven",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 3, T: 3 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 15,
+    text: "When presenting a new idea (e.g., a design, strategy, or code solution), I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Focus on data and technical details",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, S: 3 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Inspire with a vision for the future",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 4, E: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Build trust through consistency",
+        scores: { kolbe: { FT: 3 }, mbti: { F: 3, J: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Take charge and set clear goals",
+        scores: { kolbe: { QS: 3 }, mbti: { T: 3, E: 3 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 16,
+    text: "I approach new tools or technologies by…",
+    options: [
+      { 
+        letter: "A",
+        text: "Experimenting with them hands-on",
+        scores: { kolbe: { IM: 4 }, mbti: { S: 3, P: 3 }, disc: { D: 3 } }
+      },
+      { 
+        letter: "B",
+        text: "Reading documentation thoroughly",
+        scores: { kolbe: { FF: 4 }, mbti: { S: 3, J: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Adapting them to my workflow",
+        scores: { kolbe: { QS: 3 }, mbti: { P: 3, N: 2 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "D",
+        text: "Using them to support team goals",
+        scores: { kolbe: { FT: 2 }, mbti: { F: 3, E: 2 }, disc: { S: 4 } }
+      }
+    ]
+  },
+  {
+    id: 17,
+    text: "When planning a project (e.g., a website, campaign, or design), I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Create a detailed timeline and process",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Focus on the end goal and act",
+        scores: { kolbe: { QS: 3 }, mbti: { P: 3, T: 2 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Research all possible options",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Brainstorm creative approaches",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 3 }, disc: { I: 3 } }
+      }
+    ]
+  },
+  {
+    id: 18,
+    text: "When faced with uncertainty in a task, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Take risks and adapt quickly",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 3 }, disc: { D: 3 } }
+      },
+      { 
+        letter: "B",
+        text: "Seek more information to clarify",
+        scores: { kolbe: { FF: 4 }, mbti: { S: 3, T: 3 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Rely on past experience for stability",
+        scores: { kolbe: { FT: 3 }, mbti: { S: 3, J: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Explore creative solutions",
+        scores: { kolbe: { QS: 3 }, mbti: { N: 4, P: 3 }, disc: { I: 3 } }
+      }
+    ]
+  },
+  {
+    id: 19,
+    text: "I prefer to communicate with my team by…",
+    options: [
+      { 
+        letter: "A",
+        text: "Being direct and to the point",
+        scores: { kolbe: { QS: 3 }, mbti: { T: 4, E: 2 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Building rapport and engaging",
+        scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Listening and supporting",
+        scores: { kolbe: { FT: 3 }, mbti: { F: 3, I: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Providing detailed explanations",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 3 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 20,
+    text: "My approach to setting goals is…",
+    options: [
+      { 
+        letter: "A",
+        text: "Set ambitious targets and push hard",
+        scores: { kolbe: { QS: 4 }, mbti: { T: 3, E: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Work steadily toward them",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Focus on the vision and adapt",
+        scores: { kolbe: { QS: 3 }, mbti: { N: 4, P: 3 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "D",
+        text: "Analyze and perfect the plan",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, J: 2 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 21,
+    text: "When working on a visual or technical task (e.g., coding, designing), I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Build and test it myself hands-on",
+        scores: { kolbe: { IM: 4 }, mbti: { S: 3, P: 2 }, disc: { D: 3 } }
+      },
+      { 
+        letter: "B",
+        text: "Follow a structured process",
+        scores: { kolbe: { FT: 3 }, mbti: { S: 3, J: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Experiment with creative approaches",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 2 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "D",
+        text: "Research best practices first",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 22,
+    text: "I handle stress from a project by…",
+    options: [
+      { 
+        letter: "A",
+        text: "Taking charge and solving it",
+        scores: { kolbe: { QS: 4 }, mbti: { T: 3, E: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Talking it out with my team",
+        scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Sticking to a routine to manage",
+        scores: { kolbe: { FT: 4 }, mbti: { S: 3, J: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Analyzing the situation deeply",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 3 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 23,
+    text: "My leadership style when managing a project is…",
+    options: [
+      { 
+        letter: "A",
+        text: "Decisive and results-driven",
+        scores: { kolbe: { QS: 4 }, mbti: { T: 4, E: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Inspirational and collaborative",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Supportive and steady",
+        scores: { kolbe: { FT: 3 }, mbti: { F: 3, J: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Analytical and detail-oriented",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 24,
+    text: "I contribute to a team by…",
+    options: [
+      { 
+        letter: "A",
+        text: "Driving progress and taking risks",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 3, T: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Motivating and connecting with others",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Keeping things organized and stable",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, F: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Ensuring accuracy and quality",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 3 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 25,
+    text: "When negotiating or persuading others, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Push for the best outcome directly",
+        scores: { kolbe: { QS: 4 }, mbti: { T: 4, E: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Build trust and find common ground",
+        scores: { kolbe: { QS: 2 }, mbti: { F: 4, E: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Stick to a fair, consistent approach",
+        scores: { kolbe: { FT: 3 }, mbti: { F: 3, J: 2 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Analyze their perspective and offer data",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 26,
+    text: "I manage my time by…",
+    options: [
+      { 
+        letter: "A",
+        text: "Planning every hour carefully",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Adapting to priorities as they arise",
+        scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 2 }, disc: { I: 3 } }
+      },
+      { 
+        letter: "C",
+        text: "Focusing on one task at a time",
+        scores: { kolbe: { FF: 3 }, mbti: { I: 3, T: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Tackling the most urgent goals first",
+        scores: { kolbe: { QS: 3 }, mbti: { T: 3, E: 2 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 27,
+    text: "When a project doesn't go as planned, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Analyze what went wrong in detail",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 4, I: 2 }, disc: { C: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Brainstorm new ideas to pivot",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Stay calm and follow a backup plan",
+        scores: { kolbe: { FT: 3 }, mbti: { S: 3, J: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Take charge and push for a quick fix",
+        scores: { kolbe: { QS: 3 }, mbti: { T: 3, E: 3 }, disc: { D: 4 } }
+      }
+    ]
+  },
+  {
+    id: 28,
+    text: "I prefer to work on tasks that are…",
+    options: [
+      { 
+        letter: "A",
+        text: "Hands-on and practical",
+        scores: { kolbe: { IM: 4 }, mbti: { S: 4, P: 2 }, disc: { D: 3 } }
+      },
+      { 
+        letter: "B",
+        text: "Strategic and big-picture focused",
+        scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Organized and routine-based",
+        scores: { kolbe: { FT: 4 }, mbti: { S: 3, J: 4 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Detailed and research-intensive",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 3 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 29,
+    text: "When mentoring or guiding a teammate, I…",
+    options: [
+      { 
+        letter: "A",
+        text: "Show them how to do it hands-on",
+        scores: { kolbe: { IM: 4 }, mbti: { S: 3, E: 2 }, disc: { D: 3 } }
+      },
+      { 
+        letter: "B",
+        text: "Inspire them with the bigger vision",
+        scores: { kolbe: { QS: 3 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Provide a structured process to follow",
+        scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Explain the details and best practices",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+      }
+    ]
+  },
+  {
+    id: 30,
+    text: "My approach to feedback from others is…",
+    options: [
+      { 
+        letter: "A",
+        text: "Take it as a challenge to improve",
+        scores: { kolbe: { QS: 3 }, mbti: { T: 4, E: 3 }, disc: { D: 4 } }
+      },
+      { 
+        letter: "B",
+        text: "Appreciate it and build on relationships",
+        scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 4 }, disc: { I: 4 } }
+      },
+      { 
+        letter: "C",
+        text: "Reflect on it calmly and steadily",
+        scores: { kolbe: { FT: 4 }, mbti: { F: 3, J: 3 }, disc: { S: 4 } }
+      },
+      { 
+        letter: "D",
+        text: "Analyze it thoroughly before acting",
+        scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 3 }, disc: { C: 4 } }
+      }
+    ]
+  }
+];
+
+// Contact/demographic questions
+const contactQuestions = [
+  { id: 31, text: "What is your full name (first and last)?", type: "text", field: "name", required: true },
+  { id: 32, text: "What is your phone number (MUST include country code, e.g., +12025550123)?", type: "tel", field: "phone", required: true },
+  { id: 33, text: "What is your email?", type: "email", field: "email", required: true },
+  { id: 34, text: "What is your birthday?", type: "date", field: "birthday", required: true },
+  { id: 35, text: "What is your country?", type: "text", field: "country", required: true },
+  { id: 36, text: "What is your city?", type: "text", field: "city", required: true }
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personality Assessment | Right Rudder Marketing</title>
+    <meta name="description" content="Complete our comprehensive personality assessment combining Kolbe, MBTI, and DISC frameworks to help us understand your work style and strengths." />
+  </head>
+
+  <body class="bg-gray-50 min-h-screen">
+    <div class="max-w-2xl mx-auto py-8 px-4">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Personality Assessment</h1>
+        <p class="text-gray-600">Help us understand your work style and strengths</p>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="mb-8">
+        <div class="flex justify-between text-sm text-gray-500 mb-2">
+          <span>Progress</span>
+          <span id="progress-text">Step 1 of 36</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2">
+          <div id="progress-bar" class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 2.78%"></div>
+        </div>
+      </div>
+
+      <!-- Quiz Form -->
+      <form id="quiz-form" class="bg-white rounded-lg shadow-md p-6">
+        <!-- Question Display Area -->
+        <div id="question-container">
+          <!-- Questions will be dynamically inserted here -->
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between mt-8">
+          <button 
+            type="button" 
+            id="prev-btn" 
+            class="px-6 py-3 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled
+          >
+            Previous
+          </button>
+          
+          <button 
+            type="button" 
+            id="next-btn" 
+            class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Next
+          </button>
+          
+          <button 
+            type="submit" 
+            id="submit-btn" 
+            class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors hidden"
+          >
+            Submit
+          </button>
+        </div>
+
+        <!-- Error Messages -->
+        <div id="error-message" class="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg hidden"></div>
+        
+        <!-- Success Message -->
+        <div id="success-message" class="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg hidden"></div>
+      </form>
+    </div>
+
+    <script define:vars={{ GHL_PERSONALITY_QUIZ_CONTACT_WEBHOOK_URL, GHL_PERSONALITY_QUIZ_RESULTS_WEBHOOK_URL }}>
+      // Quiz data - embedded directly as JavaScript objects
+      const QUIZ_QUESTIONS = [
+        {
+          id: 1,
+          text: "When starting a new task, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Research every detail to ensure I understand it fully",
+              scores: { kolbe: { FF: 4, FT: 2 }, mbti: { S: 3, J: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Create a general plan and adjust as I go",
+              scores: { kolbe: { FT: 3, FF: 2 }, mbti: { J: 3, S: 2 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Brainstorm creative ideas and dive in",
+              scores: { kolbe: { QS: 4, FF: 1 }, mbti: { N: 3, P: 3 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Jump in with a hands-on approach",
+              scores: { kolbe: { IM: 4, QS: 3 }, mbti: { P: 3, S: 2 }, disc: { D: 3 } }
+            }
+          ]
+        },
+        {
+          id: 2,
+          text: "In a collaborative team setting, I tend to…",
+          options: [
+            { 
+              letter: "A",
+              text: "Take the lead and drive the group forward",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 3, T: 3 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Connect with others and inspire teamwork",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Support the team and keep things consistent",
+              scores: { kolbe: { FT: 3 }, mbti: { I: 2, F: 3 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Focus on details and ensure quality",
+              scores: { kolbe: { FF: 3 }, mbti: { I: 3, T: 3 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 3,
+          text: "When solving a complex problem, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Gather all relevant information first",
+              scores: { kolbe: { FF: 4 }, mbti: { S: 3, T: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Look for innovative, out-of-the-box solutions",
+              scores: { kolbe: { QS: 4 }, mbti: { N: 4, T: 2 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Consider how it impacts the team or stakeholders",
+              scores: { kolbe: { FT: 2 }, mbti: { F: 4, N: 2 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Test a practical, hands-on solution",
+              scores: { kolbe: { IM: 4 }, mbti: { S: 2, P: 3 }, disc: { D: 2 } }
+            }
+          ]
+        },
+        {
+          id: 4,
+          text: "I feel most comfortable when…",
+          options: [
+            { 
+              letter: "A",
+              text: "Following a structured process to complete tasks",
+              scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Adapting to new ideas and challenges",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 3 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Working independently on detailed tasks",
+              scores: { kolbe: { FF: 3 }, mbti: { I: 4, T: 2 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Leading others toward a shared goal",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 4, T: 3 }, disc: { D: 4 } }
+            }
+          ]
+        },
+        {
+          id: 5,
+          text: "When interacting with a stakeholder (e.g., teammate, client, or manager), I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Build rapport and ensure they feel heard",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Stick to a planned approach for the discussion",
+              scores: { kolbe: { FT: 3 }, mbti: { J: 3, S: 2 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Analyze their needs with a logical approach",
+              scores: { kolbe: { FF: 3 }, mbti: { T: 4, I: 2 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Set clear expectations and take the lead",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 3, T: 3 }, disc: { D: 4 } }
+            }
+          ]
+        },
+        {
+          id: 6,
+          text: "When facing a tight deadline on a project, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Create a detailed schedule to meet it",
+              scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 2 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Thrive under pressure and improvise",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 2 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Stay calm and maintain a steady pace",
+              scores: { kolbe: { FT: 3 }, mbti: { F: 2, S: 3 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Rally others to collaborate and meet the goal",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+            }
+          ]
+        },
+        {
+          id: 7,
+          text: "I prefer to learn new skills by…",
+          options: [
+            { 
+              letter: "A",
+              text: "Exploring big-picture concepts and possibilities",
+              scores: { kolbe: { QS: 3 }, mbti: { N: 4, T: 2 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Applying them in a hands-on, practical way",
+              scores: { kolbe: { IM: 4 }, mbti: { S: 4, P: 2 }, disc: { D: 2 } }
+            },
+            { 
+              letter: "C",
+              text: "Following a structured, step-by-step process",
+              scores: { kolbe: { FT: 3 }, mbti: { S: 3, J: 3 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Researching thoroughly before trying",
+              scores: { kolbe: { FF: 4 }, mbti: { I: 2, T: 3 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 8,
+          text: "When giving feedback to a teammate, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Focus on logical areas for improvement",
+              scores: { kolbe: { FF: 3 }, mbti: { T: 4, J: 2 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Encourage them while considering their feelings",
+              scores: { kolbe: { QS: 2 }, mbti: { F: 4, E: 3 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Keep it supportive and consistent",
+              scores: { kolbe: { FT: 3 }, mbti: { F: 3, S: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Be direct and focus on outcomes",
+              scores: { kolbe: { QS: 3 }, mbti: { T: 3, E: 2 }, disc: { D: 4 } }
+            }
+          ]
+        },
+        {
+          id: 9,
+          text: "My approach to taking risks on a new idea is…",
+          options: [
+            { 
+              letter: "A",
+              text: "I jump in and take chances",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 2 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "I calculate risks but act quickly",
+              scores: { kolbe: { QS: 3 }, mbti: { N: 3, T: 2 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "I prefer stability and avoid risks",
+              scores: { kolbe: { FT: 3 }, mbti: { S: 3, J: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "I analyze risks thoroughly before deciding",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 2 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 10,
+          text: "When working on a creative task (e.g., designing, coding, or strategizing), I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Build something tangible from scratch",
+              scores: { kolbe: { IM: 4 }, mbti: { S: 3, P: 2 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Plan every step to ensure consistency",
+              scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Think outside the box and explore ideas",
+              scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 3 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Research best practices first",
+              scores: { kolbe: { FF: 3 }, mbti: { T: 3, J: 2 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 11,
+          text: "When making decisions, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Go with my gut instinct",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 3, N: 2 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Weigh all the pros and cons systematically",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 4, J: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Consider how it affects others",
+              scores: { kolbe: { FT: 2 }, mbti: { F: 4, E: 2 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Test it on a small scale first",
+              scores: { kolbe: { IM: 3 }, mbti: { S: 3, J: 2 }, disc: { S: 2 } }
+            }
+          ]
+        },
+        {
+          id: 12,
+          text: "In meetings, I typically…",
+          options: [
+            { 
+              letter: "A",
+              text: "Drive the agenda and keep things moving",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 3, T: 3 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Encourage participation and build consensus",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 4 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Listen carefully and contribute when asked",
+              scores: { kolbe: { FT: 3 }, mbti: { I: 4, S: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Focus on facts and logical analysis",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 4, I: 2 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 13,
+          text: "When I encounter a setback or failure, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Bounce back quickly and try a new approach",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, E: 2 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Analyze what went wrong in detail",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Seek support and guidance from others",
+              scores: { kolbe: { FT: 2 }, mbti: { F: 3, E: 3 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Build something concrete to move forward",
+              scores: { kolbe: { IM: 4 }, mbti: { S: 3, P: 2 }, disc: { D: 2 } }
+            }
+          ]
+        },
+        {
+          id: 14,
+          text: "My ideal work environment is…",
+          options: [
+            { 
+              letter: "A",
+              text: "Dynamic and fast-paced with variety",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, E: 3 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Collaborative and people-focused",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 4 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Stable and supportive with clear expectations",
+              scores: { kolbe: { FT: 4 }, mbti: { S: 3, J: 3 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Quiet and organized where I can focus",
+              scores: { kolbe: { FF: 3 }, mbti: { I: 4, J: 2 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 15,
+          text: "When planning a vacation, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Research everything thoroughly before booking",
+              scores: { kolbe: { FF: 4 }, mbti: { J: 3, T: 2 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Plan some activities but leave room for spontaneity",
+              scores: { kolbe: { FT: 2 }, mbti: { P: 3, S: 2 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Go somewhere exciting and figure it out when I get there",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 3 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Focus on experiences and meeting new people",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 4, N: 3 }, disc: { I: 4 } }
+            }
+          ]
+        },
+        {
+          id: 16,
+          text: "When organizing my workspace, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Keep everything in its designated place",
+              scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 3 }, disc: { C: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Have organized chaos that makes sense to me",
+              scores: { kolbe: { QS: 3 }, mbti: { P: 3, N: 2 }, disc: { I: 2 } }
+            },
+            { 
+              letter: "C",
+              text: "Focus on having the right tools within reach",
+              scores: { kolbe: { IM: 3 }, mbti: { S: 4, P: 2 }, disc: { D: 2 } }
+            },
+            { 
+              letter: "D",
+              text: "Create detailed filing systems and categories",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 3, J: 4 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 17,
+          text: "When learning something new, I prefer to…",
+          options: [
+            { 
+              letter: "A",
+              text: "Jump in and learn by doing",
+              scores: { kolbe: { IM: 4 }, mbti: { P: 4, S: 2 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Study the theory first, then practice",
+              scores: { kolbe: { FF: 4 }, mbti: { J: 3, T: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Follow a structured course or program",
+              scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 3 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Brainstorm different approaches and experiment",
+              scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 3 }, disc: { I: 3 } }
+            }
+          ]
+        },
+        {
+          id: 18,
+          text: "In social situations, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Energize by meeting new people and networking",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 4, N: 2 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Take charge and organize group activities",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 3, T: 3 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Prefer smaller groups and deeper conversations",
+              scores: { kolbe: { FF: 2 }, mbti: { I: 4, F: 3 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Enjoy observing and listening more than talking",
+              scores: { kolbe: { FF: 3 }, mbti: { I: 4, S: 2 }, disc: { C: 3 } }
+            }
+          ]
+        },
+        {
+          id: 19,
+          text: "When facing a complex technical challenge, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Break it down systematically and tackle each piece",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 4, J: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Try multiple approaches until something works",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 2 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Build prototypes to test different solutions",
+              scores: { kolbe: { IM: 4 }, mbti: { S: 3, P: 3 }, disc: { D: 2 } }
+            },
+            { 
+              letter: "D",
+              text: "Follow established best practices and procedures",
+              scores: { kolbe: { FT: 4 }, mbti: { S: 4, J: 3 }, disc: { S: 4 } }
+            }
+          ]
+        },
+        {
+          id: 20,
+          text: "My communication style tends to be…",
+          options: [
+            { 
+              letter: "A",
+              text: "Direct and results-oriented",
+              scores: { kolbe: { QS: 3 }, mbti: { T: 4, E: 2 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Enthusiastic and persuasive",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 4, N: 3 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Supportive and considerate",
+              scores: { kolbe: { FT: 3 }, mbti: { F: 4, I: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Detailed and precise",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 3, J: 3 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 21,
+          text: "When managing my time, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Use detailed schedules and to-do lists",
+              scores: { kolbe: { FT: 4 }, mbti: { J: 4, S: 2 }, disc: { C: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Prioritize based on what excites me most",
+              scores: { kolbe: { QS: 3 }, mbti: { P: 3, N: 3 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Focus on completing one task at a time",
+              scores: { kolbe: { IM: 3 }, mbti: { S: 3, J: 2 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Analyze and optimize my workflow regularly",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 4, J: 2 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 22,
+          text: "In conflict situations, I typically…",
+          options: [
+            { 
+              letter: "A",
+              text: "Address issues directly and seek quick resolution",
+              scores: { kolbe: { QS: 3 }, mbti: { T: 3, E: 3 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Try to find win-win solutions for everyone",
+              scores: { kolbe: { QS: 2 }, mbti: { F: 4, E: 3 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Seek to maintain harmony and avoid confrontation",
+              scores: { kolbe: { FT: 3 }, mbti: { F: 3, I: 3 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Gather all the facts before taking a position",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 4, I: 2 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 23,
+          text: "When starting a new job or role, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Jump in and start making an immediate impact",
+              scores: { kolbe: { QS: 4 }, mbti: { E: 3, P: 2 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Focus on building relationships and understanding the culture",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Take time to learn the systems and processes thoroughly",
+              scores: { kolbe: { FF: 4 }, mbti: { I: 3, J: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Follow guidance and established procedures",
+              scores: { kolbe: { FT: 4 }, mbti: { S: 4, J: 3 }, disc: { S: 4 } }
+            }
+          ]
+        },
+        {
+          id: 24,
+          text: "My approach to goal setting is…",
+          options: [
+            { 
+              letter: "A",
+              text: "Set ambitious targets and push hard to achieve them",
+              scores: { kolbe: { QS: 4 }, mbti: { T: 3, J: 2 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Create detailed plans with specific milestones",
+              scores: { kolbe: { FF: 3 }, mbti: { J: 4, T: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Set realistic goals that I can achieve consistently",
+              scores: { kolbe: { FT: 4 }, mbti: { S: 3, J: 3 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Focus on inspiring visions that motivate others",
+              scores: { kolbe: { QS: 3 }, mbti: { N: 4, E: 3 }, disc: { I: 4 } }
+            }
+          ]
+        },
+        {
+          id: 25,
+          text: "When working on a team project, I naturally…",
+          options: [
+            { 
+              letter: "A",
+              text: "Take on leadership and coordinate efforts",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 4, T: 3 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Generate ideas and energize the group",
+              scores: { kolbe: { QS: 4 }, mbti: { E: 4, N: 4 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Support others and ensure everyone is included",
+              scores: { kolbe: { FT: 3 }, mbti: { F: 4, I: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Focus on quality and accuracy of the work",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 3, I: 3 }, disc: { C: 4 } }
+            }
+          ]
+        },
+        {
+          id: 26,
+          text: "When I need to recharge, I prefer to…",
+          options: [
+            { 
+              letter: "A",
+              text: "Spend time alone in quiet reflection",
+              scores: { kolbe: { FF: 2 }, mbti: { I: 4, F: 2 }, disc: { C: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Engage in social activities with friends",
+              scores: { kolbe: { QS: 2 }, mbti: { E: 4, F: 3 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Do something physical or hands-on",
+              scores: { kolbe: { IM: 4 }, mbti: { S: 4, P: 2 }, disc: { D: 2 } }
+            },
+            { 
+              letter: "D",
+              text: "Maintain my regular routine and habits",
+              scores: { kolbe: { FT: 4 }, mbti: { S: 3, J: 4 }, disc: { S: 4 } }
+            }
+          ]
+        },
+        {
+          id: 27,
+          text: "My decision-making process typically involves…",
+          options: [
+            { 
+              letter: "A",
+              text: "Gathering comprehensive data and analysis",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 4, J: 2 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Consulting with others and building consensus",
+              scores: { kolbe: { FT: 2 }, mbti: { F: 4, E: 3 }, disc: { S: 3 } }
+            },
+            { 
+              letter: "C",
+              text: "Making quick decisions and adjusting as needed",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, E: 2 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Testing solutions with small experiments first",
+              scores: { kolbe: { IM: 3 }, mbti: { S: 3, P: 3 }, disc: { C: 2 } }
+            }
+          ]
+        },
+        {
+          id: 28,
+          text: "When presenting ideas to others, I…",
+          options: [
+            { 
+              letter: "A",
+              text: "Use data and logical arguments to persuade",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 4, J: 2 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "Tell stories and connect emotionally",
+              scores: { kolbe: { QS: 3 }, mbti: { F: 4, N: 3 }, disc: { I: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Focus on practical benefits and applications",
+              scores: { kolbe: { IM: 3 }, mbti: { S: 4, T: 2 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Ensure everyone feels comfortable and included",
+              scores: { kolbe: { FT: 3 }, mbti: { F: 3, I: 2 }, disc: { S: 4 } }
+            }
+          ]
+        },
+        {
+          id: 29,
+          text: "My natural response to change is to…",
+          options: [
+            { 
+              letter: "A",
+              text: "Embrace it as an opportunity for growth",
+              scores: { kolbe: { QS: 4 }, mbti: { P: 4, N: 3 }, disc: { D: 3 } }
+            },
+            { 
+              letter: "B",
+              text: "Analyze the implications carefully first",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 3, J: 3 }, disc: { C: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "Adapt gradually while maintaining stability",
+              scores: { kolbe: { FT: 4 }, mbti: { S: 3, J: 2 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "D",
+              text: "Get excited about the possibilities it brings",
+              scores: { kolbe: { QS: 3 }, mbti: { E: 4, N: 4 }, disc: { I: 4 } }
+            }
+          ]
+        },
+        {
+          id: 30,
+          text: "At the end of a successful project, I feel most satisfied when…",
+          options: [
+            { 
+              letter: "A",
+              text: "I've delivered measurable results and impact",
+              scores: { kolbe: { QS: 3 }, mbti: { T: 4, J: 2 }, disc: { D: 4 } }
+            },
+            { 
+              letter: "B",
+              text: "The team worked well together and everyone contributed",
+              scores: { kolbe: { FT: 3 }, mbti: { F: 4, E: 3 }, disc: { S: 4 } }
+            },
+            { 
+              letter: "C",
+              text: "I've learned something new and innovative",
+              scores: { kolbe: { QS: 4 }, mbti: { N: 4, P: 2 }, disc: { I: 3 } }
+            },
+            { 
+              letter: "D",
+              text: "Everything was completed accurately and thoroughly",
+              scores: { kolbe: { FF: 4 }, mbti: { T: 3, J: 4 }, disc: { C: 4 } }
+            }
+          ]
+        }
+      ];
+      
+      const COUNTRIES = [
+        "United States", "Canada", "United Kingdom", "Australia", "Germany", "France", "Spain", "Italy", "Netherlands", "Belgium", "Switzerland", "Austria", "Sweden", "Norway", "Denmark", "Finland", "Ireland", "Portugal", "Greece", "Poland", "Czech Republic", "Hungary", "Slovakia", "Slovenia", "Estonia", "Latvia", "Lithuania", "Luxembourg", "Malta", "Cyprus", "Bulgaria", "Romania", "Croatia", "Serbia", "Montenegro", "North Macedonia", "Albania", "Bosnia and Herzegovina", "Kosovo", "Moldova", "Ukraine", "Belarus", "Russia", "Turkey", "Israel", "United Arab Emirates", "Saudi Arabia", "Kuwait", "Qatar", "Bahrain", "Oman", "Jordan", "Lebanon", "Egypt", "South Africa", "Kenya", "Nigeria", "Ghana", "Morocco", "Tunisia", "Algeria", "Libya", "Sudan", "Ethiopia", "Tanzania", "Uganda", "Rwanda", "Botswana", "Zambia", "Zimbabwe", "Namibia", "Mozambique", "Madagascar", "Mauritius", "Seychelles", "Japan", "South Korea", "China", "Taiwan", "Hong Kong", "Singapore", "Malaysia", "Thailand", "Vietnam", "Philippines", "Indonesia", "India", "Pakistan", "Bangladesh", "Sri Lanka", "Nepal", "Myanmar", "Cambodia", "Laos", "Brunei", "Maldives", "Mongolia", "Kazakhstan", "Uzbekistan", "Kyrgyzstan", "Tajikistan", "Turkmenistan", "Afghanistan", "Iran", "Iraq", "Syria", "Yemen", "Mexico", "Guatemala", "Belize", "El Salvador", "Honduras", "Nicaragua", "Costa Rica", "Panama", "Cuba", "Jamaica", "Haiti", "Dominican Republic", "Puerto Rico", "Trinidad and Tobago", "Barbados", "Grenada", "Saint Lucia", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica", "Saint Kitts and Nevis", "Bahamas", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Uruguay", "Paraguay", "Bolivia", "Guyana", "Suriname", "French Guiana", "New Zealand", "Fiji", "Papua New Guinea", "Samoa", "Tonga", "Vanuatu", "Solomon Islands", "Palau", "Marshall Islands", "Micronesia", "Kiribati", "Nauru", "Tuvalu"
+      ];
+
+      const CONTACT_QUESTIONS = [
+        { id: 31, text: "What is your full name (first and last)?", type: "text", field: "name", required: true },
+        { id: 32, text: "What is your phone number (MUST include country code, e.g., +12025550123)?", type: "tel", field: "phone", required: true },
+        { id: 33, text: "What is your email?", type: "email", field: "email", required: true },
+        { id: 34, text: "What is your birthday?", type: "date", field: "birthday", required: true },
+        { id: 35, text: "What is your country?", type: "select", field: "country", required: true },
+        { id: 36, text: "What is your city?", type: "text", field: "city", required: true }
+      ];
+      const TOTAL_STEPS = 1 + QUIZ_QUESTIONS.length; // 1 contact page + actual number of questions
+
+      // Basic validation functions (inline for now)
+      function validateQuizForm(formData) {
+        const errors = {};
+        let isValid = true;
+        
+        // Check all 30 questions answered
+        if (!formData.answers || formData.answers.length !== 30) {
+          errors.answers = "Please answer all personality questions";
+          isValid = false;
+        } else {
+          for (let i = 0; i < 30; i++) {
+            if (!formData.answers[i] || !['A', 'B', 'C', 'D'].includes(formData.answers[i])) {
+              errors.answers = `Please answer question ${i + 1}`;
+              isValid = false;
+              break;
+            }
+          }
+        }
+        
+        // Use the same validation functions as contact form
+        const nameValidation = validateQuizFullName(formData.name);
+        if (!nameValidation.isValid) {
+          errors.name = nameValidation.errorMessage;
+          isValid = false;
+        }
+        
+        const emailValidation = validateQuizEmail(formData.email);
+        if (!emailValidation.isValid) {
+          errors.email = emailValidation.errorMessage;
+          isValid = false;
+        }
+        
+        const phoneValidation = validateQuizPhone(formData.phone);
+        if (!phoneValidation.isValid) {
+          errors.phone = phoneValidation.errorMessage;
+          isValid = false;
+        }
+        
+        const birthdayValidation = validateQuizDate(formData.birthday);
+        if (!birthdayValidation.isValid) {
+          errors.birthday = birthdayValidation.errorMessage;
+          isValid = false;
+        }
+        
+        // Validate required fields (country and city)
+        if (!formData.country || formData.country.trim().length === 0) {
+          errors.country = "Country is required";
+          isValid = false;
+        }
+        
+        if (!formData.city || formData.city.trim().length === 0) {
+          errors.city = "City is required";
+          isValid = false;
+        }
+        
+        return { isValid, errors };
+      }
+
+      // Basic scoring calculation (simplified for now)
+      function calculateAllScores(answers, questions) {
+        const kolbe = { FF: 0, FT: 0, QS: 0, IM: 0 };
+        const mbti = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 };
+        const disc = { D: 0, I: 0, S: 0, C: 0 };
+        
+        // Calculate scores
+        answers.forEach((answer, index) => {
+          const question = questions[index];
+          const option = question.options.find(opt => opt.letter === answer);
+          
+          if (option && option.scores) {
+            // Add Kolbe scores
+            if (option.scores.kolbe) {
+              Object.entries(option.scores.kolbe).forEach(([type, points]) => {
+                kolbe[type] += points;
+              });
+            }
+            // Add MBTI scores
+            if (option.scores.mbti) {
+              Object.entries(option.scores.mbti).forEach(([type, points]) => {
+                mbti[type] += points;
+              });
+            }
+            // Add DISC scores
+            if (option.scores.disc) {
+              Object.entries(option.scores.disc).forEach(([type, points]) => {
+                disc[type] += points;
+              });
+            }
+          }
+        });
+        
+        // Calculate percentages and dominant types
+        const totalPoints = 480;
+        const kolbePercentages = {};
+        Object.entries(kolbe).forEach(([type, score]) => {
+          kolbePercentages[type] = parseFloat(((score / totalPoints) * 100).toFixed(2));
+        });
+        
+        return {
+          kolbe: {
+            dominant: Object.entries(kolbe).reduce((max, current) => current[1] > max[1] ? current : max)[0],
+            percentages: kolbePercentages
+          },
+          mbti: {
+            type: "ENFP", // Simplified for now
+            percentages: mbti
+          },
+          disc: {
+            primary: Object.entries(disc).reduce((max, current) => current[1] > max[1] ? current : max)[0],
+            percentages: disc
+          }
+        };
+      }
+
+      // Encoding utility functions
+      const CHARACTER_SETS = [
+        ['a', 'b', 'c', 'd'],      // Set 1
+        ['1', '2', '3', '4'],      // Set 2  
+        ['e', 'f', 'g', 'h'],      // Set 3
+        ['5', '6', '7', '8'],      // Set 4
+        ['i', 'j', 'k', 'l'],      // Set 5
+        ['9', '0', 'q', 'w'],      // Set 6
+        ['m', 'n', 'o', 'p'],      // Set 7
+        ['r', 's', 't', 'u'],      // Set 8
+        ['v', 'x', 'y', 'z']       // Set 9
+      ];
+
+      function answerToIndex(answer) {
+        const mapping = { 'A': 0, 'B': 1, 'C': 2, 'D': 3 };
+        return mapping[answer] ?? 0;
+      }
+
+      function encodeAnswers(answers) {
+        if (!answers || answers.length !== 30) {
+          throw new Error('Expected exactly 30 answers');
+        }
+        
+        let encoded = '';
+        
+        for (let i = 0; i < 30; i++) {
+          const answer = answers[i];
+          const answerIndex = answerToIndex(answer);
+          const setIndex = i % 9; // Cycle through 9 character sets
+          const characterSet = CHARACTER_SETS[setIndex];
+          
+          encoded += characterSet[answerIndex];
+        }
+        
+        return encoded;
+      }
+
+      // Generate result URL with properly encoded answers
+      function generateResultUrl(answers) {
+        const encoded = encodeAnswers(answers);
+        const resultId = `mm83k${encoded}`;
+        return `${window.location.origin}/personality-test-confirmation?r=${resultId}`;
+      }
+
+      // Submit contact info to first webhook (lead capture)
+      async function submitContactInfo() {
+        const contactPayload = {
+          name: contactData.name,
+          phone: contactData.phone,
+          email: contactData.email,
+          birthday: contactData.birthday,
+          country: contactData.country,
+          city: contactData.city,
+          source: 'personality_quiz_started'
+        };
+        
+        console.log('Submitting contact info to first webhook:', contactPayload);
+        
+        try {
+          const response = await fetch(GHL_PERSONALITY_QUIZ_CONTACT_WEBHOOK_URL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(contactPayload)
+          });
+          
+          if (!response.ok) {
+            throw new Error(`Contact submission failed: ${response.status}`);
+          }
+          
+          return { success: true };
+        } catch (error) {
+          console.error('Contact webhook error:', error);
+          return { success: false, error: error.message };
+        }
+      }
+
+      // Submit complete results to second webhook
+      async function submitQuizResults(formData, results, resultUrl) {
+        const fullPayload = {
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          birthday: formData.birthday,
+          country: formData.country,
+          city: formData.city,
+          results: results,
+          results_url: resultUrl,
+          source: 'personality_quiz_completed'
+        };
+        
+        console.log('Submitting complete results to second webhook:', fullPayload);
+        
+        try {
+          const response = await fetch(GHL_PERSONALITY_QUIZ_RESULTS_WEBHOOK_URL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(fullPayload)
+          });
+          
+          if (!response.ok) {
+            throw new Error(`Results submission failed: ${response.status}`);
+          }
+          
+          return { success: true };
+        } catch (error) {
+          console.error('Results webhook error:', error);
+          return { success: false, error: error.message };
+        }
+      }
+
+      // Quiz state
+      let currentStep = 1;
+      let answers = Array(1).fill(null); // Only 1 personality question for testing
+      let contactData = {};
+      
+      // Track individual field errors
+      let fieldErrors = {
+        name: null,
+        phone: null,
+        email: null,
+        birthday: null,
+        country: null,
+        city: null
+      };
+
+      // DOM elements
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      const questionContainer = document.getElementById('question-container');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const submitBtn = document.getElementById('submit-btn');
+      const errorMessage = document.getElementById('error-message');
+      const successMessage = document.getElementById('success-message');
+      const form = document.getElementById('quiz-form');
+
+      // Initialize quiz
+      function init() {
+        renderCurrentQuestion();
+        updateProgress();
+        updateButtonStates();
+      }
+
+      // Render current question
+      function renderCurrentQuestion() {
+        if (currentStep === 1) { // Contact form on step 1
+          renderContactForm();
+        } else {
+          // Personality questions on steps 2-31
+          renderPersonalityQuestion();
+        }
+      }
+
+      // Render contact form (all fields on one page)
+      function renderContactForm() {
+        questionContainer.innerHTML = `
+          <div class="question-block">
+            <h2 class="text-xl font-semibold text-gray-900 mb-6">
+              Contact Information
+            </h2>
+            <div id="contact-errors" class="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg" style="display: none;"></div>
+            <div class="space-y-4">
+              ${CONTACT_QUESTIONS.map(question => `
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    ${question.text} ${question.required ? '*' : ''}
+                  </label>
+                  ${question.type === 'select' ? `
+                    <select 
+                      id="contact-${question.field}"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      ${question.required ? 'required' : ''}
+                      onchange="handleContactChange('${question.field}', this.value)"
+                    >
+                      <option value="">Select your country</option>
+                      ${COUNTRIES.map(country => `
+                        <option value="${country}" ${contactData[question.field] === country ? 'selected' : ''}>${country}</option>
+                      `).join('')}
+                    </select>
+                  ` : `
+                    <input 
+                      type="${question.type}" 
+                      id="contact-${question.field}"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      value="${contactData[question.field] || ''}"
+                      ${question.required ? 'required' : ''}
+                      onchange="handleContactChange('${question.field}', this.value)"
+                      onblur="handleFieldBlur('${question.field}', this.value)"
+                      placeholder="${getPlaceholder(question.field, question.type)}"
+                      ${question.field === 'birthday' ? 'pattern="\\d{4}-\\d{2}-\\d{2}" title="Please enter date in YYYY-MM-DD format"' : ''}
+                    />
+                  `}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      // Render personality question
+      function renderPersonalityQuestion() {
+        const questionIndex = currentStep - 2; // Steps 2-31 map to questions 0-29
+        const question = QUIZ_QUESTIONS[questionIndex];
+        
+        if (!question) {
+          console.error(`Question ${currentStep} not found`);
+          return;
+        }
+
+        const selectedAnswer = answers[questionIndex];
+
+        questionContainer.innerHTML = `
+          <div class="question-block">
+            <h2 class="text-xl font-semibold text-gray-900 mb-6">
+              Question ${questionIndex + 1}: ${question.text}
+            </h2>
+            <div class="space-y-3">
+              ${question.options.map(option => `
+                <label class="flex items-start space-x-3 p-4 border rounded-lg cursor-pointer hover:bg-gray-50 ${selectedAnswer === option.letter ? 'border-primary bg-primary-50' : 'border-gray-200'}">
+                  <input 
+                    type="radio" 
+                    name="question-${currentStep}" 
+                    value="${option.letter}"
+                    class="mt-1 text-primary focus:ring-primary"
+                    ${selectedAnswer === option.letter ? 'checked' : ''}
+                    onchange="handleAnswerChange('${option.letter}')"
+                  />
+                  <span class="text-gray-700 leading-relaxed">${option.text}</span>
+                </label>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      // Render contact question
+      function renderContactQuestion() {
+        const contactQuestionIndex = currentStep - 1; // Steps 1-6 for contact
+        const question = CONTACT_QUESTIONS[contactQuestionIndex];
+        
+        if (!question) {
+          console.error(`Contact question ${currentStep} not found`);
+          return;
+        }
+
+        const currentValue = contactData[question.field] || '';
+
+        questionContainer.innerHTML = `
+          <div class="question-block">
+            <h2 class="text-xl font-semibold text-gray-900 mb-6">
+              ${question.text}
+            </h2>
+            <div class="space-y-3">
+              <input 
+                type="${question.type}" 
+                id="contact-${question.field}"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                value="${currentValue}"
+                ${question.required ? 'required' : ''}
+                oninput="handleContactChange('${question.field}', this.value)"
+                onblur="handleFieldBlur('${question.field}', this.value)"
+                placeholder="${getPlaceholder(question.field, question.type)}"
+                ${question.field === 'birthday' ? 'pattern="\\d{4}-\\d{2}-\\d{2}" title="Please enter date in YYYY-MM-DD format"' : ''}
+              />
+            </div>
+          </div>
+        `;
+      }
+
+      // Get placeholder text for contact fields
+      function getPlaceholder(field, type) {
+        const placeholders = {
+          name: "Enter your full name",
+          phone: "+12025550123",
+          email: "your.email@example.com", 
+          birthday: "Select your birthday",
+          country: "United States",
+          city: "Your city"
+        };
+        return placeholders[field] || '';
+      }
+
+      // Handle personality question answer change
+      function handleAnswerChange(answer) {
+        const questionIndex = currentStep - 2; // Steps 2-31 map to questions 0-29
+        answers[questionIndex] = answer;
+        updateButtonStates();
+        hideMessages();
+      }
+
+      // Handle contact field change
+      function handleContactChange(field, value) {
+        contactData[field] = value;
+        updateButtonStates();
+        
+        // Check if this specific field is now valid and clear its error if so
+        let isFieldValid = false;
+        if (field === 'name') {
+          isFieldValid = validateQuizFullName(value).isValid;
+        } else if (field === 'email') {
+          isFieldValid = validateQuizEmail(value).isValid;
+        } else if (field === 'phone') {
+          isFieldValid = validateQuizPhone(value).isValid;
+        } else if (field === 'birthday') {
+          isFieldValid = validateQuizDate(value).isValid;
+        } else if (field === 'country') {
+          isFieldValid = value && value.trim().length > 0;
+        } else if (field === 'city') {
+          isFieldValid = value && value.trim().length > 0;
+        }
+        
+        // If field is now valid, clear its error
+        if (isFieldValid) {
+          updateFieldError(field, null);
+        }
+        
+        hideMessages(); // This only hides general success/error messages now
+      }
+
+      // Handle field blur - validate individual field when user leaves it
+      function handleFieldBlur(field, value) {
+        let errorMessage = null;
+        
+        // Validate specific field and get error message
+        if (field === 'name') {
+          const nameValidation = validateQuizFullName(value);
+          if (!nameValidation.isValid) {
+            errorMessage = nameValidation.errorMessage;
+          }
+        } else if (field === 'email') {
+          const emailValidation = validateQuizEmail(value);
+          if (!emailValidation.isValid) {
+            errorMessage = emailValidation.errorMessage;
+          }
+        } else if (field === 'phone') {
+          const phoneValidation = validateQuizPhone(value);
+          if (!phoneValidation.isValid) {
+            errorMessage = phoneValidation.errorMessage;
+          }
+        } else if (field === 'birthday') {
+          const birthdayValidation = validateQuizDate(value);
+          if (!birthdayValidation.isValid) {
+            errorMessage = birthdayValidation.errorMessage;
+          }
+        } else if (field === 'country' && (!value || value.trim().length === 0)) {
+          errorMessage = "Country is required";
+        } else if (field === 'city' && (!value || value.trim().length === 0)) {
+          errorMessage = "City is required";
+        }
+        
+        // Update the field error (sets to null if valid, or error message if invalid)
+        updateFieldError(field, errorMessage);
+      }
+
+      // Update progress bar and text
+      function updateProgress() {
+        const percentage = (currentStep / TOTAL_STEPS) * 100;
+        progressBar.style.width = `${percentage}%`;
+        progressText.textContent = `Step ${currentStep} of ${TOTAL_STEPS}`;
+      }
+
+      // Update button states
+      function updateButtonStates() {
+        // Previous button
+        prevBtn.disabled = currentStep === 1;
+
+        // Next/Submit button logic
+        const canProceed = canProceedToNext();
+        
+        if (currentStep === TOTAL_STEPS) {
+          // Last step - show submit button
+          nextBtn.style.display = 'none';
+          submitBtn.style.display = 'block';
+          submitBtn.disabled = !canProceed;
+        } else {
+          // Regular steps - show next button
+          nextBtn.style.display = 'block';
+          submitBtn.style.display = 'none';
+          nextBtn.disabled = !canProceed;
+        }
+      }
+
+      // Update field error and display all current errors
+      function updateFieldError(field, errorMessage) {
+        // Set or clear the error for this specific field
+        fieldErrors[field] = errorMessage;
+        
+        // Collect all current errors
+        const allErrors = Object.values(fieldErrors).filter(error => error !== null);
+        
+        const errorDiv = document.getElementById('contact-errors');
+        if (errorDiv) {
+          if (allErrors.length > 0) {
+            errorDiv.innerHTML = `<ul class="list-disc list-inside">${allErrors.map(error => `<li>${error}</li>`).join('')}</ul>`;
+            errorDiv.style.display = 'block';
+            console.log('Showing field errors:', allErrors);
+          } else {
+            errorDiv.style.display = 'none';
+            console.log('All errors cleared');
+          }
+        }
+      }
+
+      // Legacy function for compatibility (used by canProceedToNext)
+      function showContactErrors(errors) {
+        const errorDiv = document.getElementById('contact-errors');
+        
+        if (errorDiv && errors.length > 0) {
+          errorDiv.innerHTML = `<ul class="list-disc list-inside">${errors.map(error => `<li>${error}</li>`).join('')}</ul>`;
+          errorDiv.style.display = 'block';
+        } else if (errorDiv) {
+          errorDiv.style.display = 'none';
+        }
+      }
+
+      // Validation functions (inline versions of quizValidation.js)
+      function validateQuizPhone(phone) {
+        const phoneRegex = /^\+\d{1,3}\d{6,14}$/;
+        
+        if (!phone) {
+          return {
+            isValid: false,
+            errorMessage: "Phone number is required"
+          };
+        }
+        
+        if (!phoneRegex.test(phone)) {
+          return {
+            isValid: false,
+            errorMessage: "Phone must include country code (e.g., +12025550123)"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
+      function validateQuizEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (!email) {
+          return {
+            isValid: false,
+            errorMessage: "Email is required"
+          };
+        }
+        
+        if (!emailRegex.test(email)) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter a valid email address"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
+      function validateQuizDate(birthday) {
+        const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+        
+        if (!birthday) {
+          return {
+            isValid: false,
+            errorMessage: "Birthday is required"
+          };
+        }
+        
+        if (!dateRegex.test(birthday)) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter date in YYYY-MM-DD format"
+          };
+        }
+        
+        // Additional check for valid date
+        const date = new Date(birthday);
+        if (isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== birthday) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter a valid date"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
+      function validateQuizFullName(name) {
+        if (!name || name.trim().length === 0) {
+          return {
+            isValid: false,
+            errorMessage: "Full name is required"
+          };
+        }
+        
+        if (!name.includes(' ') || name.trim().split(' ').filter(part => part.length > 0).length < 2) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter your full name (first and last name)"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
+      function canProceedToNext(showErrors = false) {
+        if (currentStep === 1) {
+          // Contact form - check all required fields with strict validation
+          const errors = [];
+          
+          console.log('Validating contact data:', contactData);
+          
+          // Validate each field using the proper validation functions
+          const nameValidation = validateQuizFullName(contactData.name);
+          if (!nameValidation.isValid) {
+            errors.push(nameValidation.errorMessage);
+          }
+
+          const emailValidation = validateQuizEmail(contactData.email);
+          if (!emailValidation.isValid) {
+            errors.push(emailValidation.errorMessage);
+          }
+
+          const phoneValidation = validateQuizPhone(contactData.phone);
+          if (!phoneValidation.isValid) {
+            errors.push(phoneValidation.errorMessage);
+          }
+
+          const birthdayValidation = validateQuizDate(contactData.birthday);
+          if (!birthdayValidation.isValid) {
+            errors.push(birthdayValidation.errorMessage);
+          }
+
+          // Validate required fields (country and city)
+          if (!contactData.country || contactData.country.trim().length === 0) {
+            errors.push("Country is required");
+          }
+
+          if (!contactData.city || contactData.city.trim().length === 0) {
+            errors.push("City is required");
+          }
+          
+          console.log('Validation errors found:', errors);
+          console.log('showErrors parameter:', showErrors);
+          
+          if (showErrors) {
+            showContactErrors(errors);
+          }
+          return errors.length === 0;
+        } else {
+          // Personality question - check if answered
+          const questionIndex = currentStep - 2; // Steps 2-31 map to questions 0-29
+          if (answers[questionIndex] === null || answers[questionIndex] === undefined) {
+            if (showErrors) {
+              showError('Please select an answer before continuing.');
+            }
+            return false;
+          }
+          return true;
+        }
+      }
+
+      // Go to previous step
+      function goToPreviousStep() {
+        if (currentStep > 1) {
+          currentStep--;
+          renderCurrentQuestion();
+          updateProgress();
+          updateButtonStates();
+          hideMessages();
+        }
+      }
+
+      // Go to next step
+      async function goToNextStep() {
+        if (currentStep < TOTAL_STEPS && canProceedToNext(true)) {
+          
+          // If moving from contact form (step 1) to personality questions
+          if (currentStep === 1) {
+            try {
+              // Submit contact info to first webhook
+              showSuccess('Saving your information...');
+              await submitContactInfo();
+              hideMessages();
+            } catch (error) {
+              console.error('Contact submission error:', error);
+              // Continue anyway - don't block the user
+            }
+          }
+          
+          currentStep++;
+          renderCurrentQuestion();
+          updateProgress();
+          updateButtonStates();
+          hideMessages();
+        }
+      }
+
+      // Handle form submission
+      async function handleSubmit(event) {
+        event.preventDefault();
+        
+        try {
+          // Prepare form data
+          const formData = {
+            answers: answers,
+            name: contactData.name,
+            phone: contactData.phone,
+            email: contactData.email,
+            birthday: contactData.birthday,
+            country: contactData.country,
+            city: contactData.city
+          };
+
+          // Validate form
+          const validation = validateQuizForm(formData);
+          if (!validation.isValid) {
+            showError(Object.values(validation.errors).join(' '));
+            return;
+          }
+
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Submitting...';
+
+          // Calculate scores
+          const results = calculateAllScores(answers, QUIZ_QUESTIONS);
+          
+          // Generate result URL
+          const resultUrl = generateResultUrl(answers);
+          
+          // Store results in session storage
+          const resultId = resultUrl.split('r=')[1];
+          sessionStorage.setItem(`results_${resultId}`, JSON.stringify(results));
+
+          // Submit to webhook
+          const webhookResponse = await submitQuizResults(formData, results, resultUrl);
+          
+          if (webhookResponse.success) {
+            showSuccess('Thank you! Redirecting to your results...');
+            setTimeout(() => {
+              window.location.href = resultUrl;
+            }, 2000);
+          } else {
+            // Even if webhook fails, still redirect to results
+            console.error('Webhook submission failed:', webhookResponse.error);
+            showSuccess('Quiz completed! Redirecting to your results...');
+            setTimeout(() => {
+              window.location.href = resultUrl;
+            }, 2000);
+          }
+
+        } catch (error) {
+          console.error('Submission error:', error);
+          showError('An error occurred while submitting your quiz. Please try again.');
+          
+          // Reset submit button
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit';
+        }
+      }
+
+      // Show error message
+      function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.classList.remove('hidden');
+        successMessage.classList.add('hidden');
+      }
+
+      // Show success message
+      function showSuccess(message) {
+        successMessage.textContent = message;
+        successMessage.classList.remove('hidden');
+        errorMessage.classList.add('hidden');
+      }
+
+      // Hide messages
+      function hideMessages() {
+        errorMessage.classList.add('hidden');
+        successMessage.classList.add('hidden');
+        // Don't hide contact errors automatically - let validation control them
+      }
+
+      // Event listeners
+      prevBtn.addEventListener('click', goToPreviousStep);
+      nextBtn.addEventListener('click', goToNextStep);
+      form.addEventListener('submit', handleSubmit);
+
+      // Make functions globally available for inline event handlers
+      window.handleAnswerChange = handleAnswerChange;
+      window.handleContactChange = handleContactChange;
+      window.handleFieldBlur = handleFieldBlur;
+
+      // Initialize when DOM is loaded
+      document.addEventListener('DOMContentLoaded', init);
+    </script>
+  </body>
+</html>
