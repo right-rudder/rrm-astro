@@ -1899,6 +1899,16 @@ const contactQuestions = [
       let currentStep = 1;
       let answers = Array(1).fill(null); // Only 1 personality question for testing
       let contactData = {};
+      
+      // Track individual field errors
+      let fieldErrors = {
+        name: null,
+        phone: null,
+        email: null,
+        birthday: null,
+        country: null,
+        city: null
+      };
 
       // DOM elements
       const progressBar = document.getElementById('progress-bar');
@@ -1935,7 +1945,7 @@ const contactQuestions = [
             <h2 class="text-xl font-semibold text-gray-900 mb-6">
               Contact Information
             </h2>
-            <div id="contact-errors" class="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg hidden"></div>
+            <div id="contact-errors" class="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg" style="display: none;"></div>
             <div class="space-y-4">
               ${CONTACT_QUESTIONS.map(question => `
                 <div>
@@ -1962,6 +1972,7 @@ const contactQuestions = [
                       value="${contactData[question.field] || ''}"
                       ${question.required ? 'required' : ''}
                       onchange="handleContactChange('${question.field}', this.value)"
+                      onblur="handleFieldBlur('${question.field}', this.value)"
                       placeholder="${getPlaceholder(question.field, question.type)}"
                       ${question.field === 'birthday' ? 'pattern="\\d{4}-\\d{2}-\\d{2}" title="Please enter date in YYYY-MM-DD format"' : ''}
                     />
@@ -2034,6 +2045,7 @@ const contactQuestions = [
                 value="${currentValue}"
                 ${question.required ? 'required' : ''}
                 oninput="handleContactChange('${question.field}', this.value)"
+                onblur="handleFieldBlur('${question.field}', this.value)"
                 placeholder="${getPlaceholder(question.field, question.type)}"
                 ${question.field === 'birthday' ? 'pattern="\\d{4}-\\d{2}-\\d{2}" title="Please enter date in YYYY-MM-DD format"' : ''}
               />
@@ -2068,15 +2080,63 @@ const contactQuestions = [
         contactData[field] = value;
         updateButtonStates();
         
-        // Clear contact errors if form is now valid
-        if (canProceedToNext()) {
-          const errorDiv = document.getElementById('contact-errors');
-          if (errorDiv) {
-            errorDiv.classList.add('hidden');
-          }
+        // Check if this specific field is now valid and clear its error if so
+        let isFieldValid = false;
+        if (field === 'name') {
+          isFieldValid = validateQuizFullName(value).isValid;
+        } else if (field === 'email') {
+          isFieldValid = validateQuizEmail(value).isValid;
+        } else if (field === 'phone') {
+          isFieldValid = validateQuizPhone(value).isValid;
+        } else if (field === 'birthday') {
+          isFieldValid = validateQuizDate(value).isValid;
+        } else if (field === 'country') {
+          isFieldValid = value && value.trim().length > 0;
+        } else if (field === 'city') {
+          isFieldValid = value && value.trim().length > 0;
+        }
+        
+        // If field is now valid, clear its error
+        if (isFieldValid) {
+          updateFieldError(field, null);
         }
         
         hideMessages(); // This only hides general success/error messages now
+      }
+
+      // Handle field blur - validate individual field when user leaves it
+      function handleFieldBlur(field, value) {
+        let errorMessage = null;
+        
+        // Validate specific field and get error message
+        if (field === 'name') {
+          const nameValidation = validateQuizFullName(value);
+          if (!nameValidation.isValid) {
+            errorMessage = nameValidation.errorMessage;
+          }
+        } else if (field === 'email') {
+          const emailValidation = validateQuizEmail(value);
+          if (!emailValidation.isValid) {
+            errorMessage = emailValidation.errorMessage;
+          }
+        } else if (field === 'phone') {
+          const phoneValidation = validateQuizPhone(value);
+          if (!phoneValidation.isValid) {
+            errorMessage = phoneValidation.errorMessage;
+          }
+        } else if (field === 'birthday') {
+          const birthdayValidation = validateQuizDate(value);
+          if (!birthdayValidation.isValid) {
+            errorMessage = birthdayValidation.errorMessage;
+          }
+        } else if (field === 'country' && (!value || value.trim().length === 0)) {
+          errorMessage = "Country is required";
+        } else if (field === 'city' && (!value || value.trim().length === 0)) {
+          errorMessage = "City is required";
+        }
+        
+        // Update the field error (sets to null if valid, or error message if invalid)
+        updateFieldError(field, errorMessage);
       }
 
       // Update progress bar and text
@@ -2107,17 +2167,36 @@ const contactQuestions = [
         }
       }
 
-      // Check if user can proceed to next step
+      // Update field error and display all current errors
+      function updateFieldError(field, errorMessage) {
+        // Set or clear the error for this specific field
+        fieldErrors[field] = errorMessage;
+        
+        // Collect all current errors
+        const allErrors = Object.values(fieldErrors).filter(error => error !== null);
+        
+        const errorDiv = document.getElementById('contact-errors');
+        if (errorDiv) {
+          if (allErrors.length > 0) {
+            errorDiv.innerHTML = `<ul class="list-disc list-inside">${allErrors.map(error => `<li>${error}</li>`).join('')}</ul>`;
+            errorDiv.style.display = 'block';
+            console.log('Showing field errors:', allErrors);
+          } else {
+            errorDiv.style.display = 'none';
+            console.log('All errors cleared');
+          }
+        }
+      }
+
+      // Legacy function for compatibility (used by canProceedToNext)
       function showContactErrors(errors) {
         const errorDiv = document.getElementById('contact-errors');
-        console.log('showContactErrors called with:', errors);
-        console.log('Error div found:', !!errorDiv);
         
-        if (errors.length > 0) {
+        if (errorDiv && errors.length > 0) {
           errorDiv.innerHTML = `<ul class="list-disc list-inside">${errors.map(error => `<li>${error}</li>`).join('')}</ul>`;
-          errorDiv.classList.remove('hidden');
-        } else {
-          errorDiv.classList.add('hidden');
+          errorDiv.style.display = 'block';
+        } else if (errorDiv) {
+          errorDiv.style.display = 'none';
         }
       }
 
@@ -2226,6 +2305,8 @@ const contactQuestions = [
           // Contact form - check all required fields with strict validation
           const errors = [];
           
+          console.log('Validating contact data:', contactData);
+          
           // Validate each field using the proper validation functions
           const nameValidation = validateQuizFullName(contactData.name);
           if (!nameValidation.isValid) {
@@ -2255,6 +2336,9 @@ const contactQuestions = [
           if (!contactData.city || contactData.city.trim().length === 0) {
             errors.push("City is required");
           }
+          
+          console.log('Validation errors found:', errors);
+          console.log('showErrors parameter:', showErrors);
           
           if (showErrors) {
             showContactErrors(errors);
@@ -2402,6 +2486,7 @@ const contactQuestions = [
       // Make functions globally available for inline event handlers
       window.handleAnswerChange = handleAnswerChange;
       window.handleContactChange = handleContactChange;
+      window.handleFieldBlur = handleFieldBlur;
 
       // Initialize when DOM is loaded
       document.addEventListener('DOMContentLoaded', init);
