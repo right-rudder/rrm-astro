@@ -1,11 +1,20 @@
-Personality Test Implementation for Right Rudder MarketingProject OverviewRight Rudder Marketing (RRM) needs a personality test to assess candidates for various roles (web developers, graphic designers, leadership positions, etc.). The test combines three frameworks: Kolbe (conative strengths), Myers-Briggs Type Indicator (MBTI, personality), and DISC (behavioral traits). The test will have 30 questions, plus 6 questions for contact info (name, phone, email) and demographics (birthday, country, city). Phone numbers must include country codes due to overseas hiring. The quiz logic will be handled on the client side using JavaScript on an Astro site, with Tailwind CSS for styling. Upon submission, the contact info, demographics, quiz results, and the results page URL will be sent to a GoHighLevel (GHL) webhook via a POST request, which GHL will use to send a confirmation email including the results and a link to the results page.The test will live at localhost/personality-test and redirect to localhost/personality-test-confirmation after submission with a unique URL parameter (e.g., localhost/personality-test-confirmation?r=mm83ka2g8i0ouv2...). The confirmation page will display a thank-you note and detailed quiz results (Kolbe, MBTI, DISC) with percentage breakdowns, but not the contact info, making it a sharable link. The current date and time is 02:36 AM CDT on Friday, June 06, 2025.RequirementsTest Structure30 questions to assess Kolbe, MBTI, and DISC, stored in the frontmatter of the main Astro file.
+Personality Test Implementation for Right Rudder Marketing
+
+Project Overview
+Right Rudder Marketing (RRM) needs a personality test to assess candidates for various roles (web developers, graphic designers, leadership positions, etc.). The test combines three frameworks: Kolbe (conative strengths), Myers-Briggs Type Indicator (MBTI, personality), and DISC (behavioral traits). The test will have 30 questions, plus 6 questions for contact info (name, phone, email) and demographics (birthday, country, city). Phone numbers must include country codes due to overseas hiring. The quiz logic will be handled on the client side using JavaScript on an Astro site, with Tailwind CSS for styling. Upon submission, the contact info, demographics, quiz results, and the results page URL will be sent to a GoHighLevel (GHL) webhook via a POST request, which GHL will use to send a confirmation email including the results and a link to the results page.The test will live at localhost/personality-test and redirect to localhost/personality-test-confirmation after submission with a unique URL parameter (e.g., localhost/personality-test-confirmation?r=mm83ka2g8i0ouv2...). The confirmation page will display a thank-you note and detailed quiz results (Kolbe, MBTI, DISC) with percentage breakdowns, but not the contact info, making it a sharable link. The current date and time is 02:36 AM CDT on Friday, June 06, 2025.RequirementsTest Structure30 questions to assess Kolbe, MBTI, and DISC, stored in the frontmatter of the main Astro file.
+
 6 questions for contact info and demographics: name (required), phone (required, with country codes), email (required), birthday (required), country (required), city (required).
+
 Multi-step form with a progress bar (one question per step, 36 steps total).
+
 "Submit" button on step 36 (after the City question) triggers validation, sends data to GHL, and redirects to /personality-test-confirmation?r=mm83kxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+
 Confirmation page (/personality-test-confirmation) displays a thank-you note and detailed quiz results (Kolbe, MBTI, DISC) with percentage breakdowns, excluding contact info.
 
 Technical SetupFrontend: Astro site using .astro files and JavaScript for quiz logic.
+
 Routes:/personality-test (pages/personality-test.astro): The main test page.
+
 /personality-test-confirmation (pages/personality-test-confirmation.astro): Confirmation page showing a thank-you note and detailed results, accessible via a unique URL parameter (e.g., /personality-test-confirmation?r=mm83ka2g8i0ouv2...).
 
 Styling: Tailwind CSS for a responsive, branded design.
@@ -40,6 +49,8 @@ Birthday: Required, valid date format (e.g., YYYY-MM-DD), use regex /^\d{4}-\d{2
 Country: Required, non-empty string.
 City: Required, non-empty string.
 All 30 personality questions must be answered before submission.
+
+The GHL Webhook address will be stored in an environment variable.  
 
 Dependencies: Use Astro’s built-in features, fetch for the webhook, and Tailwind CSS.
 
