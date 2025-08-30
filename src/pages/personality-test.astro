@@ -788,10 +788,10 @@ const questions = [
 
 // Contact/demographic questions
 const contactQuestions = [
-  { id: 31, text: "What is your name?", type: "text", field: "name", required: true },
-  { id: 32, text: "What is your phone number (include country code, e.g., +12025550123)?", type: "tel", field: "phone", required: true },
+  { id: 31, text: "What is your full name (first and last)?", type: "text", field: "name", required: true },
+  { id: 32, text: "What is your phone number (MUST include country code, e.g., +12025550123)?", type: "tel", field: "phone", required: true },
   { id: 33, text: "What is your email?", type: "email", field: "email", required: true },
-  { id: 34, text: "What is your birthday (YYYY-MM-DD)?", type: "date", field: "birthday", required: true },
+  { id: 34, text: "What is your birthday?", type: "date", field: "birthday", required: true },
   { id: 35, text: "What is your country?", type: "text", field: "country", required: true },
   { id: 36, text: "What is your city?", type: "text", field: "city", required: true }
 ];
@@ -1658,10 +1658,10 @@ const contactQuestions = [
       ];
 
       const CONTACT_QUESTIONS = [
-        { id: 31, text: "What is your name?", type: "text", field: "name", required: true },
-        { id: 32, text: "What is your phone number (include country code, e.g., +12025550123)?", type: "tel", field: "phone", required: true },
+        { id: 31, text: "What is your full name (first and last)?", type: "text", field: "name", required: true },
+        { id: 32, text: "What is your phone number (MUST include country code, e.g., +12025550123)?", type: "tel", field: "phone", required: true },
         { id: 33, text: "What is your email?", type: "email", field: "email", required: true },
-        { id: 34, text: "What is your birthday (MM-DD-YYYY)?", type: "date", field: "birthday", required: true },
+        { id: 34, text: "What is your birthday?", type: "date", field: "birthday", required: true },
         { id: 35, text: "What is your country?", type: "select", field: "country", required: true },
         { id: 36, text: "What is your city?", type: "text", field: "city", required: true }
       ];
@@ -1686,19 +1686,39 @@ const contactQuestions = [
           }
         }
         
-        // Basic field validation
-        if (!formData.name || formData.name.trim().length === 0) {
-          errors.name = "Name is required";
+        // Use the same validation functions as contact form
+        const nameValidation = validateQuizFullName(formData.name);
+        if (!nameValidation.isValid) {
+          errors.name = nameValidation.errorMessage;
           isValid = false;
         }
         
-        if (!formData.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-          errors.email = "Valid email is required";
+        const emailValidation = validateQuizEmail(formData.email);
+        if (!emailValidation.isValid) {
+          errors.email = emailValidation.errorMessage;
           isValid = false;
         }
         
-        if (!formData.phone || !/^\+\d{1,3}\d{6,14}$/.test(formData.phone)) {
-          errors.phone = "Phone must include country code (e.g., +12025550123)";
+        const phoneValidation = validateQuizPhone(formData.phone);
+        if (!phoneValidation.isValid) {
+          errors.phone = phoneValidation.errorMessage;
+          isValid = false;
+        }
+        
+        const birthdayValidation = validateQuizDate(formData.birthday);
+        if (!birthdayValidation.isValid) {
+          errors.birthday = birthdayValidation.errorMessage;
+          isValid = false;
+        }
+        
+        // Validate required fields (country and city)
+        if (!formData.country || formData.country.trim().length === 0) {
+          errors.country = "Country is required";
+          isValid = false;
+        }
+        
+        if (!formData.city || formData.city.trim().length === 0) {
+          errors.city = "City is required";
           isValid = false;
         }
         
@@ -1943,6 +1963,7 @@ const contactQuestions = [
                       ${question.required ? 'required' : ''}
                       onchange="handleContactChange('${question.field}', this.value)"
                       placeholder="${getPlaceholder(question.field, question.type)}"
+                      ${question.field === 'birthday' ? 'pattern="\\d{4}-\\d{2}-\\d{2}" title="Please enter date in YYYY-MM-DD format"' : ''}
                     />
                   `}
                 </div>
@@ -2014,6 +2035,7 @@ const contactQuestions = [
                 ${question.required ? 'required' : ''}
                 oninput="handleContactChange('${question.field}', this.value)"
                 placeholder="${getPlaceholder(question.field, question.type)}"
+                ${question.field === 'birthday' ? 'pattern="\\d{4}-\\d{2}-\\d{2}" title="Please enter date in YYYY-MM-DD format"' : ''}
               />
             </div>
           </div>
@@ -2026,7 +2048,7 @@ const contactQuestions = [
           name: "Enter your full name",
           phone: "+12025550123",
           email: "your.email@example.com", 
-          birthday: "YYYY-MM-DD",
+          birthday: "Select your birthday",
           country: "United States",
           city: "Your city"
         };
@@ -2045,7 +2067,16 @@ const contactQuestions = [
       function handleContactChange(field, value) {
         contactData[field] = value;
         updateButtonStates();
-        hideMessages();
+        
+        // Clear contact errors if form is now valid
+        if (canProceedToNext()) {
+          const errorDiv = document.getElementById('contact-errors');
+          if (errorDiv) {
+            errorDiv.classList.add('hidden');
+          }
+        }
+        
+        hideMessages(); // This only hides general success/error messages now
       }
 
       // Update progress bar and text
@@ -2090,29 +2121,140 @@ const contactQuestions = [
         }
       }
 
+      // Validation functions (inline versions of quizValidation.js)
+      function validateQuizPhone(phone) {
+        const phoneRegex = /^\+\d{1,3}\d{6,14}$/;
+        
+        if (!phone) {
+          return {
+            isValid: false,
+            errorMessage: "Phone number is required"
+          };
+        }
+        
+        if (!phoneRegex.test(phone)) {
+          return {
+            isValid: false,
+            errorMessage: "Phone must include country code (e.g., +12025550123)"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
+      function validateQuizEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (!email) {
+          return {
+            isValid: false,
+            errorMessage: "Email is required"
+          };
+        }
+        
+        if (!emailRegex.test(email)) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter a valid email address"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
+      function validateQuizDate(birthday) {
+        const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+        
+        if (!birthday) {
+          return {
+            isValid: false,
+            errorMessage: "Birthday is required"
+          };
+        }
+        
+        if (!dateRegex.test(birthday)) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter date in YYYY-MM-DD format"
+          };
+        }
+        
+        // Additional check for valid date
+        const date = new Date(birthday);
+        if (isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== birthday) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter a valid date"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
+      function validateQuizFullName(name) {
+        if (!name || name.trim().length === 0) {
+          return {
+            isValid: false,
+            errorMessage: "Full name is required"
+          };
+        }
+        
+        if (!name.includes(' ') || name.trim().split(' ').filter(part => part.length > 0).length < 2) {
+          return {
+            isValid: false,
+            errorMessage: "Please enter your full name (first and last name)"
+          };
+        }
+        
+        return {
+          isValid: true,
+          errorMessage: ""
+        };
+      }
+
       function canProceedToNext(showErrors = false) {
         if (currentStep === 1) {
-          // Contact form - check all required fields and validate formats
+          // Contact form - check all required fields with strict validation
           const errors = [];
-          CONTACT_QUESTIONS.forEach(question => {
-            const value = contactData[question.field];
-            if (!value || value.trim().length === 0) {
-              errors.push(`${question.text.replace('?', '').replace('*', '')} is required`);
-            } else {
-              // Validate specific field formats
-              if (question.field === 'email') {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(value)) {
-                  errors.push('Please enter a valid email address');
-                }
-              } else if (question.field === 'phone') {
-                const phoneRegex = /^\+?[\d\s\-\(\)]{10,}$/;
-                if (!phoneRegex.test(value) || value.replace(/\D/g, '').length < 10) {
-                  errors.push('Please enter a valid phone number with at least 10 digits');
-                }
-              }
-            }
-          });
+          
+          // Validate each field using the proper validation functions
+          const nameValidation = validateQuizFullName(contactData.name);
+          if (!nameValidation.isValid) {
+            errors.push(nameValidation.errorMessage);
+          }
+
+          const emailValidation = validateQuizEmail(contactData.email);
+          if (!emailValidation.isValid) {
+            errors.push(emailValidation.errorMessage);
+          }
+
+          const phoneValidation = validateQuizPhone(contactData.phone);
+          if (!phoneValidation.isValid) {
+            errors.push(phoneValidation.errorMessage);
+          }
+
+          const birthdayValidation = validateQuizDate(contactData.birthday);
+          if (!birthdayValidation.isValid) {
+            errors.push(birthdayValidation.errorMessage);
+          }
+
+          // Validate required fields (country and city)
+          if (!contactData.country || contactData.country.trim().length === 0) {
+            errors.push("Country is required");
+          }
+
+          if (!contactData.city || contactData.city.trim().length === 0) {
+            errors.push("City is required");
+          }
           
           if (showErrors) {
             showContactErrors(errors);
@@ -2249,6 +2391,7 @@ const contactQuestions = [
       function hideMessages() {
         errorMessage.classList.add('hidden');
         successMessage.classList.add('hidden');
+        // Don't hide contact errors automatically - let validation control them
       }
 
       // Event listeners

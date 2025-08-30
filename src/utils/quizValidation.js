@@ -97,6 +97,32 @@ export function validateQuizDate(birthday) {
 }
 
 /**
+ * Validates full name requiring at least first and last name (space character)
+ * @param {string} name - Name to validate
+ * @returns {Object} - {isValid: boolean, errorMessage: string}
+ */
+export function validateQuizFullName(name) {
+  if (!name || name.trim().length === 0) {
+    return {
+      isValid: false,
+      errorMessage: "Full name is required"
+    };
+  }
+  
+  if (!name.includes(' ') || name.trim().split(' ').filter(part => part.length > 0).length < 2) {
+    return {
+      isValid: false,
+      errorMessage: "Please enter your full name (first and last name)"
+    };
+  }
+  
+  return {
+    isValid: true,
+    errorMessage: ""
+  };
+}
+
+/**
  * Validates required text fields
  * @param {string} value - Value to validate
  * @param {string} fieldName - Name of field for error message
@@ -161,7 +187,7 @@ export function validateQuizForm(formData) {
   }
   
   // Validate contact info
-  const nameValidation = validateRequiredField(formData.name, "Name");
+  const nameValidation = validateQuizFullName(formData.name);
   if (!nameValidation.isValid) {
     errors.name = nameValidation.errorMessage;
     isValid = false;
