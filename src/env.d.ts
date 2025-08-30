@@ -9,7 +9,8 @@ interface ImportMetaEnv {
   readonly GHL_SOP_TEMPLATE_FORM_WEBHOOK_URL: string;
   readonly GHL_KEYWORDS_FORM_WEBHOOK_URL: string;
   readonly GHL_BOOK_FORM_WEBHOOK_URL: string;
-  readonly GHL_PERSONALITY_QUIZ_WEBHOOK_URL: string;
+  readonly GHL_PERSONALITY_QUIZ_CONTACT_WEBHOOK_URL: string;
+  readonly GHL_PERSONALITY_QUIZ_RESULTS_WEBHOOK_URL: string;
   readonly ENROLLMENT_FORM_WEBHOOK_URL: string;
   readonly PORTAL_API_KEY: string;
 }
