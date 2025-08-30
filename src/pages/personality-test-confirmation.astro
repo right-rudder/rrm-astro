@@ -1,0 +1,394 @@
+---
+// This page displays quiz results from the encoded URL parameter
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Personality Results | Right Rudder Marketing</title>
+    <meta name="description" content="Your comprehensive personality assessment results combining Kolbe, MBTI, and DISC frameworks." />
+  </head>
+
+  <body class="bg-gray-50 min-h-screen">
+    <div class="max-w-4xl mx-auto py-8 px-4">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Your Personality Assessment Results</h1>
+        <p class="text-gray-600">Thank you for completing the personality test! We'll be in touch soon.</p>
+      </div>
+
+      <!-- Loading State -->
+      <div id="loading-state" class="text-center py-12">
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+        <p class="text-gray-600">Loading your results...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="error-state" class="hidden bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg">
+        <h3 class="font-semibold mb-2">Unable to Load Results</h3>
+        <p>We couldn't retrieve your personality assessment results. This could happen if:</p>
+        <ul class="list-disc ml-6 mt-2">
+          <li>The results link has expired or been modified</li>
+          <li>You're viewing this page without completing the assessment</li>
+          <li>Your browser doesn't support session storage</li>
+        </ul>
+        <p class="mt-4">
+          <a href="/personality-test" class="text-primary hover:text-primary-dark underline">
+            Take the assessment again
+          </a>
+        </p>
+      </div>
+
+      <!-- Results Display -->
+      <div id="results-display" class="hidden space-y-8">
+        
+        <!-- Share Section -->
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <h3 class="text-lg font-semibold text-blue-900 mb-2">Share Your Results</h3>
+          <p class="text-blue-700 mb-4">Share your personality results with others:</p>
+          <div class="flex items-center space-x-4">
+            <input 
+              type="text" 
+              id="share-url" 
+              readonly 
+              class="flex-1 px-3 py-2 border border-blue-300 rounded-lg bg-white text-sm"
+              value=""
+            />
+            <button 
+              id="copy-url-btn"
+              class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+            >
+              Copy Link
+            </button>
+          </div>
+        </div>
+
+        <!-- Kolbe Results -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Kolbe Assessment</h2>
+          <div class="mb-4">
+            <p class="text-lg text-gray-700">Your dominant mode: <span id="kolbe-dominant" class="font-semibold text-primary"></span></p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Fact Finder</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="kolbe-ff-bar" class="bg-blue-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="kolbe-ff-text" class="text-sm text-gray-600">0%</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Follow Thru</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="kolbe-ft-bar" class="bg-green-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="kolbe-ft-text" class="text-sm text-gray-600">0%</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Quick Start</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="kolbe-qs-bar" class="bg-yellow-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="kolbe-qs-text" class="text-sm text-gray-600">0%</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Implementor</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="kolbe-im-bar" class="bg-red-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="kolbe-im-text" class="text-sm text-gray-600">0%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MBTI Results -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Myers-Briggs Type Indicator</h2>
+          <div class="mb-4">
+            <p class="text-lg text-gray-700">Your personality type: <span id="mbti-type" class="font-semibold text-primary text-2xl"></span></p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-3">Energy Source</h4>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Extroverted</span>
+                  <span id="mbti-e-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-e-bar" class="bg-purple-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Introverted</span>
+                  <span id="mbti-i-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-i-bar" class="bg-indigo-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-3">Information Processing</h4>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Sensing</span>
+                  <span id="mbti-s-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-s-bar" class="bg-blue-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Intuitive</span>
+                  <span id="mbti-n-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-n-bar" class="bg-teal-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-3">Decision Making</h4>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Thinking</span>
+                  <span id="mbti-t-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-t-bar" class="bg-green-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Feeling</span>
+                  <span id="mbti-f-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-f-bar" class="bg-pink-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-3">Lifestyle</h4>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Judging</span>
+                  <span id="mbti-j-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-j-bar" class="bg-orange-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Perceiving</span>
+                  <span id="mbti-p-text" class="text-sm font-medium">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div id="mbti-p-bar" class="bg-cyan-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISC Results -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">DISC Assessment</h2>
+          <div class="mb-4">
+            <p class="text-lg text-gray-700">Your primary style: <span id="disc-primary" class="font-semibold text-primary"></span></p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Dominance</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="disc-d-bar" class="bg-red-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="disc-d-text" class="text-sm text-gray-600">0%</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Influence</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="disc-i-bar" class="bg-yellow-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="disc-i-text" class="text-sm text-gray-600">0%</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Steadiness</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="disc-s-bar" class="bg-green-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="disc-s-text" class="text-sm text-gray-600">0%</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">Conscientiousness</h4>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                <div id="disc-c-bar" class="bg-blue-500 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+              <p id="disc-c-text" class="text-sm text-gray-600">0%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="bg-primary text-white rounded-lg p-8 text-center">
+          <h3 class="text-xl font-bold mb-4">Ready to Join Our Team?</h3>
+          <p class="mb-6">We'll review your results and contact you if there's a good fit for our current openings.</p>
+          <a 
+            href="/about/careers" 
+            class="inline-block bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+          >
+            View Open Positions
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Import utility functions
+      import { extractResultId, validateResultId, getAnswersFromResultId } from '../utils/quizEncoding.js';
+
+      // Get DOM elements
+      const loadingState = document.getElementById('loading-state');
+      const errorState = document.getElementById('error-state');
+      const resultsDisplay = document.getElementById('results-display');
+      const shareUrl = document.getElementById('share-url');
+      const copyUrlBtn = document.getElementById('copy-url-btn');
+
+      // Initialize page
+      function init() {
+        try {
+          // Get result ID from URL parameter
+          const urlParams = new URLSearchParams(window.location.search);
+          const resultId = urlParams.get('r');
+          
+          if (!resultId) {
+            showError();
+            return;
+          }
+
+          // Validate result ID format
+          if (!validateResultId(resultId)) {
+            showError();
+            return;
+          }
+
+          // Try to get results from session storage
+          const storedResults = sessionStorage.getItem(`results_${resultId}`);
+          
+          if (!storedResults) {
+            showError();
+            return;
+          }
+
+          // Parse and display results
+          const results = JSON.parse(storedResults);
+          displayResults(results);
+          
+          // Set up sharing
+          setupSharing();
+          
+          // Hide loading, show results
+          loadingState.classList.add('hidden');
+          resultsDisplay.classList.remove('hidden');
+          
+        } catch (error) {
+          console.error('Error loading results:', error);
+          showError();
+        }
+      }
+
+      // Display results in the UI
+      function displayResults(results) {
+        // Kolbe results
+        document.getElementById('kolbe-dominant').textContent = results.kolbe.dominant;
+        setProgressBar('kolbe-ff', results.kolbe.percentages.FF);
+        setProgressBar('kolbe-ft', results.kolbe.percentages.FT);
+        setProgressBar('kolbe-qs', results.kolbe.percentages.QS);
+        setProgressBar('kolbe-im', results.kolbe.percentages.IM);
+
+        // MBTI results
+        document.getElementById('mbti-type').textContent = results.mbti.type;
+        setProgressBar('mbti-e', results.mbti.percentages.E);
+        setProgressBar('mbti-i', results.mbti.percentages.I);
+        setProgressBar('mbti-s', results.mbti.percentages.S);
+        setProgressBar('mbti-n', results.mbti.percentages.N);
+        setProgressBar('mbti-t', results.mbti.percentages.T);
+        setProgressBar('mbti-f', results.mbti.percentages.F);
+        setProgressBar('mbti-j', results.mbti.percentages.J);
+        setProgressBar('mbti-p', results.mbti.percentages.P);
+
+        // DISC results
+        document.getElementById('disc-primary').textContent = results.disc.primary;
+        setProgressBar('disc-d', results.disc.percentages.D);
+        setProgressBar('disc-i', results.disc.percentages.I);
+        setProgressBar('disc-s', results.disc.percentages.S);
+        setProgressBar('disc-c', results.disc.percentages.C);
+      }
+
+      // Set progress bar width and text
+      function setProgressBar(prefix, percentage) {
+        const bar = document.getElementById(`${prefix}-bar`);
+        const text = document.getElementById(`${prefix}-text`);
+        
+        if (bar && text) {
+          // Animate the progress bar
+          setTimeout(() => {
+            bar.style.width = `${percentage}%`;
+          }, 100);
+          
+          text.textContent = `${percentage}%`;
+        }
+      }
+
+      // Setup sharing functionality
+      function setupSharing() {
+        const currentUrl = window.location.href;
+        shareUrl.value = currentUrl;
+
+        copyUrlBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(currentUrl);
+            copyUrlBtn.textContent = 'Copied!';
+            copyUrlBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+            copyUrlBtn.classList.add('bg-green-600');
+            
+            setTimeout(() => {
+              copyUrlBtn.textContent = 'Copy Link';
+              copyUrlBtn.classList.remove('bg-green-600');
+              copyUrlBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+            }, 2000);
+          } catch (error) {
+            // Fallback for older browsers
+            shareUrl.select();
+            shareUrl.setSelectionRange(0, 99999);
+            document.execCommand('copy');
+            
+            copyUrlBtn.textContent = 'Copied!';
+            setTimeout(() => {
+              copyUrlBtn.textContent = 'Copy Link';
+            }, 2000);
+          }
+        });
+      }
+
+      // Show error state
+      function showError() {
+        loadingState.classList.add('hidden');
+        errorState.classList.remove('hidden');
+      }
+
+      // Initialize when DOM is loaded
+      document.addEventListener('DOMContentLoaded', init);
+    </script>
+  </body>
+</html>
