@@ -575,3 +575,53 @@ Based on "Pricing Packages 2025 - Sheet1.csv":
 - Confirm additional form fields or copywriting tweaks.
 - Assign developer to prototype `EstimatorForm.jsx`.
 - Review package pricing for alignment with PDF (e.g., Stick & Rudder service fee vs. CSV total).
+
+
+
+Here is Claude's plan:                                                                                           │
+│ ╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────╮ │
+│ │ Pricing Estimator Implementation Plan                                                                        │ │
+│ │                                                                                                              │ │
+│ │ Phase 1: Static Infrastructure Setup                                                                         │ │
+│ │                                                                                                              │ │
+│ │ 1. Navigation Setup                                                                                          │ │
+│ │   - Add "Pricing" link to src/data/navbarLinks.js and src/data/mobileNavbarLinks.js                          │ │
+│ │   - Create placeholder /pricing page (empty, just functional nav link)                                       │ │
+│ │ 2. Static Package Pages                                                                                      │ │
+│ │   - Create 5 package pages using dynamic routing src/pages/pricing/[package].astro:                          │ │
+│ │       - /pricing/stick-and-rudder (1-3 aircraft, $500k revenue)                                              │ │
+│ │     - /pricing/six-pack (3-10 aircraft, $1M revenue)                                                         │ │
+│ │     - /pricing/glass-cockpit (10-20 aircraft, $3M revenue)                                                   │ │
+│ │     - /pricing/fly-by-wire (20-40 aircraft, $6M revenue)                                                     │ │
+│ │     - /pricing/supersonic (40-70 aircraft, $10M revenue)                                                     │ │
+│ │   - Each page includes: pricing details, service breakdowns, aviation-themed FAQs, "Schedule a Consultation" │ │
+│ │  CTA                                                                                                         │ │
+│ │   - Use Tailwind styling consistent with your aviation brand                                                 │ │
+│ │                                                                                                              │ │
+│ │ Phase 2: Form System Development                                                                             │ │
+│ │                                                                                                              │ │
+│ │ 3. Utility Functions (following personality quiz patterns)                                                   │ │
+│ │   - src/utils/pricingValidation.js - Real-time validation with immediate error feedback:                     │ │
+│ │       - validateEmail() - same regex as personality quiz                                                     │ │
+│ │     - validateUSPhone() - XXX-XXX-XXXX pattern (US-only, no country codes)                                   │ │
+│ │     - validateRequired() - non-empty field validation                                                        │ │
+│ │     - validateBusinessInputs() - aircraft count, revenue ranges                                              │ │
+│ │   - src/utils/pricingLogic.js - Package selection based on aircraft count + revenue                          │ │
+│ │   - src/utils/pricingWebhook.js - GHL integration (2 separate webhooks)                                      │ │
+│ │ 4. Interactive Pricing Form at /pricing                                                                      │ │
+│ │   - Two-step form with real-time validation:                                                                 │ │
+│ │       - Step 1: Contact details (name, email, business, phone) → GHL webhook 1                               │ │
+│ │     - Step 2: Business details (aircraft, revenue, leads/month, etc.) → GHL webhook 2                        │ │
+│ │   - Abandoned checkout tracking (30s timeout sends partial data to webhook 2)                                │ │
+│ │   - Auto-redirect to appropriate package page based on form inputs                                           │ │
+│ │                                                                                                              │ │
+│ │ Phase 3: Integration & Testing                                                                               │ │
+│ │                                                                                                              │ │
+│ │ 5. Final Integration                                                                                         │ │
+│ │   - Connect form selection logic to static package pages                                                     │ │
+│ │   - Test both GHL webhooks and abandoned checkout functionality                                              │ │
+│ │   - Verify redirects work correctly for all package combinations                                             │ │
+│ │   - Final UX polish and styling                                                                              │ │
+│ │                                                                                                              │ │
+│ │ This approach provides immediate value with shareable static pages while building toward the full            │ │
+│ │ interactive pricing experience.   
