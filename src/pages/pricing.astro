@@ -1,0 +1,127 @@
+---
+import FunnelLayout from "../layouts/FunnelLayout.astro";
+import PricingEstimator from "../components/PricingEstimator.jsx";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+} from "../utils/seo";
+
+// SEO keyword generation for pricing page
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 4),
+    "flight school pricing",
+    "aviation marketing pricing",
+    "pilot training marketing cost",
+    "flight school marketing packages",
+  ],
+  TARGET_LOCATIONS.slice(0, 8),
+  [
+    "flight school marketing pricing",
+    "aviation marketing packages",
+    "pilot school marketing cost",
+    "flight training marketing plans",
+    "aviation business marketing pricing",
+  ]
+);
+
+const metaTitle = "Flight School Marketing Pricing Estimator | Right Rudder Marketing";
+const metaDescription = "Get a custom marketing package recommendation for your flight school. Interactive pricing estimator based on your aircraft count, revenue goals, and business needs.";
+
+// Content for GenericCTA component
+const ctaContent = {
+  imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+  imageAlt: "Right Rudder Marketing team on the runway",
+  headerH1: `<span class="text-primary">Ready to accelerate</br> your flight school's growth?</span>`,
+  paragraph: "Get your personalized marketing package recommendation and start attracting more students today. Our pilot-owned team understands exactly what it takes to grow a successful flight school.",
+  buttons: [
+    {
+      name: "Get Free Marketing Guide",
+      link: "/resources/flight-school-handbook",
+      primary: false,
+    },
+    {
+      name: "Schedule Strategy Call",
+      link: "/schedule-call", 
+      primary: true,
+    },
+  ],
+};
+---
+
+<FunnelLayout
+  siteTitle={metaTitle}
+  siteDescription={metaDescription}
+  keywords={enhancedKeywords}
+  content={ctaContent}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-primary-dark to-primary py-16 text-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Flight School Marketing Pricing Estimator
+      </h1>
+      <p class="text-xl md:text-2xl opacity-90 mb-6">
+        Get a personalized marketing package recommendation in just 2 minutes
+      </p>
+      <p class="text-lg max-w-3xl mx-auto opacity-80">
+        Tell us about your flight school and we'll recommend the perfect marketing package to help you reach your revenue goals. Our pricing estimator considers your aircraft count, current revenue, and growth targets to suggest the ideal solution.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Pricing Estimator -->
+  <section class="py-12 bg-gray-50 min-h-screen">
+    <PricingEstimator client:load />
+  </section>
+
+  <!-- Trust Indicators -->
+  <section class="py-16 bg-primary-dark text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Trusted by Flight Schools Nationwide</h2>
+        <p class="text-xl opacity-90">Pilot-owned marketing agency with proven results</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-accent mb-2">50+</div>
+          <p class="text-lg">Flight Schools Served</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-accent mb-2">$10M+</div>
+          <p class="text-lg">Revenue Generated</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-accent mb-2">5★</div>
+          <p class="text-lg">Average Client Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-xl font-semibold text-primary-dark mb-3">How accurate is the pricing estimator?</h3>
+          <p class="text-gray-700">Our estimator uses data from 50+ flight school clients to recommend packages based on your specific aircraft count, revenue, and growth goals. It's highly accurate for initial recommendations, and we'll provide exact pricing during your consultation.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-primary-dark mb-3">What's included in each package?</h3>
+          <p class="text-gray-700">Each package includes a comprehensive set of marketing services tailored to your flight school's size. This includes website development, SEO, Google Ads management, content creation, and more. Specific services vary by package level.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-primary-dark mb-3">Can I upgrade or downgrade my package?</h3>
+          <p class="text-gray-700">Absolutely! We encourage upgrades as your flight school grows. Many clients start with one package and upgrade as they reach their revenue goals. Downgrades are also possible if needed.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-primary-dark mb-3">What makes Right Rudder Marketing different?</h3>
+          <p class="text-gray-700">We're pilot-owned and aviation-focused, meaning we understand the flight training industry from the inside out. Our marketing strategies are specifically designed for flight schools, not generic businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</FunnelLayout>

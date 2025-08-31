@@ -1,0 +1,441 @@
+---
+import FunnelLayout from "../../layouts/FunnelLayout.astro";
+import { pricingPackages } from "../../data/pricingPackages.js";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+} from "../../utils/seo";
+
+export async function getStaticPaths() {
+  return Object.keys(pricingPackages).map((packageKey) => ({
+    params: { package: packageKey },
+  }));
+}
+
+const { package: packageSlug } = Astro.params;
+const packageData = pricingPackages[packageSlug];
+
+if (!packageData) {
+  return Astro.redirect('/404');
+}
+
+// SEO keyword generation for package page
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 3),
+    `${packageData.name.toLowerCase()} marketing`,
+    "flight school marketing package",
+    "aviation marketing pricing",
+    "pilot training marketing",
+  ],
+  TARGET_LOCATIONS.slice(0, 6),
+  [
+    "flight school marketing program",
+    "aviation marketing services",
+    "pilot school marketing package",
+    "flight training marketing solution",
+  ]
+);
+
+const metaTitle = `${packageData.name} Marketing Program | Right Rudder Marketing`;
+const metaDescription = `${packageData.programIntro.description.substring(0, 150)}... Perfect for flight schools with ${packageData.aircraft} aircraft targeting ${packageData.targetRevenue} revenue.`;
+
+// Content for GenericCTA component
+const ctaContent = {
+  imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+  imageAlt: "Right Rudder Marketing team on the runway",
+  headerH1: `<span class="text-primary">Ready to start your</br> ${packageData.name} program?</span>`,
+  paragraph: `The ${packageData.name} program is specifically designed for flight schools with ${packageData.aircraft} aircraft. Let's discuss how this comprehensive marketing solution can help you reach ${packageData.targetRevenue} in annual revenue.`,
+  buttons: [
+    {
+      name: "Download Free Guide",
+      link: "/resources/flight-school-handbook",
+      primary: false,
+    },
+    {
+      name: "Schedule Consultation",
+      link: "/schedule-call",
+      primary: true,
+    },
+  ],
+};
+---
+
+<FunnelLayout
+  siteTitle={metaTitle}
+  siteDescription={metaDescription}
+  keywords={enhancedKeywords}
+  content={ctaContent}
+>
+  <!-- Hero Section with Program Image -->
+  <section class="bg-gradient-to-r from-primary-dark to-primary py-16 text-white relative">
+    <div class="absolute inset-0 opacity-20">
+      <img
+        src={packageData.heroImage}
+        alt={packageData.heroImageAlt}
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+    </div>
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          {packageData.name} Program
+        </h1>
+        <p class="text-xl md:text-2xl opacity-90 mb-6">
+          {packageData.programIntro.subtitle}
+        </p>
+        <p class="text-lg max-w-3xl mx-auto opacity-80">
+          For flight schools with {packageData.aircraft} aircraft targeting {packageData.targetRevenue} annual revenue
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Introduction -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-6">
+          {packageData.name} Program
+        </h2>
+        <p class="text-xl text-primary-600 font-semibold mb-8">
+          {packageData.programIntro.subtitle}
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            {packageData.programIntro.description}
+          </p>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            {packageData.programIntro.partnership}
+          </p>
+        </div>
+        <div>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            {packageData.programIntro.expertise}
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            {packageData.programIntro.commitment}
+          </p>
+        </div>
+      </div>
+
+      <!-- Video Placeholder -->
+      {packageData.videos && packageData.videos.length > 0 && (
+        <div class="text-center mb-16">
+          <div class="max-w-4xl mx-auto">
+            <img
+              src={packageData.videos[0].placeholder}
+              alt={packageData.videos[0].description}
+              class="w-full rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
+              loading="lazy"
+            />
+            <p class="text-gray-600 mt-4 text-lg">{packageData.videos[0].title}</p>
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Expectations Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">
+        Expectations
+      </h2>
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-primary-600 mb-6">
+          {packageData.expectations.title}
+        </h3>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="space-y-6">
+          <p class="text-gray-700 leading-relaxed">
+            {packageData.expectations.consulting}
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            {packageData.expectations.program}
+          </p>
+        </div>
+        <div class="space-y-6">
+          <p class="text-gray-700 leading-relaxed">
+            {packageData.expectations.partnership}
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            {packageData.expectations.process}
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+        <h4 class="text-xl font-bold text-primary-dark mb-4">
+          {packageData.name} Program Positioning
+        </h4>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          {packageData.expectations.positioning}
+        </p>
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+          <p class="text-gray-800 font-medium">
+            {packageData.expectations.growth}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Overview -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Investment Overview</h2>
+      <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-lg shadow-lg p-8 mb-8">
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+          <div class="border-r border-gray-200 pr-6">
+            <h3 class="text-lg font-semibold text-gray-700 mb-2">Monthly Total</h3>
+            <p class="text-3xl font-bold text-primary-dark">{packageData.totalMonthly}</p>
+            <p class="text-sm text-gray-600 mt-2">
+              Service Fee: {packageData.monthlyFee}<br/>
+              Google Ads: {packageData.googleAdBudget}<br/>
+              {packageData.otherPlatformBudget !== "$0" && `Other Platforms: ${packageData.otherPlatformBudget}`}
+            </p>
+          </div>
+          <div class="border-r border-gray-200 pr-6">
+            <h3 class="text-lg font-semibold text-gray-700 mb-2">Annual Investment</h3>
+            <p class="text-3xl font-bold text-accent">{packageData.totalAnnual}</p>
+            <p class="text-sm text-gray-600 mt-2">
+              Includes onboarding fee
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-700 mb-2">Onboarding</h3>
+            <p class="text-3xl font-bold text-primary-dark">{packageData.onboardingFee}</p>
+            <p class="text-sm text-gray-600 mt-2">
+              One-time setup fee
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white rounded-lg shadow-md p-6 border">
+          <h3 class="text-xl font-semibold text-primary-dark mb-4">📍 Additional Locations</h3>
+          <p class="text-2xl font-bold text-accent mb-2">{packageData.additionalLocations}</p>
+          <p class="text-gray-600">Perfect for multi-location flight schools. Each additional location gets full local marketing optimization.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 border">
+          <h3 class="text-xl font-semibold text-primary-dark mb-4">🏢 Additional Companies</h3>
+          <p class="text-2xl font-bold text-accent mb-2">{packageData.additionalCompanies}</p>
+          <p class="text-gray-600">Expand coverage to related aviation businesses under the same ownership.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Sections -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Onboarding Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center text-primary-dark mb-4">
+          {packageData.onboarding.icon} {packageData.onboarding.title}
+        </h2>
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+          {packageData.onboarding.services.map((service) => (
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <img
+                src={service.image}
+                alt={service.imageAlt}
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold text-primary-dark mb-3">✓ {service.name}</h3>
+              <p class="text-gray-700 leading-relaxed">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Additional Growth Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center text-primary-dark mb-4">
+          {packageData.additionalGrowth.icon} {packageData.additionalGrowth.title}
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          {packageData.additionalGrowth.services.map((service) => (
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <img
+                src={service.image}
+                alt={service.imageAlt}
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold text-primary-dark mb-3">✓ {service.name}</h3>
+              <p class="text-gray-700 leading-relaxed">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- New Customer Acquisition Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center text-primary-dark mb-4">
+          {packageData.newCustomerAcquisition.icon} {packageData.newCustomerAcquisition.title}
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {packageData.newCustomerAcquisition.services.map((service) => (
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <img
+                src={service.image}
+                alt={service.imageAlt}
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold text-primary-dark mb-3">✓ {service.name}</h3>
+              <p class="text-gray-700 leading-relaxed">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included vs Additional Services -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- What's Actually Included -->
+        <div>
+          <h2 class="text-2xl font-bold text-green-600 mb-6">✅ What's Included</h2>
+          <div class="bg-green-50 rounded-lg p-6">
+            <p class="text-sm text-green-700 mb-4 font-medium">Included in your {packageData.totalMonthly}/month investment:</p>
+            <div class="space-y-3">
+              {packageData.includedServices.map((service) => (
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span class="text-white font-bold text-sm">✓</span>
+                  </div>
+                  <p class="text-gray-700">{service}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div>
+          <h2 class="text-2xl font-bold text-blue-600 mb-6">💰 Additional Services</h2>
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <p class="text-sm text-blue-700 mb-4 font-medium">Available as paid add-ons:</p>
+            <div class="space-y-4">
+              {packageData.additionalServices.map((service) => (
+                <div class="border-l-4 border-blue-400 pl-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-semibold text-gray-800">{service.name}</h3>
+                    <span class="text-blue-600 font-bold">{service.price}</span>
+                  </div>
+                  <p class="text-gray-600 text-sm">{service.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Not Available Section */}
+          {packageData.notAvailable && packageData.notAvailable.length > 0 && (
+            <div>
+              <h3 class="text-lg font-bold text-gray-600 mb-4">⚠️ Not Available at This Tier</h3>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <div class="space-y-2">
+                  {packageData.notAvailable.map((service) => (
+                    <div class="flex items-start">
+                      <div class="flex-shrink-0 w-6 h-6 bg-gray-400 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                        <span class="text-white font-bold text-sm">✗</span>
+                      </div>
+                      <p class="text-gray-600 text-sm">{service}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery -->
+  {packageData.videos && packageData.videos.length > 1 && (
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Program Videos</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {packageData.videos.slice(1).map((video) => (
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src={video.placeholder}
+                alt={video.description}
+                class="w-full h-48 object-cover cursor-pointer"
+                loading="lazy"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-800 mb-2">{video.title}</h3>
+                <p class="text-gray-600 text-sm">{video.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- FAQs -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        {packageData.faqs.map((faq, index) => (
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <h3 class="text-lg font-semibold text-primary-dark mb-3">
+              {faq.question}
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              {faq.answer}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-primary-dark text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Take Your Flight School to New Heights?</h2>
+      <p class="text-xl mb-8 opacity-90">
+        Let's discuss how the {packageData.name} program can accelerate your growth and help you reach {packageData.targetRevenue} in annual revenue.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a 
+          href="/schedule-call" 
+          class="inline-block bg-accent hover:bg-accent-600 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg"
+        >
+          Schedule Your Consultation
+        </a>
+        <a 
+          href="/contact" 
+          class="inline-block border-2 border-white hover:bg-white hover:text-primary-dark text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg"
+        >
+          Get More Information
+        </a>
+      </div>
+      <p class="mt-6 text-sm opacity-75">
+        📞 Call us directly: (314) 804-1200<br/>
+        ✈️ Pilot-owned marketing agency specializing in flight schools
+      </p>
+    </div>
+  </section>
+</FunnelLayout>
