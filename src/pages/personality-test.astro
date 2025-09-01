@@ -1765,13 +1765,19 @@ const contactQuestions = [
           kolbePercentages[type] = parseFloat(((score / totalPoints) * 100).toFixed(2));
         });
         
+        // Calculate MBTI type from raw scores
+        const mbtiType = (mbti.E >= mbti.I ? 'E' : 'I') + 
+                         (mbti.S >= mbti.N ? 'S' : 'N') + 
+                         (mbti.T >= mbti.F ? 'T' : 'F') + 
+                         (mbti.J >= mbti.P ? 'J' : 'P');
+        
         return {
           kolbe: {
             dominant: Object.entries(kolbe).reduce((max, current) => current[1] > max[1] ? current : max)[0],
             percentages: kolbePercentages
           },
           mbti: {
-            type: "ENFP", // Simplified for now
+            type: mbtiType,
             percentages: mbti
           },
           disc: {
