@@ -4,8 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 
-import partytown from "@astrojs/partytown";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://rightruddermarketing.com/",
@@ -19,11 +17,6 @@ export default defineConfig({
     }),
     tailwind(),
     react(),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-      },
-    }),
   ],
 
   // Performance optimizations
