@@ -24,6 +24,12 @@ const clientLogos = [
     invert: true,
   },
   {
+    url: "/logos/nvflight-nobg.webp",
+    name: "NV Flight",
+    link: "https://www.nvflight.com/",
+    invert: false,
+  },
+  {
     url: "/logos/LAFA-white.webp",
     name: "LA Flight Academy",
     link: "https://laflightacademy.com/",
