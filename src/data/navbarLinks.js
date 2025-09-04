@@ -38,7 +38,7 @@ export const navbarLinks = [
       },
       {
         name: "Google My Business Optimization",
-        link: "/how-to-optimize-google-my-business-2024",
+        link: "/how-to-optimize-google-my-business-2025",
       },
       {
         name: "Customer Relationship Management(CRM)",

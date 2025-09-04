@@ -17,6 +17,7 @@ import {
   generateFAQSchema,
   generateBreadcrumbSchema,
 } from "../../utils/seo";
+import { astroCalledServerError } from "astro:actions";
 
 const { data } = whoWeAre;
 
@@ -102,7 +103,7 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
   <!-- Enhanced internal linking for better SEO -->
   <RelatedContent
-    currentPage="/about"
+    currentPage={Astro.url.pathname}
     category="about"
     keywords={[
       "flight school marketing team",

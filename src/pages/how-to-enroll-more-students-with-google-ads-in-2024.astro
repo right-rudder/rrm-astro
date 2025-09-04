@@ -14,6 +14,7 @@ import {
   generateFAQSchema,
   generateBreadcrumbSchema,
 } from "../utils/seo";
+import RelatedContent from "../components/RelatedContent.astro";
 
 const { data } = ppcGoogle;
 
@@ -104,4 +105,16 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
   <Features data={data.features} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={Astro.url.pathname}
+    category="Google Ads"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>

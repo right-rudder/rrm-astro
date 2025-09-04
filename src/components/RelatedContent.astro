@@ -1,10 +1,14 @@
 ---
+import ImageComp from "./ImageComp.astro";
+
 // Related Content Component for Internal Linking
 // Automatically suggests related pages based on content categories and keywords
 
 interface RelatedLink {
   title: string;
   url: string;
+  image?: string;
+  imageAlt?: string;
   description: string;
   category: string;
 }
@@ -17,93 +21,123 @@ const RELATED_CONTENT: Record<string, RelatedLink[]> = {
     {
       title: "Flight School SEO Services",
       url: "/flight-school-seo",
-      description: "Comprehensive SEO strategies specifically designed for flight schools",
-      category: "services"
+      image: "/src/assets/1981-digital-oMe_FjZnHGU-unsplash.jpg",
+      imageAlt: "SEO services for flight schools",
+      description:
+        "Comprehensive SEO strategies specifically designed for flight schools",
+      category: "services",
     },
     {
       title: "Google My Business Optimization",
-      url: "/how-to-optimize-google-my-business-2024",
-      description: "Complete guide to optimizing your flight school's Google My Business listing",
-      category: "services"
+      url: "/how-to-optimize-google-my-business-2025",
+      image: "/src/assets/flying-over-st-simons-island-ga.jpeg",
+      imageAlt: "Google My Business Optimization",
+      description:
+        "Complete guide to optimizing your flight school's Google My Business listing",
+      category: "services",
     },
     {
       title: "Web Design & Development",
       url: "/web-design-development",
+      image: "/src/assets/IMG_0743.jpg",
+      imageAlt: "Flight school web design and development",
       description: "Custom website design and development for flight schools",
-      category: "services"
+      category: "services",
     },
     {
       title: "Our Marketing System",
       url: "/marketing-system",
+      image: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
+      imageAlt: "Flight school marketing system",
       description: "Proven marketing system that helps flight schools grow",
-      category: "services"
-    }
+      category: "services",
+    },
   ],
-  
+
   resources: [
     {
       title: "Free Marketing Checklist",
       url: "/resources/marketing-checklist",
+      image: "/src/assets/DSC00637.jpg",
+      imageAlt: "Free Marketing Checklist",
       description: "Essential marketing checklist for flight schools",
-      category: "resources"
+      category: "resources",
     },
     {
       title: "Flight School Keywords Guide",
       url: "/resources/flight-school-keywords",
-      description: "Comprehensive keyword research guide for aviation businesses",
-      category: "resources"
+      image: "/src/assets/hans-peter-gauster-3y1zF4hIPCg-unsplash.jpg",
+      imageAlt: "Flight School Keywords Guide",
+      description:
+        "Comprehensive keyword research guide for aviation businesses",
+      category: "resources",
     },
     {
       title: "Google My Business Guide",
       url: "/resources/gmb",
+      image: "/src/assets/flying-over-st-simons-island-ga.jpeg",
+      imageAlt: "Google My Business Optimization",
       description: "Step-by-step GMB optimization guide for flight schools",
-      category: "resources"
-    }
+      category: "resources",
+    },
   ],
-  
+
   blog: [
     {
       title: "Latest Aviation Marketing Insights",
       url: "/blog",
-      description: "Stay updated with the latest flight school marketing strategies",
-      category: "content"
-    }
+      image: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash(1).jpg",
+      imageAlt: "Aviation marketing blog",
+      description:
+        "Stay updated with the latest flight school marketing strategies",
+      category: "content",
+    },
   ],
-  
+
   about: [
     {
       title: "Our Team",
       url: "/about/who-we-are",
+      image: "/src/assets/andrew-ruiz--ajZ_Xzeqe4-unsplash.jpg",
+      imageAlt: "Right Rudder Marketing Team",
       description: "Meet the Right Rudder Marketing team",
-      category: "about"
+      category: "about",
     },
     {
-      title: "Partners & Affiliates", 
+      title: "Partners & Affiliates",
       url: "/about/partners-affiliates",
+      image: "/src/assets/PXL_20240722_140207874.jpg",
+      imageAlt: "Our Partners and Affiliates",
       description: "Our trusted aviation industry partners",
-      category: "about"
-    }
+      category: "about",
+    },
   ],
-  
+
   webinars: [
     {
       title: "Free Aviation Marketing Webinars",
       url: "/webinars",
+      image: "/src/assets/hans-peter-gauster-3y1zF4hIPCg-unsplash.jpg",
+      imageAlt: "Aviation marketing webinars",
       description: "Educational webinars for flight school marketing",
-      category: "education"
-    }
-  ]
+      category: "education",
+    },
+  ],
 };
 
 // Smart content matching based on current page and context
-function getRelatedContent(currentPage: string, category: string, keywords: string[]): RelatedLink[] {
+function getRelatedContent(
+  currentPage: string,
+  category: string,
+  keywords: string[]
+): RelatedLink[] {
   let relatedLinks: RelatedLink[] = [];
-  
+
   // Add category-specific content
   if (category && RELATED_CONTENT[category]) {
     relatedLinks.push(...RELATED_CONTENT[category]);
   }
-  
+
   // Add cross-category relevant content
   Object.entries(RELATED_CONTENT).forEach(([cat, links]) => {
     if (cat !== category) {
@@ -111,111 +145,161 @@ function getRelatedContent(currentPage: string, category: string, keywords: stri
       relatedLinks.push(...links.slice(0, 2));
     }
   });
-  
+
   // Filter out current page
-  relatedLinks = relatedLinks.filter(link => link.url !== currentPage);
-  
+  relatedLinks = relatedLinks.filter((link) => link.url !== currentPage);
+
   // Prioritize based on keywords if provided
   if (keywords.length > 0) {
     relatedLinks.sort((a, b) => {
       const aScore = keywords.reduce((score, keyword) => {
-        return score + (a.title.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0) +
-               (a.description.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0);
+        return (
+          score +
+          (a.title.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0) +
+          (a.description.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0)
+        );
       }, 0);
-      
+
       const bScore = keywords.reduce((score, keyword) => {
-        return score + (b.title.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0) +
-               (b.description.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0);
+        return (
+          score +
+          (b.title.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0) +
+          (b.description.toLowerCase().includes(keyword.toLowerCase()) ? 1 : 0)
+        );
       }, 0);
-      
+
       return bScore - aScore;
     });
   }
-  
+
   return relatedLinks.slice(0, maxLinks);
 }
 
 const relatedContent = getRelatedContent(currentPage || "", category, keywords);
 ---
 
-{relatedContent.length > 0 && (
-  <section class="bg-gray-50 py-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Related Resources
-        </h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">
-          Explore more resources to help grow your flight school
-        </p>
-      </div>
-      
-      <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        {relatedContent.map((link) => (
-          <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white px-8 pb-8 pt-20 sm:pt-8 lg:pt-20 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-900 via-primary-600"></div>
-            <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-            
-            <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-              <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
-                {link.category}
-              </span>
-            </div>
-            
-            <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
-              <a href={link.url} class="hover:text-blue-300 transition-colors">
-                <span class="absolute inset-0"></span>
-                {link.title}
-              </a>
-            </h3>
-            
-            <p class="mt-2 text-sm leading-6 text-gray-300">
-              {link.description}
-            </p>
-            
-            <div class="mt-4">
-              <a 
-                href={link.url} 
-                class="inline-flex items-center text-sm font-medium text-blue-300 hover:text-blue-200 transition-colors"
+{
+  relatedContent.length > 0 && (
+    <section class="bg-gradient-to-b from-white to-primary-100 py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Related Resources
+          </h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            Explore more resources to help grow your flight school
+          </p>
+        </div>
+
+        <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {relatedContent.map((link) => (
+            <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white px-8 pb-8 pt-20 sm:pt-8 lg:pt-20 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-800/90 via-10% via-primary-600" />
+              <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+              {link.image && (
+                <ImageComp
+                  imagePath={link.image}
+                  imageAlt={link.imageAlt || link.title}
+                  styles="absolute -z-20 inset-0 h-full w-full object-cover opacity-30"
+                  loading="lazy"
+                />
+              )}
+
+              <div class="absolute top-4 right-4 flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <span class="inline-flex items-center uppercase rounded-md bg-primary-50 px-2 py-1 text-xs font-medium text-primary-900 ring-1 ring-inset ring-primary-200/10">
+                  {link.category}
+                </span>
+              </div>
+
+              <h3 class="mt-3 text-lg font-bold leading-6 text-primary-950">
+                <a
+                  href={link.url}
+                  class="hover:text-accent-200 transition-colors"
+                >
+                  <span class="absolute inset-0" />
+                  {link.title}
+                </a>
+              </h3>
+
+              <p class="mt-2 text-sm leading-5 text-gray-100">
+                {link.description}
+              </p>
+
+              <div class="mt-4">
+                <a
+                  href={link.url}
+                  class="inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-medium text-primary-600 shadow-sm hover:bg-gray-50 transition-colors"
+                >
+                  Learn more
+                  <svg
+                    class="ml-1 h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {currentPage !== "/resources" && (
+          // Call-to-action for more resources
+          <div class="mt-16 text-center">
+            <a
+              href="/resources"
+              class="inline-flex items-center rounded-md bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-700 transition-colors"
+            >
+              View All Resources
+              <svg
+                class="ml-2 h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                Learn more
-                <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-          </article>
-        ))}
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
+        )}
       </div>
-      
-      <!-- Call-to-action for more resources -->
-      <div class="mt-16 text-center">
-        <a 
-          href="/resources" 
-          class="inline-flex items-center rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
-        >
-          View All Resources
-          <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-)}
+    </section>
+  )
+}
 
 <!-- Internal linking breadcrumb navigation -->
 <nav class="bg-white border-b border-gray-200" aria-label="Breadcrumb">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="flex items-center space-x-4 py-4">
       <div class="flex items-center space-x-4">
-        <a href="/" class="text-gray-400 hover:text-gray-500 text-sm font-medium">
+        <a
+          href="/"
+          class="text-gray-400 hover:text-gray-500 text-sm font-medium"
+        >
           Home
         </a>
-        <svg class="h-5 w-5 flex-shrink-0 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+        <svg
+          class="h-5 w-5 flex-shrink-0 text-gray-300"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
         </svg>
-        <span class="text-gray-500 text-sm font-medium">{category}</span>
+        <span class="text-gray-500 text-sm capitalize font-medium"
+          >{category}</span
+        >
       </div>
     </div>
   </div>
@@ -227,7 +311,7 @@ const relatedContent = getRelatedContent(currentPage || "", category, keywords);
     transform: translateY(-2px);
     transition: transform 0.2s ease-in-out;
   }
-  
+
   /* Improve accessibility for screen readers */
   .sr-only {
     position: absolute;
@@ -244,13 +328,13 @@ const relatedContent = getRelatedContent(currentPage || "", category, keywords);
 
 <script is:inline>
   // Track internal link clicks for analytics
-  document.querySelectorAll('a[href^="/"]').forEach(link => {
-    link.addEventListener('click', function() {
-      if (typeof window.gtag !== 'undefined') {
-        window.gtag('event', 'internal_link_click', {
-          'event_category': 'navigation',
-          'event_label': this.getAttribute('href'),
-          'value': 1
+  document.querySelectorAll('a[href^="/"]').forEach((link) => {
+    link.addEventListener("click", function () {
+      if (typeof window.gtag !== "undefined") {
+        window.gtag("event", "internal_link_click", {
+          event_category: "navigation",
+          event_label: this.getAttribute("href"),
+          value: 1,
         });
       }
     });

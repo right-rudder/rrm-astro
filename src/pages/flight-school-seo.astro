@@ -15,8 +15,11 @@ import {
   AVIATION_KEYWORDS,
   TARGET_LOCATIONS,
 } from "../utils/seo";
+import RelatedContent from "../components/RelatedContent.astro";
 
 const { data } = seo;
+
+const pathname = Astro.url.pathname;
 
 // Generate enhanced keywords for SEO page
 const seoKeywords = generateKeywords(
@@ -88,4 +91,16 @@ const faqSchema = generateFAQSchema(seoFAQs);
   <Content2 data={data.offPageSeo} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={pathname}
+    category="SEO"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>
