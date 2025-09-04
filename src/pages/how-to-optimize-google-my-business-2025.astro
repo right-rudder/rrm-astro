@@ -15,6 +15,7 @@ import {
   generateFAQSchema,
   generateBreadcrumbSchema,
 } from "../utils/seo";
+import RelatedContent from "../components/RelatedContent.astro";
 
 const { data } = googleMyBusiness;
 
@@ -64,7 +65,7 @@ const breadcrumbs = [
   { name: "Services", url: "/services" },
   {
     name: "Google My Business",
-    url: "/how-to-optimize-google-my-business-2024",
+    url: "/how-to-optimize-google-my-business-2025",
   },
 ];
 
@@ -93,4 +94,16 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
   <Content2 data={data.gmbUpdates} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={Astro.url.pathname}
+    category="Google My Business"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>

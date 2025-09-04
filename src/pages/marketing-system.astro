@@ -13,6 +13,7 @@ import {
   generateFAQSchema,
   generateBreadcrumbSchema,
 } from "../utils/seo";
+import RelatedContent from "../components/RelatedContent.astro";
 
 const { data } = marketingSystem;
 
@@ -96,4 +97,16 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
   <ContentSteps data={data.marketingSteps} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={Astro.url.pathname}
+    category="Marketing System"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>

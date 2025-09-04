@@ -7,6 +7,7 @@ import Content2 from "../components/Content2.astro";
 import Features from "../components/Features.astro";
 import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
 import ppcFacebook from "../data/ppcFacebook";
+import RelatedContent from "../components/RelatedContent.astro";
 
 const { data } = ppcFacebook;
 ---
@@ -28,4 +29,16 @@ const { data } = ppcFacebook;
   <Features data={data.features} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={Astro.url.pathname}
+    category="Facebook Ads"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>

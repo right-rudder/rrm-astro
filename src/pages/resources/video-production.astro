@@ -7,6 +7,7 @@ import BlogFeed from "../../components/BlogFeed.astro";
 import BlogFeedTop from "../../components/BlogFeedTop.astro";
 import GenericCTA from "../../components/GenericCTA.astro";
 import { YouTube } from "astro-embed";
+import RelatedContent from "../../components/RelatedContent.astro";
 
 const { data } = homePage;
 const layout = {
@@ -162,4 +163,16 @@ const header = {
   <BlogFeed data={data.blogfeed} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={Astro.url.pathname}
+    category="Media Production"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>
