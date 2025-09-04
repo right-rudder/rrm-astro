@@ -98,11 +98,20 @@ const {
     <!-- Enhanced internal linking for better SEO -->
     <RelatedContent
       currentPage={pathname}
-      category={pathname
-        .split("/")[2]
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ")}
+      category={
+        (() => {
+          const segments = pathname.split("/");
+          const segment = segments[2];
+          if (segment) {
+            return segment
+              .split("-")
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(" ");
+          } else {
+            return "";
+          }
+        })()
+      }
       keywords={[
         "flight school resources",
         "marketing tools",
