@@ -352,9 +352,52 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
   <script define:vars={{ GHL_CONTACT_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
     const checkbox = document.getElementById("agree-data-collection");
     const submitButton = document.getElementById("submit-button");
+    const RATE_LIMIT_MS = 60000; // 1 minute
+
+    // Check rate limiting on page load
+    function checkRateLimit() {
+      const lastSubmission = localStorage.getItem("lastFormSubmission");
+      if (lastSubmission) {
+        const timeDiff = Date.now() - parseInt(lastSubmission);
+        if (timeDiff < RATE_LIMIT_MS) {
+          const remainingTime = Math.ceil((RATE_LIMIT_MS - timeDiff) / 1000);
+          disableSubmitForRateLimit(remainingTime);
+          return false;
+        }
+      }
+      return true;
+    }
+
+    function disableSubmitForRateLimit(remainingSeconds) {
+      submitButton.disabled = true;
+      submitButton.textContent = `Please wait ${remainingSeconds}s`;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400"
+      );
+
+      const countdown = setInterval(() => {
+        remainingSeconds--;
+        if (remainingSeconds > 0) {
+          submitButton.textContent = `Please wait ${remainingSeconds}s`;
+        } else {
+          clearInterval(countdown);
+          submitButton.textContent = "Send Message";
+          if (checkbox.checked) {
+            submitButton.disabled = false;
+            submitButton.classList.remove(
+              "cursor-not-allowed",
+              "bg-gray-400",
+              "hover:bg-gray-400"
+            );
+          }
+        }
+      }, 1000);
+    }
 
     checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
+      if (checkbox.checked && checkRateLimit()) {
         submitButton.disabled = false;
         submitButton.classList.remove(
           "cursor-not-allowed",
@@ -371,7 +414,10 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
       }
     });
 
+    // Check rate limit on page load
     document.addEventListener("DOMContentLoaded", () => {
+      checkRateLimit();
+
       const form = document.getElementById("contact-form");
       if (!form) {
         console.error("Form element not found.");
@@ -380,6 +426,11 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
+
+        // Check rate limit before submission
+        if (!checkRateLimit()) {
+          return;
+        }
 
         const formData = new FormData(form);
         const confirmEmail = formData.get("confirm-email")?.trim();
@@ -438,6 +489,8 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
           ]);
 
           if (ghlRes.ok && portalRes.ok) {
+            // Store submission timestamp for rate limiting
+            localStorage.setItem("lastFormSubmission", Date.now().toString());
             window.location.href = "/contact-confirmation";
           } else {
             console.error("Submission failed", {
