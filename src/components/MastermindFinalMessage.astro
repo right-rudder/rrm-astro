@@ -1,0 +1,26 @@
+---
+const { data } = Astro.props;
+---
+
+<section class="bg-white py-16 sm:py-24">
+  <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <div class="text-center">
+      <h2
+        class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        set:html={data.heading}
+      />
+      <p class="mt-6 text-lg leading-8 text-gray-600" set:html={data.message} />
+    </div>
+
+    <div class="mt-12 border-t border-gray-200 pt-8">
+      <div class="text-center">
+        <p class="text-sm text-gray-500 mb-2">Best regards,</p>
+        <div class="text-base">
+          <p class="font-semibold text-gray-900">{data.signature.name}</p>
+          <p class="text-gray-600">{data.signature.title}</p>
+          <p class="text-gray-600">{data.signature.company}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

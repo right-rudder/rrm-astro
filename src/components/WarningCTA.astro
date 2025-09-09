@@ -32,20 +32,22 @@ const { data } = Astro.props;
       {
         data.heading && (
           <h2
-            class="text-5xl my-5 font-bold tracking-tight text-accent animate-mid-zoom"
+            class="text-4xl lg:text-5xl my-5 font-bold tracking-tight text-accent animate-mid-zoom"
             set:html={data.heading}
           />
         )
       }
       {
         data.description && (
-          <p class="mx-auto mt-5 max-w-2xl text-3xl font-normal leading-tight text-primary-dark-600">
+          <p class="mx-auto mt-5 max-w-2xl text-xl lg:text-3xl font-normal leading-tight text-primary-dark-600">
             {data.description}
           </p>
         )
       }
       <div class="mt-5 flex items-center justify-center gap-x-6">
-        <a href={data.button.link} class="btn-primary">{data.button.text}</a>
+        <a href={data.button.link} class="btn-primary w-full lg:w-auto"
+          >{data.button.text}</a
+        >
       </div>
     </div>
   </div>

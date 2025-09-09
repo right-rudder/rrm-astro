@@ -1,0 +1,132 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import flightSchoolMastermind from "../data/flight-school-mastermind";
+import MastermindExclusive from "../components/MastermindExclusive.astro";
+import MastermindStats from "../components/MastermindStats.astro";
+import MastermindTestimonials from "../components/MastermindTestimonials.astro";
+import MastermindLeadership from "../components/MastermindLeadership.astro";
+import MastermindBenefits from "../components/MastermindBenefits.astro";
+import MastermindUrgency from "../components/MastermindUrgency.astro";
+import MastermindApplicationCTA from "../components/MastermindApplicationCTA.astro";
+import MastermindFinalMessage from "../components/MastermindFinalMessage.astro";
+import RelatedContent from "../components/RelatedContent.astro";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "../utils/seo";
+
+const { data } = flightSchoolMastermind;
+
+// Enhanced SEO keyword generation for mastermind
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 3),
+    "flight school mastermind",
+    "aviation business coaching",
+    "flight school growth community",
+  ],
+  TARGET_LOCATIONS.slice(0, 8), // Use top 8 target locations
+  [
+    "flight school revenue growth",
+    "aviation industry mastermind",
+    "pilot training business growth",
+    "flight school marketing strategies",
+    "aviation business networking",
+  ]
+);
+
+// FAQ schema for mastermind
+const faqData = [
+  {
+    question: "Who is the Flight School Mastermind for?",
+    answer:
+      "The Flight School Mastermind is exclusively for serious flight school owners who are committed to growth and ready to implement proven strategies. We work with operators who want to break through revenue plateaus and build systems-driven businesses.",
+  },
+  {
+    question: "How is this different from other business masterminds?",
+    answer:
+      "This mastermind is aviation-specific, led by Tim Jedrek who is both a pilot and flight school marketing expert. Every strategy, tool, and resource is designed specifically for flight training operations, not generic business advice.",
+  },
+  {
+    question: "What kind of results can I expect?",
+    answer:
+      "Our mastermind strategies have generated over $50M in flight school revenue, with members seeing an average 40% revenue increase within 12 months. Results depend on implementation and commitment to the process.",
+  },
+  {
+    question: "How long is the mastermind program?",
+    answer:
+      "Founding members receive lifetime access with ongoing monthly sessions, quarterly one-on-ones with Tim, and continuous access to our private community and resources.",
+  },
+  {
+    question: "Is there a guarantee?",
+    answer:
+      "We work exclusively with committed operators who are ready to implement. Our track record speaks for itself, but success depends on your willingness to execute the strategies we provide.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Services", url: "/services" },
+  { name: "Flight School Mastermind", url: "/flight-school-mastermind" },
+];
+
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={enhancedKeywords}
+>
+  <!-- Schema markup for enhanced SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <!-- EXCLUSIVE FEATURES -->
+  <MastermindExclusive data={data.exclusive} />
+
+  <!-- STATS & RESULTS -->
+  <MastermindStats data={data.results} />
+
+  <!-- TESTIMONIALS -->
+  <!-- <MastermindTestimonials testimonials={data.results.testimonials} /> -->
+
+  <!-- LEADERSHIP SECTION -->
+  <MastermindLeadership data={data.leadershipSection} />
+
+  <!-- WHAT YOU GET -->
+  <MastermindBenefits data={data.whatYouGet} />
+
+  <!-- URGENCY SECTION -->
+  <MastermindUrgency data={data.urgency} />
+
+  <!-- APPLICATION CTA -->
+  <MastermindApplicationCTA data={data.applicationCTA} />
+
+  <!-- FINAL MESSAGE -->
+  <!-- <MastermindFinalMessage data={data.finalMessage} /> -->
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={Astro.url.pathname}
+    category="Flight School Mastermind"
+    keywords={[
+      "flight school growth",
+      "aviation business coaching",
+      "pilot training strategies",
+      "flight school marketing",
+    ]}
+  />
+</BaseLayout>
