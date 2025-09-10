@@ -131,7 +131,7 @@ const flightSchoolMastermind = {
     leadershipSection: {
       upperHeading: "Industry Authority",
       heading: "Tim Jedrek",
-      imagePath: "/src/assets/tim-jedrek-swiss-alps.webp",
+      imagePath: "/src/assets/PXL_20230614_141636747.jpg",
       imageAlt: "Tim Jedrek, CEO & Founder of Right Rudder Marketing",
       descriptions: [
         "Tim Jedrek is the only growth strategist who's been in your cockpit and understands aviation operations. As a pilot and the founder of Right Rudder Marketing, Tim combines firsthand aviation experience with proven marketing expertise.",
