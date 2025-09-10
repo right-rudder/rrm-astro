@@ -80,7 +80,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
   };
 
   return (
-    <div className="bg-white p-6 text-center max-w-sm lg:max-w-full lg:w-full mx-0">
+    <div className="bg-white p-6 lg:p-12 text-center max-w-sm lg:max-w-full lg:w-full mx-0">
       {!formSubmitted ? (
         <>
           <h2 className="text-4xl font-bold mb-4">Sign Up Here</h2>

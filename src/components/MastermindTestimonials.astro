@@ -1,0 +1,26 @@
+---
+const { testimonials } = Astro.props;
+---
+
+<section class="bg-white py-16">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        {
+          testimonials.map((testimonial) => (
+            <div class="bg-gray-50 p-8 rounded-2xl">
+              <blockquote class="text-lg font-medium text-gray-900">
+                "{testimonial.quote}"
+              </blockquote>
+              <div class="mt-6">
+                <p class="font-semibold text-gray-900">{testimonial.name}</p>
+                <p class="text-sm text-gray-600">{testimonial.title}</p>
+                <p class="text-sm text-gray-500">{testimonial.location}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
