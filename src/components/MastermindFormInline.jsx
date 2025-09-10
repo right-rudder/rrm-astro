@@ -4,7 +4,7 @@ import {
   validatePhoneNumber,
 } from "../utils/phoneValidation";
 
-const WebinarFormInline = ({ webhook, apiKey }) => {
+const MastermindFormInline = ({ webhook, apiKey }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
@@ -80,17 +80,17 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
   };
 
   return (
-    <div className="bg-white p-6 lg:p-12 text-center max-w-sm lg:max-w-full lg:w-full mx-0">
+    <div className="bg-white p-2 rounded-lg md:p-6 lg:p-12 text-center max-w-sm lg:max-w-full lg:w-full mx-0">
       {!formSubmitted ? (
         <>
-          <h2 className="text-4xl font-bold mb-4">Sign Up Here</h2>
+          <h2 className="text-4xl font-bold my-4">Sign Up Here</h2>
           <p className="mb-6">
             Fill out the form below get details sent to your directly for our
             next event.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col items-center">
-            <div className="flex flex-col lg:flex-row lg:gap-10">
-              <div className="mb-4">
+            <div className="flex flex-col lg:flex-row lg:gap-10 w-full">
+              <div className="mb-4 w-full">
                 <label
                   htmlFor="first-name"
                   className="block mb-1 font-semibold"
@@ -101,11 +101,11 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="text"
                   id="first-name"
                   name="first-name"
-                  className="p-2 border border-gray-400 rounded-sm"
+                  className="w-full p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-4 w-full">
                 <label htmlFor="last-name" className="block mb-1 font-semibold">
                   Last Name
                 </label>
@@ -113,13 +113,13 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="text"
                   id="last-name"
                   name="last-name"
-                  className="p-2 border border-gray-400 rounded-sm"
+                  className="w-full p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row lg:gap-10">
-              <div className="mb-4">
+            <div className="flex flex-col lg:flex-row lg:gap-10 w-full">
+              <div className="mb-4 w-full">
                 <label htmlFor="phone" className="block mb-1 font-semibold">
                   Phone
                 </label>
@@ -127,7 +127,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="p-2 border border-gray-400 rounded-sm"
+                  className="w-full p-2 border border-gray-400 rounded-sm"
                   required
                   value={phoneValue}
                   onChange={handlePhoneChange}
@@ -136,7 +136,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   <p className="text-red-500 text-sm">{phoneError}</p>
                 )}
               </div>
-              <div className="mb-4">
+              <div className="mb-4 w-full">
                 <label htmlFor="email" className="block mb-1 font-semibold">
                   Email
                 </label>
@@ -144,24 +144,24 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="email"
                   id="email"
                   name="email"
-                  className="p-2 border border-gray-400 rounded-sm"
+                  className="w-full p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row items-center lg:gap-10">
-              <div className="mb-4">
+            <div className="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
+              <div className="mb-4 w-full">
                 <label
                   htmlFor="business-name"
                   className="block mb-1 font-semibold"
                 >
-                  Business Name
+                  Flight School Name
                 </label>
                 <input
                   type="text"
                   id="business-name"
                   name="business-name"
-                  className="p-2 border border-gray-400 rounded-sm"
+                  className="w-full p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>
@@ -173,16 +173,16 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   <input name="confirm-email" />
                 </label>
               </p>
-              <div className="mb-4">
+              <div className="mb-4 w-full">
                 <label
                   htmlFor="business-name"
-                  className="block mb-1 font-semibold opacity-0 lg:opacity-100"
+                  className="block mb-1 text-xs font-light text-gray-500 italic"
                 >
                   Click Button to Send
                 </label>
                 <button
                   type="submit"
-                  className="w-56 p-2 border border-gray-400 rounded-sm btn-primary"
+                  className="w-full p-2 border border-gray-400 rounded-sm btn-primary"
                 >
                   Register
                 </button>
@@ -205,4 +205,4 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
   );
 };
 
-export default WebinarFormInline;
+export default MastermindFormInline;

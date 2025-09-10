@@ -1,8 +1,8 @@
 ---
-import WebinarFormInline from "./WebinarFormInline";
+import MastermindFormInline from "./MastermindFormInline";
 
-const GHL_WEBINAR_FORM_WEBHOOK_URL = import.meta.env
-  .GHL_WEBINAR_FORM_WEBHOOK_URL;
+const GHL_MASTERMIND_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_MASTERMIND_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 const { data } = Astro.props;
@@ -28,7 +28,7 @@ const { data } = Astro.props;
     </defs>
   </svg>
 
-  <div class="mx-auto max-w-4xl px-6 lg:px-8">
+  <div class="mx-auto max-w-4xl px-0 md:px-6 lg:px-8">
     <div class="text-center">
       <p
         class="text-base font-semibold leading-7 text-primary-300"
@@ -44,11 +44,13 @@ const { data } = Astro.props;
       />
     </div>
 
-    <div class="mt-12 bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
+    <div
+      class="mt-12 bg-white/10 backdrop-blur-sm rounded-2xl p-2 md:p-8 lg:p-12"
+    >
       <div class="text-center">
-        <WebinarFormInline
+        <MastermindFormInline
           client:visible
-          webhook={GHL_WEBINAR_FORM_WEBHOOK_URL}
+          webhook={GHL_MASTERMIND_FORM_WEBHOOK_URL}
           apiKey={PORTAL_API_KEY}
         />
         <p
