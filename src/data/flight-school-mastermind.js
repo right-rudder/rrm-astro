@@ -26,6 +26,16 @@ const flightSchoolMastermind = {
       ],
     },
 
+    eventDetails: {
+      upperHeading: "Next Session",
+      heading: "Mark Your Calendar",
+      date: "September 30, 2025",
+      time: "1:00 PM Central Time",
+      description:
+        "Join us for our upcoming Flight School Mastermind session where we'll dive deep into proven strategies for sustainable growth.",
+      ctaText: "Reserve your spot now",
+    },
+
     exclusive: {
       upperHeading: "Aviation's Elite Inner Circle",
       heading: "Why This Mastermind Is Different",

@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/Header.astro";
 import flightSchoolMastermind from "../data/flight-school-mastermind";
+import MastermindEventDetails from "../components/MastermindEventDetails.astro";
 import MastermindExclusive from "../components/MastermindExclusive.astro";
 import MastermindStats from "../components/MastermindStats.astro";
 import MastermindTestimonials from "../components/MastermindTestimonials.astro";
@@ -102,6 +103,9 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
   <!-- TESTIMONIALS -->
   <!-- <MastermindTestimonials testimonials={data.results.testimonials} /> -->
+
+  <!-- EVENT DETAILS -->
+  <MastermindEventDetails data={data.eventDetails} />
 
   <!-- LEADERSHIP SECTION -->
   <MastermindLeadership data={data.leadershipSection} />

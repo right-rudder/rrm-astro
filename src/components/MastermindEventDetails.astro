@@ -1,0 +1,102 @@
+---
+const { data } = Astro.props;
+---
+
+<section
+  class="bg-gradient-to-br from-primary-50 to-primary-100 py-16 sm:py-24"
+>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <p
+        class="text-base font-semibold leading-7 text-primary-700"
+        set:html={data.upperHeading}
+      />
+      <h2
+        class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        set:html={data.heading}
+      />
+
+      <!-- Event Date and Time -->
+      <div
+        class="mt-8 bg-white rounded-xl shadow-lg p-8 border border-primary-100"
+      >
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-6"
+        >
+          <!-- Date -->
+          <div class="flex items-center justify-center gap-3">
+            <div class="flex-shrink-0">
+              <svg
+                class="h-8 w-8 text-primary-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25m3 8.25V7.5a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 7.5v8.25a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25V13.5m-16.5 0h16.5"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-left">
+              <p class="text-sm font-medium text-gray-500">Date</p>
+              <p class="text-xl font-bold text-gray-900">{data.date}</p>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="hidden sm:block w-px h-12 bg-gray-200"></div>
+
+          <!-- Time -->
+          <div class="flex items-center justify-center gap-3">
+            <div class="flex-shrink-0">
+              <svg
+                class="h-8 w-8 text-primary-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+              </svg>
+            </div>
+            <div class="text-left">
+              <p class="text-sm font-medium text-gray-500">Time</p>
+              <p class="text-xl font-bold text-gray-900">{data.time}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="mt-6 pt-6 border-t border-gray-200">
+          <p
+            class="text-base text-gray-600 leading-7"
+            set:html={data.description}
+          />
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-8">
+          <a
+            href="/flight-school-mastermind#apply"
+            class="block bg-gradient-to-br from-accent-300 to-accent-600 rounded-lg px-6 py-4 hover:from-accent-200 hover:to-accent-300 transition-all duration-200 transform hover:scale-105"
+          >
+            <p
+              class="text-center text-base md:text-xl text-white font-bold uppercase"
+            >
+              {data.ctaText}
+            </p>
+            <span class="text-xs md:text-sm font-semibold text-accent-800"
+              >Limited to 25 founding members</span
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

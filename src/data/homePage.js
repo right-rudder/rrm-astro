@@ -31,6 +31,16 @@ const homePage = {
       ],
     },
 
+    eventDetails: {
+      upperHeading: "Next Mastermind Session",
+      heading: "Mark Your Calendar",
+      date: "September 30, 2025",
+      time: "1:00 PM Central Time",
+      description:
+        "Reserve your spot now for our upcoming Flight School Mastermind session where we'll dive deep into proven strategies for sustainable growth.",
+      ctaText: "Reserve your spot now",
+    },
+
     memberOf: {
       heading: "We Are Proud Members of",
       organizations: [

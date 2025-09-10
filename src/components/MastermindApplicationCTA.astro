@@ -8,7 +8,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { data } = Astro.props;
 ---
 
-<section class="relative isolate bg-gray-900 py-24 sm:py-32 group" id={data.id}>
+<section
+  class="relative isolate bg-gray-900 py-24 sm:py-32 group overflow-hidden"
+  id={data.id}
+>
   <svg
     viewBox="0 0 1024 1024"
     class="absolute opacity-90 duration-700 left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
