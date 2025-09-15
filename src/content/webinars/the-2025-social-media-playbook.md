@@ -1,11 +1,11 @@
 ---
-pubDate: "September 18, 2025"
+pubDate: "September 25, 2025"
 author: Tim Jedrek
 title: "The 2025 Social Media Playbook"
 description: "In today's digital age, social media has become an indispensable tool for connecting with potential students and building a strong brand presence. This playbook outlines key strategies for flight schools to leverage social media effectively in 2025."
-heroImage: "/blog/woman and flight instructor.webp"
+heroImage: "/webinars/RRM-Sept-Webinar.webp"
 readingTime: 5
-status: "draft"
+status: "published"
 category: "Marketing"
 tags:
   [
@@ -20,7 +20,16 @@ tags:
   ]
 ---
 
-In today's digital age, social media has become an indispensable tool for connecting with potential students and building a strong brand presence. This playbook outlines key strategies for flight schools to leverage social media effectively in 2025.
+Social media isn’t just about posting pretty pictures of airplanes anymore. It’s about building relationships, establishing trust, and guiding prospective students through their decision-making journey. The flight schools that master this see measurable improvements in inquiries, discovery flight bookings, and ultimately, enrollment numbers.
+
+Your competition is already out there telling their story on social media. The question is: what story are you telling, and is it the one that compels your ideal students to choose you?
+
+## Event Details
+
+- **Date:** September 25, 2025
+- **Time:** 2:00 PM - 3:00 PM (CT)
+- **Location:** Online - Register to receive your access link
+- **Cost:** Free
 
 ## 1. Define Your Target Audience
 
@@ -34,7 +43,7 @@ In today's digital age, social media has become an indispensable tool for connec
 - **Focus on Key Platforms:** Select 1-3 social media platforms that align with your target audience and your marketing goals.
 - **Develop a Consistent Brand Voice:** Maintain a consistent brand voice and tone across all platforms.
 
-## 3. Create High-Quality Content##
+## 3. Create High-Quality Content
 
 - **Visual Appeal:**
   - **High-Quality Images and Videos:** Share stunning photos and videos of your aircraft, facilities, and student experiences.
@@ -68,6 +77,10 @@ In today's digital age, social media has become an indispensable tool for connec
 - **Keep Up with Trends:** Stay informed about the latest social media trends and best practices.
 - **Adapt Your Strategy:** Regularly review and adjust your social media strategy based on the evolving landscape and the changing needs of your target audience.
 
-## Conclusion
+## Your Expert Instructor
+
+Tim Jedrek, CEO & Founder of Right Rudder Marketing - the only marketing agency in the world that focuses 100% exclusively on flight schools and is owned and operated by pilots. Tim brings insider understanding that no generalist marketing company can replicate, having helped flight schools across the country double, triple, and even 10X their student enrollments.
 
 By implementing this 2025 Social Media Playbook, flight schools can effectively leverage the power of social media to connect with potential students, build a strong brand presence, and achieve their marketing and enrollment goals.
+
+Ready to transform your social media from a nice-to-have into an enrollment-driving machine? This webinar will give you the four-pillar framework, platform-specific strategies, and content calendar system you need to succeed. Register now and start your journey to digital domination.
