@@ -1,7 +1,7 @@
 ---
 pubDate: "September 16, 2025"
 author: Raul Ospina
-title: "Right Rudder Marketing Partners with TruFlight Academy to Elevate Flight Training in Reno, Nevada"
+title: "Right Rudder Marketing Partners with TruFlight Academy to Elevate Flight Training in Dallas, Texas"
 description: "Right Rudder Marketing partners with TruFlight Academy to launch a cutting-edge website for Dallas's premier helicopter flight school. See how strategic aviation marketing drives enrollment growth."
 heroImage: "/blog/Right-Rudder-Marketing-Partner-TruFlight.webp"
 category: "Our Partners"
