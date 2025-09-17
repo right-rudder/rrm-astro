@@ -12,7 +12,7 @@ const webDesign = {
     header: {
       imagePath: "/src/assets/IMG_0743.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `More Than </br><span class="text-accent-300">Just a Website</span>`,
+      headerH1: `Web Design & Development for Flight Schools`,
       paragraph:
         "What makes a Right Rudder Marketing website different than all the rest? It boils down to these three marketing psychology principles. Using these marketing psychology tactics, your website will convert visitors to actual hot leads.",
       buttons: [

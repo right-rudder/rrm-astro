@@ -1,7 +1,7 @@
 const testimonials = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Testimonials | Right Rudder Marketing",
+    pageTitle: "Testimonials - Our Clients Love Our Work",
     pageDescription:
       "Read what our clients have to say about working with Right Rudder Marketing. We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you?",
     pageKeywords:
@@ -11,7 +11,7 @@ const testimonials = {
     header: {
       imagePath: "/src/assets/daniel-shapiro-LL1BGeyj1vs-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team member flying a plane",
-      headerH1: `Our Clients </br><span class="text-accent-300">Love Our Work</span>`,
+      headerH1: `Testimonials - Our Clients Love Our Work`,
       paragraph:
         "We are a team of pilots that know the flight training industry. We have helped many flight schools and aviation companies grow their business. See what our clients have to say about working with us.",
       buttons: [

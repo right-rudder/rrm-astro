@@ -10,7 +10,7 @@ const flightSchoolMastermind = {
     header: {
       imagePath: "/src/assets/FS-Mastermind-Q4-2025.png",
       imageAlt: "Tim Jedrek leading the Flight School Mastermind community",
-      headerH1: `Flight School</br><span class="text-accent-300">Mastermind</span>`,
+      headerH1: `Flight School Mastermind - Exclusive Growth Community`,
       paragraph: `Join the nation's top 1% of flight school owners sharing exact strategies that doubled, tripled, and 5×'d their revenues. Led by industry authority Tim Jedrek, this invitation-only community is designed by pilots, for flight school owners ready to break through revenue plateaus and build sustainable, profitable operations.`,
       buttons: [
         {

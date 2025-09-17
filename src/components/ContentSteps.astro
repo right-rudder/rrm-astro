@@ -41,11 +41,11 @@ const { data } = Astro.props;
       <p class="text-base font-semibold leading-7 text-primary-700">
         {data.upperHeading}
       </p>
-      <h1
+      <h2
         class="mt-0 mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
         {data.heading}
-      </h1>
+      </h2>
       {
         data.descriptions.map((desc) => (
           <p class="mb-2 text-lg leading-8 text-gray-700" set:html={desc} />

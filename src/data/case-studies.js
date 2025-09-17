@@ -11,7 +11,7 @@ const caseStudies = {
     header: {
       imagePath: "/src/assets/andrew-ruiz--ajZ_Xzeqe4-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `<span class="text-accent-300">Game Changing Results</span></br>for Flight Schools`,
+      headerH1: `Case Studies - Game Changing Results for Flight Schools`,
       paragraph:
         "Marketing for flight schools is our specialty. We have a proven track record of getting flight schools more leads, more students, and more revenue. See how we've helped our clients take their business out of the clouds and into VFR.",
       buttons: [
