@@ -19,7 +19,7 @@ tags:
     aviation marketing experts,
     flight school lead generation,
     flight school marketing system,
-    specialize flight school marketing,
+    specialized flight school marketing,
     flight school marketing results,
   ]
 ---
