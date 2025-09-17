@@ -47,7 +47,7 @@ In today's hyper-connected world, a robust digital marketing strategy is no long
 - **Social Media Ads:** Run targeted ads on social media platforms like Facebook, Instagram, and YouTube to reach specific demographics and interests.
 - **Retargeting Campaigns:** Implement retargeting campaigns to reconnect with website visitors who have shown interest in your flight school.
 
-# 4. Email Marketing
+## 4. Email Marketing
 
 - **Build Your Email List:** Capture leads through website forms, social media contests, and email signup forms.
 - **Create Engaging Email Campaigns:**

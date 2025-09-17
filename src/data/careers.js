@@ -1,7 +1,7 @@
 const careersVars = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Careers | Right Rudder Marketing",
+    pageTitle: "Careers - Join Our Winning Team at Right Rudder Marketing",
     pageDescription:
       "Right Rudder Marketing is on track to become a multi-million dollar digital marketing agency. Be a part of our winning team. If you want to be a part of the action, contact us and let's start a conversation. We are a digital marketing agency that specializes in helping flight schools grow and scale their businesses.",
     pageKeywords:
@@ -11,7 +11,7 @@ const careersVars = {
     header: {
       imagePath: "/src/assets/cedric-dhaenens-38P6fEx_phs-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Have Fun with Us.</br><span class="text-accent-300">Let's Fly Together.</span>`,
+      headerH1: `Careers - Join Our Winning Team at Right Rudder Marketing`,
       paragraph:
         "We are growing fast and are on track to become a multi-million dollar digital marketing agency. If you want to be a part of the action, contact us and let's start a conversation.",
       buttons: [

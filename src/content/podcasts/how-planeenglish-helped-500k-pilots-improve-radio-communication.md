@@ -9,15 +9,11 @@ category: "Flight Training"
 tags: ["Partners", "Radio Communication", "Pilot Tools"]
 ---
 
-# How PlaneEnglish Helped 500K+ Pilots Improve Radio Communication
-
-
 In this episode of the **Right Rudder Marketing Podcast**, we sit down with the team from **PlaneEnglish** to discuss their innovative **Aviation Radio Simulator (AR Sim)** and how it has transformed the way pilots practice **radio communication**. We dive deep into the challenges pilots face during training and how **AR Sim** provides a solution that’s both efficient and effective.
 
 ## Youtube Replay below
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/k_R9kKMJpnY?si=Y2k93N7att8oGnE6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ## What is PlaneEnglish?
 
@@ -56,6 +52,7 @@ For a deeper dive into how **PlaneEnglish** is revolutionizing **pilot communica
 ---
 
 ### Keywords:
+
 - Flight school marketing
 - Aviation marketing
 - Digital marketing for flight schools
@@ -67,6 +64,4 @@ For a deeper dive into how **PlaneEnglish** is revolutionizing **pilot communica
 - Pilot apps
 - Flight training technology
 
-
 **Date:** May 16, 2024 2PM Central / 3PM Eastern
-

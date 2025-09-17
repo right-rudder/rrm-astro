@@ -1,0 +1,1785 @@
+{
+  "timestamp": "2025-09-17T16:25:09.547Z",
+  "summary": {
+    "totalPages": 197,
+    "pagesWithIssues": 0,
+    "missingH1": 0,
+    "titleH1Mismatches": 0,
+    "consistentPages": 197
+  },
+  "pages": [
+    {
+      "path": "404.html",
+      "title": "Check Your Instruments - Page Not Found - Right Rudder Ma...",
+      "h1": "Check Your Instruments",
+      "h1Count": 1,
+      "similarity": 43,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "500.html",
+      "title": "This is awkward - Server Error - Right Rudder Marketing",
+      "h1": "This is awkward",
+      "h1Count": 1,
+      "similarity": 50,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "about/careers/index.html",
+      "title": "Careers - Join Our Winning Team at Right Rudder Marketing",
+      "h1": "Careers - Join Our Winning Team at Right Rudder Marketing",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "about/index.html",
+      "title": "Who We Are | Right Rudder Marketing | Right Rudder Marketing",
+      "h1": "Who We Are",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "about/investors/index.html",
+      "title": "We have a plan. Let s grow and scale Together | Investors...",
+      "h1": "We have a plan. Let's grow and scale Together.",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "about/partners-affiliates/index.html",
+      "title": "Our Great Partners Affiliates | Right Rudder Marketing",
+      "h1": "Our Great Partners & Affiliates",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "about/testimonials/index.html",
+      "title": "Testimonials - Our Clients Love Our Work",
+      "h1": "Testimonials - Our Clients Love Our Work",
+      "h1Count": 1,
+      "similarity": 133,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "about/who-we-are/index.html",
+      "title": "Who We Are | Right Rudder Marketing | Right Rudder Marketing",
+      "h1": "Who We Are",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/2023-simplifly-wrapped-a-year-in-review/index.html",
+      "title": "2023 SimpliFly Wrapped: A Year in Review | Right Rudder M...",
+      "h1": "2023 SimpliFly Wrapped: A Year in Review",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/4-steps-to-enroll-more-student-pilots-at-your-flight-school/index.html",
+      "title": "4 Steps To Enroll More Student Pilots At Your Flight Scho...",
+      "h1": "4 Steps To Enroll More Student Pilots At Your Flight School",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/5-tips-to-grow-your-flight-school/index.html",
+      "title": "5 tips to grow your flight school | Right Rudder Marketin...",
+      "h1": "5 tips to grow your flight school",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/7-mistakes-to-avoid-in-flight-school-marketing/index.html",
+      "title": "7 Mistakes To Avoid In Flight School Marketing | Right Ru...",
+      "h1": "7 Mistakes To Avoid In Flight School Marketing",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/9-ways-to-market-your-flight-school-in-2025/index.html",
+      "title": "9 Ways to Market Your Flight School and Enroll More Stude...",
+      "h1": "9 Ways to Market Your Flight School and Enroll More Student Pilots in 2025",
+      "h1Count": 1,
+      "similarity": 63,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/a-flight-school-owners-guide-to-pay-per-click-ppc-advertising-strategies-for-2025/index.html",
+      "title": "A Flight School Owner’s Guide to Pay-Per-Click (PPC) Adve...",
+      "h1": "A Flight School Owner’s Guide to Pay-Per-Click (PPC) Advertising Strategies for 2025",
+      "h1Count": 1,
+      "similarity": 57,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/adapting-to-rising-training-costs-and-economic-challenges-in-2025/index.html",
+      "title": "Adapting to Rising Training Costs and Economic Challenges...",
+      "h1": "Adapting to Rising Training Costs and Economic Challenges in 2025",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/automatically-import-leads-from-your-website-to-your-crm-using-api/index.html",
+      "title": "Automatically Import Leads From Your Website to Your CRM ...",
+      "h1": "Automatically Import Leads From Your Website to Your CRM Using API",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/backlinks-demystifying-seo-buzzwords/index.html",
+      "title": "Backlinks: Demystifying SEO Buzzwords | Right Rudder Mark...",
+      "h1": "Backlinks: Demystifying SEO Buzzwords",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/boost-student-engagement-and-safety-with-the-faa-wings-pilot-proficiency-program/index.html",
+      "title": "Boost Student Engagement and Safety with the FAA WINGS Pi...",
+      "h1": "Boost Student Engagement and Safety with the FAA WINGS Pilot Proficiency Program",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/boost-your-seo-with-schema-what-it-is-and-how-to-use-it/index.html",
+      "title": "Boost Your SEO with Schema: What It Is and How to Use It ...",
+      "h1": "Boost Your SEO with Schema: What It Is and How to Use It",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/breaking-down-an-instrument-panel/index.html",
+      "title": "Breaking Down an Instrument Panel | Right Rudder Marketin...",
+      "h1": "Breaking Down an Instrument Panel",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/built-by-pilots-for-pilots-rrm-airport-sync-partnership/index.html",
+      "title": "Built by Pilots, For Pilots: RRM + Airport Sync Partnersh...",
+      "h1": "Built by Pilots, For Pilots: RRM + Airport Sync Partnership",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/can-ai-make-better-pilots/index.html",
+      "title": "Can AI Make Better Pilots? | Right Rudder Marketing Blog",
+      "h1": "Can AI Make Better Pilots?",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/celebrating-our-1-year-anniversary-with-pancakes/index.html",
+      "title": "Celebrating Our 1-year Anniversary with Pancakes! | Right...",
+      "h1": "Celebrating Our 1-year Anniversary with Pancakes!",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/cnbc-says-there-s-a-pilot-shortage-is-that-true/index.html",
+      "title": "CNBC says there s a pilot shortage. Is that true? | Right...",
+      "h1": "CNBC says there s a pilot shortage. Is that true?",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/driving-conversions-ctas-and-form-submissions-for-flight-schools/index.html",
+      "title": "Driving Conversions: CTAs and Form Submissions for Flight...",
+      "h1": "Driving Conversions: CTAs and Form Submissions for Flight Schools",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/effective-homepage-layout-for-a-flight-school-targeting-aspiring-pilots/index.html",
+      "title": "Effective Homepage Layout for a Flight School Targeting A...",
+      "h1": "Effective Homepage Layout for a Flight School Targeting Aspiring Pilots",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/ezsims-is-a-rrm-partner/index.html",
+      "title": "EZSims is a RRM Partner! | Right Rudder Marketing Blog",
+      "h1": "EZSims is a RRM Partner!",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/faa-administrator-removes-himself-from-senate-confirmation/index.html",
+      "title": "FAA Administrator Nominee Removes Himself From Senate Con...",
+      "h1": "FAA Administrator Nominee Removes Himself From Senate Confirmation",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/faa-ga-and-commercial-division-head-kicked-off-nafi-summit-with-priorities/index.html",
+      "title": "FAA GA and commercial division head kicked off NAFI Summi...",
+      "h1": "FAA GA and commercial division head kicked off NAFI Summit with priorities",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/faa-reverts-notice-from-air-missions-to-airmen-notam/index.html",
+      "title": "FAA Reverts Notice to Air Missions Back to Notice to A...",
+      "h1": "FAA Reverts Notice to Air Missions Back to Notice to Airmen",
+      "h1Count": 1,
+      "similarity": 125,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/february-2025-update-google-is-removing-your-reviews/index.html",
+      "title": "Google is Removing Your Reviews! What to do about it. | R...",
+      "h1": "Google is Removing Your Reviews! What to do about it.",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/federal-judge-halts-jetblue-s-spirit-airlines-bid-unpacking-the-legal-landscape/index.html",
+      "title": "Federal Judge Halts JetBlue s Spirit Airlines Bid Due to ...",
+      "h1": "Federal Judge Halts JetBlue s Spirit Airlines Bid Due to Antitrust Concerns",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/flight-schedule-pro-partners-with-right-rudder-marketing/index.html",
+      "title": "Flight Schedule Pro Partners With Right Rudder Marketing ...",
+      "h1": "Flight Schedule Pro Partners With Right Rudder Marketing",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/hiring-an-in-house-marketing-team-vs-a-marketing-agency-a-guide-for-flight-schools/index.html",
+      "title": "Hiring an In-House Marketing Team vs. a Marketing Agency ...",
+      "h1": "Hiring an In-House Marketing Team vs. a Marketing Agency",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-accredited-flight-schools-win-big-with-529-plan-funding/index.html",
+      "title": "How Accredited Flight Schools Win Big with 529 Plan Fundi...",
+      "h1": "How Accredited Flight Schools Win Big with 529 Plan Funding",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-flexjets-dollar800-million-investment-creates-immediate-pilot-career-opportunities/index.html",
+      "title": "How Flexjet s $800 Million Investment Creates Immediate P...",
+      "h1": "How Flexjet s $800 Million Investment Creates Immediate Pilot Career Opportunities",
+      "h1Count": 1,
+      "similarity": 70,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-our-piper-pilots-and-tecnam-p92s-increase-safety-with-garmin-g3x-avionics/index.html",
+      "title": "How our Piper Pilots and Tecnam P92s Increase Safety with...",
+      "h1": "How our Piper Pilots and Tecnam P92s Increase Safety with Garmin G3X Avionics",
+      "h1Count": 1,
+      "similarity": 73,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-small-flight-schools-can-build-industry-authority-without-the-big-budget/index.html",
+      "title": "How Small Flight Schools Can Build Industry Authority Wit...",
+      "h1": "How Small Flight Schools Can Build Industry Authority Without the Big Budget",
+      "h1Count": 1,
+      "similarity": 70,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-smart-marketing-turns-the-pilot-shortage-into-flight-schools-biggest-growth-opportunity/index.html",
+      "title": "How Smart Marketing Turns the Pilot Shortage Into Flight ...",
+      "h1": "How Smart Marketing Turns the Pilot Shortage Into Flight School s Biggest Growth Opportunity",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-the-faas-dollar144-million-investment-could-transform-your-flight-schools-growth-strategy/index.html",
+      "title": "How the FAA s $14.4 Million Investment Could Transform Yo...",
+      "h1": "How the FAA s $14.4 Million Investment Could Transform Your Flight School s Growth Strategy",
+      "h1Count": 1,
+      "similarity": 70,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-advertise-your-flight-school-in-2024/index.html",
+      "title": "How to Advertise Your Flight School in 2024 | Right Rudde...",
+      "h1": "How to Advertise Your Flight School in 2024",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-build-a-local-business-website-that-actually-attracts-students/index.html",
+      "title": "How to Build a Local Business Website That Actually Attra...",
+      "h1": "How to Build a Local Business Website That Actually Attracts Students",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-build-a-social-media-strategy-that-actually-fills-your-flight-schools-seats/index.html",
+      "title": "How to Build a Social Media Strategy That Actually Fills ...",
+      "h1": "How to Build a Social Media Strategy That Actually Fills Your Flight School s Seats",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-build-a-unique-value-proposition-that-attracts-more-pilots/index.html",
+      "title": "How to Build a Unique Value Proposition That Attracts Mor...",
+      "h1": "How to Build a Unique Value Proposition That Attracts More Pilots",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-build-your-flight-schools-reputation-the-power-of-google-reviews/index.html",
+      "title": "How to Build Your Flight School’s Reputation: The Power o...",
+      "h1": "How to Build Your Flight School’s Reputation: The Power of Google Reviews",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-choose-a-flight-school-simplifly-s-guide/index.html",
+      "title": "How to Choose a Flight School: SimpliFly s Guide | Right ...",
+      "h1": "How to Choose a Flight School: SimpliFly s Guide",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-create-sops-to-scale-your-flight-school/index.html",
+      "title": "How to Create SOPs to Scale Your Flight School | Right Ru...",
+      "h1": "How to Create SOPs to Scale Your Flight School",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/how-to-make-your-flight-school-known/index.html",
+      "title": "How To Make Your Flight School Known | Right Rudder Marke...",
+      "h1": "How To Make Your Flight School Known",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/improving-your-cfi-skills/index.html",
+      "title": "The Weight of a CFI s Pen | Right Rudder Marketing Blog",
+      "h1": "The Weight of a CFI s Pen",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/index.html",
+      "title": "Blog | Right Rudder Marketing | Right Rudder Marketing",
+      "h1": "Blog",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/launch-of-streaming-service-aeroverse-to-bring-new-aviation-content-to-the-digital-sky/index.html",
+      "title": "Launch of streaming service Aeroverse to bring new aviati...",
+      "h1": "Launch of streaming service Aeroverse to bring new aviation content to the digital sky",
+      "h1Count": 1,
+      "similarity": 60,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/launch-of-the-right-rudder-marketing-website/index.html",
+      "title": "Launch of the Right Rudder Marketing Website | Right Rudd...",
+      "h1": "Launch of the Right Rudder Marketing Website",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/mastering-heading-tags-for-on-page-seo/index.html",
+      "title": "Mastering Heading Tags for On-Page SEO | Right Rudder Mar...",
+      "h1": "Mastering Heading Tags for On-Page SEO",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/meet-flytech-pilot-academy-our-newest-partner/index.html",
+      "title": "Meet FlyTech Pilot Academy: Our Newest Partner | Right Ru...",
+      "h1": "Meet FlyTech Pilot Academy: Our Newest Partner",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/new-faa-rule-may-limit-dpes-to-their-home-fsdo/index.html",
+      "title": "New FAA Rule May Limit DPEs to Their Home FSDO | Right Ru...",
+      "h1": "New FAA Rule May Limit DPEs to Their Home FSDO",
+      "h1Count": 1,
+      "similarity": 90,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/oceangate-submersible-implodes-killing-all-five-passengers-why-safety-is-important/index.html",
+      "title": "OceanGate Submersible Implodes Killing All Five Passenger...",
+      "h1": "OceanGate Submersible Implodes Killing All Five Passengers - Why Safety is Important",
+      "h1Count": 1,
+      "similarity": 60,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/pilot-training-over-the-years-and-ideal-aviation-s-contribution-to-its-histor/index.html",
+      "title": "Pilot Training Over the Years and Ideal Aviation’s Contri...",
+      "h1": "Pilot Training Over the Years and Ideal Aviation’s Contribution to Its History",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-is-going-to-king-s-schools-edu-con-aviation-symposium/index.html",
+      "title": "Right Rudder is Going to King Schools EDU CON Aviation Sy...",
+      "h1": "Right Rudder is Going to King Schools EDU CON Aviation Symposium",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-and-milivate-announce-strategic-partnership-to-support-transitioning-military-pilots/index.html",
+      "title": "Right Rudder Marketing and Milivate Announce Strategic Pa...",
+      "h1": "Right Rudder Marketing and Milivate Announce Strategic Partnership to Support Transitioning Military Pilots Mechanics",
+      "h1Count": 1,
+      "similarity": 33,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-are-partners-with-stratus-financial/index.html",
+      "title": "Right Rudder Marketing Partners with Stratus Financial | ...",
+      "h1": "Right Rudder Marketing Partners with Stratus Financial",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-at-fsana-2025-a-recap-of-innovation-insights-and-celebration/index.html",
+      "title": "Right Rudder Marketing at FSANA 2025: A Recap of Innovati...",
+      "h1": "Right Rudder Marketing at FSANA 2025: A Recap of Innovation, Insights, and Celebration",
+      "h1Count": 1,
+      "similarity": 50,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-backs-2025-nafi-summit-in-daytona-beach/index.html",
+      "title": "Right Rudder Marketing Backs 2025 NAFI Summit in Daytona ...",
+      "h1": "Right Rudder Marketing Backs 2025 NAFI Summit in Daytona Beach",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-empowers-flight-schools-at-aerosummit-2025/index.html",
+      "title": "Right Rudder Marketing Empowers Flight Schools at AeroSum...",
+      "h1": "Right Rudder Marketing Empowers Flight Schools at AeroSummit 2025",
+      "h1Count": 1,
+      "similarity": 50,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-enters-second-year-as-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors/index.html",
+      "title": "Right Rudder Marketing Enters Second Year as a Corporate ...",
+      "h1": "Right Rudder Marketing Enters Second Year as a Corporate Sponsor for NAFI (National Association of Flight Instructors)",
+      "h1Count": 1,
+      "similarity": 44,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-featured-on-stratus-financial-services-podcast/index.html",
+      "title": "Right Rudder Marketing featured on Stratus Financial Serv...",
+      "h1": "Right Rudder Marketing featured on Stratus Financial Services Podcast",
+      "h1Count": 1,
+      "similarity": 60,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-is-now-a-corporate-sponsor-for-nafi-national-association-of-flight-instructors/index.html",
+      "title": "Right Rudder Marketing is Now a Corporate Sponsor for NAF...",
+      "h1": "Right Rudder Marketing is Now a Corporate Sponsor for NAFI (National Association of Flight Instructors)",
+      "h1Count": 1,
+      "similarity": 43,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-is-now-a-supporting-partner-for-fsana/index.html",
+      "title": "Right Rudder Marketing is Now a Supporting Partner for FS...",
+      "h1": "Right Rudder Marketing is Now a Supporting Partner for FSANA",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-partners-with-king-schools-to-support-pilot-education/index.html",
+      "title": "Right Rudder Marketing Sponsors King Schools Envision Fl...",
+      "h1": "Right Rudder Marketing Sponsors King Schools Envision Flight at Sea EDUCON 2024",
+      "h1Count": 1,
+      "similarity": 57,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-partners-with-truflight-academy/index.html",
+      "title": "Right Rudder Marketing Partners with TruFlight Academy to...",
+      "h1": "Right Rudder Marketing Partners with TruFlight Academy to Elevate Flight Training in Howe, Texas",
+      "h1Count": 1,
+      "similarity": 43,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-sponsors-fsana-2024-trade-show-in-las-vegas/index.html",
+      "title": "Right Rudder Marketing Sponsors FSANA 2024 Trade Show in ...",
+      "h1": "Right Rudder Marketing Sponsors FSANA 2024 Trade Show in Las Vegas",
+      "h1Count": 1,
+      "similarity": 71,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/right-rudder-marketing-teams-up-with-planeenglish/index.html",
+      "title": "Right Rudder Marketing Teams Up with PlaneEnglish | Right...",
+      "h1": "Right Rudder Marketing Teams Up with PlaneEnglish",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/rrm-announces-partnership-with-wingsleasing-to-continue-maximizing-flight-school-profits/index.html",
+      "title": "RRM Announces Partnership with WingsLeasing | Right Rudde...",
+      "h1": "RRM Announces Partnership with WingsLeasing",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/rrm-partners-with-nv-flight-school-in-reno-nevada/index.html",
+      "title": "RRM Partners with NV Flight School in Reno, Nevada | Righ...",
+      "h1": "RRM Partners with NV Flight School in Reno, Nevada",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/rrm-s-flight-school-website-template-10-essential-elements-every-flight-school-website-should-have/index.html",
+      "title": "RRM s Flight School Website Template: 10 Essential Elemen...",
+      "h1": "RRM s Flight School Website Template: 10 Essential Elements Every Flight School Website Should Have",
+      "h1Count": 1,
+      "similarity": 56,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/self-service-screening-takes-off-in-las-vegas/index.html",
+      "title": "Self-Service Screening Takes Off in Las Vegas | Right Rud...",
+      "h1": "Self-Service Screening Takes Off in Las Vegas",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/sky-express-expands-fleet-with-atr-72-600s-and-commits-to-emission-reduction/index.html",
+      "title": "Sky Express Expands Fleet with ATR 72-600s and Commits to...",
+      "h1": "Sky Express Expands Fleet with ATR 72-600s and Commits to Emission Reduction",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/southwest-airlines-pilots-pay-increase/index.html",
+      "title": "Southwest Airlines Pilots Pay Increase: A Milestone in t...",
+      "h1": "Southwest Airlines Pilots Pay Increase: A Milestone in the Aviation Industry",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/stop-losing-flight-student-pilots-before-they-even-start/index.html",
+      "title": "Stop Losing Student Pilots Before They Even Start | Right...",
+      "h1": "Stop Losing Student Pilots Before They Even Start",
+      "h1Count": 1,
+      "similarity": 89,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/sun-city-aviation-hosts-the-aopa-2024-rusty-pilots-seminar/index.html",
+      "title": "Sun City Aviation Hosts the AOPA 2024 Rusty Pilots Semina...",
+      "h1": "Sun City Aviation Hosts the AOPA 2024 Rusty Pilots Seminar",
+      "h1Count": 1,
+      "similarity": 89,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/supporting-local-aviation-events-is-more-impactful-than-you-think/index.html",
+      "title": "Supporting local aviation events is more impactful than y...",
+      "h1": "Supporting local aviation events is more impactful than you think",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-aviation-revolution-how-flying-is-about-to-change-forever/index.html",
+      "title": "The Aviation Revolution: How Flying is About to Change Fo...",
+      "h1": "The Aviation Revolution: How Flying is About to Change Forever",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-faa-reauthorization-bill-and-its-implications-for-pilot-training/index.html",
+      "title": "The FAA Reauthorization Bill and Its Implications for Pil...",
+      "h1": "The FAA Reauthorization Bill and Its Implications for Pilot Training",
+      "h1Count": 1,
+      "similarity": 71,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-faas-mosaic-rule-is-here-your-flight-schools-biggest-opportunity-in-20-years/index.html",
+      "title": "The FAA s MOSAIC Rule is Here: Your Flight School s Bigge...",
+      "h1": "The FAA s MOSAIC Rule is Here: Your Flight School s Biggest Opportunity in 20 Years",
+      "h1Count": 1,
+      "similarity": 63,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-flight-school-handbook-of-marketing-knowledge-right-rudder-marketing-announces-new-book-release-by-founder-tim-jedrek/index.html",
+      "title": "Right Rudder Marketing Announces New Book Release by Foun...",
+      "h1": "Right Rudder Marketing Announces New Book Release by Founder Tim Jedrek: The Flight School Handbook of Marketing Knowledge",
+      "h1Count": 1,
+      "similarity": 56,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-independent-cfis-ultimate-growth-guide/index.html",
+      "title": "The Independent CFI s Ultimate Growth Guide | Right Rudde...",
+      "h1": "The Independent CFI s Ultimate Growth Guide",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page/index.html",
+      "title": "The Role of SEO in Elevating Flight Schools to the Top of...",
+      "h1": "The Role of SEO in Elevating Flight Schools to the Top of the Page",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-sales-process-for-flight-schools-maximizing-lead-conversion-and-student-retention/index.html",
+      "title": "The Sales Process for Flight Schools: Maximizing Lead Con...",
+      "h1": "The Sales Process for Flight Schools: Maximizing Lead Conversion and Student Retention",
+      "h1Count": 1,
+      "similarity": 63,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/the-written-exam-what-is-it-and-why-do-i-need-it/index.html",
+      "title": "The Written Exam: What Is It and Why Do I Need It? | Righ...",
+      "h1": "The Written Exam: What Is It and Why Do I Need It?",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/tonie-santos-joins-right-rudder-marketing-as-our-newest-operation-director/index.html",
+      "title": "Tonie Santos Joins Right Rudder Marketing as our Newest O...",
+      "h1": "Tonie Santos Joins Right Rudder Marketing as our Newest Operation Director",
+      "h1Count": 1,
+      "similarity": 71,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/turn-your-flight-school-website-into-a-lead-generating-machine/index.html",
+      "title": "Turn Your Flight School Website Into a Lead-Generating Ma...",
+      "h1": "Turn Your Flight School Website Into a Lead-Generating Machine",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/ultimate-flying-school-online-marketing-cheat-sheet/index.html",
+      "title": "Ultimate Flying School Online Marketing Cheat Sheet | Rig...",
+      "h1": "Ultimate Flying School Online Marketing Cheat Sheet",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/using-aviation-marketing-to-bring-more-students-to-your-flight-school/index.html",
+      "title": "Using Aviation Marketing to Bring More Students to Your F...",
+      "h1": "Using Aviation Marketing to Bring More Students to Your Flight School",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/what-is-nap-and-why-does-it-matter-in-your-local-seo-strategy/index.html",
+      "title": "What is NAP and Why Does It Matter In Your Local SEO Stra...",
+      "h1": "What is NAP and Why Does It Matter In Your Local SEO Strategy",
+      "h1Count": 1,
+      "similarity": 89,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/what-nasa-s-artemis-1-launch-means-for-flight-schools-and-aviation/index.html",
+      "title": "What NASA’s Artemis 1 Launch Means for Flight Schools and...",
+      "h1": "What NASA’s Artemis 1 Launch Means for Flight Schools and Aviation",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/what-s-an-alternate-airport/index.html",
+      "title": "What’s an Alternate Airport? | Right Rudder Marketing Blog",
+      "h1": "What’s an Alternate Airport?",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/what-the-new-generation-of-student-pilots-really-wants/index.html",
+      "title": "What the New Generation of Student Pilots Really Wants | ...",
+      "h1": "What the New Generation of Student Pilots Really Wants",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/why-are-air-show-performer-announcements-made-in-december/index.html",
+      "title": "Why are air show performer announcements made in December...",
+      "h1": "Why are air show performer announcements made in December?",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/why-flight-school-marketing-specialization-matters-more-than-ever/index.html",
+      "title": "Why Flight School Marketing Specialization Matters More T...",
+      "h1": "Why Flight School Marketing Specialization Matters More Than Ever",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/why-right-rudder-marketing-is-the-best-choice-for-growing-your-flight-school/index.html",
+      "title": "Why Right Rudder Marketing Is the Best Choice for Growing...",
+      "h1": "Why Right Rudder Marketing Is the Best Choice for Growing Your Flight School",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/why-safety-should-be-your-flight-schools-secret-weapon/index.html",
+      "title": "Why Safety Should Be Your Flight School s Secret Weapon (...",
+      "h1": "Why Safety Should Be Your Flight School s Secret Weapon (And How to Use It)",
+      "h1Count": 1,
+      "similarity": 60,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/why-you-should-ask-for-reviews-from-your-flight-students/index.html",
+      "title": "Why You Should Ask For Reviews From Your Flight Students ...",
+      "h1": "Why You Should Ask For Reviews From Your Flight Students",
+      "h1Count": 1,
+      "similarity": 111,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/why-your-messaging-is-scaring-off-future-student-pilots/index.html",
+      "title": "Why Your Messaging Is Scaring Off Future Student Pilots |...",
+      "h1": "Why Your Messaging Is Scaring Off Future Student Pilots",
+      "h1Count": 1,
+      "similarity": 89,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "book-confirmation/index.html",
+      "title": "Thank you for getting our book | Right Rudder Marketing",
+      "h1": "Thank you for gettingOur Book",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "checklist-confirmation/index.html",
+      "title": "Thank you for downloading our checklist | Right Rudder Ma...",
+      "h1": "Thank you for downloading our checklist",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "cirrus-aviation-contact-us-form.html",
+      "title": "Cirrus Aviation Contact Form | Flight Training Information",
+      "h1": "Cirrus Aviation Contact Form",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "contact/index.html",
+      "title": "Contact Us | Right Rudder Marketing | Right Rudder Marketing",
+      "h1": "Contact Us | Right Rudder Marketing",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "contact-confirmation/index.html",
+      "title": "Thank you for contacting Right Rudder Marketing",
+      "h1": "Thank you for contactingRight Rudder Marketing",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/carol-cali/index.html",
+      "title": "Carol Cali | Right Rudder Marketing Flight Crew",
+      "h1": "Carol Cali",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/charles-ferguson/index.html",
+      "title": "Charles Ferguson | Right Rudder Marketing Flight Crew",
+      "h1": "Charles Ferguson",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/diego-yon/index.html",
+      "title": "Diego Yon | Right Rudder Marketing Flight Crew",
+      "h1": "Diego Yon",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/karla-delgado/index.html",
+      "title": "Karla Delgado | Right Rudder Marketing Flight Crew",
+      "h1": "Karla Delgado",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/lucas-rodrigues/index.html",
+      "title": "Lucas Rodrigues | Right Rudder Marketing Flight Crew",
+      "h1": "Lucas Rodrigues",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/melvin-yabo/index.html",
+      "title": "Melvin Yabo | Right Rudder Marketing Flight Crew",
+      "h1": "Melvin Yabo",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/raul-ospina/index.html",
+      "title": "Raul Ospina | Right Rudder Marketing Flight Crew",
+      "h1": "Raul Ospina",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/rodrigo-nunes/index.html",
+      "title": "Rodrigo Nunes | Right Rudder Marketing Flight Crew",
+      "h1": "Rodrigo Nunes",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/sam-settle/index.html",
+      "title": "Sam Settle | Right Rudder Marketing Flight Crew",
+      "h1": "Sam Settle",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/sebastian-bruno/index.html",
+      "title": "Sebastian Bruno | Right Rudder Marketing Flight Crew",
+      "h1": "Sebastian Bruno",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/shaun-patrick/index.html",
+      "title": "Shaun Patrick | Right Rudder Marketing Flight Crew",
+      "h1": "Shaun Patrick",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/tim-jedrek/index.html",
+      "title": "Tim Jedrek | Right Rudder Marketing Flight Crew",
+      "h1": "Tim Jedrek",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/tonie-santos/index.html",
+      "title": "Tonie Santos | Right Rudder Marketing Flight Crew",
+      "h1": "Tonie Santos",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-crew/zach-hagely/index.html",
+      "title": "Zach Hagely | Right Rudder Marketing Flight Crew",
+      "h1": "Zach Hagely",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-school-mastermind/index.html",
+      "title": "Flight School Mastermind - Exclusive Growth Community | R...",
+      "h1": "Flight School Mastermind - Exclusive Growth Community",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-school-seo/index.html",
+      "title": "Search Engine Optimization (SEO) | Right Rudder Marketing",
+      "h1": "Search Engine Optimization (SEO) for Flight Schools",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-school-website-design/index.html",
+      "title": "Web Design Development for Flight Schools | Right Rudde...",
+      "h1": "Web Design & Development for Flight Schools",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "gmb-confirmation/index.html",
+      "title": "Thank you for downloading our GMB guide | Right Rudder Ma...",
+      "h1": "Thank you for downloading our GMB guide",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "how-to-enroll-more-students-with-google-ads-in-2024/index.html",
+      "title": "Google Ads - Pay Per Click | Right Rudder Marketing",
+      "h1": "Google Ads - Pay Per Click Advertising for Flight Schools",
+      "h1Count": 1,
+      "similarity": 71,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "how-to-optimize-google-my-business-2025/index.html",
+      "title": "How to optimize your Google My Business Profile | Right R...",
+      "h1": "How To Optimize YourGoogle My Business Profile",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "how-to-run-effective-facebook-ads-in-2024/index.html",
+      "title": "Facebook Ads - Pay Per Click | Right Rudder Marketing",
+      "h1": "Facebook Ads - Pay Per Click Advertising for Flight Schools",
+      "h1Count": 1,
+      "similarity": 71,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "index.html",
+      "title": "Grow and Scale Your Aviation Business | Flight School Mar...",
+      "h1": "Grow and ScaleYour Aviation Business",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "keywords-confirmation/index.html",
+      "title": "Thank you for downloading our keywords guide | Right Rudd...",
+      "h1": "Thank you for downloading our keywords guide",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "marketing-system/index.html",
+      "title": "Complete Marketing Solution for Flight Schools | Right Ru...",
+      "h1": "Complete Marketing Solution for Flight Schools",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/blue-skies-above/index.html",
+      "title": "Blue Skies Above - Case Study | Right Rudder Marketing",
+      "h1": "Blue Skies AboveCase Study",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/ideal-aviation/index.html",
+      "title": "Ideal Aviation - Case Study | Right Rudder Marketing",
+      "h1": "Ideal AviationCase Study",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/index.html",
+      "title": "Case Studies | Right Rudder Marketing",
+      "h1": "Case Studies - Game Changing Results for Flight Schools",
+      "h1Count": 1,
+      "similarity": 33,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/pitcairn/index.html",
+      "title": "Pitcairn Flight Academy | Case Study | Right Rudder Marke...",
+      "h1": "Pitcairn Flight AcademyCase Study",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/simplifly/index.html",
+      "title": "SimpliFly - Case Study | Right Rudder Marketing",
+      "h1": "SimpliFlyCase Study",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/summit-flight-academy/index.html",
+      "title": "Summit Flight Academy - Case Study | Right Rudder Marketing",
+      "h1": "Summit Flight AcademyCase Study",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/sun-city/index.html",
+      "title": "Sun City Aviation Academy - Case Study | Right Rudder Mar...",
+      "h1": "Sun City Aviation AcademyCase Study",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "our-flight-schools/uft/index.html",
+      "title": "Universal Flight Training (UFT) - Case Study | Right Rudd...",
+      "h1": "Universal Flight TrainingCase Study",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "personality-test/index.html",
+      "title": "Personality Assessment | Right Rudder Marketing",
+      "h1": "Personality Assessment",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "personality-test-confirmation/index.html",
+      "title": "Your Personality Assessment Results | Right Rudder Marketing",
+      "h1": "Your Personality Assessment Results",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/arming-independent-cfis-and-specialty-flight-schools-to-thrive-with-orka/index.html",
+      "title": "Arming Independent CFIs and Specialty Flight Schools to T...",
+      "h1": "Arming Independent CFIs and Specialty Flight Schools to Thrive with ORKA",
+      "h1Count": 1,
+      "similarity": 71,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/breaking-barriers-in-central-florida-women-in-aviation-with-aubre-and-maggie/index.html",
+      "title": "Breaking Barriers in Central Florida: Women in Aviation w...",
+      "h1": "Breaking Barriers in Central Florida: Women in Aviation with Aubrey Maggie",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/embracing-uncertainty-with-sam-goodwin-lessons-from-an-extraordinary-journey/index.html",
+      "title": "Embracing Uncertainty with Sam Goodwin: Lessons from an E...",
+      "h1": "Embracing Uncertainty with Sam Goodwin: Lessons from an Extraordinary Journey",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/empowering-aviation-education-with-rod-machado/index.html",
+      "title": "Transforming Aviation Education with Rod Machado | Podcas...",
+      "h1": "Transforming Aviation Education with Rod Machado",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/flight-school-insurance-what-you-need-to-know-featuring-kim-skipper-from-avemco-insurance/index.html",
+      "title": "Flight School Insurance: What You Need to Know Featuring ...",
+      "h1": "Flight School Insurance: What You Need to Know Featuring Kim Skipper from Avemco Insurance",
+      "h1Count": 1,
+      "similarity": 64,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/flight-training-secrets-industry-insights-with-robert-meder-nafi-s-chairman-emeritus-and-tim-jedrek-from-right-rudder-marketing/index.html",
+      "title": "Flight Training Secrets - Industry Insights with Robert M...",
+      "h1": "Flight Training Secrets - Industry Insights with Robert Meder, NAFI s Chairman Emeritus, and Tim Jedrek from Right Rudder Marketing",
+      "h1Count": 1,
+      "similarity": 42,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/how-gordon-scaled-his-flight-school-from-one-leased-plane-to-70-aircraft-and-four-locations/index.html",
+      "title": "How Gordon Scaled his Flight School From One Leased Plane...",
+      "h1": "How Gordon Scaled his Flight School From One Leased Plane to 70+ Aircraft and Four Locations",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/how-milivate-helps-flight-schools-elevate-their-workforce-with-military-talent/index.html",
+      "title": "How Milivate Helps Flight Schools Elevate Their Workforce...",
+      "h1": "How Milivate Helps Flight Schools Elevate Their Workforce With Military Talent",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/how-planeenglish-helped-500k-pilots-improve-radio-communication/index.html",
+      "title": "How PlaneEnglish Helped 500K+ Pilots Improve Radio Commun...",
+      "h1": "How PlaneEnglish Helped 500K+ Pilots Improve Radio Communication",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/how-take-flight-interactive-is-revolutionizing-flight-training-with-ai/index.html",
+      "title": "How Take Flight Interactive Is Revolutionizing Flight Tra...",
+      "h1": "How Take Flight Interactive Is Revolutionizing Flight Training with AI",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/index.html",
+      "title": "Podcasts | Right Rudder Marketing | Right Rudder Marketing",
+      "h1": "Podcasts",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/integrating-purdue-global-degree-program-into-your-flight-school/index.html",
+      "title": "Integrating Purdue Global’s Degree Program into Your Flig...",
+      "h1": "Integrating Purdue Global’s Degree Program into Your Flight School",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/learn-how-to-provide-financing-to-your-student-pilots-with-stratus-financial/index.html",
+      "title": "Learn How to Provide Financing to Your Student Pilots wit...",
+      "h1": "Learn How to Provide Financing to Your Student Pilots with Stratus Financial",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/master-your-checkride-with-mary-schu-dpe/index.html",
+      "title": "Master your Checkride with Mary Schu DPE | Podcasts | Rig...",
+      "h1": "Master your Checkride with Mary Schu DPE",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/mastering-flight-training-carl-valeri-on-mentorship-learning-and-success/index.html",
+      "title": "Mastering Flight Training - Carl Valeri on Mentorship, Le...",
+      "h1": "Mastering Flight Training - Carl Valeri on Mentorship, Learning, and Success",
+      "h1Count": 1,
+      "similarity": 71,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/maximizing-flight-school-profits-with-ari-prevalla/index.html",
+      "title": "Maximizing Flight School Profits with Ari Prevalla | Podc...",
+      "h1": "Maximizing Flight School Profits with Ari Prevalla",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/pilot-career-outlook-2025-preparing-your-students-for-the-aviation-job-boom/index.html",
+      "title": "Pilot Career Outlook 2025: Preparing Your Students for th...",
+      "h1": "Pilot Career Outlook 2025: Preparing Your Students for the Aviation Job Boom",
+      "h1Count": 1,
+      "similarity": 70,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/streamlining-flight-school-management-with-tom-verbruggen-from-aviatize/index.html",
+      "title": "Streamlining Flight School Management with Tom Verbruggen...",
+      "h1": "Streamlining Flight School Management with Tom Verbruggen from Aviatize",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/tammy-barlette-crosscheck-mental-performance-training/index.html",
+      "title": "Mental Performance Training with Tammy Barlette (Retired ...",
+      "h1": "Mental Performance Training with Tammy Barlette (Retired Fighter Jet Pilot)",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/transforming-flight-school-operations-with-brett-hart-from-four-forces/index.html",
+      "title": "Transforming Flight School Operations with Brett Hart fro...",
+      "h1": "Transforming Flight School Operations with Brett Hart from Four Forces",
+      "h1Count": 1,
+      "similarity": 57,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "privacy-policy/index.html",
+      "title": "Privacy Policy | Right Rudder Marketing",
+      "h1": "Privacy Policy of Right Rudder Marketing",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "resources/flight-school-handbook/index.html",
+      "title": "Flight School Handbook of Marketing Knowledge | Right Rud...",
+      "h1": "Flight School Handbook of Marketing Knowledge",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "resources/flight-school-keywords/index.html",
+      "title": "Flight School Keywords Guide | Right Rudder Marketing",
+      "h1": "The Complete Flight School SEOKeywords Guide",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "resources/gmb/index.html",
+      "title": "Google My Business | Right Rudder Marketing",
+      "h1": "Perfect your Google Business Profile",
+      "h1Count": 1,
+      "similarity": 40,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "resources/index.html",
+      "title": "Right Rudder Marketing | Flight School Resources",
+      "h1": "Flight SchoolResources",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "resources/marketing-checklist/index.html",
+      "title": "Flight School Marketing Checklist | Right Rudder Marketing",
+      "h1": "The Ultimate Flight SchoolMarketing Checklist",
+      "h1Count": 1,
+      "similarity": 33,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "resources/sop-templates/index.html",
+      "title": "Flight School SOP Template | Right Rudder Marketing",
+      "h1": "Flight School SOP Template - Start creating your playbook with SOPs",
+      "h1Count": 1,
+      "similarity": 43,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "resources/video-production/index.html",
+      "title": "Video Production and Editing | Right Rudder Marketing",
+      "h1": "High-QualityAviation Video Production",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "schedule-call/index.html",
+      "title": "Schedule a Growth Accelerator Session | Flight School and...",
+      "h1": "Schedule a Growth Accelerator Session",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "sop-template-confirmation/index.html",
+      "title": "SOP template Confirmation | Right Rudder Marketing",
+      "h1": "Thank you for downloading our SOP template",
+      "h1Count": 1,
+      "similarity": 33,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "terms-of-service/index.html",
+      "title": "Terms of Service | Right Rudder Marketing",
+      "h1": "Terms of Service of Right Rudder Marketing",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/breaking-down-profit-first-principles-and-pay-yourself-first/index.html",
+      "title": "Breaking Down Profit First Principles and Pay Yourself Fi...",
+      "h1": "Breaking Down Profit First Principles and Pay Yourself First",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/copywriting-revisited/index.html",
+      "title": "Copywriting Revisited: How to Improve Writing on Websites...",
+      "h1": "Copywriting Revisited: How to Improve Writing on Websites, Emails, Presentations, etc.",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/design-great-looking-checklists-forms-brochures-for-free/index.html",
+      "title": "Design Great Looking Checklists, Forms, Brochures for FRE...",
+      "h1": "Design Great Looking Checklists, Forms, Brochures for FREE",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/flight-school-handbook-of-marketing-knowledge/index.html",
+      "title": "Live Event: Introducing the Flight School Handbook of Mar...",
+      "h1": "Live Event: Introducing the Flight School Handbook of Marketing Knowledge",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-i-ranked-our-flight-schools-on-top-of-google-google-business-profile-optimization/index.html",
+      "title": "How I Ranked Our Flight Schools On Top of Google: Google ...",
+      "h1": "How I Ranked Our Flight Schools On Top of Google: Google Business Profile Optimization",
+      "h1Count": 1,
+      "similarity": 90,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-do-marketing-for-flight-schools-in-2025/index.html",
+      "title": "How to Do Marketing for Flight Schools in 2025 | Webinars...",
+      "h1": "How to Do Marketing for Flight Schools in 2025",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-enroll-more-student-pilots-at-my-flight-school/index.html",
+      "title": "How to Enroll more Student Pilots At My Flight School | W...",
+      "h1": "How to Enroll more Student Pilots At My Flight School",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-implement-marketing-automation-to-super-charge-your-lead-conversion/index.html",
+      "title": "How to implement marketing automation to super charge you...",
+      "h1": "How to implement marketing automation to super charge your lead conversion",
+      "h1Count": 1,
+      "similarity": 63,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-increase-student-retention-upcoming-webinar-december-7-2022/index.html",
+      "title": "Webinar: Formulating a captivating one liner to clarify y...",
+      "h1": "Webinar: Formulating a captivating one liner to clarify your message",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-leverage-video-and-multi-media-for-flight-school-businesses/index.html",
+      "title": "How to leverage Video Multi-Media for Flight School Bus...",
+      "h1": "How to leverage Video Multi-Media for Flight School Businesses",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-maximize-your-student-enrollment-with-paid-search-and-google-ads/index.html",
+      "title": "How to maximize your student enrollment with Paid Search ...",
+      "h1": "How to maximize your student enrollment with Paid Search Google Ads",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-optimize-your-flight-school-website-for-maximum-conversion/index.html",
+      "title": "How to Optimize Your Flight School Website for MAXIMUM co...",
+      "h1": "How to Optimize Your Flight School Website for MAXIMUM conversion",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/how-to-write-better-copy-and-increase-student-enrollment/index.html",
+      "title": "How to Write Better Copy and Increase Student Enrollment ...",
+      "h1": "How to Write Better Copy and Increase Student Enrollment",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/implementing-a-continuous-improvement-fly-program-at-your-flight-school/index.html",
+      "title": "Implementing a Continuous Improvement FLY Program at Your...",
+      "h1": "Implementing a Continuous Improvement FLY Program at Your Flight School",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/index.html",
+      "title": "Webinars | Right Rudder Marketing | Right Rudder Marketing",
+      "h1": "Webinars",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/new-rules-of-marketing-in-2024-for-flight-schools/index.html",
+      "title": "NEW RULES OF MARKETING IN 2024 FOR FLIGHT SCHOOLS | Webin...",
+      "h1": "NEW RULES OF MARKETING IN 2024 FOR FLIGHT SCHOOLS",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/run-google-ads-the-right-way-to-enroll-more-students-and-ave-money/index.html",
+      "title": "Run Google Ads The Right Way To Enroll More Students And ...",
+      "h1": "Run Google Ads The Right Way To Enroll More Students And $ave Money",
+      "h1Count": 1,
+      "similarity": 78,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/the-2025-guide-to-google-maps-how-to-get-your-flight-school-ranked-on-the-map/index.html",
+      "title": "The 2025 Guide to Google Maps - how to get your flight sc...",
+      "h1": "The 2025 Guide to Google Maps - how to get your flight school ranked on the map",
+      "h1Count": 1,
+      "similarity": 89,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/the-2025-social-media-playbook/index.html",
+      "title": "The 2025 Social Media Playbook | Webinars | Right Rudder ...",
+      "h1": "The 2025 Social Media Playbook",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/the-new-2025-seo-formula-for-flight-schools/index.html",
+      "title": "The NEW 2025 SEO / GEO (Generative AI) Formula for Flight...",
+      "h1": "The NEW 2025 SEO / GEO (Generative AI) Formula for Flight Schools",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/the-power-of-retargeting-for-flight-schools/index.html",
+      "title": "The POWER of Retargeting for Flight Schools | Webinars | ...",
+      "h1": "The POWER of Retargeting for Flight Schools",
+      "h1Count": 1,
+      "similarity": 60,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/tim-jedrek-at-king-schools-talks-sales-and-marketing/index.html",
+      "title": "Tim Jedrek At King Schools Talks Sales and Marketing | We...",
+      "h1": "Tim Jedrek At King Schools Talks Sales and Marketing",
+      "h1Count": 1,
+      "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/tim-jedrek-gives-talk-at-redbird-migration-2025/index.html",
+      "title": "Tim Jedrek gives talk at Redbird Migration 2025 | Webinar...",
+      "h1": "Tim Jedrek gives talk at Redbird Migration 2025",
+      "h1Count": 1,
+      "similarity": 88,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/your-2024-digital-marketing-plan-for-flight-school-businesses/index.html",
+      "title": "Your 2024 Digital Marketing Plan (For Flight School Busin...",
+      "h1": "Your 2024 Digital Marketing Plan (For Flight School Businesses)",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "webinars/your-2026-digital-marketing-plan-for-flight-school-businesses/index.html",
+      "title": "Your 2026 Digital Marketing Plan for Flight School Busine...",
+      "h1": "Your 2026 Digital Marketing Plan for Flight School Businesses",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    }
+  ]
+}

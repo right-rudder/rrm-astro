@@ -4,13 +4,17 @@ import Header from "../components/Header.astro";
 import { FaCheckCircle } from "react-icons/fa";
 import { PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 const headerData = {
-  headerH1: `Thank you for contacting<br><span class="text-accent">Right Rudder Marketing</span>`,
+  headerH1: `Thank you for downloading our SOP template`,
   imagePath: "/src/assets/right-rudder-marketing-team.jpeg",
   imageAlt: "Right Rudder Marketing Team",
 };
 ---
 
-<BaseLayout siteTitle="SOP template Confirmation | Right Rudder Marketing">
+<BaseLayout
+  siteTitle="SOP template Confirmation | Right Rudder Marketing"
+  keywords="flight school sop template, flight school standard operating procedures, flight school business operations, flight school management, flight school growth strategies"
+  siteDescription="Thank you for downloading our SOP template. We are excited to help you create your flight school's playbook with standard operating procedures. Contact us for more marketing and business growth strategies."
+>
   <Header data={headerData} />
 
   <section class="py-16 px-5 bg-white">

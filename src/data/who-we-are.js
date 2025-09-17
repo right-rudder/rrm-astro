@@ -9,7 +9,7 @@ const whoWeAre = {
 
     //top header
     header: {
-      headerH1: "We Are Lifting Aviation Businesses Off the Ground",
+      headerH1: "Who We Are",
       paragraph:
         "Right Rudder Marketing is a pilot-owned digital marketing agency focused on helping flight schools and aviation businesses accomplish their goals: Grow, scale, and make a significant impact to the pilot training industry. Flight schools that partner with Right Rudder Marketing become the #1 flight schools in their community and dominate the local area. There's no doubt about it. Right Rudder Marketing has the secret sauce.",
       images: [

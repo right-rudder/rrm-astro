@@ -11,7 +11,7 @@ const ppcFacebook = {
     header: {
       imagePath: "/src/assets/trac-vu-dDWsqFJaMfk-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Running Effective </br><span class="text-accent-300">Facebook Ads</span>`,
+      headerH1: `Facebook Ads - Pay Per Click Advertising for Flight Schools`,
       paragraph:
         "Facebook ads are a form of PPC (Pay Per Click) advertising. These advertising initiatives can produce quick, fast, and effective results if done right. We can help you get more students for your flight school.",
       buttons: [

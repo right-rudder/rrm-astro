@@ -1,7 +1,7 @@
 const partnersAffiliates = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Partners & Affiliates | Right Rudder Marketing",
+    pageTitle: "Our Great Partners & Affiliates | Right Rudder Marketing",
     pageDescription:
       "Right Rudder Marketing is proud to sponsor and partner with organizations that have a direct impact on the pilot training community. If your business, association, or group has interest in partnering with us, please reach out and connect with a Right Rudder Marketing Team member.",
     pageKeywords:
@@ -11,7 +11,7 @@ const partnersAffiliates = {
     header: {
       imagePath: "/src/assets/PXL_20240722_140207874.jpg",
       imageAlt: "Right Rudder Marketing team member flying a plane",
-      headerH1: `Our Great </br><span class="text-accent-300">Partners</span>`,
+      headerH1: `Our Great Partners & Affiliates`,
       paragraph:
         "We're active members in the aviation community. From flying at our local airports, to attending industry events, we're actively involved in the aviation community. We donate to and sponsor associations and groups that have a direct impact to the pilot training community. If your business, association, or group has interest in partnering with Us, please reach out and connect with a Right Rudder Marketing Team member.",
       buttons: [
