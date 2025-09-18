@@ -2,7 +2,7 @@ const homePage = {
   data: {
     //SEO Header Stuff
     pageTitle:
-      "Grow and Scale Your Aviation Business | Flight School Marketing Agency | Grow Student Enrollment 3X-10X | Right Rudder Marketing",
+      "Double Your Student Enrollments in 6 Months | Flight School Marketing Agency | Grow Student Enrollment 3X-10X | Right Rudder Marketing",
     pageDescription:
       "Leading flight school marketing agency helping aviation businesses scale student enrollment 3X-10X. Specializing in flight school SEO, PPC, website design & lead generation. Trusted by 20+ flight schools nationwide. Get more discovery flights, increase pilot training enrollment, and grow your aviation business with proven digital marketing strategies designed specifically for flight training academies.",
     pageKeywords:
@@ -14,7 +14,7 @@ const homePage = {
       imagePath: "/src/assets/flying-over-right-rudder-marketing.jpeg",
       imageAlt:
         "fly over Right Rudder Marketing - Digital Marketing Agency for Flight Schools",
-      headerH1: `Grow and Scale</br><span class="text-accent-300">Your Aviation Business</span>`,
+      headerH1: `Double your student</br><span class="text-accent-300">enrollments in 6 months</span>`,
       paragraph:
         "Enroll more pilots at your flight school and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
       buttons: [

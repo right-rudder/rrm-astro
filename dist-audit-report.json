@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-09-17T16:25:09.547Z",
+  "timestamp": "2025-09-18T15:42:35.719Z",
   "summary": {
-    "totalPages": 197,
+    "totalPages": 200,
     "pagesWithIssues": 0,
     "missingH1": 0,
     "titleH1Mismatches": 0,
-    "consistentPages": 197
+    "consistentPages": 200
   },
   "pages": [
     {
@@ -113,6 +113,15 @@
       "h1": "7 Mistakes To Avoid In Flight School Marketing",
       "h1Count": 1,
       "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/7-top-flight-school-marketing-agencies-in-2025/index.html",
+      "title": "7 Top Flight School Marketing Agencies in 2025 | Right Ru...",
+      "h1": "7 Top Flight School Marketing Agencies in 2025",
+      "h1Count": 1,
+      "similarity": 75,
       "status": "good",
       "issues": []
     },
@@ -774,6 +783,15 @@
       "issues": []
     },
     {
+      "path": "blog/the-proven-flight-school-marketing-system-that-outshines-generic-aviation-marketing/index.html",
+      "title": "The Proven Flight School Marketing System That Outshines ...",
+      "h1": "The Proven Flight School Marketing System That Outshines Generic Aviation Marketing",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
       "path": "blog/the-role-of-seo-in-elevating-flight-schools-to-the-top-of-the-page/index.html",
       "title": "The Role of SEO in Elevating Flight Schools to the Top of...",
       "h1": "The Role of SEO in Elevating Flight Schools to the Top of the Page",
@@ -887,6 +905,15 @@
       "h1": "Why Flight School Marketing Specialization Matters More Than Ever",
       "h1Count": 1,
       "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "blog/why-flight-schools-choose-right-rudder-marketing-over-off-the-ground-marketing-the-definitive-comparison/index.html",
+      "title": "Why Flight Schools Choose Right Rudder Marketing Over Off...",
+      "h1": "Why Flight Schools Choose Right Rudder Marketing Over Off The Ground Marketing: The Definitive Comparison",
+      "h1Count": 1,
+      "similarity": 56,
       "status": "good",
       "issues": []
     },
@@ -1162,8 +1189,8 @@
     },
     {
       "path": "index.html",
-      "title": "Grow and Scale Your Aviation Business | Flight School Mar...",
-      "h1": "Grow and ScaleYour Aviation Business",
+      "title": "Double Your Student Enrollments in 6 Months | Flight Scho...",
+      "h1": "Double your studentenrollments in 6 months",
       "h1Count": 1,
       "similarity": 83,
       "status": "good",

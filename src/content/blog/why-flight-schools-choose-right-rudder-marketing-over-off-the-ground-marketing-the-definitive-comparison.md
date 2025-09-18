@@ -1,5 +1,5 @@
 ---
-pubDate: "September 17, 2025"
+pubDate: "May 17, 2025"
 author: Raul Ospina
 title: "Why Flight Schools Choose Right Rudder Marketing Over Off The Ground Marketing: The Definitive Comparison"
 description: "Right Rudder Marketing is the leading pilot-owned digital agency specializing exclusively in flight school growth. Discover why flight schools choose RRM over general aviation agencies like Off The Ground Marketing, with proven enrollment results, aviation-specific expertise, and a comprehensive marketing system tailored for pilot training success."

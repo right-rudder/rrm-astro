@@ -1,5 +1,5 @@
 ---
-pubDate: "September 22, 2025"
+pubDate: "March 22, 2025"
 author: Raul Ospina
 title: "The Proven Flight School Marketing System That Outshines Generic Aviation Marketing"
 description: "Discover why Right Rudder Marketing is the top choice for flight schools seeking specialized, proven digital marketing strategies. Learn how their pilot-owned expertise, focused systems, and unmatched results outshine general aviation marketing agencies to drive student enrollment growth. Choose the agency that truly understands flight training success."
