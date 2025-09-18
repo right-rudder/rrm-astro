@@ -21,6 +21,7 @@ import {
   TARGET_LOCATIONS,
 } from "../utils/seo";
 import MastermindEventDetails from "../components/MastermindEventDetails.astro";
+import { SITE_DESCRIPTION } from "../consts";
 
 const { data } = homePage;
 
@@ -60,7 +61,7 @@ const faqSchema = generateFAQSchema(homepageFAQs);
 
 <BaseLayout
   siteTitle={data.pageTitle}
-  siteDescription={data.pageDescription}
+  siteDescription={SITE_DESCRIPTION}
   keywords={enhancedKeywords}
 >
   <!-- FAQ Schema for featured snippets -->
