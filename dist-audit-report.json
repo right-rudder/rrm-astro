@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-09-18T15:42:35.719Z",
+  "timestamp": "2025-09-19T16:45:04.832Z",
   "summary": {
-    "totalPages": 200,
+    "totalPages": 202,
     "pagesWithIssues": 0,
     "missingH1": 0,
     "titleH1Mismatches": 0,
-    "consistentPages": 200
+    "consistentPages": 202
   },
   "pages": [
     {
@@ -1355,6 +1355,24 @@
       "h1": "Flight Training Secrets - Industry Insights with Robert Meder, NAFI s Chairman Emeritus, and Tim Jedrek from Right Rudder Marketing",
       "h1Count": 1,
       "similarity": 42,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/from-the-cockpit-to-the-corner-office-randy-taussigs-blueprint-for-flight-school-success/index.html",
+      "title": "From the Cockpit to the Corner Office: Randy Taussig s Bl...",
+      "h1": "From the Cockpit to the Corner Office: Randy Taussig s Blueprint for Flight School Success",
+      "h1Count": 1,
+      "similarity": 75,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "podcasts/how-a-fighter-pilots-safety-framework-can-transform-your-flight-school/index.html",
+      "title": "How a Fighter Pilot s Safety Framework Can Transform Your...",
+      "h1": "How a Fighter Pilot s Safety Framework Can Transform Your Flight School (with Lt. Col. Brandon Williams)",
+      "h1Count": 1,
+      "similarity": 62,
       "status": "good",
       "issues": []
     },
