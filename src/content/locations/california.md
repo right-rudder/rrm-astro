@@ -46,7 +46,7 @@ relatedLocations: ["texas", "florida", "arizona", "illinois", "north-carolina"]
 priority: 1
 ---
 
-# Flight School Marketing in California
+## Flight School Marketing in California
 
 California represents the largest and most competitive flight training market in the United States. With over 120 active flight schools and year-round flying weather, the Golden State offers immense opportunities for aviation academies that can effectively market their services.
 
