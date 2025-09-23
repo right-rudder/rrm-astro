@@ -37,6 +37,6 @@ weatherAdvantages:
   ]
 nearbyMilitaryBases:
   ["Scott Air Force Base", "Great Lakes Naval Station", "Rock Island Arsenal"]
-relatedLocations: ["indiana", "wisconsin", "missouri", "iowa"]
+relatedLocations: ["california", "texas", "florida", "arizona"]
 priority: 6
 ---

@@ -42,6 +42,7 @@ nearbyMilitaryBases:
     "Tyndall Air Force Base",
     "Homestead Air Reserve Base",
   ]
-relatedLocations: ["georgia", "alabama", "north-carolina", "texas"]
+relatedLocations:
+  ["california", "north-carolina", "texas", "arizona", "illinois"]
 priority: 3
 ---

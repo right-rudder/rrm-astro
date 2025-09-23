@@ -38,6 +38,7 @@ weatherAdvantages:
   ]
 nearbyMilitaryBases:
   ["Naval Air Station Joint Reserve Base Fort Worth", "Sheppard Air Force Base"]
-relatedLocations: ["houston", "austin", "oklahoma-city", "denver"]
+relatedLocations:
+  ["chicago", "atlanta", "denver", "phoenix", "los-angeles", "miami"]
 priority: 2
 ---

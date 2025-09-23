@@ -36,8 +36,7 @@ weatherAdvantages:
     "Tropical weather experience",
     "Over-water flying training",
   ]
-nearbyMilitaryBases:
-  ["Homestead Air Reserve Base", "Coast Guard Air Station Miami"]
-relatedLocations: ["orlando", "tampa", "fort-lauderdale", "west-palm-beach"]
+nearbyMilitaryBases: ["Homestead Air Reserve Base", "MacDill Air Force Base"]
+relatedLocations: ["los-angeles", "atlanta", "chicago", "dallas"]
 priority: 3
 ---

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-09-19T16:45:04.832Z",
+  "timestamp": "2025-09-23T17:52:07.839Z",
   "summary": {
-    "totalPages": 202,
-    "pagesWithIssues": 0,
+    "totalPages": 218,
+    "pagesWithIssues": 1,
     "missingH1": 0,
     "titleH1Mismatches": 0,
-    "consistentPages": 202
+    "consistentPages": 217
   },
   "pages": [
     {
@@ -1134,9 +1134,27 @@
       "issues": []
     },
     {
+      "path": "flight-school-ppc/index.html",
+      "title": "Google Ads PPC Management for Flight Schools | Right Ru...",
+      "h1": "Google Ads & PPC Management for Flight Schools",
+      "h1Count": 1,
+      "similarity": 83,
+      "status": "good",
+      "issues": []
+    },
+    {
       "path": "flight-school-seo/index.html",
       "title": "Search Engine Optimization (SEO) | Right Rudder Marketing",
       "h1": "Search Engine Optimization (SEO) for Flight Schools",
+      "h1Count": 1,
+      "similarity": 80,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "flight-school-social-media/index.html",
+      "title": "Social Media Management for Flight Schools | Right Rudder...",
+      "h1": "Social Media Management for Flight Schools",
       "h1Count": 1,
       "similarity": 80,
       "status": "good",
@@ -1202,6 +1220,134 @@
       "h1": "Thank you for downloading our keywords guide",
       "h1Count": 1,
       "similarity": 86,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/arizona/index.html",
+      "title": "Flight School Marketing Arizona | Right Rudder Marketing",
+      "h1": "Flight School Marketing Arizona",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/atlanta/index.html",
+      "title": "Flight School Marketing Atlanta | Right Rudder Marketing",
+      "h1": "Flight School Marketing Atlanta",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/california/index.html",
+      "title": "Flight School Marketing California | Right Rudder Marketing",
+      "h1": "Flight School Marketing California",
+      "h1Count": 2,
+      "similarity": 100,
+      "status": "multiple-h1",
+      "issues": [
+        "Multiple H1 tags found (2)"
+      ]
+    },
+    {
+      "path": "locations/chicago/index.html",
+      "title": "Flight School Marketing Chicago | Right Rudder Marketing",
+      "h1": "Flight School Marketing Chicago",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/dallas/index.html",
+      "title": "Flight School Marketing Dallas | Right Rudder Marketing",
+      "h1": "Flight School Marketing Dallas",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/denver/index.html",
+      "title": "Flight School Marketing Denver | Right Rudder Marketing",
+      "h1": "Flight School Marketing Denver",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/florida/index.html",
+      "title": "Flight School Marketing Florida | Right Rudder Marketing",
+      "h1": "Flight School Marketing Florida",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/illinois/index.html",
+      "title": "Flight School Marketing Illinois | Right Rudder Marketing",
+      "h1": "Flight School Marketing Illinois",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/index.html",
+      "title": "Double Your Flight School Enrollments | Locations | Right...",
+      "h1": "Double your studentenrollments in 6 months",
+      "h1Count": 1,
+      "similarity": 60,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/los-angeles/index.html",
+      "title": "Flight School Marketing Los Angeles | Right Rudder Marketing",
+      "h1": "Flight School Marketing Los Angeles",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/miami/index.html",
+      "title": "Flight School Marketing Miami | Right Rudder Marketing",
+      "h1": "Flight School Marketing Miami",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/north-carolina/index.html",
+      "title": "Flight School Marketing North Carolina | Right Rudder Mar...",
+      "h1": "Flight School Marketing North Carolina",
+      "h1Count": 1,
+      "similarity": 67,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/phoenix/index.html",
+      "title": "Flight School Marketing Phoenix | Right Rudder Marketing",
+      "h1": "Flight School Marketing Phoenix",
+      "h1Count": 1,
+      "similarity": 100,
+      "status": "good",
+      "issues": []
+    },
+    {
+      "path": "locations/texas/index.html",
+      "title": "Flight School Marketing Texas | Right Rudder Marketing",
+      "h1": "Flight School Marketing Texas",
+      "h1Count": 1,
+      "similarity": 100,
       "status": "good",
       "issues": []
     },
@@ -1414,8 +1560,8 @@
     },
     {
       "path": "podcasts/index.html",
-      "title": "Podcasts | Right Rudder Marketing | Right Rudder Marketing",
-      "h1": "Podcasts",
+      "title": "The Aviation Business Podcast | Right Rudder Marketing",
+      "h1": "The Aviation Business Podcast",
       "h1Count": 1,
       "similarity": 100,
       "status": "good",

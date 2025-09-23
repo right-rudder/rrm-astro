@@ -37,6 +37,6 @@ weatherAdvantages:
     "IFR flying conditions",
   ]
 nearbyMilitaryBases: ["Great Lakes Naval Station", "Scott Air Force Base"]
-relatedLocations: ["milwaukee", "indianapolis", "detroit", "st-louis"]
-priority: 7
+relatedLocations: ["los-angeles", "miami", "dallas", "atlanta", "denver"]
+priority: 2
 ---

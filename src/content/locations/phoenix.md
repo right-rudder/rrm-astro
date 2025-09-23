@@ -38,6 +38,6 @@ weatherAdvantages:
   ]
 nearbyMilitaryBases:
   ["Luke Air Force Base", "Phoenix-Mesa Gateway Airport (former Williams AFB)"]
-relatedLocations: ["tucson", "las-vegas", "san-diego", "albuquerque"]
+relatedLocations: ["los-angeles", "dallas", "denver", "atlanta"]
 priority: 4
 ---

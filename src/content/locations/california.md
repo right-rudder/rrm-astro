@@ -42,7 +42,7 @@ nearbyMilitaryBases:
     "Marine Corps Air Station Miramar",
     "Naval Air Station Lemoore",
   ]
-relatedLocations: ["texas", "florida", "arizona", "nevada"]
+relatedLocations: ["texas", "florida", "arizona", "illinois", "north-carolina"]
 priority: 1
 ---
 

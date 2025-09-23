@@ -42,6 +42,6 @@ nearbyMilitaryBases:
     "Joint Forces Training Base",
     "Marine Corps Air Station Miramar",
   ]
-relatedLocations: ["san-francisco", "san-diego", "las-vegas", "phoenix"]
+relatedLocations: ["phoenix", "miami", "chicago", "dallas"]
 priority: 1
 ---

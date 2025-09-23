@@ -42,6 +42,7 @@ nearbyMilitaryBases:
     "Marine Corps Air Station Yuma",
     "Barry M. Goldwater Range",
   ]
-relatedLocations: ["california", "nevada", "new-mexico", "utah"]
+relatedLocations:
+  ["california", "texas", "florida", "denver", "illinois", "north-carolina"]
 priority: 4
 ---

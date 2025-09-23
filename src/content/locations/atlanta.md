@@ -36,7 +36,8 @@ weatherAdvantages:
     "Spring/summer thunderstorm training",
     "Diverse weather conditions",
   ]
-nearbyMilitaryBases: ["Dobbins Air Reserve Base", "Robins Air Force Base"]
-relatedLocations: ["charlotte", "nashville", "birmingham", "jacksonville"]
-priority: 5
+nearbyMilitaryBases:
+  ["Dobbins Air Reserve Base", "Robins Air Force Base", "Fort Benning"]
+relatedLocations: ["miami", "dallas", "chicago", "denver", "phoenix"]
+priority: 3
 ---

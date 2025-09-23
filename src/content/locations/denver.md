@@ -42,7 +42,6 @@ nearbyMilitaryBases:
     "U.S. Air Force Academy",
     "Peterson Space Force Base",
   ]
-relatedLocations:
-  ["colorado-springs", "albuquerque", "salt-lake-city", "kansas-city"]
+relatedLocations: ["dallas", "atlanta", "chicago", "phoenix", "arizona"]
 priority: 6
 ---

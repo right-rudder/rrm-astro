@@ -38,10 +38,9 @@ weatherAdvantages:
 nearbyMilitaryBases:
   [
     "Seymour Johnson Air Force Base",
-    "Pope Army Airfield",
     "Marine Corps Air Station Cherry Point",
-    "Camp Lejeune",
+    "Pope Army Airfield",
   ]
-relatedLocations: ["virginia", "south-carolina", "georgia", "tennessee"]
+relatedLocations: ["florida", "texas", "california", "arizona"]
 priority: 5
 ---

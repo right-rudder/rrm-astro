@@ -42,6 +42,7 @@ nearbyMilitaryBases:
     "Fort Worth Joint Reserve Base",
     "Dyess Air Force Base",
   ]
-relatedLocations: ["california", "florida", "oklahoma", "new-mexico"]
+relatedLocations:
+  ["california", "florida", "arizona", "illinois", "north-carolina"]
 priority: 2
 ---
