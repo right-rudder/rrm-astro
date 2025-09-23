@@ -610,3 +610,80 @@ export function generateMetaDescription(
 
   return description;
 }
+
+// Location-specific SEO utilities
+export function generateLocationKeywords(
+  state: string,
+  city?: string,
+): {
+  primary: string[];
+  secondary: string[];
+  longTail: string[];
+} {
+  const baseLocation = city || state;
+
+  return {
+    primary: [
+      `flight school marketing ${baseLocation}`,
+      `aviation marketing ${baseLocation}`,
+      `pilot training marketing ${baseLocation}`,
+      `flight school SEO ${baseLocation}`,
+      `aviation advertising ${baseLocation}`,
+    ],
+    secondary: [
+      `flight school lead generation ${baseLocation}`,
+      `aviation digital marketing ${baseLocation}`,
+      `flight training promotion ${baseLocation}`,
+      `pilot school advertising ${baseLocation}`,
+      `aviation academy marketing ${baseLocation}`,
+    ],
+    longTail: [
+      `best flight school marketing agency in ${baseLocation}`,
+      `how to market flight school in ${baseLocation}`,
+      `flight school student recruitment ${baseLocation}`,
+      `aviation marketing services near ${baseLocation}`,
+      `flight training marketing strategies ${baseLocation}`,
+    ],
+  };
+}
+
+export function generateLocationSchema(locationData: any): object {
+  const baseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: locationData.title,
+    description: locationData.description,
+    provider: {
+      "@type": "Organization",
+      name: "Right Rudder Marketing",
+      url: "https://rightruddermarketing.com",
+    },
+    serviceType: "Flight School Marketing",
+    areaServed: {
+      "@type": "State",
+      name: locationData.state,
+      addressCountry: "US",
+    } as any,
+  };
+
+  // Add city-specific data if available
+  if (locationData.type === "city" && locationData.city) {
+    baseSchema.areaServed = {
+      "@type": "City",
+      name: locationData.city,
+      addressRegion: locationData.stateCode,
+      addressCountry: "US",
+    };
+  }
+
+  // Add coordinates if available
+  if (locationData.coordinates) {
+    baseSchema.areaServed.geo = {
+      "@type": "GeoCoordinates",
+      latitude: locationData.coordinates.lat,
+      longitude: locationData.coordinates.lng,
+    };
+  }
+
+  return baseSchema;
+}

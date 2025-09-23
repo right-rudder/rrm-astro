@@ -140,9 +140,55 @@ const crew = defineCollection({
   }),
 });
 
+const locationsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    state: z.string(),
+    stateCode: z.string(), // CA, TX, FL, etc.
+    city: z.string().optional(),
+    type: z.enum(["state", "city", "metro"]).default("state"),
+    population: z.number().optional(),
+    majorAirports: z.array(z.string()),
+    flightSchoolCount: z.number().optional(),
+    marketCharacteristics: z.array(z.string()),
+    competitiveLevel: z
+      .enum(["low", "medium", "medium-high", "high", "very-high"])
+      .default("medium"),
+    // SEO fields
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    keywords: z.string().optional(),
+    canonicalUrl: z.string().optional(),
+    // Geographic data
+    coordinates: z.object({
+      lat: z.number(),
+      lng: z.number(),
+    }),
+    timezone: z.string(),
+    // Market data
+    averageIncomeLevel: z
+      .enum(["low", "medium", "medium-high", "high"])
+      .default("medium"),
+    aviationJobMarket: z
+      .enum(["weak", "moderate", "growing", "strong", "very-strong"])
+      .default("moderate"),
+    weatherAdvantages: z.array(z.string()).optional(),
+    nearbyMilitaryBases: z.array(z.string()).optional(),
+    // Related content
+    relatedLocations: z.array(z.string()).optional(),
+    featuredFlightSchools: z.array(z.string()).optional(),
+    // Status
+    status: z.enum(["draft", "published"]).default("published"),
+    priority: z.number().default(1), // 1-5, with 1 being highest priority
+  }),
+});
+
 export const collections = {
   blog: blogCollection,
   webinars: webinarCollection,
   podcasts: podcastCollection,
   crew: crew,
+  locations: locationsCollection,
 };
