@@ -14,6 +14,7 @@ import {
   generateBreadcrumbSchema,
   AVIATION_KEYWORDS,
   TARGET_LOCATIONS,
+  KEYWORD_STRATEGY,
 } from "../utils/seo";
 import RelatedContent from "../components/RelatedContent.astro";
 
@@ -21,9 +22,13 @@ const { data } = seo;
 
 const pathname = Astro.url.pathname;
 
-// Generate enhanced keywords for SEO page
+// Generate enhanced keywords for SEO page using new strategy
 const seoKeywords = generateKeywords(
   [
+    ...KEYWORD_STRATEGY.productDefining.filter((k) => k.includes("SEO")),
+    ...KEYWORD_STRATEGY.serviceSpecific.filter(
+      (k) => k.includes("SEO") || k.includes("search")
+    ),
     "flight school SEO",
     "aviation SEO",
     "pilot training SEO",
@@ -31,10 +36,13 @@ const seoKeywords = generateKeywords(
   ],
   TARGET_LOCATIONS.slice(0, 10),
   [
+    ...KEYWORD_STRATEGY.longTail.filter((k) => k.includes("SEO")),
     "SEO services",
     "search engine optimization",
     "aviation marketing",
     "digital marketing",
+    "flight school ranking",
+    "pilot school visibility",
   ]
 );
 

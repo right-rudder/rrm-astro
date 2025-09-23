@@ -1,0 +1,388 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Content from "../components/Content.astro";
+import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
+import {
+  generateKeywords,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  generateServicePageKeywords,
+  generateMetaDescription,
+  KEYWORD_STRATEGY,
+  TARGET_LOCATIONS,
+} from "../utils/seo";
+import RelatedContent from "../components/RelatedContent.astro";
+
+const pathname = Astro.url.pathname;
+
+// Generate enhanced keywords for social media page
+const socialMediaKeywords = generateServicePageKeywords(
+  "social media",
+  "nationwide"
+);
+
+// Enhanced meta description
+const metaDescription = generateMetaDescription(
+  "service",
+  "social media management for flight schools",
+  "Professional social media marketing for flight schools. Attract student pilots with engaging content, showcase your aviation academy, and increase enrollment through strategic social media campaigns."
+);
+
+// Breadcrumb schema
+const breadcrumbs = generateBreadcrumbSchema([
+  { name: "Home", url: "https://rightruddermarketing.com/" },
+  { name: "Services", url: "https://rightruddermarketing.com/services" },
+  {
+    name: "Flight School Social Media",
+    url: "https://rightruddermarketing.com/flight-school-social-media",
+  },
+]);
+
+// FAQ schema for social media page
+const socialMediaFAQs = [
+  {
+    question: "Why is social media important for flight schools?",
+    answer:
+      "Social media helps flight schools showcase their aircraft, highlight student successes, and build trust with prospective pilots. It's an effective way to demonstrate your school's culture, safety standards, and training quality while reaching potential students where they spend their time online.",
+  },
+  {
+    question: "Which social media platforms work best for flight schools?",
+    answer:
+      "Instagram and YouTube are excellent for showcasing aircraft and flight training videos. Facebook works well for community building and local outreach. LinkedIn helps reach career-focused students interested in commercial aviation. TikTok can attract younger student pilots with engaging aviation content.",
+  },
+  {
+    question: "How often should flight schools post on social media?",
+    answer:
+      "Successful flight schools typically post 3-5 times per week across platforms. Consistency is key - it's better to post regularly with quality content than to post daily with low-quality content. We recommend a mix of educational, behind-the-scenes, and student success content.",
+  },
+  {
+    question: "What type of content performs best for aviation social media?",
+    answer:
+      "Flight training videos, aircraft walkarounds, student solo flights, instructor spotlights, and behind-the-scenes content perform well. Safety tips, aviation facts, and career guidance also engage audiences. Always include calls-to-action encouraging discovery flights or information requests.",
+  },
+];
+
+const faqSchema = generateFAQSchema(socialMediaFAQs);
+
+// Page data structure
+const pageData = {
+  pageTitle:
+    "Social Media Management for Flight Schools | Right Rudder Marketing",
+  pageDescription: metaDescription,
+  header: {
+    imagePath: "/src/assets/flight-school-social-media.webp",
+    imageAlt:
+      "Flight school social media content showing aircraft and student pilots",
+    headerH1:
+      "Flight School <span class='text-primary'>Social Media Marketing</span> That Builds Trust",
+    paragraph:
+      "Transform your flight school's social media presence into a powerful enrollment tool. Our aviation social media specialists create engaging content that showcases your aircraft, highlights student success stories, and attracts prospective pilots to your academy. Build trust, demonstrate expertise, and grow your student base through strategic social media marketing.",
+    buttons: [
+      {
+        name: "Get Social Media Audit",
+        link: "/schedule-call",
+        primary: true,
+      },
+      {
+        name: "View Examples",
+        link: "/our-flight-schools",
+        primary: false,
+      },
+    ],
+  },
+  content: {
+    imagePath: "/src/assets/social-media-aviation.webp",
+    imageAlt: "Social media analytics dashboard for flight school engagement",
+    contentH3: "Why Flight Schools Need Specialized Social Media Management",
+    contentH4: "Aviation Industry Expertise",
+    contentParagraphs: [
+      "Generic social media agencies don't understand the aviation industry's unique challenges and opportunities. They can't create compelling content about CFI training, explain the pilot career path, or showcase your aircraft effectively. Our team consists of pilots and aviation professionals who understand what resonates with prospective student pilots.",
+      "We create content that builds trust and demonstrates your flight school's expertise. From showcasing your safety culture to highlighting student achievements, our social media strategies are designed specifically for the aviation training industry. We know how to present complex aviation concepts in engaging, accessible ways that attract future pilots.",
+    ],
+    contentButtonText: "Start My Social Media Strategy",
+    contentButtonLink: "/schedule-call",
+  },
+  services: {
+    heading: "Complete Flight School Social Media Services",
+    subheading:
+      "From content creation to community management, we handle your entire social media presence",
+    services: [
+      {
+        title: "Content Creation & Strategy",
+        description:
+          "Custom content calendars featuring aircraft showcases, training highlights, student stories, and aviation education that engages your target audience.",
+        benefits: [
+          "Professional photography & videography",
+          "Aircraft and training content",
+          "Student success stories",
+          "Educational aviation posts",
+        ],
+      },
+      {
+        title: "Platform Management",
+        description:
+          "Complete management of your social media accounts across Instagram, Facebook, YouTube, and LinkedIn with platform-specific optimization.",
+        benefits: [
+          "Daily posting & scheduling",
+          "Community management",
+          "Hashtag optimization",
+          "Platform-specific content formatting",
+        ],
+      },
+      {
+        title: "Social Media Advertising",
+        description:
+          "Targeted social media ad campaigns designed to generate leads, promote discovery flights, and increase enrollment at your flight school.",
+        benefits: [
+          "Lead generation campaigns",
+          "Discovery flight promotions",
+          "Retargeting campaigns",
+          "Local audience targeting",
+        ],
+      },
+      {
+        title: "Analytics & Reporting",
+        description:
+          "Detailed performance tracking and monthly reports showing how your social media efforts translate into real leads and enrollments.",
+        benefits: [
+          "Monthly performance reports",
+          "Engagement analytics",
+          "Lead tracking",
+          "ROI measurement",
+        ],
+      },
+    ],
+  },
+  cta: {
+    imagePath: "/src/assets/flight-school-social-success.webp",
+    imageAlt: "Flight school team celebrating social media marketing success",
+    headerH1: "Ready to Transform Your Flight School's Social Media?",
+    paragraph:
+      "Stop posting random content that doesn't convert. Our aviation social media specialists will create a comprehensive strategy that showcases your flight school's strengths, builds trust with prospective students, and drives enrollment. Let's build a social media presence that actually grows your business.",
+    buttons: [
+      {
+        name: "Get Free Social Media Audit",
+        link: "/schedule-call",
+        primary: true,
+      },
+      {
+        name: "View Success Stories",
+        link: "/our-flight-schools",
+        primary: false,
+      },
+    ],
+  },
+};
+---
+
+<BaseLayout
+  siteTitle={pageData.pageTitle}
+  siteDescription={pageData.pageDescription}
+  keywords={socialMediaKeywords}
+>
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Flight School Social Media Management",
+      "description": "Professional social media marketing and management services for flight schools and aviation academies",
+      "provider": {
+        "@type": "Organization",
+        "name": "Right Rudder Marketing",
+        "url": "https://rightruddermarketing.com"
+      },
+      "serviceType": "Social Media Marketing",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Flight Schools"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Complete social media management including content creation, posting, advertising, and analytics"
+      }
+    }
+  </script>
+
+  <!-- HEADER -->
+  <Header data={pageData.header} />
+
+  <!-- CONTENT SECTION -->
+  <Content data={pageData.content} />
+
+  <!-- SERVICES SECTION -->
+  <section class="bg-gradient-to-b from-slate-100 to-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          {pageData.services.heading}
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          {pageData.services.subheading}
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        {
+          pageData.services.services.map((service) => (
+            <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                {service.title}
+              </h3>
+              <p class="text-gray-600 mb-6">{service.description}</p>
+              <ul class="space-y-2">
+                {service.benefits.map((benefit) => (
+                  <li class="flex items-center text-gray-700">
+                    <svg
+                      class="w-5 h-5 text-primary mr-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT EXAMPLES SECTION -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          Content That Engages Future Pilots
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          See the types of content we create to showcase your flight school's
+          unique strengths
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div
+            class="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg
+              class="w-8 h-8 text-primary"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M2 6a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            Aircraft Showcases
+          </h3>
+          <p class="text-gray-600">
+            Professional photos and videos of your fleet that highlight your
+            aircraft's condition and capabilities
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div
+            class="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg
+              class="w-8 h-8 text-primary"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            Student Success Stories
+          </h3>
+          <p class="text-gray-600">
+            Compelling testimonials and achievement posts that build trust and
+            demonstrate your training quality
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div
+            class="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg
+              class="w-8 h-8 text-primary"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            Educational Content
+          </h3>
+          <p class="text-gray-600">
+            Aviation tips, career guidance, and training insights that position
+            your school as an industry authority
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+        Flight School Social Media FAQ
+      </h2>
+      <div class="space-y-8">
+        {
+          socialMediaFAQs.map((faq) => (
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                {faq.question}
+              </h3>
+              <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <FlyWithUsCTA data={pageData.cta} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={pathname}
+    category="Social Media"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
+</BaseLayout>

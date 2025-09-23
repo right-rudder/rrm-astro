@@ -1,0 +1,298 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Content from "../components/Content.astro";
+import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
+import {
+  generateKeywords,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  generateServicePageKeywords,
+  generateMetaDescription,
+  KEYWORD_STRATEGY,
+  TARGET_LOCATIONS,
+} from "../utils/seo";
+import RelatedContent from "../components/RelatedContent.astro";
+
+const pathname = Astro.url.pathname;
+
+// Generate enhanced keywords for PPC page using new strategy
+const ppcKeywords = generateServicePageKeywords("PPC", "nationwide");
+
+// Enhanced meta description
+const metaDescription = generateMetaDescription(
+  "service",
+  "flight school PPC advertising",
+  "Expert Google Ads and Facebook Ads management for flight schools. Increase student pilot enrollment with targeted PPC campaigns designed specifically for aviation academies."
+);
+
+// Breadcrumb schema
+const breadcrumbs = generateBreadcrumbSchema([
+  { name: "Home", url: "https://rightruddermarketing.com/" },
+  { name: "Services", url: "https://rightruddermarketing.com/services" },
+  {
+    name: "Flight School PPC",
+    url: "https://rightruddermarketing.com/flight-school-ppc",
+  },
+]);
+
+// FAQ schema for PPC page
+const ppcFAQs = [
+  {
+    question: "What is flight school PPC advertising?",
+    answer:
+      "Flight school PPC (Pay-Per-Click) advertising involves creating targeted ads on Google, Facebook, and other platforms to reach prospective student pilots. You only pay when someone clicks on your ad, making it a cost-effective way to generate leads for your aviation academy.",
+  },
+  {
+    question: "How much should a flight school spend on Google Ads?",
+    answer:
+      "Most successful flight schools invest $2,000-$8,000 per month in Google Ads, depending on their market size and competition. The key is working with an aviation marketing specialist who understands flight training keywords and can optimize your ad spend for maximum ROI.",
+  },
+  {
+    question: "What makes flight school PPC different from other industries?",
+    answer:
+      "Flight school PPC requires understanding aviation-specific keywords, FAA regulations, target audience behavior, and the unique customer journey from discovery flight to enrollment. Generic PPC agencies lack the aviation expertise needed for optimal campaign performance.",
+  },
+  {
+    question: "How quickly can PPC generate leads for my flight school?",
+    answer:
+      "Flight school PPC campaigns can start generating qualified leads within 24-48 hours of launch. However, optimal performance typically develops over 30-60 days as we refine targeting, keywords, and ad copy based on real performance data.",
+  },
+];
+
+const faqSchema = generateFAQSchema(ppcFAQs);
+
+// Page data structure
+const pageData = {
+  pageTitle:
+    "Google Ads & PPC Management for Flight Schools | Right Rudder Marketing",
+  pageDescription: metaDescription,
+  header: {
+    imagePath: "/src/assets/right-rudder-marketing-team.jpeg",
+    imageAlt:
+      "Right Rudder Marketing PPC specialists managing flight school Google Ads campaigns",
+    headerH1:
+      "Flight School <span class='text-primary'>PPC Advertising</span> That Actually Works",
+    paragraph:
+      "Stop wasting money on generic PPC campaigns. Our aviation marketing specialists create targeted Google Ads and Facebook campaigns specifically designed to attract student pilots to your flight school. Get more discovery flights, increase enrollments, and grow your aviation business with proven PPC strategies.",
+    buttons: [
+      {
+        name: "Get PPC Audit",
+        link: "/schedule-call",
+        primary: true,
+      },
+      {
+        name: "View Case Studies",
+        link: "/our-flight-schools",
+        primary: false,
+      },
+    ],
+  },
+  content: {
+    imagePath: "/src/assets/google-ads-flight-school.webp",
+    imageAlt:
+      "Google Ads dashboard showing flight school PPC campaign performance",
+    contentH3: "Why Choose Right Rudder Marketing for Flight School PPC?",
+    contentH4: "Aviation Industry Expertise",
+    contentParagraphs: [
+      "Unlike generic marketing agencies, we're pilots who understand the flight training industry. We know the difference between a discovery flight and a checkride, understand your target audience's mindset, and can create compelling ad copy that resonates with prospective student pilots.",
+      "Our flight school PPC campaigns target high-intent keywords like 'flight training near me,' 'pilot school enrollment,' and 'discovery flights,' ensuring your ads reach people actively searching for pilot training. We also implement negative keywords to prevent wasted spend on irrelevant clicks.",
+    ],
+    contentButtonText: "Start My PPC Campaign",
+    contentButtonLink: "/schedule-call",
+  },
+  services: {
+    heading: "Complete Flight School PPC Services",
+    subheading:
+      "From strategy to implementation, we handle every aspect of your aviation PPC campaigns",
+    services: [
+      {
+        title: "Google Ads Management",
+        description:
+          "Comprehensive Google Ads campaigns targeting flight training keywords with optimized landing pages for maximum conversions.",
+        benefits: [
+          "Search ads for high-intent keywords",
+          "Display ads for remarketing",
+          "YouTube ads for video marketing",
+          "Local ads for geographic targeting",
+        ],
+      },
+      {
+        title: "Facebook & Instagram Ads",
+        description:
+          "Social media advertising campaigns designed to showcase your flight school's unique value proposition and attract student pilots.",
+        benefits: [
+          "Lead generation campaigns",
+          "Discovery flight promotions",
+          "Video testimonials",
+          "Lookalike audience targeting",
+        ],
+      },
+      {
+        title: "Landing Page Optimization",
+        description:
+          "Custom landing pages designed specifically for your PPC campaigns to maximize conversion rates and reduce cost per lead.",
+        benefits: [
+          "Mobile-optimized design",
+          "Clear call-to-actions",
+          "Lead capture forms",
+          "A/B testing optimization",
+        ],
+      },
+      {
+        title: "Campaign Analytics & Reporting",
+        description:
+          "Detailed reporting and analytics to track your PPC performance, ROI, and lead quality with actionable insights.",
+        benefits: [
+          "Monthly performance reports",
+          "Lead tracking & attribution",
+          "ROI analysis",
+          "Conversion optimization recommendations",
+        ],
+      },
+    ],
+  },
+  cta: {
+    imagePath: "/src/assets/flight-school-ppc-results.webp",
+    imageAlt: "Flight school owner reviewing successful PPC campaign results",
+    headerH1: "Ready to Launch Your Flight School PPC Campaign?",
+    paragraph:
+      "Don't let your competitors capture all the online traffic. Our aviation PPC specialists are ready to create targeted campaigns that drive qualified leads to your flight school. Schedule your free PPC audit today and discover how much your flight school could grow with the right advertising strategy.",
+    buttons: [
+      {
+        name: "Get Free PPC Audit",
+        link: "/schedule-call",
+        primary: true,
+      },
+      {
+        name: "View Pricing",
+        link: "/contact",
+        primary: false,
+      },
+    ],
+  },
+};
+---
+
+<BaseLayout
+  siteTitle={pageData.pageTitle}
+  siteDescription={pageData.pageDescription}
+  keywords={ppcKeywords}
+>
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Flight School PPC Advertising Services",
+      "description": "Professional Google Ads and Facebook advertising management for flight schools and aviation academies",
+      "provider": {
+        "@type": "Organization",
+        "name": "Right Rudder Marketing",
+        "url": "https://rightruddermarketing.com"
+      },
+      "serviceType": "Digital Marketing",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Flight Schools"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Complete PPC management including Google Ads, Facebook Ads, and landing page optimization"
+      }
+    }
+  </script>
+
+  <!-- HEADER -->
+  <Header data={pageData.header} />
+
+  <!-- CONTENT SECTION -->
+  <Content data={pageData.content} />
+
+  <!-- SERVICES SECTION -->
+  <section class="bg-gradient-to-b from-slate-100 to-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          {pageData.services.heading}
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          {pageData.services.subheading}
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        {
+          pageData.services.services.map((service) => (
+            <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                {service.title}
+              </h3>
+              <p class="text-gray-600 mb-6">{service.description}</p>
+              <ul class="space-y-2">
+                {service.benefits.map((benefit) => (
+                  <li class="flex items-center text-gray-700">
+                    <svg
+                      class="w-5 h-5 text-primary mr-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+        Flight School PPC Frequently Asked Questions
+      </h2>
+      <div class="space-y-8">
+        {
+          ppcFAQs.map((faq) => (
+            <div class="border-b border-gray-200 pb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                {faq.question}
+              </h3>
+              <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <FlyWithUsCTA data={pageData.cta} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={pathname}
+    category="PPC"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
+</BaseLayout>
