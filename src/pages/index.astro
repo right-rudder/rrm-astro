@@ -18,6 +18,7 @@ import {
   generateKeywords,
   generateFAQSchema,
   AVIATION_KEYWORDS,
+  KEYWORD_STRATEGY,
   TARGET_LOCATIONS,
 } from "../utils/seo";
 import MastermindEventDetails from "../components/MastermindEventDetails.astro";
@@ -27,12 +28,29 @@ const { data } = homePage;
 
 // Generate comprehensive keywords for homepage
 const enhancedKeywords = generateKeywords(
-  AVIATION_KEYWORDS.primary.slice(0, 5), // Top 5 primary keywords
-  TARGET_LOCATIONS.slice(0, 8), // Top 8 target locations
+  AVIATION_KEYWORDS.primary.slice(0, 6), // Top 6 primary keywords
+  TARGET_LOCATIONS.slice(0, 20), // Top 20 target locations
   [
-    ...AVIATION_KEYWORDS.secondary.slice(0, 5),
-    "digital marketing agency",
-    "aviation business growth",
+    // Joined keywords from KEYWORD_STRATEGY
+    ...KEYWORD_STRATEGY.marketSegment.slice(0, 3), // Top 3 market segments
+    ...KEYWORD_STRATEGY.customerDefining.slice(0, 3), // Top 3 customer defining keywords
+    ...KEYWORD_STRATEGY.productDefining.slice(0, 3), // Top 3 service offerings
+    ...KEYWORD_STRATEGY.serviceSpecific.slice(0, 3), // Top 3 service-specific keywords
+    ...KEYWORD_STRATEGY.competitor.slice(0, 3), // Top 3 competitor keywords
+    ...KEYWORD_STRATEGY.longTail.slice(0, 3), // Top 3 long-tail keywords
+    ...KEYWORD_STRATEGY.midTail.slice(0, 3), // Top 3 mid-tail keywords
+    ...KEYWORD_STRATEGY.shortTail.slice(0, 3), // Top 3 short-tail keywords
+    ...KEYWORD_STRATEGY.intentTargeting.transactional.slice(0, 3), // Top 3 transactional keywords
+    ...KEYWORD_STRATEGY.intentTargeting.informational.slice(0, 3), // Top 3 informational keywords
+    ...KEYWORD_STRATEGY.intentTargeting.navigational.slice(0, 3), // Top 3 navigational keywords
+    ...KEYWORD_STRATEGY.lsi.slice(0, 3), // Top 3 LSI keywords
+    ...KEYWORD_STRATEGY.phraseMatch.slice(0, 3), // Top 3 phrase-match keywords
+    ...KEYWORD_STRATEGY.exactMatch.slice(0, 3), // Top 3 exact-match keywords
+    ...KEYWORD_STRATEGY.relatedVertical.slice(0, 3), // Top 3 related vertical keywords
+    ...KEYWORD_STRATEGY.locational.slice(0, 3), // Top 3 locational keywords
+    ...KEYWORD_STRATEGY.evergreen, // Evergreen keywords
+    ...KEYWORD_STRATEGY.informational.slice(0, 3), // Top 3 informational keywords
+    ...KEYWORD_STRATEGY.transactional.slice(0, 3), // Top 3 transactional keywords
   ]
 );
 
