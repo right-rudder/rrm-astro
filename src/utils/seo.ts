@@ -37,18 +37,16 @@ export interface LocalBusinessSEO {
 // Core aviation industry keywords for SEO
 export const AVIATION_KEYWORDS = {
   primary: [
-    "flight school",
-    "pilot training",
-    "aviation academy",
-    "flight training",
-    "pilot school",
-    "flying lessons",
-    "discovery flight",
-    "private pilot license",
-    "commercial pilot",
-    "instrument rating",
-    "CFI training",
-    "flight instructor",
+    "flight school SEO",
+    "student pilot enrollment",
+    "aviation business growth",
+    "aviation digital marketing",
+    "flight training marketing",
+    "aviation industry marketing",
+    "aviation content marketing",
+    "flight instructor marketing",
+    "discovery flight marketing",
+    "pilot recruitment",
   ],
   secondary: [
     "aviation marketing",

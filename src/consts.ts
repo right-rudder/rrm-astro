@@ -42,6 +42,7 @@ export const KEYWORDS = [
   "how to increase flight school enrollment",
   "best digital marketing for flight schools",
   "flight school website design and SEO tips",
+  "Double your student enrollments in 6 months",
 
   // Transactional Keywords
   "hire flight school marketing agency",
