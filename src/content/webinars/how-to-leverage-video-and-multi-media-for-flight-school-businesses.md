@@ -3,9 +3,9 @@ pubDate: "October 23, 2025"
 author: Tim Jedrek
 title: "How to leverage Video & Multi-Media for Flight School Businesses"
 description: "In today's visually-driven world, video and other multimedia content are more powerful than ever. For flight schools, incorporating video and multimedia into their marketing and training strategies can significantly enhance student engagement, improve brand visibility, and drive enrollment."
-heroImage: "/blog/RRM-Oct-Webinar.webp"
+heroImage: "/webinars/RRM-Oct-Webinar.webp"
 readingTime: 5
-status: "draft"
+status: "published"
 category: "Marketing"
 tags:
   [
