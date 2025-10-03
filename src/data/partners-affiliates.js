@@ -240,6 +240,12 @@ const partnersAffiliates = {
           imageAlt: "Take Flight Interactive logo",
           link: "https://www.takeflightinteractive.com/",
         },
+        {
+          name: "Blue Core Leadership",
+          imagePath: "/src/assets/BlueCoreLogo.png",
+          imageAlt: "Blue Core Leadership logo",
+          link: "https://www.bluecoreleadership.com/",
+        },
       ],
     },
 

@@ -30,13 +30,13 @@ tags:
   ]
 ---
 
-**Live Recording: October 2, 2PM Central on [Riverside](https://riverside.fm/studio/podcast-40nqk)**
-
 Get ready for takeoff with this game-changing episode of the Right Rudder Marketing Podcast! We're joined by Randy Taussig, founder and Chief Navigation Officer of BlueCore Leadership and Expert EOS Implementer, who brings a truly unique perspective to growing aviation businesses.
 
 Randy isn't just another business consultant. He's logged over 2,500 flight hours (including a once-in-a-lifetime trans-Atlantic flight on the Concorde!), and he comes from five generations of entrepreneurs. His family's business legacy started with his great-great grandfather's bakery in the 1860s and eventually grew into the $150 million Sucrest Corporation, the company behind Grandma's Molasses™.
 
 But here's what makes Randy special for flight school owners: he understands both the aviation mindset AND the proven systems that help businesses break through growth barriers. Through his work with the Entrepreneurial Operating System (EOS), he's helped over 100 businesses gain clarity, build better teams, and scale sustainably.
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/bDlxD57w-FI?si=TEXnkmWxry8M3Iby" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## What You'll Discover in This Episode
 
@@ -115,8 +115,6 @@ Listen all episodes of The Aviation Business Podcast on:
 
 - [Spotify](https://open.spotify.com/show/6HqS2ljQR33xof9Xnel9Aw?si=hLNuiWmsSQqKyWrV0Iyj6g)
 - [YouTube](https://www.youtube.com/playlist?list=PLVkKix8mCxfOd8I6Wkff9DZz3WEIJKMPW)
-
-**See you live on October 2nd at 2PM Central on [Riverside](https://riverside.fm/studio/podcast-40nqk)!**
 
 **Ready to take your flight school marketing to the next level?** Check out our proven strategies and resources at [rightruddermarketing.com](https://rightruddermarketing.com) and discover how we help flight school owners attract more students and build sustainable, profitable aviation training businesses.
 
