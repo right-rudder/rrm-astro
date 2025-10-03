@@ -7,7 +7,7 @@ social:
   linkedin: "https://www.linkedin.com/in/karlavdelgadof/"
   github: "https://github.com/karlavdelgadof"
 image: /authors/karla-delgado.webp
-status: active
+status: former
 seniority: 10
 ---
 
