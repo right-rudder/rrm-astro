@@ -299,7 +299,7 @@ export function generateKeywords(
   const keywords = [...primaryKeywords];
 
   if (locations) {
-    primaryKeywords.forEach((keyword) => {
+    primaryKeywords.slice(0, 5).forEach((keyword) => {
       locations.forEach((location) => {
         keywords.push(`${keyword} ${location}`);
       });
