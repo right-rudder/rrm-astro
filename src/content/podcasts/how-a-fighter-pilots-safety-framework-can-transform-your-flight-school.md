@@ -31,11 +31,11 @@ tags:
   ]
 ---
 
-**Live Recording: October 9, 2PM Central on [Riverside](https://riverside.fm/studio/podcast-40nqk)**
-
 What if I told you that the same safety principles keeping F-15 fighter pilots alive in combat could be the secret weapon your flight school needs to attract more students, reduce liability, and build a reputation that sets you apart from every other training facility in your area?
 
 That's exactly what we're diving into today with Lieutenant Colonel Brandon Williams, a decorated Air Force fighter pilot with over 20 years of military experience, hundreds of combat hours over Iraq and Afghanistan, and now a major airline captain who's made it his mission to bring elite aviation safety culture to civilian flight training.
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/1FNeMftUFoc?si=4yZPbAcgCmz1WAv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## From Combat Zones to Classroom: Why Brandon's Perspective Matters
 
@@ -101,8 +101,6 @@ If you're serious about building a flight school that stands out in your market,
 Want to learn more about how safety culture can become your secret weapon for growth? Check out our previous post about [why safety should be your flight school's secret weapon](https://rightruddermarketing.com/blog/why-safety-should-be-your-flight-schools-secret-weapon/), and if you're ready to build a marketing strategy that showcases your commitment to excellence, [let's talk about how Right Rudder Marketing can help you tell your story](https://rightruddermarketing.com/contact/).
 
 The question isn't whether safety culture matters - that's been proven. The question is whether you're ready to make it your strongest competitive advantage. Brandon Williams shows you exactly how to make that happen.
-
-Check Brandon's website for more info: [brandonwilliamsspeaker.com/](https://brandonwilliamsspeaker.com/)
 
 Listen all episodes of The Aviation Business Podcast on:
 
