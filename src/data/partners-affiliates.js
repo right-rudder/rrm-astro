@@ -246,6 +246,12 @@ const partnersAffiliates = {
           imageAlt: "Blue Core Leadership logo",
           link: "https://www.bluecoreleadership.com/",
         },
+        {
+          name: "Brandon Williams - Speaker, Author, Coach",
+          imagePath: "/src/assets/BWSignatureLogoSafetyBlue-1.png",
+          imageAlt: "Brandon Williams logo",
+          link: "https://brandonwilliamsspeaker.com/",
+        },
       ],
     },
 
