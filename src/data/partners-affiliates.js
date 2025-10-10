@@ -252,6 +252,12 @@ const partnersAffiliates = {
           imageAlt: "Brandon Williams logo",
           link: "https://brandonwilliamsspeaker.com/",
         },
+        {
+          name: "Lyn Askin - EOS Implementer",
+          imagePath: "/src/assets/LynAskin.webp",
+          imageAlt: "Lyn Askin logo",
+          link: "https://lynaskin.com/",
+        },
       ],
     },
 
