@@ -1,0 +1,366 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import FormattedDate from "../../../components/FormattedDate.astro";
+import FlyWithUsCTA from "../../../components/FlyWithUsCTA.astro";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  generateBreadcrumbSchema,
+} from "../../../utils/seo";
+import "../../../styles/markdown.css";
+
+export async function getStaticPaths() {
+  const issues = await getCollection("magazine-issues");
+  return issues.map((issue) => ({
+    params: { slug: issue.slug },
+    props: issue,
+  }));
+}
+
+type Props = CollectionEntry<"magazine-issues">;
+
+const issue = Astro.props;
+const { Content } = await issue.render();
+
+// Enhanced SEO keyword generation
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 3),
+    "flight deck magazine",
+    `issue ${issue.data.issueNumber}`,
+    "aviation magazine",
+  ],
+  [],
+  [
+    issue.data.theme || "aviation marketing",
+    "flight school marketing",
+    "aviation business insights",
+  ]
+);
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Flight Deck Magazine", url: "/flight-deck" },
+  { name: "Issues", url: "/flight-deck/issues" },
+  {
+    name: `Vol ${issue.data.volume}, Issue ${issue.data.issueNumber}`,
+    url: `/flight-deck/issues/${issue.slug}`,
+  },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+
+// Issue schema
+const issueSchema = {
+  "@context": "https://schema.org",
+  "@type": "PublicationIssue",
+  issueNumber: issue.data.issueNumber.toString(),
+  volumeNumber: issue.data.volume.toString(),
+  datePublished: issue.data.pubDate.toISOString(),
+  name: issue.data.title,
+  description: issue.data.description,
+  isPartOf: {
+    "@type": "Periodical",
+    name: "Flight Deck Magazine",
+    issn: "Flight Deck Digital Magazine",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Right Rudder Marketing",
+    url: "https://rightruddermarketing.com",
+  },
+};
+
+const flyWithUsCTA = {
+  imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+  imageAlt: "Right Rudder Marketing team on the runway",
+  headerH1: `<span class="text-primary">Fly with digital marketing</br> experts</span> that know the flight training industry.`,
+  paragraph:
+    "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
+  buttons: [
+    {
+      name: "Call Us",
+      link: "tel:1-314-804-1200",
+      primary: false,
+    },
+    {
+      name: "Book a Strategy Call",
+      link: "/schedule-call",
+      primary: false,
+    },
+  ],
+};
+---
+
+<BaseLayout
+  siteTitle={`${issue.data.title} | Flight Deck Magazine Vol ${issue.data.volume}, Issue ${issue.data.issueNumber}`}
+  siteDescription={issue.data.description}
+  keywords={enhancedKeywords}
+  ogImage={issue.data.coverImage}
+>
+  <!-- Schema markup -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify(issueSchema)} />
+
+  <!-- Header Section -->
+  <div class="h-20 lg:h-28 w-full bg-primary/50 brightness-75"></div>
+
+  <!-- Issue Header -->
+  <section class="bg-gradient-to-b from-white to-gray-50 py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <!-- Back Navigation -->
+      <div class="mb-8">
+        <a
+          href="/flight-deck/issues"
+          class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Back to All Issues
+        </a>
+      </div>
+
+      <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+        <!-- Cover Image -->
+        {
+          issue.data.coverImage && (
+            <div class="lg:col-span-1 mb-8 lg:mb-0">
+              <div class="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl">
+                <img
+                  src={issue.data.coverImage}
+                  alt={`Flight Deck Magazine - Vol ${issue.data.volume}, Issue ${issue.data.issueNumber}`}
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              {/* Quick Info */}
+              <div class="mt-6 space-y-4">
+                <div class="bg-white rounded-lg p-4 shadow-sm">
+                  <p class="text-sm text-gray-600 mb-1">Published</p>
+                  <p class="font-semibold text-gray-900">
+                    <FormattedDate date={issue.data.pubDate} />
+                  </p>
+                </div>
+                {issue.data.editor && (
+                  <div class="bg-white rounded-lg p-4 shadow-sm">
+                    <p class="text-sm text-gray-600 mb-1">Editor</p>
+                    <p class="font-semibold text-gray-900">
+                      {issue.data.editor}
+                    </p>
+                  </div>
+                )}
+                <div class="bg-white rounded-lg p-4 shadow-sm">
+                  <p class="text-sm text-gray-600 mb-1">Articles</p>
+                  <p class="font-semibold text-gray-900">
+                    {issue.data.articles.length}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )
+        }
+
+        <!-- Issue Content -->
+        <div class="lg:col-span-2">
+          <!-- Issue Number & Theme -->
+          <div class="flex flex-wrap items-center gap-3 mb-6">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-bold text-white"
+            >
+              Vol {issue.data.volume}, Issue {issue.data.issueNumber}
+            </span>
+            {
+              issue.data.theme && (
+                <span class="inline-flex items-center rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700">
+                  {issue.data.theme}
+                </span>
+              )
+            }
+          </div>
+
+          <!-- Title & Description -->
+          <h1
+            class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6"
+          >
+            {issue.data.title}
+          </h1>
+          <p class="text-xl leading-relaxed text-gray-600 mb-8">
+            {issue.data.description}
+          </p>
+
+          <!-- Highlights -->
+          {
+            issue.data.highlights && issue.data.highlights.length > 0 && (
+              <div class="bg-primary-50 rounded-xl p-6 mb-8">
+                <h2 class="text-lg font-bold text-gray-900 mb-4">
+                  In This Issue:
+                </h2>
+                <ul class="space-y-3">
+                  {issue.data.highlights.map((highlight) => (
+                    <li class="flex items-start">
+                      <svg
+                        class="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span class="text-gray-700">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles in This Issue -->
+  <section class="bg-white py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 mb-12">
+        Articles in This Issue
+      </h2>
+
+      <div class="space-y-8">
+        {
+          issue.data.articles.map((article, index) => (
+            <article class="group relative flex flex-col md:flex-row gap-6 rounded-xl bg-white border border-gray-200 p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary-200">
+              {/* Article Number */}
+              <div class="flex-shrink-0">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary-100 text-primary-700 font-bold text-lg">
+                  {index + 1}
+                </div>
+              </div>
+
+              {/* Article Content */}
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="inline-flex items-center rounded-md bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">
+                    {article.category}
+                  </span>
+                  {article.featured && (
+                    <span class="inline-flex items-center rounded-md bg-accent-100 px-3 py-1 text-xs font-semibold text-accent-800">
+                      Featured
+                    </span>
+                  )}
+                  {article.readingTime && (
+                    <span class="text-xs text-gray-500">
+                      {article.readingTime} min read
+                    </span>
+                  )}
+                </div>
+
+                <a
+                  href={`/flight-deck/${article.slug}`}
+                  class="group-hover:text-primary-600 transition-colors"
+                >
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                    {article.title}
+                  </h3>
+                </a>
+
+                <p class="text-gray-600 mb-4">
+                  {article.excerpt || article.description}
+                </p>
+
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                  <span>By {article.author}</span>
+                </div>
+              </div>
+
+              {/* Read Button */}
+              <div class="flex-shrink-0 flex items-center">
+                <a
+                  href={`/flight-deck/${article.slug}`}
+                  class="inline-flex items-center justify-center rounded-md bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-700 transition-colors"
+                >
+                  Read Article
+                  <svg
+                    class="ml-2 h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Issue Content (Editor's Note, etc.) -->
+  <section class="bg-gray-50 py-16">
+    <div class="mx-auto max-w-4xl px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none">
+        <Content />
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse More Issues CTA -->
+  <section class="bg-white py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        class="rounded-3xl bg-gradient-to-r from-primary-600 to-primary-700 px-6 py-16 shadow-2xl sm:px-16"
+      >
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Enjoying Flight Deck Magazine?
+          </h2>
+          <p class="mx-auto mt-4 max-w-xl text-lg leading-8 text-primary-100">
+            Explore more issues packed with aviation marketing insights and
+            strategies to grow your flight school.
+          </p>
+          <div class="mt-8 flex items-center justify-center gap-x-6">
+            <a
+              href="/flight-deck/issues"
+              class="rounded-md bg-white px-6 py-3 text-base font-semibold text-primary-600 shadow-sm hover:bg-gray-50 transition-colors"
+            >
+              Browse All Issues
+            </a>
+            <a
+              href="/schedule-call"
+              class="text-base font-semibold leading-6 text-white hover:text-primary-100 transition-colors"
+            >
+              Work With Us <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <FlyWithUsCTA data={flyWithUsCTA} />
+</BaseLayout>

@@ -26,118 +26,125 @@ tags:
   ]
 ---
 
-**Live Recording: October 10, 10AM Central on [Riverside](https://riverside.fm/studio/podcast-40nqk)**
+## Episode Overview
 
-## Episode Guest: Lyn Askin, EOS Implementer® & Former Digital Marketing Agency Owner
+In this powerful episode of the Aviation Business Podcast, host Tim Jedrek sits down with Lyn Askin, a certified EOS (Entrepreneurial Operating System) implementer and serial entrepreneur who turned a near-death experience into a complete business transformation. After suffering a massive pulmonary embolism in 2020, Lyn discovered that his business would have died with him—a wake-up call that led him to implement EOS and ultimately 3x his revenue, 7x his profits, and successfully exit his 26-year-old marketing agency.
 
-**What if your business couldn't survive without you? What would happen to your team, your clients, and your family if you suddenly couldn't show up tomorrow?**
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/0Ctj1bwNJyg?si=ErHWtefCVa3xcyax" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For most flight school owners, this isn't a comfortable question. But for this week's guest, Lyn Askin, it became a life-or-death reality that fundamentally transformed how he built businesses—and now helps others do the same.
+## What You'll Learn
 
-## From Crisis to Clarity: A Near-Death Wake-Up Call
+- **The True Cost of Being "Good at Something"**: Why most entrepreneurs build businesses that run them instead of the other way around
+- **The Six Key Components of Business Success**: Vision, People, Data, Issues, Process, and Traction—and how strengthening just these six areas can solve your 136 simultaneous problems
+- **The VTO (Vision Traction Organizer)**: A two-page business plan that answers the eight essential questions every business owner must address
+- **The Level 10 Meeting Framework**: A proven 90-minute weekly meeting structure that keeps your team aligned and executing
+- **Core Values That Actually Matter**: How to use core values for hiring, firing, reviewing, and rewarding (not just as wall decorations)
+- **The Right People, Right Seats Philosophy**: A framework for objectively evaluating team members and making tough personnel decisions
 
-In 2020, Lyn Askin was running a successful digital marketing agency he'd built over 18 years. Then came the bilateral pulmonary embolism—a life-threatening condition that landed him in the ICU, fighting for his life.
+## Key Takeaways
 
-But it wasn't just the physical pain that terrified him. As he lay in that hospital bed, Lyn faced a devastating realization: if he didn't survive, his wife would have to shut down the entire business, fire all the employees, and lose everything they'd spent nearly two decades building. His company was completely dependent on him—and that dependence could destroy it.
+### 1. Vision Without Traction Is Hallucination
 
-"I realized I hadn't built a business," Lyn shares in this powerful episode. "I'd just created a job that nobody else could do."
+Many business owners have big dreams but lack the discipline and accountability to execute. EOS provides a systematic framework for bringing your vision down to ground level and making it reality—90 days at a time.
 
-That moment of clarity became the catalyst for one of the most dramatic business transformations you'll hear about—and the lessons apply directly to flight school owners who find themselves in the same trap.
+### 2. The Problem With "Winging It"
 
-## The EOS Transformation: From Owner-Dependent to Self-Sustaining
+Most entrepreneurs started their business because they were good at something—not because they were good at running a business. Without a system, you'll keep hitting ceilings and feeling like your business controls you.
 
-After his recovery, Lyn implemented the Entrepreneurial Operating System (EOS) in his agency, Raxxar Digital Marketing. The results were nothing short of remarkable:
+### 3. The Power of Weekly Discipline
 
-- **Revenue tripled** over two years
-- **Profits increased 7x**
-- **Team expanded** from 10 to 27 employees
-- **Owner independence achieved**: Lyn successfully worked himself out of day-to-day operations
-- **Successful exit**: The business was acquired in 2023, proving its value as a standalone entity
+The Level 10 Meeting structure includes:
 
-Today, as a certified EOS Implementer® and Outgrow Advisor®, Lyn helps other entrepreneurial companies (10-250 employees) build businesses that thrive independently of their founders.
+- **5 minutes**: Personal and professional wins (building team trust)
+- **5 minutes**: Scorecard review (running on real data)
+- **5 minutes**: Rock check-in (quarterly priorities)
+- **5 minutes**: Customer/employee headlines
+- **5 minutes**: To-do list review
+- **60 minutes**: IDS (Identify, Discuss, Solve) your biggest issues
+- **5 minutes**: Conclude and rate the meeting
 
-## What You'll Learn in This Episode
+### 4. Core Values Are Your Hiring and Firing Guide
 
-### The Six Components That Transform Owner-Dependent Businesses
+Core values aren't just feel-good statements—they define what it means to be a good employee at your company. Use them to:
 
-Lyn breaks down the EOS framework that saved his business and explains how each component applies to flight schools:
+- Hire people who fit your culture
+- Fire people who don't (without guilt)
+- Review and reward team members objectively
+- Recognize achievements in meaningful ways
 
-**Vision**: Getting your leadership team aligned on where you're going and how you'll get there
+### 5. Rocks Keep You Moving Forward
 
-**People**: Ensuring you have the right people in the right seats doing the right things
+A "rock" is your biggest priority for the next 90 days. By setting 3-7 company rocks each quarter, you ensure consistent progress. As EOS founder Gino Wickman said when asked how he'd reach 10,000 clients: "90 days at a time."
 
-**Data**: Creating scorecards that give you real-time visibility into business health
+## Who Is This Episode For?
 
-**Issues**: Developing systems to identify and solve problems permanently
+- **Flight school owners** struggling with day-to-day operations
+- **Small business owners** who feel like their business runs them
+- **Entrepreneurs** hitting growth ceilings
+- **Leadership teams** lacking alignment and accountability
+- **Anyone** who's read business books but struggles to implement what they've learned
 
-**Process**: Documenting the core processes that make your business run
+## Recommended Resources
 
-**Traction**: Building accountability and discipline to execute on your vision
+### Books Mentioned
 
-### Why Flight Schools Need This More Than Ever
+- **Traction** by Gino Wickman (the EOS playbook)
+- **Get a Grip** by Gino Wickman (EOS as a story/fable)
+- **The E-Myth Revisited** by Michael Gerber
+- **Outgrow** by Alex Goldfine (on building real relationships)
+- **Good to Great** by Jim Collins (origin of "right people, right seats")
 
-If you're a flight school owner who personally handles student consultations, steps in when instructors call out sick, manages the schedule, oversees maintenance, and puts out fires all day long—this episode is for you.
+### EOS Tools Discussed
 
-Many flight school owners have built their businesses on personal relationships, their instructional reputation, and hands-on involvement in everything. While this creates loyalty and quality, it also creates an unsustainable trap. You become the bottleneck to growth and the single point of failure.
+1. **VTO (Vision Traction Organizer)**: Your two-page business plan
+2. **Accountability Chart**: Structure-first, people-second org design
+3. **Rocks**: Quarterly priorities that move you forward
+4. **Level 10 Meeting**: Weekly 90-minute leadership meeting
+5. **Scorecard**: Weekly metrics to measure business health
+6. **People Analyzer**: Objective tool for evaluating team members
 
-Lyn explains how to break this cycle without sacrificing quality or losing the personal touch that makes your flight school special.
+## Powerful Quotes from This Episode
 
-### Digital Marketing Wisdom from 25+ Years in the Trenches
-
-Before his transformation story, Lyn built deep expertise across every digital marketing discipline: SEO, PPC, marketing automation, website development, and lead generation systems. He shares critical insights on:
-
-- Generating measurable ROI instead of vanity metrics
-- Building marketing systems that run without constant oversight
-- Creating authority positioning in crowded markets
-- Automating client communication without losing the personal touch
-
-### Authority-Based Leadership for Service Businesses
-
-Drawing from the Dan Kennedy school of marketing, Lyn discusses why maintaining professional boundaries and positioning yourself as an authority figure creates better client outcomes than being constantly accessible. For flight school owners who struggle with work-life balance because they're always "on call" for students, this perspective is game-changing.
-
-### The Path to a Successful Exit (If You Want One)
-
-As an Outgrow Advisor®, Lyn now helps business owners plan and execute exits. Whether you're thinking about succession planning, selling to a management team, or attracting outside buyers, Lyn explains what makes a business valuable and sellable—and what scares buyers away.
-
-Spoiler: A business that can't run without its founder isn't worth much to anyone.
-
-## Key Takeaways for Flight School Owners
-
-**Systems Trump Heroics**: The best business owners work themselves out of daily operations, not deeper into them. Your job is to build the machine, not be the machine.
-
-**Document Everything**: If it's only in your head, it's not a process. Your flight school's procedures, scheduling systems, student communication protocols, and instructor training should all be documented and transferable.
-
-**Build Your Leadership Team**: You can't scale past yourself without developing other leaders. Identify who has the capacity to take on more responsibility and invest in their development.
-
-**Transparency Creates Loyalty**: Lyn advocates for complete honesty with clients about business performance, even when it's uncomfortable. This integrity creates loyal, long-term relationships with students and their families.
-
-**Think Like a Buyer**: Even if you never want to sell, running your flight school as if you were preparing it for sale forces you to build better systems, stronger financials, and clearer documentation.
-
-## Why This Matters for Aviation Entrepreneurs
-
-The aviation training industry is at a critical juncture. With the ongoing pilot shortage, there's enormous opportunity for well-run flight schools to grow. But growth amplifies your problems—if you're already overwhelmed at 30 students, what happens at 60? At 100?
-
-Right Rudder Marketing's vision includes helping flight schools become scalable, systems-driven businesses. Many flight school owners face the exact challenge Lyn overcame. Whether you have 2 aircraft or 20, if you disappeared tomorrow, would your flight school continue to thrive?
-
-This episode provides a proven roadmap for building a business that serves you, rather than one that owns you.
-
-**Mark your calendar: October 10, 10AM Central**
-**Join the live recording: [https://riverside.fm/studio/podcast-40nqk](https://riverside.fm/studio/podcast-40nqk)**
-
-## Resources Mentioned
-
-- **Entrepreneurial Operating System (EOS)**: A complete business system for growth-oriented companies
-- **Seven Figure Agency Program**: Coaching program for agency owners scaling to seven figures
-- **Raxxar Digital Marketing**: Lyn's former agency (successfully exited 2023)
+> If I had died that day, my business would have died with me.
+> — Lyn Askin on his wake-up call
 
 ---
 
-## About The Aviation Business Podcast
-
-The Aviation Business Podcast brings you conversations with successful aviation entrepreneurs, business leaders, and industry experts who share actionable strategies for growing flight schools and aviation businesses. Hosted by Right Rudder Marketing, each episode delivers insights you can implement immediately to train more pilots, increase revenue, and build the aviation business of your dreams.
-
-**Ready to transform your flight school's marketing and operations?** Visit rightruddermarketing.com to learn how we help flight schools implement proven systems that drive student enrollment and revenue growth.
+> Vision without traction is hallucination.
+> — On the importance of execution
 
 ---
 
-_This episode is brought to you by Right Rudder Marketing—the digital marketing agency exclusively serving flight schools. Learn more at rightruddermarketing.com._
+> When everything's important, nothing's important.
+> — Why you need to focus on 3-7 rocks, not 37
+
+---
+
+> If you have to fire somebody and it's a surprise to them, we have a term for that: bad management.
+> — On setting clear expectations
+
+---
+
+> Knowing what to do and doing it are two entirely different things. Knowing what to do doesn't feed your family. Doing it feeds your family.
+> — On the danger of "mental masturbation"
+
+**Connect with Lyn Askin:**
+
+- Website: linaskin.com
+- Email: <lin.askin@eosworldwide.com>
+- LinkedIn: Search "Lyn Askin" (he's the only one!)
+
+## About the Aviation Business Podcast
+
+Hosted by Tim Jedrek, founder of Right Rudder Marketing, the Aviation Business Podcast brings you actionable insights for growing your flight school or aviation business. Each episode features industry experts, successful entrepreneurs, and proven frameworks for scaling your operations.
+
+**Need help growing your flight school?**  
+Right Rudder Marketing specializes in marketing for flight schools—from Google Ads and Facebook marketing to website design and SEO.
+
+- 📞 [Call: 314-804-1200](tel:314-804-1200)
+- 🌐 [Visit: rightruddermarketing.com](/)
+- ⚙️ [Schedule a Free Consultation](/schedule-call)
+
+---
+
+**Don't forget to subscribe, rate, and review!** Your feedback helps us bring you more valuable content for growing your aviation business.
