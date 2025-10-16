@@ -34,6 +34,15 @@ const testimonials = {
       quotes: [
         {
           quote:
+            "The partnership with Right Rudder Marketing has been successful, leading to an increase in leads and a positive impact on Hawkins Flight Academy’s growth. The website redesign and CRM system are particularly appreciated.",
+          extract:
+            "I would recommend other flight schools consider working with RRM",
+          client: "Hawkins Flight Academy",
+          author: "Mike H.",
+        },
+
+        {
+          quote:
             "The company I work for has been working with Right Rudder Marketing for a while now and I can tell you they have helped us a lot! Our website improved and we started getting more and more inquiries. If you have a flight school you definitely have to work with them!",
           extract: "You definitely have to work with them!",
           client: "Sun City Aviation Academy",
