@@ -31,11 +31,11 @@ tags:
   ]
 ---
 
-**Live Recording: October 16, 2 PM Central on [Riverside](https://riverside.fm/studio/podcast-40nqk)**
-
 The aviation training industry stands at a pivotal moment. After nearly a decade of advocacy work, the FAA has finalized the Modernization of Special Airworthiness Certification (MOSAIC) rule—the most significant regulatory change in general aviation in decades. And no one has been more instrumental in making it happen than our guest today, Sean Elliott, Vice President of Advocacy and Safety at the Experimental Aircraft Association.
 
 In this episode, we dive deep into what MOSAIC means for flight school owners, explore the massive opportunities within EAA's 300,000-member community, and discuss practical strategies for capitalizing on these industry-changing developments.
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/SoVuDrjGxEM?si=hpibOZ7_1Zn8Hrik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Meet Sean Elliott: Three Decades Driving Aviation Forward
 
@@ -162,9 +162,6 @@ The question is whether you'll capitalize on these changes or watch competitors 
 To learn more about EAA's programs and advocacy work, visit [www.eaa.org](https://www.eaa.org). If you're not already an EAA member, seriously consider joining—the industry connections, resources, and community access are invaluable for flight school owners.
 
 For information about getting involved with Young Eagles or finding your local EAA chapter, all those resources are available through EAA's website.
-
-**Mark your calendar: October 16, 2 PM Central.**
-**Join the live recording: [https://riverside.fm/studio/podcast-40nqk](https://riverside.fm/studio/podcast-40nqk)**
 
 ## Join the Conversation
 
