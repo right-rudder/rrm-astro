@@ -50,10 +50,9 @@ const PricingEstimator = () => {
   const serviceOptions = [
     'SEO',
     'Google Ads',
-    'Meta Ads', 
-    'Social Media Management',
+    'Meta Facebook/Instagram Ads', 
+    'Social Media Consulting',
     'Video Production',
-    'Press Releases',
     'Custom Web Development'
   ];
   
