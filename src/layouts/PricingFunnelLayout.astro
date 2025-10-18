@@ -1,0 +1,124 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, IMAGE } from "../consts";
+import "@fontsource-variable/noto-sans-lao";
+import "@fontsource/merriweather";
+import "@fontsource-variable/merriweather-sans";
+import Navbar from "../components/Navbar";
+import ChatWidget from "../components/ChatWidget.astro";
+import Banner from "../components/Banner.astro";
+import SimpleFooter from "../components/SimpleFooter.astro";
+import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
+import GenericCTA from "../components/GenericCTA.astro";
+import DownloadBook from "../components/DownloadBook";
+import RelatedContent from "../components/RelatedContent.astro";
+
+const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+
+const flyWithUsCTA = {
+  imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+  imageAlt: "Right Rudder Marketing team on the runway",
+  headerH1: `<span class="text-primary">Fly with digital marketing</br> experts</span> that know the flight training industry.`,
+  paragraph:
+    "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
+  buttons: [
+    {
+      name: "Get Our Free Book",
+      link: "/resources/flight-school-handbook",
+      primary: false,
+    },
+    {
+      name: "Book a Strategy Call",
+      link: "/schedule-call",
+      primary: false,
+    },
+  ],
+};
+
+const flyWithUsBook = {
+  imagePath: "/src/assets/avel-chuklanov-QbTBCUJLqKY-unsplash(1).jpg",
+  imageAlt: "Right Rudder Marketing team on the runway",
+  headerH1: `<span class="text-primary">Fly with digital marketing</br> experts</span> that know the flight training industry.`,
+  paragraph:
+    "We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you? See what we're talking about by booking a call now!",
+  buttons: [
+    {
+      name: "Our Marketing System",
+      link: "/marketing-system",
+      primary: false,
+    },
+    {
+      name: "Book a Strategy Call",
+      link: "/schedule-call",
+      primary: false,
+    },
+  ],
+};
+
+const { pathname } = Astro.url;
+const {
+  siteTitle,
+  siteDescription,
+  keywords,
+  content,
+  bookButton = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead
+      title={siteTitle || SITE_TITLE}
+      description={siteDescription || SITE_DESCRIPTION}
+      keywords={keywords || KEYWORDS}
+      image={IMAGE}
+    />
+  </head>
+  <body class="font-sans bg-primary-100">
+    <Banner class="z-40" />
+    {
+      bookButton && (
+        <div class="fixed bottom-0 lg:bottom-8 right-0 w-full lg:w-auto z-50 p-0 shadow-xl">
+          <DownloadBook
+            client:visible
+            webhook={GHL_BOOK_FORM_WEBHOOK_URL}
+            apiKey={PORTAL_API_KEY}
+          />
+        </div>
+      )
+    }
+    <main>
+      <slot />
+    </main>
+    <FlyWithUsCTA data={bookButton ? flyWithUsBook : flyWithUsCTA} />
+    <GenericCTA data={content} />
+    <!-- Enhanced internal linking for better SEO -->
+    <RelatedContent
+      currentPage={pathname}
+      category={
+        (() => {
+          const segments = pathname.split("/");
+          const segment = segments[2];
+          if (segment) {
+            return segment
+              .split("-")
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(" ");
+          } else {
+            return "";
+          }
+        })()
+      }
+      keywords={[
+        "flight school resources",
+        "marketing tools",
+        "free guides",
+        "aviation marketing",
+      ]}
+    />
+    <SimpleFooter />
+  </body>
+</html>

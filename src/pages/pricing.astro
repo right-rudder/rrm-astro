@@ -1,5 +1,5 @@
 ---
-import FunnelLayout from "../layouts/FunnelLayout.astro";
+import PricingFunnelLayout from "../layouts/PricingFunnelLayout.astro";
 import CaseStudiesVideo from "../components/CaseStudiesVideo.astro";
 import homePage from "../data/homePage"; // Import homepage data for case studies
 import PricingEstimator from "../components/PricingEstimator.jsx";
@@ -54,7 +54,7 @@ const ctaContent = {
 };
 ---
 
-<FunnelLayout
+<PricingFunnelLayout
   siteTitle={metaTitle}
   siteDescription={metaDescription}
   keywords={enhancedKeywords}
@@ -379,4 +379,4 @@ const ctaContent = {
     cases={data.caseStudies.cases}
   />
 
-</FunnelLayout>
+</PricingFunnelLayout>
