@@ -178,8 +178,8 @@ export const pricingPackages = {
         answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "Why do you require a 1-year contract?",
-        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
+        question: "Why do you require a 1 year contract?",
+        answer: "Marketing takes time to show results. A 1 year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
         question: "What does the onboarding process include?",
@@ -383,8 +383,8 @@ export const pricingPackages = {
         answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "Why do you require a 1-year contract?",
-        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
+        question: "Why do you require a 1 year contract?",
+        answer: "Marketing takes time to show results. A 1 year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
         question: "What does the onboarding process include?",
@@ -583,8 +583,8 @@ export const pricingPackages = {
         answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "Why do you require a 1-year contract?",
-        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
+        question: "Why do you require a 1 year contract?",
+        answer: "Marketing takes time to show results. A 1 year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
         question: "What does the onboarding process include?",
@@ -793,8 +793,8 @@ export const pricingPackages = {
         answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "Why do you require a 1-year contract?",
-        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
+        question: "Why do you require a 1 year contract?",
+        answer: "Marketing takes time to show results. A 1 year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
         question: "What does the onboarding process include?",
@@ -1008,8 +1008,8 @@ export const pricingPackages = {
         answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "Why do you require a 1-year contract?",
-        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
+        question: "Why do you require a 1 year contract?",
+        answer: "Marketing takes time to show results. A 1 year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
         question: "What does the onboarding process include?",
