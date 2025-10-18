@@ -360,7 +360,7 @@ const PricingEstimator = () => {
               disabled={loading}
               className="w-full bg-accent hover:bg-accent-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-50"
             >
-              {loading ? 'Processing...' : 'Continue to Business Details →'}
+              {loading ? 'Processing...' : 'Continue →'}
             </button>
           </form>
         </div>
