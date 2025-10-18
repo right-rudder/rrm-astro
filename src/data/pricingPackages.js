@@ -39,7 +39,7 @@ export const pricingPackages = {
       icon: "🚀",
       services: [
         {
-          name: "Business Deep-Dive",
+          name: "Business deep dive",
           description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 1 to 3 hours.",
           image: "/src/assets/skydiving-during-sunset.webp",
           imageAlt: "Professional business consultation meeting with flight school owners"
@@ -79,12 +79,12 @@ export const pricingPackages = {
     },
     
     newCustomerAcquisition: {
-      title: "NEW CUSTOMER ACQUISITION",
+      title: "NEW STUDENT ACQUISITION",
       icon: "👥",
       services: [
         {
           name: "Website Development",
-          description: "We'll build your website for free! We'll make sure it's technically sound, looks great, and has all the important pages you need. Plus, as a Stick & Rudder client, you'll get at least 8 core pages for your launch.",
+          description: "We'll build your updated website and make sure it's technically sound, looks great, and has all the important pages you need. Your new website will be mobile-friendly and conversion-focused to turn visitors into students.",
           image: "/src/assets/html-code-in-an-ide-editor.webp",
           imageAlt: "Professional flight school website design mockup"
         },
@@ -140,7 +140,7 @@ export const pricingPackages = {
         description: "Complete customer relationship management system designed specifically for flight schools"
       },
       {
-        name: "Video Production",
+        name: "Video Production and Photography",
         price: "$5,000 + travel fees", 
         description: "Professional video production for marketing campaigns, testimonials, and promotional content"
       },
@@ -167,7 +167,7 @@ export const pricingPackages = {
     videos: [
       {
         title: "Stick & Rudder Program Overview",
-        placeholder: "/images/placeholders/stick-rudder-program-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/stick-rudder-program-video-thumbnail-600x400.jpg",
         description: "Complete walkthrough of our foundational marketing program"
       }
     ],
@@ -183,7 +183,7 @@ export const pricingPackages = {
       },
       {
         question: "What does the onboarding process include?",
-        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep-dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
+        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
       },
       {
         question: "How do you measure the success of your marketing efforts?",
@@ -204,7 +204,7 @@ export const pricingPackages = {
   "six-pack": {
     name: "Six Pack",
     slug: "six-pack",
-    aircraft: "3–10", 
+    aircraft: "3-10", 
     targetRevenue: "$1M",
     monthlyFee: "$2,890",
     googleAdBudget: "$1,200",
@@ -213,27 +213,27 @@ export const pricingPackages = {
     onboardingFee: "$1,500",
     totalAnnual: "$50,580",
     additionalCompanies: "$1,500 one-time",
-    additionalLocations: "$300/month",
+    additionalLocations: "$300/month per location",
 
     heroImage: "/src/assets/cessna-172-sunset-flight-school-marketing.webp",
     heroImageAlt: "Classic six-pack flight instrument panel configuration",
 
     programIntro: {
       subtitle: "SCALE YOUR OPERATIONS. AMPLIFY YOUR GROWTH.",
-      description: "You've established your foundation, and now it's time to scale. The Six Pack program is designed for flight schools ready to move beyond the basics and implement comprehensive marketing strategies that drive serious growth. With 3-10 aircraft in your fleet, you're positioned to capture a larger market share and reach that coveted $1 million revenue milestone.",
-      partnership: "Right Rudder becomes your dedicated growth partner, providing enhanced content creation, strategic guidance, and the marketing horsepower needed to compete in today's aviation training market. We'll help you stand out from competitors and attract the quality students your school deserves.",
-      expertise: "Our Six Pack program builds on proven foundations while adding the marketing muscle needed for mid-size flight school operations. You'll get enhanced content, better CRM pricing, and the strategic support needed to dominate your local market.",
-      commitment: "With enhanced monthly reviews and expanded content creation, you'll have the marketing momentum needed to reach $1M in annual revenue and beyond."
+      description: "You've proven your flight training concept works, and now it's time to scale beyond the basics. As an established flight school with multiple aircraft, you're juggling more complex operations while still needing aggressive growth to reach that million-dollar milestone. The marketing that got you here won't get you to the next level.",
+      partnership: "With Right Rudder as your enhanced marketing partner, you'll get the sophisticated strategies and expanded content creation that larger schools need to compete. We'll help you build a brand that stands out in your market and attracts the quality students who are ready to invest in professional flight training.",
+      expertise: "Every successful flight school owner knows that scaling requires different strategies than starting. You need enhanced content, strategic positioning, and the kind of professional marketing presence that signals 'serious flight training' to prospective pilots. We've got the aviation industry experience to get you there.",
+      commitment: "You'll have direct access to our team with enhanced monthly strategy sessions and expanded content creation. We'll make sure your marketing grows with your operation and positions you to capture the market share you deserve."
     },
 
     expectations: {
-      title: "UNDERSTANDING HOW IT WORKS", 
+      title: "UNDERSTANDING HOW IT WORKS",
       consulting: "Right Rudder Marketing's services are different from other marketing agencies you've used before. Entrepreneurs like you hire us as a consulting marketing service. This means our clients hire us for our expertise and expect us to lead the way.",
-      program: "The Six Pack program is specifically designed for growing flight schools with 3-10 aircraft who are ready to implement more sophisticated marketing strategies and scale their operations efficiently.",
-      partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.", 
+      program: "Our marketing programs are designed specifically for businesses like yours. Based on your existing business and goals, there's only one growth program that will be a good fit. You won't be given a bunch of options, you'll be given the only option that we're willing to do because it's the one that will help you achieve your goals.",
+      partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
-      positioning: "The Six Pack Program is designed for established flight schools with 3-10 aircraft who have proven their business model and are ready to scale systematically to reach $1M+ in annual revenue.",
-      growth: "IMPORTANT: Your business will be expected to grow beyond three million in annual revenue, typically within 18-24 months. After your business revenue has reached $1 million annually, you'll be eligible to upgrade to the Glass Cockpit Program."
+      positioning: "The Six Pack Program is designed for established flight schools with 3-10 aircraft who have proven their business model and are ready to systematically scale to reach $1M+ in annual revenue with enhanced marketing strategies.",
+      growth: "IMPORTANT: Your business will be expected to grow beyond a million dollars in annual revenue quickly, typically within 12 months. After your business revenue has reached a million in annual revenue, you will be required to upgrade to a larger program to continue your growth trajectory beyond $1M."
     },
 
     // Same onboarding and additional growth sections as Stick & Rudder
@@ -242,21 +242,21 @@ export const pricingPackages = {
       icon: "🚀",
       services: [
         {
-          name: "Business Deep-Dive",
-          description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 3 to 4 hours.",
-          image: "/images/placeholders/business-meeting-consultation-500x300.jpg", 
+          name: "Business deep dive",
+          description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 1 to 3 hours.",
+          image: "/src/assets/skydiving-during-sunset.webp", 
           imageAlt: "Professional business consultation meeting with flight school owners"
         },
         {
           name: "Assets, Access, & Systems",
           description: "We'll guide you through getting access to your online accounts, sharing your media and assets, and introducing you to the tracking systems we use to make sure your marketing program is a hit!",
-          image: "/images/placeholders/systems-setup-dashboard-500x300.jpg",
+          image: "/src/assets/keyboard-with-password-highlighted.webp",
           imageAlt: "Marketing dashboard and system setup process"
         },
         {
           name: "Weekly Checkpoints",
           description: "We'll have a weekly call with your team in the first 30 days to make sure everything's going smoothly. We'll chat about the initial wins and review the punch list items.",
-          image: "/images/placeholders/weekly-team-call-500x300.jpg",
+          image: "/src/assets/pilot-in-front-of-single-engine-piston-aircraft-on-the-phone.jpg",
           imageAlt: "Weekly checkpoint call with marketing team"
         }
       ]
@@ -269,51 +269,63 @@ export const pricingPackages = {
         {
           name: "Monthly Review Calls",
           description: "After onboarding, our teams will monthly call to discuss progress, brainstorm ideas, gather thoughts, and provide pointers. We'll also update the marketing plan to keep things fresh.",
-          image: "/images/placeholders/monthly-review-analytics-500x300.jpg",
+          image: "/src/assets/woman-on-video-call-trying-to-grow-her-flight-school-aviation-business.webp",
           imageAlt: "Monthly marketing review with analytics and growth charts"
         },
         {
           name: "Reporting & Data Tracking",
           description: "We've got you covered with data tracking and progress reporting for all our programs. You'll get access and some basic training during your onboarding call.",
-          image: "/images/placeholders/data-tracking-reports-500x300.jpg",
+          image: "/src/assets/colorful-pie-chart-of-a-successful-flight-school.webp",
           imageAlt: "Marketing data tracking and reporting dashboard"
         }
       ]
     },
 
     newCustomerAcquisition: {
-      title: "NEW CUSTOMER ACQUISITION",
+      title: "NEW STUDENT ACQUISITION",
       icon: "👥", 
       services: [
         {
           name: "Enhanced Website Development",
           description: "We'll build your professional website with expanded functionality. Six Pack clients receive enhanced design features, additional pages, and optimized user experience to convert more visitors into students.",
-          image: "/images/placeholders/enhanced-flight-school-website-500x300.jpg",
+          image: "/src/assets/html-code-in-an-ide-editor.webp",
           imageAlt: "Enhanced flight school website with modern design"
         },
         {
           name: "Expanded Content Creation",
           description: "The Six Pack program includes 24 written content pieces every year (2 per month). Our team creates comprehensive content covering advanced training topics, case studies, industry insights, and promotional materials to establish your school as a market leader.",
-          image: "/images/placeholders/expanded-content-creation-500x300.jpg", 
+          image: "/src/assets/woman-writing-in-journal.webp", 
           imageAlt: "Expanded aviation content creation and marketing materials"
         },
         {
-          name: "Google My Business Pro",
-          description: "Enhanced GMB management including regular posting, review management, Q&A monitoring, and local SEO optimization to dominate your local aviation training market.",
-          image: "/images/placeholders/google-my-business-pro-500x300.jpg",
-          imageAlt: "Advanced Google My Business management for flight schools"
+          name: "Pay Per Click Advertising",
+          description: "We'll set up and manage your Google Ads account to drive qualified leads to your flight school. Our team will handle keyword research, ad creation, bid management, and ongoing optimization to ensure you're getting the best return on your ad spend.",
+          image: "/src/assets/macbook-air-on-google-search.webp",
+          imageAlt: "Google My Business profile optimization for flight schools"
         },
         {
-          name: "Quarterly Review Campaigns", 
-          description: "Every quarter, we run comprehensive review collection campaigns, including follow-up sequences and reputation management to build a strong online presence.",
-          image: "/images/placeholders/review-campaigns-quarterly-500x300.jpg",
-          imageAlt: "Quarterly customer review collection campaigns"
+          name: "Customer Review Building", 
+          description: "Every quarter, we'll reach out to your recently serviced customers to ask for their feedback and encourage them to leave a review on your Google Business Profile. Positive reviews are super important for boosting your rankings and visibility on Google Maps, and they can also help you turn leads into customers.",
+          image: "/src/assets/woman-on-phone-leaving-a-flight-school-a-5-star-google-review.webp",
+          imageAlt: "Flight school customer reviews and testimonials"
         },
         {
           name: "Press Release Program",
           description: "Two professionally written and distributed press releases annually to build credibility and attract media attention for your flight school's achievements and programs.",
-          image: "/images/placeholders/press-release-program-500x300.jpg",
+          image: "/src/assets/dog-with-a-news-paper.webp",
           imageAlt: "Aviation industry press release distribution"
+        },
+        {
+          name: "Local Business Listings",
+          description: "To make your business more visible on organic search results and to improve your Google Business Profile ranking on maps, all major local listings on websites will be kept up to date.",
+          image: "/src/assets/pointing-to-a-map-online-phone-mobile.webp",
+          imageAlt: "Local business directory listings for flight schools"
+        },
+        {
+          name: "Capture Lost Leads",
+          description: "We'll set up systems to nurture previous leads that didn't convert into students. This includes email and text follow ups (if you are adding-on the Flight School CRM) and retargeting ads to keep your flight school top of mind and encourage them to reconsider your services.",
+          image: "/src/assets/customer-journey-map.webp",
+          imageAlt: "Local business directory listings for flight schools"
         }
       ]
     },
@@ -335,16 +347,16 @@ export const pricingPackages = {
       {
         name: "Flight School CRM",
         price: "$175/month", 
-        description: "Complete customer relationship management system designed specifically for flight schools (reduced rate for Six Pack clients)"
+        description: "Complete customer relationship management system designed specifically for flight schools (discounted rate for flight schools on the Six Pack program)"
       },
       {
-        name: "Video Production",
-        price: "$5,000/session",
+        name: "Video Production and Photography",
+        price: "$5,000 + travel fees", 
         description: "Professional video production for marketing campaigns, testimonials, and promotional content"
       },
       {
         name: "Custom Software Development", 
-        price: "$1,000–$5,000",
+        price: "$1,000-$5,000",
         description: "Custom software solutions tailored to your flight school's specific operational needs"
       }
     ],
@@ -360,27 +372,35 @@ export const pricingPackages = {
     videos: [
       {
         title: "Six Pack Program Overview",
-        placeholder: "/images/placeholders/six-pack-program-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/six-pack-program-video-thumbnail-600x400.jpg",
         description: "How to scale your flight school to $1M with enhanced marketing"
       }
     ],
 
     faqs: [
       {
-        question: "How is this different from Stick and Rudder?",
-        answer: "The Six Pack program includes more content creation (2 blogs vs 1), annual press releases, and reduced Flight School CRM costs. It's designed for schools with more aircraft and higher revenue targets."
+        question: "How quickly will I see results?",
+        answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "What's included in the press releases?",
-        answer: "We write and distribute 2 professional press releases per year highlighting your school's achievements, new programs, safety milestones, or community involvement to build credibility and attract media attention."
+        question: "Why do you require a 1-year contract?",
+        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
-        question: "Can I upgrade from Stick and Rudder?",
-        answer: "Absolutely! Many of our clients start with Stick and Rudder and upgrade to Six Pack as they grow. We'll seamlessly transition your campaigns without interruption."
+        question: "What does the onboarding process include?",
+        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
       },
       {
-        question: "What happens when I reach $1M in revenue?",
-        answer: "Congratulations! At that point, we'll recommend upgrading to our Glass Cockpit program to continue your growth trajectory with enhanced services and multi-platform advertising."
+        question: "How do you measure the success of your marketing efforts?",
+        answer: "We track key performance indicators (KPIs) like website traffic, lead conversion rates, cost per lead, and student enrollment numbers, providing monthly reports to show progress."
+      },
+      {
+        question: "How do you handle ad budgets, and are they included in the pricing?",
+        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $1,200/month for Google Ads, however, we have seen the most success with budgets of $2,000+/month"
+      },
+      {
+        question: "What's the cancellation policy if I'm not satisfied?",
+        answer: "We strive for your satisfaction. If you're not happy with our services, you can cancel after the initial 12 month term with a 30 day notice. We also do regular check ins to ensure we're meeting your expectations. If you're not satisfied, let's have a candid conversation with one another and come up with a plan to address any concerns."
       }
     ]
   },
@@ -399,21 +419,21 @@ export const pricingPackages = {
     additionalCompanies: "$1,500 one-time",
     additionalLocations: "$400/month",
 
-    heroImage: "/images/placeholders/glass-cockpit-avionics-hero-1200x600.jpg",
+    heroImage: "/src/assets/glass-cockpit-avionics-hero-1200x600.jpg",
     heroImageAlt: "Modern glass cockpit display with advanced avionics systems",
 
     programIntro: {
       subtitle: "ADVANCED SYSTEMS. MULTI-PLATFORM DOMINANCE.",
-      description: "Welcome to the big leagues. The Glass Cockpit program is designed for established flight schools with 10-20 aircraft who are ready to implement sophisticated, multi-platform marketing strategies. You're no longer just competing locally—you're positioning your school as a regional leader in aviation training.",
-      partnership: "Right Rudder becomes your comprehensive marketing department, managing everything from social media to video production to multi-platform advertising. We'll help you capture market share across all digital channels and establish your school as the premium choice for serious pilots.",
-      expertise: "Glass Cockpit clients get access to our full suite of marketing services, including social media management, included Flight School CRM, annual video production, and multi-platform advertising strategies that smaller competitors simply can't match.",
-      commitment: "With quarterly strategy sessions, enhanced reporting, and dedicated account management, you'll have everything needed to reach $3M in annual revenue and dominate your regional market."
+      description: "You've built a serious flight training operation with multiple aircraft and locations. At this level, your reputation and brand representation across all channels becomes critical. The Glass Cockpit program is designed for established schools who need sophisticated marketing that reflects their professional standards and attracts quality students.",
+      partnership: "With Right Rudder managing your comprehensive marketing presence, you'll have the professional brand positioning that serious flight schools require. We handle everything from social media to video production to ensure your school is represented correctly across all platforms and markets.",
+      expertise: "At the Glass Cockpit level, it's about more than just leads—it's about establishing your school as the premium choice in your region. You'll get comprehensive social media management, professional video production, and multi-platform strategies that position your school as the leader others try to emulate.",
+      commitment: "You'll have dedicated strategic support with monthly reviews, enhanced reporting, and the kind of professional marketing presence that reflects the quality of training you provide. This is marketing that matches your school's caliber."
     },
 
     expectations: {
       title: "UNDERSTANDING HOW IT WORKS",
       consulting: "Right Rudder Marketing's services are different from other marketing agencies you've used before. Entrepreneurs like you hire us as a consulting marketing service. This means our clients hire us for our expertise and expect us to lead the way.",
-      program: "The Glass Cockpit program is designed for established flight schools with 10-20 aircraft who need comprehensive, multi-platform marketing to compete at the highest levels and capture significant market share.",
+      program: "Our marketing programs are designed specifically for businesses like yours. Based on your existing business and goals, there's only one growth program that will be a good fit. You won't be given a bunch of options, you'll be given the only option that we're willing to do because it's the one that will help you achieve your goals.",
       partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
       positioning: "The Glass Cockpit Program is designed for serious flight school operations with 10-20 aircraft who are ready to invest in comprehensive marketing to dominate their regional market and achieve $3M+ in annual revenue.",
@@ -425,21 +445,21 @@ export const pricingPackages = {
       icon: "🚀",
       services: [
         {
-          name: "Business Deep-Dive",
+          name: "Business deep dive",
           description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 3 to 4 hours.",
-          image: "/images/placeholders/business-meeting-consultation-500x300.jpg",
+          image: "/src/assets/skydiving-during-sunset.webp",
           imageAlt: "Professional business consultation meeting with flight school owners"
         },
         {
           name: "Assets, Access, & Systems",
           description: "We'll guide you through getting access to your online accounts, sharing your media and assets, and introducing you to the tracking systems we use to make sure your marketing program is a hit!",
-          image: "/images/placeholders/systems-setup-dashboard-500x300.jpg",
+          image: "/src/assets/keyboard-with-password-highlighted.webp",
           imageAlt: "Marketing dashboard and system setup process"
         },
         {
           name: "Weekly Checkpoints",
           description: "We'll have a weekly call with your team in the first 30 days to make sure everything's going smoothly. We'll chat about the initial wins and review the punch list items.",
-          image: "/images/placeholders/weekly-team-call-500x300.jpg",
+          image: "/src/assets/pilot-in-front-of-single-engine-piston-aircraft-on-the-phone.jpg",
           imageAlt: "Weekly checkpoint call with marketing team"
         }
       ]
@@ -452,56 +472,56 @@ export const pricingPackages = {
         {
           name: "Monthly Review Calls",
           description: "After onboarding, our teams will monthly call to discuss progress, brainstorm ideas, gather thoughts, and provide pointers. We'll also update the marketing plan to keep things fresh.",
-          image: "/images/placeholders/monthly-review-analytics-500x300.jpg",
+          image: "/src/assets/woman-on-video-call-trying-to-grow-her-flight-school-aviation-business.webp",
           imageAlt: "Monthly marketing review with analytics and growth charts"
         },
         {
           name: "Advanced Reporting & Analytics",
           description: "Comprehensive data tracking across all platforms with advanced analytics, competitor analysis, and market intelligence reporting to guide strategic decisions.",
-          image: "/images/placeholders/advanced-analytics-dashboard-500x300.jpg",
+          image: "/src/assets/colorful-pie-chart-of-a-successful-flight-school.webp",
           imageAlt: "Advanced marketing analytics and reporting dashboard"
         }
       ]
     },
 
     newCustomerAcquisition: {
-      title: "NEW CUSTOMER ACQUISITION",
+      title: "NEW STUDENT ACQUISITION",
       icon: "👥",
       services: [
         {
           name: "Premium Website Development",
           description: "Professional website with advanced functionality, student portals, online scheduling, and conversion optimization. Glass Cockpit websites are designed to convert visitors into students at the highest rates possible.",
-          image: "/images/placeholders/premium-flight-school-website-500x300.jpg",
+          image: "/src/assets/html-code-in-an-ide-editor.webp",
           imageAlt: "Premium flight school website with advanced features"
         },
         {
           name: "Comprehensive Content Strategy",
           description: "36 written content pieces annually (3 per month) including technical articles, safety content, career guidance, and industry insights that position your school as the authority in aviation training.",
-          image: "/images/placeholders/comprehensive-content-strategy-500x300.jpg",
+          image: "/src/assets/woman-writing-in-journal.webp",
           imageAlt: "Comprehensive aviation content strategy and creation"
         },
         {
           name: "Social Media Management",
           description: "Full social media management across Facebook, Instagram, and LinkedIn with daily posting, community engagement, and social advertising to build brand awareness and attract students.",
-          image: "/images/placeholders/social-media-management-500x300.jpg",
+          image: "/src/assets/woman-on-video-call-trying-to-grow-her-flight-school-aviation-business.webp",
           imageAlt: "Social media management for flight schools"
         },
         {
           name: "Meta Ads Management",
           description: "Professional Facebook and Instagram advertising campaigns designed to reach prospective pilots and aviation enthusiasts in your target demographics.",
-          image: "/images/placeholders/meta-ads-campaigns-500x300.jpg",
+          image: "/src/assets/macbook-air-on-google-search.webp",
           imageAlt: "Facebook and Instagram advertising campaigns"
         },
         {
           name: "Quarterly Press Releases",
           description: "Professional press release writing and distribution every quarter to maintain consistent media presence and build industry credibility.",
-          image: "/images/placeholders/quarterly-press-releases-500x300.jpg",
+          image: "/src/assets/pointing-to-a-map-online-phone-mobile.webp",
           imageAlt: "Quarterly aviation industry press releases"
         },
         {
           name: "Annual Video Production",
           description: "One professional video production session annually, creating 3-5 finished videos for your website, social media, and advertising campaigns.",
-          image: "/images/placeholders/annual-video-production-500x300.jpg",
+          image: "/src/assets/customer-journey-map.webp",
           imageAlt: "Professional video production for flight schools"
         }
       ]
@@ -547,32 +567,40 @@ export const pricingPackages = {
     videos: [
       {
         title: "Glass Cockpit Program Overview",
-        placeholder: "/images/placeholders/glass-cockpit-program-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/glass-cockpit-program-video-thumbnail-600x400.jpg",
         description: "Multi-platform marketing strategies to reach $3M revenue"
       },
       {
         title: "Social Media Success Stories",
-        placeholder: "/images/placeholders/social-media-success-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/social-media-success-video-thumbnail-600x400.jpg",
         description: "How flight schools use social media to attract students"
       }
     ],
 
     faqs: [
       {
-        question: "What social media platforms do you manage?",
-        answer: "We manage Facebook, Instagram, and LinkedIn for your flight school, creating engaging content that showcases your training programs, student achievements, and aviation lifestyle to attract prospective pilots."
+        question: "How quickly will I see results?",
+        answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "What's included in the video production session?",
-        answer: "Our annual video session includes planning, filming, and editing professional videos for your website, social media, and advertising campaigns. This typically produces 3-5 finished videos showcasing your school."
+        question: "Why do you require a 1-year contract?",
+        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
-        question: "How does Meta Ads differ from Google Ads?",
-        answer: "Meta Ads (Facebook/Instagram) excel at building awareness and targeting specific demographics interested in aviation careers, while Google Ads capture high-intent searches from people actively looking for flight training."
+        question: "What does the onboarding process include?",
+        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
       },
       {
-        question: "What additional platforms might I need later?",
-        answer: "As you grow, you might benefit from Hulu, Bing, Reddit, or even TV advertising. These become available in our Fly by Wire and Supersonic programs for maximum market penetration."
+        question: "How do you measure the success of your marketing efforts?",
+        answer: "We track key performance indicators (KPIs) like website traffic, lead conversion rates, cost per lead, and student enrollment numbers, providing monthly reports to show progress."
+      },
+      {
+        question: "How do you handle ad budgets, and are they included in the pricing?",
+        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $2,000/month for Google Ads and $1,000/month for Meta Ads, however, we have seen the most success with budgets of $4,000+/month total"
+      },
+      {
+        question: "What's the cancellation policy if I'm not satisfied?",
+        answer: "We strive for your satisfaction. If you're not happy with our services, you can cancel after the initial 12 month term with a 30 day notice. We also do regular check ins to ensure we're meeting your expectations. If you're not satisfied, let's have a candid conversation with one another and come up with a plan to address any concerns."
       }
     ]
   },
@@ -591,21 +619,21 @@ export const pricingPackages = {
     additionalCompanies: "$1,500 one-time",
     additionalLocations: "$500/month",
 
-    heroImage: "/images/placeholders/fly-by-wire-advanced-systems-hero-1200x600.jpg",
+    heroImage: "/src/assets/fly-by-wire-advanced-systems-hero-1200x600.jpg",
     heroImageAlt: "Advanced fly-by-wire aircraft systems and automation technology",
 
     programIntro: {
       subtitle: "ENTERPRISE SOLUTIONS. UNLIMITED GROWTH.",
-      description: "You've built a serious aviation training operation. The Fly by Wire program is designed for large flight schools with 20-40 aircraft who need enterprise-level marketing solutions to compete at the highest levels. You're not just running a flight school—you're running an aviation training empire.",
-      partnership: "Right Rudder becomes your dedicated marketing corporation, managing complex multi-platform campaigns across traditional and digital media. We'll help you capture market share across multiple states and establish your school as a national player in aviation training.",
-      expertise: "Fly by Wire clients get access to our most advanced marketing strategies, including TV advertising, premium streaming platforms, multiple video production sessions, and sophisticated lead nurturing systems that enterprise competitors use.",
-      commitment: "With dedicated account management, bi-weekly strategy calls, and access to all advertising platforms, you'll have the marketing infrastructure needed to reach $6M+ in annual revenue and beyond."
+      description: "You've built an aviation training empire with multiple locations and dozens of aircraft. At this enterprise level, your brand represents more than just flight training—you're setting industry standards. The Fly by Wire program ensures your marketing reflects the caliber and scope of your operation across all markets and platforms.",
+      partnership: "With Right Rudder as your dedicated marketing enterprise, you'll have comprehensive brand management that matches your business scale. We handle complex multi-platform campaigns, traditional advertising, and brand positioning that establishes your school as the definitive choice for serious aviation training.",
+      expertise: "Fly by Wire clients represent the aviation training industry's leaders. You'll get enterprise-level marketing including TV advertising, premium streaming platforms, comprehensive press relations, and the kind of strategic brand management that maintains market leadership and attracts the industry's best students and instructors.",
+      commitment: "You'll have dedicated C-level strategic support with bi-weekly reviews and comprehensive marketing management. This is the level of professional representation that aviation training empires require to maintain their position and continue growing."
     },
 
     expectations: {
       title: "UNDERSTANDING HOW IT WORKS",
       consulting: "Right Rudder Marketing's services are different from other marketing agencies you've used before. Entrepreneurs like you hire us as a consulting marketing service. This means our clients hire us for our expertise and expect us to lead the way.",
-      program: "The Fly by Wire program is designed for large flight school operations with 20-40 aircraft who need comprehensive, multi-state marketing strategies and enterprise-level advertising solutions.",
+      program: "Our marketing programs are designed specifically for businesses like yours. Based on your existing business and goals, there's only one growth program that will be a good fit. You won't be given a bunch of options, you'll be given the only option that we're willing to do because it's the one that will help you achieve your goals.",
       partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
       positioning: "The Fly by Wire Program is designed for major flight school operations with 20-40 aircraft who are ready to invest in enterprise-level marketing to dominate multiple markets and achieve $6M+ in annual revenue.",
@@ -617,21 +645,21 @@ export const pricingPackages = {
       icon: "🚀",
       services: [
         {
-          name: "Enterprise Business Deep-Dive",
+          name: "Enterprise Business deep dive",
           description: "Extended business analysis including multi-location assessment, competitive landscape analysis, and strategic positioning workshop. This comprehensive process typically takes 4-6 hours across multiple sessions.",
-          image: "/images/placeholders/enterprise-business-consultation-500x300.jpg",
+          image: "/src/assets/skydiving-during-sunset.webp",
           imageAlt: "Enterprise-level business consultation for large flight schools"
         },
         {
           name: "Advanced Systems Integration",
           description: "Complete integration of all marketing systems, CRM setup, multi-location tracking, and advanced analytics configuration across all platforms and locations.",
-          image: "/images/placeholders/advanced-systems-integration-500x300.jpg",
+          image: "/src/assets/keyboard-with-password-highlighted.webp",
           imageAlt: "Advanced marketing systems integration"
         },
         {
           name: "Bi-Weekly Strategic Checkpoints",
           description: "Bi-weekly calls for the first 60 days with dedicated account management to ensure all systems are performing optimally across all locations and campaigns.",
-          image: "/images/placeholders/bi-weekly-strategic-calls-500x300.jpg",
+          image: "/src/assets/pilot-in-front-of-single-engine-piston-aircraft-on-the-phone.jpg",
           imageAlt: "Strategic checkpoint calls with enterprise clients"
         }
       ]
@@ -644,56 +672,56 @@ export const pricingPackages = {
         {
           name: "Bi-Weekly Strategy Calls",
           description: "Dedicated bi-weekly strategy sessions with senior marketing strategists to optimize campaigns, analyze market opportunities, and plan expansion strategies.",
-          image: "/images/placeholders/bi-weekly-strategy-sessions-500x300.jpg",
+          image: "/src/assets/bi-weekly-strategy-sessions-500x300.jpg",
           imageAlt: "Bi-weekly strategic marketing sessions"
         },
         {
           name: "Enterprise Analytics & Intelligence",
           description: "Advanced business intelligence including market analysis, competitive intelligence, multi-location performance tracking, and strategic recommendations for expansion.",
-          image: "/images/placeholders/enterprise-analytics-intelligence-500x300.jpg",
+          image: "/src/assets/enterprise-analytics-intelligence-500x300.jpg",
           imageAlt: "Enterprise marketing analytics and business intelligence"
         }
       ]
     },
 
     newCustomerAcquisition: {
-      title: "NEW CUSTOMER ACQUISITION",
+      title: "NEW STUDENT ACQUISITION",
       icon: "👥",
       services: [
         {
           name: "Enterprise Website Platform",
           description: "Multi-location website with advanced functionality, student management portals, online scheduling, e-learning integration, and conversion optimization across all locations.",
-          image: "/images/placeholders/enterprise-website-platform-500x300.jpg",
+          image: "/src/assets/enterprise-website-platform-500x300.jpg",
           imageAlt: "Enterprise flight school website platform"
         },
         {
           name: "High-Volume Content Production",
           description: "48 written content pieces annually (4 per month) including technical articles, industry analysis, thought leadership pieces, and location-specific content to dominate search results.",
-          image: "/images/placeholders/high-volume-content-production-500x300.jpg",
+          image: "/src/assets/high-volume-content-production-500x300.jpg",
           imageAlt: "High-volume aviation content production"
         },
         {
           name: "Multi-Platform Social Media",
           description: "Advanced social media management across all major platforms with location-specific content, community building, and social advertising campaigns.",
-          image: "/images/placeholders/multi-platform-social-media-500x300.jpg",
+          image: "/src/assets/multi-platform-social-media-500x300.jpg",
           imageAlt: "Multi-platform social media management"
         },
         {
           name: "Premium Advertising Platforms",
           description: "Access to premium advertising platforms including Hulu streaming, Bing search, Reddit communities, and traditional TV/radio advertising for maximum market penetration.",
-          image: "/images/placeholders/premium-advertising-platforms-500x300.jpg",
+          image: "/src/assets/premium-advertising-platforms-500x300.jpg",
           imageAlt: "Premium advertising across multiple platforms"
         },
         {
           name: "Bi-Annual Press Campaign",
           description: "Comprehensive press relations with up to 8 press releases annually, media relationship building, and industry event coverage to establish thought leadership.",
-          image: "/images/placeholders/bi-annual-press-campaigns-500x300.jpg",
+          image: "/src/assets/bi-annual-press-campaigns-500x300.jpg",
           imageAlt: "Comprehensive press relations campaigns"
         },
         {
           name: "Bi-Annual Video Production",
           description: "Two professional video production sessions annually, creating 6-10 finished videos for marketing campaigns, training materials, and promotional content.",
-          image: "/images/placeholders/bi-annual-video-production-500x300.jpg",
+          image: "/src/assets/bi-annual-video-production-500x300.jpg",
           imageAlt: "Bi-annual professional video production"
         }
       ]
@@ -744,37 +772,45 @@ export const pricingPackages = {
     videos: [
       {
         title: "Fly by Wire Program Overview",
-        placeholder: "/images/placeholders/fly-by-wire-program-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/fly-by-wire-program-video-thumbnail-600x400.jpg",
         description: "Enterprise marketing strategies for $6M+ flight schools"
       },
       {
         title: "Multi-Platform Advertising Success",
-        placeholder: "/images/placeholders/multi-platform-advertising-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/multi-platform-advertising-video-thumbnail-600x400.jpg",
         description: "How premium advertising platforms drive enterprise growth"
       },
       {
         title: "Case Study: Multi-Location Growth",
-        placeholder: "/images/placeholders/multi-location-growth-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/multi-location-growth-video-thumbnail-600x400.jpg",
         description: "Real results from our enterprise flight school clients"
       }
     ],
 
     faqs: [
       {
-        question: "What additional advertising platforms are included?",
-        answer: "Fly by Wire includes advertising on Hulu (streaming video), Bing (search), Reddit (community targeting), and even traditional TV advertising opportunities to maximize your reach across all demographics."
+        question: "How quickly will I see results?",
+        answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "How many videos do I get with 2 sessions?",
-        answer: "With 2 video production sessions, you'll typically receive 6-10 professional videos annually, ensuring fresh content for your marketing campaigns, website, and social media throughout the year."
+        question: "Why do you require a 1-year contract?",
+        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
-        question: "What's the difference in blog content quality?",
-        answer: "At 4 blogs per month, we dive deeper into technical topics, industry trends, and thought leadership content that positions your flight school as the premium choice for serious aviation training."
+        question: "What does the onboarding process include?",
+        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
       },
       {
-        question: "Is this suitable for multiple locations?",
-        answer: "Absolutely! Fly by Wire is perfect for multi-location flight schools. Each additional location is only $500/month and receives the full suite of local marketing optimizations."
+        question: "How do you measure the success of your marketing efforts?",
+        answer: "We track key performance indicators (KPIs) like website traffic, lead conversion rates, cost per lead, and student enrollment numbers, providing monthly reports to show progress."
+      },
+      {
+        question: "How do you handle ad budgets, and are they included in the pricing?",
+        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $3,000/month for Google Ads and $2,000/month for other platforms, however, we have seen the most success with budgets of $7,000+/month total"
+      },
+      {
+        question: "What's the cancellation policy if I'm not satisfied?",
+        answer: "We strive for your satisfaction. If you're not happy with our services, you can cancel after the initial 12 month term with a 30 day notice. We also do regular check ins to ensure we're meeting your expectations. If you're not satisfied, let's have a candid conversation with one another and come up with a plan to address any concerns."
       }
     ]
   },
@@ -793,21 +829,21 @@ export const pricingPackages = {
     additionalCompanies: "$1,500 one-time",
     additionalLocations: "$500/month",
 
-    heroImage: "/images/placeholders/supersonic-jet-systems-hero-1200x600.jpg",
+    heroImage: "/src/assets/supersonic-jet-systems-hero-1200x600.jpg",
     heroImageAlt: "Supersonic jet aircraft with advanced flight systems",
 
     programIntro: {
       subtitle: "ULTIMATE DOMINANCE. UNLIMITED POTENTIAL.",
-      description: "You've built an aviation training empire. The Supersonic program is our flagship solution for the largest flight schools with 40-70 aircraft who demand nothing less than total market dominance. You're not just competing—you're setting the standards that others follow.",
-      partnership: "Right Rudder becomes your comprehensive marketing enterprise, deploying every available strategy and platform to maintain your position as the undisputed leader in aviation training. We'll help you capture market share across multiple regions and establish your brand as the gold standard.",
-      expertise: "Supersonic clients get unlimited access to our most sophisticated marketing strategies, including unlimited press releases, multiple video productions, comprehensive multi-media campaigns, and dedicated C-level strategic support.",
-      commitment: "With weekly strategic sessions, dedicated account management, and unlimited marketing resources, you'll have everything needed to achieve $10M+ in annual revenue and maintain your position as the market leader."
+      description: "You've built the kind of aviation training empire that defines the industry. With dozens of aircraft across multiple locations, your brand represents the pinnacle of flight training excellence. The Supersonic program ensures your marketing presence matches your industry leadership and maintains the premium positioning you've earned.",
+      partnership: "With Right Rudder as your comprehensive marketing enterprise, you'll have unlimited resources dedicated to maintaining your industry leadership. We deploy every available strategy and platform not just to promote your school, but to reinforce your position as the aviation training standard that defines excellence in the industry.",
+      expertise: "Supersonic clients represent the aviation training industry's absolute leaders. You'll have unlimited access to our most sophisticated strategies including comprehensive press relations, multiple professional video productions, C-level strategic support, and the kind of brand management that maintains industry dominance.",
+      commitment: "You'll have weekly C-level strategic sessions, dedicated senior account management, and unlimited marketing resources. This is the level of comprehensive brand management that aviation training empires require to maintain their leadership position and industry reputation."
     },
 
     expectations: {
       title: "UNDERSTANDING HOW IT WORKS",
       consulting: "Right Rudder Marketing's services are different from other marketing agencies you've used before. Entrepreneurs like you hire us as a consulting marketing service. This means our clients hire us for our expertise and expect us to lead the way.",
-      program: "The Supersonic program is designed for aviation training enterprises with 40-70 aircraft who need unlimited marketing resources and strategic support to maintain market leadership and achieve $10M+ revenue.",
+      program: "Our marketing programs are designed specifically for businesses like yours. Based on your existing business and goals, there's only one growth program that will be a good fit. You won't be given a bunch of options, you'll be given the only option that we're willing to do because it's the one that will help you achieve your goals.",
       partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
       positioning: "The Supersonic Program is designed for aviation training empires with 40-70 aircraft who require unlimited marketing resources, strategic C-level support, and comprehensive market dominance strategies.",
@@ -821,19 +857,19 @@ export const pricingPackages = {
         {
           name: "C-Level Strategic Planning",
           description: "Executive-level strategic planning sessions with our senior leadership team, including market analysis, competitive positioning, and long-term growth strategy development. This comprehensive process spans 6-8 hours across multiple executive sessions.",
-          image: "/images/placeholders/c-level-strategic-planning-500x300.jpg",
+          image: "/src/assets/c-level-strategic-planning-500x300.jpg",
           imageAlt: "Executive-level strategic planning sessions"
         },
         {
           name: "Enterprise Systems Architecture",
           description: "Complete marketing infrastructure setup including advanced CRM configuration, multi-location tracking, enterprise analytics, and integration with existing business systems.",
-          image: "/images/placeholders/enterprise-systems-architecture-500x300.jpg",
+          image: "/src/assets/enterprise-systems-architecture-500x300.jpg",
           imageAlt: "Enterprise marketing systems architecture"
         },
         {
           name: "Dedicated Account Management",
           description: "Assignment of dedicated senior account management team with weekly touchpoints for the first 60 days to ensure optimal performance across all marketing initiatives.",
-          image: "/images/placeholders/dedicated-account-management-500x300.jpg",
+          image: "/src/assets/dedicated-account-management-500x300.jpg",
           imageAlt: "Dedicated senior account management team"
         }
       ]
@@ -846,56 +882,56 @@ export const pricingPackages = {
         {
           name: "Weekly Strategy Sessions",
           description: "Weekly strategy sessions with C-level marketing executives to optimize campaigns, identify new opportunities, and maintain competitive advantage in all markets.",
-          image: "/images/placeholders/weekly-strategy-sessions-500x300.jpg",
+          image: "/src/assets/weekly-strategy-sessions-500x300.jpg",
           imageAlt: "Weekly executive strategy sessions"
         },
         {
           name: "Market Intelligence & Competitive Analysis",
           description: "Comprehensive market intelligence including competitive analysis, industry trend monitoring, regulatory impact assessment, and strategic recommendations for market expansion.",
-          image: "/images/placeholders/market-intelligence-analysis-500x300.jpg",
+          image: "/src/assets/market-intelligence-analysis-500x300.jpg",
           imageAlt: "Market intelligence and competitive analysis"
         }
       ]
     },
 
     newCustomerAcquisition: {
-      title: "NEW CUSTOMER ACQUISITION",
+      title: "NEW STUDENT ACQUISITION",
       icon: "👥",
       services: [
         {
           name: "Flagship Website & Digital Ecosystem",
           description: "Industry-leading website with advanced functionality, multi-location management, student lifecycle management, e-learning platforms, and conversion optimization across all touchpoints.",
-          image: "/images/placeholders/flagship-website-ecosystem-500x300.jpg",
+          image: "/src/assets/flagship-website-ecosystem-500x300.jpg",
           imageAlt: "Flagship flight school website and digital ecosystem"
         },
         {
           name: "Premium Content Studio",
           description: "60 written content pieces annually (5 per month) including thought leadership articles, industry analysis, technical publications, and market insights that establish your school as the industry authority.",
-          image: "/images/placeholders/premium-content-studio-500x300.jpg",
+          image: "/src/assets/premium-content-studio-500x300.jpg",
           imageAlt: "Premium aviation content studio production"
         },
         {
           name: "Comprehensive Digital Presence",
           description: "Advanced social media management across all platforms with dedicated community management, influencer partnerships, and thought leadership positioning.",
-          image: "/images/placeholders/comprehensive-digital-presence-500x300.jpg",
+          image: "/src/assets/comprehensive-digital-presence-500x300.jpg",
           imageAlt: "Comprehensive digital presence management"
         },
         {
           name: "Unlimited Advertising Platforms",
           description: "Access to all available advertising platforms including premium streaming, search, social, display, traditional media, and emerging platforms for maximum market penetration.",
-          image: "/images/placeholders/unlimited-advertising-platforms-500x300.jpg",
+          image: "/src/assets/unlimited-advertising-platforms-500x300.jpg",
           imageAlt: "Unlimited advertising platform access"
         },
         {
           name: "Unlimited Press Relations",
           description: "Unlimited press releases (recommended monthly) with dedicated PR management, media relationship building, industry event coverage, and thought leadership positioning.",
-          image: "/images/placeholders/unlimited-press-relations-500x300.jpg",
+          image: "/src/assets/unlimited-press-relations-500x300.jpg",
           imageAlt: "Unlimited press relations and media coverage"
         },
         {
           name: "Triple Video Production",
           description: "Three professional video production sessions annually, creating 9-15 finished videos for comprehensive marketing campaigns, training materials, and thought leadership content.",
-          image: "/images/placeholders/triple-video-production-500x300.jpg",
+          image: "/src/assets/triple-video-production-500x300.jpg",
           imageAlt: "Triple annual video production sessions"
         }
       ]
@@ -946,42 +982,50 @@ export const pricingPackages = {
     videos: [
       {
         title: "Supersonic Program Overview",
-        placeholder: "/images/placeholders/supersonic-program-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/supersonic-program-video-thumbnail-600x400.jpg",
         description: "Ultimate marketing solutions for $10M+ aviation empires"
       },
       {
         title: "Market Dominance Strategies",
-        placeholder: "/images/placeholders/market-dominance-strategies-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/market-dominance-strategies-video-thumbnail-600x400.jpg",
         description: "How industry leaders maintain their competitive advantage"
       },
       {
         title: "Enterprise Success Stories",
-        placeholder: "/images/placeholders/enterprise-success-stories-video-thumbnail-600x400.jpg", 
+        placeholder: "/src/assets/enterprise-success-stories-video-thumbnail-600x400.jpg", 
         description: "Real results from our largest flight school clients"
       },
       {
         title: "Future of Aviation Training Marketing",
-        placeholder: "/images/placeholders/future-aviation-marketing-video-thumbnail-600x400.jpg",
+        placeholder: "/src/assets/future-aviation-marketing-video-thumbnail-600x400.jpg",
         description: "Emerging trends and technologies in flight school marketing"
       }
     ],
 
     faqs: [
       {
-        question: "What does 'unlimited press releases' mean?",
-        answer: "You can request as many press releases as needed (we recommend monthly). Perfect for announcing new programs, partnerships, achievements, regulatory updates, or major milestones in your flight school's growth."
+        question: "How quickly will I see results?",
+        answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
-        question: "How do you handle marketing for 40+ aircraft?",
-        answer: "With a fleet this size, we implement enterprise-level strategies including advanced audience segmentation, premium content creation, comprehensive competitor analysis, and dedicated account management."
+        question: "Why do you require a 1-year contract?",
+        answer: "Marketing takes time to show results. A 1-year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
       },
       {
-        question: "What's included in 3 video production sessions?",
-        answer: "Three annual sessions typically produce 9-15 professional videos, including program overviews, instructor spotlights, student testimonials, facility tours, and seasonal campaign content."
+        question: "What does the onboarding process include?",
+        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
       },
       {
-        question: "Is there a higher tier than Supersonic?",
-        answer: "Supersonic is our flagship program, but for flight school networks or unique enterprise needs, we create custom packages. Contact us to discuss your specific requirements and goals."
+        question: "How do you measure the success of your marketing efforts?",
+        answer: "We track key performance indicators (KPIs) like website traffic, lead conversion rates, cost per lead, and student enrollment numbers, providing monthly reports to show progress."
+      },
+      {
+        question: "How do you handle ad budgets, and are they included in the pricing?",
+        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $4,500/month for Google Ads and $4,000/month for other platforms, however, we have seen the most success with budgets of $12,000+/month total"
+      },
+      {
+        question: "What's the cancellation policy if I'm not satisfied?",
+        answer: "We strive for your satisfaction. If you're not happy with our services, you can cancel after the initial 12 month term with a 30 day notice. We also do regular check ins to ensure we're meeting your expectations. If you're not satisfied, let's have a candid conversation with one another and come up with a plan to address any concerns."
       }
     ]
   }
