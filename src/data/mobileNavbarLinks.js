@@ -93,6 +93,11 @@ export const mobileNavbarLinks = [
     name: "Our Blog",
     link: "/blog",
   },
+  {
+    name: "Pricing",
+    link: "/pricing",
+    submenu: [],
+  },
 
   {
     name: "About",
