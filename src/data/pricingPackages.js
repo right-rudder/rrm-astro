@@ -11,7 +11,7 @@ export const pricingPackages = {
     onboardingFee: "$1,500",
     totalAnnual: "$33,780",
     additionalCompanies: "$1,500 one-time",
-    additionalLocations: "$200/month",
+    additionalLocations: "$200/month per location",
     
     heroImage: "/src/assets/piper-cub-flying-stick-and-rudder.jpg",
     heroImageAlt: "Basic aircraft instrument panel with traditional stick and rudder controls",
@@ -31,7 +31,7 @@ export const pricingPackages = {
       partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
       positioning: "The Stick & Rudder Program is designed for smaller businesses, exclusively those with an annual revenue under half a million, who are looking to establish a solid foundation for their digital marketing efforts. The program is structured to ensure that these businesses can attract the right leads, build their online presence, and set a trajectory for scalable growth.",
-      growth: "IMPORTANT: Your business will be expected to grow beyond one million in annual revenue quickly, typically within 12 months. After your business revenue has reached half a million in annual revenue, you will be required to upgrade to the next program, the Six Pack Program."
+      growth: "IMPORTANT: Your business will be expected to grow beyond half a million dollars in annual revenue quickly, typically within 12 months. After your business revenue has reached half a million in annual revenue, you will be required to upgrade to a larger program to continue your growth trajectory beyond half a million."
     },
 
     onboarding: {
@@ -40,20 +40,20 @@ export const pricingPackages = {
       services: [
         {
           name: "Business Deep-Dive",
-          description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 3 to 4 hours.",
-          image: "/images/placeholders/business-meeting-consultation-500x300.jpg",
+          description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 1 to 3 hours.",
+          image: "/src/assets/skydiving-during-sunset.webp",
           imageAlt: "Professional business consultation meeting with flight school owners"
         },
         {
           name: "Assets, Access, & Systems",
           description: "We'll guide you through getting access to your online accounts, sharing your media and assets, and introducing you to the tracking systems we use to make sure your marketing program is a hit!",
-          image: "/images/placeholders/systems-setup-dashboard-500x300.jpg",
+          image: "/src/assets/keyboard-with-password-highlighted.webp",
           imageAlt: "Marketing dashboard and system setup process"
         },
         {
           name: "Weekly Checkpoints", 
           description: "We'll have a weekly call with your team in the first 30 days to make sure everything's going smoothly. We'll chat about the initial wins and review the punch list items.",
-          image: "/images/placeholders/weekly-team-call-500x300.jpg",
+          image: "/src/assets/pilot-in-front-of-single-engine-piston-aircraft-on-the-phone.jpg",
           imageAlt: "Weekly checkpoint call with marketing team"
         }
       ]
@@ -66,13 +66,13 @@ export const pricingPackages = {
         {
           name: "Monthly Review Calls",
           description: "After onboarding, our teams will monthly call to discuss progress, brainstorm ideas, gather thoughts, and provide pointers. We'll also update the marketing plan to keep things fresh.",
-          image: "/images/placeholders/monthly-review-analytics-500x300.jpg",
+          image: "/src/assets/woman-on-video-call-trying-to-grow-her-flight-school-aviation-business.webp",
           imageAlt: "Monthly marketing review with analytics and growth charts"
         },
         {
           name: "Reporting & Data Tracking",
-          description: "We've got you covered with data tracking and progress reporting for all our programs. You'll get access and some basic training during your onboarding call.",
-          image: "/images/placeholders/data-tracking-reports-500x300.jpg", 
+          description: "We've got you covered with data tracking and progress reporting for all our programs. You'll get access and some basic training during the first couple months of working with us.",
+          image: "/src/assets/colorful-pie-chart-of-a-successful-flight-school.webp", 
           imageAlt: "Marketing data tracking and reporting dashboard"
         }
       ]
@@ -85,37 +85,37 @@ export const pricingPackages = {
         {
           name: "Website Development",
           description: "We'll build your website for free! We'll make sure it's technically sound, looks great, and has all the important pages you need. Plus, as a Stick & Rudder client, you'll get at least 8 core pages for your launch.",
-          image: "/images/placeholders/flight-school-website-mockup-500x300.jpg",
+          image: "/src/assets/html-code-in-an-ide-editor.webp",
           imageAlt: "Professional flight school website design mockup"
         },
         {
           name: "Ongoing Content",
-          description: "The Stick & Rudder program has at least 12 written content pieces every year. Our team plans and creates these core and supporting content pieces to focus on services, service areas, case studies, education, and culture. Each content piece will be posted on our website.",
-          image: "/images/placeholders/content-creation-blog-500x300.jpg",
+          description: "The Stick & Rudder program has at least 12 written content pieces every year. Our team plans and creates these core and supporting content pieces to focus on services, service areas, case studies, education, and culture. Each content piece will be posted on our website and Google Business.",
+          image: "/src/assets/woman-writing-in-journal.webp",
           imageAlt: "Aviation content creation and blog writing process"
         },
         {
-          name: "Google My Business",
-          description: "GMB is a fantastic tool for flight schools to attract new students. It's a free tool that helps you manage your online presence across Google, including Search and Maps. Right Rudder will help you find areas where you can improve your Google profile and boost your business's visibility in organic search rankings.",
-          image: "/images/placeholders/google-my-business-optimization-500x300.jpg",
+          name: "Pay Per Click Advertising",
+          description: "We'll set up and manage your Google Ads account to drive qualified leads to your flight school. Our team will handle keyword research, ad creation, bid management, and ongoing optimization to ensure you're getting the best return on your ad spend.",
+          image: "/src/assets/macbook-air-on-google-search.webp",
           imageAlt: "Google My Business profile optimization for flight schools"
         },
         {
           name: "Customer Review Building", 
           description: "Every quarter, we'll reach out to your recently serviced customers to ask for their feedback and encourage them to leave a review on your Google Business Profile. Positive reviews are super important for boosting your rankings and visibility on Google Maps, and they can also help you turn leads into customers.",
-          image: "/images/placeholders/customer-reviews-testimonials-500x300.jpg",
+          image: "/src/assets/woman-on-phone-leaving-a-flight-school-a-5-star-google-review.webp",
           imageAlt: "Flight school customer reviews and testimonials"
         },
         {
           name: "Local Business Listings",
           description: "To make your business more visible on organic search results and to improve your Google Business Profile ranking on maps, all major local listings on websites will be kept up to date.",
-          image: "/images/placeholders/local-business-listings-500x300.jpg",
+          image: "/src/assets/pointing-to-a-map-online-phone-mobile.webp",
           imageAlt: "Local business directory listings for flight schools"
         },
         {
           name: "Capture Lost Leads",
-          description: "We'll set up systems to nurture previous leads that didn't convert into students. This includes email and text follow ups and retargeting ads to keep your flight school top of mind and encourage them to reconsider your services.",
-          image: "/images/placeholders/local-business-listings-500x300.jpg",
+          description: "We'll set up systems to nurture previous leads that didn't convert into students. This includes email and text follow ups (if you are adding-on the Flight School CRM) and retargeting ads to keep your flight school top of mind and encourage them to reconsider your services.",
+          image: "/src/assets/customer-journey-map.webp",
           imageAlt: "Local business directory listings for flight schools"
         }
       ]
@@ -141,7 +141,7 @@ export const pricingPackages = {
       },
       {
         name: "Video Production",
-        price: "$5,000/session", 
+        price: "$5,000 + travel fees", 
         description: "Professional video production for marketing campaigns, testimonials, and promotional content"
       },
       {
@@ -151,7 +151,7 @@ export const pricingPackages = {
       },
       {
         name: "Custom Software Development",
-        price: "$1,000–$5,000",
+        price: "$5,000-$10,000",
         description: "Custom software solutions tailored to your flight school's specific operational needs"
       }
     ],
@@ -174,8 +174,8 @@ export const pricingPackages = {
 
     faqs: [
       {
-        question: "What's included in Google My Business management?",
-        answer: "We optimize your Google My Business profile, manage reviews, post updates, and ensure your flight school appears in local search results to attract nearby students."
+        question: "How quickly will I see results?",
+        answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
       },
       {
         question: "Why do you require a 1-year contract?",
@@ -183,12 +183,21 @@ export const pricingPackages = {
       },
       {
         question: "What does the onboarding process include?",
-        answer: "Our $1,500 onboarding includes a comprehensive business deep-dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
+        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep-dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
       },
       {
-        question: "How quickly will I see results?",
-        answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
-      }
+        question: "How do you measure the success of your marketing efforts?",
+        answer: "We track key performance indicators (KPIs) like website traffic, lead conversion rates, cost per lead, and student enrollment numbers, providing monthly reports to show progress."
+      },
+      {
+        question: "How do you handle ad budgets, and are they included in the pricing?",
+        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $800/month for Google Ads, however, we have seen the most success with budgets of $1,500+/month"
+      },
+      {
+        question: "What's the cancellation policy if I'm not satisfied?",
+        answer: "We strive for your satisfaction. If you're not happy with our services, you can cancel after the initial 12 month term with a 30 day notice. We also do regular check ins to ensure we're meeting your expectations. If you're not satisfied, let's have a candid conversation with one another and come up with a plan to address any concerns."
+      },
+      
     ]
   },
 
