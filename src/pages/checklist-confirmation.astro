@@ -4,13 +4,17 @@ import Header from "../components/Header.astro";
 import { FaCheckCircle } from "react-icons/fa";
 import { PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 const headerData = {
-  headerH1: `Thank you for contacting<br><span class="text-accent">Right Rudder Marketing</span>`,
+  headerH1: `Thank you for downloading our checklist`,
   imagePath: "/src/assets/right-rudder-marketing-team.jpeg",
   imageAlt: "Right Rudder Marketing Team",
 };
 ---
 
-<BaseLayout siteTitle="Checklist Confirmation | Right Rudder Marketing">
+<BaseLayout
+  siteTitle="Thank you for downloading our checklist | Right Rudder Marketing"
+  keywords="checklist confirmation, marketing checklist, digital marketing checklist, Right Rudder Marketing"
+  siteDescription="Thank you for downloading our checklist. We will review your message and get back to you within 1-5 business days. Call us at (123) 456-7890 or email us at info@rightruddermarketing.com."
+>
   <Header data={headerData} />
 
   <section class="py-16 px-5 bg-white">

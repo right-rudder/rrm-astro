@@ -17,11 +17,11 @@ const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[data.imagePath])
   throw new Error(
-    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
   );
 ---
 
@@ -69,11 +69,11 @@ if (!images[data.imagePath])
           <p class="text-base font-semibold leading-7 text-primary-700">
             {data.upperHeading}
           </p>
-          <h1
+          <h2
             class="mt-0 mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl capitalize"
           >
             {data.heading}
-          </h1>
+          </h2>
           {
             data.descriptions.map((desc) => (
               <p class="mt-2 text-xl leading-7 text-gray-700" set:html={desc} />

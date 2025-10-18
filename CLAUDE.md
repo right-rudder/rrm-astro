@@ -9,7 +9,7 @@ The following npm scripts are available for development and deployment:
 ```bash
 npm run dev          # Start development server with Astro
 npm run build        # Production build
-npm run build:preview # Build with draft content included  
+npm run build:preview # Build with draft content included
 npm run preview      # Preview production build locally
 npm run seo:audit    # Run comprehensive SEO audit
 npm run seo:links    # Check internal/external link health
@@ -23,33 +23,38 @@ Always run `npm run seo:optimize` before deploying to ensure SEO compliance and 
 This is an **Astro-based marketing website** for Right Rudder Marketing, a digital marketing agency specializing in flight schools. The architecture follows Astro's island-based approach with selective hydration.
 
 ### Technology Stack
-- **Framework**: Astro 5.8+ with React integration  
+
+- **Framework**: Astro 5.8+ with React integration
 - **Styling**: Tailwind CSS with custom aviation-themed design system
 - **Content**: MDX with structured collections (blog, webinars, podcasts, crew)
-- **Performance**: Partytown for third-party scripts, optimized image handling
+- **Performance**: Optimized image handling
 - **SEO**: Custom SEO utilities, automated link checking, meta optimization
 
 ### Key Directories
 
 **`/src/content/`** - Content collections with strict TypeScript schemas:
+
 - `blog/` - Marketing articles and aviation industry content
 - `webinars/` - Event-based content with registration integration
 - `podcasts/` - Audio content with guest metadata
 - `crew/` - Team member profiles with social links
 
 **`/src/components/`** - Reusable Astro components:
+
 - Header/Footer components with aviation branding
 - Content components (BlogCard, CaseStudies, Testimonials)
 - Interactive React components (Navbar, forms, counters)
 - SEO components (Schema, LocalBusiness markup)
 
 **`/src/pages/`** - File-based routing with nested structures:
+
 - Dynamic routes for content collections `[...slug].astro`
 - Service pages (SEO, web design, Google Ads)
 - Resource pages with lead magnets
 - Client case study pages
 
 **`/src/data/`** - Configuration and content data:
+
 - Client logos, testimonials, navigation
 - Service-specific content and pricing
 - Contact forms and landing page data
@@ -57,6 +62,7 @@ This is an **Astro-based marketing website** for Right Rudder Marketing, a digit
 ### Content Management
 
 Content uses Astro's type-safe frontmatter with enhanced SEO fields:
+
 - All content requires: title, description, author, category, tags, pubDate
 - Optional: metaTitle, metaDescription, heroImage, status (draft/published)
 - Blog posts support FAQ schema and related posts
@@ -65,15 +71,17 @@ Content uses Astro's type-safe frontmatter with enhanced SEO fields:
 ### SEO & Performance System
 
 The site includes a comprehensive SEO system:
+
 - **Link Checker**: Validates all internal/external links (`src/utils/linkChecker.js`)
 - **Meta Optimizer**: Ensures optimal meta descriptions (`src/utils/metaDescriptionOptimizer.ts`)
 - **SEO Audit**: Automated checks via `npm run seo:audit`
 - **Schema Markup**: LocalBusiness, Article, and FAQ structured data
-- **Performance**: Image optimization, CSS code-splitting, Partytown integration
+- **Performance**: Image optimization, CSS code-splitting
 
 ### Design System
 
 Tailwind configuration includes:
+
 - Custom color palette (primary blues, accent orange, aviation-themed)
 - Typography using Merriweather and Noto Sans Lao Variable
 - Custom animations (slow-zoom, fade variants)

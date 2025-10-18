@@ -1,0 +1,100 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import MagazinePost from "../../layouts/MagazinePost.astro";
+import "../../styles/markdown.css";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  generateBreadcrumbSchema,
+} from "../../utils/seo";
+
+export async function getStaticPaths() {
+  const articles = await getCollection("magazine");
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: article,
+  }));
+}
+type Props = CollectionEntry<"magazine">;
+
+const article = Astro.props;
+const { Content } = await article.render();
+
+// Enhanced SEO keyword generation for individual magazine articles
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 3),
+    ...(article.data.category ? [article.data.category] : []),
+    "flight deck magazine",
+    "aviation marketing magazine",
+  ],
+  [], // No location targeting for magazine articles
+  [
+    ...(article.data.tags || []),
+    "flight school marketing",
+    "aviation business insights",
+    "pilot training magazine",
+  ]
+);
+
+// Breadcrumb navigation for magazine articles
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Flight Deck Magazine", url: "/flight-deck" },
+  { name: article.data.title, url: `/flight-deck/${article.slug}` },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+
+// Add Article schema for magazine content
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: article.data.title,
+  description: article.data.description,
+  image: article.data.heroImage || article.data.ogImage,
+  datePublished: article.data.pubDate.toISOString(),
+  dateModified: (
+    article.data.updatedDate || article.data.pubDate
+  ).toISOString(),
+  author: {
+    "@type": "Person",
+    name: article.data.author,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Right Rudder Marketing",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rightruddermarketing.com/logo.png",
+    },
+  },
+  isPartOf: {
+    "@type": "Periodical",
+    name: "Flight Deck Magazine",
+    issn: "Flight Deck Digital Magazine",
+  },
+  keywords: article.data.keywords || article.data.tags?.join(", "),
+};
+
+// Add issue information if available
+if (article.data.issue) {
+  articleSchema["issueNumber"] = article.data.issue;
+}
+---
+
+<MagazinePost
+  {...article.data}
+  enhancedKeywords={enhancedKeywords}
+  breadcrumbSchema={breadcrumbSchema}
+>
+  <!-- Additional Article schema for magazine content -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(articleSchema)}
+    slot="head"
+  />
+
+  <!-- Article content -->
+  <Content />
+</MagazinePost>

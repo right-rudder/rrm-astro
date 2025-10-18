@@ -6,16 +6,16 @@ const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[data.imagePath])
   throw new Error(
-    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
   );
 ---
 
 <header
-  class="relative isolate overflow-hidden min-h-[90vh] text-white flex items-center justify-center"
+  class="relative isolate overflow-hidden min-h-[90vh] py-20 lg:py-0 text-white flex items-center justify-center"
 >
   <Image
     src={images[data.imagePath]()}
@@ -30,10 +30,10 @@ if (!images[data.imagePath])
   </div>
   {
     (data.headerH1 || data.headerH2) && (
-      <div class="text-muted-100 text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-16 justify-center">
+      <div class="text-muted-100 text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full pt-12 lg:pt-16 justify-center">
         {data.headerH1 && (
           <h1
-            class="text-4xl px-6 lg:px-24 md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal animate-fade-from-top"
+            class="max-w-4xl text-4xl px-6 lg:px-24 md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal animate-fade-from-top"
             set:html={data.headerH1}
           />
         )}

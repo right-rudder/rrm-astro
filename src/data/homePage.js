@@ -2,7 +2,7 @@ const homePage = {
   data: {
     //SEO Header Stuff
     pageTitle:
-      "Flight School Marketing Agency | Grow Student Enrollment 3X-10X | Right Rudder Marketing",
+      "Double Your Student Enrollments in 6 Months | Flight School Marketing Agency | Grow Student Enrollment 3X-10X | Right Rudder Marketing",
     pageDescription:
       "Leading flight school marketing agency helping aviation businesses scale student enrollment 3X-10X. Specializing in flight school SEO, PPC, website design & lead generation. Trusted by 20+ flight schools nationwide. Get more discovery flights, increase pilot training enrollment, and grow your aviation business with proven digital marketing strategies designed specifically for flight training academies.",
     pageKeywords:
@@ -14,7 +14,7 @@ const homePage = {
       imagePath: "/src/assets/flying-over-right-rudder-marketing.jpeg",
       imageAlt:
         "fly over Right Rudder Marketing - Digital Marketing Agency for Flight Schools",
-      headerH1: `Grow and Scale</br><span class="text-accent-300">Your Aviation Business</span>`,
+      headerH1: `Double your student</br><span class="text-accent-300">enrollments in 6 months</span>`,
       paragraph:
         "Enroll more pilots at your flight school and leave a lasting impact to the next generation of future aviators while saving time and increasing profits and revenue.",
       buttons: [
@@ -29,6 +29,16 @@ const homePage = {
           primary: false,
         },
       ],
+    },
+
+    eventDetails: {
+      upperHeading: "Next Mastermind Session",
+      heading: "Mark Your Calendar",
+      date: "September 30, 2025",
+      time: "1:00 PM Central Time",
+      description:
+        "Reserve your spot now for our upcoming Flight School Mastermind session where we'll dive deep into proven strategies for sustainable growth.",
+      ctaText: "Reserve your spot now",
     },
 
     memberOf: {
@@ -80,6 +90,23 @@ const homePage = {
             "Right Rudder Marketing has been a game-changer for our business",
           result: `<strong class="font-black">Sun City Aviation Academy</strong> has seen remarkable transformation over their 2-year partnership with Right Rudder Marketing. After meeting Tim Jedrek at FSANA, they've tripled their monthly leads and established themselves as the premier flight school in the greater Phoenix area. Their strategic focus on professional pilot development has significantly increased student lifetime value.`,
           link: "/our-flight-schools/sun-city",
+          metric1: {
+            label: "Monthly Leads",
+            value: "3X",
+          },
+          metric2: {
+            label: "Partnership",
+            value: "2+ Years",
+          },
+        },
+        {
+          client: "Universal Flight Training",
+          imagePath: "/src/assets/sun-city-white-text-logo.webp",
+          imageAlt: "Universal Flight Training logo",
+          youtubeId: "OywZjggj1RE",
+          quote: `If it wasn't for these guys, I'm not really sure where we'd be right now. And that's the truth.`,
+          result: `<strong class="font-black">Universal Flight Training</strong> partnership with Right Rudder Marketing exemplifies how specialized marketing expertise can transform flight school operations and growth trajectories. Through systematic implementation of aviation-focused digital marketing strategies, UFT evolved from struggling with market visibility to establishing market leadership in their region.`,
+          link: "/our-flight-schools/uft",
           metric1: {
             label: "Monthly Leads",
             value: "3X",
@@ -215,6 +242,15 @@ const homePage = {
       quotes: [
         {
           quote:
+            "The partnership with Right Rudder Marketing has been successful, leading to an increase in leads and a positive impact on Hawkins Flight Academy’s growth. The website redesign and CRM system are particularly appreciated.",
+          extract:
+            "I would recommend other flight schools consider working with RRM",
+          client: "Hawkins Flight Academy",
+          author: "Mike H.",
+        },
+
+        {
+          quote:
             "The company I work for has been working with Right Rudder Marketing for a while now and I can tell you they have helped us a lot! Our website improved and we started getting more and more inquiries. If you have a flight school you definitely have to work with them!",
           extract: "You definitely have to work with Right Rudder Marketing!",
           client: "Sun City Aviation Academy",
@@ -228,14 +264,6 @@ const homePage = {
             "I can not say enough good things about Right Rudder Marketing!",
           client: "Ideal Aviation",
           author: "Kim N.",
-        },
-
-        {
-          quote:
-            "Our flight school has been working with Right Rudder for almost a year now. They are an incredible group of people. We are so happy with them. Absolutely 100% if you have a flight school and need to work with them!",
-          extract: "We are so happy with them",
-          client: "Pitcairn Flight Academy",
-          author: "Marisa D.",
         },
       ],
     },
@@ -359,7 +387,7 @@ const homePage = {
         },
         {
           name: `GMB Optimization<p class="font-normal text-accent-200 text-sm">(Google My Business)</p>`,
-          link: "/how-to-optimize-google-my-business-2024",
+          link: "/how-to-optimize-google-my-business-2025",
           icon: "M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z",
           description:
             "Optimize your Google My Business profile to increase visibility and attract more students.",

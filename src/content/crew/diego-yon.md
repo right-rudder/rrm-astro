@@ -7,7 +7,7 @@ social:
   github: "https://github.com/diegoyon"
   website: "https://diego-yon.netlify.app/"
 image: /authors/diego-yon.webp
-status: active
+status: former
 seniority: 3
 ---
 

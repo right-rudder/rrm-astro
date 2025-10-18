@@ -4,14 +4,70 @@ export const SITE_TITLE =
 
 // CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
-  "Right Rudder Marketing is the leading digital marketing agency specializing in flight school growth. We help aviation businesses scale with proven SEO, PPC, website design, and lead generation strategies. Partner with us to double, triple, or 10X your student enrollment. Trusted by 20+ flight schools across America.";
+  "Right Rudder Marketing is a pilot owned digital agency specializing in helping flight schools grow by increasing student enrollments and profits. We combine aviation expertise with proven marketing strategies to deliver exclusive, measurable results that help flight schools dominate their markets.";
 
 //SEO tip -> keyword + city combinations for local SEO
 //Geographic keyword variations for major aviation markets
 //Core aviation keywords: flight training, pilot school, aviation academy, flight lessons, instrument training, commercial pilot, private pilot, CFI training, discovery flights
-// CHANGE default keywords -> comprehensive aviation marketing keyword strategy
-export const KEYWORDS =
-  "flight school marketing, aviation marketing agency, flight school SEO, pilot training marketing, aviation digital marketing, flight school website design, flight school PPC, aviation advertising, flight school lead generation, student pilot enrollment, flight training marketing, aviation business growth, flight school social media, pilot school marketing, aviation SEO services, flight instructor marketing, discovery flight marketing, commercial pilot training, private pilot lessons, instrument rating training, CFI training programs, aviation academy marketing, flight school branding, pilot recruitment, aviation content marketing, flight school automation, student retention strategies, aviation industry marketing, flight training enrollment, pilot education marketing, St. Louis flight school marketing, Missouri aviation marketing";
+// Enhanced default keywords incorporating comprehensive 17-category strategy
+export const KEYWORDS = [
+  // Market-Segment Keywords
+  "flight school marketing agency",
+  "aviation training center marketing",
+  "pilot school digital marketing",
+
+  // Customer-Defining Keywords
+  "flight school owner marketing services",
+  "flight school director advertising solutions",
+  "pilot training center growth marketing",
+
+  // Product-Defining Keywords
+  "social media management for flight schools",
+  "SEO services for pilot training centers",
+  "PPC advertising for aviation schools",
+  "flight school website design services",
+
+  // Service-Specific Keywords
+  "Google Ads flight school marketing",
+  "Facebook Ads for pilot schools",
+  "flight school CRM integration",
+
+  // Short-Tail Keywords
+  "flight school marketing",
+  "pilot training marketing",
+  "aviation advertising",
+  "aviation marketing",
+
+  // Long-Tail Keywords
+  "how to increase flight school enrollment",
+  "best digital marketing for flight schools",
+  "flight school website design and SEO tips",
+  "Double your student enrollments in 6 months",
+
+  // Transactional Keywords
+  "hire flight school marketing agency",
+  "schedule flight school marketing audit",
+  "request pilot school SEO proposal",
+
+  // Locational Keywords
+  "flight school marketing USA",
+  "pilot school marketing California",
+  "aviation school advertising Texas",
+  "St. Louis flight school marketing",
+  "Missouri aviation marketing",
+
+  // Traditional Keywords (maintaining existing focus)
+  "flight school SEO",
+  "aviation digital marketing",
+  "flight training marketing",
+  "student pilot enrollment",
+  "aviation business growth",
+  "discovery flight marketing",
+  "pilot recruitment",
+  "aviation content marketing",
+  "flight instructor marketing",
+  "aviation industry marketing",
+].join(", ");
 
 export const IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
 

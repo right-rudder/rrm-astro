@@ -12,7 +12,9 @@ import {
   TARGET_LOCATIONS,
   generateFAQSchema,
   generateBreadcrumbSchema,
+  KEYWORD_STRATEGY,
 } from "../utils/seo";
+import RelatedContent from "../components/RelatedContent.astro";
 
 const { data } = marketingSystem;
 
@@ -27,6 +29,26 @@ const enhancedKeywords = generateKeywords(
   ],
   TARGET_LOCATIONS.slice(0, 12), // Use top 12 target locations
   [
+    // Joined keywords from KEYWORD_STRATEGY
+    ...KEYWORD_STRATEGY.marketSegment.slice(0, 3), // Top 3 market segments
+    ...KEYWORD_STRATEGY.customerDefining.slice(0, 3), // Top 3 customer defining keywords
+    ...KEYWORD_STRATEGY.productDefining.slice(0, 3), // Top 3 service offerings
+    ...KEYWORD_STRATEGY.serviceSpecific.slice(0, 3), // Top 3 service-specific keywords
+    ...KEYWORD_STRATEGY.competitor.slice(0, 3), // Top 3 competitor keywords
+    ...KEYWORD_STRATEGY.longTail.slice(0, 3), // Top 3 long-tail keywords
+    ...KEYWORD_STRATEGY.midTail.slice(0, 3), // Top 3 mid-tail keywords
+    ...KEYWORD_STRATEGY.shortTail.slice(0, 3), // Top 3 short-tail keywords
+    ...KEYWORD_STRATEGY.intentTargeting.transactional.slice(0, 3), // Top 3 transactional keywords
+    ...KEYWORD_STRATEGY.intentTargeting.informational.slice(0, 3), // Top 3 informational keywords
+    ...KEYWORD_STRATEGY.intentTargeting.navigational.slice(0, 3), // Top 3 navigational keywords
+    ...KEYWORD_STRATEGY.lsi.slice(0, 3), // Top 3 LSI keywords
+    ...KEYWORD_STRATEGY.phraseMatch.slice(0, 3), // Top 3 phrase-match keywords
+    ...KEYWORD_STRATEGY.exactMatch.slice(0, 3), // Top 3 exact-match keywords
+    ...KEYWORD_STRATEGY.relatedVertical.slice(0, 3), // Top 3 related vertical keywords
+    ...KEYWORD_STRATEGY.locational.slice(0, 3), // Top 3 locational keywords
+    ...KEYWORD_STRATEGY.evergreen, // Evergreen keywords
+    ...KEYWORD_STRATEGY.informational.slice(0, 3), // Top 3 informational keywords
+    ...KEYWORD_STRATEGY.transactional.slice(0, 3), // Top 3 transactional keywords
     "flight school CRM",
     "aviation lead generation",
     "pilot training marketing",
@@ -96,4 +118,16 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
   <ContentSteps data={data.marketingSteps} />
 
   <FlyWithUsCTA data={data.flyWithUsCTA} />
+
+  <!-- Enhanced internal linking for better SEO -->
+  <RelatedContent
+    currentPage={Astro.url.pathname}
+    category="Marketing System"
+    keywords={[
+      "flight school services",
+      "marketing tools",
+      "free guides",
+      "aviation marketing",
+    ]}
+  />
 </BaseLayout>

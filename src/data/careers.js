@@ -1,7 +1,7 @@
 const careersVars = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Careers | Right Rudder Marketing",
+    pageTitle: "Careers - Join Our Winning Team at Right Rudder Marketing",
     pageDescription:
       "Right Rudder Marketing is on track to become a multi-million dollar digital marketing agency. Be a part of our winning team. If you want to be a part of the action, contact us and let's start a conversation. We are a digital marketing agency that specializes in helping flight schools grow and scale their businesses.",
     pageKeywords:
@@ -11,7 +11,7 @@ const careersVars = {
     header: {
       imagePath: "/src/assets/cedric-dhaenens-38P6fEx_phs-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Have Fun with Us.</br><span class="text-accent-300">Let's Fly Together.</span>`,
+      headerH1: `Careers - Join Our Winning Team at Right Rudder Marketing`,
       paragraph:
         "We are growing fast and are on track to become a multi-million dollar digital marketing agency. If you want to be a part of the action, contact us and let's start a conversation.",
       buttons: [
@@ -32,39 +32,18 @@ const careersVars = {
       listHeading: "Current Job Openings",
       list: [
         {
-          title: "Operations Director",
-          link: "https://docs.google.com/document/d/1bUpnTetv-cE8GdGW80gs-sNGa5HGYBV6RqhRWR8z-lU/edit?usp=drive_link",
+          title: "Flight School Success Coordinator",
+          link: "https://docs.google.com/document/d/1VDtJ9aOLLYW79Vnv7m0h2ZIs2EpolBih4sx6vTGgDOg/edit?usp=sharing",
           mailto: "info@rightruddermarketing.com",
           description:
-            "Right Rudder Marketing is seeking a talented Operations Director to join our team. This position requires someone with proven leadership skills, excellent interpersonal skills, and a fast-paced learner who can work in the US CENTRAL TIME ZONE.",
-        },
-        {
-          title: "Key Account Manager",
-          link: "https://docs.google.com/document/d/1KGRvAU7SU7YlI58Rj9Q-hnM-Rpf6d0NTVKvZUXNzzPA/edit?usp=sharing",
-          mailto: "info@rightruddermarketing.com",
-          description:
-            "Right Rudder Marketing is seeking a talented Key Account Manager to join our team. This position requires someone with leadership skills, excellent interpersonal skills, and a fast-paced learner with a coachable personality who can work in the CENTRAL TIME ZONE.",
+            "As our new Flight School Success Coordinator, you’ll be the first one people talk to when they’re considering becoming a pilot helping flight schools across the country train more student pilots. This dynamic role blends customer service representative duties handling phone inquiries for our clients’ call center, with client service coordinator responsibilities nurturing relationships to drive retention and growth. You’ll support our flight schools by collaborating with our sales and marketing teams to ensure client success, all while embodying the aviation spirit that defines Right Rudder Marketing.",
         },
         {
           title: "Web Developer",
-          link: "https://docs.google.com/document/d/1KGRvAU7SU7YlI58Rj9Q-hnM-Rpf6d0NTVKvZUXNzzPA/edit?usp=sharing",
+          link: "https://docs.google.com/document/d/1ZFIaQICaR3OjYyndyh1uCGkJb7rZTw79emmtsM8lwk8/edit?usp=sharing",
           mailto: "info@rightruddermarketing.com",
           description:
-            "Right Rudder Marketing is seeking a talented Web Developer to join our team. This position requires someone with leadership skills, excellent interpersonal skills, and a fast-paced learner with a coachable personality who can work in the CENTRAL TIME ZONE.",
-        },
-        {
-          title: "Aviation Writer",
-          link: "https://docs.google.com/document/d/1ekl85o7pEiIf09ZRAtC7ybJt2F81VbfkXMIgSDQeaJY/edit?usp=sharing",
-          mailto: "info@rightruddermarketing.com",
-          description:
-            "Right Rudder Marketing is seeking a talented Aviation Writer to join our team. This position requires someone with leadership skills, excellent interpersonal skills, and a fast-paced learner with a coachable personality who can work in the CENTRAL TIME ZONE.",
-        },
-        {
-          title: "Marketing Assistant",
-          link: "https://docs.google.com/document/d/1Z1Ezb-0evDtHoUFiYU4QR22w1zpG3k9ciiL1BQwAZqU/edit?usp=sharing",
-          mailto: "info@rightruddermarketing.com",
-          description:
-            "Right Rudder Marketing is seeking a talented Marketing Assistant to join our team. This position requires someone with leadership skills, excellent interpersonal skills, and a fast-paced learner with a coachable personality who can work in the CENTRAL TIME ZONE.",
+            "Right Rudder Marketing is seeking a talented Web Developer to join our team. This is a remote, full-time role (9AM–5PM Central Time). We’re looking for someone with strong technical skills, a collaborative mindset, and the ability to thrive in a fast-paced, detail-oriented environment.To be eligible for this role, you must have a bachelor's degree in computer science or a related field; or hands-on experience with web development and design.",
         },
       ],
     },

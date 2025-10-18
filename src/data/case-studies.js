@@ -11,7 +11,7 @@ const caseStudies = {
     header: {
       imagePath: "/src/assets/andrew-ruiz--ajZ_Xzeqe4-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `<span class="text-accent-300">Game Changing Results</span></br>for Flight Schools`,
+      headerH1: `Case Studies - Game Changing Results for Flight Schools`,
       paragraph:
         "Marketing for flight schools is our specialty. We have a proven track record of getting flight schools more leads, more students, and more revenue. See how we've helped our clients take their business out of the clouds and into VFR.",
       buttons: [
@@ -41,6 +41,23 @@ const caseStudies = {
             "Right Rudder Marketing has been a game-changer for our business",
           result: `<strong class="font-black">Sun City Aviation Academy</strong> has seen remarkable transformation over their 2-year partnership with Right Rudder Marketing. After meeting Tim Jedrek at FSANA, they've tripled their monthly leads and established themselves as the premier flight school in the greater Phoenix area. Their strategic focus on professional pilot development has significantly increased student lifetime value.`,
           link: "/our-flight-schools/sun-city",
+          metric1: {
+            label: "Monthly Leads",
+            value: "3X",
+          },
+          metric2: {
+            label: "Partnership",
+            value: "2+ Years",
+          },
+        },
+        {
+          client: "Universal Flight Training",
+          imagePath: "/src/assets/sun-city-white-text-logo.webp",
+          imageAlt: "Universal Flight Training logo",
+          youtubeId: "OywZjggj1RE",
+          quote: `If it wasn't for these guys, I'm not really sure where we'd be right now. And that's the truth.`,
+          result: `<strong class="font-black">Universal Flight Training</strong> partnership with Right Rudder Marketing exemplifies how specialized marketing expertise can transform flight school operations and growth trajectories. Through systematic implementation of aviation-focused digital marketing strategies, UFT evolved from struggling with market visibility to establishing market leadership in their region.`,
+          link: "/our-flight-schools/uft",
           metric1: {
             label: "Monthly Leads",
             value: "3X",

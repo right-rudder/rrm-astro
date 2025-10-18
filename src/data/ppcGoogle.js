@@ -11,7 +11,7 @@ const ppcGoogle = {
     header: {
       imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `Running Effective </br><span class="text-accent-300">Google Ads</span>`,
+      headerH1: `Google Ads - Pay Per Click Advertising for Flight Schools`,
       paragraph:
         "How to use Google Ads to market your flight school. We create and manage pay-per-click advertising campaigns that drive traffic, leads, and sales to your business.",
       buttons: [

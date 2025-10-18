@@ -140,9 +140,145 @@ const crew = defineCollection({
   }),
 });
 
+const locationsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    state: z.string(),
+    stateCode: z.string(), // CA, TX, FL, etc.
+    city: z.string().optional(),
+    type: z.enum(["state", "city", "metro"]).default("state"),
+    population: z.number().optional(),
+    majorAirports: z.array(z.string()),
+    flightSchoolCount: z.number().optional(),
+    marketCharacteristics: z.array(z.string()),
+    competitiveLevel: z
+      .enum(["low", "medium", "medium-high", "high", "very-high"])
+      .default("medium"),
+    // SEO fields
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    keywords: z.string().optional(),
+    canonicalUrl: z.string().optional(),
+    // Geographic data
+    coordinates: z.object({
+      lat: z.number(),
+      lng: z.number(),
+    }),
+    timezone: z.string(),
+    // Market data
+    averageIncomeLevel: z
+      .enum(["low", "medium", "medium-high", "high"])
+      .default("medium"),
+    aviationJobMarket: z
+      .enum(["weak", "moderate", "growing", "strong", "very-strong"])
+      .default("moderate"),
+    weatherAdvantages: z.array(z.string()).optional(),
+    nearbyMilitaryBases: z.array(z.string()).optional(),
+    // Related content
+    relatedLocations: z.array(z.string()).optional(),
+    featuredFlightSchools: z.array(z.string()).optional(),
+    // Status
+    status: z.enum(["draft", "published"]).default("published"),
+    priority: z.number().default(1), // 1-5, with 1 being highest priority
+  }),
+});
+
+const magazineCollection = defineCollection({
+  type: "content",
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    author: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    keywords: z.string().optional(),
+    readingTime: z.number().optional(),
+    // Transform string to Date object
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: z.string().optional(),
+    type: z.enum(["magazine"]).default("magazine").optional(),
+    status: z.enum(["draft", "published"]).default("published").optional(),
+    // Enhanced SEO fields
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    canonicalUrl: z.string().optional(),
+    noindex: z.boolean().default(false),
+    ogImage: z.string().optional(),
+    twitterCard: z
+      .enum(["summary", "summary_large_image", "app", "player"])
+      .default("summary_large_image")
+      .optional(),
+    relatedPosts: z.array(z.string()).optional(),
+    // Magazine specific fields
+    issue: z.string().optional(), // e.g., "Vol 1, Issue 3"
+    issueDate: z.coerce.date().optional(),
+    featured: z.boolean().default(false),
+    faq: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        }),
+      )
+      .optional(),
+  }),
+});
+
+const magazineIssuesCollection = defineCollection({
+  type: "content",
+  // Type-check frontmatter using a schema for Magazine Issues
+  schema: z.object({
+    // Issue identification
+    issueNumber: z.number(), // Sequential issue number: 1, 2, 3, etc.
+    volume: z.number(), // Volume number
+    title: z.string(), // Issue title (e.g., "Aviation Marketing in 2025")
+    description: z.string(), // Issue description/summary
+    coverImage: z.string(), // Issue cover image
+    // Publication details
+    pubDate: z.coerce.date(), // When the issue was published
+    updatedDate: z.coerce.date().optional(),
+    status: z.enum(["draft", "published"]).default("published").optional(),
+    // Articles in this issue (array of article objects)
+    articles: z.array(
+      z.object({
+        title: z.string(),
+        slug: z.string(), // Slug for the article URL
+        author: z.string(),
+        category: z.string(),
+        description: z.string(),
+        excerpt: z.string().optional(), // Short excerpt for issue page
+        readingTime: z.number().optional(),
+        featured: z.boolean().default(false),
+        heroImage: z.string().optional(),
+      }),
+    ),
+    // Issue metadata
+    editor: z.string().optional(), // Issue editor
+    contributors: z.array(z.string()).optional(), // All contributors
+    keywords: z.string().optional(),
+    // Enhanced SEO fields
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    canonicalUrl: z.string().optional(),
+    noindex: z.boolean().default(false),
+    ogImage: z.string().optional(),
+    // Special sections
+    editorNote: z.string().optional(), // Editor's note for this issue
+    highlights: z.array(z.string()).optional(), // Key highlights of this issue
+    theme: z.string().optional(), // Issue theme (e.g., "SEO Special", "Growth Strategies")
+  }),
+});
+
 export const collections = {
   blog: blogCollection,
   webinars: webinarCollection,
   podcasts: podcastCollection,
   crew: crew,
+  locations: locationsCollection,
+  magazine: magazineCollection,
+  "magazine-issues": magazineIssuesCollection,
 };

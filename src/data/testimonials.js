@@ -1,7 +1,7 @@
 const testimonials = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Testimonials | Right Rudder Marketing",
+    pageTitle: "Testimonials - Our Clients Love Our Work",
     pageDescription:
       "Read what our clients have to say about working with Right Rudder Marketing. We are a team of pilots that know the flight training industry. Because if your marketing team doesn't know what the pilot training experience is like, then how can they be successful for you?",
     pageKeywords:
@@ -11,7 +11,7 @@ const testimonials = {
     header: {
       imagePath: "/src/assets/daniel-shapiro-LL1BGeyj1vs-unsplash.jpg",
       imageAlt: "Right Rudder Marketing team member flying a plane",
-      headerH1: `Our Clients </br><span class="text-accent-300">Love Our Work</span>`,
+      headerH1: `Testimonials - Our Clients Love Our Work`,
       paragraph:
         "We are a team of pilots that know the flight training industry. We have helped many flight schools and aviation companies grow their business. See what our clients have to say about working with us.",
       buttons: [
@@ -32,6 +32,15 @@ const testimonials = {
       upperHeading: "Testimonials",
       heading: `What Our <strong class="text-primary-800">Clients Are Saying</strong>`,
       quotes: [
+        {
+          quote:
+            "The partnership with Right Rudder Marketing has been successful, leading to an increase in leads and a positive impact on Hawkins Flight Academy’s growth. The website redesign and CRM system are particularly appreciated.",
+          extract:
+            "I would recommend other flight schools consider working with RRM",
+          client: "Hawkins Flight Academy",
+          author: "Mike H.",
+        },
+
         {
           quote:
             "The company I work for has been working with Right Rudder Marketing for a while now and I can tell you they have helped us a lot! Our website improved and we started getting more and more inquiries. If you have a flight school you definitely have to work with them!",

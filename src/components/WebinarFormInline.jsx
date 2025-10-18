@@ -80,7 +80,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
   };
 
   return (
-    <div className="bg-white p-6 text-center max-w-sm lg:max-w-full lg:w-full mx-0">
+    <div className="bg-white p-6 lg:p-12 text-center max-w-sm lg:max-w-full lg:w-full mx-0">
       {!formSubmitted ? (
         <>
           <h2 className="text-4xl font-bold mb-4">Sign Up Here</h2>
@@ -101,7 +101,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="text"
                   id="first-name"
                   name="first-name"
-                  className="w-full p-2 border border-gray-400 rounded-sm"
+                  className="p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>
@@ -113,7 +113,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="text"
                   id="last-name"
                   name="last-name"
-                  className="w-full p-2 border border-gray-400 rounded-sm"
+                  className="p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>
@@ -127,7 +127,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full p-2 border border-gray-400 rounded-sm"
+                  className="p-2 border border-gray-400 rounded-sm"
                   required
                   value={phoneValue}
                   onChange={handlePhoneChange}
@@ -144,7 +144,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full p-2 border border-gray-400 rounded-sm"
+                  className="p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>
@@ -161,7 +161,7 @@ const WebinarFormInline = ({ webhook, apiKey }) => {
                   type="text"
                   id="business-name"
                   name="business-name"
-                  className="w-full p-2 border border-gray-400 rounded-sm"
+                  className="p-2 border border-gray-400 rounded-sm"
                   required
                 />
               </div>

@@ -90,7 +90,7 @@ Here are some angles to consider:
 Your UVP should be front and center in all of your marketing:
 
 - The **headline** on your homepage
-- The **bio** on your [Google Business Profile](/how-to-optimize-google-my-business-2024)
+- The **bio** on your [Google Business Profile](/how-to-optimize-google-my-business-2025)
 - Every **Instagram caption** and YouTube video intro
 - Your **discovery flight script**
 - Your **email follow-ups** and lead nurturing

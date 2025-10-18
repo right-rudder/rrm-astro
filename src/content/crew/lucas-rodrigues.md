@@ -1,7 +1,7 @@
 ---
 name: Lucas Rodrigues
 slug: lucas-rodrigues
-title: Web Developer
+title: Ops Manager
 social:
   linkedin: "https://www.linkedin.com/in/lucascostarodrigues/"
   github: "https://github.com/lucas-crodrigues"

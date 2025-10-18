@@ -1,7 +1,8 @@
 const investorsVars = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Investors | Right Rudder Marketing",
+    pageTitle:
+      "We have a plan. Let's grow and scale Together | Investors | Right Rudder Marketing",
     pageDescription:
       "Invest in Right Rudder Marketing and help us grow the aviation industry. We are a digital marketing agency that specializes in helping flight schools grow and scale their businesses.",
     pageKeywords:
@@ -11,7 +12,7 @@ const investorsVars = {
     header: {
       imagePath: "/src/assets/flying-over-st-simons-island-ga.jpeg",
       imageAlt: "Right Rudder Marketing team on the runway",
-      headerH1: `We have a plan.</br><span class="text-accent-300">Let's grow and scale</span></br>Together.`,
+      headerH1: `We have a plan. Let's grow and scale Together.`,
       paragraph:
         "Right Rudder Marketing is on track to become a multi-million dollar digital marketing agency. If you want to be a part of the action, contact us and let's start a conversation. We are a digital marketing agency that specializes in helping flight schools grow and scale their businesses.",
       buttons: [

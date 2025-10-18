@@ -4,26 +4,149 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 
-import partytown from "@astrojs/partytown";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://rightruddermarketing.com/",
   integrations: [
     mdx(),
     sitemap({
-      filter: (page) => !page.includes("/admin/") && !page.includes("/draft/"),
-      changefreq: "weekly",
-      priority: 0.7,
-      lastmod: new Date(),
+      // Advanced filtering for better SEO
+      filter: (page) => {
+        // Exclude admin, draft, and confirmation pages
+        if (
+          page.includes("/admin/") ||
+          page.includes("/draft/") ||
+          page.includes("-confirmation")
+        ) {
+          return false;
+        }
+
+        // Exclude utility pages that shouldn't be indexed
+        const excludePages = [
+          "/404",
+          "/500",
+          "/terms-of-service",
+          "/privacy-policy",
+          "/thank-you",
+        ];
+
+        return !excludePages.some((exclude) => page.includes(exclude));
+      },
+
+      // Dynamic priority and change frequency based on page type
+      serialize(item) {
+        const url = new URL(item.url);
+        const path = url.pathname;
+
+        // Homepage - highest priority
+        if (path === "/") {
+          return {
+            ...item,
+            changefreq: "daily",
+            priority: 1.0,
+            lastmod: new Date(),
+          };
+        }
+
+        // Core service pages - very high priority
+        if (
+          path.includes("/flight-school-seo") ||
+          path.includes("/flight-school-website-design") ||
+          path.includes("/marketing-system") ||
+          path.includes("/contact")
+        ) {
+          return {
+            ...item,
+            changefreq: "weekly",
+            priority: 0.9,
+            lastmod: new Date(),
+          };
+        }
+
+        // Blog posts - high priority, frequent updates
+        if (path.includes("/blog/") && path !== "/blog/") {
+          return {
+            ...item,
+            changefreq: "monthly",
+            priority: 0.8,
+            lastmod: new Date(),
+          };
+        }
+
+        // Blog index and main sections
+        if (path === "/blog/" || path === "/about/" || path === "/resources/") {
+          return {
+            ...item,
+            changefreq: "weekly",
+            priority: 0.8,
+            lastmod: new Date(),
+          };
+        }
+
+        // Podcasts and webinars - medium-high priority
+        if (path.includes("/podcasts/") || path.includes("/webinars/")) {
+          return {
+            ...item,
+            changefreq: "monthly",
+            priority: 0.7,
+            lastmod: new Date(),
+          };
+        }
+
+        // Location and team pages - medium priority
+        if (path.includes("/locations/") || path.includes("/flight-crew/")) {
+          return {
+            ...item,
+            changefreq: "monthly",
+            priority: 0.6,
+            lastmod: new Date(),
+          };
+        }
+
+        // Client case studies - medium priority
+        if (path.includes("/our-flight-schools/")) {
+          return {
+            ...item,
+            changefreq: "monthly",
+            priority: 0.6,
+            lastmod: new Date(),
+          };
+        }
+
+        // Resource pages - medium priority
+        if (path.includes("/resources/")) {
+          return {
+            ...item,
+            changefreq: "monthly",
+            priority: 0.5,
+            lastmod: new Date(),
+          };
+        }
+
+        // Default for other pages
+        return {
+          ...item,
+          changefreq: "monthly",
+          priority: 0.4,
+          lastmod: new Date(),
+        };
+      },
+
+      // Add custom entries for dynamic content
+      customPages: [
+        "https://rightruddermarketing.com/blog",
+        "https://rightruddermarketing.com/podcasts",
+        "https://rightruddermarketing.com/webinars",
+        "https://rightruddermarketing.com/locations",
+        "https://rightruddermarketing.com/our-flight-schools",
+        "https://rightruddermarketing.com/about/who-we-are",
+        "https://rightruddermarketing.com/about/partners-affiliates",
+        "https://rightruddermarketing.com/resources/flight-school-keywords",
+        "https://rightruddermarketing.com/resources/marketing-checklist",
+      ],
     }),
     tailwind(),
     react(),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-      },
-    }),
   ],
 
   // Performance optimizations

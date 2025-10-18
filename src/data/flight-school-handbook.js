@@ -208,6 +208,23 @@ const flightSchoolHandbook = {
           },
         },
         {
+          client: "Universal Flight Training",
+          imagePath: "/src/assets/sun-city-white-text-logo.webp",
+          imageAlt: "Universal Flight Training logo",
+          youtubeId: "OywZjggj1RE",
+          quote: `If it wasn't for these guys, I'm not really sure where we'd be right now. And that's the truth.`,
+          result: `<strong class="font-black">Universal Flight Training</strong> partnership with Right Rudder Marketing exemplifies how specialized marketing expertise can transform flight school operations and growth trajectories. Through systematic implementation of aviation-focused digital marketing strategies, UFT evolved from struggling with market visibility to establishing market leadership in their region.`,
+          link: "/our-flight-schools/uft",
+          metric1: {
+            label: "Monthly Leads",
+            value: "3X",
+          },
+          metric2: {
+            label: "Partnership",
+            value: "2+ Years",
+          },
+        },
+        {
           client: "Summit Flight Academy",
           imagePath: "/src/assets/SFA-logo.webp",
           imageAlt: "Summit Flight Academy logo",
