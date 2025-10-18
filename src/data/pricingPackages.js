@@ -13,13 +13,13 @@ export const pricingPackages = {
     additionalCompanies: "$1,500 one-time",
     additionalLocations: "$200/month",
     
-    heroImage: "/images/placeholders/stick-rudder-cockpit-hero-1200x600.jpg",
+    heroImage: "/src/assets/piper-cub-flying-stick-and-rudder.jpg",
     heroImageAlt: "Basic aircraft instrument panel with traditional stick and rudder controls",
     
     programIntro: {
       subtitle: "YOUR GROWTH. OUR GUIDANCE & EXECUTION.",
-      description: "With all the responsibilities of managing employees, operations, and business development, how much time do you really have for your marketing? It's a crucial part of business growth, right? Effective marketing involves planning, strategizing, execution, data analysis, and optimization. There are so many tools, platforms, and conflicting information out there. It feels like you need a full-time team of experts to handle it all. Well, you're not wrong. We get it.",
-      partnership: "But with Right Rudder as your marketing partner, you can put this critical growth aspect on our shoulders. We'll take care of your new customer acquisition, upselling, and attracting talent. You'll finally have the time to focus on other important areas of your business.",
+      description: "With all the responsibilities of managing employees, operations, and business development, how much time do you really have for your marketing? It's a crucial part of business growth. Effective marketing involves planning, strategizing, execution, data analysis, and optimization. There are so many tools, platforms, and conflicting information out there. It feels like you need a full time team of experts to handle it all.",
+      partnership: "With Right Rudder as your marketing partner, you can put this critical growth aspect on our shoulders. We'll help you dial in your systems for new customer acquisition, upselling, and attracting talent. You'll finally have the time to focus on other important areas of your business.",
       expertise: "Every successful entrepreneur surrounds themselves with experts to guide and handle their most complex areas of business. And when it comes to marketing, you'll have the industry's top marketing team behind you. We've got the numbers and experience in the flight school and aviation space.",
       commitment: "You'll have a direct line to our team and meet with us monthly to make sure your marketing is on track to meet your business goals. You'll also get feedback and insights to make sure you're absorbing the growth properly."
     },
@@ -108,7 +108,13 @@ export const pricingPackages = {
         },
         {
           name: "Local Business Listings",
-          description: "To make your business more visible on organic search results and to improve your Google Business Profile ranking on maps, all major local listings on websites will be kept up-to-date.",
+          description: "To make your business more visible on organic search results and to improve your Google Business Profile ranking on maps, all major local listings on websites will be kept up to date.",
+          image: "/images/placeholders/local-business-listings-500x300.jpg",
+          imageAlt: "Local business directory listings for flight schools"
+        },
+        {
+          name: "Capture Lost Leads",
+          description: "We'll set up systems to nurture previous leads that didn't convert into students. This includes email and text follow ups and retargeting ads to keep your flight school top of mind and encourage them to reconsider your services.",
           image: "/images/placeholders/local-business-listings-500x300.jpg",
           imageAlt: "Local business directory listings for flight schools"
         }
@@ -200,7 +206,7 @@ export const pricingPackages = {
     additionalCompanies: "$1,500 one-time",
     additionalLocations: "$300/month",
 
-    heroImage: "/images/placeholders/six-pack-instruments-hero-1200x600.jpg",
+    heroImage: "/src/assets/cessna-172-sunset-flight-school-marketing.webp",
     heroImageAlt: "Classic six-pack flight instrument panel configuration",
 
     programIntro: {
