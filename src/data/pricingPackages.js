@@ -10,7 +10,7 @@ export const pricingPackages = {
     totalMonthly: "$2,690",
     onboardingFee: "$1,500",
     totalAnnual: "$33,780",
-    additionalCompanies: "$1,500 one-time",
+    additionalCompanies: "$1,500 One time",
     additionalLocations: "$200/month per location",
     
     heroImage: "/src/assets/piper-cub-flying-stick-and-rudder.jpg",
@@ -212,7 +212,7 @@ export const pricingPackages = {
     totalMonthly: "$4,090",
     onboardingFee: "$1,500",
     totalAnnual: "$50,580",
-    additionalCompanies: "$1,500 one-time",
+    additionalCompanies: "$1,500 One time",
     additionalLocations: "$300/month per location",
 
     heroImage: "/src/assets/cessna-172-sunset-flight-school-marketing.webp",
@@ -356,8 +356,13 @@ export const pricingPackages = {
       },
       {
         name: "Custom Software Development", 
-        price: "$1,000-$5,000",
+        price: "$5,000-$10,000",
         description: "Custom software solutions tailored to your flight school's specific operational needs"
+      },
+      {
+        name: "Additional Press Releases",
+        price: "$100/each",
+        description: "Professional press release writing and distribution beyond the included quarterly releases"
       }
     ],
 
@@ -414,9 +419,9 @@ export const pricingPackages = {
     googleAdBudget: "$2,000",
     otherPlatformBudget: "$1,000",
     totalMonthly: "$6,590",
-    onboardingFee: "$1,500",
-    totalAnnual: "$80,580",
-    additionalCompanies: "$1,500 one-time",
+    onboardingFee: "$2,500",
+    totalAnnual: "$81,580",
+    additionalCompanies: "$1,500 One time",
     additionalLocations: "$400/month",
 
     heroImage: "/src/assets/glass-cockpit-avionics-hero-1200x600.jpg",
@@ -437,7 +442,7 @@ export const pricingPackages = {
       partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
       positioning: "The Glass Cockpit Program is designed for serious flight school operations with 10-20 aircraft who are ready to invest in comprehensive marketing to dominate their regional market and achieve $3M+ in annual revenue.",
-      growth: "IMPORTANT: Glass Cockpit clients typically achieve 3-6 million in annual revenue within 24-36 months. Schools reaching $3M+ can upgrade to our Fly by Wire program for enterprise-level marketing solutions."
+      growth: "IMPORTANT: Your business will be expected to grow beyond three million dollars in annual revenue typically within 12-24 months. After your business revenue has reached three million in annual revenue, you will be required to upgrade to a larger program to continue your growth trajectory beyond $3M+."
     },
 
     onboarding: {
@@ -446,7 +451,7 @@ export const pricingPackages = {
       services: [
         {
           name: "Business deep dive",
-          description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 3 to 4 hours.",
+          description: "Right Rudder will host a team call to get to know your business inside out. We'll explore your brand, what makes you different, your service areas, what you offer, how you deliver, and more. This is a thorough call that usually takes 1 to 3 hours.",
           image: "/src/assets/skydiving-during-sunset.webp",
           imageAlt: "Professional business consultation meeting with flight school owners"
         },
@@ -490,7 +495,7 @@ export const pricingPackages = {
       services: [
         {
           name: "Premium Website Development",
-          description: "Professional website with advanced functionality, student portals, online scheduling, and conversion optimization. Glass Cockpit websites are designed to convert visitors into students at the highest rates possible.",
+          description: "Professional website with advanced functionality, student portals, online scheduling, and conversion optimization. Your website will be designed to convert visitors into students at the highest rates possible.",
           image: "/src/assets/html-code-in-an-ide-editor.webp",
           imageAlt: "Premium flight school website with advanced features"
         },
@@ -502,7 +507,7 @@ export const pricingPackages = {
         },
         {
           name: "Social Media Management",
-          description: "Full social media management across Facebook, Instagram, and LinkedIn with daily posting, community engagement, and social advertising to build brand awareness and attract students.",
+          description: "Full social media management across Facebook, Instagram, and LinkedIn with weekly posting, community engagement, and social advertising to build brand awareness and attract students.",
           image: "/src/assets/woman-on-video-call-trying-to-grow-her-flight-school-aviation-business.webp",
           imageAlt: "Social media management for flight schools"
         },
@@ -520,7 +525,7 @@ export const pricingPackages = {
         },
         {
           name: "Annual Video Production",
-          description: "One professional video production session annually, creating 3-5 finished videos for your website, social media, and advertising campaigns.",
+          description: "One professional video production session annually, creating 3-5 medium to long form videos and 10+ short form videos for your website, social media, and advertising campaigns. (Comes included with this program. Over $5000 value!)",
           image: "/src/assets/customer-journey-map.webp",
           imageAlt: "Professional video production for flight schools"
         }
@@ -541,41 +546,45 @@ export const pricingPackages = {
       "Content Creation (3 blogs per month)",
       "Press Releases (quarterly)",
       "Video Production (1 session annually)",
-      "Custom Software Development",
       "12-month minimum commitment"
     ],
 
     additionalServices: [
       {
         name: "Additional Video Sessions",
-        price: "$4,000/session",
+        price: "$5,000 + travel fees",
         description: "Additional professional video production sessions beyond the included annual session"
       },
       {
         name: "Premium Ad Platforms",
         price: "Contact for pricing",
-        description: "Access to additional advertising platforms like Hulu, Bing, Reddit, or traditional media (available in Fly by Wire tier)"
+        description: "Access to additional advertising platforms like Hulu, Bing, Reddit, or traditional media TV advertising"
+      },
+      {
+        name: "Additional Press Releases",
+        price: "$100/each",
+        description: "Professional press release writing and distribution beyond the included quarterly releases"
       }
     ],
 
     notAvailable: [
-      "Additional Advertising Platforms (Hulu, Bing, Reddit, TV) - Available in Fly by Wire",
-      "Multiple Annual Video Sessions - Available in Fly by Wire",
-      "Unlimited Press Releases - Available in Supersonic"
+      "Additional Advertising Platforms (Hulu, Bing, Reddit, TV)",
+      "Additional Video Sessions beyond the included session",
+      "Additional Press Releases beyond quarterly"
     ],
 
-    videos: [
-      {
-        title: "Glass Cockpit Program Overview",
-        placeholder: "/src/assets/glass-cockpit-program-video-thumbnail-600x400.jpg",
-        description: "Multi-platform marketing strategies to reach $3M revenue"
-      },
-      {
-        title: "Social Media Success Stories",
-        placeholder: "/src/assets/social-media-success-video-thumbnail-600x400.jpg",
-        description: "How flight schools use social media to attract students"
-      }
-    ],
+    // videos: [
+    //   {
+    //     title: "Glass Cockpit Program Overview",
+    //     placeholder: "/src/assets/glass-cockpit-program-video-thumbnail-600x400.jpg",
+    //     description: "Multi-platform marketing strategies to reach $3M revenue"
+    //   },
+    //   {
+    //     title: "Social Media Success Stories",
+    //     placeholder: "/src/assets/social-media-success-video-thumbnail-600x400.jpg",
+    //     description: "How flight schools use social media to attract students"
+    //   }
+    // ],
 
     faqs: [
       {
@@ -616,7 +625,7 @@ export const pricingPackages = {
     totalMonthly: "$10,590",
     onboardingFee: "$1,500",
     totalAnnual: "$128,580",
-    additionalCompanies: "$1,500 one-time",
+    additionalCompanies: "$1,500 One time",
     additionalLocations: "$500/month",
 
     heroImage: "/src/assets/fly-by-wire-advanced-systems-hero-1200x600.jpg",
@@ -769,23 +778,23 @@ export const pricingPackages = {
       "Three Annual Video Sessions - Available in Supersonic"
     ],
 
-    videos: [
-      {
-        title: "Fly by Wire Program Overview",
-        placeholder: "/src/assets/fly-by-wire-program-video-thumbnail-600x400.jpg",
-        description: "Enterprise marketing strategies for $6M+ flight schools"
-      },
-      {
-        title: "Multi-Platform Advertising Success",
-        placeholder: "/src/assets/multi-platform-advertising-video-thumbnail-600x400.jpg",
-        description: "How premium advertising platforms drive enterprise growth"
-      },
-      {
-        title: "Case Study: Multi-Location Growth",
-        placeholder: "/src/assets/multi-location-growth-video-thumbnail-600x400.jpg",
-        description: "Real results from our enterprise flight school clients"
-      }
-    ],
+    // videos: [
+    //   {
+    //     title: "Fly by Wire Program Overview",
+    //     placeholder: "/src/assets/fly-by-wire-program-video-thumbnail-600x400.jpg",
+    //     description: "Enterprise marketing strategies for $6M+ flight schools"
+    //   },
+    //   {
+    //     title: "Multi-Platform Advertising Success",
+    //     placeholder: "/src/assets/multi-platform-advertising-video-thumbnail-600x400.jpg",
+    //     description: "How premium advertising platforms drive enterprise growth"
+    //   },
+    //   {
+    //     title: "Case Study: Multi-Location Growth",
+    //     placeholder: "/src/assets/multi-location-growth-video-thumbnail-600x400.jpg",
+    //     description: "Real results from our enterprise flight school clients"
+    //   }
+    // ],
 
     faqs: [
       {
@@ -826,7 +835,7 @@ export const pricingPackages = {
     totalMonthly: "$16,800",
     onboardingFee: "$2,500",
     totalAnnual: "$204,100",
-    additionalCompanies: "$1,500 one-time",
+    additionalCompanies: "$1,500 One time",
     additionalLocations: "$500/month",
 
     heroImage: "/src/assets/supersonic-jet-systems-hero-1200x600.jpg",
