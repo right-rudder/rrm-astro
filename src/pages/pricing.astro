@@ -1,11 +1,15 @@
 ---
 import FunnelLayout from "../layouts/FunnelLayout.astro";
+import CaseStudiesVideo from "../components/CaseStudiesVideo.astro";
+import homePage from "../data/homePage"; // Import homepage data for case studies
 import PricingEstimator from "../components/PricingEstimator.jsx";
 import {
   generateKeywords,
   AVIATION_KEYWORDS,
   TARGET_LOCATIONS,
 } from "../utils/seo";
+
+const { data } = homePage; // Use homepage data for case studies
 
 // SEO keyword generation for pricing page
 const enhancedKeywords = generateKeywords(
@@ -118,24 +122,75 @@ const ctaContent = {
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- Intro -->
   <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Frequently Asked Questions</h2>
+      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Is This You?</h2>
       <div class="space-y-8">
-        <div>
-          <h3 class="text-xl font-semibold text-primary-dark mb-3">How accurate is the pricing estimator?</h3>
-          <p class="text-gray-700">This tool provides only an estimation based on our client data and your inputs. It's a helpful starting recommendation—final pricing may vary and will be confirmed during your consultation.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-primary-dark mb-3">What's included in each package?</h3>
-          <p class="text-gray-700">Each package includes a comprehensive set of marketing services tailored to your flight school's size. This includes website development, SEO, ads management, content creation, and more. Specific services vary by package level.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-primary-dark mb-3">What makes Right Rudder Marketing different?</h3>
-          <p class="text-gray-700">We're pilot-owned and aviation-focused, meaning we understand the flight training industry from the inside out. Our marketing strategies are specifically designed for flight schools, not generic businesses.</p>
-        </div>
+        <p class="text-gray-700 mb-6">
+        Are you a flight school owner <span class="font-bold">stuck in the soup?</span> You're saturated and under an avalanche of tasks and responsibilities.  You're managing your instructors and your fleet, you're ensuring every student is safe and making progress in their pilot training.<p> 
+          
+        <p class="text-gray-700 mb-6">You're busy giving the gift of flight to the next generation of aviators, meanwhile what people see online from the outside doesn't properly convey your vision and how you want your aviation business represented.
+        </p>
+        
+        <p class="text-gray-700 mb-6">
+        Your outdated website and what people see online <span class="font-bold">fails to capture the heart and soul of your flight school</span>. 
+        </p>
+
+        <p class="text-gray-700 mb-6">
+        Maybe you've tried to fix it. You've spent <span class="font-bold">sleepless nights</span> tinkering with ads, posting on social media, or even hiring a so called “marketing expert” who promised the world but delivered <span class="font-bold italic">nothing</span>. They didn't get aviation. They didn't get <span class="font-bold underline">YOU</span>. Their generic, cookie cutter strategies left you with a lighter wallet and <span class="font-bold">zero results</span>. </p>
+
+        <p class="text-gray-700 mb-6">
+        Or maybe you've tried building it house and doing it yourself.  You hired someone to go on your payroll and you notice that they can <span class="italic">only do so much.</span> </p>
+        
+        <p class="text-gray-700 mb-6">
+        You're <span class="italic">frustrated</span>, <span class="italic">overwhelmed</span>, and wondering if you'll ever break through the clouds and back into VMC. <span class="font-bold">If this sounds like your story, you're not alone—and you're about to find the solution.</span>
+        </p>
       </div>
+
+      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12 mt-12">What Should You Do Next?</h2>
+      <div class="space-y-8">
+        <h3 class="text-2xl font-semibold text-primary-dark mb-6">Stop Bleeding Time and Money</h3>
+        <p class="text-gray-700 mb-6">
+        You could keep throwing money at <span class="font-bold">useless ads</span> or waste hours you don't have on DIY marketing that doesn't move the needle. Building an in house marketing team is expensive and time consuming, and finding people who truly understand aviation marketing is like finding a needle in a haystack.</p>
+        
+        <p class="text-gray-700 mb-6">
+        Have you tried working with a local generalist marketing agency with no aviation experience?  It's like giving free ground lessons and throwing a ball at the wall hoping it will stick. They don't know how to speak to aspiring pilots or showcase what makes your school <span class="font-bold underline">the one to choose</span>. </p>
+        
+        <p class="text-gray-700 mb-6">
+        <span class="font-bold">You need a marketing team that lives and breathes aviation</span>. A team that can  represent your flight school the way it deserves to be seen and attract the right students who are ready to start pilot training with you.
+        </p>
+
+        <h3 class="text-2xl font-semibold text-primary-dark mb-6">Partner with the Team That Gets It</h3>
+        <p class="text-gray-700 mb-6">
+        <span class="font-bold italic">We're pilots, just like you.</span> We know the grind of running a flight school, the thrill of a student's first solo, and the gut-wrenching pain of watching leads dry up. Our marketing is <span class="font-bold">built from the ground up for flight schools</span>, designed to <span class="font-bold underline">pack your schedule</span> with eager students ready to invest in their aviation dreams.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+        You can have a <span class="font-bold italic">stunning, modern website</span> that showcases your success stories and the impact you've made to your students' lives. <span class="font-bold">Targeted ads</span> that hit prospective students right where they're searching, flooding your inbox with <span class="font-bold underline">high quality prospects</span>. Social media that <span class="font-bold italic">creates a community centered around your flight school</span>, showing the world why YOUR school is the place to become a pilot.
+        </p>
+        
+        <p class="text-gray-700 mb-6"></p>
+        Right Rudder Marketing will help you <span class="font-bold">transform your business</span> into a revenue generating machine, so you can focus on what you love: <span class="italic">teaching people to fly</span>.
+        </p>
+
+        <h3 class="text-2xl font-semibold text-primary-dark mb-6">Take Control of Your Future <span class="font-bold italic">Right Now</span></h3>
+        <p class="text-gray-700 mb-6">
+        You didn't start your flight school to stress over SEO and ad campaigns or to watch your bank account dwindle. You started it to <span class="font-bold">share the freedom of flight</span> and build a legacy in aviation. Right Rudder Marketing is your co-pilot to make that happen. We've helped flight schools just like yours <span class="font-bold italic">skyrocket enrollment</span>, fill their CFIs' schedules, and dominate their markets. 
+        </p>
+
+        <p class="text-gray-700 mb-6">
+        <span class="font-bold">Keep struggling and don't make any changes. You'll keep getting the same soul-crushing results</span>
+        </p>
+
+        <p class="text-gray-700 mb-6">
+        Empty seats, missed opportunities, and a business that's barely staying afloat. 
+        </p>
+        
+        <p class="text-gray-700 mb-6">
+        OR, you can take action <span class="font-bold italic">today</span> and partner with us to unlock the growth your flight school deserves. 
+      </div>
+
       <div class="mt-8">
         <a href="#become-the-best-flight-school" class="w-full bg-accent hover:bg-accent-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-50 block text-center" aria-label="Go to pricing estimator">
           Get Your Pricing Estimate
@@ -143,6 +198,8 @@ const ctaContent = {
       </div>
     </div>
   </section>
+  
+  
 
   <!-- What to Expect Section -->
   <section class="py-16 bg-gradient-to-b from-primary-dark to-gray-900 text-white">
@@ -151,8 +208,7 @@ const ctaContent = {
         <h2 class="text-4xl font-bold text-white mb-4">What to Expect</h2>
         <p class="text-xl text-gray-200 mb-6">Your flight school's transformation journey with Right Rudder Marketing</p>
         <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-          At Right Rudder Marketing, onboarding isn't just a formality—it's where we start delivering value.
-          Our structured approach ensures your flight school becomes the go-to training destination in your area.
+          From day one we deliver measurable wins — a launch-ready website, targeted lead campaigns, and conversion-focused funnels. We move fast so your enrollment grows while you keep flying.
         </p>
       </div>
 
@@ -190,7 +246,7 @@ const ctaContent = {
             <li>• Performance data analysis & optimization</li>
             <li>• Content marketing campaign launch</li>
             <li>• Lead generation refinements</li>
-            <li>• Social media strategy implementation</li>
+            <li>• SEO and Social media strategy implementation</li>
             <li>• First metrics review & adjustments</li>
           </ul>
         </div>
@@ -260,22 +316,22 @@ const ctaContent = {
       <!-- Why This Matters -->
       <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8 border border-white/20">
         <div class="text-center mb-6">
-          <h3 class="text-2xl font-bold mb-3">Why Our Onboarding Process Matters</h3>
+          <h3 class="text-2xl font-bold mb-3">Having a Plan In Place Matters</h3>
           <p class="text-lg opacity-90">The foundation we build together determines your long-term success</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 text-center">
-          <div>
-            <div class="text-accent text-3xl font-bold mb-2">S.P.E.E.D.</div>
-            <p class="opacity-90">Strengthen, Position, Expect, Exude, Deliver - our core operating principles</p>
-          </div>
-          <div>
-            <div class="text-accent text-3xl font-bold mb-2">Flying H.I.G.H.</div>
-            <p class="opacity-90">Help, Implement, Give Back, Have Fun - how we stay in business long-term</p>
-          </div>
-          <div>
-            <div class="text-accent text-3xl font-bold mb-2">Pilot-Owned</div>
-            <p class="opacity-90">We speak pilot because we are pilots - aviation expertise you can trust</p>
-          </div>
+            <div>
+            <div class="text-accent text-3xl font-bold mb-2">Initial <br class="hidden lg:block">Onboarding</div>
+            <p class="opacity-90">Comprehensive setup to get you enrollment-ready — website launch, CRM & analytics integration, and initial campaign kickoff.</p>
+            </div>
+            <div>
+            <div class="text-accent text-3xl font-bold mb-2">Continued <br class="hidden lg:block"> Support</div>
+            <p class="opacity-90">Ongoing optimization and support — monthly reporting, content updates, ad management, and performance-driven adjustments.</p>
+            </div>
+            <div>
+            <div class="text-accent text-3xl font-bold mb-2">Lead Generating Machine</div>
+            <p class="opacity-90">Full-funnel lead generation — targeted ads, conversion optimization, and automated nurturing to consistently fill your instructors' schedules.</p>
+            </div>
         </div>
       </div>
 
@@ -288,4 +344,39 @@ const ctaContent = {
       </div>
     </div>
   </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-xl font-semibold text-primary-dark mb-3">How accurate is the pricing estimator?</h3>
+          <p class="text-gray-700">This tool provides only an estimation based on historical customer performance data and your inputs. It's a helpful starting recommendation — final pricing may vary and will be confirmed during your consultation.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-primary-dark mb-3">What's included in each package?</h3>
+          <p class="text-gray-700">Each package includes a comprehensive set of marketing services tailored to your flight school's size. This includes website development, SEO, ads management, content creation, and more. Specific services vary by package level and your business size and requirements.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-primary-dark mb-3">What makes Right Rudder Marketing different?</h3>
+          <p class="text-gray-700">Right Rudder Marketing sets itself apart as a pilot owned, aviation focused agency that deeply understands the flight training industry. Unlike generic marketing firms, our strategies are especially made for flight schools, addressing unique challenges like attracting high intent students and highlighting specialized offerings. </p>
+            
+          <p class="text-gray-700 pt-5">Our insider perspective as pilots ensures authentic, effective campaigns that resonate with prospective students. By focusing exclusively on aviation, we deliver data driven solutions that maximize your investment and drive enrollment. Our passion for aviation fuels a commitment to helping flight schools thrive in a competitive market.</p>
+        </div>
+      </div>
+      <div class="mt-8">
+        <a href="#become-the-best-flight-school" class="w-full bg-accent hover:bg-accent-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-50 block text-center" aria-label="Go to pricing estimator">
+          Get Your Pricing Estimate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <CaseStudiesVideo
+    upperHeading={data.caseStudies.upperHeading}
+    heading={data.caseStudies.heading}
+    cases={data.caseStudies.cases}
+  />
+
 </FunnelLayout>
