@@ -1,6 +1,9 @@
 ---
 import FunnelLayout from "../../layouts/FunnelLayout.astro";
 import { pricingPackages } from "../../data/pricingPackages.js";
+import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro"; // Import homepage data for case studies
+import homePage from "../../data/homePage"; // Import homepage data for case studies
+
 import {
   generateKeywords,
   AVIATION_KEYWORDS,
@@ -13,6 +16,7 @@ export async function getStaticPaths() {
   }));
 }
 
+const { data } = homePage; // Use homepage data for case studies
 const { package: packageSlug } = Astro.params;
 const packageData = pricingPackages[packageSlug];
 
@@ -460,4 +464,10 @@ const ctaContent = {
       </p>
     </div>
   </section>
+
+  <CaseStudiesVideo
+    upperHeading={data.caseStudies.upperHeading}
+    heading={data.caseStudies.heading}
+    cases={data.caseStudies.cases}
+  />
 </FunnelLayout>
