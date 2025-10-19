@@ -135,7 +135,7 @@ export const pricingPackages = {
     
     additionalServices: [
       {
-        name: "Flight School CRM",
+        name: "Flight School CRM (Highly Recommended)",
         price: "$350/month",
         description: "Complete customer relationship management system designed specifically for flight schools"
       },
@@ -153,15 +153,23 @@ export const pricingPackages = {
         name: "Custom Software Development",
         price: "$5,000-$10,000",
         description: "Custom software solutions tailored to your flight school's specific operational needs"
-      }
+      },
+      {
+        name: "Call Center Service",
+        price: "$1,000/month",
+        description: "Offload your inbound phone calls to our professional call center team trained specifically for flight schools. Never miss a lead again!"
+      },
+      {
+        name: "Concierge Service",
+        price: "$2,000/month",
+        description: "Let our team handle your inbound calls and inquiries, lead follow ups, appointment scheduling, and student nurturing. We'll make sure every lead is contacted multiple times to maximize your enrollment opportunities."
+      },
     ],
     
     notAvailable: [
       "Meta Ads Management (Facebook/Instagram)",
       "Social Media Management",
       "Additional Advertising Platforms (Hulu, Bing, Reddit, TV)",
-      "Included Video Production", 
-      "Included Flight School CRM"
     ],
 
     videos: [
@@ -215,7 +223,7 @@ export const pricingPackages = {
     additionalCompanies: "$1,500 One time",
     additionalLocations: "$300/month per location",
 
-    heroImage: "/src/assets/cessna-172-sunset-flight-school-marketing.webp",
+    heroImage: "/src/assets/six-pack-cockpit.jpg",
     heroImageAlt: "Classic six-pack flight instrument panel configuration",
 
     programIntro: {
@@ -345,7 +353,7 @@ export const pricingPackages = {
 
     additionalServices: [
       {
-        name: "Flight School CRM",
+        name: "Flight School CRM (Highly Recommended)",
         price: "$175/month", 
         description: "Complete customer relationship management system designed specifically for flight schools (discounted rate for flight schools on the Six Pack program)"
       },
@@ -363,15 +371,23 @@ export const pricingPackages = {
         name: "Additional Press Releases",
         price: "$100/each",
         description: "Professional press release writing and distribution beyond the included quarterly releases"
-      }
+      },
+      {
+        name: "Call Center Service",
+        price: "$1,000/month",
+        description: "Offload your inbound phone calls to our professional call center team trained specifically for flight schools. Never miss a lead again!"
+      },
+      {
+        name: "Concierge Service",
+        price: "$2,000/month",
+        description: "Let our team handle your inbound calls and inquiries, lead follow ups, appointment scheduling, and student nurturing. We'll make sure every lead is contacted multiple times to maximize your enrollment opportunities."
+      },
     ],
 
     notAvailable: [
       "Meta Ads Management (Facebook/Instagram)",
       "Social Media Management",
       "Additional Advertising Platforms (Hulu, Bing, Reddit, TV)",
-      "Included Video Production",
-      "Included Flight School CRM"
     ],
 
     videos: [
@@ -424,7 +440,7 @@ export const pricingPackages = {
     additionalCompanies: "$1,500 One time",
     additionalLocations: "$400/month",
 
-    heroImage: "/src/assets/glass-cockpit-avionics-hero-1200x600.jpg",
+    heroImage: "/src/assets/cirrus-sr22-cockpit-glass-garmin.jpg",
     heroImageAlt: "Modern glass cockpit display with advanced avionics systems",
 
     programIntro: {
@@ -494,8 +510,14 @@ export const pricingPackages = {
       icon: "👥",
       services: [
         {
+          name: "Annual Video Production",
+          description: "One professional video production session annually, creating 3-5 medium to long form videos and 10+ short form videos for your website, social media, and advertising campaigns. (Comes included with this program. Over $5000 value!)",
+          image: "/src/assets/holding-a-camera-on-a-gimbal.webp",
+          imageAlt: "Professional video production for flight schools"
+        },
+        {
           name: "Premium Website Development",
-          description: "Professional website with advanced functionality, student portals, online scheduling, and conversion optimization. Your website will be designed to convert visitors into students at the highest rates possible.",
+          description: "Professional website with advanced functionality, student portals, lead generating forms, and conversion optimization. Your website will be designed to convert visitors into students at the highest rates possible.",
           image: "/src/assets/html-code-in-an-ide-editor.webp",
           imageAlt: "Premium flight school website with advanced features"
         },
@@ -506,28 +528,40 @@ export const pricingPackages = {
           imageAlt: "Comprehensive aviation content strategy and creation"
         },
         {
+          name: "Quarterly Press Releases",
+          description: "Professional press release writing and distribution every quarter to maintain consistent media presence and build industry credibility.",
+          image: "/src/assets/dog-with-a-news-paper.webp",
+          imageAlt: "Quarterly aviation industry press releases"
+        },
+        {
+          name: "Customer Review Building", 
+          description: "Every quarter, we'll reach out to your recently serviced customers to ask for their feedback and encourage them to leave a review on your Google Business Profile. Positive reviews are super important for boosting your rankings and visibility on Google Maps, and they can also help you turn leads into customers.",
+          image: "/src/assets/woman-on-phone-leaving-a-flight-school-a-5-star-google-review.webp",
+          imageAlt: "Flight school customer reviews and testimonials"
+        },
+        {
           name: "Social Media Management",
           description: "Full social media management across Facebook, Instagram, and LinkedIn with weekly posting, community engagement, and social advertising to build brand awareness and attract students.",
-          image: "/src/assets/woman-on-video-call-trying-to-grow-her-flight-school-aviation-business.webp",
+          image: "/src/assets/woman-on-her-phone.webp",
           imageAlt: "Social media management for flight schools"
         },
         {
           name: "Meta Ads Management",
           description: "Professional Facebook and Instagram advertising campaigns designed to reach prospective pilots and aviation enthusiasts in your target demographics.",
-          image: "/src/assets/macbook-air-on-google-search.webp",
+          image: "/src/assets/phone-with-icons-social-media.webp",
           imageAlt: "Facebook and Instagram advertising campaigns"
         },
         {
-          name: "Quarterly Press Releases",
-          description: "Professional press release writing and distribution every quarter to maintain consistent media presence and build industry credibility.",
-          image: "/src/assets/pointing-to-a-map-online-phone-mobile.webp",
-          imageAlt: "Quarterly aviation industry press releases"
+          name: "Google PPC Advertising",
+          description: "We'll set up and manage your Google Ads account to drive qualified leads to your flight school. Our team will handle keyword research, ad creation, bid management, and ongoing optimization to ensure you're getting the best return on your ad spend.",
+          image: "/src/assets/macbook-air-on-google-search.webp",
+          imageAlt: "Google My Business profile optimization for flight schools"
         },
         {
-          name: "Annual Video Production",
-          description: "One professional video production session annually, creating 3-5 medium to long form videos and 10+ short form videos for your website, social media, and advertising campaigns. (Comes included with this program. Over $5000 value!)",
+          name: "Capture Lost Leads",
+          description: "We'll set up systems to nurture previous leads that didn't convert into students. This includes email and text follow ups (if you are adding-on the Flight School CRM) and retargeting ads to keep your flight school top of mind and encourage them to reconsider your services.",
           image: "/src/assets/customer-journey-map.webp",
-          imageAlt: "Professional video production for flight schools"
+          imageAlt: "Local business directory listings for flight schools"
         }
       ]
     },
@@ -556,7 +590,7 @@ export const pricingPackages = {
         description: "Additional professional video production sessions beyond the included annual session"
       },
       {
-        name: "Premium Ad Platforms",
+        name: "Additional Ad Platforms",
         price: "Contact for pricing",
         description: "Access to additional advertising platforms like Hulu, Bing, Reddit, or traditional media TV advertising"
       },
@@ -564,14 +598,24 @@ export const pricingPackages = {
         name: "Additional Press Releases",
         price: "$100/each",
         description: "Professional press release writing and distribution beyond the included quarterly releases"
-      }
+      },
+      {
+        name: "Call Center Service",
+        price: "$1,000/month",
+        description: "Offload your inbound phone calls to our professional call center team trained specifically for flight schools. Never miss a lead again!"
+      },
+      {
+        name: "Concierge Service",
+        price: "$2,000/month",
+        description: "Let our team handle your inbound calls and inquiries, lead follow ups, appointment scheduling, and student nurturing. We'll make sure every lead is contacted multiple times to maximize your enrollment opportunities."
+      },
     ],
 
-    notAvailable: [
-      "Additional Advertising Platforms (Hulu, Bing, Reddit, TV)",
-      "Additional Video Sessions beyond the included session",
-      "Additional Press Releases beyond quarterly"
-    ],
+    // notAvailable: [
+    //   "Additional Advertising Platforms (Hulu, Bing, Reddit, TV)",
+    //   "Additional Video Sessions beyond the included session",
+    //   "Additional Press Releases beyond quarterly"
+    // ],
 
     // videos: [
     //   {
