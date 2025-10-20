@@ -104,6 +104,11 @@ export const navbarLinks = [
       },
     ],
   },
+  {
+    name: "Pricing",
+    link: "/pricing",
+    submenu: [],
+  },
 
   {
     name: "About",
