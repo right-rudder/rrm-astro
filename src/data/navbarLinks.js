@@ -87,6 +87,10 @@ export const navbarLinks = [
         link: "/resources/video-production",
       },
       {
+        name: "Flight Deck Magazine",
+        link: "/flight-deck",
+      },
+      {
         name: "Webinars",
         link: "/webinars",
       },

@@ -3,7 +3,7 @@ issueNumber: 1
 volume: 1
 title: "Flight Deck Magazine, Issue #1 - Q3 2025"
 description: "Right Rudder Marketing's inaugural flight school marketing publication. Comprehensive resource combining educational content, case studies, and service advertisements positioning RRM as the aviation industry authority."
-coverImage: "/blog/flight-school-marketing-right-rudder-pilot-training.webp"
+coverImage: "/flight-deck/Right-Rudder-Marketing-Flight-Deck-Magazine-1.webp"
 pubDate: "July 1, 2025"
 status: "published"
 editor: "Tim Jedrek"
@@ -26,19 +26,8 @@ metaTitle: "Flight Deck Magazine - Issue #1 (Q3 2025) | Right Rudder Marketing"
 metaDescription: "RRM's inaugural flight school marketing publication featuring safety marketing strategies, 9 marketing tactics, 529 plan opportunities, and success stories from 30+ flight schools generating $20M+ in revenue."
 
 articles:
-  - title: "Founder's Letter: Our Mission to Partner with 100 Flight Schools"
-    slug: "founders-letter-issue-1"
-    author: "Tim Jedrek"
-    category: "Magazine"
-    description: "Tim Jedrek introduces Flight Deck Magazine and outlines RRM's achievements serving 30+ flight schools across 20 states, generating over $20 million in client revenue."
-    excerpt: "Welcome to Flight Deck Magazine. This inaugural issue marks our commitment to the aviation industry and our mission to partner with 100 flight schools."
-    readingTime: 3
-    featured: true
-    heroImage: "/blog/flight-school-marketing-right-rudder-pilot-training.webp"
-    pageNumber: 2
-
   - title: "Safety is Your School's Secret Weapon"
-    slug: "safety-secret-weapon-marketing"
+    slug: "/blog/why-safety-should-be-your-flight-schools-secret-weapon/"
     author: "Right Rudder Marketing"
     category: "Marketing Strategy"
     description: "Position safety as a competitive marketing advantage. AOPA data shows fatal training accidents cut in half, learn how to leverage safety culture for premium positioning among 1,700 competing schools."
@@ -49,7 +38,7 @@ articles:
     pageNumber: 6
 
   - title: "9 Ways to Market Your Flight School"
-    slug: "9-ways-market-flight-school"
+    slug: "/blog/9-ways-to-market-your-flight-school-in-2025/"
     author: "Tim Jedrek"
     category: "Marketing Guide"
     description: "Comprehensive digital marketing strategies including conversion-optimized websites, local SEO, Google/Facebook ads, email automation, social media, partnerships, review management, video content, and 2025 GEO trends."
@@ -60,7 +49,7 @@ articles:
     pageNumber: 12
 
   - title: "Flight Schools Win Big with 529 Plan Funding"
-    slug: "529-plan-flight-school-funding"
+    slug: "/blog/how-accredited-flight-schools-win-big-with-529-plan-funding/"
     author: "Right Rudder Marketing"
     category: "Industry News"
     description: "August 2025 legislative change allows 529 college savings plans to fund flight training at accredited schools. Massive opportunity as fewer than 1% of U.S. flight schools have required federal accreditation."
@@ -71,7 +60,7 @@ articles:
     pageNumber: 24
 
   - title: "Sun City Aviation Academy: Tripling Leads & Growing Revenue to $2M+"
-    slug: "sun-city-aviation-case-study"
+    slug: "/our-flight-schools/sun-city"
     author: "Right Rudder Marketing"
     category: "Case Study"
     description: "Two-year partnership showcasing lead tripling and revenue growth from $500K to $2M+. Testimonial from founder Luke Poulos on digital transformation success."
@@ -82,7 +71,7 @@ articles:
     pageNumber: 10
 
   - title: "Universal Flight Training: Digital Transformation in Sarasota"
-    slug: "universal-flight-training-case-study"
+    slug: "/our-flight-schools/uft"
     author: "Right Rudder Marketing"
     category: "Case Study"
     description: "Website optimization, SEO implementation, and lead generation system improvements. Features testimonial from VP Jacob Kyser on marketing system transformation."
