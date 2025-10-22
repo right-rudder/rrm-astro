@@ -662,14 +662,14 @@ export const pricingPackages = {
     name: "Fly by Wire",
     slug: "fly-by-wire",
     aircraft: "20–40",
-    targetRevenue: "$6M",
-    monthlyFee: "$5,590",
+    targetRevenue: "$6M+",
+    monthlyFee: "$4,000",
     googleAdBudget: "$3,000",
     otherPlatformBudget: "$2,000",
-    totalMonthly: "$10,590",
-    onboardingFee: "$1,500",
-    totalAnnual: "$128,580",
-    additionalCompanies: "$1,500 One time",
+    totalMonthly: "$9,000",
+    onboardingFee: "$2,500",
+    totalAnnual: "$110,500",
+    additionalCompanies: "$2,500 One time",
     additionalLocations: "$500/month",
 
     heroImage: "/src/assets/fly-by-wire-advanced-systems-hero-1200x600.jpg",
@@ -690,7 +690,7 @@ export const pricingPackages = {
       partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
       positioning: "The Fly by Wire Program is designed for major flight school operations with 20-40 aircraft who are ready to invest in enterprise-level marketing to dominate multiple markets and achieve $6M+ in annual revenue.",
-      growth: "IMPORTANT: Fly by Wire clients typically achieve 6-10 million in annual revenue within 36-48 months. Schools reaching $6M+ can upgrade to our Supersonic program for unlimited growth potential."
+      growth: "IMPORTANT: Fly by Wire clients typically achieve 6-10 million in annual revenue within 36-48 months. Schools reaching $6M+ can upgrade to our Supersonic program for additional marketing for scaling."
     },
 
     onboarding: {
