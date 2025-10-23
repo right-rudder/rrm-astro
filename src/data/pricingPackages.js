@@ -672,7 +672,7 @@ export const pricingPackages = {
     additionalCompanies: "$2,500 One time",
     additionalLocations: "$500/month",
 
-    heroImage: "/src/assets/fly-by-wire-advanced-systems-hero-1200x600.jpg",
+    heroImage: "/src/assets/cockpit-737-airliner.webp",
     heroImageAlt: "Advanced fly-by-wire aircraft systems and automation technology",
 
     programIntro: {
@@ -680,7 +680,7 @@ export const pricingPackages = {
       description: "You've built an aviation training empire with multiple locations and dozens of aircraft. At this enterprise level, your brand represents more than just flight training—you're setting industry standards. The Fly by Wire program ensures your marketing reflects the caliber and scope of your operation across all markets and platforms.",
       partnership: "With Right Rudder as your dedicated marketing enterprise, you'll have comprehensive brand management that matches your business scale. We handle complex multi-platform campaigns, traditional advertising, and brand positioning that establishes your school as the definitive choice for serious aviation training.",
       expertise: "Fly by Wire clients represent the aviation training industry's leaders. You'll get enterprise-level marketing including TV advertising, premium streaming platforms, comprehensive press relations, and the kind of strategic brand management that maintains market leadership and attracts the industry's best students and instructors.",
-      commitment: "You'll have dedicated C-level strategic support with bi-weekly reviews and comprehensive marketing management. This is the level of professional representation that aviation training empires require to maintain their position and continue growing."
+      commitment: "You'll have dedicated strategic support with bi-weekly reviews and comprehensive marketing management. This is the level of professional representation that aviation training empires require to maintain their position and continue growing."
     },
 
     expectations: {
@@ -711,7 +711,7 @@ export const pricingPackages = {
         },
         {
           name: "Bi-Weekly Strategic Checkpoints",
-          description: "Bi-weekly calls for the first 60 days with dedicated account management to ensure all systems are performing optimally across all locations and campaigns.",
+          description: "Weekly calls for the first 30 days with dedicated account management to ensure all systems are performing optimally across all locations and campaigns.",
           image: "/src/assets/pilot-in-front-of-single-engine-piston-aircraft-on-the-phone.jpg",
           imageAlt: "Strategic checkpoint calls with enterprise clients"
         }
@@ -724,14 +724,14 @@ export const pricingPackages = {
       services: [
         {
           name: "Bi-Weekly Strategy Calls",
-          description: "Dedicated bi-weekly strategy sessions with senior marketing strategists to optimize campaigns, analyze market opportunities, and plan expansion strategies.",
-          image: "/src/assets/bi-weekly-strategy-sessions-500x300.jpg",
+          description: "After onboarding we will conduct dedicated bi-weekly strategy sessions with senior marketing strategists to optimize campaigns, analyze market opportunities, and plan expansion strategies.",
+          image: "/src/assets/woman-on-video-call-trying-to-grow-her-flight-school-aviation-business.webp",
           imageAlt: "Bi-weekly strategic marketing sessions"
         },
         {
           name: "Enterprise Analytics & Intelligence",
           description: "Advanced business intelligence including market analysis, competitive intelligence, multi-location performance tracking, and strategic recommendations for expansion.",
-          image: "/src/assets/enterprise-analytics-intelligence-500x300.jpg",
+          image: "/src/assets/colorful-pie-chart-of-a-successful-flight-school.webp",
           imageAlt: "Enterprise marketing analytics and business intelligence"
         }
       ]
@@ -743,30 +743,42 @@ export const pricingPackages = {
       services: [
         {
           name: "Enterprise Website Platform",
-          description: "Multi-location website with advanced functionality, student management portals, online scheduling, e-learning integration, and conversion optimization across all locations.",
-          image: "/src/assets/enterprise-website-platform-500x300.jpg",
+          description: "Multi-location website with advanced functionality, student resource portals, e-learning integration, and conversion optimization across all locations.",
+          image: "/src/assets/html-code-in-an-ide-editor.webp",
           imageAlt: "Enterprise flight school website platform"
         },
         {
           name: "High-Volume Content Production",
-          description: "48 written content pieces annually (4 per month) including technical articles, industry analysis, thought leadership pieces, and location-specific content to dominate search results.",
-          image: "/src/assets/high-volume-content-production-500x300.jpg",
+          description: "48 written content pieces annually (4 per month) including technical articles, industry analysis, thought leadership pieces, and location specific content to dominate search results.",
+          image: "/src/assets/woman-writing-in-journal.webp",
           imageAlt: "High-volume aviation content production"
         },
         {
           name: "Multi-Platform Social Media",
-          description: "Advanced social media management across all major platforms with location-specific content, community building, and social advertising campaigns.",
-          image: "/src/assets/multi-platform-social-media-500x300.jpg",
+          description: "Advanced social media management across all major platforms with location specific content, community building, and social advertising campaigns.",
+          image: "/src/assets/woman-on-her-phone.webp",
           imageAlt: "Multi-platform social media management"
         },
         {
-          name: "Premium Advertising Platforms",
-          description: "Access to premium advertising platforms including Hulu streaming, Bing search, Reddit communities, and traditional TV/radio advertising for maximum market penetration.",
-          image: "/src/assets/premium-advertising-platforms-500x300.jpg",
+          name: "Meta Ads Management",
+          description: "Professional Facebook and Instagram advertising campaigns designed to reach prospective pilots and aviation enthusiasts in your target demographics.",
+          image: "/src/assets/phone-with-icons-social-media.webp",
+          imageAlt: "Facebook and Instagram advertising campaigns"
+        },
+        {
+          name: "Google PPC Advertising",
+          description: "We'll set up and manage your Google Ads account to drive qualified leads to your flight school. Our team will handle keyword research, ad creation, bid management, and ongoing optimization to ensure you're getting the best return on your ad spend.",
+          image: "/src/assets/macbook-air-on-google-search.webp",
+          imageAlt: "Google My Business profile optimization for flight schools"
+        },
+        {
+          name: "Expanded Advertising Platforms",
+          description: "Go beyond Google and Meta  advertising platforms and get on Hulu streaming, Bing search, Reddit communities, print marketing, and traditional TV/radio advertising for maximum market penetration.",
+          image: "/src/assets/woman-with-a-megaphone-loud-speakers.webp",
           imageAlt: "Premium advertising across multiple platforms"
         },
         {
-          name: "Bi-Annual Press Campaign",
+          name: "Press Campaign",
           description: "Comprehensive press relations with up to 8 press releases annually, media relationship building, and industry event coverage to establish thought leadership.",
           image: "/src/assets/bi-annual-press-campaigns-500x300.jpg",
           imageAlt: "Comprehensive press relations campaigns"
@@ -890,7 +902,7 @@ export const pricingPackages = {
       description: "You've built the kind of aviation training empire that defines the industry. With dozens of aircraft across multiple locations, your brand represents the pinnacle of flight training excellence. The Supersonic program ensures your marketing presence matches your industry leadership and maintains the premium positioning you've earned.",
       partnership: "With Right Rudder as your comprehensive marketing enterprise, you'll have unlimited resources dedicated to maintaining your industry leadership. We deploy every available strategy and platform not just to promote your school, but to reinforce your position as the aviation training standard that defines excellence in the industry.",
       expertise: "Supersonic clients represent the aviation training industry's absolute leaders. You'll have unlimited access to our most sophisticated strategies including comprehensive press relations, multiple professional video productions, C-level strategic support, and the kind of brand management that maintains industry dominance.",
-      commitment: "You'll have weekly C-level strategic sessions, dedicated senior account management, and unlimited marketing resources. This is the level of comprehensive brand management that aviation training empires require to maintain their leadership position and industry reputation."
+      commitment: "You'll have weekly strategic sessions, dedicated senior account management, and unlimited marketing resources. This is the level of comprehensive brand management that aviation training empires require to maintain their leadership position and industry reputation."
     },
 
     expectations: {
