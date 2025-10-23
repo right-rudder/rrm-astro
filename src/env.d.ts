@@ -13,6 +13,7 @@ interface ImportMetaEnv {
   readonly GHL_PERSONALITY_QUIZ_RESULTS_WEBHOOK_URL: string;
   readonly ENROLLMENT_FORM_WEBHOOK_URL: string;
   readonly GHL_MASTERMIND_FORM_WEBHOOK_URL: string;
+  readonly GHL_ENVISION_FORM_WEBHOOK_URL: string;
   readonly PORTAL_API_KEY: string;
 }
 
