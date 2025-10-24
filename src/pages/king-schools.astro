@@ -127,6 +127,7 @@ const optimizedDescription = optimizeDescription(pageDescription);
   siteTitle={optimizedTitle}
   siteDescription={optimizedDescription}
   keywords={enhancedKeywords}
+  ogImage="/images/will-waters-U0VTvo_cNLY-unsplash.jpg"
 >
   <!-- Schema markup for enhanced SEO -->
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -502,7 +503,7 @@ const optimizedDescription = optimizeDescription(pageDescription);
           leading to an increase in leads and a positive impact on Hawkins
           Flight Academy's growth. The website redesign and CRM system are
           particularly appreciated. I would recommend other flight schools
-          consider working with RRM"
+          consider working with RRM."
         </blockquote>
         <p class="text-primary-200 text-2xl">— Mike H.</p>
         <p class="text-primary-300 text-sm">Hawkins Flight Academy</p>
@@ -1551,8 +1552,6 @@ const optimizedDescription = optimizeDescription(pageDescription);
         annual_revenue: formData.get("annual-revenue"),
         location: formData.get("location"),
         challenges: challenges.join(", "),
-        discussion_topics: formData.get("discussion-topics"),
-        availability: availability.join(", "),
         event: "Envision Flight 2025",
         form_source: "King Schools Landing Page",
       };
