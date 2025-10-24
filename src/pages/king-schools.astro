@@ -1,0 +1,1628 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { PHONE_NUMBER, EMAIL_ADDRESS, SITE_TITLE } from "../consts";
+import {
+  generateKeywords,
+  AVIATION_KEYWORDS,
+  TARGET_LOCATIONS,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  optimizeTitle,
+  optimizeDescription,
+} from "../utils/seo";
+import OurClientsMarquee from "../components/OurClientsMarquee.astro";
+
+const GHL_ENVISION_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_ENVISION_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+
+// SEO Configuration
+const pageTitle =
+  "Meet Right Rudder Marketing at Envision Flight 2025 | King Schools Conference";
+const pageDescription =
+  "Connect with aviation marketing experts at King Schools' Envision Flight conference aboard the Majestic Princess (Nov 2-8, 2025). Get a complimentary flight school marketing assessment worth $500. Limited consultation spots available.";
+
+const enhancedKeywords = generateKeywords(
+  [
+    ...AVIATION_KEYWORDS.primary.slice(0, 4),
+    "envision flight conference",
+    "king schools event",
+    "flight school growth strategies",
+    "aviation marketing consultation",
+  ],
+  TARGET_LOCATIONS.slice(0, 8),
+  [
+    "flight school marketing system",
+    "student enrollment strategies",
+    "aviation business networking",
+    "flight training growth",
+    "pilot recruitment solutions",
+  ]
+);
+
+const ourClients = {
+  heading: "Training More Pilots Everyday",
+  description:
+    "Our flight schools are the best in the business. They are the top flight schools in the country and they trust us to help them grow and scale their businesses. We are proud to be a part of their success.",
+  clients: [
+    {
+      name: "NextGen Flight Academy",
+      imagePath: "/src/assets/NG Logo White Background 2.webp",
+      link: "https://flyhere.aero/",
+      invert: true,
+    },
+    {
+      name: "Summit Flight Academy",
+      imagePath: "/src/assets/SFA-logo.webp",
+      link: "https://www.summitflightacademy.com/",
+      invert: false,
+    },
+    {
+      name: "High Tide Aviation",
+      imagePath: "/src/assets/high-tide-aviation-logo-gradation.CFCXi2nO.png",
+      link: "https://hightideaviation.com/",
+      invert: false,
+    },
+    {
+      name: "Sun City Aviation",
+      imagePath: "/src/assets/sun-city-white-text-logo.webp",
+      link: "https://suncityaviation.com/",
+      invert: false,
+    },
+    {
+      name: "Pitcairn Flight Academy",
+      imagePath: "/src/assets/pitcairn-logo-400-white.webp",
+      link: "https://pitcairnflightacademy.com/",
+      invert: false,
+    },
+    {
+      name: "SimpliFly",
+      imagePath: "/src/assets/simplifly_2.webp",
+      link: "https://simpliflyco.com/",
+      invert: false,
+    },
+  ],
+};
+
+// FAQ schema for the event page
+const faqData = [
+  {
+    question: "Where can I meet Right Rudder Marketing at Envision Flight?",
+    answer:
+      "We'll be available throughout the cruise (November 2-8, 2025) aboard the Majestic Princess, with special availability during sea days (November 3, 5, and 7) and evening networking events.",
+  },
+  {
+    question: "What is included in the complimentary marketing assessment?",
+    answer:
+      "You'll receive a comprehensive analysis of your current marketing efforts, competitive positioning, SEO performance, and a customized growth strategy specifically for your flight school. This is a $500 value provided exclusively to Envision Flight attendees.",
+  },
+  {
+    question: "Do I need to be attending Envision Flight to receive the offer?",
+    answer:
+      "The exclusive in-person consultation is for Envision Flight attendees, but we offer virtual consultations after the event for all flight school owners who fill out the form.",
+  },
+  {
+    question:
+      "What makes Right Rudder Marketing different from other agencies?",
+    answer:
+      "We exclusively serve flight schools and aviation businesses. Our team includes pilots and aviation professionals who understand the unique challenges of flight training operations. We've helped generate over $50M in flight school revenue.",
+  },
+];
+
+// Breadcrumb navigation
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Events", url: "/events" },
+  { name: "Envision Flight 2025", url: "/king-schools" },
+];
+
+const faqSchema = generateFAQSchema(faqData);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+
+const optimizedTitle = optimizeTitle(pageTitle);
+const optimizedDescription = optimizeDescription(pageDescription);
+---
+
+<BaseLayout
+  siteTitle={optimizedTitle}
+  siteDescription={optimizedDescription}
+  keywords={enhancedKeywords}
+  ogImage="/images/will-waters-U0VTvo_cNLY-unsplash.jpg"
+>
+  <!-- Schema markup for enhanced SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+
+  <!-- Event Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Right Rudder Marketing at Envision Flight 2025",
+      "description": "Meet with aviation marketing experts at King Schools' Envision Flight conference for exclusive consultations and growth strategies.",
+      "startDate": "2025-11-02",
+      "endDate": "2025-11-08",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Majestic Princess Cruise Ship",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Various Ports",
+          "addressRegion": "International Waters"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Right Rudder Marketing",
+        "url": "https://rightruddermarketing.com"
+      }
+    }
+  </script>
+
+  <div class="h-20 lg:h-28 w-full bg-primary-900"></div>
+
+  <!-- HERO SECTION -->
+  <section
+    class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden"
+  >
+    <div
+      class="absolute inset-0 bg-[url('/images/will-waters-U0VTvo_cNLY-unsplash.jpg')] bg-cover bg-center opacity-10"
+    >
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 py-20 lg:py-32">
+      <div class="text-center max-w-4xl mx-auto">
+        <div
+          class="inline-block bg-accent-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6"
+        >
+          King Schools' Envision Flight 2025 | November 2-8, 2025
+        </div>
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+        >
+          Meet Right Rudder Marketing at<br />Envision Flight 2025
+        </h1>
+        <p class="text-xl md:text-2xl mb-4 text-primary-100 font-semibold">
+          The Aviation Marketing Experts Flight School Owners Trust
+        </p>
+        <p class="text-lg md:text-xl mb-8 text-primary-200">
+          Ready to Scale Your Flight School? Let's Connect at Sea.
+        </p>
+        <p
+          class="text-base md:text-lg text-primary-100 max-w-3xl mx-auto leading-relaxed"
+        >
+          If you're attending King Schools' Envision Flight conference aboard
+          the Majestic Princess (November 2-8, 2025), you're already committed
+          to growing your flight school. Now it's time to connect with the
+          marketing partner who specializes in exactly what you do.
+        </p>
+        <div class="mt-10">
+          <a
+            href="#consultation-form"
+            class="btn-accent text-lg px-8 py-4 inline-block"
+          >
+            Schedule Your Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE RRM SECTION -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Why Flight School Owners Choose Right Rudder Marketing
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We're not just another digital marketing agency—we're aviation
+          marketing specialists who understand the unique challenges of flight
+          school growth. From student enrollment to retention strategies, we
+          speak your language because aviation is all we do.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <!-- Feature 1 -->
+        <div
+          class="bg-gradient-to-br from-primary-50 to-primary-100 p-8 rounded-lg border-l-4 border-primary-600"
+        >
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-12 h-12 text-primary-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Aviation-Exclusive Focus
+              </h3>
+              <p class="text-gray-700">
+                We only work with flight schools and aviation businesses. No
+                generic marketing tactics—just proven strategies built
+                specifically for pilot training operations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div
+          class="bg-gradient-to-br from-accent-50 to-accent-100 p-8 rounded-lg border-l-4 border-accent-600"
+        >
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-12 h-12 text-accent-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Proven Track Record
+              </h3>
+              <p class="text-gray-700">
+                Our flight school clients see measurable results—from doubling
+                student inquiries to dominating their local markets with
+                strategic SEO, content marketing, and lead generation systems.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div
+          class="bg-gradient-to-br from-primary-50 to-primary-100 p-8 rounded-lg border-l-4 border-primary-600"
+        >
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-12 h-12 text-primary-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                The Flight School Marketing System
+              </h3>
+              <p class="text-gray-700">
+                We've developed a comprehensive marketing methodology
+                specifically for flight schools, outlined in our
+                <em>Flight School Handbook of Marketing Knowledge</em>, written
+                by our CEO Tim Jedrek.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div
+          class="bg-gradient-to-br from-accent-50 to-accent-100 p-8 rounded-lg border-l-4 border-accent-600"
+        >
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-12 h-12 text-accent-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Industry Recognition
+              </h3>
+              <p class="text-gray-700">
+                As fellow aviation professionals attending events like Envision
+                Flight, we're invested in the same community and committed to
+                training more pilots.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <OurClientsMarquee data={ourClients} />
+
+  <!-- TALK GROWTH SECTION -->
+  <section class="bg-gradient-to-br from-gray-50 to-gray-100 py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Let's Talk Growth
+        </h2>
+        <p class="text-xl text-gray-600">
+          Whether you're looking to achieve any of these goals, we want to hear
+          about your objectives and share how we've helped flight schools like
+          yours achieve them.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-8 lg:p-12">
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <svg
+              class="w-6 h-6 text-accent-300 mr-4 flex-shrink-0 mt-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-lg text-gray-700"
+              ><strong
+                >Increase qualified student leads by 50-100% or more</strong
+              ></span
+            >
+          </li>
+          <li class="flex items-start">
+            <svg
+              class="w-6 h-6 text-accent-300 mr-4 flex-shrink-0 mt-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-lg text-gray-700"
+              ><strong
+                >Dominate local search results and outrank competitors</strong
+              ></span
+            >
+          </li>
+          <li class="flex items-start">
+            <svg
+              class="w-6 h-6 text-accent-300 mr-4 flex-shrink-0 mt-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-lg text-gray-700"
+              ><strong
+                >Build a content marketing machine that attracts career-focused
+                students</strong
+              ></span
+            >
+          </li>
+          <li class="flex items-start">
+            <svg
+              class="w-6 h-6 text-accent-300 mr-4 flex-shrink-0 mt-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-lg text-gray-700"
+              ><strong
+                >Implement proven systems for lead capture, nurturing, and
+                conversion</strong
+              ></span
+            >
+          </li>
+          <li class="flex items-start">
+            <svg
+              class="w-6 h-6 text-accent-300 mr-4 flex-shrink-0 mt-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-lg text-gray-700"
+              ><strong
+                >Scale from 7 to 15+ aircraft with predictable enrollment growth</strong
+              ></span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SECTION -->
+  <section class="bg-primary-900 text-white py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <svg
+        class="w-16 h-16 text-accent-400 mx-auto mb-6"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+        ></path>
+      </svg>
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">
+        What Flight School Owners Are Saying
+      </h2>
+      <div class="bg-white/10 rounded-md py-10 px-8">
+        <blockquote class="text-xl md:text-2xl italic mb-4">
+          "The partnership with Right Rudder Marketing has been successful,
+          leading to an increase in leads and a positive impact on Hawkins
+          Flight Academy's growth. The website redesign and CRM system are
+          particularly appreciated. I would recommend other flight schools
+          consider working with RRM."
+        </blockquote>
+        <p class="text-primary-200 text-2xl">— Mike H.</p>
+        <p class="text-primary-300 text-sm">Hawkins Flight Academy</p>
+      </div>
+      <div class="mt-8 bg-white/10 rounded-md py-10 px-8">
+        <blockquote class="text-xl md:text-2xl italic mb-4">
+          "The company I work for has been working with Right Rudder Marketing
+          for a while now and I can tell you they have helped us a lot! Our
+          website improved and we started getting more and more inquiries. If
+          you have a flight school you definitely have to work with them!"
+        </blockquote>
+        <p class="text-primary-200 text-2xl">— Maria C.</p>
+        <p class="text-primary-300 text-sm">Sun City Aviation Academy</p>
+      </div>
+      <div class="mt-8 bg-white/10 rounded-md py-10 px-8">
+        <blockquote class="text-xl md:text-2xl italic mb-4">
+          "We have been using Right Rudder for the past 6 months and could not
+          be happier! They revamped our website to make it more user friendly,
+          makes consistent updates, and are very responsive to our needs. We
+          have seen a steady increase in web traffic as well as website driven
+          phone calls since starting with Right Rudder. I can not say enough
+          good things about them!"
+        </blockquote>
+        <p class="text-primary-200 text-2xl">— Kim N.</p>
+        <p class="text-primary-300 text-sm">Ideal Aviation</p>
+      </div>
+      <p class="text-primary-300 mt-8 text-base">
+        Our clients range from ambitious 2-8 aircraft schools ready to scale, to
+        established 10+ aircraft operations seeking market dominance in
+        competitive metropolitan areas.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONSULTATION FORM SECTION -->
+  <section id="consultation-form" class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-2 lg:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Schedule Your Consultation
+        </h2>
+        <h3 class="-mt-5 text-sm font-normal text-gray-400 mb-4">
+          Limited Spots Available
+        </h3>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We're attending Envision Flight specifically to connect with
+          forward-thinking flight school owners who are serious about growth.
+          With educational sessions during sea days (November 3, 5, and 7) and
+          networking events throughout the cruise, we'll have plenty of
+          opportunities to discuss your marketing challenges.
+        </p>
+      </div>
+
+      <div class="flex justify-between flex-col lg:flex-row gap-12">
+        <div class="lg:w-2/6 h-[540px]">
+          <iframe
+            class="w-full h-full aspect-[9/16]"
+            src="https://www.youtube.com/embed/EexohSgjoEk?autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div
+          class="lg:w-4/6 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl shadow-xl p-2 lg:p-12 border-2 border-primary-400"
+        >
+          <div class="mb-8">
+            <h3
+              class="text-2xl font-bold text-gray-900 mb-4 text-center lg:text-left"
+            >
+              Fill out the form below to:
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-lg text-gray-700"
+                  >Reserve time for a one-on-one consultation during the cruise</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-lg text-gray-700"
+                  >Receive a complimentary flight school marketing assessment (<strong
+                    >$500 value</strong
+                  >)</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-lg text-gray-700"
+                  >Get exclusive access to our latest case studies and
+                  enrollment growth strategies</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-lg text-gray-700"
+                  >Plan your marketing strategy with effective strategies and
+                  insights tailored for flight schools</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- LEAD CAPTURE FORM -->
+          <form id="envision-form" class="space-y-6">
+            <div class="bg-white rounded-lg p-2 lg:p-6 shadow-sm">
+              <h4
+                class="text-xl font-bold text-gray-900 mb-6 text-center lg:text-left"
+              >
+                Connect With Right Rudder Marketing at Envision Flight
+              </h4>
+
+              <!-- Flight School Information -->
+              <div class="space-y-4">
+                <h5
+                  class="text-lg font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-primary-200 text-center lg:text-left"
+                >
+                  Flight School Information
+                </h5>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                    >
+                      Your Name <span class="text-red-600">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      for="flight-school-name"
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                    >
+                      Flight School Name <span class="text-red-600">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="flight-school-name"
+                      name="flight-school-name"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                    >
+                      Email Address <span class="text-red-600">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      autocomplete="email"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      for="phone"
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                    >
+                      Phone Number <span class="text-red-600">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      autocomplete="tel"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="fleet-size"
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                    >
+                      Current Fleet Size
+                    </label>
+                    <input
+                      type="text"
+                      id="fleet-size"
+                      name="fleet-size"
+                      placeholder="e.g., 8 aircraft"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      for="annual-revenue"
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                    >
+                      Approximate Annual Revenue
+                    </label>
+                    <select
+                      id="annual-revenue"
+                      name="annual-revenue"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    >
+                      <option value="">Select range...</option>
+                      <option value="under-500k">Under $500K</option>
+                      <option value="500k-1m">$500K - $1M</option>
+                      <option value="1m-2m">$1M - $2M</option>
+                      <option value="2m-5m">$2M - $5M</option>
+                      <option value="5m-10m">$5M - $10M</option>
+                      <option value="10m-plus">$10M+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="location"
+                    class="block text-sm font-semibold text-gray-700 mb-1"
+                  >
+                    Primary Location/Market <span class="text-red-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    required
+                    placeholder="City, State"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  />
+                </div>
+              </div>
+
+              <!-- Current Marketing Challenges -->
+              <div class="mt-8">
+                <h5
+                  class="text-lg font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-primary-200"
+                >
+                  Current Marketing Challenges <span
+                    class="text-sm font-normal text-gray-600"
+                    >(Select all that apply)</span
+                  >
+                </h5>
+
+                <div class="space-y-3">
+                  <label
+                    class="flex items-start cursor-pointer hover:bg-gray-50 p-2 rounded"
+                  >
+                    <input
+                      type="checkbox"
+                      name="challenge"
+                      value="not-enough-leads"
+                      class="mt-1 h-5 w-5 text-primary-600 rounded"
+                    />
+                    <span class="ml-3 text-gray-700"
+                      >Not enough qualified student leads</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start cursor-pointer hover:bg-gray-50 p-2 rounded"
+                  >
+                    <input
+                      type="checkbox"
+                      name="challenge"
+                      value="poor-website"
+                      class="mt-1 h-5 w-5 text-primary-600 rounded"
+                    />
+                    <span class="ml-3 text-gray-700"
+                      >Poor website performance/rankings</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start cursor-pointer hover:bg-gray-50 p-2 rounded"
+                  >
+                    <input
+                      type="checkbox"
+                      name="challenge"
+                      value="inconsistent-leads"
+                      class="mt-1 h-5 w-5 text-primary-600 rounded"
+                    />
+                    <span class="ml-3 text-gray-700"
+                      >Inconsistent lead generation</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start cursor-pointer hover:bg-gray-50 p-2 rounded"
+                  >
+                    <input
+                      type="checkbox"
+                      name="challenge"
+                      value="competition"
+                      class="mt-1 h-5 w-5 text-primary-600 rounded"
+                    />
+                    <span class="ml-3 text-gray-700"
+                      >Difficulty competing with larger schools</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start cursor-pointer hover:bg-gray-50 p-2 rounded"
+                  >
+                    <input
+                      type="checkbox"
+                      name="challenge"
+                      value="low-conversion"
+                      class="mt-1 h-5 w-5 text-primary-600 rounded"
+                    />
+                    <span class="ml-3 text-gray-700"
+                      >Low conversion rates from inquiries to enrollments</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start cursor-pointer hover:bg-gray-50 p-2 rounded"
+                  >
+                    <input
+                      type="checkbox"
+                      name="challenge"
+                      value="no-strategy"
+                      class="mt-1 h-5 w-5 text-primary-600 rounded"
+                    />
+                    <span class="ml-3 text-gray-700"
+                      >No clear marketing strategy or system</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start cursor-pointer hover:bg-gray-50 p-2 rounded"
+                  >
+                    <input
+                      type="checkbox"
+                      name="challenge"
+                      value="bad-agency-experience"
+                      class="mt-1 h-5 w-5 text-primary-600 rounded"
+                    />
+                    <span class="ml-3 text-gray-700"
+                      >Previous bad experiences with marketing agencies</span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <!-- Honeypot -->
+              <p class="hidden">
+                <label>
+                  Don't fill this out if you're human:
+                  <input
+                    name="confirm-email"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
+                </label>
+              </p>
+            </div>
+
+            <!-- Privacy Consent -->
+            <div class="flex items-start">
+              <input
+                type="checkbox"
+                name="agree-data-collection"
+                id="agree-data-collection"
+                required
+                class="mt-1 h-5 w-5 text-primary-600 rounded"
+              />
+              <label
+                for="agree-data-collection"
+                class="ml-3 text-sm text-gray-700"
+              >
+                I agree to receive communications from Right Rudder Marketing
+                regarding my consultation and flight school marketing services.
+                Your information will be kept confidential and never shared with
+                third parties. <span class="text-red-600">*</span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button
+                id="submit-button"
+                type="submit"
+                disabled
+                class="w-full md:w-auto px-12 py-4 bg-gray-400 text-white font-bold text-lg rounded-lg cursor-not-allowed hover:bg-gray-400 transition-colors"
+              >
+                Reserve My Consultation
+              </button>
+              <p class="mt-4 text-sm text-gray-600">
+                <strong>Limited spots available.</strong> We can only accommodate
+                a select number of consultations during the cruise.
+              </p>
+            </div>
+
+            <!-- Success/Error Messages -->
+            <div id="form-message" class="hidden mt-4 p-4 rounded-lg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT RRM SECTION -->
+  <section class="bg-gradient-to-br from-gray-50 to-gray-100 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          About Right Rudder Marketing
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Founded by pilots for pilots, Right Rudder Marketing is the leading
+          digital marketing agency exclusively serving flight schools and
+          aviation training organizations. Our mission is simple: help flight
+          schools grow in students and revenue so they can train more pilots and
+          strengthen the aviation industry.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12">
+        <!-- Services -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">
+            Our Services Include:
+          </h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/flight-school-website-design"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Flight School Websites & SEO</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Custom-built websites optimized to rank #1 in your local
+                  market
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="https://flightschoolcrm.com/"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Lead Generation & CRM Systems</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Automated systems to capture, nurture, and convert more
+                  student leads
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/resources/video-production"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Content Marketing (Blogs, Videos, Podcasts)</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Engaging content that attracts career-focused pilot students
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/flight-school-ppc"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Google & Social Media Advertising</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Targeted ad campaigns that deliver qualified leads at
+                  predictable costs
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/marketing-system"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Email Marketing & Automation</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Automated follow-up sequences that convert inquiries into
+                  enrollments
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/flight-school-seo"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Reputation Management</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Build trust with 5-star reviews and positive online presence
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/marketing-system"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Comprehensive Marketing Strategy</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Complete marketing systems designed for predictable flight
+                  school growth
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">
+            Free Resources for Flight Schools:
+          </h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/resources/flight-school-handbook"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Flight School Marketing Handbook</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Complete guide to growing your flight school with proven
+                  marketing strategies
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/resources/marketing-checklist"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Marketing Checklist</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Step-by-step checklist to audit and improve your marketing
+                  efforts
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/resources/flight-school-keywords"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Flight School Keywords Guide</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Essential keywords to rank higher and attract more qualified
+                  student leads
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/resources/gmb"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >Google My Business Optimization</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Optimize your GMB profile to dominate local search results
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/resources/sop-templates"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >SOP Templates</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Ready-to-use templates for standardizing your flight school
+                  operations
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 text-accent-300 mr-3 flex-shrink-0 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <a
+                  href="/resources"
+                  class="text-gray-900 font-semibold hover:text-primary-600 transition-colors underline"
+                  >View All Resources</a
+                >
+                <p class="text-sm text-gray-600 mt-1">
+                  Access our complete library of free flight school resources
+                  and tools
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div
+        class="bg-primary-900 text-white rounded-xl shadow-lg p-8 lg:p-12 text-center"
+      >
+        <h3 class="text-2xl font-bold mb-6">Questions Before the Event?</h3>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-6 text-lg"
+        >
+          <div class="flex items-center">
+            <svg
+              class="w-6 h-6 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              ></path>
+            </svg>
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              class="hover:text-accent-300 transition-colors">{PHONE_NUMBER}</a
+            >
+          </div>
+          <div class="flex items-center">
+            <svg
+              class="w-6 h-6 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+            <a
+              href={`mailto:${EMAIL_ADDRESS}`}
+              class="hover:text-accent-300 transition-colors">{EMAIL_ADDRESS}</a
+            >
+          </div>
+          <div class="flex items-center">
+            <svg
+              class="w-6 h-6 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+              ></path>
+            </svg>
+            <a
+              href="https://rightruddermarketing.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-accent-300 transition-colors"
+              >rightruddermarketing.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section
+    class="bg-gradient-to-br from-primary-600 via-primary-800 to-primary-700 text-white py-16"
+  >
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        We look forward to meeting you aboard the Majestic Princess<br />
+        and helping you chart a course for unprecedented flight school growth.
+      </h2>
+      <p class="text-2xl font-semibold mb-8">See you at sea,</p>
+      <p class="text-xl mb-8">The Right Rudder Marketing Team</p>
+      <a
+        href="#consultation-form"
+        class="btn-accent text-lg px-8 py-4 inline-block"
+      >
+        Schedule My Consultation
+      </a>
+    </div>
+  </section>
+
+  <!-- P.S. SECTION -->
+  <section class="bg-white py-12">
+    <div class="max-w-4xl mx-auto px-6">
+      <div
+        class="bg-gradient-to-r from-primary-50 to-primary-100 border-l-4 border-primary-500 rounded-lg p-8"
+      >
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          P.S. Can't Make a Meeting During the Cruise?
+        </h3>
+        <p class="text-lg text-gray-700 mb-4">
+          No problem! Fill out the form anyway and we'll schedule a virtual
+          consultation after the event. Plus, you'll receive our exclusive <strong
+            >Flight School Marketing Success Guide</strong
+          > and priority access to our Q4 2025 growth strategies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="bg-gray-50 py-8 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-gray-600 text-sm md:text-base">
+        <strong>Trusted by flight schools across North America</strong> | Proven
+        results in competitive markets | Aviation marketing expertise since 2019
+      </p>
+    </div>
+  </section>
+
+  <!-- Form Handling Script -->
+  <script define:vars={{ GHL_ENVISION_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+    const checkbox = document.getElementById("agree-data-collection");
+    const submitButton = document.getElementById("submit-button");
+    const form = document.getElementById("envision-form");
+    const formMessage = document.getElementById("form-message");
+    const RATE_LIMIT_MS = 60000; // 1 minute
+
+    // Check rate limiting on page load
+    function checkRateLimit() {
+      const lastSubmission = localStorage.getItem("lastEnvisionFormSubmission");
+      if (lastSubmission) {
+        const timeDiff = Date.now() - parseInt(lastSubmission);
+        if (timeDiff < RATE_LIMIT_MS) {
+          const remainingTime = Math.ceil((RATE_LIMIT_MS - timeDiff) / 1000);
+          disableSubmitForRateLimit(remainingTime);
+          return false;
+        }
+      }
+      return true;
+    }
+
+    function disableSubmitForRateLimit(remainingSeconds) {
+      submitButton.disabled = true;
+      submitButton.textContent = `Please wait ${remainingSeconds}s`;
+      submitButton.classList.add("cursor-not-allowed");
+
+      const countdown = setInterval(() => {
+        remainingSeconds--;
+        if (remainingSeconds > 0) {
+          submitButton.textContent = `Please wait ${remainingSeconds}s`;
+        } else {
+          clearInterval(countdown);
+          submitButton.textContent = "Reserve My Consultation Spot";
+          if (checkbox.checked) {
+            enableSubmitButton();
+          }
+        }
+      }, 1000);
+    }
+
+    function enableSubmitButton() {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400"
+      );
+      submitButton.classList.add("bg-accent-600", "hover:bg-accent-700");
+    }
+
+    function disableSubmitButton() {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400"
+      );
+      submitButton.classList.remove("bg-accent-600", "hover:bg-accent-700");
+    }
+
+    // Checkbox event listener
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked && checkRateLimit()) {
+        enableSubmitButton();
+      } else {
+        disableSubmitButton();
+      }
+    });
+
+    // Form submission
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      // Check honeypot
+      const honeypot = form.querySelector('input[name="confirm-email"]');
+      if (honeypot && honeypot.value !== "") {
+        console.warn("Bot submission detected");
+        return;
+      }
+
+      // Check rate limit
+      if (!checkRateLimit()) {
+        showMessage("Please wait before submitting again.", "error");
+        return;
+      }
+
+      // Disable button and show loading state
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting...";
+      submitButton.classList.add("cursor-not-allowed");
+
+      // Collect form data
+      const formData = new FormData(form);
+
+      // Collect multiple checkboxes
+      const challenges = Array.from(formData.getAll("challenge"));
+      const availability = Array.from(formData.getAll("availability"));
+
+      const data = {
+        name: formData.get("name"),
+        flight_school_name: formData.get("flight-school-name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        fleet_size: formData.get("fleet-size"),
+        annual_revenue: formData.get("annual-revenue"),
+        location: formData.get("location"),
+        challenges: challenges.join(", "),
+        event: "Envision Flight 2025",
+        form_source: "King Schools Landing Page",
+      };
+
+      try {
+        // Submit to webhook
+        const response = await fetch(GHL_ENVISION_FORM_WEBHOOK_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          // Set rate limit timestamp
+          localStorage.setItem(
+            "lastEnvisionFormSubmission",
+            Date.now().toString()
+          );
+
+          // Show success message
+          showMessage(
+            "Success! Your consultation request has been submitted. We'll contact you shortly to confirm your meeting time at Envision Flight.",
+            "success"
+          );
+
+          // Reset form
+          form.reset();
+          disableSubmitButton();
+
+          // Track conversion
+          if (typeof gtag !== "undefined") {
+            gtag("event", "conversion", {
+              event_category: "Form Submission",
+              event_label: "Envision Flight Consultation",
+            });
+          }
+        } else {
+          throw new Error("Submission failed");
+        }
+      } catch (error) {
+        console.error("Form submission error:", error);
+        showMessage(
+          "There was an error submitting your request. Please try again or contact us directly at " +
+            "1-314-804-1200",
+          "error"
+        );
+        submitButton.textContent = "Reserve My Consultation Spot";
+        if (checkbox.checked) {
+          enableSubmitButton();
+        }
+      }
+    });
+
+    function showMessage(message, type) {
+      formMessage.textContent = message;
+      formMessage.className = `mt-4 p-4 rounded-lg ${
+        type === "success"
+          ? "bg-green-100 text-green-800 border border-green-300"
+          : "bg-red-100 text-red-800 border border-red-300"
+      }`;
+      formMessage.classList.remove("hidden");
+
+      // Scroll to message
+      formMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+
+    // Initialize on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      checkRateLimit();
+    });
+  </script>
+</BaseLayout>
