@@ -69,7 +69,7 @@ The result? A faster path to positive net worth and financial independence. That
 
 The aviation industry is facing an unprecedented staffing crisis. Industry forecasts predict a shortage of 649,000 to 674,000 pilots worldwide between 2024 and 2043. By 2032, nearly 80,000 pilot positions are expected to sit empty.
 
-Boeing projects the need for 649,000 new pilots globally over the next 20 years. CAE estimates that business aviation alone will require at least 32,000 pilots by 2032. This supply-demand imbalance has forced airlines into all-out competition for talent, and they're opening their wallets wide to win.
+Boeing projects the need for 649,000 new pilots globally over the next 20 years. CAE, a leading provider of pilot training, estimates that business aviation alone will require at least 32,000 pilots by 2032. This supply-demand imbalance has forced airlines into all-out competition for talent, and they're opening their wallets wide to win.
 
 ### The Post-Pandemic Boom
 
