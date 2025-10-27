@@ -1,5 +1,5 @@
 ---
-import FunnelLayout from "../../layouts/FunnelLayout.astro";
+import PricingPageFunnelLayout from "../../layouts/PricingPageFunnelLayout.astro";
 import { pricingPackages } from "../../data/pricingPackages.js";
 import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro"; // Import homepage data for case studies
 import homePage from "../../data/homePage"; // Import homepage data for case studies
@@ -66,7 +66,7 @@ const ctaContent = {
 };
 ---
 
-<FunnelLayout
+<PricingPageFunnelLayout
   siteTitle={metaTitle}
   siteDescription={metaDescription}
   keywords={enhancedKeywords}
@@ -470,4 +470,4 @@ const ctaContent = {
     heading={data.caseStudies.heading}
     cases={data.caseStudies.cases}
   />
-</FunnelLayout>
+</PricingPageFunnelLayout>
