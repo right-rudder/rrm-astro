@@ -880,218 +880,218 @@ export const pricingPackages = {
     ]
   },
 
-  "supersonic": {
-    name: "Supersonic",
-    slug: "supersonic",
-    aircraft: "40–70",
-    targetRevenue: "$10M",
-    monthlyFee: "$8,300",
-    googleAdBudget: "$4,500",
-    otherPlatformBudget: "$4,000",
-    totalMonthly: "$16,800",
-    onboardingFee: "$2,500",
-    totalAnnual: "$204,100",
-    additionalCompanies: "$1,500 One time",
-    additionalLocations: "$500/month",
+  // "supersonic": {
+  //   name: "Supersonic",
+  //   slug: "supersonic",
+  //   aircraft: "40–70",
+  //   targetRevenue: "$10M",
+  //   monthlyFee: "$8,300",
+  //   googleAdBudget: "$4,500",
+  //   otherPlatformBudget: "$4,000",
+  //   totalMonthly: "$16,800",
+  //   onboardingFee: "$2,500",
+  //   totalAnnual: "$204,100",
+  //   additionalCompanies: "$1,500 One time",
+  //   additionalLocations: "$500/month",
 
-    heroImage: "/src/assets/supersonic-jet-systems-hero-1200x600.jpg",
-    heroImageAlt: "Supersonic jet aircraft with advanced flight systems",
+  //   heroImage: "/src/assets/supersonic-jet-systems-hero-1200x600.jpg",
+  //   heroImageAlt: "Supersonic jet aircraft with advanced flight systems",
 
-    programIntro: {
-      subtitle: "ULTIMATE DOMINANCE. UNLIMITED POTENTIAL.",
-      description: "You've built the kind of aviation training empire that defines the industry. With dozens of aircraft across multiple locations, your brand represents the pinnacle of flight training excellence. The Supersonic program ensures your marketing presence matches your industry leadership and maintains the premium positioning you've earned.",
-      partnership: "With Right Rudder as your comprehensive marketing enterprise, you'll have unlimited resources dedicated to maintaining your industry leadership. We deploy every available strategy and platform not just to promote your school, but to reinforce your position as the aviation training standard that defines excellence in the industry.",
-      expertise: "Supersonic clients represent the aviation training industry's absolute leaders. You'll have unlimited access to our most sophisticated strategies including comprehensive press relations, multiple professional video productions, C-level strategic support, and the kind of brand management that maintains industry dominance.",
-      commitment: "You'll have weekly strategic sessions, dedicated senior account management, and unlimited marketing resources. This is the level of comprehensive brand management that aviation training empires require to maintain their leadership position and industry reputation."
-    },
+  //   programIntro: {
+  //     subtitle: "ULTIMATE DOMINANCE. UNLIMITED POTENTIAL.",
+  //     description: "You've built the kind of aviation training empire that defines the industry. With dozens of aircraft across multiple locations, your brand represents the pinnacle of flight training excellence. The Supersonic program ensures your marketing presence matches your industry leadership and maintains the premium positioning you've earned.",
+  //     partnership: "With Right Rudder as your comprehensive marketing enterprise, you'll have unlimited resources dedicated to maintaining your industry leadership. We deploy every available strategy and platform not just to promote your school, but to reinforce your position as the aviation training standard that defines excellence in the industry.",
+  //     expertise: "Supersonic clients represent the aviation training industry's absolute leaders. You'll have unlimited access to our most sophisticated strategies including comprehensive press relations, multiple professional video productions, C-level strategic support, and the kind of brand management that maintains industry dominance.",
+  //     commitment: "You'll have weekly strategic sessions, dedicated senior account management, and unlimited marketing resources. This is the level of comprehensive brand management that aviation training empires require to maintain their leadership position and industry reputation."
+  //   },
 
-    expectations: {
-      title: "UNDERSTANDING HOW IT WORKS",
-      consulting: "Right Rudder Marketing's services are different from other marketing agencies you've used before. Entrepreneurs like you hire us as a consulting marketing service. This means our clients hire us for our expertise and expect us to lead the way.",
-      program: "Our marketing programs are designed specifically for businesses like yours. Based on your existing business and goals, there's only one growth program that will be a good fit. You won't be given a bunch of options, you'll be given the only option that we're willing to do because it's the one that will help you achieve your goals.",
-      partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
-      process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
-      positioning: "The Supersonic Program is designed for aviation training empires with 40-70 aircraft who require unlimited marketing resources, strategic C-level support, and comprehensive market dominance strategies.",
-      growth: "Supersonic clients typically maintain or exceed $10M in annual revenue with continued growth potential limited only by market size and operational capacity."
-    },
+  //   expectations: {
+  //     title: "UNDERSTANDING HOW IT WORKS",
+  //     consulting: "Right Rudder Marketing's services are different from other marketing agencies you've used before. Entrepreneurs like you hire us as a consulting marketing service. This means our clients hire us for our expertise and expect us to lead the way.",
+  //     program: "Our marketing programs are designed specifically for businesses like yours. Based on your existing business and goals, there's only one growth program that will be a good fit. You won't be given a bunch of options, you'll be given the only option that we're willing to do because it's the one that will help you achieve your goals.",
+  //     partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
+  //     process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
+  //     positioning: "The Supersonic Program is designed for aviation training empires with 40-70 aircraft who require unlimited marketing resources, strategic C-level support, and comprehensive market dominance strategies.",
+  //     growth: "Supersonic clients typically maintain or exceed $10M in annual revenue with continued growth potential limited only by market size and operational capacity."
+  //   },
 
-    onboarding: {
-      title: "ONBOARDING",
-      icon: "🚀",
-      services: [
-        {
-          name: "C-Level Strategic Planning",
-          description: "Executive-level strategic planning sessions with our senior leadership team, including market analysis, competitive positioning, and long-term growth strategy development. This comprehensive process spans 6-8 hours across multiple executive sessions.",
-          image: "/src/assets/c-level-strategic-planning-500x300.jpg",
-          imageAlt: "Executive-level strategic planning sessions"
-        },
-        {
-          name: "Enterprise Systems Architecture",
-          description: "Complete marketing infrastructure setup including advanced CRM configuration, multi-location tracking, enterprise analytics, and integration with existing business systems.",
-          image: "/src/assets/enterprise-systems-architecture-500x300.jpg",
-          imageAlt: "Enterprise marketing systems architecture"
-        },
-        {
-          name: "Dedicated Account Management",
-          description: "Assignment of dedicated senior account management team with weekly touchpoints for the first 60 days to ensure optimal performance across all marketing initiatives.",
-          image: "/src/assets/dedicated-account-management-500x300.jpg",
-          imageAlt: "Dedicated senior account management team"
-        }
-      ]
-    },
+  //   onboarding: {
+  //     title: "ONBOARDING",
+  //     icon: "🚀",
+  //     services: [
+  //       {
+  //         name: "C-Level Strategic Planning",
+  //         description: "Executive-level strategic planning sessions with our senior leadership team, including market analysis, competitive positioning, and long-term growth strategy development. This comprehensive process spans 6-8 hours across multiple executive sessions.",
+  //         image: "/src/assets/c-level-strategic-planning-500x300.jpg",
+  //         imageAlt: "Executive-level strategic planning sessions"
+  //       },
+  //       {
+  //         name: "Enterprise Systems Architecture",
+  //         description: "Complete marketing infrastructure setup including advanced CRM configuration, multi-location tracking, enterprise analytics, and integration with existing business systems.",
+  //         image: "/src/assets/enterprise-systems-architecture-500x300.jpg",
+  //         imageAlt: "Enterprise marketing systems architecture"
+  //       },
+  //       {
+  //         name: "Dedicated Account Management",
+  //         description: "Assignment of dedicated senior account management team with weekly touchpoints for the first 60 days to ensure optimal performance across all marketing initiatives.",
+  //         image: "/src/assets/dedicated-account-management-500x300.jpg",
+  //         imageAlt: "Dedicated senior account management team"
+  //       }
+  //     ]
+  //   },
 
-    additionalGrowth: {
-      title: "ADDITIONAL GROWTH",
-      icon: "📈",
-      services: [
-        {
-          name: "Weekly Strategy Sessions",
-          description: "Weekly strategy sessions with C-level marketing executives to optimize campaigns, identify new opportunities, and maintain competitive advantage in all markets.",
-          image: "/src/assets/weekly-strategy-sessions-500x300.jpg",
-          imageAlt: "Weekly executive strategy sessions"
-        },
-        {
-          name: "Market Intelligence & Competitive Analysis",
-          description: "Comprehensive market intelligence including competitive analysis, industry trend monitoring, regulatory impact assessment, and strategic recommendations for market expansion.",
-          image: "/src/assets/market-intelligence-analysis-500x300.jpg",
-          imageAlt: "Market intelligence and competitive analysis"
-        }
-      ]
-    },
+  //   additionalGrowth: {
+  //     title: "ADDITIONAL GROWTH",
+  //     icon: "📈",
+  //     services: [
+  //       {
+  //         name: "Weekly Strategy Sessions",
+  //         description: "Weekly strategy sessions with C-level marketing executives to optimize campaigns, identify new opportunities, and maintain competitive advantage in all markets.",
+  //         image: "/src/assets/weekly-strategy-sessions-500x300.jpg",
+  //         imageAlt: "Weekly executive strategy sessions"
+  //       },
+  //       {
+  //         name: "Market Intelligence & Competitive Analysis",
+  //         description: "Comprehensive market intelligence including competitive analysis, industry trend monitoring, regulatory impact assessment, and strategic recommendations for market expansion.",
+  //         image: "/src/assets/market-intelligence-analysis-500x300.jpg",
+  //         imageAlt: "Market intelligence and competitive analysis"
+  //       }
+  //     ]
+  //   },
 
-    newCustomerAcquisition: {
-      title: "NEW STUDENT ACQUISITION",
-      icon: "👥",
-      services: [
-        {
-          name: "Flagship Website & Digital Ecosystem",
-          description: "Industry-leading website with advanced functionality, multi-location management, student lifecycle management, e-learning platforms, and conversion optimization across all touchpoints.",
-          image: "/src/assets/flagship-website-ecosystem-500x300.jpg",
-          imageAlt: "Flagship flight school website and digital ecosystem"
-        },
-        {
-          name: "Premium Content Studio",
-          description: "60 written content pieces annually (5 per month) including thought leadership articles, industry analysis, technical publications, and market insights that establish your school as the industry authority.",
-          image: "/src/assets/premium-content-studio-500x300.jpg",
-          imageAlt: "Premium aviation content studio production"
-        },
-        {
-          name: "Comprehensive Digital Presence",
-          description: "Advanced social media management across all platforms with dedicated community management, influencer partnerships, and thought leadership positioning.",
-          image: "/src/assets/comprehensive-digital-presence-500x300.jpg",
-          imageAlt: "Comprehensive digital presence management"
-        },
-        {
-          name: "Unlimited Advertising Platforms",
-          description: "Access to all available advertising platforms including premium streaming, search, social, display, traditional media, and emerging platforms for maximum market penetration.",
-          image: "/src/assets/unlimited-advertising-platforms-500x300.jpg",
-          imageAlt: "Unlimited advertising platform access"
-        },
-        {
-          name: "Unlimited Press Relations",
-          description: "Unlimited press releases (recommended monthly) with dedicated PR management, media relationship building, industry event coverage, and thought leadership positioning.",
-          image: "/src/assets/unlimited-press-relations-500x300.jpg",
-          imageAlt: "Unlimited press relations and media coverage"
-        },
-        {
-          name: "Triple Video Production",
-          description: "Three professional video production sessions annually, creating 9-15 finished videos for comprehensive marketing campaigns, training materials, and thought leadership content.",
-          image: "/src/assets/triple-video-production-500x300.jpg",
-          imageAlt: "Triple annual video production sessions"
-        }
-      ]
-    },
+  //   newCustomerAcquisition: {
+  //     title: "NEW STUDENT ACQUISITION",
+  //     icon: "👥",
+  //     services: [
+  //       {
+  //         name: "Flagship Website & Digital Ecosystem",
+  //         description: "Industry-leading website with advanced functionality, multi-location management, student lifecycle management, e-learning platforms, and conversion optimization across all touchpoints.",
+  //         image: "/src/assets/flagship-website-ecosystem-500x300.jpg",
+  //         imageAlt: "Flagship flight school website and digital ecosystem"
+  //       },
+  //       {
+  //         name: "Premium Content Studio",
+  //         description: "60 written content pieces annually (5 per month) including thought leadership articles, industry analysis, technical publications, and market insights that establish your school as the industry authority.",
+  //         image: "/src/assets/premium-content-studio-500x300.jpg",
+  //         imageAlt: "Premium aviation content studio production"
+  //       },
+  //       {
+  //         name: "Comprehensive Digital Presence",
+  //         description: "Advanced social media management across all platforms with dedicated community management, influencer partnerships, and thought leadership positioning.",
+  //         image: "/src/assets/comprehensive-digital-presence-500x300.jpg",
+  //         imageAlt: "Comprehensive digital presence management"
+  //       },
+  //       {
+  //         name: "Unlimited Advertising Platforms",
+  //         description: "Access to all available advertising platforms including premium streaming, search, social, display, traditional media, and emerging platforms for maximum market penetration.",
+  //         image: "/src/assets/unlimited-advertising-platforms-500x300.jpg",
+  //         imageAlt: "Unlimited advertising platform access"
+  //       },
+  //       {
+  //         name: "Unlimited Press Relations",
+  //         description: "Unlimited press releases (recommended monthly) with dedicated PR management, media relationship building, industry event coverage, and thought leadership positioning.",
+  //         image: "/src/assets/unlimited-press-relations-500x300.jpg",
+  //         imageAlt: "Unlimited press relations and media coverage"
+  //       },
+  //       {
+  //         name: "Triple Video Production",
+  //         description: "Three professional video production sessions annually, creating 9-15 finished videos for comprehensive marketing campaigns, training materials, and thought leadership content.",
+  //         image: "/src/assets/triple-video-production-500x300.jpg",
+  //         imageAlt: "Triple annual video production sessions"
+  //       }
+  //     ]
+  //   },
 
-    includedServices: [
-      "Google My Business Management",
-      "Google Ads Management", 
-      "Meta Ads Management (Facebook/Instagram)",
-      "Additional Advertising Platforms (Hulu, Bing, Reddit, TV)",
-      "Search Engine Optimization (SEO)",
-      "Flagship Website & Digital Ecosystem",
-      "Social Media Management",
-      "Flight School CRM (Full Service)",
-      "Weekly Strategy Sessions",
-      "Market Intelligence & Competitive Analysis", 
-      "Local Business Listings (twice yearly + additional)",
-      "Content Creation (5 blogs per month)",
-      "Press Releases (Unlimited - recommended monthly)",
-      "Video Production (3 sessions annually)",
-      "Custom Software Development",
-      "Dedicated Account Management",
-      "12-month minimum commitment"
-    ],
+  //   includedServices: [
+  //     "Google My Business Management",
+  //     "Google Ads Management", 
+  //     "Meta Ads Management (Facebook/Instagram)",
+  //     "Additional Advertising Platforms (Hulu, Bing, Reddit, TV)",
+  //     "Search Engine Optimization (SEO)",
+  //     "Flagship Website & Digital Ecosystem",
+  //     "Social Media Management",
+  //     "Flight School CRM (Full Service)",
+  //     "Weekly Strategy Sessions",
+  //     "Market Intelligence & Competitive Analysis", 
+  //     "Local Business Listings (twice yearly + additional)",
+  //     "Content Creation (5 blogs per month)",
+  //     "Press Releases (Unlimited - recommended monthly)",
+  //     "Video Production (3 sessions annually)",
+  //     "Custom Software Development",
+  //     "Dedicated Account Management",
+  //     "12-month minimum commitment"
+  //   ],
 
-    additionalServices: [
-      {
-        name: "International Expansion",
-        price: "Contact for pricing",
-        description: "Comprehensive international market entry strategies and localized marketing campaigns"
-      },
-      {
-        name: "Acquisition Marketing",
-        price: "Contact for pricing", 
-        description: "Specialized marketing support for flight school acquisitions and mergers"
-      },
-      {
-        name: "Custom Enterprise Solutions",
-        price: "Contact for pricing",
-        description: "Fully customized marketing solutions for unique business requirements"
-      }
-    ],
+  //   additionalServices: [
+  //     {
+  //       name: "International Expansion",
+  //       price: "Contact for pricing",
+  //       description: "Comprehensive international market entry strategies and localized marketing campaigns"
+  //     },
+  //     {
+  //       name: "Acquisition Marketing",
+  //       price: "Contact for pricing", 
+  //       description: "Specialized marketing support for flight school acquisitions and mergers"
+  //     },
+  //     {
+  //       name: "Custom Enterprise Solutions",
+  //       price: "Contact for pricing",
+  //       description: "Fully customized marketing solutions for unique business requirements"
+  //     }
+  //   ],
 
-    notAvailable: [
-      "None - Supersonic includes access to all available marketing services and platforms"
-    ],
+  //   notAvailable: [
+  //     "None - Supersonic includes access to all available marketing services and platforms"
+  //   ],
 
-    videos: [
-      {
-        title: "Supersonic Program Overview",
-        placeholder: "/src/assets/supersonic-program-video-thumbnail-600x400.jpg",
-        description: "Ultimate marketing solutions for $10M+ aviation empires"
-      },
-      {
-        title: "Market Dominance Strategies",
-        placeholder: "/src/assets/market-dominance-strategies-video-thumbnail-600x400.jpg",
-        description: "How industry leaders maintain their competitive advantage"
-      },
-      {
-        title: "Enterprise Success Stories",
-        placeholder: "/src/assets/enterprise-success-stories-video-thumbnail-600x400.jpg", 
-        description: "Real results from our largest flight school clients"
-      },
-      {
-        title: "Future of Aviation Training Marketing",
-        placeholder: "/src/assets/future-aviation-marketing-video-thumbnail-600x400.jpg",
-        description: "Emerging trends and technologies in flight school marketing"
-      }
-    ],
+  //   videos: [
+  //     {
+  //       title: "Supersonic Program Overview",
+  //       placeholder: "/src/assets/supersonic-program-video-thumbnail-600x400.jpg",
+  //       description: "Ultimate marketing solutions for $10M+ aviation empires"
+  //     },
+  //     {
+  //       title: "Market Dominance Strategies",
+  //       placeholder: "/src/assets/market-dominance-strategies-video-thumbnail-600x400.jpg",
+  //       description: "How industry leaders maintain their competitive advantage"
+  //     },
+  //     {
+  //       title: "Enterprise Success Stories",
+  //       placeholder: "/src/assets/enterprise-success-stories-video-thumbnail-600x400.jpg", 
+  //       description: "Real results from our largest flight school clients"
+  //     },
+  //     {
+  //       title: "Future of Aviation Training Marketing",
+  //       placeholder: "/src/assets/future-aviation-marketing-video-thumbnail-600x400.jpg",
+  //       description: "Emerging trends and technologies in flight school marketing"
+  //     }
+  //   ],
 
-    faqs: [
-      {
-        question: "How quickly will I see results?",
-        answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
-      },
-      {
-        question: "Why do you require a 1 year contract?",
-        answer: "Marketing takes time to show results. A 1 year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
-      },
-      {
-        question: "What does the onboarding process include?",
-        answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
-      },
-      {
-        question: "How do you measure the success of your marketing efforts?",
-        answer: "We track key performance indicators (KPIs) like website traffic, lead conversion rates, cost per lead, and student enrollment numbers, providing monthly reports to show progress."
-      },
-      {
-        question: "How do you handle ad budgets, and are they included in the pricing?",
-        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $4,500/month for Google Ads and $4,000/month for other platforms, however, we have seen the most success with budgets of $12,000+/month total"
-      },
-      {
-        question: "What's the cancellation policy if I'm not satisfied?",
-        answer: "We strive for your satisfaction. If you're not happy with our services, you can cancel after the initial 12 month term with a 30 day notice. We also do regular check ins to ensure we're meeting your expectations. If you're not satisfied, let's have a candid conversation with one another and come up with a plan to address any concerns."
-      }
-    ]
-  }
+  //   faqs: [
+  //     {
+  //       question: "How quickly will I see results?",
+  //       answer: "Most flight schools see initial improvements in website traffic and leads within 30-60 days. Significant growth in student enrollments typically occurs within 3-6 months as our strategies gain momentum."
+  //     },
+  //     {
+  //       question: "Why do you require a 1 year contract?",
+  //       answer: "Marketing takes time to show results. A 1 year commitment ensures we have enough time to implement strategies, gather data, and optimize for maximum student enrollment growth."
+  //     },
+  //     {
+  //       question: "What does the onboarding process include?",
+  //       answer: "Onboarding is essential to understand your business and represent your company the right way.  This includes a comprehensive business deep dive, account setup for all marketing platforms, and weekly check-ins during your first month to ensure everything is running smoothly."
+  //     },
+  //     {
+  //       question: "How do you measure the success of your marketing efforts?",
+  //       answer: "We track key performance indicators (KPIs) like website traffic, lead conversion rates, cost per lead, and student enrollment numbers, providing monthly reports to show progress."
+  //     },
+  //     {
+  //       question: "How do you handle ad budgets, and are they included in the pricing?",
+  //       answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $4,500/month for Google Ads and $4,000/month for other platforms, however, we have seen the most success with budgets of $12,000+/month total"
+  //     },
+  //     {
+  //       question: "What's the cancellation policy if I'm not satisfied?",
+  //       answer: "We strive for your satisfaction. If you're not happy with our services, you can cancel after the initial 12 month term with a 30 day notice. We also do regular check ins to ensure we're meeting your expectations. If you're not satisfied, let's have a candid conversation with one another and come up with a plan to address any concerns."
+  //     }
+  //   ]
+  // }
 };
