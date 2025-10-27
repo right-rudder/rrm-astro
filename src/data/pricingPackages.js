@@ -710,7 +710,7 @@ export const pricingPackages = {
           imageAlt: "Advanced marketing systems integration"
         },
         {
-          name: "Bi-Weekly Strategic Checkpoints",
+          name: "qWeekly Strategic Checkpoints",
           description: "Weekly calls for the first 30 days with dedicated account management to ensure all systems are performing optimally across all locations and campaigns.",
           image: "/src/assets/pilot-in-front-of-single-engine-piston-aircraft-on-the-phone.jpg",
           imageAlt: "Strategic checkpoint calls with enterprise clients"
