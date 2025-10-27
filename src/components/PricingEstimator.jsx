@@ -48,12 +48,16 @@ const PricingEstimator = () => {
   
   // Available service options
   const serviceOptions = [
+    'More Students and Leads',
+    'Brand Development',
     'SEO',
     'Google Ads',
     'Meta Facebook/Instagram Ads', 
     'Social Media Consulting',
     'Video Production',
-    'Custom Web Development'
+    'Custom Web Development',
+    'Custom Operations Software Development',
+    'Business Consulting and Flight School Growth',
   ];
   
   const revenueOptions = [

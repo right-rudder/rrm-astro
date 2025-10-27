@@ -13,6 +13,9 @@
  * Converts revenue string to numeric value for comparison
  * @param {string} revenueRange - Revenue range string
  * @returns {number} - Numeric value in millions
+ * 
+ * 
+ * What the fuck is this AI slop.  We need to just look at number of aircraft and number of planes.  There are only 4 packages now:  Stick and rudder, Six Pack, Glass cockpit, and fly by wire.
  */
 function parseRevenueValue(revenueRange) {
   const revenueMap = {
