@@ -431,13 +431,13 @@ export const pricingPackages = {
     slug: "glass-cockpit",
     aircraft: "10–20",
     targetRevenue: "$3M",
-    monthlyFee: "$3,000",
+    monthlyFee: "$3,490",
     googleAdBudget: "$2,000",
     otherPlatformBudget: "$1,000",
-    totalMonthly: "$6,000",
+    totalMonthly: "$6,490",
     onboardingFee: "$2,500",
-    totalAnnual: "$74,500",
-    additionalCompanies: "$1,500 One time",
+    totalAnnual: "$80,380",
+    additionalCompanies: "$2,500 One time",
     additionalLocations: "$400/month",
 
     heroImage: "/src/assets/cirrus-sr22-cockpit-glass-garmin.jpg",
@@ -663,12 +663,12 @@ export const pricingPackages = {
     slug: "fly-by-wire",
     aircraft: "20–40",
     targetRevenue: "$6M+",
-    monthlyFee: "$4,000",
+    monthlyFee: "$5,000",
     googleAdBudget: "$3,000",
-    otherPlatformBudget: "$2,000",
-    totalMonthly: "$9,000",
+    otherPlatformBudget: "$3,000",
+    totalMonthly: "$11,000",
     onboardingFee: "$2,500",
-    totalAnnual: "$110,500",
+    totalAnnual: "$134,500",
     additionalCompanies: "$2,500 One time",
     additionalLocations: "$500/month",
 
@@ -690,7 +690,7 @@ export const pricingPackages = {
       partnership: "Your company and Right Rudder Marketing are like two best friends in business. We'll support each other, sometimes even disagree, but in the end, we're in this together.",
       process: "After we get to know your business inside out, our team of experts will come up with a growth strategy based on our years of experience in aviation education. We'll guide your team, make sure everything goes smoothly, measure the results, and keep working together to make sure our partnership succeed.",
       positioning: "The Fly by Wire Program is designed for major flight school operations with 20-40 aircraft who are ready to invest in enterprise-level marketing to dominate multiple markets and achieve $6M+ in annual revenue.",
-      growth: "IMPORTANT: Fly by Wire clients typically achieve 6-10 million in annual revenue within 36-48 months. Schools reaching $6M+ can upgrade to our Supersonic program for additional marketing for scaling."
+      growth: "IMPORTANT: Fly by Wire clients typically achieve 6-10 million in annual revenue within 12-36 months. Schools reaching $6M+ can upgrade to our Supersonic program for additional marketing for scaling."
     },
 
     onboarding: {
@@ -710,7 +710,7 @@ export const pricingPackages = {
           imageAlt: "Advanced marketing systems integration"
         },
         {
-          name: "qWeekly Strategic Checkpoints",
+          name: "Weekly Strategic Checkpoints",
           description: "Weekly calls for the first 30 days with dedicated account management to ensure all systems are performing optimally across all locations and campaigns.",
           image: "/src/assets/pilot-in-front-of-single-engine-piston-aircraft-on-the-phone.jpg",
           imageAlt: "Strategic checkpoint calls with enterprise clients"
