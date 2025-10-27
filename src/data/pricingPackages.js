@@ -586,7 +586,7 @@ export const pricingPackages = {
     additionalServices: [
       {
         name: "Additional Video Sessions",
-        price: "$5,000 + travel fees",
+        price: "$5,000 + Travel Fees",
         description: "Additional professional video production sessions beyond the included annual session"
       },
       {
@@ -664,11 +664,11 @@ export const pricingPackages = {
     aircraft: "20–40",
     targetRevenue: "$6M+",
     monthlyFee: "$5,000",
-    googleAdBudget: "$3,000",
-    otherPlatformBudget: "$3,000",
+    googleAdBudget: "$3,000+",
+    otherPlatformBudget: "$3,000+",
     totalMonthly: "$11,000",
     onboardingFee: "$2,500",
-    totalAnnual: "$134,500",
+    totalAnnual: "$134,500+",
     additionalCompanies: "$2,500 One time",
     additionalLocations: "$500/month",
 
@@ -698,7 +698,7 @@ export const pricingPackages = {
       icon: "🚀",
       services: [
         {
-          name: "Enterprise Business deep dive",
+          name: "Enterprise Business Deep Dive",
           description: "Extended business analysis including multi-location assessment, competitive landscape analysis, and strategic positioning workshop. This comprehensive process typically takes 4-6 hours across multiple sessions.",
           image: "/src/assets/skydiving-during-sunset.webp",
           imageAlt: "Enterprise-level business consultation for large flight schools"
@@ -826,25 +826,35 @@ export const pricingPackages = {
     additionalServices: [
       {
         name: "Additional Video Sessions",
-        price: "$3,500/session",
+        price: "$5,000 + Travel Fees",
         description: "Additional professional video production sessions beyond the included bi-annual sessions"
       },
       {
-        name: "International Advertising",
-        price: "Contact for pricing",
-        description: "Expansion into international markets with localized advertising campaigns"
+        name: "Call Center Service",
+        price: "$1,000/month",
+        description: "Offload your inbound phone calls to our professional call center team trained specifically for flight schools. Never miss a lead again!"
       },
       {
-        name: "Trade Show & Event Marketing",
-        price: "Contact for pricing",
-        description: "Comprehensive trade show and aviation event marketing programs"
-      }
+        name: "Concierge Service",
+        price: "$2,000/month",
+        description: "Let our team handle your inbound calls and inquiries, lead follow ups, appointment scheduling, and student nurturing. We'll make sure every lead is contacted multiple times to maximize your enrollment opportunities."
+      },
+      // {
+      //   name: "International Advertising",
+      //   price: "Contact for pricing",
+      //   description: "Expansion into international markets with localized advertising campaigns"
+      // },
+      // {
+      //   name: "Trade Show & Event Marketing",
+      //   price: "Contact for pricing",
+      //   description: "Comprehensive trade show and aviation event marketing programs"
+      // }
     ],
 
-    notAvailable: [
-      "Unlimited Press Releases - Available in Supersonic",
-      "Three Annual Video Sessions - Available in Supersonic"
-    ],
+    // notAvailable: [
+    //   "Additional press releases beyond the 8 included in this package",
+    //   "Quarterly Annual Video Sessions - Only 2 per year included unless additional video sessions are scheduled as a paid add-on"
+    // ],
 
     // videos: [
     //   {
@@ -883,7 +893,7 @@ export const pricingPackages = {
       },
       {
         question: "How do you handle ad budgets, and are they included in the pricing?",
-        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $3,000/month for Google Ads and $2,000/month for other platforms, however, we have seen the most success with budgets of $7,000+/month total"
+        answer: "Ad budgets are separate from our service fees to give you control over spend. We recommend and manage budgets to maximize ROI, with full transparency.  At this level, we recommend starting with at least $3,000/month for Google Ads and 3,000/month for other platforms, however, we have seen the most success with budgets of $7,000+/month total.  Depending on your needs and number of locations your business operates in, we may adjust our recommendation based on our experience with past performance."
       },
       {
         question: "What's the cancellation policy if I'm not satisfied?",
