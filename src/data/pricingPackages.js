@@ -780,14 +780,26 @@ export const pricingPackages = {
         {
           name: "Press Campaign",
           description: "Comprehensive press relations with up to 8 press releases annually, media relationship building, and industry event coverage to establish thought leadership.",
-          image: "/src/assets/bi-annual-press-campaigns-500x300.jpg",
+          image: "/src/assets/dog-with-a-news-paper.webp",
           imageAlt: "Comprehensive press relations campaigns"
         },
         {
           name: "Bi-Annual Video Production",
-          description: "Two professional video production sessions annually, creating 6-10 finished videos for marketing campaigns, training materials, and promotional content.",
-          image: "/src/assets/bi-annual-video-production-500x300.jpg",
+          description: "Two professional video production sessions annually, creating 6-10 finished videos for marketing campaigns, video based ads, training materials, and promotional content.",
+          image: "/src/assets/holding-a-camera-on-a-gimbal.webp",
           imageAlt: "Bi-annual professional video production"
+        },
+        {
+          name: "Customer Review Building", 
+          description: "Every quarter, we'll reach out to your recently serviced customers to ask for their feedback and encourage them to leave a review on your Google Business Profile. Positive reviews are super important for boosting your rankings and visibility on Google Maps, and they can also help you turn leads into customers.",
+          image: "/src/assets/woman-on-phone-leaving-a-flight-school-a-5-star-google-review.webp",
+          imageAlt: "Flight school customer reviews and testimonials"
+        },
+        {
+          name: "Capture Lost Leads",
+          description: "We'll set up systems to nurture previous leads that didn't convert into students. This includes email and text follow ups (if you are adding-on the Flight School CRM) and retargeting ads to keep your flight school top of mind and encourage them to reconsider your services.",
+          image: "/src/assets/customer-journey-map.webp",
+          imageAlt: "Local business directory listings for flight schools"
         }
       ]
     },
