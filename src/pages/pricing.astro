@@ -11,6 +11,10 @@ import {
 
 const { data } = homePage; // Use homepage data for case studies
 
+// Get webhook URLs from environment variables
+const GHL_PRICING_CONTACT_WEBHOOK_URL = import.meta.env.GHL_PRICING_CONTACT_WEBHOOK_URL;
+const GHL_PRICING_COMPLETE_WEBHOOK_URL = import.meta.env.GHL_PRICING_COMPLETE_WEBHOOK_URL;
+
 // SEO keyword generation for pricing page
 const enhancedKeywords = generateKeywords(
   [
@@ -95,7 +99,11 @@ const ctaContent = {
 
   <!-- Interactive Pricing Estimator -->
   <section class="py-12 bg-gray-50 min-h-screen" id="become-the-best-flight-school">
-    <PricingEstimator client:load />
+    <PricingEstimator
+      client:load
+      contactWebhookUrl={GHL_PRICING_CONTACT_WEBHOOK_URL}
+      completeWebhookUrl={GHL_PRICING_COMPLETE_WEBHOOK_URL}
+    />
   </section>
 
   <!-- Trust Indicators -->

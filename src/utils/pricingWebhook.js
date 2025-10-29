@@ -6,13 +6,12 @@
 /**
  * Submits contact details to first GHL webhook (Step 1 completion)
  * @param {Object} contactData - Contact information from Step 1
+ * @param {string} webhookUrl - The webhook URL to submit to
  * @returns {Promise<Object>} - Response from webhook
  */
-export async function submitContactWebhook(contactData) {
-  const webhookUrl = import.meta.env.GHL_PRICING_CONTACT_WEBHOOK_URL || process.env.GHL_PRICING_CONTACT_WEBHOOK_URL;
-  
+export async function submitContactWebhook(contactData, webhookUrl) {
   if (!webhookUrl) {
-    console.warn('GHL_PRICING_CONTACT_WEBHOOK_URL environment variable is not configured');
+    console.warn('Webhook URL not provided');
     return {
       success: false,
       error: 'Webhook URL not configured'
@@ -66,13 +65,12 @@ export async function submitContactWebhook(contactData) {
  * @param {Object} businessData - Business information from Step 2
  * @param {Object} packageRecommendation - Selected package details
  * @param {boolean} isPartial - Whether this is a partial submission (abandoned checkout)
+ * @param {string} webhookUrl - The webhook URL to submit to
  * @returns {Promise<Object>} - Response from webhook
  */
-export async function submitCompleteWebhook(contactData, businessData, packageRecommendation = null, isPartial = false) {
-  const webhookUrl = import.meta.env.GHL_PRICING_COMPLETE_WEBHOOK_URL || process.env.GHL_PRICING_COMPLETE_WEBHOOK_URL;
-  
+export async function submitCompleteWebhook(contactData, businessData, packageRecommendation = null, isPartial = false, webhookUrl) {
   if (!webhookUrl) {
-    console.warn('GHL_PRICING_COMPLETE_WEBHOOK_URL environment variable is not configured');
+    console.warn('Webhook URL not provided');
     return {
       success: false,
       error: 'Webhook URL not configured'
@@ -152,17 +150,18 @@ export async function submitCompleteWebhook(contactData, businessData, packageRe
  * Handles abandoned checkout scenario - sends partial data after timeout
  * @param {Object} contactData - Contact information from Step 1
  * @param {Object} partialBusinessData - Partial business information
+ * @param {string} webhookUrl - The webhook URL to submit to
  * @returns {Promise<Object>} - Response from webhook
  */
-export async function handleAbandonedCheckout(contactData, partialBusinessData) {
+export async function handleAbandonedCheckout(contactData, partialBusinessData, webhookUrl) {
   // Only send if we have some business data to avoid duplicate contact-only submissions
-  const hasBusinessData = partialBusinessData.aircraft || 
-                         partialBusinessData.currentRevenue || 
+  const hasBusinessData = partialBusinessData.aircraft ||
+                         partialBusinessData.currentRevenue ||
                          partialBusinessData.targetRevenue ||
                          (partialBusinessData.leadsPerMonth && partialBusinessData.leadsPerMonth !== '') ||
                          (partialBusinessData.newStudentsPerMonth && partialBusinessData.newStudentsPerMonth !== '') ||
                          (partialBusinessData.additionalLocations && partialBusinessData.additionalLocations !== '');
-  
+
   if (!hasBusinessData) {
     console.log('No business data to send for abandoned checkout');
     return {
@@ -170,10 +169,10 @@ export async function handleAbandonedCheckout(contactData, partialBusinessData) 
       error: 'No business data available for partial submission'
     };
   }
-  
+
   console.log('Sending abandoned checkout data:', { contactData, partialBusinessData });
-  
-  return await submitCompleteWebhook(contactData, partialBusinessData, null, true);
+
+  return await submitCompleteWebhook(contactData, partialBusinessData, null, true, webhookUrl);
 }
 
 /**
@@ -181,11 +180,12 @@ export async function handleAbandonedCheckout(contactData, partialBusinessData) 
  * @param {Object} contactData - Contact information
  * @param {Object} businessData - Complete business information
  * @param {Object} packageRecommendation - Package selection result
+ * @param {string} webhookUrl - The webhook URL to submit to
  * @returns {Promise<Object>} - Submission result with redirect URL
  */
-export async function submitCompleteForm(contactData, businessData, packageRecommendation) {
-  const result = await submitCompleteWebhook(contactData, businessData, packageRecommendation, false);
-  
+export async function submitCompleteForm(contactData, businessData, packageRecommendation, webhookUrl) {
+  const result = await submitCompleteWebhook(contactData, businessData, packageRecommendation, false, webhookUrl);
+
   if (result.success) {
     return {
       ...result,
@@ -193,7 +193,7 @@ export async function submitCompleteForm(contactData, businessData, packageRecom
       packageSlug: packageRecommendation.packageSlug
     };
   }
-  
+
   return result;
 }
 

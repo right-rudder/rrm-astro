@@ -16,7 +16,7 @@ import {
   handleAbandonedCheckout 
 } from '../utils/pricingWebhook.js';
 
-const PricingEstimator = () => {
+const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
   // Form state
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -171,9 +171,9 @@ const PricingEstimator = () => {
   // Handle abandoned checkout
   const handleAbandonedSubmission = async () => {
     if (partialSubmitted) return;
-    
+
     try {
-      const result = await handleAbandonedCheckout(contactData, businessData);
+      const result = await handleAbandonedCheckout(contactData, businessData, completeWebhookUrl);
       if (result.success) {
         setPartialSubmitted(true);
         console.log('Partial submission successful');
@@ -199,8 +199,8 @@ const PricingEstimator = () => {
     }
     
     try {
-      const result = await submitContactWebhook(contactData);
-      
+      const result = await submitContactWebhook(contactData, contactWebhookUrl);
+
       if (result.success) {
         setStep(2);
         setMessage('');
@@ -238,10 +238,10 @@ const PricingEstimator = () => {
     try {
       // Get package recommendation
       const packageRecommendation = selectPackage(businessData);
-      
+
       // Submit complete form
-      const result = await submitCompleteForm(contactData, businessData, packageRecommendation);
-      
+      const result = await submitCompleteForm(contactData, businessData, packageRecommendation, completeWebhookUrl);
+
       if (result.success) {
         // Redirect to package page
         window.location.href = result.redirectUrl;
