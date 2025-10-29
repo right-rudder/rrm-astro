@@ -10,10 +10,9 @@ import {
   validateRevenue
 } from '../utils/pricingValidation.js';
 import { selectPackage } from '../utils/pricingLogic.js';
-import { 
-  submitContactWebhook, 
-  submitCompleteForm, 
-  handleAbandonedCheckout 
+import {
+  submitContactWebhook,
+  submitCompleteForm
 } from '../utils/pricingWebhook.js';
 
 const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
@@ -41,10 +40,6 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
     additionalLocations: '',
     desiredServices: []
   });
-  
-  // Abandoned checkout timer
-  const [abandonedTimer, setAbandonedTimer] = useState(null);
-  const [partialSubmitted, setPartialSubmitted] = useState(false);
   
   // Available service options
   const serviceOptions = [
@@ -140,47 +135,19 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
       ...prev,
       [field]: value
     }));
-    
+
     // Real-time validation
     validateField(field, value, false);
-    
-    // Reset abandoned checkout timer
-    if (abandonedTimer) {
-      clearTimeout(abandonedTimer);
-    }
-    
-    // Set new timer for abandoned checkout (30 seconds)
-    if (!partialSubmitted) {
-      const newTimer = setTimeout(() => {
-        handleAbandonedSubmission();
-      }, 30000);
-      setAbandonedTimer(newTimer);
-    }
   };
   
   // Handle service selection changes
   const handleServiceChange = (service, checked) => {
     setBusinessData(prev => ({
       ...prev,
-      desiredServices: checked 
+      desiredServices: checked
         ? [...prev.desiredServices, service]
         : prev.desiredServices.filter(s => s !== service)
     }));
-  };
-  
-  // Handle abandoned checkout
-  const handleAbandonedSubmission = async () => {
-    if (partialSubmitted) return;
-
-    try {
-      const result = await handleAbandonedCheckout(contactData, businessData, completeWebhookUrl);
-      if (result.success) {
-        setPartialSubmitted(true);
-        console.log('Partial submission successful');
-      }
-    } catch (error) {
-      console.error('Error in abandoned checkout:', error);
-    }
   };
   
   // Submit Step 1 (Contact Info)
@@ -220,12 +187,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
     e.preventDefault();
     setLoading(true);
     setMessage('');
-    
-    // Clear abandoned checkout timer
-    if (abandonedTimer) {
-      clearTimeout(abandonedTimer);
-    }
-    
+
     // Validate all Step 2 fields
     const validation = validateStep2(businessData);
     
@@ -255,16 +217,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
     
     setLoading(false);
   };
-  
-  // Clean up timer on unmount
-  useEffect(() => {
-    return () => {
-      if (abandonedTimer) {
-        clearTimeout(abandonedTimer);
-      }
-    };
-  }, [abandonedTimer]);
-  
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       {/* Progress Indicator */}

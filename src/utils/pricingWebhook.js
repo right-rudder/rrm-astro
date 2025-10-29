@@ -147,35 +147,6 @@ export async function submitCompleteWebhook(contactData, businessData, packageRe
 }
 
 /**
- * Handles abandoned checkout scenario - sends partial data after timeout
- * @param {Object} contactData - Contact information from Step 1
- * @param {Object} partialBusinessData - Partial business information
- * @param {string} webhookUrl - The webhook URL to submit to
- * @returns {Promise<Object>} - Response from webhook
- */
-export async function handleAbandonedCheckout(contactData, partialBusinessData, webhookUrl) {
-  // Only send if we have some business data to avoid duplicate contact-only submissions
-  const hasBusinessData = partialBusinessData.aircraft ||
-                         partialBusinessData.currentRevenue ||
-                         partialBusinessData.targetRevenue ||
-                         (partialBusinessData.leadsPerMonth && partialBusinessData.leadsPerMonth !== '') ||
-                         (partialBusinessData.newStudentsPerMonth && partialBusinessData.newStudentsPerMonth !== '') ||
-                         (partialBusinessData.additionalLocations && partialBusinessData.additionalLocations !== '');
-
-  if (!hasBusinessData) {
-    console.log('No business data to send for abandoned checkout');
-    return {
-      success: false,
-      error: 'No business data available for partial submission'
-    };
-  }
-
-  console.log('Sending abandoned checkout data:', { contactData, partialBusinessData });
-
-  return await submitCompleteWebhook(contactData, partialBusinessData, null, true, webhookUrl);
-}
-
-/**
  * Creates a complete submission with package recommendation
  * @param {Object} contactData - Contact information
  * @param {Object} businessData - Complete business information
