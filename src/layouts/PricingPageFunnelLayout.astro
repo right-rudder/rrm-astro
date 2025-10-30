@@ -1,0 +1,66 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, IMAGE } from "../consts";
+import "@fontsource-variable/noto-sans-lao";
+import "@fontsource/merriweather";
+import "@fontsource-variable/merriweather-sans";
+import Banner from "../components/Banner.astro";
+import SimpleFooter from "../components/SimpleFooter.astro";
+import FlyWithUsCTA from "../components/FlyWithUsCTA.astro";
+import DownloadBook from "../components/DownloadBook";
+
+const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+
+const flyWithUsCTA = {
+  imagePath: "/src/assets/flying-over-st-simons-island-ga.jpeg",
+  imageAlt: "Right Rudder Marketing team on the runway",
+  headerH1: `<span class="text-primary">Curious to know what it will take</span> to get your school to the next level?`,
+  paragraph:
+    "Meet with us and let's see how we can train more pilots together.",
+  buttons: [
+    {
+      name: "Start the Conversation",
+      link: "/schedule-call",
+      primary: false,
+    },
+  ],
+};
+const {
+  siteTitle,
+  siteDescription,
+  keywords,
+  bookButton = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead
+      title={siteTitle || SITE_TITLE}
+      description={siteDescription || SITE_DESCRIPTION}
+      keywords={keywords || KEYWORDS}
+      image={IMAGE}
+    />
+  </head>
+  <body class="font-sans bg-primary-100">
+    <Banner class="z-40" />
+    {
+      bookButton && (
+        <div class="fixed bottom-0 lg:bottom-8 right-0 w-full lg:w-auto z-50 p-0 shadow-xl">
+          <DownloadBook
+            client:visible
+            webhook={GHL_BOOK_FORM_WEBHOOK_URL}
+            apiKey={PORTAL_API_KEY}
+          />
+        </div>
+      )
+    }
+    <main>
+      <slot />
+    </main>
+    <FlyWithUsCTA data={flyWithUsCTA} />
+    <SimpleFooter />
+  </body>
+</html>

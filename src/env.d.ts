@@ -11,7 +11,9 @@ interface ImportMetaEnv {
   readonly GHL_BOOK_FORM_WEBHOOK_URL: string;
   readonly GHL_PERSONALITY_QUIZ_CONTACT_WEBHOOK_URL: string;
   readonly GHL_PERSONALITY_QUIZ_RESULTS_WEBHOOK_URL: string;
-  readonly ENROLLMENT_FORM_WEBHOOK_URL: string;
+  readonly GHL_PRICING_CONTACT_WEBHOOK_URL: string;
+  readonly GHL_PRICING_COMPLETE_WEBHOOK_URL: string;
+  readonly ENROLLMENT_FORM_WEBHOOK_URL: string; // What is this?  This is left over from NextGen
   readonly GHL_MASTERMIND_FORM_WEBHOOK_URL: string;
   readonly GHL_ENVISION_FORM_WEBHOOK_URL: string;
   readonly PORTAL_API_KEY: string;
