@@ -260,7 +260,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 value={contactData.name}
                 onChange={(e) => handleContactChange('name', e.target.value)}
                 className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
-                placeholder="John Smith"
+                placeholder="Your Name"
               />
               {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
             </div>
@@ -275,7 +275,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 value={contactData.email}
                 onChange={(e) => handleContactChange('email', e.target.value)}
                 className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
-                placeholder="john@flightschool.com"
+                placeholder="You@NumberOneFlightSchool.com"
               />
               {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
             </div>
@@ -290,7 +290,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 value={contactData.businessName}
                 onChange={(e) => handleContactChange('businessName', e.target.value)}
                 className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.businessName ? 'border-red-500' : 'border-gray-300'}`}
-                placeholder="Sky High Aviation Academy"
+                placeholder="Your Flight School Name"
               />
               {errors.businessName && <p className="mt-1 text-sm text-red-600">{errors.businessName}</p>}
             </div>
@@ -305,7 +305,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 value={contactData.phone}
                 onChange={(e) => handleContactChange('phone', e.target.value)}
                 className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
-                placeholder="555-123-4567"
+                placeholder="xxx-xxx-xxxx"
                 required
               />
               {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}

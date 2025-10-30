@@ -15,8 +15,8 @@ import {
 const images = import.meta.glob('/src/assets/**/*.{jpeg,jpg,png,gif,webp}', { eager: true });
 
 // Helper function to get image by path
-const getImage = (path) => {
-  const image = images[path];
+const getImage = (path: string) => {
+  const image = images[path] as { default: any } | undefined;
   return image?.default || path;
 };
 
@@ -53,7 +53,7 @@ const enhancedKeywords = generateKeywords(
 );
 
 const metaTitle = `${packageData.name} Marketing Program | Right Rudder Marketing`;
-const metaDescription = `Our ${packageData.name} Marketing Program is perfect for flight schools with ${packageData.aircraft} aircraft targeting ${packageData.targetRevenue} revenue. Grow and scale your flight school and see why the best flight schools trust Right Rudder Marketing.  We are USA based and pilot owned.  We are flight training experts that are ready to help your flight school grow.  Let's work together and train more pilots and leave a lasting impact on the next generation of aviators.`;
+const metaDescription = `Our ${packageData.name} Marketing Program is perfect for flight schools with ${packageData.aircraft} aircraft targeting ${packageData.targetRevenue} revenue. Grow and scale your flight school and see why the best flight schools trust Right Rudder Marketing.  We are USA based and pilot owned.  We are flight training experts that are ready to help your flight school grow.  Let's work together and train more pilots and leave a lasting impact on the next generation of aviators.`; // Lol.. the description gets cutoff with the BaseHead component logic
 
 
 ---
