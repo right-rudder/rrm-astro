@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import PricingPageFunnelLayout from "../../layouts/PricingPageFunnelLayout.astro";
 import { pricingPackages } from "../../data/pricingPackages.js";
 import CaseStudiesVideo from "../../components/CaseStudiesVideo.astro"; // Import homepage data for case studies
@@ -9,6 +10,15 @@ import {
   AVIATION_KEYWORDS,
   TARGET_LOCATIONS,
 } from "../../utils/seo";
+
+// Import all images from assets
+const images = import.meta.glob('/src/assets/**/*.{jpeg,jpg,png,gif,webp}', { eager: true });
+
+// Helper function to get image by path
+const getImage = (path) => {
+  const image = images[path];
+  return image?.default || path;
+};
 
 export async function getStaticPaths() {
   return Object.keys(pricingPackages).map((packageKey) => ({
@@ -75,11 +85,14 @@ const ctaContent = {
   <!-- Hero Section with Program Image -->
   <section class="lg:h-screen-1/2 bg-gradient-to-r from-primary-dark to-primary-800 py-16 text-white relative">
     <div class="absolute inset-0 opacity-20">
-      <img
-        src={packageData.heroImage}
+      <Image
+        src={getImage(packageData.heroImage)}
         alt={packageData.heroImageAlt}
         class="w-full h-full object-cover"
         loading="eager"
+        width={1200}
+        height={600}
+        format="webp"
       />
     </div>
     <div class="max-w-6xl mx-auto px-4 relative z-10 grid place-items-center h-full">
@@ -130,11 +143,14 @@ const ctaContent = {
         <h2 class="text-3xl font-bold text-primary-dark mb-4">What We Will Implement For Your Flight School</h2>
 
         <div class="max-w-lg mx-auto py-10">
-          <img
-            src="/src/assets/fsms.webp"
+          <Image
+            src={getImage("/src/assets/fsms.webp")}
             alt="Flight School Marketing System diagram"
             class="w-full"
             loading="lazy"
+            width={600}
+            height={400}
+            format="webp"
           />
         </div>
 
@@ -269,11 +285,14 @@ const ctaContent = {
         <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           {packageData.onboarding.services.map((service) => (
             <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-              <img
-                src={service.image}
+              <Image
+                src={getImage(service.image)}
                 alt={service.imageAlt}
                 class="w-full h-48 object-cover rounded-lg mb-4"
                 loading="lazy"
+                width={400}
+                height={300}
+                format="webp"
               />
               <h3 class="text-xl font-semibold text-primary-dark mb-3">✓ {service.name}</h3>
               <p class="text-gray-700 leading-relaxed">{service.description}</p>
@@ -290,11 +309,14 @@ const ctaContent = {
         <div class="grid md:grid-cols-2 gap-8">
           {packageData.additionalGrowth.services.map((service) => (
             <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-              <img
-                src={service.image}
+              <Image
+                src={getImage(service.image)}
                 alt={service.imageAlt}
                 class="w-full h-48 object-cover rounded-lg mb-4"
                 loading="lazy"
+                width={400}
+                height={300}
+                format="webp"
               />
               <h3 class="text-xl font-semibold text-primary-dark mb-3">✓ {service.name}</h3>
               <p class="text-gray-700 leading-relaxed">{service.description}</p>
@@ -311,11 +333,14 @@ const ctaContent = {
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {packageData.newCustomerAcquisition.services.map((service) => (
             <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-              <img
-                src={service.image}
+              <Image
+                src={getImage(service.image)}
                 alt={service.imageAlt}
                 class="w-full h-48 object-cover rounded-lg mb-4"
                 loading="lazy"
+                width={400}
+                height={300}
+                format="webp"
               />
               <h3 class="text-xl font-semibold text-primary-dark mb-3">✓ {service.name}</h3>
               <p class="text-gray-700 leading-relaxed">{service.description}</p>
@@ -397,11 +422,14 @@ const ctaContent = {
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {packageData.videos.slice(1).map((video) => (
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <img
-                src={video.placeholder}
+              <Image
+                src={getImage(video.placeholder)}
                 alt={video.description}
                 class="w-full h-48 object-cover cursor-pointer"
                 loading="lazy"
+                width={600}
+                height={400}
+                format="webp"
               />
               <div class="p-4">
                 <h3 class="font-semibold text-gray-800 mb-2">{video.title}</h3>
