@@ -330,7 +330,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="aircraft" className="block text-sm font-medium text-gray-700 mb-2">
-                  Number of Aircraft *
+                  Number of Aircraft
                 </label>
                 <input
                   type="number"
@@ -340,33 +340,35 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   value={businessData.aircraft}
                   onChange={(e) => handleBusinessChange('aircraft', e.target.value)}
                   className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.aircraft ? 'border-red-500' : 'border-gray-300'}`}
-                  placeholder="5"
+                  placeholder=""
                 />
                 {errors.aircraft && <p className="mt-1 text-sm text-red-600">{errors.aircraft}</p>}
+                <p className="mt-1 text-xs text-gray-500">Number of aircraft at your flight school</p>
               </div>
               
               <div>
+                {/* AI programmed it as "additional locations.  I'd rather have it as total number of locations to not be confusing.  But I already did GHL piping so leaving variables the same and just changing frontend copy" */}
                 <label htmlFor="additionalLocations" className="block text-sm font-medium text-gray-700 mb-2">
-                  Additional Locations
+                  Number of Locations
                 </label>
                 <input
                   type="number"
                   id="additionalLocations"
                   min="0"
-                  max="10"
+                  max="20"
                   value={businessData.additionalLocations}
                   onChange={(e) => handleBusinessChange('additionalLocations', e.target.value)}
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent border-gray-300"
-                  placeholder="0"
+                  placeholder=""
                 />
-                <p className="mt-1 text-xs text-gray-500">Beyond your main location</p>
+                <p className="mt-1 text-xs text-gray-500">Enter total number of locations (including main campus)</p>
               </div>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="currentRevenue" className="block text-sm font-medium text-gray-700 mb-2">
-                  Current Annual Revenue *
+                  Current Annual Revenue
                 </label>
                 <select
                   id="currentRevenue"
@@ -384,7 +386,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
               
               <div>
                 <label htmlFor="targetRevenue" className="block text-sm font-medium text-gray-700 mb-2">
-                  Target Annual Revenue *
+                  Target Annual Revenue
                 </label>
                 <select
                   id="targetRevenue"
@@ -410,11 +412,11 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   type="number"
                   id="leadsPerMonth"
                   min="0"
-                  max="500"
+                  max="5000"
                   value={businessData.leadsPerMonth}
                   onChange={(e) => handleBusinessChange('leadsPerMonth', e.target.value)}
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent border-gray-300"
-                  placeholder="25"
+                  placeholder=""
                 />
                 <p className="mt-1 text-xs text-gray-500">Approximate inquiries per month</p>
               </div>
@@ -427,7 +429,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   type="number"
                   id="newStudentsPerMonth"
                   min="0"
-                  max="100"
+                  max="1000"
                   value={businessData.newStudentsPerMonth}
                   onChange={(e) => handleBusinessChange('newStudentsPerMonth', e.target.value)}
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent border-gray-300"
