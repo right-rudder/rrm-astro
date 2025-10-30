@@ -248,7 +248,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
       {/* Step 1: Contact Information */}
       {step === 1 && (
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-primary-dark mb-6">Tell us about your flight school</h2>
+          <h2 className="text-2xl font-bold text-primary-dark mb-6">Tell us a little about yourself</h2>
           <form onSubmit={handleStep1Submit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -259,8 +259,9 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 id="name"
                 value={contactData.name}
                 onChange={(e) => handleContactChange('name', e.target.value)}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
                 placeholder="Your Name"
+                required
               />
               {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
             </div>
@@ -274,8 +275,9 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 id="email"
                 value={contactData.email}
                 onChange={(e) => handleContactChange('email', e.target.value)}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
                 placeholder="You@NumberOneFlightSchool.com"
+                required
               />
               {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
             </div>
@@ -289,8 +291,9 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 id="businessName"
                 value={contactData.businessName}
                 onChange={(e) => handleContactChange('businessName', e.target.value)}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.businessName ? 'border-red-500' : 'border-gray-300'}`}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.businessName ? 'border-red-500' : 'border-gray-300'}`}
                 placeholder="Your Flight School Name"
+                required
               />
               {errors.businessName && <p className="mt-1 text-sm text-red-600">{errors.businessName}</p>}
             </div>
@@ -304,7 +307,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                 id="phone"
                 value={contactData.phone}
                 onChange={(e) => handleContactChange('phone', e.target.value)}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
                 placeholder="xxx-xxx-xxxx"
                 required
               />
@@ -325,7 +328,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
       {/* Step 2: Business Information */}
       {step === 2 && (
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-primary-dark mb-6">Let's find your perfect marketing package</h2>
+          <h2 className="text-2xl font-bold text-primary-dark mb-6">Tell us about your flight school</h2>
           <form onSubmit={handleStep2Submit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -339,8 +342,9 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   max="100"
                   value={businessData.aircraft}
                   onChange={(e) => handleBusinessChange('aircraft', e.target.value)}
-                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.aircraft ? 'border-red-500' : 'border-gray-300'}`}
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.aircraft ? 'border-red-500' : 'border-gray-300'}`}
                   placeholder=""
+                  required
                 />
                 {errors.aircraft && <p className="mt-1 text-sm text-red-600">{errors.aircraft}</p>}
                 <p className="mt-1 text-xs text-gray-500">Number of aircraft at your flight school</p>
@@ -358,9 +362,11 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   max="20"
                   value={businessData.additionalLocations}
                   onChange={(e) => handleBusinessChange('additionalLocations', e.target.value)}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent border-gray-300"
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.additionalLocations ? 'border-red-500' : 'border-gray-300'}`}
                   placeholder=""
+                  required
                 />
+                {errors.additionalLocations && <p className="mt-1 text-sm text-red-600">{errors.additionalLocations}</p>}
                 <p className="mt-1 text-xs text-gray-500">Enter total number of locations (including main campus)</p>
               </div>
             </div>
@@ -375,6 +381,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   value={businessData.currentRevenue}
                   onChange={(e) => handleBusinessChange('currentRevenue', e.target.value)}
                   className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.currentRevenue ? 'border-red-500' : 'border-gray-300'}`}
+                  required
                 >
                   <option value="">Select current revenue...</option>
                   {revenueOptions.map(option => (
@@ -393,6 +400,7 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   value={businessData.targetRevenue}
                   onChange={(e) => handleBusinessChange('targetRevenue', e.target.value)}
                   className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent ${errors.targetRevenue ? 'border-red-500' : 'border-gray-300'}`}
+                  required
                 >
                   <option value="">Select target revenue...</option>
                   {revenueOptions.map(option => (
@@ -415,9 +423,11 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   max="5000"
                   value={businessData.leadsPerMonth}
                   onChange={(e) => handleBusinessChange('leadsPerMonth', e.target.value)}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent border-gray-300"
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.leadsPerMonth ? 'border-red-500' : 'border-gray-300'}`}
                   placeholder=""
+                  required
                 />
+                {errors.leadsPerMonth && <p className="mt-1 text-sm text-red-600">{errors.leadsPerMonth}</p>}
                 <p className="mt-1 text-xs text-gray-500">Approximate inquiries per month</p>
               </div>
               
@@ -432,9 +442,11 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
                   max="1000"
                   value={businessData.newStudentsPerMonth}
                   onChange={(e) => handleBusinessChange('newStudentsPerMonth', e.target.value)}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent border-gray-300"
-                  placeholder="8"
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent placeholder:text-gray-300 ${errors.newStudentsPerMonth ? 'border-red-500' : 'border-gray-300'}`}
+                  placeholder=""
+                  required
                 />
+                {errors.newStudentsPerMonth && <p className="mt-1 text-sm text-red-600">{errors.newStudentsPerMonth}</p>}
                 <p className="mt-1 text-xs text-gray-500">New student enrollments per month</p>
               </div>
             </div>
@@ -462,16 +474,16 @@ const PricingEstimator = ({ contactWebhookUrl, completeWebhookUrl }) => {
               <button
                 type="button"
                 onClick={() => setStep(1)}
-                className="flex-1 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-bold py-3 px-6 rounded-lg transition duration-300"
+                className="flex-2 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-bold py-3 px-6 rounded-lg transition duration-300"
               >
                 ← Back
               </button>
               <button
                 type="submit"
                 disabled={loading}
-                className="flex-2 bg-accent hover:bg-accent-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-50"
+                className="flex-1 bg-accent hover:bg-accent-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-50"
               >
-                {loading ? 'Finding Your Package...' : 'Get My Recommendation →'}
+                {loading ? 'Finding Your Package...' : 'Get Approximate Pricing Now →'}
               </button>
             </div>
           </form>
