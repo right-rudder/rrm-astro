@@ -215,5 +215,9 @@ export default defineConfig({
       "/webinars/your-2026-digital-marketing-plan-for-flight-school-businesses/", */
   },
 
-  adapter: netlify(),
+  adapter: netlify({
+    edgeMiddleware: false,
+    cacheOnDemandPages: true,
+    imageCDN: true,
+  }),
 });
