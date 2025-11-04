@@ -1,11 +1,11 @@
 ---
-pubDate: "November 12, 2025"
+pubDate: "November 20, 2025"
 author: Tim Jedrek
-title: "How to implement marketing automation to super charge your lead conversion"
+title: "How to Implement Marketing Automation to Supercharge your Lead Conversion"
 description: "In today's fast-paced digital world, manual marketing efforts can quickly become time-consuming and inefficient. Marketing automation empowers flight schools to streamline their marketing processes, nurture leads more effectively, and ultimately drive higher enrollment rates. This guide will explore how to implement marketing automation to supercharge your lead conversion."
-heroImage: "/blog/woman and flight instructor.webp"
+heroImage: "/webinars/RRM-Nov-Webinar-2025.webp"
 readingTime: 5
-status: "draft"
+status: "published"
 category: "Marketing"
 tags:
   [
