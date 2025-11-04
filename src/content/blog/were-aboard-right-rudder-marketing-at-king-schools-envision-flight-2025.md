@@ -3,7 +3,7 @@ pubDate: "November 4, 2025"
 author: Raul Ospina
 title: "We're Aboard! Right Rudder Marketing at King Schools Envision Flight 2025"
 description: "Right Rudder Marketing sponsors King Schools Envision Flight 2025. Join RRM CEO Tim Jedrek’s presentation on proven flight school marketing strategies."
-heroImage: "/blog/RRM-Envision-2025.webp"
+heroImage: "/blog/RRM+Envision-2025.webp"
 readingTime: 4
 category: "Tradeshows & Events"
 tags:
@@ -91,6 +91,13 @@ This isn't just about business for us. It's about giving back to the aviation co
 
 Our founder and CEO, Tim Jedrek, is presenting this week on marketing strategies that actually work for flight schools. Not generic business advice that sounds good but doesn't translate to aviation. Real, proven strategies designed specifically for flight training businesses.
 
+---
+
+![Tim Jedrek presenting at Envision Flight 2025](/blog/RRM-Envision-Tim-Jedrek-Talk.webp)
+_Tim Jedrek presenting at Envision Flight 2025_
+
+---
+
 Tim brings a unique perspective to the table. He's both a pilot and a marketing expert with over a decade of business experience. He gets it. He understands the unique challenges flight schools face because he lives and breathes this industry every day.
 
 His presentation covers what we call the **Flight School Marketing System**, the same framework detailed in his book, ["Flight School Handbook of Marketing Knowledge."](/resources/flight-school-handbook) Attendees are getting actionable insights they can implement as soon as they get back to their schools:
@@ -113,6 +120,13 @@ Our [marketing strategies](/marketing-system) have helped flight schools across 
 
 These aren't lucky breaks. They're the result of implementing proven systems designed specifically for flight training businesses.
 
+---
+
+![Majestic Princess is the venue for Envision Flight 2025](/blog/RRM-Envision-2025.webp)
+_Majestic Princess is the venue for Envision Flight 2025_
+
+---
+
 ## The Power of Face-to-Face Connection
 
 You know what you can't get from a webinar or a blog post? The kind of conversations that happen when you're sitting across from fellow flight school owners, sharing war stories over dinner, or brainstorming solutions to common challenges while watching the sunset over the Caribbean.
@@ -120,8 +134,6 @@ You know what you can't get from a webinar or a blog post? The kind of conversat
 That's the real magic of Envision Flight 2025.
 
 King Schools designed this symposium to blend exceptional educational content with extended networking opportunities in a setting where people can actually relax and connect. Industry sponsors like Right Rudder Marketing are here all week, ready to discuss your specific challenges and opportunities.
-
-No hard sell. No pressure. Just genuine conversations about how we can help flight schools succeed.
 
 ## Looking Ahead
 
