@@ -7,7 +7,7 @@ social:
   linkedin: "https://www.linkedin.com/in/tonie-santos-23014a1b//"
   twitter: "https://twitter.com/tonie_santos"
 image: /authors/tonie_profile.webp
-status: active
+status: former
 seniority: 2
 ---
 Tonie Santos is a seasoned software engineering leader and technical consultant with over three decades of experience driving innovation and operational excellence. From February 2023 to December 2024, Tonie served as the Director of Operations at Right Rudder Marketing, where he transformed aviation school websites into fast, efficient platforms that topped search engine rankings. He optimized lead generation, email marketing, and client automation systems, integrating them with CRMs via APIs to fuel flight school growth. Now a technical consultant for the team, Tonie continues to lend his expertise to ensure cutting-edge solutions for aviation marketing challenges.
