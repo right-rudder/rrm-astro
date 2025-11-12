@@ -6,7 +6,7 @@ social:
   instagram: "https://www.instagram.com/nunes_rjr/"
   linkedin: "https://www.linkedin.com/in/rodrigojrnunes/"
   github: "https://github.com/hannziegel"
-image: /authors/rodrigo-nunes.webp
+image: /authors/RRM-Crew-Rodrigo-Nunes.webp
 status: active
 seniority: 8
 ---

@@ -5,7 +5,7 @@ title: Sales and Marketing Assistant
 social:
   linkedin: "https://www.linkedin.com/in/samsettletx/"
   instagram: "https://www.instagram.com/ssizzle/?hl=en"
-image: /authors/RRM-team-SamSettle.webp
+image: /authors/RRM-Crew-Sam-Settle.webp
 status: active
 seniority: 9
 ---
