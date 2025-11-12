@@ -6,7 +6,7 @@ social:
   linkedin: "https://www.linkedin.com/in/guilhermejrnunes/"
   github: "https://github.com/GuiJRNunes"
   website: "https://guijrnunes.github.io/portfolio/"
-image: /authors/guilherme-nunes.webp
+image: /authors/RRM-Crew-Gilherme.webp
 status: active
 seniority: 11
 ---
