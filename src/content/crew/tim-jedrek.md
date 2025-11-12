@@ -10,7 +10,7 @@ social:
   github: "https://github.com/timjedrek"
   website: "https://timjedrek.com/"
   youtube: "https://www.youtube.com/@rightruddermarketing"
-image: /authors/tim-jedrek-swiss-alps.webp
+image: /authors/RRM-Crew-Tim-Jedrek.webp
 status: active
 seniority: 1
 ---
