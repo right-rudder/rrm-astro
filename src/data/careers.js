@@ -32,18 +32,11 @@ const careersVars = {
       listHeading: "Current Job Openings",
       list: [
         {
-          title: "Flight School Success Coordinator",
-          link: "https://docs.google.com/document/d/1VDtJ9aOLLYW79Vnv7m0h2ZIs2EpolBih4sx6vTGgDOg/edit?usp=sharing",
+          title: "Marketing Assistant",
+          link: "https://docs.google.com/document/d/1Z1Ezb-0evDtHoUFiYU4QR22w1zpG3k9ciiL1BQwAZqU/edit?usp=sharing",
           mailto: "info@rightruddermarketing.com",
           description:
-            "As our new Flight School Success Coordinator, you’ll be the first one people talk to when they’re considering becoming a pilot helping flight schools across the country train more student pilots. This dynamic role blends customer service representative duties handling phone inquiries for our clients’ call center, with client service coordinator responsibilities nurturing relationships to drive retention and growth. You’ll support our flight schools by collaborating with our sales and marketing teams to ensure client success, all while embodying the aviation spirit that defines Right Rudder Marketing.",
-        },
-        {
-          title: "Web Developer",
-          link: "https://docs.google.com/document/d/1ZFIaQICaR3OjYyndyh1uCGkJb7rZTw79emmtsM8lwk8/edit?usp=sharing",
-          mailto: "info@rightruddermarketing.com",
-          description:
-            "Right Rudder Marketing is seeking a talented Web Developer to join our team. This is a remote, full-time role (9AM–5PM Central Time). We’re looking for someone with strong technical skills, a collaborative mindset, and the ability to thrive in a fast-paced, detail-oriented environment.To be eligible for this role, you must have a bachelor's degree in computer science or a related field; or hands-on experience with web development and design.",
+            "Right Rudder Marketing (RRM) is seeking a talented Marketing Assistant to join our team. This position requires someone with leadership skills, excellent interpersonal skills, and a fast-paced learner with a coachable personality who can work in the CENTRAL TIME ZONE.",
         },
       ],
     },
