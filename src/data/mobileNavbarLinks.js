@@ -54,6 +54,10 @@ export const mobileNavbarLinks = [
     ],
   }, */
   {
+    name: "Free SEO Checker",
+    link: "/seo-checker",
+  },
+  {
     name: "Flight School Handbook",
     link: "/resources/flight-school-handbook",
   },

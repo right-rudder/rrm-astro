@@ -1,0 +1,564 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SEOChecker from "../components/SEOChecker.jsx";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { optimizeTitle, optimizeDescription } from "../utils/seo";
+
+const pageTitle =
+  "Free Flight School SEO Checker | Analyze Your Flight School Website";
+const pageDescription =
+  "Get instant SEO analysis for your flight school website. Discover optimization opportunities, fix critical issues, and improve your search rankings with our free SEO checker.";
+const keywords =
+  "seo checker, flight school seo, aviation marketing, website analysis, seo audit, flight training marketing";
+
+const optimizedTitle = optimizeTitle(pageTitle);
+const optimizedDescription = optimizeDescription(pageDescription);
+
+const heroImagePath = "/src/assets/html-code-in-an-ide-editor.webp";
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+);
+if (!images[heroImagePath]) {
+  throw new Error(
+    `"${heroImagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+  );
+}
+
+const GHL_SEO_CHECKER_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_SEO_CHECKER_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+---
+
+<BaseLayout
+  siteTitle={optimizedTitle}
+  siteDescription={optimizedDescription}
+  keywords={keywords}
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen-1/2 text-white flex items-end pb-8">
+    <Image
+      src={images[heroImagePath]()}
+      alt={"HTML code in an IDE editor"}
+      width={1920}
+      loading={"eager"}
+      class="absolute inset-0 -z-20 object-cover object-center w-full h-full animate-slow-zoom"
+    />
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-primary-dark-950/70 to-primary-dark-950 w-full h-full z-10"
+    >
+    </div>
+    <div class="container mx-auto px-4 z-10 relative">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
+        >
+          Free Flight School SEO Checker
+        </h1>
+        <p class="text-lg md:text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+          Discover how your aviation website ranks in search engines. Get
+          instant insights and actionable recommendations to attract more
+          student pilots.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 text-sm md:text-base">
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-6 h-6 text-primary-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Instant Analysis</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-6 h-6 text-primary-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Detailed Report</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-6 h-6 text-primary-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Actionable Tips</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Checker Tool -->
+  <section class="py-8 bg-primary-dark-950">
+    <div class="container mx-auto px-4">
+      <SEOChecker
+        webhook={GHL_SEO_CHECKER_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
+        client:load
+      />
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12"
+        >
+          What You'll Discover
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Title & Meta Tags Analysis
+              </h3>
+              <p class="text-gray-600">
+                Ensure your title tags and meta descriptions are optimized for
+                search engines and compelling for potential students.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Content Structure Check
+              </h3>
+              <p class="text-gray-600">
+                Verify your heading hierarchy (H1, H2, etc.) follows SEO best
+                practices for better content organization.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Image Optimization
+              </h3>
+              <p class="text-gray-600">
+                Identify images missing alt text and get recommendations for
+                better accessibility and SEO performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Security & Technical SEO
+              </h3>
+              <p class="text-gray-600">
+                Check for HTTPS, mobile optimization, schema markup, and other
+                technical factors that impact rankings.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Social Media Integration
+              </h3>
+              <p class="text-gray-600">
+                Discover if your Open Graph tags are properly configured for
+                optimal social media sharing.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Competitive Scoring
+              </h3>
+              <p class="text-gray-600">
+                Get an overall SEO score to benchmark your site against industry
+                standards and track improvements over time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why SEO Matters for Flight Schools -->
+  <section class="py-16 bg-primary-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-6"
+        >
+          Why SEO Matters for Flight Schools
+        </h2>
+        <p class="text-xl text-gray-600 text-center mb-12">
+          In today's digital age, potential students search online before
+          choosing a flight school. Your SEO determines whether they find you or
+          your competition.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <div class="text-4xl font-bold text-primary-600 mb-2">75%</div>
+            <p class="text-gray-700">
+              of users never scroll past the first page of search results
+            </p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <div class="text-4xl font-bold text-primary-600 mb-2">60%</div>
+            <p class="text-gray-700">
+              of flight school students research online before contacting
+              schools
+            </p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <div class="text-4xl font-bold text-primary-600 mb-2">3x</div>
+            <p class="text-gray-700">
+              more leads from organic search compared to traditional advertising
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-8 shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Common Flight School SEO Mistakes
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700"
+                ><strong>Missing local SEO optimization</strong> - Not targeting
+                local keywords like "flight school in [city]"</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700"
+                ><strong>Weak meta descriptions</strong> - Generic descriptions that
+                don't entice clicks from search results</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700"
+                ><strong>No mobile optimization</strong> - Losing potential students
+                who search on smartphones</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700"
+                ><strong>Slow page speeds</strong> - High bounce rates from impatient
+                visitors</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700"
+                ><strong>Lacking quality content</strong> - Thin content that doesn't
+                demonstrate expertise or answer student questions</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12"
+        >
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6 bg-primary-100">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              How accurate is this SEO checker?
+            </h3>
+            <p class="text-gray-600">
+              Our SEO checker analyzes over 15 critical on-page SEO factors that
+              directly impact your search rankings. While it provides
+              comprehensive insights, it's designed to identify quick wins and
+              major issues. For a complete SEO audit including backlinks,
+              competitor analysis, and technical deep-dive, contact our team.
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 bg-primary-100">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Is this tool really free?
+            </h3>
+            <p class="text-gray-600">
+              Yes! The SEO checker is completely free. We only ask for your
+              email to send you the detailed report and occasional tips on
+              improving your aviation marketing. No credit card required, no
+              hidden fees.
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 bg-primary-100">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              How long does the analysis take?
+            </h3>
+            <p class="text-gray-600">
+              Most website analyses complete in 10-15 seconds. The tool fetches
+              your page, analyzes key SEO elements, and generates a
+              comprehensive report with actionable recommendations.
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 bg-primary-100">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Can I check multiple pages?
+            </h3>
+            <p class="text-gray-600">
+              Yes! You can check as many URLs as you'd like. We recommend
+              starting with your homepage, then checking key landing pages like
+              your programs page, discovery flight page, and contact page.
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 bg-primary-100">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              What should I do with the results?
+            </h3>
+            <p class="text-gray-600">
+              Start by addressing critical and high-priority issues first. These
+              have the biggest impact on your rankings. If you need help
+              implementing recommendations, our aviation marketing specialists
+              can assist you with a comprehensive SEO strategy tailored to
+              flight schools.
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 bg-primary-100">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Do you offer SEO services?
+            </h3>
+            <p class="text-gray-600">
+              Absolutely! Right Rudder Marketing specializes in SEO for flight
+              schools and aviation businesses. We handle everything from
+              technical SEO and content creation to local optimization and link
+              building. Contact us for a free consultation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section
+    class="py-16 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white"
+  >
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Dominate Search Results?
+        </h2>
+        <p class="text-xl text-primary-100 mb-8">
+          Our aviation marketing experts have helped dozens of flight schools
+          increase their organic traffic by 300%+
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/contact"
+            class="inline-block px-8 py-4 bg-accent-600 hover:bg-accent-700 text-white font-semibold rounded-lg transition-colors text-lg"
+          >
+            Schedule Free Consultation
+          </a>
+          <a
+            href="/blog"
+            class="inline-block px-8 py-4 bg-white hover:bg-gray-100 text-primary-900 font-semibold rounded-lg transition-colors text-lg"
+          >
+            Read SEO Tips
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
