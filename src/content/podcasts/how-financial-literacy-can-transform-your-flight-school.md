@@ -46,16 +46,11 @@ tags:
   ]
 ---
 
-### Join The Aviation Business Podcast LIVE Recording!
-
-- **When:** November 13, 2025, at 10:00 AM CST
-- **Where:** [Riverside Studio](https://riverside.fm/studio/podcast-40nqk)
-
----
-
 Here's something most flight school owners won't admit: they're amazing pilots but struggle with the business side of things. It's not a character flaw, it's just reality. Most aviation professionals spent years mastering stick-and-rudder skills, not balance sheets and cash flow statements. But here's the tough truth: if you don't understand your numbers, you're flying your business blind.
 
 Business consultant and former military aviator Ned Parks tackled this exact issue in a recent episode of The James Spearman Show. His insights hit home for anyone running a flight school, and they're worth your attention.
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/Bjf9TM_65Mg?si=RojNAHoq1215y-CJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## The Problem Nobody Talks About
 
@@ -190,14 +185,5 @@ The aviation industry needs flight schools that are operationally excellent and 
 By investing in business acumen and financial literacy, whether through formal programs, consulting partnerships, or peer learning, you position your school for success in an increasingly competitive marketplace. Combined with strategic marketing that effectively communicates your value, these capabilities create sustainable competitive advantages transcending price competition.
 
 The question isn't whether you can afford to invest in these areas. Given the thin margins and competitive pressures facing aviation businesses, the real question is whether you can afford not to. Understand your numbers, choose your customers wisely, and never stop learning. Your flight school's future depends on it.
-
----
-
-### Join The Aviation Business Podcast LIVE Recording!
-
-- **When:** November 13, 2025, at 10:00 AM CST
-- **Where:** [Riverside Studio](https://riverside.fm/studio/podcast-40nqk)
-
----
 
 _Ready to transform your flight school's marketing and business strategy? [Contact Right Rudder Marketing](https://rightruddermarketing.com/contact) to schedule a consultation. Our team specializes in helping aviation businesses develop data-driven marketing strategies that drive enrollment and profitability._
