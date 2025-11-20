@@ -59,12 +59,6 @@ const marketingSystem = {
             description:
               "Most marketing agencies charge 2X to 3X the cost of our services. They don't provide the same level of expertise or results that we do.",
           },
-          {
-            title: "Lock you into lengthy contracts",
-            icon: "m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
-            description:
-              "Most marketing agencies lock you into lengthy contracts. We offer month-to-month services with no long-term commitments.",
-          },
         ],
       },
       rrm: {
@@ -93,12 +87,6 @@ const marketingSystem = {
             icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
             description:
               "We offer affordable plans that are tailored to your flight school's needs. We provide the same level of expertise and results as other marketing agencies at a fraction of the cost.",
-          },
-          {
-            title: " No long term contracts",
-            icon: "M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z",
-            description:
-              "We offer month-to-month services with no long-term commitments. Results will keep you with us.",
           },
         ],
       },
