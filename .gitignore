@@ -8,3 +8,6 @@ src/.DS_Store
 src/.DS_Store
 .astro
 .astro/*
+
+# Local Netlify folder
+.netlify

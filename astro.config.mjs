@@ -4,9 +4,12 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://rightruddermarketing.com/",
+
   integrations: [
     mdx(),
     sitemap({
@@ -179,10 +182,12 @@ export default defineConfig({
 
   // Compression and optimization
   compressHTML: true,
+
   build: {
     inlineStylesheets: "auto",
     assets: "_astro",
   },
+
   redirects: {
     // View previous sitemap and Google Search Console and place redirects from old routes to new routes here
     /*     "/notams": "/blog",
@@ -209,4 +214,10 @@ export default defineConfig({
     "/webinars/your-2025-digital-marketing-plan-for-flight-school-businesses":
       "/webinars/your-2026-digital-marketing-plan-for-flight-school-businesses/", */
   },
+
+  adapter: netlify({
+    edgeMiddleware: false,
+    cacheOnDemandPages: true,
+    imageCDN: true,
+  }),
 });
