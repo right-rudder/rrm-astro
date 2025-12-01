@@ -19,7 +19,7 @@
   "dependencies": {
     "@alpinejs/intersect": "^3.14.6",
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/mdx": "^4.3.12",
     "@astrojs/react": "^4.3.0",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.4.0",
