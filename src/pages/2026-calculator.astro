@@ -40,11 +40,9 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               <div class="relative">
                 <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-600 font-semibold">$</span>
                 <input
-                  type="number"
+                  type="text"
                   id="annualRevenue"
-                  value="1000000"
-                  min="0"
-                  step="10000"
+                  value="1,000,000"
                   class="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-600 focus:ring-2 focus:ring-primary-200 transition-colors text-lg font-semibold"
                 />
               </div>
@@ -58,11 +56,9 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               <div class="relative">
                 <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-600 font-semibold">$</span>
                 <input
-                  type="number"
+                  type="text"
                   id="currentRevenue"
-                  value="50000"
-                  min="0"
-                  step="1000"
+                  value="50,000"
                   class="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-600 focus:ring-2 focus:ring-primary-200 transition-colors text-lg font-semibold"
                 />
               </div>
@@ -90,24 +86,6 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
 
             <div class="border-t-2 border-gray-200 pt-6 mt-6"></div>
 
-            <!-- Average Spend per Student -->
-            <div class="grid md:grid-cols-2 gap-4 items-center">
-              <label for="avgSpend" class="text-lg font-semibold text-gray-800">
-                What is your average spend for each student monthly?
-              </label>
-              <div class="relative">
-                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-600 font-semibold">$</span>
-                <input
-                  type="number"
-                  id="avgSpend"
-                  value="2000"
-                  min="0"
-                  step="100"
-                  class="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-600 focus:ring-2 focus:ring-primary-200 transition-colors text-lg font-semibold"
-                />
-              </div>
-            </div>
-
             <!-- Current Active Students -->
             <div class="grid md:grid-cols-2 gap-4 items-center">
               <label for="currentStudents" class="text-lg font-semibold text-gray-800">
@@ -125,6 +103,16 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               </div>
             </div>
 
+            <!-- Average Spend per Student (Calculated) -->
+            <div class="grid md:grid-cols-2 gap-4 items-center bg-primary-100 rounded-lg p-4">
+              <label class="text-lg font-semibold text-gray-800">
+                Average monthly spend per student
+              </label>
+              <div class="text-right">
+                <span id="avgSpend" class="text-2xl font-bold text-primary-700">$2,000.00</span>
+              </div>
+            </div>
+
             <!-- Total Active Students Required (Calculated) -->
             <div class="grid md:grid-cols-2 gap-4 items-center bg-primary-100 rounded-lg p-4">
               <label class="text-lg font-semibold text-gray-800">
@@ -135,13 +123,23 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               </div>
             </div>
 
-            <!-- New Students Needed (Calculated) -->
+            <!-- New Students Needed Total (Calculated) -->
             <div class="grid md:grid-cols-2 gap-4 items-center bg-green-50 border-2 border-green-300 rounded-lg p-4">
               <label class="text-lg font-bold text-green-800">
-                New Students Needed
+                Total new students needed for 2026
               </label>
               <div class="text-right">
-                <span id="newStudentsNeeded" class="text-2xl font-bold text-green-700">17</span>
+                <span id="newStudentsNeededTotal" class="text-2xl font-bold text-green-700">17</span>
+              </div>
+            </div>
+
+            <!-- New Students Needed Per Month (Calculated) -->
+            <div class="grid md:grid-cols-2 gap-4 items-center bg-primary-100 rounded-lg p-4">
+              <label class="text-lg font-semibold text-gray-800">
+                New Students Needed Per Month
+              </label>
+              <div class="text-right">
+                <span id="newStudentsPerMonth" class="text-2xl font-bold text-primary-700">1.4</span>
               </div>
             </div>
           </div>
@@ -171,13 +169,13 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               </div>
             </div>
 
-            <!-- Leads Needed (Calculated) -->
+            <!-- Leads Needed Per Month (Calculated) -->
             <div class="grid md:grid-cols-2 gap-4 items-center bg-green-50 border-2 border-green-300 rounded-lg p-4">
               <label class="text-lg font-bold text-green-800">
                 # of new leads needed per month to hit target
               </label>
               <div class="text-right">
-                <span id="leadsNeeded" class="text-2xl font-bold text-green-700">208</span>
+                <span id="leadsNeeded" class="text-2xl font-bold text-green-700">85</span>
               </div>
             </div>
           </div>
@@ -193,11 +191,9 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
                 <div class="relative">
                   <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-800 font-semibold">$</span>
                   <input
-                    type="number"
+                    type="text"
                     id="costPerLead"
                     value="100"
-                    min="0"
-                    step="10"
                     class="w-full pl-8 pr-4 py-3 border-2 border-white rounded-lg focus:border-accent-700 focus:ring-2 focus:ring-accent-300 transition-colors text-lg font-semibold"
                   />
                 </div>
@@ -237,7 +233,6 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
   // Get all input elements
   const annualRevenueInput = document.getElementById('annualRevenue') as HTMLInputElement;
   const currentRevenueInput = document.getElementById('currentRevenue') as HTMLInputElement;
-  const avgSpendInput = document.getElementById('avgSpend') as HTMLInputElement;
   const currentStudentsInput = document.getElementById('currentStudents') as HTMLInputElement;
   const conversionRateInput = document.getElementById('conversionRate') as HTMLInputElement;
   const costPerLeadInput = document.getElementById('costPerLead') as HTMLInputElement;
@@ -245,10 +240,23 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
   // Get all output elements
   const monthlyRevenueSpan = document.getElementById('monthlyRevenue') as HTMLSpanElement;
   const additionalRevenueSpan = document.getElementById('additionalRevenue') as HTMLSpanElement;
+  const avgSpendSpan = document.getElementById('avgSpend') as HTMLSpanElement;
   const studentsRequiredSpan = document.getElementById('studentsRequired') as HTMLSpanElement;
-  const newStudentsNeededSpan = document.getElementById('newStudentsNeeded') as HTMLSpanElement;
+  const newStudentsNeededTotalSpan = document.getElementById('newStudentsNeededTotal') as HTMLSpanElement;
+  const newStudentsPerMonthSpan = document.getElementById('newStudentsPerMonth') as HTMLSpanElement;
   const leadsNeededSpan = document.getElementById('leadsNeeded') as HTMLSpanElement;
   const budgetRequiredSpan = document.getElementById('budgetRequired') as HTMLSpanElement;
+
+  // Parse value by removing commas
+  function parseValue(value: string): number {
+    return parseFloat(value.replace(/,/g, '')) || 0;
+  }
+
+  // Format number with commas (no decimals)
+  function formatNumberInput(value: string): string {
+    const num = parseValue(value);
+    return num.toLocaleString('en-US');
+  }
 
   // Format currency
   function formatCurrency(value: number): string {
@@ -265,15 +273,20 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
     return Math.round(value).toLocaleString('en-US');
   }
 
+  // Format input field with commas (only when leaving field)
+  function formatInputField(input: HTMLInputElement) {
+    const numericValue = parseValue(input.value);
+    input.value = formatNumberInput(input.value);
+  }
+
   // Calculate all values
   function calculate() {
-    // Get input values
-    const annualRevenue = parseFloat(annualRevenueInput.value) || 0;
-    const currentRevenue = parseFloat(currentRevenueInput.value) || 0;
-    const avgSpend = parseFloat(avgSpendInput.value) || 0;
-    const currentStudents = parseFloat(currentStudentsInput.value) || 0;
-    const conversionRate = parseFloat(conversionRateInput.value) || 0;
-    const costPerLead = parseFloat(costPerLeadInput.value) || 0;
+    // Get input values (parse removes commas)
+    const annualRevenue = parseValue(annualRevenueInput.value);
+    const currentRevenue = parseValue(currentRevenueInput.value);
+    const currentStudents = parseValue(currentStudentsInput.value);
+    const conversionRate = parseValue(conversionRateInput.value);
+    const costPerLead = parseValue(costPerLeadInput.value);
 
     // Calculate monthly revenue target
     const monthlyRevenue = annualRevenue / 12;
@@ -283,31 +296,43 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
     const additionalRevenue = Math.max(0, monthlyRevenue - currentRevenue);
     additionalRevenueSpan.textContent = formatCurrency(additionalRevenue);
 
+    // Calculate average spend per student (from current data)
+    const avgSpend = currentStudents > 0 ? currentRevenue / currentStudents : 0;
+    avgSpendSpan.textContent = formatCurrency(avgSpend);
+
     // Calculate total students required
     const studentsRequired = avgSpend > 0 ? monthlyRevenue / avgSpend : 0;
     studentsRequiredSpan.textContent = formatNumber(studentsRequired);
 
-    // Calculate new students needed
-    const newStudentsNeeded = Math.max(0, studentsRequired - currentStudents);
-    newStudentsNeededSpan.textContent = formatNumber(newStudentsNeeded);
+    // Calculate total new students needed for the entire year (gap between current and required)
+    const newStudentsNeededTotal = Math.max(0, studentsRequired - currentStudents);
+    newStudentsNeededTotalSpan.textContent = formatNumber(newStudentsNeededTotal);
 
-    // Calculate leads needed (based on NEW students needed, not total)
+    // Calculate new students needed per month (total gap divided by 12 months)
+    const newStudentsPerMonth = newStudentsNeededTotal / 12;
+    newStudentsPerMonthSpan.textContent = newStudentsPerMonth.toFixed(1);
+
+    // Calculate leads needed per month (based on monthly new students)
     const conversionDecimal = conversionRate / 100;
-    const leadsNeeded = conversionDecimal > 0 ? newStudentsNeeded / conversionDecimal : 0;
+    const leadsNeeded = conversionDecimal > 0 ? newStudentsPerMonth / conversionDecimal : 0;
     leadsNeededSpan.textContent = formatNumber(leadsNeeded);
 
-    // Calculate budget required
+    // Calculate budget required (monthly)
     const budgetRequired = leadsNeeded * costPerLead;
     budgetRequiredSpan.textContent = formatCurrency(budgetRequired);
   }
 
-  // Add event listeners to all inputs
+  // Add event listeners - calculate on input, format on blur
   annualRevenueInput.addEventListener('input', calculate);
   currentRevenueInput.addEventListener('input', calculate);
-  avgSpendInput.addEventListener('input', calculate);
   currentStudentsInput.addEventListener('input', calculate);
   conversionRateInput.addEventListener('input', calculate);
   costPerLeadInput.addEventListener('input', calculate);
+
+  // Format on blur (when user leaves the field)
+  annualRevenueInput.addEventListener('blur', () => formatInputField(annualRevenueInput));
+  currentRevenueInput.addEventListener('blur', () => formatInputField(currentRevenueInput));
+  costPerLeadInput.addEventListener('blur', () => formatInputField(costPerLeadInput));
 
   // Run calculation on page load
   calculate();
