@@ -15,7 +15,7 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
         <!-- Header -->
-        <div class="text-center mb-12">
+        <div class="text-center mt-10 mb-12">
           <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">
             Lead Generation Target Planner
           </h1>
@@ -50,6 +50,24 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               </div>
             </div>
 
+            <!-- Current Monthly Revenue -->
+            <div class="grid md:grid-cols-2 gap-4 items-center">
+              <label for="currentRevenue" class="text-lg font-semibold text-gray-800">
+                Current Monthly Revenue
+              </label>
+              <div class="relative">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-600 font-semibold">$</span>
+                <input
+                  type="number"
+                  id="currentRevenue"
+                  value="50000"
+                  min="0"
+                  step="1000"
+                  class="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-600 focus:ring-2 focus:ring-primary-200 transition-colors text-lg font-semibold"
+                />
+              </div>
+            </div>
+
             <!-- Monthly Revenue Target (Calculated) -->
             <div class="grid md:grid-cols-2 gap-4 items-center bg-primary-100 rounded-lg p-4">
               <label class="text-lg font-semibold text-gray-800">
@@ -59,6 +77,18 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
                 <span id="monthlyRevenue" class="text-2xl font-bold text-primary-700">$83,333.33</span>
               </div>
             </div>
+
+            <!-- Additional Revenue Needed (Calculated) -->
+            <div class="grid md:grid-cols-2 gap-4 items-center bg-green-50 border-2 border-green-300 rounded-lg p-4">
+              <label class="text-lg font-bold text-green-800">
+                Additional Monthly Revenue Needed
+              </label>
+              <div class="text-right">
+                <span id="additionalRevenue" class="text-2xl font-bold text-green-700">$33,333.33</span>
+              </div>
+            </div>
+
+            <div class="border-t-2 border-gray-200 pt-6 mt-6"></div>
 
             <!-- Average Spend per Student -->
             <div class="grid md:grid-cols-2 gap-4 items-center">
@@ -78,13 +108,40 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               </div>
             </div>
 
-            <!-- Active Students Required (Calculated) -->
+            <!-- Current Active Students -->
+            <div class="grid md:grid-cols-2 gap-4 items-center">
+              <label for="currentStudents" class="text-lg font-semibold text-gray-800">
+                Current Active Students
+              </label>
+              <div class="relative">
+                <input
+                  type="number"
+                  id="currentStudents"
+                  value="25"
+                  min="0"
+                  step="1"
+                  class="w-full pl-4 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-600 focus:ring-2 focus:ring-primary-200 transition-colors text-lg font-semibold"
+                />
+              </div>
+            </div>
+
+            <!-- Total Active Students Required (Calculated) -->
             <div class="grid md:grid-cols-2 gap-4 items-center bg-primary-100 rounded-lg p-4">
               <label class="text-lg font-semibold text-gray-800">
-                How many active students would be required to hit your monthly goal?
+                Total active students required to hit monthly goal
               </label>
               <div class="text-right">
                 <span id="studentsRequired" class="text-2xl font-bold text-primary-700">42</span>
+              </div>
+            </div>
+
+            <!-- New Students Needed (Calculated) -->
+            <div class="grid md:grid-cols-2 gap-4 items-center bg-green-50 border-2 border-green-300 rounded-lg p-4">
+              <label class="text-lg font-bold text-green-800">
+                New Students Needed
+              </label>
+              <div class="text-right">
+                <span id="newStudentsNeeded" class="text-2xl font-bold text-green-700">17</span>
               </div>
             </div>
           </div>
@@ -115,12 +172,12 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
             </div>
 
             <!-- Leads Needed (Calculated) -->
-            <div class="grid md:grid-cols-2 gap-4 items-center bg-primary-100 rounded-lg p-4">
-              <label class="text-lg font-semibold text-gray-800">
-                # of leads needed per month to hit target
+            <div class="grid md:grid-cols-2 gap-4 items-center bg-green-50 border-2 border-green-300 rounded-lg p-4">
+              <label class="text-lg font-bold text-green-800">
+                # of new leads needed per month to hit target
               </label>
               <div class="text-right">
-                <span id="leadsNeeded" class="text-2xl font-bold text-primary-700">208</span>
+                <span id="leadsNeeded" class="text-2xl font-bold text-green-700">208</span>
               </div>
             </div>
           </div>
@@ -149,7 +206,7 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
               <!-- Budget Required (Calculated) -->
               <div class="grid md:grid-cols-2 gap-4 items-center bg-white/20 backdrop-blur-sm rounded-lg p-4 border-2 border-white/40">
                 <label class="text-lg font-bold text-white">
-                  Budget required to hit target
+                  Monthly marketing budget required to hit target
                 </label>
                 <div class="text-right">
                   <span id="budgetRequired" class="text-3xl font-bold text-white drop-shadow-lg">$20,833</span>
@@ -179,13 +236,17 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
 <script>
   // Get all input elements
   const annualRevenueInput = document.getElementById('annualRevenue') as HTMLInputElement;
+  const currentRevenueInput = document.getElementById('currentRevenue') as HTMLInputElement;
   const avgSpendInput = document.getElementById('avgSpend') as HTMLInputElement;
+  const currentStudentsInput = document.getElementById('currentStudents') as HTMLInputElement;
   const conversionRateInput = document.getElementById('conversionRate') as HTMLInputElement;
   const costPerLeadInput = document.getElementById('costPerLead') as HTMLInputElement;
 
   // Get all output elements
   const monthlyRevenueSpan = document.getElementById('monthlyRevenue') as HTMLSpanElement;
+  const additionalRevenueSpan = document.getElementById('additionalRevenue') as HTMLSpanElement;
   const studentsRequiredSpan = document.getElementById('studentsRequired') as HTMLSpanElement;
+  const newStudentsNeededSpan = document.getElementById('newStudentsNeeded') as HTMLSpanElement;
   const leadsNeededSpan = document.getElementById('leadsNeeded') as HTMLSpanElement;
   const budgetRequiredSpan = document.getElementById('budgetRequired') as HTMLSpanElement;
 
@@ -208,21 +269,31 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
   function calculate() {
     // Get input values
     const annualRevenue = parseFloat(annualRevenueInput.value) || 0;
+    const currentRevenue = parseFloat(currentRevenueInput.value) || 0;
     const avgSpend = parseFloat(avgSpendInput.value) || 0;
+    const currentStudents = parseFloat(currentStudentsInput.value) || 0;
     const conversionRate = parseFloat(conversionRateInput.value) || 0;
     const costPerLead = parseFloat(costPerLeadInput.value) || 0;
 
-    // Calculate monthly revenue
+    // Calculate monthly revenue target
     const monthlyRevenue = annualRevenue / 12;
     monthlyRevenueSpan.textContent = formatCurrency(monthlyRevenue);
 
-    // Calculate students required
+    // Calculate additional revenue needed
+    const additionalRevenue = Math.max(0, monthlyRevenue - currentRevenue);
+    additionalRevenueSpan.textContent = formatCurrency(additionalRevenue);
+
+    // Calculate total students required
     const studentsRequired = avgSpend > 0 ? monthlyRevenue / avgSpend : 0;
     studentsRequiredSpan.textContent = formatNumber(studentsRequired);
 
-    // Calculate leads needed
+    // Calculate new students needed
+    const newStudentsNeeded = Math.max(0, studentsRequired - currentStudents);
+    newStudentsNeededSpan.textContent = formatNumber(newStudentsNeeded);
+
+    // Calculate leads needed (based on NEW students needed, not total)
     const conversionDecimal = conversionRate / 100;
-    const leadsNeeded = conversionDecimal > 0 ? studentsRequired / conversionDecimal : 0;
+    const leadsNeeded = conversionDecimal > 0 ? newStudentsNeeded / conversionDecimal : 0;
     leadsNeededSpan.textContent = formatNumber(leadsNeeded);
 
     // Calculate budget required
@@ -232,7 +303,9 @@ const keywords = "lead generation calculator, marketing budget planner, flight s
 
   // Add event listeners to all inputs
   annualRevenueInput.addEventListener('input', calculate);
+  currentRevenueInput.addEventListener('input', calculate);
   avgSpendInput.addEventListener('input', calculate);
+  currentStudentsInput.addEventListener('input', calculate);
   conversionRateInput.addEventListener('input', calculate);
   costPerLeadInput.addEventListener('input', calculate);
 
