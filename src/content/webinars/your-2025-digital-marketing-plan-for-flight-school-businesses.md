@@ -1,5 +1,5 @@
 ---
-pubDate: "December 18, 2025"
+pubDate: "January 29, 2025"
 author: Tim Jedrek
 title: "Your 2026 Digital Marketing Plan for Flight School Businesses"
 description: "In today's hyper-connected world, a robust digital marketing strategy is no longer an option for flight schools – it's a necessity. This guide outlines key elements for a successful 2025 digital marketing plan to help you attract new students, build brand awareness, and achieve your business goals."
@@ -27,7 +27,7 @@ This isn't another generic business webinar. This is a practical, aviation-focus
 
 **Your 2026 Digital Marketing Plan for Flight School Businesses**
 
-- **When:** Thursday, December 18, 2025
+- **When:** Thursday, January 29, 2026
 - **Time:** 2:00 PM CST (60–75 minutes)
 - **Format:** Live online with Q&A
 - **Who Should Attend:** Flight school owners, operations managers, and marketing leaders
