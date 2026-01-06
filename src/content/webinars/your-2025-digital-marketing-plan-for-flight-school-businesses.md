@@ -89,7 +89,7 @@ After the webinar, you'll receive links to additional resources:
 
 ## Register Today
 
-Don't start 2026 with the same scattered approach. Join us December 18th and walk away with a digital marketing plan built to grow your flight school.
+Don't start 2026 with the same scattered approach. Join us January 29th and walk away with a digital marketing plan built to grow your flight school.
 
 **[Secure your spot now](#webinar-form)**
 
