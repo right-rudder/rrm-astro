@@ -60,7 +60,9 @@ tags:
   ]
 ---
 
-Here's something most flight school owners won't admit: they have no idea what their competitors are really doing. Sure, they know the flight school down the field exists. Maybe they've heard some gossip at the FBO. But systematic competitive analysis? That's rare.
+Here’s something most flight school owners won’t admit: they have no idea what their competitors are really doing. Sure, they know the flight school down the field exists. Maybe they’ve heard some gossip at the FBO. But systematic competitive analysis? That’s rare.
+
+Most flight schools are flying blind when it comes to understanding their market.
 
 And it's costing them students every single day.
 
