@@ -5,7 +5,7 @@ title: Flight School Success Coordinator
 social:
   linkedin: "https://www.linkedin.com/in/zachary-stevens-60038918a/"
 image: /authors/rrm-crew-zach-stevens.webp
-status: active
+status: former
 seniority: 12
 ---
 
